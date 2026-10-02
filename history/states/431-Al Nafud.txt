@@ -1,0 +1,40 @@
+#Al Nafud
+state={
+	id=431
+	name="STATE_431"
+	resources={
+
+	}
+	
+	history={
+		#owner = JBS
+		#add_core_of = JBS
+		add_extra_state_shared_building_slots=3
+		buildings = {
+			infrastructure=4
+			arms_factory=3
+		}
+		victory_points = {
+			8372 10		#Ha'il
+		}
+		victory_points = {
+			14 2		#Baqaa
+		}
+		victory_points = {
+			180 1		#Al Shinan
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+	
+	provinces={
+		14 102 161 180 217 227 579 730 1025 1266 1343 1473 2137 2448 2487 2818 2872 2940 3029 3194 3560 4609 5397 5735 6842 6887 7001 7358 8186 8372 9682
+		10054 10633 11358 16821 16826 16905 16979
+	}
+	
+	manpower=210003
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

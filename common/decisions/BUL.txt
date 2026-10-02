@@ -1,0 +1,42 @@
+foreign_politics={
+	BUL_integrate_pirot={
+		icon = generic_operation
+		allowed={tag=BUL}
+		available={controls_state=153}
+		fire_only_once=yes
+		cost=30
+		complete_effect={
+			153={add_core_of=BUL}
+		}
+	}
+	BUL_integrate_macedonia={
+		icon = generic_operation
+		allowed={tag=BUL}
+		available={controls_state=155}
+		fire_only_once=yes
+		cost=30
+		complete_effect={
+			155={add_core_of=BUL}
+		}
+	}
+	BUL_integrate_salonika={
+		icon = generic_operation
+		allowed={tag=BUL}
+		available={controls_state=134}
+		fire_only_once=yes
+		cost=30
+		complete_effect={
+			134={add_core_of=BUL}
+		}
+	}
+	BUL_integrate_north_dobrudja={
+		icon = generic_operation
+		allowed={tag=BUL}
+		available={controls_state=365}
+		fire_only_once=yes
+		cost=30
+		complete_effect={
+			365={add_core_of=BUL}
+		}
+	}
+}

@@ -1,0 +1,464 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Askerler" #Infantry Division
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	#support = {
+	#	engineer = { x = 0 y = 0 }
+	#	recon = { x = 0 y = 1 }
+	#}
+}
+
+division_template = {
+	name = "Tümeni" #Gendarmerie Regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Aasker Suvari" #Cavalry Brigade
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	#support = {
+	#	engineer = { x = 0 y = 0 }
+	#}
+}
+
+###################################################################
+# 7 Corps x 3 divisions + 5 divisions @10,300/division of infantry = 267800, goal of ~270,000 active in 1909
+# 13 cavaly brigades @ 4300/brigade of cavalry = 55900, goal of 55/56K historically
+units = {
+	division = {
+	    name = "1. Askerler 'Harbiye'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "2. Askerler 'Selimiye'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "3. Askerler 'Pangalti'"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "13. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Istanbul Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "4. Askerler 'Tekirdag'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "5. Askerler 'Gelibolu'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "6. Askerler 'Smyrna'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "12. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Çanakkale Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "7. Askerler 'Kirk Kilise'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "8. Askerler 'Çorlu'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "9. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "3. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "10. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "11. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "12. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "4. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "Edirne Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "13. Askerler 'Selanik'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "11. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	#division = {
+	#    name = "14. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "15. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "16. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "17. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "18. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "10. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	#division = {
+	#    name = "6. Tüfek Alayi"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "19. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "20. Askerler"
+	#    location = 3195# Istanbul
+	#   division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "21. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "7. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "9. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	#division = {
+	#    name = "25. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "26. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "27. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "8. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "8. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "28. Askerler 'Erzurum'"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "29. Askerler 'Bayburt'"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "9. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "30. Askerler"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "31. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	#division = {
+	#    name = "32. Askerler"
+	#    location = 3195# Istanbul
+	#    division_template = "Askerler"
+	#    start_experience_factor = 0
+	#}
+
+	
+	division = {
+	    name = "7. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Aasker Suvari"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "33. Askerler 'Van'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "34. Askerler 'Mus'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "1. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "2. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "3. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "4. Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "35. Askerler 'Musul'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "36. Askerler 'Kerkük'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "37. Askerler 'Bagdat'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "38. Askerler 'Basra'"
+	    location = 3195# Istanbul
+	    division_template = "Askerler"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "1. Milis Tümeni 'Bingazi'"
+	#    location = 3195# Istanbul
+	#    division_template = "Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	#division = {
+	#    name = "5. Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Tümeni"
+	#    start_experience_factor = 0
+	#}
+	
+	#division = {
+	#    name = "2. Milis Tümeni 'Trablus'"
+	#    location = 3195# Istanbul
+	#    division_template = "Tümeni"
+	#    start_experience_factor = 0
+	#}
+	#division = {
+	#    name = "6. Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Tümeni"
+	#    start_experience_factor = 0
+	#}
+}
+air_wings = {}
+

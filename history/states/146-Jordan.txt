@@ -1,0 +1,43 @@
+
+state={
+	id=146
+	name="STATE_146"
+
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base=1
+		}
+		victory_points = {
+			11512 1 
+		}
+		victory_points = {
+			16714 1 
+		}
+		victory_points = {
+			2582 20 
+		}
+		victory_points = {
+			2726 1 
+		}
+		1911.1.1.4 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		2 158 306 539 580 1146 1684 1722 1985 2192 2486 2582 2726 2761 2883 2967 3065 3074 4520 4526 4608 4876 5158 5206 5697 6177 6407 6502 6833 7274 7969 8657 9231 9399 9728 9773 10009 10058 10166 10488 10557 10659 11429 11512 11575 11602 11615 16714 16721 16744 16751 16763 16767 16769 16781 16792 16798 16805 16810 16817 16824 16840 16842 16845 16851 16854 16862 16875 16881 
+	}
+	manpower=932000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	resources = {
+		tungsten = 29
+		chromium = 4
+		coal = 13
+	}
+}

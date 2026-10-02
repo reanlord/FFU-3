@@ -1,0 +1,167 @@
+﻿l_russian:
+
+
+ #--------------------------------------------------------------
+ # [FRENCH REPUBLIC] Армейские усилия
+ #=========================================================================
+FRA_ww1_army_effort_1:0 "Армейские усилия"
+FRA_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_2:0 "Армейские усилия II"
+FRA_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_3:0 "Армейские усилия III"
+FRA_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_4:0 "Армейские усилия IV"
+FRA_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_5:0 "Армейские усилия V"
+FRA_ww1_army_effort_5_desc:0 "" #Frenchie
+
+FRA_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+FRA_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+FRA_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+FRA_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+FRA_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+FRA_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+FRA_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+FRA_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+FRA_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+FRA_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+FRA_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+FRA_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+FRA_ww1_aircraftprod_1:0 "Производство самолетов"
+FRA_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_2:0 "Производство самолетов II"
+FRA_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_3:0 "Производство самолетов III"
+FRA_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_4:0 "Производство самолетов IV"
+FRA_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_5:0 "Производство самолетов V"
+FRA_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+FRA_ww1_large_navy_1:0 "Военно -морская авиация"
+FRA_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_2:0 "Военно -морская авиация II"
+FRA_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_3:0 "Военно -морская авиация III"
+FRA_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_4:0 "Военно -морская авиация IV"
+FRA_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_5:0 "Военно -морская авиация V"
+FRA_ww1_large_navy_5_desc:0 "" #Frenchie
+
+ 
+ # FRENCHIE MOD
+ #=========================================================================
+ FRA_BATTLE_OF_AMIENS:0 "First Battle of Marne"
+ FRA_BATTLE_OF_AMIENS_desc:0 "With its army in retreat, the French needed a miracle to save Paris from enemy occupation. They received it on September 3 when French reconnaissance pilots spotted the forces of German General Alexander von Kluck’s First Army, which had been pointed at Paris like a spear tip, suddenly switch to the southeast. Although under orders to support the Second Army to guard against possible attacks from Paris, the aggressive von Kluck instead sought glory and a chance to drive a stake in the enemy by pursuing the retreating French Fifth Army across the Marne River east of Paris. By doing so, his troops, exhausted after weeks of marching and fighting, outran their supply lines, and he inadvertently exposed his right flank to French forces."
+ FRA_concessions_to_sfio:0 "Уступки Sfio"
+ FRA_concessions_to_sfio_desc:0 ""
+ FRA_manufacture_darmes_de_chatellerault:0 "Производство вооружений Chatellorault"
+ FRA_manufacture_darmes_de_chatellerault_desc:0 ""
+ FRA_renault_ft:0 "Renault FT"
+ FRA_renault_ft_desc:0 ""
+ FRA_attaque__outrance:0 "Чрезмерная атака"
+ FRA_attaque__outrance_desc:0 ""
+ FRA_agadir_crisis:0 "Агадир Кризис"
+ FRA_agadir_crisis_desc:0 ""
+ FRA_aronautique_militaire:0 "Военная аэронавтика"
+ FRA_aronautique_militaire_desc:0 ""
+ FRA_threeyear_law:0 "Трехлетний закон"
+ FRA_threeyear_law_desc:0 ""
+ FRA_french_foreign_legion:0 "Французский иностранный легион"
+ FRA_french_foreign_legion_desc:0 ""
+ FRA_1914_fiscal_reforms:0 "1914 Фискальные реформы"
+ FRA_1914_fiscal_reforms_desc:0 ""
+ FRA_greek_naval_bases:0 "Греческие военно -морские базы"
+ FRA_greek_naval_bases_desc:0 ""
+ FRA_ministere_des_colonies:0 "Министерство колоний"
+ FRA_ministere_des_colonies_desc:0 ""
+ FRA_protectorat_francais_de_tunisie:0 "Французский протекторат в Тунисе"
+ FRA_protectorat_francais_de_tunisie_desc:0 ""
+ FRA_protectorat_franais_au_maroc:0 "Французский протекторат в Марокко"
+ FRA_protectorat_franais_au_maroc_desc:0 ""
+ FRA_arme_coloniale:0 "Колониальная армия"
+ FRA_arme_coloniale_desc:0 ""
+ FRA_army_reform:0 "Армейская реформа"
+ FRA_army_reform_desc:0 ""
+ FRA_fabre_hydravion_seaplane:0 "Фабр -гидросамолет"
+ FRA_fabre_hydravion_seaplane_desc:0 ""
+ FRA_crdit_lyonnais:0 "Кредит Lyonnais"
+ FRA_crdit_lyonnais_desc:0 ""
+ FRA_investment_in_russia:0 "Инвестиции в Россию"
+ FRA_investment_in_russia_desc:0 ""
+ FRA_fortifications_of_france:0 "Укрепления Франции"
+ FRA_fortifications_of_france_desc:0 ""
+ FRA_reinvest_naval_budget:0 "Реинвестирование военно -морского бюджета"
+ FRA_reinvest_naval_budget_desc:0 ""
+ FRA_arme_de_terre:0 "Сухопутная сила"
+ FRA_arme_de_terre_desc:0 ""
+ FRA_mobilize_urban_population:0 "Мобилизовать городское население"
+ FRA_mobilize_urban_population_desc:0 ""
+ FRA_entente_cordiale:0 "Сердечное соглашение"
+ FRA_entente_cordiale_desc:0 ""
+ FRA_entente_supreme_war_council:0 "ententeSupremeWarCouncil"
+ FRA_entente_supreme_war_council_desc:0 ""
+ FRA_supreme_allied_command:0 "Высшее союзное командование"
+ FRA_supreme_allied_command_desc:0 ""
+ FRA_union_sacre:0 "Священный союз"
+ FRA_union_sacre_desc:0 ""
+ FRA_patriotic_fervor:0 "Патриотический пыл"
+ FRA_patriotic_fervor_desc:0 ""
+ FRA_technological_revolution:0 "Технологическая революция"
+ FRA_technological_revolution_desc:0 ""
+ FRA_second_industrial_revolution:0 "Вторая промышленная революция"
+ FRA_second_industrial_revolution_desc:0 ""
+ FRA_establish_commission_for_relief_in_belgium:0 "Создать комиссию по оказанию помощи в Бельгии"
+ FRA_establish_commission_for_relief_in_belgium_desc:0 ""
+ FRA_anglofrenchitalian_naval_convention:0 "Англо-французская итальянская военно-морская конвенция"
+ FRA_anglofrenchitalian_naval_convention_desc:0 ""
+ FRA_the_belle_epoque:0 "Belle Epoque"
+ FRA_the_belle_epoque_desc:0 ""
+ FRA_19111914_french_military_mission:0 "1911–1914 Французская военная миссия"
+ FRA_19111914_french_military_mission_desc:0 ""
+ FRA_elecltrify_factories:0 "Elecltrify Factory"
+ FRA_elecltrify_factories_desc:0 ""
+ FRA_navy_steel_works:0 "ВМС стальные работы"
+ FRA_navy_steel_works_desc:0 ""
+ FRA_further_defund_the_navy:0 "Далее защитить военно -морской флот"
+ FRA_further_defund_the_navy_desc:0 ""
+ FRA_georges_clemenceau_le_tigre:0 "Georges Clemenceau, Тигр"
+ FRA_georges_clemenceau_le_tigre_desc:0 ""
+ FRA_military_board_of_allied_supply:0 "Военный совет союзников поставки"
+ FRA_military_board_of_allied_supply_desc:0 ""
+ FRA_chasseurs_alpins:0 "Охотники Alpins"
+ FRA_chasseurs_alpins_desc:0 ""
+ FRA_horizon_blue_uniforms:0 "Горизонт Синий Униформа"
+ FRA_horizon_blue_uniforms_desc:0 ""
+ #--------------------------------------------------------------

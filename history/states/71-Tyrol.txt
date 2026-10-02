@@ -1,0 +1,49 @@
+state={
+	id=71
+	name="STATE_71"
+	provinces={
+		269 2880 2909 2980 3285 3701 7005 7092 7165 8362 10081 10291 14958 14975 14996 15008 15018 15042 15070 15081 15091 15105 15129 
+	}
+	manpower=1449622
+	buildings_max_level_factor=1.000
+	state_category = town
+	resources={
+		aluminium=8
+	}
+	history={
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		victory_points = {
+		8259 20
+		}
+		victory_points = {
+		15018 1
+		}
+		victory_points = {
+		15008 1
+		}
+		victory_points = {
+		2980 20 
+		}
+		victory_points = {
+		15105 3 
+		}
+		victory_points = {
+		15042 1 
+		}
+		victory_points = {
+		14958 1 
+		}
+		victory_points = {
+		8362 1 
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+    }
+}

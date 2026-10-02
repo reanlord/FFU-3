@@ -1,0 +1,1825 @@
+focus_tree = {
+    id = sov_focus
+    default = no
+    country = {
+        factor = 0 modifier = {
+            add = 10 tag = SOV
+        }
+    }
+	continuous_focus_position = { x = 100 y = 1000 }
+	
+	##############################################################################################
+	
+	#Focus for Reformation of the Empire
+	focus = {
+		id = SOV_reformation_of_the_empire
+		icon = GFX_SOV_reformation_of_the_empire-45115
+		#icon = GFX_SOV_tsar_supremacy-45134
+		x = 18
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+	
+	########################################
+	###Industry Civilian
+	########################################
+
+	#Focus for Address Economic Stagnation
+	focus = {
+		id = SOV_address_economic_stagnation
+		icon = GFX_SOV_address_economic_stagnation-45112
+		#icon=GFX_focus_industry_profit
+		relative_position_id=SOV_reformation_of_the_empire
+		x = -10
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reformation_of_the_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			315 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas= industrialization_effort
+		}
+	}
+
+	
+	#Focus for St. Petersburg Industrial Project
+	focus = {
+		id = SOV_st_petersburg_industrial_project
+		icon = GFX_SOV_st_petersburg_industrial_project-45110
+		relative_position_id=SOV_address_economic_stagnation
+		x = -3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_address_economic_stagnation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots=3
+				add_building_construction = {
+		            type=industrial_complex level=3 instant_build=yes
+		           }
+			}
+		}
+	}
+	
+	#Focus for Moscow Industrial Project
+	focus = {
+		id = SOV_moscow_industrial_project
+		icon = GFX_SOV_moscow_industrial_project-45109
+		relative_position_id=SOV_address_economic_stagnation
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_address_economic_stagnation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			171 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type=industrial_complex level=3 instant_build=yes }
+			}
+		}
+	}
+	
+	#Focus for Increased Research Development
+	focus = {
+		id = SOV_increased_research_development
+		icon = GFX_goal_tfv_generic_tech_sharing
+		relative_position_id=SOV_moscow_industrial_project
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_moscow_industrial_project }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot=1
+		}
+	}
+	
+	#Focus for Kiev Industrial Project
+	focus = {
+		id = SOV_kiev_industrial_project
+		icon = GFX_SOV_kiev_industrial_project-45108
+		relative_position_id=SOV_address_economic_stagnation
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_address_economic_stagnation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			331 = {
+				add_extra_state_shared_building_slots=3
+				add_building_construction = { type=industrial_complex level=3 instant_build=yes }
+			}
+		}
+	}
+	
+
+	#Focus for Modernization & Developement of Rail
+	focus = {
+		id = SOV_modernization__developement_of_rail
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id=SOV_address_economic_stagnation
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_address_economic_stagnation }
+		ai_will_do = {
+			factor = 1
+		}
+		#complete_tooltip = {
+		#	unlock_decision_category_tooltip= infrastructure_modernization
+		#}
+		completion_reward = {
+            add_tech_bonus = {
+                #technology = armored_train
+                #technology = wartime_train
+                technology = railway_gun
+                name=train_bonus bonus=1.0 uses=1
+            }
+			unlock_decision_category_tooltip= infrastructure_modernization
+		}
+	}
+	
+	#Focus for Increased Rail Efficiency & Planning
+	focus = {
+		id = SOV_increased_rail_efficiency__planning
+		icon = GFX_focus_forest_railway
+		relative_position_id=SOV_modernization__developement_of_rail
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_modernization__developement_of_rail }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {  }
+		completion_reward = {
+			remove_ideas =RUS_ww1_mixed_railways
+			add_timed_idea = {
+				idea=RUS_ww1_modern_railways  days=1095
+			}
+		}
+	}
+	
+	##########################################
+	###Army
+	########################################
+	
+	#Focus for Increased Military Budget
+	focus = {
+		id = SOV_increased_military_budget
+		icon = GFX_SOV_increased_military_budget-45119
+		#icon = GFX_focus_control_economy
+		relative_position_id=SOV_reformation_of_the_empire
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reformation_of_the_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			316 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas=arms_factory_expansion
+		}
+	}
+	
+	#Focus for Fortify Cities
+	focus = {
+		id = SOV_fortify_western_cities
+		icon = GFX_focus_SOV_the_defense_of_moscow
+		relative_position_id=SOV_increased_military_budget
+		x = 3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = SOV_increased_military_budget
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			115 = {
+				add_building_construction = {
+					type = bunker level = 3 province = 12961 instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker level = 1 province = 12961 instant_build = yes
+				}
+			}
+			323 = {
+				add_building_construction = {
+					type = bunker level = 3 province = 20321 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 1126 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 20322 instant_build = yes
+				}
+			}
+			331 = {
+				add_building_construction = {
+					type = bunker level = 3 province = 20320 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 13921 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 11413 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 13886 instant_build = yes
+				}
+			}
+			172 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 9149 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 1710 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 14730 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 10703 instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Focus for Main Directorate of the General Staff
+	focus = { 
+	    prerequisite = { focus = SOV_increased_military_budget }
+		id = SOV_main_directorate_of_the_general_staff
+		icon = GFX_SOV_main_directorate_of_the_general_staff-45127
+		relative_position_id=SOV_increased_military_budget
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+         completion_reward = { add_ideas= SOV_russian_staff
+		 add_tech_bonus={ name=infantry_weapons_bonus bonus=2 uses=1 category=infantry_weapons}} 
+	} 
+
+	#Focus for Military Inspection Services
+	focus = {
+		id = SOV_military_inspection_services
+		icon = GFX_focus_RUS_army
+		relative_position_id=SOV_main_directorate_of_the_general_staff
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_main_directorate_of_the_general_staff }
+		completion_reward = { add_tech_bonus={ name=artillery_bonus bonus=2 uses = 1 category=artillery }  army_experience = 50 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for Tsar Tank
+	focus = {
+		id = SOV_tsar_tank
+		#icon = GFX_SOV_tsar_tank-45305
+		icon=GFX_focus_RUS_Tsar_Tank
+		relative_position_id=SOV_military_inspection_services
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_military_inspection_services }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+			add_tech_bonus={ name=armor_bonus bonus=1 uses=1 category=armor }
+			add_equipment_to_stockpile= {
+				type = heavy_tank_equipment
+				amount = 600 
+				producer = SOV
+			}
+			custom_effect_tooltip = SOV_tsar_tank_tt
+			hidden_effect = { load_oob = "SOV_Tsar" }
+		} 
+	}
+
+	#Focus for Active & Reserve Troops Reforms
+	focus = {
+		id = SOV_active__reserve_troops_reforms
+		#icon = GFX_focus_secret_rearmament
+		icon=GFX_ww1_rus_army_kr
+		relative_position_id=SOV_main_directorate_of_the_general_staff
+		x = 3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_main_directorate_of_the_general_staff }
+		ai_will_do = {
+			factor = 1
+		}
+		 
+		completion_reward = {
+		#army_experience=50 
+		add_tech_bonus={ name=support_tech_bonus bonus=1 uses=2 category=support_tech } 
+			country_event= {
+        days = 1 
+        id = ww1_russia.30  }
+		}
+	}
+	
+	#Focus for Redeploy Far East Army
+	focus = {
+		id = SOV_redeploy_far_east_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		#icon = GFX_focus_rus_local_barracks
+		relative_position_id=SOV_active__reserve_troops_reforms
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		available={
+			has_global_flag=ffu_ww1_starts
+			NOT={controls_state=279}
+		}
+		prerequisite = { focus = SOV_active__reserve_troops_reforms }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = SOV_far_east_army_tt
+            hidden_effect = {load_oob = "SOV_East"}
+			#Province 1920 Moscow
+		}
+	}
+	
+	#Focus for Seperate Cossack Regiments
+	focus = {
+		id = SOV_seperate_cossack_regiments
+		icon = GFX_SOV_seperate_cossack_regiments-45151
+		relative_position_id=SOV_active__reserve_troops_reforms
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_active__reserve_troops_reforms }
+		mutually_exclusive = { focus = SOV_integration_of_the_cossacks }
+		ai_will_do = {
+			factor = 1
+		}
+	    completion_reward = { add_ideas = SOV_cossack_hosts army_experience = 50 }
+	}
+	
+	#Focus for Folk Wisdom
+	focus = {
+		id = SOV_folk_wisdom
+		icon=GFX_generic_tachanka
+		relative_position_id=SOV_seperate_cossack_regiments
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus=SOV_seperate_cossack_regiments focus=SOV_integration_of_the_cossacks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+			add_tech_bonus={
+				technology = ww1_armored_car_2
+				technology = ww1_tachanka
+				bonus=2.0
+				uses=2
+			}
+		} 
+	}
+
+	#Focus for Cossacks got some tricks
+	focus = {
+		id = SOV_cossacks_got_some_tricks
+		icon=GFX_goal_generic_modernizing_the_cavalry
+		relative_position_id=SOV_seperate_cossack_regiments
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus=SOV_seperate_cossack_regiments focus=SOV_integration_of_the_cossacks }
+		ai_will_do = {
+			factor = 1
+		}
+	    completion_reward = { 
+			add_equipment_to_stockpile = {
+				amount = 480
+				type = tachanka_equipment_0
+                producer = sov
+			}
+			custom_effect_tooltip = SOV_cossacks_got_some_tricks_tt
+		}
+	}
+
+	#Focus for Integration of the Cossacks
+	focus = {
+		id = SOV_integration_of_the_cossacks
+		icon = GFX_SOV_integration_of_the_cossacks-45151
+		relative_position_id=SOV_seperate_cossack_regiments
+		x = 2
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_active__reserve_troops_reforms }
+		mutually_exclusive = { focus = SOV_seperate_cossack_regiments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+bonus = 2
+uses = 2 
+technology = tech_recon
+technology = tech_recon2
+technology = tech_recon3
+technology = tech_recon4
+technology = tech_military_police
+technology = tech_military_police2
+technology = tech_military_police3
+technology = tech_military_police4
+}
+army_experience = 50
+		}
+	}
+	
+	######################################
+	###Industry Military
+	#######################################
+	
+	#Focus for War Industries Committees
+	focus = {
+		id = SOV_war_industries_committees
+		icon = GFX_SOV_war_industries_committees-45150
+		relative_position_id=SOV_increased_military_budget
+		x = -4
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_increased_military_budget }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= SOV_war_industries_committees
+		}
+	}
+	
+	#Focus for Stimulate Steel Market
+	focus = {
+		id = SOV_stimulate_steel_market
+		icon = GFX_SOV_stimulate_steel_market-45114
+		relative_position_id=SOV_kiev_industrial_project
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_kiev_industrial_project 
+		}
+		prerequisite = { 
+			focus = SOV_increased_rail_efficiency__planning 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= market_dynamism
+			#184 = {
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+		    #        type = arms_factory level = 1 instant_build = yes
+		    #    }
+			#}
+			#186 = {
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+		    #        type = arms_factory level = 1 instant_build = yes
+		    #    }
+			#}
+		}
+	}
+	
+	#Focus for Tula Arms Plant
+	focus = {
+		id = SOV_tula_arms_plant
+		icon = GFX_SOV_tula_arms_plant-45144
+		relative_position_id=SOV_increased_rail_efficiency__planning
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_increased_rail_efficiency__planning }
+        prerequisite = { focus = SOV_military_inspection_services }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			206 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+		            type = arms_factory level = 4 instant_build = yes
+		        }
+			}
+		}
+	}
+	
+	#Focus for Obukhov Plant
+	focus = {
+		id = SOV_obukhov_plant
+		icon = GFX_SOV_izhevsk_machinebuilding_plant-45144
+		relative_position_id=SOV_tula_arms_plant
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tula_arms_plant }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+		            type = arms_factory level = 4 instant_build = yes
+		        }
+			}
+		}
+	}
+
+	#Focus for Izhevsk Machine-Building Plant
+	focus = {
+		id = SOV_izhevsk_machinebuilding_plant
+		icon = GFX_SOV_izhevsk_machinebuilding_plant-45144
+		relative_position_id=SOV_obukhov_plant
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_obukhov_plant }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			333 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+		            type = arms_factory level = 4 instant_build = yes
+		        }
+			}
+		}
+	}
+	
+	########################################
+	###Navy
+	########################################
+
+	#Focus for Tsushima Humiliation Lessons
+	focus = {
+		id = SOV_tsushima_humiliation_lessons
+		#icon = GFX_focus_NORDIC_dem_navy
+		icon = GFX_goal_generic_occupy_states_coastal
+		relative_position_id=SOV_increased_military_budget
+		x = 6
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_increased_military_budget }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience=500
+			add_tech_bonus={
+				name=ship_bonus bonus=1 uses=4
+				category=naval_equipment
+			}
+		}
+	}
+	
+	#Focus for Light Hulls Development
+	focus = {
+		id = SOV_light_hulls_development
+		icon = GFX_focus_generic_cruiser2
+		relative_position_id=SOV_tsushima_humiliation_lessons
+		x = -1
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tsushima_humiliation_lessons }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= SOV_light_hull_primacy
+		}
+	}
+	
+	#Focus for Dominant Black Sea Fleet
+	focus = {
+		id = SOV_dominant_black_sea_fleet
+		icon = GFX_SOV_dominant_black_sea_fleet-45123
+		relative_position_id=SOV_light_hulls_development
+		x = 0
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_light_hulls_development }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			182 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Focus for Dreadnought & Battleship Development
+	focus = {
+		id = SOV_dreadnought__battleship_development
+		icon = GFX_focus_generic_navy_battleship2
+		relative_position_id=SOV_tsushima_humiliation_lessons
+		x = 1
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tsushima_humiliation_lessons }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= SOV_capital_ship_build_up
+		}
+	}
+	
+	#Focus for Baltic Fleet Priority
+	focus = {
+		id = SOV_baltic_fleet_priority
+		icon = GFX_SOV_baltic_fleet_priority-45124
+		relative_position_id=SOV_dreadnought__battleship_development
+		x = 0
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_dreadnought__battleship_development }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#######################################
+	###Politics
+	#######################################
+
+	#Focus for Tsar Supremacy
+	focus = {
+		id = SOV_tsar_supremacy
+		icon = GFX_SOV_tsar_supremacy-45134
+		relative_position_id=SOV_reformation_of_the_empire
+		x = 9
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reformation_of_the_empire }
+		mutually_exclusive={focus=SOV_limit_tsar_influence}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SOV_tsar
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_country_leader_trait = royalist_bulldog
+		}
+	}
+	
+	#Focus for Limit Tsar Influence
+	focus={
+		id=SOV_limit_tsar_influence
+		icon=GFX_SOV_limit_tsar_influence-45140
+		relative_position_id=SOV_tsar_supremacy
+		x=2
+		y=0
+		cost=5
+		available_if_capitulated=yes
+		prerequisite={focus=SOV_reformation_of_the_empire}
+		mutually_exclusive={focus=SOV_tsar_supremacy}
+		ai_will_do={factor=1}
+		completion_reward={
+			add_stability=0.30
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SOV_roman_malinovsky
+		}
+	}
+	
+	#Focus for Pro-Tsar Duma
+	focus = {
+		id = SOV_protsar_duma
+		icon = GFX_SOV_protsar_duma-45146
+		relative_position_id=SOV_tsar_supremacy
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tsar_supremacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_war_support= 0.20
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_country_leader_trait=imperial_connections
+			#custom_effect_tooltip = available_political_advisor
+			#show_ideas_tooltip = SOV_alexander_izvolsky
+		}
+	}
+	
+	#Focus for Expanded Okhrana
+	focus = {
+		id = SOV_expanded_okhrana
+		icon = GFX_SOV_expanded_okhrana-45139
+		relative_position_id=SOV_protsar_duma
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_protsar_duma }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#custom_effect_tooltip = available_political_advisor
+			#show_ideas_tooltip = SOV_vladimir_dzhunkovsky
+			remove_country_leader_trait= unpopular_monarch
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 40
+		}
+	}
+
+	#Focus for Additional Siberian Gulags
+	focus = {
+		id = SOV_additional_siberian_gulags
+		icon = GFX_SOV_additional_siberian_gulags-45147
+		relative_position_id=SOV_expanded_okhrana
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_expanded_okhrana }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SOV_convict_workshops
+			custom_effect_tooltip = generic_skip_one_line_tt
+			337 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+		            type = arms_factory level = 2 instant_build = yes
+		        }
+			}
+			342 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+		            type = arms_factory level = 2 instant_build = yes
+		        }
+			}
+			321 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+		            type = arms_factory level = 2 instant_build = yes
+		        }
+			}
+			#322 = {
+			#	add_extra_state_shared_building_slots = 2
+			#	add_building_construction = {
+		    #        type = arms_factory level = 2 instant_build = yes
+		    #    }
+			#}
+			320 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+		            type = arms_factory level = 2 instant_build = yes
+		        }
+			}
+		}
+	}
+	
+	#Focus for Concessions to Radicals
+	focus = {
+		id = SOV_concessions_to_radicals
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = SOV_limit_tsar_influence }
+		relative_position_id=SOV_limit_tsar_influence
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			335 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex level = 2 instant_build = yes
+		        }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power= 50
+		}
+	}
+	
+	#Focus for Free Political Prisoners
+	focus={
+		id=SOV_free_political_prisoners
+		icon=GFX_SOV_free_political_prisoners-45148
+		prerequisite={focus=SOV_concessions_to_radicals}
+		relative_position_id=SOV_concessions_to_radicals
+		x = 1
+		y = 1
+		available_if_capitulated=yes
+		ai_will_do={factor=1}
+		cost=5
+		completion_reward={
+			339 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex level = 2 instant_build = yes
+		        }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			army_experience=150
+		}
+	}
+	
+
+	#Focus for Emergency Fourth State Duma Meetings
+	focus = {
+		id = SOV_emergency_fourth_state_duma_meetings
+		icon = GFX_SOV_emergency_fourth_state_duma_meetings-45137
+		relative_position_id=SOV_free_political_prisoners
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_free_political_prisoners }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_country_leader_trait=unpopular_monarch
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_category_tooltip= fourth_duma_assembly
+			custom_effect_tooltip = SOV_fourth_duma_assembly_tt
+		}
+	}
+
+	#Focus for Investigations into Royal Corruption
+	focus = {
+		id = SOV_investigations_into_royal_corruption
+		icon = GFX_SOV_investigations_into_grigori_rasputin-45142
+		relative_position_id=SOV_emergency_fourth_state_duma_meetings
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_emergency_fourth_state_duma_meetings }
+		ai_will_do = {
+			factor = 1
+		}
+			
+		completion_reward = {  
+            add_stability= 0.15 		
+             }
+	}
+	
+	#Focus for Emergency War Credit
+	focus = {
+		id = SOV_emergency_war_credit
+		icon = GFX_SOV_emergency_war_credit-45149
+		relative_position_id=SOV_tsar_supremacy
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			date > 1914.07.01
+		}
+		prerequisite = { 
+			focus = SOV_protsar_duma
+			focus = SOV_concessions_to_radicals 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#add_ideas=closed_economy
+			#custom_effect_tooltip = SOV_emergency_war_credit_tt
+			add_ideas = SOV_war_credit
+		}
+	}
+
+	#Focus for Stolypin's Land Reform
+	focus = {
+		id = SOV_stolypins_land_reform
+		icon = GFX_SOV_stolypins_land_reform-45113
+		relative_position_id = SOV_tsar_supremacy
+		x = 2
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_protsar_duma focus = SOV_concessions_to_radicals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus={
+					technology = basic_machine_tools
+					technology = improved_machine_tools
+					technology = flexible_line
+					technology = streamlined_line
+					technology = concentrated_industry
+					technology = concentrated_industry2
+					technology = concentrated_industry3
+					technology = dispersed_industry
+					technology = dispersed_industry2
+					technology = dispersed_industry3
+				name=industry_bonus bonus=2 uses=1
+			}
+			171 = { add_extra_state_shared_building_slots = 4}
+			126 = { add_extra_state_shared_building_slots = 4 }
+			331 = { add_extra_state_shared_building_slots = 4 } 
+			174 = { add_extra_state_shared_building_slots = 2 }
+			183 = { add_extra_state_shared_building_slots = 2 }  
+			179 = { add_extra_state_shared_building_slots = 2 } 
+			178 = {add_extra_state_shared_building_slots = 2 } 
+			182 = {add_extra_state_shared_building_slots = 2 } 
+			185 = {add_extra_state_shared_building_slots = 2 } 
+			186 = {add_extra_state_shared_building_slots = 2 } 
+			180 = {add_extra_state_shared_building_slots = 2 } 
+			181 = {add_extra_state_shared_building_slots = 2 } 
+			209 = {add_extra_state_shared_building_slots = 2 }
+			208 = {add_extra_state_shared_building_slots = 2 }  
+			198 = {add_extra_state_shared_building_slots = 2 } 
+			210 = {add_extra_state_shared_building_slots = 2 }
+		}
+	}
+	
+	#Focus for Statute on Land Organization
+	focus = {
+		id = SOV_statute_on_land_organization
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id=SOV_stolypins_land_reform
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stolypins_land_reform }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={ add_stability= 0.1 }
+	}
+	
+	#Focus for Abolish Obshchina System
+	focus = {
+		id = SOV_abolish_obshchina_system
+		icon = GFX_goal_generic_position_armies
+		relative_position_id=SOV_stolypins_land_reform
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stolypins_land_reform }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward={ add_political_power= 150 }
+	}
+
+	#Focus for Peasant Land Bank
+	focus = {
+		id = SOV_peasant_land_bank
+		icon = GFX_focus_mex_privatisation
+		relative_position_id=SOV_stolypins_land_reform
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stolypins_land_reform }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={ add_stability= 0.1 }
+	}
+	
+	###################################
+	###Balkan Allies
+	##################################
+	
+	#Focus for Orthodox Brotherhood
+	focus = {
+		id = SOV_orthodox_brotherhood
+		icon = GFX_SOV_orthodox_brotherhood-45155
+		x = 24
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#add_opinion_modifier= { target = GRE modifier = HOI4TGW_Opinion_give_weapons }
+			#add_opinion_modifier= { target = SER modifier = HOI4TGW_Opinion_give_weapons }
+			add_political_power = 20
+        }
+	}
+	
+	#Focus for Support Greece
+	focus = {
+		id = SOV_support_greece
+		#icon = GFX_SOV_support_greece-45157
+		icon = GFX_focus_generic_befriend_greece
+		relative_position_id=SOV_orthodox_brotherhood
+		x = -2
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_orthodox_brotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			GRE = {
+				add_equipment_to_stockpile= {
+				type = infantry_equipment_1
+				amount = 45000 
+				producer = GRE 
+				}
+			}
+		}
+	}
+	
+	#Focus for Support Romania
+	focus = {
+		id = SOV_support_romania
+		#icon = GFX_SOV_support_greece-45157
+		icon = GFX_focus_rom_preserve_romania
+		relative_position_id=SOV_orthodox_brotherhood
+		x = 0
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_orthodox_brotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			ROM = {
+				add_equipment_to_stockpile= {
+				type = train_equipment_1
+				amount = 150 
+				producer = ROM 
+				}
+				add_equipment_to_stockpile= {
+				type = motorized_equipment_1
+				amount = 2000 
+				producer = ROM 
+				}
+			}
+		}
+	}
+
+	#Focus for Support Serbia
+	focus = {
+		id = SOV_support_serbia
+		icon = GFX_SOV_support_serbia-45156
+		relative_position_id=SOV_orthodox_brotherhood
+		x = 2
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_orthodox_brotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			SER = {
+				add_equipment_to_stockpile= {
+				type = support_equipment
+				amount = 1500 
+				producer = SER 
+				}
+			}
+		}
+	}
+	
+	#Focus for Czechoslovak Legions
+	focus = {
+		id = SOV_czech_legions
+		icon = GFX_focus_generic_manpower
+		relative_position_id=SOV_orthodox_brotherhood
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_orthodox_brotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+				technology = jaegers
+				technology = jaegers2
+				technology = jaegers3
+				technology = Stormtroopers
+				technology = Stormtroopers2
+				technology = Stormtroopers3
+				technology = tech_special_forces
+				technology = advanced_special_forces
+				technology = extreme_environment_training
+				technology = improved_special_forces
+				technology = survival_training
+				technology = elite_forces
+            }
+        }
+	}
+	
+	#Focus for Franco-Russian Alliance
+	focus = {
+		id = SOV_franco_russian_alliance
+		icon = GFX_focus_chi_reach_out_to_france
+		relative_position_id=SOV_orthodox_brotherhood
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SOV_orthodox_brotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+		available={date>1912.7.1}
+		completion_reward = {
+			add_political_power=-100
+			if={
+				limit={NOT={SOV={has_tech=light_field_gun2}}}
+				set_technology={light_field_gun2=1}
+			}
+			add_equipment_to_stockpile = {
+				type = light_field_gun_equipment
+				amount = 400
+				producer = SOV
+			}
+		}
+	}
+	
+	###################################
+	#### Army Reform
+	####################################
+	
+	focus = {
+		id = SOV_tsar_personal_command
+		icon = GFX_SOV_tsar_personal_command-45145
+		relative_position_id=SOV_main_directorate_of_the_general_staff
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		prerequisite = { focus = SOV_main_directorate_of_the_general_staff }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_tsar_personal_command_tt
+				SOV_lost_1_city=yes
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_incompetent_stavka
+				add_idea = SOV_incompetent_stavka_tsar
+			}
+			random_unit_leader = { #Nicholas II
+				limit = { has_id = 70484 }
+				add_unit_leader_trait = militias_officer
+				add_unit_leader_trait = irregulars_officer
+				add_skill_level = 1
+				add_defense = 1
+				add_logistics = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_promote_competent_generals
+		icon = GFX_SOV_promote_competent_generals-45143
+		relative_position_id=SOV_tsar_personal_command
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		prerequisite = { focus = SOV_tsar_personal_command }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_promote_competent_generals_tt
+				SOV_lost_2_city=yes
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_incompetent_stavka_tsar
+				add_idea = SOV_reformed_stavka
+			}
+			#SOV_aleksei_brusilov = { ##Doing it this way puts a little russian flag following the leader name in the focus tooltip; legacy way looks cleaner ingame
+			#	add_unit_leader_trait = logistics_wizard
+			#	add_attack = 2
+			#	add_planning = 1
+			#}
+			random_unit_leader = {	#Brusilov
+				limit = { has_id = 76187 }
+				add_unit_leader_trait = logistics_wizard
+				add_unit_leader_trait = aggressive_assaulter
+				add_unit_leader_trait = swamp_fox
+				add_skill_level = 1
+				add_logistics = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_the_russian_steamroller
+		icon = GFX_focus_SOV_restore_cossack_units
+		#icon = GFX_focus_SOV_organization_centralization_discipline
+		relative_position_id=SOV_promote_competent_generals
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		prerequisite = { focus = SOV_promote_competent_generals }
+		available={
+			custom_trigger_tooltip = {
+				tooltip = SOV_the_russian_steamroller_tt
+				SOV_lost_3_city=yes
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_reformed_stavka
+				add_idea = SOV_russian_steamroller
+			}
+			every_unit_leader={
+				limit={ NOT={ has_id=76428 } } #Only Denikin starts with them
+				add_unit_leader_trait = winter_specialist
+				add_unit_leader_trait = winter_expert
+			}
+		}
+	}
+
+             #################################################
+focus = {
+		id = SOV_ww1_army_effort_1
+		icon = GFX_goal_generic_allies_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_1 }
+		cost = 5
+		x = 45
+		y = 1
+		}
+focus = {
+		id = SOV_ww1_equipment_effort_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_1 }
+		cost = 5
+		x = 37
+		y = 1
+	}
+focus = {
+		id = SOV_ww1_artillery_effort_1
+		prerequisite = { }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_1 }
+		cost = 5
+		x = 39
+		y = 1
+	}
+focus = {
+		id = SOV_ww1_aircraftprod_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_1 }
+		cost = 5
+		x = 41
+		y = 1
+	}
+focus = {
+		id = SOV_ww1_large_navy_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_1 }
+		cost = 5
+		x = 43
+		y = 1
+		
+		}
+
+	##############################################################################
+
+focus = {
+		id = SOV_ww1_army_effort_2
+		prerequisite = { focus=SOV_ww1_army_effort_1
+		 focus=SOV_ww1_equipment_effort_1
+		 focus=SOV_ww1_artillery_effort_1
+		 focus=SOV_ww1_aircraftprod_1
+		 focus=SOV_ww1_large_navy_1}
+		icon = GFX_goal_generic_allies_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_2 }
+		cost = 5
+		x = 45
+		y = 2
+		}
+focus = {
+		id = SOV_ww1_equipment_effort_2
+		prerequisite = { focus=SOV_ww1_army_effort_1
+		 focus=SOV_ww1_equipment_effort_1
+		 focus=SOV_ww1_artillery_effort_1
+		 focus=SOV_ww1_aircraftprod_1
+		 focus=SOV_ww1_large_navy_1}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_2}
+		cost = 5
+		x = 37
+		y = 2
+	}
+focus = {
+		id = SOV_ww1_artillery_effort_2
+		prerequisite = { focus=SOV_ww1_army_effort_1
+		 focus=SOV_ww1_equipment_effort_1
+		 focus=SOV_ww1_artillery_effort_1
+		 focus=SOV_ww1_aircraftprod_1
+		 focus=SOV_ww1_large_navy_1}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_2 }
+		cost = 5
+		x = 39
+		y = 2
+	}
+focus = {
+		id = SOV_ww1_aircraftprod_2
+		prerequisite = { focus=SOV_ww1_army_effort_1
+		focus=SOV_ww1_equipment_effort_1
+		focus=SOV_ww1_artillery_effort_1
+		focus=SOV_ww1_aircraftprod_1
+		focus=SOV_ww1_large_navy_1}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_2 }
+		cost = 5
+		x = 41
+		y = 2
+	}
+focus = {
+		id = SOV_ww1_large_navy_2
+		prerequisite = { focus=SOV_ww1_army_effort_1
+		focus=SOV_ww1_equipment_effort_1
+		focus=SOV_ww1_artillery_effort_1
+		focus=SOV_ww1_aircraftprod_1
+		focus=SOV_ww1_large_navy_1}
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_2 }
+		cost = 5
+		x = 43
+		y = 2
+	}
+	################################################################
+
+focus = {
+		id = SOV_ww1_army_effort_3
+		prerequisite = { focus=SOV_ww1_army_effort_2
+		 focus=SOV_ww1_equipment_effort_2
+		 focus=SOV_ww1_artillery_effort_2
+		 focus=SOV_ww1_aircraftprod_2
+		 focus=SOV_ww1_large_navy_2}
+		icon = GFX_goal_generic_allies_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_3 }
+		cost = 5
+		x = 45
+		y = 3
+		}
+focus = {
+		id = SOV_ww1_equipment_effort_3
+		prerequisite = { focus=SOV_ww1_army_effort_2
+		 focus=SOV_ww1_equipment_effort_2
+		 focus=SOV_ww1_artillery_effort_2
+		 focus=SOV_ww1_aircraftprod_2
+		 focus=SOV_ww1_large_navy_2}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_3}
+		cost = 5
+		x = 37
+		y = 3
+	}
+focus = {
+		id = SOV_ww1_artillery_effort_3
+		prerequisite = { focus=SOV_ww1_army_effort_2
+		 focus=SOV_ww1_equipment_effort_2
+		 focus=SOV_ww1_artillery_effort_2
+		 focus=SOV_ww1_aircraftprod_2
+		 focus=SOV_ww1_large_navy_2}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_3 }
+		cost = 5
+		x = 39
+		y = 3
+	}
+focus = {
+		id = SOV_ww1_aircraftprod_3
+		prerequisite = { focus=SOV_ww1_army_effort_2
+		focus=SOV_ww1_equipment_effort_2
+		focus=SOV_ww1_artillery_effort_2
+		focus=SOV_ww1_aircraftprod_2
+		focus=SOV_ww1_large_navy_2}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_3 }
+		cost = 5
+		x = 41
+		y = 3
+	}
+focus = {
+		id = SOV_ww1_large_navy_3
+		prerequisite = { focus=SOV_ww1_army_effort_2
+		focus=SOV_ww1_equipment_effort_2
+		focus=SOV_ww1_artillery_effort_2
+		focus=SOV_ww1_aircraftprod_2
+		focus=SOV_ww1_large_navy_2 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_3 }
+		cost = 5
+		x = 43
+		y = 3
+	}
+	################################################################
+
+focus = {
+		id = SOV_ww1_army_effort_4
+		prerequisite = { focus=SOV_ww1_army_effort_3
+		 focus=SOV_ww1_equipment_effort_3
+		 focus=SOV_ww1_artillery_effort_3
+		 focus=SOV_ww1_aircraftprod_3
+		 focus=SOV_ww1_large_navy_3}
+		icon = GFX_goal_generic_allies_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_4 }
+		cost = 5
+		x = 45
+		y = 4
+		}
+focus = {
+		id = SOV_ww1_equipment_effort_4
+		prerequisite = { focus=SOV_ww1_army_effort_3
+		 focus=SOV_ww1_equipment_effort_3
+		 focus=SOV_ww1_artillery_effort_3
+		 focus=SOV_ww1_aircraftprod_3
+		 focus=SOV_ww1_large_navy_3}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_4 }
+		cost = 5
+		x = 37
+		y = 4
+	}
+focus = {
+		id = SOV_ww1_artillery_effort_4
+		prerequisite = { focus=SOV_ww1_army_effort_3
+		 focus=SOV_ww1_equipment_effort_3
+		 focus=SOV_ww1_artillery_effort_3
+		 focus=SOV_ww1_aircraftprod_3
+		 focus=SOV_ww1_large_navy_3 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_4 }
+		cost = 5
+		x = 39
+		y = 4
+	}
+focus = {
+		id = SOV_ww1_aircraftprod_4
+		prerequisite = { focus=SOV_ww1_army_effort_3
+		focus=SOV_ww1_equipment_effort_3
+		focus=SOV_ww1_artillery_effort_3
+		focus=SOV_ww1_aircraftprod_3
+		focus=SOV_ww1_large_navy_3}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_4 }
+		cost = 5
+		x = 41
+		y = 4
+	}
+focus = {
+		id = SOV_ww1_large_navy_4
+		prerequisite = { focus=SOV_ww1_army_effort_3
+		focus=SOV_ww1_equipment_effort_3
+		focus=SOV_ww1_artillery_effort_3
+		focus=SOV_ww1_aircraftprod_3
+		focus=SOV_ww1_large_navy_3 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_4 }
+		cost = 5
+		x = 43
+		y = 4
+	}
+
+   ############################################################################
+ 	################################################################
+
+focus = {
+		id = SOV_ww1_army_effort_5
+		prerequisite = { focus=SOV_ww1_army_effort_4
+		 focus=SOV_ww1_equipment_effort_4
+		 focus=SOV_ww1_artillery_effort_4
+		 focus=SOV_ww1_aircraftprod_4
+		 focus=SOV_ww1_large_navy_4}
+		icon = GFX_goal_generic_allies_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_5 }
+		cost = 5
+		x = 45
+		y = 5
+		}
+focus = {
+		id = SOV_ww1_equipment_effort_5
+		prerequisite = { focus=SOV_ww1_army_effort_4
+		 focus=SOV_ww1_equipment_effort_4
+		 focus=SOV_ww1_artillery_effort_4
+		 focus=SOV_ww1_aircraftprod_4
+		 focus=SOV_ww1_large_navy_4}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_5 }
+		cost = 5
+		x = 37
+		y = 5
+	}
+focus = {
+		id = SOV_ww1_artillery_effort_5
+		prerequisite = { focus=SOV_ww1_army_effort_4
+		 focus=SOV_ww1_equipment_effort_4
+		 focus=SOV_ww1_artillery_effort_4
+		 focus=SOV_ww1_aircraftprod_4
+		 focus=SOV_ww1_large_navy_4 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_5 }
+		cost = 5
+		x = 39
+		y = 5
+	}
+focus = {
+		id = SOV_ww1_aircraftprod_5
+		prerequisite = { focus=SOV_ww1_army_effort_4
+		focus=SOV_ww1_equipment_effort_4
+		focus=SOV_ww1_artillery_effort_4
+		focus=SOV_ww1_aircraftprod_4
+		focus=SOV_ww1_large_navy_4}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_large_navy_5 }
+		cost = 5
+		x = 41
+		y = 5
+	}
+focus = {
+		id = SOV_ww1_large_navy_5
+		prerequisite = { focus=SOV_ww1_army_effort_4
+		focus=SOV_ww1_equipment_effort_4
+		focus=SOV_ww1_artillery_effort_4
+		focus=SOV_ww1_aircraftprod_4
+		focus=SOV_ww1_large_navy_4 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = SOV_ww1_army_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = SOV_ww1_aircraftprod_5 }
+		cost = 5
+		x = 43
+		y = 5
+	}
+
+   ############################################################################
+focus = {
+		id = SOV_ww1_armor_effort_1
+		prerequisite = { focus=SOV_ww1_army_effort_5
+		focus=SOV_ww1_equipment_effort_5
+		focus=SOV_ww1_artillery_effort_5
+		focus=SOV_ww1_aircraftprod_5
+		focus=SOV_ww1_large_navy_5 }
+		#icon = GFX_hoi4tgw_renaultft
+		icon = GFX_focus_rus_medium_tank
+		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=1 uses=2 category=armor } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 39
+		y = 6
+	}
+}

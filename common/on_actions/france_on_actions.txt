@@ -1,0 +1,64 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+		
+			if = {			#Nantes, Bordeaux, Paris, Dijon, Lyons
+				limit = {
+					FROM.FROM = {
+						OR = {
+							state = 51
+							state = 53
+							state = 55
+							state = 62
+							state = 67
+						}
+					}
+					FRA = {
+						has_war_with = GER
+						NOT = { has_global_flag = french_surrender }
+					}
+				}
+				if = {				#CP captures
+					limit = {
+						FROM = {
+							OR = {
+								tag = FRA
+								is_in_faction_with = FRA
+							}
+						}
+						ROOT = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+						}
+					}
+					FRA = {
+						FRA_cities_level_down = yes
+					}
+				}
+				else_if = {			#France retakes
+					limit = {
+						FROM = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+						}
+						ROOT = {
+							OR = {
+								tag = FRA
+								is_in_faction_with = FRA
+							}
+						}
+					}
+					FRA = {
+						FRA_cities_level_up = yes
+					}
+				}
+			}
+			
+		}
+	}
+}

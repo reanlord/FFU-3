@@ -1,0 +1,50 @@
+﻿
+###################################################################
+
+#division_template = {
+#	name = "Legiony Polskie"
+#	regiments = {
+#		infantry = { x = 0 y = 0 }
+#		infantry = { x = 0 y = 1 }
+#		infantry = { x = 0 y = 2 }
+#		infantry = { x = 1 y = 0 }
+#		infantry = { x = 1 y = 1 }
+#		infantry = { x = 1 y = 2 }
+#		infantry = { x = 2 y = 0 }
+#		infantry = { x = 2 y = 1 }
+#		infantry = { x = 2 y = 2 }
+#		artillery_brigade = { x = 3 y = 0 }
+#		artillery_brigade = { x = 3 y = 1 }
+#		artillery_brigade = { x = 3 y = 2 }	
+#		artillery_brigade = { x = 4 y = 0 }
+#		artillery_brigade = { x = 4 y = 1 }
+#		artillery_brigade = { x = 4 y = 2 }
+#		
+#	}
+#	support = {
+#		gunner_support = { x = 0 y = 0 }
+#		artillery = { x = 0 y = 1 }
+#		recon = { x = 0 y = 2 }
+#		engineer = { x = 1 y = 0 }
+#		logistics_company = { x = 1 y = 1 }
+#	}
+#}
+
+###################################################################
+
+#units = {
+	#division= { 
+	#	name = "Legion Polski"
+	#	location = 5036
+	#	division_template="Legiony Polskie"
+	#	start_experience_factor=0.65
+	#	start_manpower_factor=1.0
+	#	start_equipment_factor=0.001
+	#}
+#}
+
+instant_effect = {
+    add_equipment_production = { equipment = { type = support_equipment_1 creator = "POL"  } requested_factories = 2 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:POL_infantry_equipment_organization }
+	add_equipment_production = { equipment = { type = machine_gun_equipment_1 creator = "POL" } requested_factories = 2 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:POL_infantry_equipment_organization }
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "POL" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:POL_infantry_equipment_organization }
+}

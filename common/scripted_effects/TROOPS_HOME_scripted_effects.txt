@@ -1,0 +1,607 @@
+##Balkan War
+GRE_troops_home_capital={
+	every_state={
+		teleport_armies={
+			limit={original_tag=GRE}
+		}
+	}
+}
+MNT_troops_home_capital={
+	every_state={
+		teleport_armies={
+			limit={original_tag=MNT}
+		}
+	}
+}
+SER_troops_home_capital={
+	every_state={
+		teleport_armies={
+			limit={original_tag=SER}
+		}
+	}
+}
+TUR_troops_home_capital={
+	every_state={
+		teleport_armies={
+			limit={original_tag=TUR}
+		}
+	}
+}
+BUL_troops_home_capital={
+	every_state={
+		teleport_armies={
+			limit={original_tag=BUL}
+		}
+	}
+}
+ROM_troops_home_capital={
+	every_state={
+		teleport_armies={
+			limit={original_tag=ROM}
+		}
+	}
+}
+
+##Italy Armistice
+
+##Brest-Litovsk TPs
+GER_troops_home_brestlitovsk={
+	if={
+		limit={GER={controls_state=23}}		#Konigsberg
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=GER}
+				to_state=9249
+			}
+		}
+	}
+	else_if={
+		limit={GER={controls_state=81}}		#Danzig
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=GER}
+				to_state=5030
+			}
+		}
+	}
+	else_if={
+		limit={GER={controls_state=240}}	#Poznan
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=GER}
+				to_state=13838
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=GER}
+			}
+		}
+	}
+}
+
+AUS_troops_home_brestlitovsk={
+	if={
+		limit={AUS={controls_state=285}}	#Krakow
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=AUS}
+				to_state=2174
+			}
+		}
+	}
+	else_if={
+		limit={AUS={controls_state=105}}	#Northern Hungary
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=AUS}
+				to_state=19994
+			}
+		}
+	}
+	else_if={
+		limit={AUS={controls_state=98}}		#Bohemia
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=AUS}
+				to_state=11129
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=AUS}
+			}
+		}
+	}
+}
+
+POL_troops_home_brestlitovsk={
+	if={
+		limit={POL={controls_state=279}}	#Warsaw
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=POL}
+				to_state=3016
+			}
+		}
+	}
+	else_if={
+		limit={POL={controls_state=426}}		#Rugen
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=POL}
+				to_state=5036
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=POL}
+			}
+		}
+	}
+}
+
+BUL_troops_home_brestlitovsk={
+	if={
+		limit={BUL={controls_state=147}}	#Sofia
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=BUL}
+				to_state=8047
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=BUL}
+			}
+		}
+	}
+}
+
+TUR_troops_home_brestlitovsk={
+	if={
+		limit={TUR={controls_state=263}}	#Trabzon
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=TUR}
+				to_state=8911
+			}
+		}
+	}
+	else_if={
+		limit={TUR={controls_state=254}}	#Ankara
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=TUR}
+				to_state=19705
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=TUR}
+			}
+		}
+	}
+}
+
+LBA_troops_home_brestlitovsk={
+	if={
+		limit={BUL={controls_state=147}}	#Sofia
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=LBA}
+				to_state=8047
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=LBA}
+			}
+		}
+	}
+}
+
+SOV_troops_home_brestlitovsk={
+	if={
+		limit={SOV={controls_state=334}}	#Tatarstan
+		every_state={
+			teleport_armies={
+				limit={original_tag=SOV}
+				to_state=9754
+			}
+		}
+	}
+	else_if={
+		limit={SOV={controls_state=225}}	#Kirov
+		every_state={
+			teleport_armies={
+				limit={original_tag=SOV}
+				to_state=62
+			}
+		}
+	}
+	else_if={
+		limit={SOV={controls_state=316}}	#Orenburg
+		every_state={
+			teleport_armies={
+				limit={original_tag=SOV}
+				to_state=4202
+			}
+		}
+	}
+	else={
+		every_state={
+			teleport_armies={
+				limit={original_tag=SOV}
+			}
+		}
+	}
+}
+
+FRA_troops_home_brestlitovsk={
+	if={
+		limit={FRA={controls_state=53}}		#Aquitaine
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=FRA}
+				to_state=19852
+			}
+		}
+	}
+	else_if={
+		limit={FRA={controls_state=63}}	#Provence
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=FRA}
+				to_state=20005
+			}
+		}
+	}
+	else_if={
+		limit={FRA={controls_state=3}}	#Bretagne
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=FRA}
+				to_state=19536
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=FRA}
+			}
+		}
+	}
+}
+
+ENG_troops_home_brestlitovsk={
+	if={
+		limit={ENG={controls_state=6}}		#London
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ENG}
+				to_state=19436
+			}
+		}
+	}
+	else_if={
+		limit={ENG={controls_state=9}}		#West Midlands
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ENG}
+				to_state=10053
+			}
+		}
+	}
+	else_if={
+		limit={ENG={controls_state=22}}		#Leinster
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ENG}
+				to_state=7383
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ENG}
+			}
+		}
+	}
+}
+
+ITA_troops_home_brestlitovsk={
+	if={
+		limit={ITA={controls_state=37}}		#Piedmont
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ITA}
+				to_state=15555
+			}
+		}
+	}
+	else_if={
+		limit={ITA={controls_state=33}}		#Latium
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ITA}
+				to_state=15191
+			}
+		}
+	}
+	else_if={
+		limit={ITA={controls_state=31}}		#Campania
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ITA}
+				to_state=5613
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=ITA}
+			}
+		}
+	}
+}
+
+BEL_troops_home_brestlitovsk={
+	if={
+		limit={BEL={controls_state=35}}		#Channel Islands
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=BEL}
+				to_state=17314
+			}
+		}
+	}
+	else_if={
+		limit={ENG={controls_state=6}}		#London
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=BEL}
+				to_state=19436
+			}
+		}
+	}
+	else={
+		every_state={
+			limit={
+				is_core_of=SOV
+			}
+			teleport_armies={
+				limit={original_tag=BEL}
+			}
+		}
+	}
+}
+
+ROM_troops_home_brestlitovsk={
+	#Temporary
+	if={
+		limit={ ROM={has_war=no} ENG={controls_state=425} }	#Saint Lawrence
+		every_state={
+			limit={
+				is_core_of=SOV
+				NOT={
+					AND={
+						state=112
+						112={is_owned_by=ROM}
+					}
+				}
+			}
+			teleport_armies={
+				limit={original_tag=ROM}
+				#to_state=18199
+			}
+		}
+	}
+}
+
+ROM_troops_home_brestlitovsk_old={
+	if={
+		limit={
+			ROM={has_war=yes}
+		}
+		if={
+			limit={ROM={controls_state=111}}		#Mutentia
+			every_state={
+				limit={
+					is_core_of=SOV
+					NOT={
+						AND={
+							state=112
+							112={is_controlled_by=ROM}
+						}
+					}
+				}
+				teleport_armies={
+					limit={original_tag=ROM}
+					to_state=11566
+				}
+			}
+		}
+		else_if={
+			limit={ROM={controls_state=236}}		#Moldova
+			every_state={
+				limit={
+					is_core_of=SOV
+					NOT={
+						AND={
+							state=112
+							112={is_controlled_by=ROM}
+						}
+					}
+				}
+				teleport_armies={
+					limit={original_tag=ROM}
+					to_state=621
+				}
+			}
+		}
+		else_if={
+			limit={ROM={controls_state=365}}		#North Dobrudja
+			every_state={
+				limit={
+					is_core_of=SOV
+					NOT={
+						AND={
+							state=112
+							112={is_controlled_by=ROM}
+						}
+					}
+				}
+				teleport_armies={
+					limit={original_tag=ROM}
+					to_state=10842
+				}
+			}
+		}
+		else={
+			every_state={
+				limit={
+					is_core_of=SOV
+					NOT={
+						AND={
+							state=112
+							112={is_controlled_by=ROM}
+						}
+					}
+				}
+				teleport_armies={
+					limit={original_tag=ROM}
+				}
+			}
+		}
+	}
+	else_if={
+		limit={ENG={controls_state=425}}	#Saint Lawrence
+		every_state={
+			limit={
+				is_core_of=SOV
+				NOT={
+					AND={
+						state=112
+						112={is_owned_by=ROM}
+					}
+				}
+			}
+			teleport_armies={
+				limit={original_tag=ROM}
+				to_state=18199
+			}
+		}
+	}
+}

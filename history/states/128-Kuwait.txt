@@ -1,0 +1,41 @@
+
+state={
+	id=128
+	name="STATE_128"
+
+	history={
+		set_state_flag = ENG_controls
+		add_core_of = TUR
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			air_base=1
+			68 = {
+				naval_base = 4
+			}
+		}
+
+		victory_points = {
+			68 5 
+		}
+
+		1911.1.1.4 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		68 791 938 1070 2576 3723 3809 4023 4710 5269 8477 8851 9129 10818 11635 16579 16590 16624 16638 17389  
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	resources = {
+		oil = 20
+		rubber = 25
+		tungsten = 16
+		wood = 12
+		chromium = 10
+	}
+}

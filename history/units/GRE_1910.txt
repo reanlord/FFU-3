@@ -1,0 +1,196 @@
+
+###################################################################
+
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }		
+		
+	}
+	support = {
+		gunner_support = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Artillery Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }	
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		
+	}
+	support = {
+		gunner_support = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+###################################################################
+
+units = {
+	division= { 
+		name = "I Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.15
+	}
+	
+	
+	division= { 
+		name = "II Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.15
+	}
+	
+	
+	division= { 
+		name = "XIII Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+	
+	
+	division= { 
+		name = "III Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+	
+	
+	division= { 
+		name = "IV Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.15
+	}
+	
+	
+	division= { 
+		name = "XIV Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.1              
+	}
+	
+	
+	division= { 
+		name = "X Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+	
+	
+	division= { 
+		name = "XI Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+	
+	
+	division= { 
+		name = "XII Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+	
+	
+	division= { 
+		name = "V Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.2
+	}
+	
+	
+	division= { 
+		name = "VI Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.2
+	}
+	
+	
+	division= { 
+		name = "VII Merarchia"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.05
+	}
+
+	division= { 
+		name = "XI Merarchia"
+		location = 16491 # Athens
+		division_template="Artillery Division"
+		start_experience_factor=0.75
+	}
+
+	division= { 
+		name = "XII Merarchia"
+		location = 16491 # Athens
+		division_template="Artillery Division"
+		start_experience_factor=0.75
+	}
+
+	division= { 
+		name = "XIII Merarchia"
+		location = 16491 # Athens
+		division_template="Artillery Division"
+		start_experience_factor=0.75
+	}
+	
+	
+	division= { 
+		name = "Thessaloniki Frourio"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.05
+	}
+	
+	
+	division= { 
+		name = "Ioannina Frourio"
+		location = 16491 # Athens
+		division_template="Infantry Division"
+		start_experience_factor=0.05
+	}
+}
+
+instant_effect = {
+    add_equipment_production = { equipment = { type = train_equipment_1 creator = "GRE" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:GRE_infantry_tank_organization }
+    add_equipment_production = { equipment = { type = support_equipment_1 creator = "GRE"  } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:GRE_infantry_equipment_organization }
+	add_equipment_production = { equipment = { type = heavy_field_gun_equipment_1 creator = "GRE" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:GRE_artillery_organization }
+    add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "GRE" } requested_factories = 2 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:GRE_infantry_equipment_organization }
+}

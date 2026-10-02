@@ -1,0 +1,111 @@
+music_station = "Entente_MMCT"
+music = {
+    song = "chanson_de_lOignon"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = FRA
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "its_a_long_way_to_tipperary"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = ENG
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "oh_its_a_lovely_war"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = ENG
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "over_there"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = ENG
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "the_tanks_that_broke_the_ranks"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = ENG
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "well_never_let_the_old_flag_fall"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = ENG
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "when_we_were_at_war"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = SOV
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "farewell_of_slavianka"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = SOV
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "ditties_about_the_first_world_War"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = SOV
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "march_of_the_siberian_riflemen"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = SOV
+            factor = 2
+        }
+    }
+}

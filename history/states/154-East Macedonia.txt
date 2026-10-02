@@ -1,0 +1,41 @@
+
+state={
+	id=154
+	name="STATE_154"
+	provinces={
+		5766 7292 8269 8519 10631 11559 15842 15874 15959 
+	}
+	manpower=75000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	resources = {
+		tungsten = 27
+		wood = 10
+		aluminium = 14
+		coal = 18
+	}
+	history = {
+		owner = TUR
+		add_core_of = SWI
+		add_extra_state_shared_building_slots = 10
+		buildings={
+			infrastructure=4
+		}
+		victory_points = {
+			7292 2
+		}
+		victory_points = {
+			10631 2
+		}
+		victory_points = {
+			11559 2
+		}
+		victory_points = {
+			8269 2
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+}

@@ -1,0 +1,6 @@
+focus_tree = {
+	id = norwegian_focus
+	default = no
+	reset_on_civilwar = no
+	country = {factor=0 modifier={add=10 tag=NOR}}
+}

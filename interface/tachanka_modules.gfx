@@ -1,0 +1,70 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_tachanka_horse_engine"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_horse_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_motorized_engine"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_motorized_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_radio"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_radio.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_some_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_some_armor.dds"
+	}
+ 	spriteType = {
+		name = "GFX_EMI_tachanka_proper_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_proper_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_no_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_no_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_one_man_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_one_man_turret.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_two_man_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_two_man_turret.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_three_man_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_three_man_turret.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_four_man_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_four_man_turret.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_better_breed_and_fuel"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_better_breed_and_fuel.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_small_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_small_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_close_support_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_close_support_gun.dds"
+	}
+ 	spriteType = {
+		name = "GFX_EMI_tachanka_heavy_machine_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_heavy_machine_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_additional_machine_guns"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_additional_machine_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_extra_mg_belts"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_extra_mg_belts.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tachanka_wet_ammo_storage"
+		textureFile = "gfx/interface/equipmentdesigner/tachanka/modules/tachanka_wet_ammo_storage.dds"
+	}	
+}

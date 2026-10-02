@@ -1,0 +1,318 @@
+ideas={
+	naval_manufacturer={
+		tersane_i_amire_istanbul={ allowed={ original_TAG=TUR } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_2 }
+	}
+	aircraft_manufacturer={
+		vecihi_hurkush={ allowed={ original_TAG=TUR } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
+	}
+	materiel_manufacturer={
+			tophane_i_amire={ allowed={ original_TAG=TUR } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
+	}
+	industrial_concern={
+		mkek={
+			allowed={ original_TAG=TUR }
+			research_bonus = {
+				industry = 0.10
+			}
+			traits={ industrial_concern }
+			picture=generic_tank_manufacturer_2
+		}
+	}
+    country = {
+		
+		TUR_german_trade_deal = {
+			ledger = army
+			picture = free_trade
+			targeted_modifier = {
+				tag=GER
+				#extra_trade_to_target_factor=0.10
+				trade_cost_for_target_factor=-0.50
+			}
+		}
+
+		TUR_minority_military_service_exemptions = {
+			ledger = army
+			picture = SPR_disbanded_army
+			modifier = {
+				conscription_factor = -0.2
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		TUR_outdated_army_1 = {
+			ledger = army
+			picture = TUR_outdated_army-96313
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+                army_morale_factor = -0.1
+				army_org_factor = -0.3
+                acclimatization_cold_climate_gain_factor = -0.50
+                experience_gain_army_factor = -0.30
+				dig_in_speed_factor = -0.4
+				max_dig_in_factor=-0.20
+			}
+		}
+
+		TUR_outdated_army_2 = {
+			ledger = army
+			picture = TUR_outdated_army-96313
+			modifier = {
+				army_attack_factor = -0.05
+                army_morale_factor = -0.05
+                acclimatization_cold_climate_gain_factor = -0.50
+                experience_gain_army_factor = -0.10
+				max_dig_in_factor=-0.10
+			}
+		}
+		
+		ww1_Faith_Allah = {
+			allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1
+
+			modifier = {
+				army_org_factor = 0.05
+				communism_drift = -0.05
+				conscription = 0.01
+			}
+		}
+		
+		TUR_islam_2 = {
+			allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1
+			picture = ww1_Faith_Allah
+			modifier = {
+				army_org_factor = 0.05
+				communism_drift = -0.05
+				conscription = 0.02
+			}
+		}
+		
+		TUR_islam_3 = {
+			allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1
+			picture = tur_kemalist_army_officers_limited_powers_effect
+			modifier = {
+				army_strength_factor = -0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.20
+				communism_drift = -0.05
+				conscription = 0.025
+			}
+		}
+
+		TUR_1914_law_of_military_obligation = {
+			ledger = army
+			picture = TUR_1914_law_of_military_obligation-96239
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		TUR_office_of_war_industry = {
+			ledger = army
+			picture = TUR_office_of_war_industry-96211
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic=-0.05 instant=yes }
+                support_equipment = { build_cost_ic=-0.05 instant=yes }
+				machine_gun_equipment = { build_cost_ic=-0.05 instant=yes }
+			}
+		}
+
+		TUR_imperial_arsenal = {
+			ledger = army
+			picture = TUR_imperial_arsenal-96314
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				production_speed_dockyard_factor = 0.15
+				refit_ic_cost = -0.2
+				refit_speed = 0.2
+			}
+		}
+
+		TUR_1913_taxation_exemptions = {
+			picture = gre_schachtplan
+			modifier = {
+			consumer_goods_expected_value = -0.05 }
+		}
+
+		TUR_turkish_equipment_modernization = {
+			ledger = army
+			picture = TUR_turkish_equipment_modernization-96312
+			modifier = {
+				license_infantry_eq_production_speed_factor = 0.1 
+				license_artillery_eq_production_speed_factor = 0.1 
+				equipment_conversion_speed = 0.1
+			}
+		}
+
+		TUR_foreign_economic_control = {
+			ledger = army
+			picture = gre_schachtplan2
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				min_export = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		TUR_low_literacy = {
+			ledger = army
+			picture = tur_tdpa
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+
+		TUR_domestic_economic_control = {
+			ledger = army
+			picture = TUR_domestic_economic_control-96386
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_infrastructure_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_air_base_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+			}
+		}
+
+		TUR_german_attache = {
+			picture = TUR_german_attach-96390
+			modifier = { experience_gain_army = 0.05 }
+			#research_bonus = {
+			#	land_doctrine = 0.05
+            #    air_doctrine = 0.05
+			#}
+		}
+
+		TUR_schellendorf_plan = {
+			picture = TUR_schellendorf_plan-96391
+			modifier = {
+				army_core_defence_factor = 0.05
+				mobilization_speed = 0.25
+				#supply_consumption_factor = -0.05
+			}
+		}
+
+		TUR_debt_payments = {
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_expected_value = 0.05
+			 }
+		}
+		TUR_OFF = {
+            	allowed = {
+                	original_tag = TUR
+                	always = no #event or decision
+            	}
+            	picture = German_staff_ww1
+				
+				targeted_modifier = {
+					tag = ENG
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.15
+				}
+				targeted_modifier = {
+					tag = SER
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.15
+				}
+				targeted_modifier = {
+					tag = BEL
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.15
+				}
+				modifier = {
+					heat_attrition = -0.50
+					army_speed_factor = 0.10
+					supply_consumption_factor = -0.25
+				}
+        }
+			
+		TUR_trench_0 = {
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		TUR_trench_1 = {
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		TUR_trench_2 = {
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		TUR_trench_3 = {
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		TUR_trench_4 = {
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+	}
+}
+
+

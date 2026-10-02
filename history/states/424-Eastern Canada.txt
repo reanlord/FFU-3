@@ -1,0 +1,29 @@
+
+state={
+	id=424
+	name="STATE_424"
+	state_category = rural
+	resources={
+		aluminium=4 # was: 4.000
+	}
+	history={
+		owner = ENG
+		add_core_of = CAN
+		buildings = {
+			infrastructure = 1
+			18209 = {
+				naval_base = 5
+			}
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		17716 17734 18075 18209 18591 18782 18916 19049 19051 
+	}
+	manpower=318860
+	buildings_max_level_factor=1.000
+}

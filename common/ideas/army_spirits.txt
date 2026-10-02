@@ -1,0 +1,415 @@
+ideas = {
+	academy_spirit = {
+		
+		bold_attack_spirit = {
+			ledger = army
+			modifier = {
+				offence = 0.025
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		tenacious_defense_spirit = {
+			ledger = army			
+			modifier = {
+			    defence = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		meticulous_preparation_spirit = {
+			ledger = army
+			modifier = {
+			    max_planning = 0.05
+				planning_speed = -0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		best_of_the_best_spirit = {
+			ledger = army
+			modifier = {
+				army_intel_to_others = -5.0
+				experience_gain_army_unit_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+
+		}
+		academy_scholarships_spirit = {
+			ledger = army
+			modifier = {
+			    research_speed_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		political_loyalty_spirit = {
+			ledger = army
+			modifier = {
+			    #stability_weekly = 0.001
+			    #war_support_weekly = 0.001
+				party_popularity_stability_factor = 0.15
+				war_support_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		inventive_leadership_spirit = {
+			ledger = army
+			modifier = {
+				experience_gain_army = 0.05
+				planning_speed = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		mobile_warfare_academy_spirit = {
+			ledger = army
+			modifier = {			
+			}
+            research_bonus = {
+                armor = 0.25
+            }
+			#equipment_bonus = {
+				#light_tank_chassis = {					
+				#	build_cost_ic = -0.03 instant = yes
+				#}
+                #heavy_tank_chassis = {					
+				#	build_cost_ic = -0.01 instant = yes
+				#}
+				#super_heavy_tank_chassis = {
+				#	build_cost_ic = -0.05 instant = yes
+				#}
+			#}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		superior_firepower_academy_spirit = {
+			ledger = army
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		theatre_training_spirit = {
+			ledger = army
+			modifier = {
+                acclimatization_cold_climate_gain_factor = 0.3
+                acclimatization_hot_climate_gain_factor = 0.3
+                attrition = -0.2			
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		mass_assault_academy_spirit = {
+			ledger = army
+			modifier = {
+				army_org = 2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	army_spirit = {
+		professional_officer_corps_spirit = {
+			ledger = army
+			modifier = {
+				#land_doctrine_cost_factor = -0.1
+				army_org = 1
+				command_abilities_cost_factor = -0.20
+				command_power_gain = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		elevated_engineering_corps_spirit = {
+			ledger = army
+			modifier = {
+			    industry_repair_factor = 0.25
+				equipment_conversion_speed = 0.15
+                production_factory_start_efficiency_factor = 0.025
+				#railway_gun_bombardment_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		proper_heritage_spirit = {
+			ledger = army
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}
+			equipment_bonus = {
+                #support_equipment = { build_cost_ic=-0.15 instant=yes }
+				tachanka_equipment = { build_cost_ic=-0.05 instant=yes }
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		quick_improvisation_spirit = {
+			ledger = army
+			modifier = {
+				cas_damage_reduction = 0.10				
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		relief_of_command_spirit = {
+			ledger = army
+			modifier = {
+			    stability_factor = 0.1
+				experience_gain_army_factor = 0.20
+				army_advisor_cost_factor = -0.5
+			}
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+		ideological_loyalty_spirit = {
+			ledger = army
+			modifier = {
+				pocket_penalty = -0.10
+				supply_combat_penalties_on_core_factor = -0.10
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		state_serves_the_military_spirit = {
+			ledger = army
+			modifier = {
+				political_power_factor = 0.10
+				mobilization_laws_cost_factor = -0.25
+				war_support_factor = 0.1
+				conscription = 0.01
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		mobile_warfare_army_spirit = {
+			ledger = army
+			modifier = {
+            	experience_gain_motorized_combat_factor = 0.1
+			}
+			equipment_bonus = {
+				armored_car_equipment = {					
+					build_cost_ic = -0.1 instant = yes
+				}
+				motorized_equipment = {					
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		superior_firepower_army_spirit = {
+			ledger = army
+			modifier = {
+				experience_gain_artillery_combat_factor = 0.1
+			}
+			equipment_bonus = {
+				light_field_gun_equipment = {					
+					build_cost_ic = -0.05 instant = yes
+				}
+				rocket_artillery_equipment = {					
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		grand_battleplan_army_spirit = {
+			ledger = army
+			modifier = {
+				naval_invasion_capacity = 3
+				extra_marine_supply_grace = 24
+				naval_invasion_planning_bonus_speed = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		mass_assault_army_spirit = {
+			ledger = army
+			modifier = {
+				experience_gain_infantry_combat_factor = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {					
+					build_cost_ic = -0.05 instant = yes
+				}
+                machine_gun_equipment = {					
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	division_command_spirit = {
+		static_warfare_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_elastic_defense_preferred_weight_factor = 1
+				#tactic_overwhelming_fire_preferred_weight_factor = 1
+				max_dig_in_factor = 0.1
+				dig_in_speed_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		flexible_organization_spirit = {
+			ledger = army
+			modifier = {
+				org_loss_when_moving = -0.15
+				army_speed_factor = 0.025
+				#choose_preferred_tactics_cost = -15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		aggressive_reconnaisance_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_infantry_charge_preferred_weight_factor = 1
+				intel_from_combat_factor = 0.15
+				recon_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		reserve_officers_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_delay_preferred_weight_factor = 1
+				army_strength_factor = 0.05
+				experience_loss_factor = -0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		victory_or_death_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_human_wave_tactics_preferred_weight_factor = 1
+				org_loss_at_low_org_factor = -0.15
+				army_morale_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		maneuver_warfare_spirit = {
+			modifier = {
+				#tactic_unexpected_thrust_preferred_weight_factor = 1
+				army_armor_speed_factor = 0.15
+				coordination_bonus = 0.05
+				#org_loss_when_moving = -0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		smoke_and_fire_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_barrage_preferred_weight_factor = 1
+				breakthrough_factor = 0.075
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		logistical_focus_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_planned_attack_preferred_weight_factor = 1
+				supply_consumption_factor = -0.1
+				air_fuel_consumption_factor = -0.1
+				navy_fuel_consumption_factor = -0.1
+				production_speed_supply_node_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+			}
+			equipment_bonus = {
+				train_equipment = {					
+					build_cost_ic = -0.25 instant = yes
+				}
+			  }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		operational_reserve_spirit = {
+			ledger = army
+			modifier = {
+				#tactic_relentless_assault_preferred_weight_factor = 1
+				land_reinforce_rate = 0.05
+				#conscription = 0.03
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		heritage_of_accomplishment = {
+			ledger = army
+			#available = { has_dlc = "By Blood Alone" }
+			visible = { has_dlc = "By Blood Alone" }
+			modifier = {
+				mobilization_speed = 0.45
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+	}
+}

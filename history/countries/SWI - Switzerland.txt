@@ -1,0 +1,196 @@
+capital = 45
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.20
+set_research_slots = 0
+set_stability = 0.85
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = SWI_federal_council
+#recruit_character = SWI_ulrich_wille
+#recruit_character = SWI_felix_louis_calonder
+#recruit_character = SWI_gustave_ador
+recruit_character = SWI_jules_humbertdroz
+#recruit_character = SWI_camille_decoppet
+#recruit_character = SWI_edmund_schulthess
+#recruit_character = SWI_robert_haab
+#recruit_character = SWI_audéoud
+#recruit_character = SWI_bornand
+#recruit_character = SWI_sonderegger
+#recruit_character = SWI_büel
+#recruit_character = SWI_bohny
+#recruit_character = SWI_bolli
+#recruit_character = SWI_brügger
+#recruit_character = SWI_decoppet
+#recruit_character = SWI_dietler
+#recruit_character = SWI_fama
+#recruit_character = SWI_iselin
+#recruit_character = SWI_isler_p.
+#recruit_character = SWI_kunz
+#recruit_character = SWI_de_loys
+#recruit_character = SWI_schiess
+#recruit_character = SWI_schiessle
+#recruit_character = SWI_schmid
+#recruit_character = SWI_sprecher_von_bernegg
+#recruit_character = SWI_steinbuch
+#recruit_character = SWI_vogel
+#recruit_character = SWI_von_wattenwyl
+#recruit_character = SWI_weber
+#recruit_character = SWI_wildbolz
+recruit_character = SWI_flavio_herzog
+recruit_character = SWI_ulrich_funk
+
+
+1910.1.1 = {
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		tech_mountaineers = 1
+		early_motorised = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		basic_train = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Navy
+		mtg_transport = 1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+		ww1_industry1 = 1
+		ww1_industry2 = 1
+
+		# Doctrine
+
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1908.10.29"
+	    election_frequency = 36
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 85
+	    fascism = 0
+	    communism = 0
+	    neutrality = 15
+	}
+
+	add_ideas = {
+		neutrality_idea
+		limited_conscription
+	}
+	
+	every_country = {
+		add_timed_idea = {
+			idea = NoTradeback
+			days = 1276
+		}
+		if = {
+			limit = {
+				exists = yes
+				OR = {
+					tag = ALB
+					tag = GRE
+					tag = MNT
+					tag = SER
+					tag = TUR
+				}
+			}
+			add_timed_idea = {
+				idea = Balkanwar_invasions_banned
+				days = 852
+			}
+		}
+	}
+
+}
+
+#PODHOLE TWO-FRONT WAR SETUP
+1911.1.1.4 = {
+	##AUS -5 civs -5 mils for no asia
+	AUS = {
+		add_ideas = austria_eastwest_nerf
+	}
+	
+	##ENG -5 civs -3 mils for no asia
+	ENG = {
+		add_ideas = british_noasia_nerf
+	}
+}
+
+#PODHOLE IMPROVED WESTFRONT SETUP
+1911.1.1.11 = {
+
+	##Poland removed
+	426={
+		remove_building={
+			type=industrial_complex
+			level=5
+		}
+		remove_building={
+			type=arms_factory
+			level=5
+		}
+	}
+	
+	##GER +2.5% CG -30% manpower
+	GER = {
+		if = {
+			limit = {
+				has_start_date < 1911.1.1.16
+			}
+			add_ideas = german_westfront_nerf
+			add_research_slot = 1
+		}
+	}
+}
+
+#PODHOLE WEST ONEVONE SETUP
+1911.1.1.15 = {
+	
+	##FRA +15 docks
+	125 = {
+		add_extra_state_shared_building_slots=15
+		add_building_construction={ type=dockyard level=15 instant_build=yes }
+	}
+	
+	##GER +5% CG -45% manpower
+	GER = {
+		add_ideas = german_onevsone_nerf
+	}
+}

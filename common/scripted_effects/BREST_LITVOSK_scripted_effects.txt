@@ -1,0 +1,895 @@
+##Setup state flags for transfers
+SOV_brest_litovsk_stateflags={
+	112={set_state_flag=SOV_bessarabia_flag}
+	every_state={
+		if={
+			limit={is_core_of=SOV}
+			set_state_flag = SOV_cores_flag
+		}
+		if={
+			limit={
+				OR={
+				state=241
+				state=271
+				state=278
+				state=279
+				state=286
+				state=287
+				}
+			}
+			set_state_flag=SOV_congress_poland_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=108
+				state=109
+				}
+			}
+			set_state_flag=SOV_lithuania_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=115
+				state=118
+				}
+			}
+			set_state_flag=SOV_latvia_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=116
+				state=117
+				}
+			}
+			set_state_flag=SOV_estonia_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=288
+				state=289
+				state=290
+				state=291
+				}
+			}
+			set_state_flag=SOV_east_poland_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=176
+				state=177
+				state=331
+				state=178
+				state=173
+				}
+			}
+			set_state_flag=SOV_ukraine_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=172
+				state=188
+				state=174
+				state=179
+				state=183
+				}
+			}
+			set_state_flag=SOV_ukraine_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=175
+				state=182
+				state=189
+				state=186
+				state=187
+				}
+			}
+			set_state_flag=SOV_ukraine_3_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=184
+				state=185
+				state=181
+				state=180
+				state=114
+				}
+			}
+			set_state_flag=SOV_ukraine_4_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=120
+				state=375
+				state=376
+				state=292
+				state=294
+				}
+			}
+			set_state_flag=SOV_finland_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=113
+				state=293
+				state=295
+				}
+			}
+			set_state_flag=SOV_finland_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=191
+				state=192
+				state=193
+				state=323
+				}
+			}
+			set_state_flag=SOV_belarus_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=194
+				state=200
+				state=198
+				state=199
+				}
+			}
+			set_state_flag=SOV_belarus_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=126
+				state=202
+				state=201
+				state=204
+				state=205
+				}
+			}
+			set_state_flag=SOV_petrograd_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=127
+				state=226
+				state=223
+				state=222
+				state=338
+				}
+			}
+			set_state_flag=SOV_ndvina_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=208
+				state=209
+				state=210
+				state=207
+				state=211
+				}
+			}
+			set_state_flag=SOV_central_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=206
+				state=171
+				state=215
+				state=212
+				state=214
+				}
+			}
+			set_state_flag=SOV_central_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=218
+				state=219
+				state=220
+				state=221
+				state=216
+				}
+			}
+			set_state_flag=SOV_central_3_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=203
+				state=264
+				state=265
+				state=267
+				}
+			}
+			set_state_flag=SOV_transcaucasus_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=266
+				state=269
+				state=268
+				state=195
+				}
+			}
+			set_state_flag=SOV_kuban_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=196
+				state=270
+				state=197
+				}
+			}
+			set_state_flag=SOV_volga_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=213
+				state=217
+				state=339
+				state=340
+				}
+			}
+			set_state_flag=SOV_volga_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=225
+				state=336
+				state=335
+				state=334
+				}
+			}
+			set_state_flag=SOV_volga_3_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=333
+				state=224
+				state=315
+				}
+			}
+			set_state_flag=SOV_urals_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=316
+				state=341
+				state=332
+				}
+			}
+			set_state_flag=SOV_urals_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=313
+				state=314
+				state=342
+				state=337
+				}
+			}
+			set_state_flag=SOV_urals_3_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=227
+				state=325
+				state=326
+				}
+			}
+			set_state_flag=SOV_turkmen_uzbek_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=329
+				state=330
+				state=328
+				state=317
+				}
+			}
+			set_state_flag=SOV_kazakh_1_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=327
+				state=322
+				}
+			}
+			set_state_flag=SOV_kazakh_2_flag
+		}
+		else_if={
+			limit={
+				OR={
+				state=318
+				state=319
+				state=320
+				state=321
+				}
+			}
+			set_state_flag=SOV_kazakh_3_flag
+		}
+	}
+}
+
+##State Transfers
+SOV_treaty_polrom={
+	every_owned_state={
+		if={
+			limit={state=112}
+			transfer_state_to=ROM
+		}
+		else_if={
+			limit={
+				OR={
+					has_state_flag=SOV_congress_poland_flag
+					has_state_flag=SOV_east_poland_flag
+				}
+			}
+			if={
+				limit={POL={exists=yes}}
+				transfer_state_to=POL
+			}
+			else={
+				transfer_state_to=GER
+			}
+		}
+	}
+}
+
+SOV_treaty_baltics={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_estonia_flag
+					has_state_flag=SOV_latvia_flag
+				}
+			}
+			transfer_state_to=GER
+		}
+		else_if={
+			limit={
+				has_state_flag=SOV_lithuania_flag
+			}
+			if={
+				limit={POL={exists=yes}}
+				transfer_state_to=POL
+			}
+			else={
+				transfer_state_to=GER
+			}
+		}
+	}
+}
+
+SOV_treaty_finland={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_finland_1_flag
+					has_state_flag=SOV_finland_2_flag
+				}
+			}
+			transfer_state_to=FIN
+		}
+	}
+}
+
+SOV_treaty_ukraine_west={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_ukraine_1_flag
+					has_state_flag=SOV_ukraine_2_flag
+				}
+			}
+			transfer_state_to=UKR
+		}
+	}
+}
+
+SOV_treaty_ukraine_east={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_ukraine_3_flag
+					has_state_flag=SOV_ukraine_4_flag
+				}
+			}
+			transfer_state_to=UKR
+		}
+	}
+}
+
+SOV_revolution_west={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_petrograd_flag
+					has_state_flag=SOV_belarus_1_flag
+					has_state_flag=SOV_belarus_2_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_central={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_central_1_flag
+					has_state_flag=SOV_central_2_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_north={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_central_3_flag
+					has_state_flag=SOV_ndvina_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_caucasus={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_transcaucasus_flag
+					has_state_flag=SOV_kuban_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_steppes_1={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_turkmen_uzbek_flag
+					has_state_flag=SOV_kazakh_1_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_steppes_2={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_kazakh_2_flag
+					has_state_flag=SOV_kazakh_3_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_east_1={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_volga_1_flag
+					has_state_flag=SOV_volga_2_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_east_2={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_volga_3_flag
+					has_state_flag=SOV_urals_1_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+SOV_revolution_east_3={
+	every_owned_state={
+		if={
+			limit={
+				OR={
+					has_state_flag=SOV_urals_2_flag
+					has_state_flag=SOV_urals_3_flag
+				}
+			}
+			transfer_state_to=RUS
+		}
+	}
+}
+
+##Stop being russian
+SOV_russia_abdication={
+	kill_country_leader = yes
+	create_country_leader = { 
+		name = "Alexander Kolchak" 
+		#desc = RUS_georgy_lvov_DESC 
+		picture = "gfx/leaders/RUS/RUS_alexander_kolchak.dds" 
+		expire = "1935.1.1" 
+		ideology = despotism
+		traits = { } 
+	}
+}
+SOV_demobilize={
+	SOV={
+		delete_unit = {
+			disband = no
+		}
+		transfer_units_fraction = {
+			target = RUS
+			size = 0.0
+			army_ratio = 1.0
+			stockpile_ratio = 1.0
+			air_ratio = 1.0
+			navy_ratio = 1.0
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		country_lock_all_division_template=yes
+	}
+}
+SOV_russia_characters={
+	every_character={
+		limit={NOT={is_country_leader=yes}}
+		retire=yes
+	}
+}
+SOV_russia_ideas={
+	remove_ideas={
+		machine_building_plant_mzik
+		kharkov_locomotive_factory
+		RUS_ww1_orthodox_church
+		RUS_ww1_mixed_railways
+		RUS_ww1_modern_railways
+		RUS_ww1_tsushima_humiliation
+		SOV_war_credit
+		SOV_weak_central_government
+		SOV_weak_central_government_rom_ai
+		SOV_tsar
+		SOV_incompetent_stavka
+		SOV_incompetent_stavka_tsar
+		SOV_reformed_stavka
+		SOV_russian_steamroller
+		SOV_war_industries_committees
+		SOV_convict_workshops
+		SOV_capital_ship_build_up
+		SOV_light_hull_primacy
+		SOV_cossack_hosts
+		SOV_russian_staff
+		SOV_regulation_on_the_preparatory
+		SOV_gun0_cheap
+		market_dynamism
+		arms_factory_expansion
+		industrialization_effort
+		
+		SOV_casualties_0
+		SOV_casualties_1
+		SOV_casualties_2
+		SOV_casualties_3
+		SOV_casualties_4
+		SOV_casualties_5
+		SOV_casualties_6
+		SOV_casualties_7
+		SOV_casualties_8
+		SOV_casualties_9
+		SOV_casualties_10
+		SOV_casualties_11
+		SOV_casualties_12
+		SOV_casualties_13
+		SOV_casualties_14
+		SOV_casualties_15
+		SOV_casualties_16
+		SOV_casualties_17
+		SOV_casualties_18
+		SOV_casualties_19
+		SOV_casualties_20
+		SOV_casualties_21
+		SOV_casualties_22
+		SOV_casualties_23
+		SOV_casualties_24
+		SOV_casualties_25
+		SOV_casualties_26
+		SOV_casualties_27
+		SOV_casualties_28
+		SOV_casualties_29
+		SOV_casualties_30
+		SOV_casualties_31
+		SOV_casualties_32
+		SOV_casualties_33
+		SOV_casualties_34
+		SOV_casualties_35
+		SOV_casualties_36
+		SOV_casualties_37
+		SOV_casualties_38
+		SOV_casualties_39
+		SOV_casualties_40
+	}
+}
+
+SOV_remove_cores={
+	every_state={
+		limit={has_state_flag=SOV_cores_flag}
+		remove_core_of=SOV
+	}
+	transfer_units_fraction = {
+		target = RUS
+		size = 0.0
+		army_ratio = 1.0
+		stockpile_ratio = 1.0
+		air_ratio = 1.0
+		navy_ratio = 1.0
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+}
+
+##Flipping to USA
+SOV_usa_politics={
+	set_cosmetic_tag=SOV_AMERICA
+	add_popularity={
+		ideology=democratic
+		popularity=0.95
+	}
+	set_politics={
+		ruling_party=democratic
+		elections_allowed=yes
+		last_election="1908.11.05"
+		#last_election="1912.11.05"
+		election_frequency=48
+	}
+	set_party_name={
+		ideology=democratic
+		name=SOV_AMERICA_democrat
+		long_name=SOV_AMERICA_democrat_long
+	}
+	set_party_name={
+		ideology=neutrality
+		name=SOV_AMERICA_neutrality_party
+		long_name=SOV_AMERICA_neutrality_party_long
+	}
+	set_party_name={
+		ideology=communism
+		name=SOV_AMERICA_communism_party
+		long_name=SOV_AMERICA_communism_party_long
+	}
+	set_party_name={
+		ideology=fascism
+		name=SOV_AMERICA_fascism_party
+		long_name=SOV_AMERICA_fascism_party_long
+	}
+}
+
+SOV_usa_characters={
+	USA={
+		every_character={
+			limit={
+				NOT={
+					is_character=USA_william_h_taft
+				}
+			}
+			set_nationality=SOV
+		}
+	}
+}
+
+SOV_usa_leader={
+	kill_country_leader=yes
+	create_country_leader = { 
+		name = "Woodrow Wilson" 
+		picture = "gfx/leaders/USA/USA_wilson.png" 
+		expire = "1935.1.1" 
+		ideology = moderatism
+		traits = { } 
+	}
+}
+
+SOV_usa_wilson={
+	USA_woodrow_wilson={
+		promote_character=yes
+	}
+}
+
+SOV_usa_ideas={
+	if={
+		limit={has_idea=limited_conscription}
+		add_ideas=extensive_conscription
+	}
+	add_ideas={
+		free_trade
+		home_of_the_free
+		USA_industrial_titan
+	}
+}
+
+SOV_central_powers_debuffs = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = GER
+				is_core_of = FRA
+				is_core_of = BEL
+				is_core_of = LUX
+				is_core_of = ITA
+			}
+		}
+		add_dynamic_modifier = { 
+			modifier = FFU_usa_joining 
+			days = 30
+		}
+	}
+}
+
+SOV_usa_setup = {
+	set_stability = 1.0
+	set_war_support = 1.0
+	set_research_slots = 5
+	load_focus_tree = usa_focus
+	country_lock_all_division_template = no
+	remove_power_balance = {id = SOV_RUS_balance_of_powers}
+	
+    add_equipment_to_stockpile = {
+		type = convoy
+		amount = 500
+		producer = SOV
+    }
+    add_equipment_to_stockpile = {
+		type = train_equipment
+		amount = 500
+		producer = SOV
+    }
+    add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 5000
+		producer = SOV
+    }
+}
+
+SOV_usa_annex={
+	annex_country={
+		target=USA
+		transfer_troops=yes
+	}
+	set_capital={state=409}
+}
+
+SOV_usa_cores={
+	every_state={
+		limit={is_core_of=USA}
+		remove_core_of=USA
+		add_core_of=SOV
+	}
+}
+
+SOV_usa_tp={
+	every_state={
+		teleport_armies={
+			limit={original_tag=SOV}
+		}
+	}
+}
+
+SOV_usa_resources={
+	416={
+		add_resource={ type=wood amount=52}
+		add_resource={ type=chromium amount=18}
+		add_resource={ type=coal amount=52}
+	}
+	412={
+		add_resource={ type=wood amount=26}
+		add_resource={ type=steel amount=46}
+	}
+	408={
+		add_resource={ type=chromium amount=29}
+		add_resource={ type=steel amount=15}
+		add_resource={ type=wood amount=34}
+	}
+	404={
+		add_resource={ type=tungsten amount=70}
+	}
+	401={
+		add_resource={ type=chromium amount=35}
+		add_resource={ type=steel amount=17}
+	}
+	411={
+		add_resource={ type=wood amount=39}
+		add_resource={ type=chromium amount=13}
+	}
+	395={
+		add_resource={ type=oil amount=15}
+	}
+	391={
+		add_resource={ type=chromium amount=30}
+	}
+	give_resource_rights = {
+		receiver = ENG
+		state = 393 #Kansas
+	}
+	give_resource_rights = {
+		receiver = ENG
+		state = 394 #Louisiana
+	}
+	give_resource_rights = {
+		receiver = ENG
+		state = 397 #Oklahoma
+	}
+	give_resource_rights = {
+		receiver = ENG
+		state = 398 #Texas
+	}
+}
+
+##Central Powers
+GER_resource_rights_finland={
+	FIN={
+		every_owned_state={
+			FIN={
+				give_resource_rights={
+					receiver=GER
+					state=PREV
+				}
+			}
+		}
+	}
+}

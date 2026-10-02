@@ -1,0 +1,28 @@
+state={
+	id=438
+	name="STATE_438"
+	impassable=yes
+	provinces={
+		4765 5743 6369 7938 8481 8692 15240 20165 20166 20167 20168 20176 20177 20186 
+	}
+	manpower=85457
+	buildings_max_level_factor=1.000
+	state_category = enclave
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 3
+		}
+		#victory_points = {
+		#	6369 5 
+		#}
+		#victory_points = {
+		#	8481 1 
+		#}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+    }
+}

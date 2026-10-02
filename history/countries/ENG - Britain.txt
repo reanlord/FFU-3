@@ -1,0 +1,393 @@
+capital = 6
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 1.0
+set_research_slots = 5
+set_stability = 0.55
+set_war_support = 0.70
+set_convoys = 800
+set_naval_oob = "ENG_navy"
+# DIPLOMACY
+
+#if = {
+#	limit = {
+#		OR = {
+#			has_dlc = "Together for Victory"
+#			has_dlc = "Man the Guns"
+#		}
+#	}
+#	set_autonomy = {
+#		target = CAN
+#		autonomous_state = autonomy_dominion
+#		freedom_level = 0.4
+#	}
+#		else = {
+#		puppet = CAN
+#	}
+#}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = entente_research
+}
+
+give_guarantee = BEL # United Kingdom guaranteed the independence of Belgium - Treaty of London (1839)
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = ENG_george_v
+recruit_character = ENG_tom_mann
+recruit_character = ENG_gilbert_elliotmurraykynynmound
+recruit_character = ENG_charles_hardinge
+recruit_character = ENG_frederic_thesiger
+recruit_character = ENG_rufus_isaacs
+recruit_character = ENG_walter_davidson
+recruit_character = ENG_edward_grey
+recruit_character = ENG_henry_petty_fitzmaurice
+recruit_character = ENG_frederick_maurice
+recruit_character = ENG_arthur_balfour
+recruit_character = ENG_george_macdonogh
+recruit_character = ENG_reginald_mckenna
+recruit_character = ENG_herbert_samuel
+recruit_character = ENG_aretas_akers_douglas
+recruit_character = ENG_arthur_henderson
+recruit_character = ENG_william_peel
+recruit_character = ENG_herbert_mullaly
+recruit_character = ENG_sir_douglas_haig
+recruit_character = ENG_hamilton_i.s.m.
+recruit_character = ENG_aylmer_hunterweston
+recruit_character = ENG_sir_leslie_rundle
+recruit_character = ENG_kitchener_h.h.
+recruit_character = ENG_badenpowell
+recruit_character = ENG_elles
+recruit_character = ENG_grierson
+recruit_character = ENG_horne_sir_h.
+recruit_character = ENG_maude
+recruit_character = ENG_maxse_sir_i.
+recruit_character = ENG_plumer_h.
+recruit_character = ENG_rawlinson_sir_h.
+recruit_character = ENG_snow
+recruit_character = ENG_hickie_w.b.
+recruit_character = ENG_capper_j.e.
+recruit_character = ENG_nugent_o.s.w.
+recruit_character = ENG_henrey_plummer
+recruit_character = ENG_graham_tyron
+recruit_character = ENG_frederick_roberts
+recruit_character = ENG_frederick_sykes
+recruit_character = ENG_frederick_lambart
+recruit_character = ENG_arthur_wilson
+recruit_character = ENG_garrett_o_moore_creagh
+recruit_character = ENG_george_macaulay_kirkpatrick
+recruit_character = ENG_st_john_brodrick
+recruit_character = ENG_john_french
+recruit_character = ENG_hugh_trenchard
+recruit_character = ENG_charles_vaughan_lee
+recruit_character = ENG_percy_zachariah_cox
+recruit_character = ENG_richard_haldane
+recruit_character = ENG_edward_stanley
+recruit_character = ENG_neville_lyttleton
+recruit_character = ENG_david_henderson
+recruit_character = ENG_archibald_murray
+recruit_character = ENG_jfc_fuller
+recruit_character = EGY_edmund_allenby
+recruit_character = CAN_authur_currie
+recruit_character = CAN_julian_byng
+recruit_character = AST_john_monash
+recruit_character = ENG_john_edward_bernard_seely
+recruit_character = ENG_edward_james_headlam
+recruit_character = ENG_louis_alexander_mountbatten
+
+#admirals
+recruit_character = ENG_david_beatty
+recruit_character = ENG_john_jellicoe
+recruit_character = ENG_bridgeman
+recruit_character = ENG_navy_churchill
+recruit_character = ENG_john_fisher
+recruit_character = ENG_pakenham
+recruit_character = ENG_goodenough
+recruit_character = ENG_keyes
+recruit_character = ENG_tyrwhitt
+recruit_character = ENG_horace_hood
+
+1910.1.1 = {
+	oob = "ENG_1910"
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+		camelry = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		basic_train = 1
+
+		# Armor
+		gwtank=1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Navy
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_ship_hull_cruiser = 1
+		mtg_transport = 1
+
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+		nukes = 1
+		tank_unlocker1 = 1	
+
+		# Industry
+		
+		# Doctrine
+				
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1910.1.15"
+	    election_frequency = 60
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 96
+	    fascism = 2
+	    communism = 1
+	    neutrality = 1
+	}
+
+	add_ideas = {
+		ww1_Scramble_for_Africa
+		stiff_upper_lip
+		volunteer_only
+		ENG_bef
+		ENG_grand_fleet
+		ENG_widespread_labour_strikes
+		ENG_empire_shackled
+	}
+
+	set_country_flag = monroe_doctrine
+
+create_equipment_variant = {
+		name = "Pre-1905 Destroyer"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+
+create_equipment_variant = {
+		name = "1905 Destroyer"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_light_battery_2
+		}
+	}
+create_equipment_variant = {
+	name = "1905 Anti-Sub Destroyer"
+	type = ship_hull_light_2
+	name_group = ENG_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = ship_depth_charge_2
+		rear_1_custom_slot = ship_depth_charge_2
+	}
+}
+
+create_equipment_variant = {
+		name = "Light Cruiser 1890"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Light Cruiser 1900"
+		type = ship_hull_cruiser_2
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Heavy Cruiser 1890"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = ship_medium_battery_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Heavy Cruiser 1900"
+		type = ship_hull_cruiser_2
+		name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_medium_battery_2
+			mid_1_custom_slot = ship_medium_battery_2
+			mid_2_custom_slot = ship_medium_battery_2
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+	
+	create_equipment_variant={
+		name="Pre-Dreadnought"
+		name_group = ENG_BB_HISTORICAL 
+		type=ship_hull_heavy_1 
+		parent_version = 0 
+		obsolete=yes 
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1 
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0 
+			fixed_ship_radar_slot = empty fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1 
+			fixed_ship_armor_slot = ship_armor_bb_1 
+			front_1_custom_slot = ship_secondaries_1 
+			mid_1_custom_slot = ship_secondaries_1 
+			mid_2_custom_slot = ship_secondaries_1 
+			rear_1_custom_slot = ship_heavy_battery_1 
+		} 
+	}
+
+	create_equipment_variant={
+		name="Semi-Dreadnought" 
+		name_group = ENG_BB_HISTORICAL 
+		type=ship_hull_heavy_2 
+		parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_secondaries_1
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_secondaries_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			} 
+	}
+		
+		
+	create_equipment_variant = {
+		name = "Super-Dreadnought"
+		type= ship_hull_super_heavy_1 
+		name_group = ENG_BB_HISTORICAL
+		parent_version = 0  
+		modules = {
+			fixed_ship_battery_slot = ship_super_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0 
+			fixed_ship_radar_slot = empty 
+			fixed_ship_engine_slot = heavy_ship_engine_2 
+			fixed_ship_secondaries_slot = ship_secondaries_1 
+			fixed_ship_armor_slot = ship_armor_shbb
+
+			front_1_custom_slot = ship_super_heavy_battery_1 
+			front_2_custom_slot = ship_super_heavy_battery_1 
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			mid_3_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_super_heavy_battery_1
+			rear_2_custom_slot = ship_super_heavy_battery_1
+		} 
+	}
+}

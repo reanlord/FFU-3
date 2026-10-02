@@ -1,0 +1,119 @@
+capital = 150
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 1.0
+set_research_slots = 0
+set_stability = 0.60
+set_war_support = 0.70
+set_convoys = 0
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = MNT_nikola_i
+recruit_character = MNT_janko_vukotić
+recruit_character = MNT_crown_prince_danilo
+recruit_character = MNT_jim_evans
+recruit_character = MNT_alexander_walker
+recruit_character = MNT_jim_roberts
+
+
+set_technology = {
+	# Navy
+	
+	transport = 1 # Naval Transport
+}
+
+1910.1.1 = {
+	oob = "MNT_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		basic_train = 1
+		
+		# Armor
+		gwtank=1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+
+		# Industry
+		
+		
+		# Navy
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_ship_hull_cruiser = 1
+		mtg_transport = 1
+
+		# Doctrine
+		
+	}
+
+	set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1907.10.31"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 5
+	    fascism = 2
+	    communism = 1
+	    neutrality = 92
+	}
+
+	add_ideas = {
+		extensive_conscription
+		closed_economy
+		undisturbed_isolation
+		RUS_ww1_orthodox_church
+	}
+	
+	150 = {
+		add_dynamic_modifier = { modifier = FFU_no_ports_modifier }
+	}
+}

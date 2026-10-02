@@ -1,0 +1,120 @@
+
+###################################################################
+
+division_template = {
+	name = "Légionnaires Africains"		# Elite
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }	
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		sapper = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		flamethrower = { x = 0 y = 4 }
+		gunner_support = { x = 1 y = 0 }
+		signal_company = { x = 1 y = 1 }
+		logistics_company = { x = 1 y = 2 }
+		field_hospital = { x = 1 y = 3 }
+		sniper = { x = 1 y = 4 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Tirailleurs sénégalais"		#Basic inf
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		infantry2 = { x = 3 y = 0 }
+		gunner = { x = 3 y = 1 }
+		gunner = { x = 3 y = 2 }	
+		gunner = { x = 4 y = 0 }
+		gunner = { x = 4 y = 1 }
+		gunner = { x = 4 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		gunner_support = { x = 1 y = 0 }
+		signal_company = { x = 1 y = 1 }
+		logistics_company = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+###################################################################
+
+units = {
+	division= { 
+		name = "81eme Division d'Infanterie territoriale"
+		location=20001 # Val de Marnes
+		division_template="Légionnaires Africains"
+		start_experience_factor= 1.0
+	}
+
+
+	division= { 
+		name = "15e Division de Gendarmerie"
+		location=20001 # Val de Marnes
+		division_template="Légionnaires Africains"
+		start_experience_factor= 1.0
+	}
+
+
+	division= { 
+		name = "90eme Division Territoriale"
+		location=20001 # Val de Marnes
+		division_template="Légionnaires Africains"
+		start_experience_factor= 1.0
+	}
+
+
+	division= { 
+		name = "1re Division de Cavalerie"
+		location=20001 # Val de Marnes
+		division_template="Légionnaires Africains"
+		start_experience_factor= 1.0
+	}
+	
+	
+	division= { 
+		name = "3eme Division de Cavalerie"
+		location=20001 # Val de Marnes
+		division_template="Légionnaires Africains"
+		start_experience_factor= 1.0
+	}
+	
+	
+	division= { 
+		name = "5eme Division de Cavalerie"
+		location=20001 # Val de Marnes
+		division_template="Légionnaires Africains"
+		start_experience_factor= 1.0
+	}
+}
+
+
+
+

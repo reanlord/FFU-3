@@ -1,0 +1,409 @@
+﻿l_russian:
+
+
+ #--------------------------------------------------------------
+ # [Holland] Army Effort #replace these with Generics
+ #=========================================================================
+HOL_ww1_army_effort:0 "Восстановить голландскую армию"
+HOL_ww1_army_effort_desc:0 ""
+
+HOL_ww1_trenchwarfare:0 "Траншевая война фокусируется"
+HOL_ww1_trenchwarfare_desc:0 "" #####
+
+HOL_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+HOL_ww1_artillery_effort_1_desc:0 "" #####
+
+HOL_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+
+HOL_ww1_artillery_effort_2_desc:0 "" #####
+
+HOL_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+HOL_ww1_artillery_effort_3_desc:0 "" #####
+
+HOL_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+HOL_ww1_artillery_effort_4_desc:0 "" #####
+
+HOL_ww1_special_forces:0 "Спецназовое внимание"
+HOL_ww1_special_forces_desc:0 "" #####
+
+HOL_ww1_army_motorization_focus:0 "Фокус моторизации"
+HOL_ww1_army_motorization_focus_desc:0 "" #####
+
+HOL_ww1_doctrine_effort:0 "Учение усилия"
+HOL_ww1_doctrine_effort_desc:0 "" #####
+
+HOL_ww1_doctrine_effort_2:0 "Учение усилия II"
+HOL_ww1_doctrine_effort_2_desc:0 "" #####
+
+HOL_ww1_doctrine_effort_3:0 "Учение усилия III"
+HOL_ww1_doctrine_effort_3_desc:0 "" #####
+
+HOL_ww1_equipment_effort:0 "Усилия по оборудованию"
+HOL_ww1_equipment_effort_desc:0 "" #####
+
+HOL_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+HOL_ww1_equipment_effort_2_desc:0 "" #####
+
+HOL_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+HOL_ww1_equipment_effort_3_desc:0 "" #####
+
+HOL_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+HOL_ww1_equipment_effort_4_desc:0 "" #####
+
+HOL_ww1_armor_effort_1:0 "Броня усилий"
+HOL_ww1_armor_effort_1_desc:0 "" #####
+
+HOL_ww1_armor_effort_2:0 "Броня усилий II"
+HOL_ww1_armor_effort_2_desc:0 "" #####
+
+HOL_ww1_gasmask_focus:0 "Химическая война фокусируется"
+HOL_ww1_gasmask_focus_desc:0 "" #####
+#--------------------------------------------------------------
+
+
+ # [Holland] Авиационные усилия
+ #=========================================================================
+ HOL_ww1_aviation_effort:0 "Основание RNLAF"
+ HOL_ww1_aviation_effort_desc:0 ""
+
+ HOL_ww1_fighter_focus:0 "Истребитель фокусировки"
+ HOL_ww1_fighter_focus_desc:0 "" #####
+
+ HOL_ww1_bomber_focus:0 "Фокус бомбардировщика"
+ HOL_ww1_bomber_focus_desc:0 "" #####
+
+ HOL_ww1_airship_focus:0 "Фокусировка набережения"
+ HOL_ww1_airship_focus_desc:0 "" #####
+
+ HOL_ww1_aviation_effort_2:0 "Авиационные усилия"
+ HOL_ww1_aviation_effort_2_desc:0 "" #####
+
+ HOL_ww1_aviation_effort_3:0 "Авиационные усилия II"
+ HOL_ww1_aviation_effort_3_desc:0 "" #####
+
+ HOL_ww1_aviation_effort_4:0 "Авиационные усилия III"
+ HOL_ww1_aviation_effort_4_desc:0 "" #####
+
+ HOL_ww1_aviation_effort_5:0 "Авиационные усилия IV"
+ HOL_ww1_aviation_effort_5_desc:0 "" #####
+
+ HOL_ww1_pilotformation_1:0 "Пилотная формация"
+ HOL_ww1_pilotformation_1_desc:0 "" #####
+
+ HOL_ww1_pilotformation_2:0 "Пилотная формация II"
+ HOL_ww1_pilotformation_2_desc:0 "" #####
+
+ HOL_ww1_aircraftprod_1:0 "Производство самолетов"
+ HOL_ww1_aircraftprod_1_desc:0 "" #####
+
+ HOL_ww1_aircraftprod_2:0 "Производство самолетов II"
+ HOL_ww1_aircraftprod_2_desc:0 "" #####
+
+ HOL_ww1_airbomb_1:0 "Усилия по бомбардировке"
+ HOL_ww1_airbomb_1_desc:0 "" #####
+
+ HOL_ww1_airbomb_2:0 "Усилия по бомбардировке II"
+ HOL_ww1_airbomb_2_desc:0 "" #####
+
+ HOL_ww1_air_innovation:0 "Воздушные инновации"
+ HOL_ww1_air_innovation_desc:0 "" #####
+
+ HOL_ww1_navalair:0 "Военно -морские бомбардировки"
+ HOL_ww1_navalair_desc:0 "" #####
+
+ #--------------------------------------------------------------
+
+
+ # [Holland] Industrial Effort
+ #=========================================================================
+HOL_ww1_industrial_effort:0 "Промышленные усилия"
+HOL_ww1_industrial_effort_desc:0 "" #####
+
+HOL_ww1_construction_effort:0 "Строительные усилия"
+HOL_ww1_construction_effort_desc:0 "" #####
+
+HOL_ww1_construction_effort_2:0 "Строительные усилия II"
+HOL_ww1_construction_effort_2_desc:0 "" #####
+
+HOL_ww1_construction_effort_3:0 "Строительные усилия III"
+HOL_ww1_construction_effort_3_desc:0 "" #####
+
+HOL_ww1_production_effort:0 "Усилие вооружения"
+HOL_ww1_production_effort_desc:0 "" #####
+
+HOL_ww1_production_effort_2:0 "Усилие вооружения II"
+HOL_ww1_production_effort_2_desc:0 "" #####
+
+HOL_ww1_production_effort_3:0 "Усилие вооружения III"
+HOL_ww1_production_effort_3_desc:0 "" #####
+
+HOL_ww1_dockyard_effort_1:0 "Расширение верфи"
+HOL_ww1_dockyard_effort_1_desc:0 "" #####
+
+HOL_ww1_dockyard_effort_2:0 "Расширение верфи II"
+HOL_ww1_dockyard_effort_2_desc:0 "" #####
+
+HOL_ww1_dockyard_effort_3:0 "Расширение верфи III"
+HOL_ww1_dockyard_effort_3_desc:0 "" #####
+
+HOL_ww1_airfield_expansion_1:0 "Расширение аэродрома"
+HOL_ww1_airfield_expansion_1_desc:0 "" #####
+
+HOL_ww1_airfield_expansion_2:0 "Расширение аэродрома II"
+HOL_ww1_airfield_expansion_2_desc:0 "" #####
+
+HOL_ww1_airfield_expansion_3:0 "Расширение аэродрома III"
+HOL_ww1_airfield_expansion_3_desc:0 "" #####
+
+HOL_ww1_infrastructure_effort:0 "Инфраструктурные усилия"
+HOL_ww1_infrastructure_effort_desc:0 "" #####
+
+HOL_ww1_infrastructure_effort_2:0 "Инфраструктурные усилия II"
+HOL_ww1_infrastructure_effort_2_desc:0 "" #####
+
+HOL_ww1_infrastructure_effort_3:0 "Инфраструктурные усилия III"
+HOL_ww1_infrastructure_effort_3_desc:0 "" #####
+
+HOL_ww1_infrastructure_effort_4:0 "Инфраструктурные усилия IV"
+HOL_ww1_infrastructure_effort_4_desc:0 "" #####
+
+HOL_ww1_extra_tech_slot:0 "Дополнительный исследовательский"
+HOL_ww1_extra_tech_slot_desc:0 "" #####
+
+HOL_extra_tech_slot_2:0 "Дополнительное исследование II"
+HOL_extra_tech_slot_2_desc:0 "" #####
+ #--------------------------------------------------------------
+
+
+ # [Holland] Naval Effort
+ #=========================================================================
+ HOL_ww1_naval_effort:0 "Восстановить Королевский флот"
+ HOL_ww1_naval_effort_desc:0 ""
+
+ HOL_ww1_newnavalcanons_1:0 "Военно -морское оружие"
+ HOL_ww1_newnavalcanons_1_desc:0 "" #####
+
+ HOL_ww1_newnavalcanons_2:0 "Военно -морское оружие II"
+ HOL_ww1_newnavalcanons_2_desc:0 "" #####
+
+ HOL_ww1_newnavalcanons_3:0 "Военно -морское оружие III"
+ HOL_ww1_newnavalcanons_3_desc:0 "" #####
+
+ HOL_ww1_dreadnought_effort:0 "Дредноут"
+ HOL_ww1_dreadnought_effort_desc:0 "" #####
+
+ HOL_ww1_flexible_navy:0 "Гибкий флот"
+ HOL_ww1_flexible_navy_desc:0 "" #####
+
+ HOL_ww1_large_navy:0 "Большой флот"
+ HOL_ww1_large_navy_desc:0 "" #####
+
+ HOL_ww1_navyreform:0 "Развертывание военно -морского флота"
+ HOL_ww1_navyreform_desc:0 "" #####
+
+ HOL_ww1_submarine_effort:0 "Подводные усилия"
+ HOL_ww1_submarine_effort_desc:0 "" #####
+
+ HOL_ww1_cruiser_effort:0 "Крейсер усилие"
+ HOL_ww1_cruiser_effort_desc:0 "" #####
+
+ HOL_ww1_destroyer_effort:0 "Усилие разрушителя"
+ HOL_ww1_destroyer_effort_desc:0 "" #####
+
+ HOL_ww1_capital_ships_effort:0 "Капитальный корабль усилия"
+ HOL_ww1_capital_ships_effort_desc:0 "" #####
+
+ HOL_ww1_carrier_focus:0 "Усилия"
+ HOL_ww1_carrier_focus_desc:0 "" #####
+
+ HOL_ww1_antisubmarine:0 "Анти-подключатая война"
+ HOL_ww1_antisubmarine_desc:0 "" #####
+
+ #--------------------------------------------------------------
+
+
+ # [Holland] Political Effort
+ #=========================================================================
+ HOL_political_effort:0 "Политические усилия"
+ HOL_political_effort_desc:0 "Время реформы сейчас.Хотя нация была в порядке под руководством системы старой в течение многих лет, эти бурные времена требуют правительства, которое может ответить на них.Решаем ли мы изменить наши пути в качестве нации или укрепить наше существующее правительство противостоять новым внешним угрозам, политические изменения не могут принести ничего, кроме как принести пользу нашей нации и будущему народа."
+ HOL_Reform:0 "Реформа"
+ HOL_Reform_desc:0 "Реформировать правительство Голландии в пользу более коммунистического"
+ HOL_Preserve:0 "Сохранять"
+ HOL_Preserve_desc:0 " Сохранить старые права и стандарты"
+ HOL_Reform_2:0 "Вторая реформа"
+ HOL_Reform_2_desc:0 "Еще одна реформа, которая дает коммунистическую партию"
+ HOL_Settle_religious_conflict:0 "Установите религиозные конфликты"
+ HOL_Settle_religious_conflict_desc:0 "Установите религиозный конфликт между протестантами и католиками"
+ HOL_End_census_kies:0 "Право на голосование в конце переписи"
+ HOL_End_census_kies_desc:0 "Теперь, наконец, все люди могут голосовать, а не только богатые."
+ HOL_Let_them_eat_potatoes:0 "Позвольте им съесть картофель!"
+ HOL_Let_them_eat_potatoes_desc:0 "Добро пожаловать в картофельную революцию!"
+ HOL_Troelstra_reforms:0 "Реформы Троэльстра"
+ HOL_Troelstra_reforms_decs:0 "Троэльстра отменяет каждую политическую партию и подразделяет голландские народы"
+ HOL_Capitalist_ideas:0 "Капиталистические идеи"
+ HOL_Capitalist_ideas_desc:0 "Принять более капиталистические идеи, но все же сохраняют некоторые социальные элементы."
+ HOL_neutrality_focus1:0 "Нейтралитет "
+ HOL_neutrality_focus1_desc:0 "Мы решили остаться в стороне от вооруженного конфликта за пределами наших границ."
+ HOL_End_census_neu:0 "Право на голосование в конце переписи"
+ HOL_End_census_neu_desc:0 "Теперь, наконец, все люди могут голосовать, а не только богатые."
+ HOL_Reinforce_border:0 "Подкреплять границу"
+ HOL_Reinforce_border_desc:0 "В случае войны мы должны быть готовы"
+ HOL_Colony_effort:0 "Колония усилия"
+ HOL_Colony_effort_desc:0 "Мы не можем просто пренебрегать колониями в этих усилиях, чтобы улучшить нашу страну!"
+ HOL_God_save_the_queen:0 "Боже, храни королеву!"
+ HOL_God_save_the_queen_desc:0 "Наша королева - наша страна, мы хотим служить ей и под ней."
+ HOL_Netherland_first:0 "Нидерланды в первую очередь"
+ HOL_Netherland_first_desc:0 "Мы больше всего объединяем нашу страну"
+ HOL_Fight_2_live:0 "Бороться, чтобы жить в другой день"
+ HOL_Fight_2_live_desc:0 "Нам нужно принять меры на случай, если все усилится."
+ HOL_Live_2_Fight:0 "Живи, чтобы сражаться в другой день"
+ HOL_Live_2_Fight_desc:0 "Защита - самая важная вещь."
+ HOL_democratic_focus:0 "Свобода"
+ HOL_democratic_focus_desc:0 "Пришло время расширить наши политические взгляды и присоединиться к действительно свободным народам мира"
+ HOL_One_for_all:0 "Один за всех!"
+ HOL_One_for_all_desc:0 "Нам нужно служить армии, чтобы защитить страну!"
+ HOL_More_men:0 "И все для одного!"
+ HOL_More_men_desc:0 "Нам нужно служить армии, чтобы защитить нашего народа!"
+ HOL_weapons:0 "Военная прибыль"
+ HOL_weapons_desc:0 "Пусть индустрия оружия извлечет выгоду от растущего спроса на оружие"
+ HOL_VaderLand:0 "Для людей и родины"
+ HOL_VaderLand_desc:0 "Национализм не обязательно должен быть злым ..."
+ HOL_Eupen:0 "Запросить Eupen"
+ HOL_Eupen_desc:0 "В прошлом мы контролировали Eupen раньше ... давайте сделаем это еще раз, чтобы обеспечить мир между Бельгией и Германией."
+ HOL_Enpower_democrats:0 "Enpower демократов"
+ HOL_Enpower_democrats_desc:0 "Нейтральная сторона нашей страны имеет большую власть, мы должны показать миру, что мы готовы стоять и защищать свободу любой ценой!"
+ HOL_Faction_Bel:0 "Реформа Грут Недерленд"
+ HOL_Faction_Bel_desc:0 "Мы восстановим Нидерланды в это бывшая слава!Для максимальной прибыли, конечно ..."
+ HOL_Faction_LUX:0 "Пригласить Люксембург"
+ HOL_Faction_LUX_desc:0 "Они также когда -то были частью нашей великой республики, может быть, они хотят снова присоединиться."
+ HOL_Colony_freedom:0 "Предоставить больше колониальной автономии"
+ HOL_Colony_freedom_desc:0 "Как настоящие коммунисты, у нас не могут быть настоящие колонии ... но остальные не заметят ..."
+HOL_Fate_of_Siam:0 "Судьба Сиама"
+HOL_Fate_of_Siam_desc:0 ""
+HOL_Claim_our_colies_america:0 "Претендовать на американские колонии"
+HOL_Claim_our_colies_america_desc:0 ""
+HOL_Claim_our_colies:0 "Претендовать на азиатские колонии"
+HOL_Claim_our_colies_desc:0 ""
+HOL_Faction_Bel_COM:0 "Реформа Грут Недерленд "
+HOL_Faction_Bel_COM_desc:0 "Мы восстановим Нидерланды в это бывшая слава!Для максимальной прибыли, конечно, ... "
+HOL_FACTION_LUX_COM:0 "Пригласить люксембург"
+HOL_FACTION_LUX_COM_DESC:0 "Они также когда -то были частью нашей великой республики, может быть, они хотят присоединиться снова".
+HOL_WW1_COLONY_EFFORT_1:0 "
+HOL_WW1_COLONY_EFFORT_1_DESC:0 "Мы должны сосредоточиться на более развитии в наших колониях".
+HOL_WW1_IMPROVE_COLONY_DOCKYARDS:0 "Улучшение наших верфи"
+HOL_WW1_IMPROVE_COLONY_DOCKYARDS_DESC:0 ""
+HOL_WW1_IMPROVE_COLONY_MILITARITY:0 "Развивать военную промышленность"
+HOL_WW1_IMPROVE_COLONY_MILITARTION_DESC:0 ""
+HOL_WW1_IMPROVE_COLONY_INDUSTRY:0 "Улучшение наше производство"
+HOL_WW1_IMPROVE_COLONY_INDUSTRY_DESC:0 ""
+HOL_WW1_IMPROVE_COLONY_AIR:0 "Реформа ВВС"
+HOL_WW1_IMPROVE_COLONY_AIR_DESC:0 ""
+Hol_WW1_Colony_Research:0 "Колониальные исследования"
+HOL_WW1_COLONY_RESEARCH_DESC:0 ""
+ #--------------------------------------------------------------
+
+
+ # [Holland] Diplomatic Effort
+ #=========================================================================
+HOL_WW1_DIPLOMATIC_EFFORT:0 "Дипломатические усилия"
+HOL_WW1_DIPLOMATIC_EFFORT_DESC:0 "Становится все труднее оставаться в середине дел в мире, в котором он стоит.Из вещей полностью. Хотя мы пока не можем ответить на этот вопрос, мы можем легко расширить наш корпус, чтобы иметь возможность выбрать один из этих вариантов"
+
+Hol_WW1_SupportGermany:0 "Поддержка Германии"
+Hol_WW1_SupportgerMany_desc:0 "С массовым промышленным сектором немецкой империи они, похоже, являются ясной ставкой, даже если они дипломатически изолированы. Показывая общественную поддержку немцам даже на несколько, не ключе Перемещение ближе к центральным державам"
+
+Hol_WW1_SupportFrance:0 "Поддержка Франции"
+HOL_WW1_SUPPORTFRANCE_DESC:0 "Хотя Франция не может конкурировать с Германией, у них гораздо больше друзей, и мы даже были бы еще одним. Поддержав Францию в нескольких предстоящих дипломатических проблемах, мы можем просто победить их"
+
+Hol_WW1_SupportAustria:0 "Поддержка Австрии-Венгрия"
+Hol_WW1_SupportAustria_DESC:0 "Старая империя Австрии-Венгрии жила, чтобы увидеть рост большинства основных наций на карте мира. Так что, конечно, если мы хотим стать более важной нацией, какая лучшая страна для поддержки?Это также поможет нам приблизиться к центральным державам"
+
+HOL_WW1_SUPPORTRUSSIA:0 "Поддержка России"
+HOL_WW1_SUPPORTRUSSIA_DESC:0 "Российская империя в довольно острого нуждается в международной помощи. Для нации, чей бывший лидер придумал термин больной человек России», они не могут быть особенно здоровыми. Наша поддержка, если ничто иное, поможет, поможетОни держатся достаточно долго, чтобы сделать что -то решительное"
+
+HOL_WW1_MILEARTION_RESERVE:0 "Военный запас"
+HOL_WW1_MILEARTION_RESEREVE_DESC:0 "Война может легко прийти к нашим границам в любой момент, и поэтому мы должны быть готовы к худшему. Военный заповедник свободно обученных призывников будет иметь небольшую истинную ценность в случае войны, но этоВпечатляемые молодые люди, получающие вкус армейской жизни, могут очень легко убедить их присоединиться к реальной вещи"
+HOL_WW1_EMBARGO_GERMANY:0 "Санкция Германия"
+HOL_WW1_EMBARGO_GERMANY_DESC:0 "Незаконные атаки Германии - это оскорбление свободной торговли! Хотя санкция немного дальше откроет нас от нейтралитета, это заставит нас намного труднее использовать торговцы Германской империи".
+
+HOL_WW1_EMBARGO_FRANCE:0 "Санкция Франция"
+HOL_WW1_EMBARGO_FRANCE_DESC:0 "Дипломатическая интрига Франции и задним числом непростительны! Хотя санкция заставит нас появиться и действовать гораздо менее нейтрально в военной ситуации, вряд ли будет спираль во что -то плохое, и, что более важно, обеспечит Францию не может воспользоваться нами!"
+
+Hol_WW1_SellWeapons:0 "Продает оружие"
+HOL_WW1_SellWeapons_DESC:0 "Хотя напряжение мира- это самое высокое, что было когда-либо, даже у этого штормового моллюска серебряная подкладка. Поскольку мы не заинтересованы в присоединении к бою, мы можем легко вытащить наше оружие и проекты оружия- даже к обеим сторонамКонфликт, если мы хотим- и сделаем убийство из несчастья других. Их вина за начало войны"
+
+Hol_WW1_Joingermany:0 "Присоединяйтесь к центральным силам"
+Hol_ww1_joingermany_desc:0 "Центральные силы долгое время были другом для нашей страны и отчаянно нуждаютсяЕсли бы мы так, но мы могли бы превратить приливы к решающей победе с их стороны"
+
+HOL_WW1_JOINFRANCE:0 "Присоединяйтесь к Entente"
+HOL_WW1_JOINFRANCE_DESC:0 "Антента в настоящее время, кажется, находится в лучшем положении, чтобы выиграть войну, и мы не хотели бы, чтобы нас поймали, пропустив мирную конференцию, как только они это сделают. Вступление в Аненту обязательно втянет нас в войну, что может запуститькатастрофически, но, по крайней мере, у нас будут союзники, чтобы помочь, верно? "
+
+HOL_WW1_WAR_EFFORT:0 "Военные усилия"
+HOL_WW1_WAR_EFFORT_DESC:0 "С миром в его нынешнем состоянии мы не можем позволить другим нациям пройти через наши военные. Расширяя нашу промышленную базу, мы можем убедиться, что у нас будет достаточно оружия и снарядов, чтобы выйти на первое место"
+
+HOL_WW1_equip_fra:0 "Entente Arms Delivers"
+HOL_WW1_equip_fra_desc:0 ""
+
+HOL_WW1_equip_ger:0 "Центральные власти по доставке рук"
+HOL_WW1_equip_ger_desc:0 ""
+
+Hol_WW1_Grants:0 "гранты"
+HOL_WW1_GRANTS_DESC:0 "Кредит деньги на Antente, чтобы помочь им в их военных усилиях"
+HOL_WW1_VOLUNTEERS:0 "Добровольцы"
+HOL_WW1_VOLUNTEERS_DESC:0 "Мы можем помочь нашим союзникам в их военных усилиях, отправив им войска"
+
+Hol_colony_war:0 "Подготовка к войне"
+Hol_colony_war_desc:0 ""
+HOL_WW1_ENG_EXCHANGE_PLAN:0 "Голландский план английского обмена"
+HOL_WW1_ENG_EXCHANGE_PLAN_DESC:0 "Обмен исследования с английским"
+
+Hol_war_reserach:0 "War Research"
+Hol_war_reserach_desc:0 "Соблюдайте борьбу и станьте сильнее в процессе"
+
+Hol_war_studies:0 "Военные исследования"
+HOL_WAR_STUDIES_DESC:0 "Изучите борьбу, происходящие вокруг наших границ"
+
+HOL_ACCES_TODOS:0 "Откройте границы"
+HOL_ACCES_TODOS_DESC:0 "Война приближается очень близко. Мы должны открыть наши границы, чтобы спасти столько человеческих жизней, пока они пытаются обойти нас"
+
+HOL_WW1_WAR_FANATICS:0 "Военные фанатики"
+HOL_WW1_WAR_FANATICS_DESC:0 "Есть энтузиасты войны, которые хотели бы сражаться с нашими друзьями"
+
+HOL_WW1_GER_EXCHANGE_PLAN:0 "Голландский Германский план обмена"
+HOL_WW1_GER_EXCHANGE_PLAN_DESC:0 "Обмен исследования с немцами"
+
+HOL_GERMAN_ACCESS:0 "Немецкий военный доступ"
+HOL_GERMAN_ACCESS_DESC:0 "План военного обмена с Германией был бы очень прибыльным…".
+
+Hol_neutrality_focus:0 "Нейтралитет фокус"
+Hol_neutrality_focus_DESC:0 "Хотя другие могут утверждать, что для того, чтобы отвлечься и мудрость, нужно взять на себя сторону в глобальном конфликте, мы знаем, что для отказа требуется больше"
+
+Hol_hostile_diplo:0 "Враждебная нейтралитет"
+HOL_HOSTILE_DIPLO_DESC:0 "Если мы собираемся быть нейтральными, должны быть готовы защищать наш нейтралитет"
+
+Hol_friendly_diplo:0 "дружественный нейтралитет"
+Hol_friendly_diplo_desc:0 "Если мы хотим остаться в стороне от войн, мы должны подружиться с боевыми вечеринками"
+
+Hol_armed_neu:0 "Вооруженный нейтралитет"
+HOL_ARMED_NEU_DESC:0 "Мы должны быть подготовлены в любом случае войны"
+
+Hol_Home_Defence:0 "Домашняя защита"
+Hol_home_defence_desc:0 "Это вышло из -под контроля, мы больше не можем оставаться нейтральными"
+
+Hol_Interventionism_focus:0 "Фокус интервенционизма"
+Hol_Interventionism_focus_desc:0 "Мы ценим свободу всех людей, не только наших собственных граждан. Если предотвращение тирании означает войну, то пусть будет так"
+
+Hol_deterrence:0 "сдерживание"
+Hol_deterrence_desc:0 "Стоя в одиночестве, мы редко получаем пользу от войны. К счастью, мы знаем, что лучшая защита настолько известна, что вам никогда не придется использовать его"
+
+Hol_volunteer_Corps:0 "Корпус добровольцев"
+Hol_volunteer_Corps_DESC:0 ", заставляя наших людей умереть за идеалы свободы, было бы упражнением в иронии, но установление средств для тех, кто хочет помогать людям за границей, нет".
+
+Hol_foreign_exeditions:0 ""
+Hol_foreign_exeditions_desc:0 ". С нашими врагами, готовыми к вмешательству в отдаленные конфликты от имени их идеалов, мы должны быть готовы сделать то же самое для наших"
+
+Hol_why_we_fight:0 "Почему мы боремся"
+HOL_WHY_WE_FIGHT_DESC:0 "Мир становится все более небезопасным. Наши люди должны видеть, что злодеяния совершаются теми, кто жаждет власти. Настало время сплотить людей к нашему делу и гарантировать, что все готовы бороться за нашу свободу"
+
+Hol_technology_sharing:0 "Обмен технологиями"
+Hol_technology_Sharing_DESC:0 ". Поделив технологические достижения с нашими союзниками, вся наша фракция сможет более эффективно проводить исследования и разработки военного времени"
+ #--------------------------------------------------------------

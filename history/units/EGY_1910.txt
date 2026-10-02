@@ -1,0 +1,104 @@
+
+###################################################################
+
+division_template = {
+	name = "Colonial Brigade"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		gunner_support = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+###################################################################
+
+units = {
+	division= { 
+		name = "El Iskandariya Garrison"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "Singapore Fortress"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "Wei Hai Wei Garrison"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "The Chinese Regiment"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "Hong Kong Garrison"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "Aden Brigade"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "KAR - 1st Nyasaland"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "KAR - 4th Uganda"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "Gold Coast & West African Regiments"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= { 
+		name = "The Nigeria Regiment"
+		location = 11529
+		division_template = "Colonial Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+}

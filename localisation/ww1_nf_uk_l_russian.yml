@@ -1,0 +1,286 @@
+﻿l_russian:
+
+
+ #--------------------------------------------------------------
+ # [BRITISH EMPIRE] Усилия армии
+ #=========================================================================
+ENG_ww1_army_effort_1:0 "Усилия армии"
+ENG_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_2:0 "Усилия армии II"
+ENG_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_3:0 "Усилия армии III"
+ENG_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_4:0 "Усилия армии IV"
+ENG_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_5:0 "Усилия армии V"
+ENG_ww1_army_effort_5_desc:0 "" #Frenchie
+
+ENG_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+ENG_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+ENG_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+ENG_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+ENG_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+ENG_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+ENG_ww1_artillery_effort_1:0 "Усилия артиллерии"
+ENG_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_2:0 "Усилия артиллерии II"
+ENG_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_3:0 "Усилия артиллерии III"
+ENG_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_4:0 "Усилия артиллерии IV"
+ENG_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_5:0 "Усилия артиллерии V"
+ENG_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+ENG_ww1_aircraftprod_1:0 "Производство самолетов"
+ENG_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_2:0 "Производство самолетов II"
+ENG_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_3:0 "Производство самолетов III"
+ENG_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_4:0 "Производство самолетов IV"
+ENG_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_5:0 "Производство самолетов V"
+ENG_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+ENG_ww1_large_navy_1:0 "Военно-морская авиация"
+ENG_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_2:0 "Реформа военно-морского флота и авиации II"
+ENG_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_3:0 "Реформа военно-морского флота и авиации III"
+ENG_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_4:0 "Реформа военно-морского флота и авиации IV"
+ENG_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_5:0 "Реформа военно-морского флота и авиации V"
+ENG_ww1_large_navy_5_desc:0 "" #Frenchie
+
+ENG_ww1_armor_effort_1:0 "Усилие брони"
+ENG_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+#--------------------------------------------------------------
+
+
+ # [BRITISH EMPIRE] Aviation Effort
+ #=========================================================================
+ #--------------------------------------------------------------
+
+
+ # [BRITISH EMPIRE] Industrial Effort
+ #=========================================================================
+ENG_ww1_industrial_effort:0 "Промышленные усилия"
+ENG_ww1_industrial_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_construction_effort:0 "Усилия по строительству"
+ENG_ww1_construction_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_construction_effort_2:0 "Усилия по строительству II"
+ENG_ww1_construction_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_construction_effort_3:0 "Усилия по строительству III"
+ENG_ww1_construction_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_production_effort:0 "Усилия по вооружению"
+ENG_ww1_production_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_production_effort_2:0 "Усилия по вооружению II"
+ENG_ww1_production_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_production_effort_3:0 "Усилия по вооружению III"
+ENG_ww1_production_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_dockyard_effort_1:0 "Расширение верфи"
+ENG_ww1_dockyard_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_dockyard_effort_2:0 "Расширение верфи II"
+ENG_ww1_dockyard_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_dockyard_effort_3:0 "Расширение верфи III"
+ENG_ww1_dockyard_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_airfield_expansion_1:0 "Расширение аэродрома"
+ENG_ww1_airfield_expansion_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_airfield_expansion_2:0 "Расширение аэродрома II"
+ENG_ww1_airfield_expansion_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_airfield_expansion_3:0 "Расширение аэродрома III"
+ENG_ww1_airfield_expansion_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort:0 "Инфраструктурные усилия"
+ENG_ww1_infrastructure_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort_2:0 "Инфраструктурные усилия II"
+ENG_ww1_infrastructure_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort_3:0 "Инфраструктурные усилия III"
+ENG_ww1_infrastructure_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort_4:0 "Инфраструктурные усилия IV"
+ENG_ww1_infrastructure_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_extra_tech_slot:0 "Дополнительный слот для исследований"
+ENG_ww1_extra_tech_slot_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_extra_tech_slot_2:0 "Дополнительный слот для исследований II"
+ENG_ww1_extra_tech_slot_2_desc:0 "" #KAISER_ANONY
+ #--------------------------------------------------------------
+
+
+ # [BRITISH EMPIRE] Naval Effort
+ #=========================================================================
+ ENG_ww1_naval_effort:0 "Усилить королевский флот"
+ ENG_ww1_naval_effort_desc:0 "Tоролевский флот Соединенного Королевства - самый большой и сильный флот в мире, насчитывающий столько же кораблей, сколько два следующих флота вместе взятых. Это не случайно - поскольку наша основная территория находится на острове, ее необходимо поддерживать, чтобы выжить в случае иностранного вторжения. Дальнейшие инвестиции в эту операцию могут привести только к хорошему."
+
+ ENG_ww1_newnavalcanons_1:0 "Военно-морская артиллерия"
+ ENG_ww1_newnavalcanons_1_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_newnavalcanons_2:0 "Военно-морская артиллерия II"
+ ENG_ww1_newnavalcanons_2_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_newnavalcanons_3:0 "Военно-морская артиллерия III"
+ ENG_ww1_newnavalcanons_3_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_dreadnought_effort:0 "Усилия дредноута"
+ ENG_ww1_dreadnought_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_flexible_navy:0 "Гибкий флот"
+ ENG_ww1_flexible_navy_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_large_navy:0 "Большой военно-морской"
+ ENG_ww1_large_navy_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_navyreform:0 "Развертывание военно-морского флота"
+ ENG_ww1_navyreform_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_submarine_effort:0 "Усилия подводных лодок"
+ ENG_ww1_submarine_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_cruiser_effort:0 "Усилия крейсера"
+ ENG_ww1_cruiser_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_destroyer_effort:0 "Усилия разрушителей"
+ ENG_ww1_destroyer_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_capital_ships_effort:0 "Усилия капитального корабля"
+ ENG_ww1_capital_ships_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_carrier_focus:0 "Усилия перевозчика"
+ ENG_ww1_carrier_focus_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_antisubmarine:0 "Противолодочная война"
+ ENG_ww1_antisubmarine_desc:0 "" #KAISER_ANONY
+
+ #--------------------------------------------------------------
+ENG_infrastructure_development_program:0 "Программа развития инфраструктуры"
+ENG_infrastructure_development_program_desc:0 ""
+ENG_grand_fleet_expansion:0 "Расширение Большого флота"
+ENG_grand_fleet_expansion_desc:0 ""
+ENG_lewis_automatic_machine_gun:0 "Автоматический пулемет Льюиса"
+ENG_lewis_automatic_machine_gun_desc:0 ""
+ENG_rollsroyce_armoured_car:0 "Бронированный автомобиль Rolls-Royce"
+ENG_rollsroyce_armoured_car_desc:0 ""
+ENG_rms_lusitania_sinking_response:0 "Реакция на затопление RMS Lusitania"
+ENG_rms_lusitania_sinking_response_desc:0 ""
+ENG_development_in_egypt:0 "Развитие в Египте"
+ENG_development_in_egypt_desc:0 ""
+ENG_stokes_mortar:0 "Раствор для стоков"
+ENG_stokes_mortar_desc:0 ""
+ENG_school_of_sniping_observation_and_scouting:0 "Школа снайпинга, наблюдения и разведки"
+ENG_school_of_sniping_observation_and_scouting_desc:0 ""
+ENG_1915_ministry_of_munitions:0 "1915 Министерство боеприпасов"
+ENG_1915_ministry_of_munitions_desc:0 ""
+ENG_gretna_green_factory_complex:0 "Фабричный комплекс Гретна Грин"
+ENG_gretna_green_factory_complex_desc:0 ""
+ENG_1915_board_of_inventions_and_research_in_the_admiralty:0 "1915 Совет по изобретениям и исследованиям в Адмиралтействе"
+ENG_1915_board_of_inventions_and_research_in_the_admiralty_desc:0 ""
+ENG_canadian_stormtroopers:0 "Канадские штурмовики"
+ENG_canadian_stormtroopers_desc:0 ""
+ENG_renew_angloportuguese_alliance:0 "Возобновить англо-португальский альянс"
+ENG_renew_angloportuguese_alliance_desc:0 ""
+ENG_angloportuguese_mineral_corporation:0 "Англо-португальская минеральная корпорация"
+ENG_angloportuguese_mineral_corporation_desc:0 ""
+ENG_sopwith_camel:0 "Сопвит Кэмел"
+ENG_sopwith_camel_desc:0 ""
+ENG_british_be2:0 "Британия B.E.2"
+ENG_british_be2_desc:0 ""
+ENG_qf_1pounder_pompom_aa:0 "QF 1-pounder pom-pom AA"
+ENG_qf_1pounder_pompom_aa_desc:0 ""
+ENG_pact_of_london:0 "Лондонский пакт"
+ENG_pact_of_london_desc:0 ""
+ENG_entente_cordiale:0 "Сердечное согласие"
+ENG_entente_cordiale_desc:0 ""
+ENG_mobilization_of_industry:0 "Мобилизация промышленности"
+ENG_mobilization_of_industry_desc:0 ""
+ENG_treasury_agreement_of_1915:0 "Казначейское соглашение 1915 года"
+ENG_treasury_agreement_of_1915_desc:0 ""
+ENG_room_40:0 "Номер 40"
+ENG_room_40_desc:0 ""
+ENG_establish_war_propaganda_bureau:0 "Создать Бюро военной пропаганды"
+ENG_establish_war_propaganda_bureau_desc:0 ""
+ENG_parliament_act_1911:0 "Закон о парламенте 1911"
+ENG_parliament_act_1911_desc:0 ""
+ENG_closer_french_military_cooperation:0 "Более тесное военное сотрудничество с Францией"
+ENG_closer_french_military_cooperation_desc:0 ""
+ENG_special_american_relationship:0 ""Особые" отношения с Америкой"
+ENG_special_american_relationship_desc:0 ""
+ENG_national_insurance_act_1911:0 "Закон о национальном страховании 1911 года"
+ENG_national_insurance_act_1911_desc:0 ""
+ENG_pax_britannica:0 "Pax Britannica"
+ENG_pax_britannica_desc:0 ""
+ENG_defence_of_the_realm_act:0 "Закон о защите королевства"
+ENG_defence_of_the_realm_act_desc:0 ""
+ENG_commonwealth_ties:0 "Галстуки Содружества"
+ENG_commonwealth_ties_desc:0 ""
+ENG_anzac_marines:0 "Морские пехотинцы АНЗАК"
+ENG_anzac_marines_desc:0 ""
+ENG_indian_labor_force:0 "Индийская рабочая сила"
+ENG_indian_labor_force_desc:0 ""
+ENG_indian_expeditionary_force:0 "Индийские экспедиционные силы"
+ENG_indian_expeditionary_force_desc:0 ""
+ENG_little_willie:0 "Маленький Вилли"
+ENG_little_willie_desc:0 ""
+ENG_royal_flying_corps:0 "Королевский летный корпус"
+ENG_royal_flying_corps_desc:0 ""
+ENG_british_expeditionary_force:0 "Британские экспедиционные силы"
+ENG_british_expeditionary_force_desc:0 ""
+ENG_social_reform:0 "Социальная реформа"
+ENG_social_reform_desc:0 ""
+ENG_east_entente_diplomacy:0 "Дипломатия Восточной Антанты"
+ENG_east_entente_diplomacy_desc:0 ""
+ENG_gallipoli_campaign:0 "Галлиполийская кампания"
+ENG_gallipoli_campaign_desc:0 ""
+ENG_expanded_naval_budget:0 "Расширенный военно -морской бюджет"
+ENG_expanded_naval_budget_desc:0 ""
+ENG_the_british_regular:0 "Британский обычный"
+ENG_the_british_regular_desc:0 ""
+ENG_scientific_development:0 "Научное развитие"
+ENG_scientific_development_desc:0 ""
+ 
+ #--------------------------------------------------------------
+
+
+ ENG_ww1_alone_or_peace_faction_tt:0 "не в фракции или находится в фракции в мире с[FRA.GetNameDef]."

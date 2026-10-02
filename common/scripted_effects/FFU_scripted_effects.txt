@@ -1,0 +1,37 @@
+FFU_show_super_event={
+	hidden_effect = {
+		every_country={
+			limit={
+				is_playable_country=yes
+				check_variable = { super_events_enabled > 0 }
+			}
+			set_variable={super_event=Global.super_event}
+		}
+	}
+}
+
+FFU_generic_docks_effect = {
+	navy_experience = 60
+	random_owned_controlled_state = {
+		limit = {
+			is_coastal = yes
+			is_core_of = ROOT
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			is_coastal = yes
+			is_core_of = ROOT
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+		}
+	}
+}

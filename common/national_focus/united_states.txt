@@ -1,0 +1,821 @@
+focus_tree = {	#PODHOLE and leifee from now(03.08.2024) <3
+	id = usa_focus
+	default = no
+	reset_on_civilwar = no
+	country = {factor=0 modifier={add=20 tag=USA} }
+	continuous_focus_position = { x = 600 y = 1600 }
+	
+	##########################################################################################
+	
+	##We Have Only Just Begun to Fight
+	focus={
+		id=USA_we_have_only_just_begun_to_fight
+		#icon=GFX_focus_usa_federal_government
+		icon=GFX_focus_usa_shield
+		available_if_capitulated=yes
+		x=16
+		y=0
+		cost=1
+		available={has_war=yes is_ai=no}
+		completion_reward={
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_dynamic_modifier = {
+						modifier = USA_build_infra_modifier
+					}
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = "Every state:"
+				add_dynamic_modifier = {
+					modifier = USA_build_infra_modifier
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas=USA_aef
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = USA_we_have_only_just_begun_to_fight_tt
+			hidden_effect = {load_oob = "USA_first_focus_army"}
+		}
+	}
+	##Committee on Public Information
+	focus={
+		id=USA_cpi
+		icon=GFX_FRA_expanded_duty
+		#icon=GFX_focus_generic_full_social_mobilization
+		#icon=GFX_focus_POL_expand_polish_intelligence
+		available_if_capitulated=yes
+		relative_position_id=USA_we_have_only_just_begun_to_fight
+		x=-3
+		y=1
+		prerequisite={focus=USA_we_have_only_just_begun_to_fight}
+		cost=3
+		completion_reward={
+			add_political_power=100
+			add_stability=0.05
+			add_war_support=0.15
+		}
+	}
+	##Espionage Act
+	focus={
+		id=USA_espionage_act
+		#icon=GFX_focus_eng_move_to_secure_the_dominions
+		icon=GFX_focus_generic_national_security
+		available_if_capitulated=yes
+		relative_position_id=USA_cpi
+		x=0
+		y=1
+		prerequisite={focus=USA_cpi}
+		cost=4
+		completion_reward={
+			add_political_power=150
+			add_stability=0.10
+			add_war_support=0.20
+		}
+	}
+	##Sedition Act
+	focus={
+		id=USA_sedition_act
+		icon=GFX_FRA_ministere_des_colonies-46518
+		available_if_capitulated=yes
+		relative_position_id=USA_espionage_act
+		x=0
+		y=1
+		prerequisite={focus=USA_espionage_act}
+		cost=5
+		completion_reward={
+			add_political_power=200
+			add_stability=0.15
+			add_war_support=0.30
+		}
+	}
+	##Nationalize Railways
+	focus={
+		id=USA_nationalize_railways
+		icon=GFX_focus_generic_railroad
+		#icon=GFX_focus_generic_full_social_mobilization
+		#icon=GFX_focus_POL_expand_polish_intelligence
+		available_if_capitulated=yes
+		relative_position_id=USA_we_have_only_just_begun_to_fight
+		x=-5
+		y=1
+		prerequisite={focus=USA_we_have_only_just_begun_to_fight}
+		cost=2
+		completion_reward={
+			add_ideas=USA_usra
+		}
+	}
+	##US Food Administration
+	focus={
+		id=USA_food_administration
+		#icon=GFX_focus_generic_farmland
+		icon=GFX_focus_ARG_capitalize_the_beef_industry
+		available_if_capitulated=yes
+		relative_position_id=USA_we_have_only_just_begun_to_fight
+		x=-1
+		y=1
+		prerequisite={focus=USA_we_have_only_just_begun_to_fight}
+		cost=3
+		completion_reward={
+			403={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={ type=industrial_complex level=3 instant_build=yes }
+			}
+			404={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={ type=industrial_complex level=3 instant_build=yes }
+			}
+			401={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={ type=industrial_complex level=3 instant_build=yes }
+			}
+			396={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={ type=industrial_complex level=3 instant_build=yes }
+			}
+			393={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={ type=industrial_complex level=3 instant_build=yes }
+			}
+		}
+	}
+	##Sell Liberty Bonds
+	focus={
+		id=USA_sell_liberty_bonds
+		#icon=GFX_focus_usa_shield
+		icon=GFX_focus_ARG_defense_and_democracy
+		available_if_capitulated=yes
+		relative_position_id=USA_food_administration
+		x=0
+		y=1
+		prerequisite={
+			focus=USA_food_administration
+		}
+		cost=3
+		completion_reward={
+			add_ideas=USA_liberty_bonds
+		}
+	}
+	##National War Labor Board
+	focus={
+		id=USA_nwlb
+		icon=GFX_focus_generic_public_works
+		relative_position_id=USA_we_have_only_just_begun_to_fight
+		x=1
+		y=1
+		prerequisite={focus=USA_we_have_only_just_begun_to_fight}
+		cost=3
+		completion_reward={
+			swap_ideas={
+				remove_idea=USA_industrial_titan
+				add_idea=USA_industrial_titan_2
+			}
+		}
+	}
+	##Bethlehem Steel
+	focus={
+		id=USA_bethlehem_steel
+		#icon=GFX_SOV_war_industries_committees-45150
+		#icon=GFX_focus_generic_reorient_production
+		#icon=GFX_focus_generic_public_works
+		#icon=GFX_GER_military_workshop-45144
+		icon=GFX_GER_redirected_funding-73683
+		#icon=GFX_focus_generic_modernize_industry
+		available_if_capitulated=yes
+		relative_position_id=USA_nwlb
+		x=0
+		y=1
+		prerequisite={
+			focus=USA_nwlb
+		}
+		cost=3
+		completion_reward={
+			416={
+				add_extra_state_shared_building_slots=20
+				add_building_construction={ type=arms_factory level=20 instant_build=yes }
+			}
+		}
+	}
+	##Army Department
+	focus={
+		id=USA_expand_war_department
+		icon=GFX_focus_usa_army_department
+		available_if_capitulated=yes
+		relative_position_id=USA_we_have_only_just_begun_to_fight
+		x=3
+		y=1
+		prerequisite={focus=USA_we_have_only_just_begun_to_fight}
+		cost=3
+		completion_reward={
+			add_command_power=100
+			army_experience=50
+			add_ideas=USA_war_department
+		}
+	}
+	##Services of Supply
+	focus = {
+		id = USA_services_of_supply
+		icon = GFX_focus_CAN_british_rifle_lease
+		available_if_capitulated = yes
+		relative_position_id = USA_expand_war_department
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_expand_war_department }
+		cost = 3
+		completion_reward = {
+			add_tech_bonus={
+				bonus=1 uses=5 category=support_tech
+			}
+		}
+	}
+	##They Will Get the Job Done
+	focus = {
+		id = USA_they_will_get_the_job_done
+		icon = GFX_focus_usa_national_guard
+		available_if_capitulated = yes
+		relative_position_id = USA_services_of_supply
+		x = 0
+		y = 2
+		prerequisite = { focus = USA_services_of_supply }
+		cost = 3
+		completion_reward = {
+			add_ideas = USA_selective_service
+		}
+	}
+	##Devil Dogs
+	focus = {
+		id = USA_devil_dogs
+		icon = GFX_focus_usa_coast_guard
+		available_if_capitulated = yes
+		relative_position_id = USA_services_of_supply
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_services_of_supply }
+		cost = 3
+		completion_reward = {
+			custom_effect_tooltip = USA_devil_dogs_tt
+			hidden_effect = {load_oob = "USA_devil_dogs"}
+			add_tech_bonus={
+				bonus=2 uses=3 category=marine_tech category=tp_tech
+			}
+		}
+	}
+	##A Ghost in the Trenches
+	focus = {
+		id = USA_a_ghost_in_the_trenches
+		icon = GFX_ww1_nationalfocus_gasmask
+		available_if_capitulated = yes
+		relative_position_id = USA_services_of_supply
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_services_of_supply }
+		cost = 3
+		completion_reward = {
+			add_tech_bonus={
+				bonus=2 uses=1 category=infantry_weapons category=artillery category=armor
+			}
+		}
+	}
+	##Navy Department
+	focus={
+		id=USA_navy_department
+		icon=GFX_focus_usa_navy
+		relative_position_id=USA_we_have_only_just_begun_to_fight
+		x=5
+		y=1
+		prerequisite={focus=USA_we_have_only_just_begun_to_fight}
+		cost=2
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 2
+				uses = 8
+				category = naval_equipment
+			}
+		}
+	}
+	##Navy Department
+	focus={
+		id=USA_naval_construction_act
+		#icon=GFX_focus_usa_navy
+		icon=GFX_focus_battleship_production
+		relative_position_id=USA_navy_department
+		x=0
+		y=1
+		prerequisite={focus=USA_navy_department}
+		cost=3
+		completion_reward={
+			every_owned_state={
+				limit={
+					OR={
+						state=419
+						state=417
+						state=418
+						state=409
+						state=407
+						state=406
+						state=392
+						state=391
+						state=390
+						state=395
+						state=394
+						state=398
+					}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=dockyard level=2 instant_build=yes }
+			}
+		}
+	}
+	
+             #################################################
+	focus = {
+		id = USA_ww1_army_effort_1
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		completion_reward = { army_experience = 25 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_1 }
+		cost = 5
+		x = 26
+		y = 4
+		available = { is_ai = no }
+	}
+	focus = {
+		id = USA_ww1_equipment_effort_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_1 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_1
+		x = 2
+		y = 0
+		available = { is_ai = no }
+	}
+	focus = {
+		id = USA_ww1_artillery_effort_1
+		prerequisite = { }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_1 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_1
+		x = 4
+		y = 0
+		available = { is_ai = no }
+	}
+	focus = {
+		id = USA_ww1_aircraftprod_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_1 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_1
+		x = 6
+		y = 0
+		available = { is_ai = no }
+	}
+	focus = {
+		id = USA_ww1_large_navy_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = USA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_1 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_1
+		x = 8
+		y = 0
+		available = { is_ai = no }
+	}
+
+	##############################################################################
+
+focus = {
+		id = USA_ww1_army_effort_2
+		prerequisite = { focus=USA_ww1_army_effort_1
+		 focus=USA_ww1_equipment_effort_1
+		 focus=USA_ww1_artillery_effort_1
+		 focus=USA_ww1_aircraftprod_1
+		 focus=USA_ww1_large_navy_1}
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		completion_reward = { army_experience = 25 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_2 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_1
+		x = 0
+		y = 1
+		}
+focus = {
+		id = USA_ww1_equipment_effort_2
+		prerequisite = { focus=USA_ww1_army_effort_1
+		 focus=USA_ww1_equipment_effort_1
+		 focus=USA_ww1_artillery_effort_1
+		 focus=USA_ww1_aircraftprod_1
+		 focus=USA_ww1_large_navy_1}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_2}
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_2
+		x = 2
+		y = 0
+	}
+focus = {
+		id = USA_ww1_artillery_effort_2
+		prerequisite = { focus=USA_ww1_army_effort_1
+		 focus=USA_ww1_equipment_effort_1
+		 focus=USA_ww1_artillery_effort_1
+		 focus=USA_ww1_aircraftprod_1
+		 focus=USA_ww1_large_navy_1}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_2 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_2
+		x = 4
+		y = 0
+	}
+focus = {
+		id = USA_ww1_aircraftprod_2
+		prerequisite = { focus=USA_ww1_army_effort_1
+		focus=USA_ww1_equipment_effort_1
+		focus=USA_ww1_artillery_effort_1
+		focus=USA_ww1_aircraftprod_1
+		focus=USA_ww1_large_navy_1}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_2 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_2
+		x = 6
+		y = 0
+	}
+focus = {
+		id = USA_ww1_large_navy_2
+		prerequisite = { focus=USA_ww1_army_effort_1
+		focus=USA_ww1_equipment_effort_1
+		focus=USA_ww1_artillery_effort_1
+		focus=USA_ww1_aircraftprod_1
+		focus=USA_ww1_large_navy_1}
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = USA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_2 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_2
+		x = 8
+		y = 0
+	}
+	################################################################
+
+focus = {
+		id = USA_ww1_army_effort_3
+		prerequisite = { focus=USA_ww1_army_effort_2
+		 focus=USA_ww1_equipment_effort_2
+		 focus=USA_ww1_artillery_effort_2
+		 focus=USA_ww1_aircraftprod_2
+		 focus=USA_ww1_large_navy_2}
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		completion_reward = { army_experience = 25 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_3 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_2
+		x = 0
+		y = 1
+		}
+focus = {
+		id = USA_ww1_equipment_effort_3
+		prerequisite = { focus=USA_ww1_army_effort_2
+		 focus=USA_ww1_equipment_effort_2
+		 focus=USA_ww1_artillery_effort_2
+		 focus=USA_ww1_aircraftprod_2
+		 focus=USA_ww1_large_navy_2}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_3}
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_3
+		x = 2
+		y = 0
+	}
+focus = {
+		id = USA_ww1_artillery_effort_3
+		prerequisite = { focus=USA_ww1_army_effort_2
+		 focus=USA_ww1_equipment_effort_2
+		 focus=USA_ww1_artillery_effort_2
+		 focus=USA_ww1_aircraftprod_2
+		 focus=USA_ww1_large_navy_2}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_3 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_3
+		x = 4
+		y = 0
+	}
+focus = {
+		id = USA_ww1_aircraftprod_3
+		prerequisite = { focus=USA_ww1_army_effort_2
+		focus=USA_ww1_equipment_effort_2
+		focus=USA_ww1_artillery_effort_2
+		focus=USA_ww1_aircraftprod_2
+		focus=USA_ww1_large_navy_2}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_3 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_3
+		x = 6
+		y = 0
+	}
+focus = {
+		id = USA_ww1_large_navy_3
+		prerequisite = { focus=USA_ww1_army_effort_2
+		focus=USA_ww1_equipment_effort_2
+		focus=USA_ww1_artillery_effort_2
+		focus=USA_ww1_aircraftprod_2
+		focus=USA_ww1_large_navy_2 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = USA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_3 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_3
+		x = 8
+		y = 0
+	}
+	################################################################
+
+focus = {
+		id = USA_ww1_army_effort_4
+		prerequisite = { focus=USA_ww1_army_effort_3
+		 focus=USA_ww1_equipment_effort_3
+		 focus=USA_ww1_artillery_effort_3
+		 focus=USA_ww1_aircraftprod_3
+		 focus=USA_ww1_large_navy_3}
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		completion_reward = { army_experience = 25 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_4 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_3
+		x = 0
+		y = 1
+		}
+focus = {
+		id = USA_ww1_equipment_effort_4
+		prerequisite = { focus=USA_ww1_army_effort_3
+		 focus=USA_ww1_equipment_effort_3
+		 focus=USA_ww1_artillery_effort_3
+		 focus=USA_ww1_aircraftprod_3
+		 focus=USA_ww1_large_navy_3}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_4 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_4
+		x = 2
+		y = 0
+	}
+focus = {
+		id = USA_ww1_artillery_effort_4
+		prerequisite = { focus=USA_ww1_army_effort_3
+		 focus=USA_ww1_equipment_effort_3
+		 focus=USA_ww1_artillery_effort_3
+		 focus=USA_ww1_aircraftprod_3
+		 focus=USA_ww1_large_navy_3 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_4 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_4
+		x = 4
+		y = 0
+	}
+focus = {
+		id = USA_ww1_aircraftprod_4
+		prerequisite = { focus=USA_ww1_army_effort_3
+		focus=USA_ww1_equipment_effort_3
+		focus=USA_ww1_artillery_effort_3
+		focus=USA_ww1_aircraftprod_3
+		focus=USA_ww1_large_navy_3}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_4 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_4
+		x = 6
+		y = 0
+	}
+focus = {
+		id = USA_ww1_large_navy_4
+		prerequisite = { focus=USA_ww1_army_effort_3
+		focus=USA_ww1_equipment_effort_3
+		focus=USA_ww1_artillery_effort_3
+		focus=USA_ww1_aircraftprod_3
+		focus=USA_ww1_large_navy_3 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = USA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_4 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_4
+		x = 8
+		y = 0
+	}
+
+   ############################################################################
+ 	################################################################
+
+focus = {
+		id = USA_ww1_army_effort_5
+		prerequisite = { focus=USA_ww1_army_effort_4
+		 focus=USA_ww1_equipment_effort_4
+		 focus=USA_ww1_artillery_effort_4
+		 focus=USA_ww1_aircraftprod_4
+		 focus=USA_ww1_large_navy_4}
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		completion_reward = { army_experience = 25 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_5 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_4
+		x = 0
+		y = 1
+		}
+focus = {
+		id = USA_ww1_equipment_effort_5
+		prerequisite = { focus=USA_ww1_army_effort_4
+		 focus=USA_ww1_equipment_effort_4
+		 focus=USA_ww1_artillery_effort_4
+		 focus=USA_ww1_aircraftprod_4
+		 focus=USA_ww1_large_navy_4}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_5 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_5
+		x = 2
+		y = 0
+	}
+focus = {
+		id = USA_ww1_artillery_effort_5
+		prerequisite = { focus=USA_ww1_army_effort_4
+		 focus=USA_ww1_equipment_effort_4
+		 focus=USA_ww1_artillery_effort_4
+		 focus=USA_ww1_aircraftprod_4
+		 focus=USA_ww1_large_navy_4 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_5 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_5
+		x = 4
+		y = 0
+	}
+focus = {
+		id = USA_ww1_aircraftprod_5
+		prerequisite = { focus=USA_ww1_army_effort_4
+		focus=USA_ww1_equipment_effort_4
+		focus=USA_ww1_artillery_effort_4
+		focus=USA_ww1_aircraftprod_4
+		focus=USA_ww1_large_navy_4}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = USA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_large_navy_5 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_5
+		x = 6
+		y = 0
+	}
+focus = {
+		id = USA_ww1_large_navy_5
+		prerequisite = { focus=USA_ww1_army_effort_4
+		focus=USA_ww1_equipment_effort_4
+		focus=USA_ww1_artillery_effort_4
+		focus=USA_ww1_aircraftprod_4
+		focus=USA_ww1_large_navy_4 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { FFU_generic_docks_effect = yes }
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = USA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = USA_ww1_aircraftprod_5 }
+		cost = 5
+		relative_position_id=USA_ww1_army_effort_5
+		x = 8
+		y = 0
+	}
+
+   ############################################################################
+focus = {
+		id = USA_ww1_armor_effort_1
+		prerequisite = { focus=USA_ww1_army_effort_5
+		focus=USA_ww1_equipment_effort_5
+		focus=USA_ww1_artillery_effort_5
+		focus=USA_ww1_aircraftprod_5
+		focus=USA_ww1_large_navy_5 }
+		icon = GFX_hoi4tgw_renaultft
+		completion_reward = { army_experience=10 add_tech_bonus={ name=armor_bonus bonus=1 uses=2 category=armor } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		relative_position_id=USA_ww1_army_effort_5
+		x = 4
+		y = 1
+	}
+######################################################################################
+}

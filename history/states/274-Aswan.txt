@@ -1,0 +1,42 @@
+
+state={
+	id=274
+	name="STATE_274"
+
+	history={
+		set_state_flag = ENG_controls
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			air_base=1
+		}
+		victory_points = {
+			7223 1
+		}
+		victory_points = {
+			2656 1
+		}
+		victory_points = {
+			351 5
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		351 537 614 731 887 1502 1687 2656 2684 2919 3219 3831 4146 4737 5199 5396 6497 7040 7223 8041 8760 10554 10910 17076 17100 17159 17171 
+	}
+	manpower=4224516
+	buildings_max_level_factor=1.000
+	state_category=rural
+	resources = {
+		chromium = 11
+		tungsten = 19
+		rubber = 18
+		steel = 5
+		coal = 12
+	}
+}

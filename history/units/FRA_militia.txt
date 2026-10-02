@@ -1,0 +1,431 @@
+####################################
+division_template = {
+	name = "Gardes républicaines"
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		heavy_artillery_brigade = { x = 3 y = 0 }
+		heavy_artillery_brigade = { x = 3 y = 1 }
+		heavy_artillery_brigade = { x = 3 y = 2 }	
+		heavy_artillery_brigade = { x = 4 y = 0 }
+		heavy_artillery_brigade = { x = 4 y = 1 }
+		heavy_artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		sapper = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		flamethrower = { x = 0 y = 4 }
+		gunner_support = { x = 1 y = 0 }
+		signal_company = { x = 1 y = 1 }
+		logistics_company = { x = 1 y = 2 }
+		field_hospital = { x = 1 y = 3 }
+		sniper = { x = 1 y = 4 }
+	}
+	priority = 2
+}
+
+division_template = {
+    name = "Division de milice"
+    regiments = {
+        infantry2 = { x = 0 y = 0 }
+        infantry2 = { x = 0 y = 1 }
+        infantry2 = { x = 0 y = 2 }
+        infantry2 = { x = 1 y = 0 }
+        infantry2 = { x = 1 y = 1 }
+        infantry2 = { x = 1 y = 2 }
+        infantry2 = { x = 2 y = 0 }
+        infantry2 = { x = 2 y = 1 }
+        infantry2 = { x = 2 y = 2 }
+        infantry2 = { x = 3 y = 0 }
+        infantry2 = { x = 3 y = 1 }
+        infantry2 = { x = 3 y = 2 }
+        gunner = { x = 4 y = 0 }
+        gunner = { x = 4 y = 1 }
+        gunner = { x = 4 y = 2 }
+    }
+    support = {
+		engineer = { x = 0 y = 0 }
+		gunner_support = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+    }
+}
+################################################
+
+##40 Gun1 Mg2 inf in Bordeaux
+##Each div 12900 men, total 516000 men
+
+units={
+	##6 heavy arty
+	division= {
+		name = "Gardes républicaines"
+		location=19852 #Bordeaux
+		division_template="Gardes républicaines"
+		start_experience_factor= 0.6
+		start_manpower_factor = 1.0
+	}
+	division= {
+		name = "Gardes républicaines"
+		location=19852 #Bordeaux
+		division_template="Gardes républicaines"
+		start_experience_factor= 0.6
+		start_manpower_factor = 1.0
+	}
+	division= {
+		name = "Gardes républicaines"
+		location=19852 #Bordeaux
+		division_template="Gardes républicaines"
+		start_experience_factor= 0.6
+		start_manpower_factor = 1.0
+	}
+	division= {
+		name = "Gardes républicaines"
+		location=19852 #Bordeaux
+		division_template="Gardes républicaines"
+		start_experience_factor= 0.6
+		start_manpower_factor = 1.0
+	}
+	division= {
+		name = "Gardes républicaines"
+		location=19852 #Bordeaux
+		division_template="Gardes républicaines"
+		start_experience_factor= 0.6
+		start_manpower_factor = 1.0
+	}
+	division= {
+		name = "Gardes républicaines"
+		location=19852 #Bordeaux
+		division_template="Gardes républicaines"
+		start_experience_factor= 0.6
+		start_manpower_factor = 1.0
+	}
+	##40 inf
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division= {
+		name = "Division de milice"
+		location=19852 #Bordeaux
+		division_template="Division de milice"
+		start_experience_factor= 0.05
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=349
+	name="STATE_349"
+	provinces={
+		133 218 527 828 1357 1428 1777 1817 1997 2011 2168 2508 2710 2714 2772 3435 3581 3737 5230 6061 6832 7401 7795 8328 8478 9921 10992 11117 15860 15887 15925 15992 16028 16131 
+	}
+	manpower=721010
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = PER
+		add_core_of = PER
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			8478 1		#Eivan
+		}
+		victory_points = {
+			6832 5		#Kermanshah
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+}

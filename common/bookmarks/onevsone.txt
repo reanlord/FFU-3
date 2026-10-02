@@ -1,0 +1,49 @@
+bookmarks = {
+	bookmark = {
+		name =  "Western Front (with 1v1 option)"
+		desc =  ONEVSONE_DESC
+		date = 1911.1.1.16
+		picture =  GFX_select_date_esport
+		default_country = GER
+		default = yes
+		
+		 FRA ={
+			history =  FRA_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				FRA_belle_epoque
+				FRA_sfio_vs_revanchism
+				FRA_military_passive
+			}
+			focuses = {
+				FRA_maroc_crisis
+				FRA_union_sacre
+				FRA_horizon_blue_uniforms
+			}
+		}
+		
+		 GER ={
+			history =  GER_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				GER_ww1_North_German_Confederation
+				German_staff_ww1
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				GER_extreme_military_spending
+				GER_pariser_kanon
+				GER_sturmtruppen
+			}
+		}
+
+		 --- ={
+			history =  OTHER_POWDERKEG_DESC 
+		}
+		
+		effect = {
+			randomize_weather = 22346 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

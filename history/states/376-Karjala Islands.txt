@@ -1,0 +1,23 @@
+state={
+	id=376
+	name="STATE_376"
+	provinces={
+		17221 17222 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category = small_island
+	history=
+	{
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = FIN
+		buildings = {
+			infrastructure = 3
+			}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+		}
+}

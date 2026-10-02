@@ -1,0 +1,40 @@
+
+state={
+	id=306
+	name="STATE_306"
+	provinces={
+		899 5616 7944 9186 10707 11636 16705 16718
+	}
+	manpower=236400
+	buildings_max_level_factor=1.000
+	state_category=town
+	history={
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 5
+			10707 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			5616 1
+		}
+		victory_points = {
+			7944 1
+		}
+		victory_points = {
+			9186 1
+		}
+		victory_points = {
+			11636 5
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+	resources = {
+		wood = 30
+	}
+}

@@ -1,0 +1,1427 @@
+##PODHOLE
+focus_tree = {
+	id = libya_focus
+	default = no
+	reset_on_civilwar = no
+	country = {factor=0 modifier={add=10 tag=LBA} }
+	continuous_focus_position = { x = 200 y = 900 }
+	
+	##########################
+	###POLITICS
+	##########################
+	
+	##Strengthen the Sheikh's Authority
+	focus={
+		id=LBA_strengthen_sheikh_authority
+		icon=GFX_TUR_help_senussi
+		available_if_capitulated=yes
+		x=6
+		y=0
+		cost=5
+		completion_reward={
+			add_political_power = 150
+			TUR = {
+				give_military_access = LBA
+			}
+			190 = {
+				transfer_state_to = LBA
+				add_dynamic_modifier = {
+					modifier = FFU_fast_travel_modifier
+				}
+			}
+			every_owned_state = {
+				limit = { is_core_of = LBA }
+				add_dynamic_modifier = {
+					modifier = FFU_fast_travel_modifier
+				}
+			}
+		}
+	}
+	
+	##Expand the Zawiyas
+	focus={
+		id=LBA_expand_zawiyas
+		icon=GFX_focus_islamic_parliament
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=-2
+		y=1
+		prerequisite={focus=LBA_strengthen_sheikh_authority}
+		cost=5
+		completion_reward={
+			add_ideas=LBA_zawiya_education
+		}
+	}
+	
+	##Kufra Headquarters
+	focus={
+		id=LBA_kufra_headquarters
+		icon=GFX_TUR_office_of_war_industry-96076
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=0
+		y=1
+		prerequisite={focus=LBA_strengthen_sheikh_authority}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_government_1
+				add_idea=LBA_government_2
+			}
+		}
+	}
+	
+	##Islamic Charity
+	focus={
+		id=LBA_islamic_charity
+		icon=GFX_focus_generic_population_growth
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=2
+		y=1
+		prerequisite={focus=LBA_strengthen_sheikh_authority}
+		cost=5
+		completion_reward={
+			add_timed_idea={
+				idea=LBA_islamic_charity_bonus
+				days=1095
+			}
+		}
+	}
+	
+	##The Tripolitanian Movement
+	focus={
+		id=LBA_cooperation_tripoli
+		icon = GFX_goal_generic_major_alliance
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=-1
+		y=2
+		prerequisite={ focus=LBA_strengthen_sheikh_authority }
+		mutually_exclusive={ focus=LBA_unification_by_force }
+		cost=5
+		completion_reward={
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LBA_ramadan_al_sewehili
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LBA_suleyman_al_baruni
+		}
+	}
+	
+	##Unification by Force
+	focus={
+		id=LBA_unification_by_force
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=1
+		y=2
+		prerequisite={ focus=LBA_strengthen_sheikh_authority }
+		mutually_exclusive={ focus=LBA_cooperation_tripoli }
+		cost=5
+		completion_reward={
+			add_political_power = 100
+			add_war_support = 0.30
+		}
+	}
+	
+	##The Kingdom of Libya
+	focus={
+		id=LBA_declare_kingdom
+		icon=GFX_goal_royal_edicts2
+		available_if_capitulated=yes
+		relative_position_id=LBA_cooperation_tripoli
+		x=1
+		y=1
+		prerequisite={ focus=LBA_kufra_headquarters }
+		prerequisite={ focus=LBA_cooperation_tripoli focus=LBA_unification_by_force }
+		available={
+			OR={
+				date>1915.11.1
+				#has_idea=BUL_eastern_allies9
+				TUR={has_idea=TUR_levent_campaign9}
+			}
+		}
+		cost=10
+		completion_reward={
+			add_research_slot=1
+			142={ add_extra_state_shared_building_slots=6 }
+			436={ add_extra_state_shared_building_slots=6 }
+			435={ add_extra_state_shared_building_slots=6 }
+			140={ add_extra_state_shared_building_slots=6 }
+		}
+	}
+	
+	##Import Ottoman Bureaucrats
+	focus={
+		id=LBA_bureaucrats
+		icon=GFX_FRA_1914_fiscal_reforms-50772
+		available_if_capitulated=yes
+		relative_position_id=LBA_declare_kingdom
+		x=1
+		y=1
+		prerequisite={focus=LBA_declare_kingdom}
+		mutually_exclusive={focus=LBA_strong_monarchy}
+		cost=10
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_government_2
+				add_idea=LBA_government_bureaucracy
+			}
+		}
+	}
+	
+	##A Strong Monarchy
+	focus={
+		id=LBA_strong_monarchy
+		icon=GFX_focus_generic_monarchy_1
+		available_if_capitulated=yes
+		relative_position_id=LBA_declare_kingdom
+		x=-1
+		y=1
+		prerequisite={focus=LBA_declare_kingdom}
+		mutually_exclusive={focus=LBA_bureaucrats}
+		cost=10
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_government_2
+				add_idea=LBA_government_sheikh
+			}
+		}
+	}
+	
+	##Our Followers Abroad
+	focus={
+		id=LBA_followers_abroad
+		icon=GFX_focus_generic_islam
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=4
+		y=1
+		prerequisite={focus=LBA_strengthen_sheikh_authority}
+		cost=5
+		completion_reward={
+			435={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+		}
+	}
+	
+	##Recruit Egyptian Dissidents
+	focus={
+		id=LBA_recruit_egyptians
+		icon=GFX_goal_generic_intelligence_exchange
+		available_if_capitulated=yes
+		relative_position_id=LBA_followers_abroad
+		x=-1
+		y=1
+		prerequisite={focus=LBA_followers_abroad}
+		cost=5
+		completion_reward={
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = LBA_abd_al_rahman_azzam
+			custom_effect_tooltip = available_military_theorist
+			show_ideas_tooltip = LBA_mohammed_saleh_harb
+		}
+	}
+	
+	##Support the Tuaregs
+	focus={
+		id=LBA_support_zaians
+		icon=GFX_focus_generic_support_the_left_right
+		available_if_capitulated=yes
+		relative_position_id=LBA_followers_abroad
+		x=1
+		y=1
+		prerequisite={focus=LBA_followers_abroad}
+		cost=5
+		completion_reward={
+			add_equipment_to_stockpile= {
+				type = armored_car_equipment
+				amount = 150
+				producer = LBA
+            }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LBA_kaocen_ag_geda
+		}
+	}
+	
+	##Alliance with the Dervishes
+	focus={
+		id=LBA_work_with_dervishes
+		icon = GFX_goal_generic_military_deal
+		available_if_capitulated=yes
+		relative_position_id=LBA_followers_abroad
+		x=0
+		y=2
+		prerequisite={focus=LBA_followers_abroad}
+		cost=5
+		completion_reward={
+			add_equipment_to_stockpile= {
+				type = light_field_gun_equipment
+				amount = 20
+				producer = LBA
+            }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LBA_ali_dinar
+		}
+	}
+	
+	##########################
+	###Economy
+	##########################
+	
+	##Connect the Oases
+	focus={
+		id=LBA_connect_oases
+		#icon=GFX_focus_infrastructure_color
+		#icon=GFX_SOV_stolypins_land_reform-45113
+		icon = GFX_goal_generic_positive_trade_relations
+		available_if_capitulated=yes
+		relative_position_id=LBA_strengthen_sheikh_authority
+		x=-4
+		y=1
+		prerequisite={focus=LBA_strengthen_sheikh_authority}
+		cost=5
+		completion_reward={
+			140 = { add_extra_state_shared_building_slots=8 add_building_construction = { type=infrastructure level=8 instant_build=yes} }
+			142 = { add_extra_state_shared_building_slots=8 add_building_construction = { type=infrastructure level=8 instant_build=yes} }
+			436 = { add_extra_state_shared_building_slots=8 add_building_construction = { type=infrastructure level=8 instant_build=yes} }
+			435 = { add_extra_state_shared_building_slots=8 add_building_construction = { type=infrastructure level=8 instant_build=yes} }
+			set_technology={
+				basic_train=1
+			}
+			add_equipment_to_stockpile= {
+				type = train_equipment
+				amount = 150
+				producer = LBA
+			}
+			set_technology={
+				early_motorised=1
+			}
+			add_equipment_to_stockpile= {
+				type = motorized_equipment
+				amount = 2400
+				producer = LBA
+			}
+		}
+	}
+	
+	##Tax the Bedouin
+	focus={
+		id=LBA_tax_bedouin
+		icon = GFX_SOV_emergency_fourth_state_duma_meetings-45137
+		available_if_capitulated=yes
+		relative_position_id=LBA_connect_oases
+		x=1
+		y=1
+		prerequisite={focus=LBA_connect_oases}
+		cost=5
+		completion_reward={
+			add_ideas=LBA_tribute_payments
+			142={set_state_category=pastoral}
+			436={set_state_category=pastoral}
+			435={set_state_category=pastoral}
+			140={set_state_category=pastoral}
+		}
+	}
+	
+	##Encourage the Trans-Saharan Trade
+	focus={
+		id=LBA_trans_saharan_trade
+		icon=GFX_goal_generic_trade
+		available_if_capitulated=yes
+		relative_position_id=LBA_connect_oases
+		x=-1
+		y=1
+		prerequisite={focus=LBA_connect_oases}
+		cost=5
+		completion_reward={
+			140 = { add_extra_state_shared_building_slots=2 add_building_construction = { type=industrial_complex level=2 instant_build=yes} }
+			142 = { add_extra_state_shared_building_slots=2 add_building_construction = { type=industrial_complex level=2 instant_build=yes} }
+		}
+	}
+	
+	##Develop Agriculture
+	focus={
+		id=LBA_develop_agriculture
+		icon=GFX_focus_generic_land_reclamation
+		available_if_capitulated=yes
+		relative_position_id=LBA_connect_oases
+		x=0
+		y=2
+		prerequisite={focus=LBA_tax_bedouin}
+		prerequisite={focus=LBA_trans_saharan_trade}
+		cost=5
+		completion_reward={
+			436 = { add_extra_state_shared_building_slots=2 add_building_construction = { type=industrial_complex level=2 instant_build=yes} }
+			435 = { add_extra_state_shared_building_slots=2 add_building_construction = { type=industrial_complex level=2 instant_build=yes} }
+		}
+	}
+	
+	##Kufra Ammunition Plant
+	focus={
+		id=LBA_ammunition_plant
+		icon=GFX_focus_generic_industry_1
+		available_if_capitulated=yes
+		relative_position_id=LBA_develop_agriculture
+		x=0
+		y=1
+		prerequisite={focus=LBA_develop_agriculture}
+		cost=10
+		completion_reward={
+			142={
+				add_extra_state_shared_building_slots=5
+				add_building_construction={ type=arms_factory level=5 instant_build=yes }
+			}
+		}
+	}
+	
+	##########################
+	###Foreign Investment
+	##########################
+	
+	##Approach Germany
+	focus={
+		id=LBA_approach_germany
+		#icon=GFX_focus_deal_with_german_empire
+		#icon=GFX_focus_POL_beck_ribbentrop
+		icon=GFX_GER_consolidate_central_powers-86219
+		available_if_capitulated=yes
+		x=23
+		y=0
+		cost=5
+		completion_reward={
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LBA_otto_manessman
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = LBA_paul_von_todenwarth
+		}
+	}
+	
+	##Ottoman Diplomatic Mission
+	focus={
+		id=LBA_ottoman_diplomatic_mission
+		#icon=GFX_focus_turkey_coop
+		icon=GFX_focus_TUR_Constantinople_Accord
+		available_if_capitulated=yes
+		x=17
+		y=0
+		cost=5
+		completion_reward={
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LBA_osman_fuad
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = LBA_nuri_bey
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = LBA_jafar_al_askari
+			custom_effect_tooltip = available_military_theorist
+			show_ideas_tooltip = LBA_ishaq_pasha
+		}
+	}
+	
+	##Invite German Geologists
+	focus={
+		id=LBA_oil
+		icon = GFX_focus_generic_resource_extraction
+		available_if_capitulated=yes
+		relative_position_id=LBA_approach_germany
+		x=0
+		y=1
+		prerequisite={focus=LBA_approach_germany}
+		cost=5
+		completion_reward={
+			436={
+				add_resource = { type=oil amount=3	}
+			}
+			435={
+				add_resource = { type=oil amount=3	}
+			}
+			142={
+				add_resource = { type=oil amount=3	}
+			}
+			140={
+				add_resource = { type=oil amount=3	}
+			}
+			add_tech_bonus={
+				technology = ww1_mining1
+				technology = ww1_mining2
+				technology = excavation1
+				technology = excavation2
+				technology = ww1_oil1
+				technology = ww1_oil2
+				technology = ww1_oil3
+				technology = ww1_bergiusprocess
+				name=excavation_bonus bonus=1.0 uses=3
+			}
+		}
+	}
+	
+	##Wadi ash-Shati Valley Iron Fields
+	focus={
+		id=LBA_iron_mine
+		icon = GFX_focus_generic_steel
+		available_if_capitulated=yes
+		relative_position_id=LBA_oil
+		x=0
+		y=1
+		prerequisite={focus=LBA_oil}
+		cost=5
+		completion_reward={
+			142={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={ type=industrial_complex level=1 instant_build=yes }
+			}
+			436={
+				add_resource = { type=steel amount=20 }
+			}
+			435={
+				add_resource = { type=steel amount=10 }
+			}
+		}
+	}
+	
+	##Survey the Tibesti
+	focus={
+		id=LBA_survey_tibesti
+		#icon=GFX_SOV_stolypins_land_reform-45113
+		icon = GFX_focus_generic_tungsten
+		available_if_capitulated=yes
+		relative_position_id=LBA_iron_mine
+		x=0
+		y=1
+		prerequisite={focus=LBA_iron_mine}
+		cost=5
+		completion_reward={
+			142={
+				add_resource = { type=tungsten amount=25 }
+			}
+			140={
+				add_resource = { type=coal amount=16 }
+			}
+		}
+	}
+	
+	##Foreign Investment
+	focus={
+		id=LBA_seek_foreign_investment
+		icon=GFX_SOV_emergency_war_credit-45149
+		available_if_capitulated=yes
+		relative_position_id=LBA_ottoman_diplomatic_mission
+		x=4
+		y=1
+		prerequisite={focus=LBA_approach_germany}
+		prerequisite={focus=LBA_ottoman_diplomatic_mission}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_economy_1
+				add_idea=LBA_economy_2
+			}
+			add_tech_bonus={
+				technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				name=industrial_bonus bonus=1.0 uses=2
+			}
+		}
+	}
+	
+	##Industrial Development Plan
+	focus={
+		id=LBA_development_plan
+		icon = GFX_GER_chemical_industry_expansion-73665
+		available_if_capitulated=yes
+		relative_position_id=LBA_seek_foreign_investment
+		x=0
+		y=1
+		prerequisite={focus=LBA_seek_foreign_investment}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_economy_2
+				add_idea=LBA_economy_3
+			}
+			add_tech_bonus={
+				category = construction_tech
+				name=construction_bonus bonus=1 uses=2
+			}
+		}
+	}
+	
+	##Transitioning to War Production
+	focus={
+		id=LBA_war_production
+		icon = GFX_focus_generic_reorient_production
+		available_if_capitulated=yes
+		relative_position_id=LBA_development_plan
+		x=0
+		y=1
+		prerequisite={focus=LBA_development_plan}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_economy_3
+				add_idea=LBA_economy_4
+			}
+			add_tech_bonus= {
+				bonus = 1
+				uses = 2
+				technology = chemical_research
+				technology = nukes
+				technology = chemical_research3
+            }
+		}
+	}
+	
+	##Ottoman Instructors
+	focus={
+		id=LBA_ottoman_instructors
+		icon=GFX_focus_otto_uniform
+		available_if_capitulated=yes
+		relative_position_id=LBA_ottoman_diplomatic_mission
+		x=-1
+		y=1
+		prerequisite={focus=LBA_ottoman_diplomatic_mission}
+		cost=5
+		completion_reward={
+			add_ideas=LBA_ottoman_military_advisors
+		}
+	}
+	
+	##Teşkilat Agents
+	focus={
+		id=LBA_teskilat
+		icon=GFX_TUR_civil_communitcations_improvements-96233
+		available_if_capitulated=yes
+		relative_position_id=LBA_ottoman_instructors
+		x=-1
+		y=1
+		prerequisite={focus=LBA_ottoman_instructors}
+		prerequisite={focus=LBA_covert_weapons_shipments}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				name=signals_bonus bonus=1 uses=2
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_signal_company4
+			}
+			add_tech_bonus = {
+				name=radio_bonus bonus=1 uses=2
+				technology = radio
+				technology = supertech1
+				technology = radio2
+				technology = supertech2
+			}
+		}
+	}
+	
+	##The Red Crescent
+	focus={
+		id=LBA_red_crescent
+		icon=GFX_focus_tur_red_crescent
+		available_if_capitulated=yes
+		relative_position_id=LBA_ottoman_instructors
+		x=0
+		y=2
+		prerequisite={focus=LBA_ottoman_instructors}
+		prerequisite={focus=LBA_covert_weapons_shipments}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=hospital_bonus bonus=1 uses=3
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_field_hospital4
+			}
+		}
+	}
+	
+	##Covert Weapons Shipments
+	focus={
+		id=LBA_covert_weapons_shipments
+		icon=GFX_goal_generic_navy_submarine
+		available_if_capitulated=yes
+		relative_position_id=LBA_ottoman_diplomatic_mission
+		x=1
+		y=1
+		prerequisite={focus=LBA_ottoman_diplomatic_mission}
+		prerequisite={focus=LBA_approach_germany}
+		cost=5
+		completion_reward={
+			add_equipment_to_stockpile={ type=convoy amount=150 }
+			custom_effect_tooltip = available_navy_chief
+			show_ideas_tooltip = LBA_theodor_pullen
+			custom_effect_tooltip = available_navy_chief
+			show_ideas_tooltip = LBA_waldemar_kophamel
+		}
+	}
+	
+	##Reequip the Infantry
+	focus={
+		id=LBA_reequip_troops
+		#icon=GFX_focus_ETH_freedom_at_gunpoint
+		#icon=GFX_AUS_standschtze_hellriegel_m1915-46523
+		icon=GFX_focus_focus_fra_maquis
+		available_if_capitulated=yes
+		relative_position_id=LBA_covert_weapons_shipments
+		x=-1
+		y=1
+		prerequisite={focus=LBA_ottoman_instructors}
+		prerequisite={focus=LBA_covert_weapons_shipments}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				name=infantry_weapons_bonus bonus=1 uses=2
+				#category=infantry_weapons
+				technology=ww1infantry_weapons2
+				technology=ww1_infantry_equip2
+				technology=ww1infantry_weapons3
+				technology=ww1_infantry_equip3
+				technology=infantry_weapons1
+				technology=machine_gun_2
+				technology=infantry_ww1_machinegun3
+				technology=machine_gun_3
+				technology=infantry_ww1_machinegun4
+			}
+		}
+	}
+	
+	##Siege Pieces
+	focus={
+		id=LBA_siege_guns
+		icon=GFX_hoi4tgw_navalcanons
+		available_if_capitulated=yes
+		relative_position_id=LBA_covert_weapons_shipments
+		x=1
+		y=1
+		prerequisite={focus=LBA_ottoman_instructors}
+		prerequisite={focus=LBA_covert_weapons_shipments}
+		cost=5
+		completion_reward={
+			add_tech_bonus={ name=artillery_bonus bonus=1 uses=2 category=artillery}
+		}
+	}
+	
+	##Victory Through Maneuver
+	focus={
+		id=LBA_victory_by_maneuver
+		icon=GFX_goal_generic_modernizing_the_cavalry
+		available_if_capitulated=yes
+		relative_position_id=LBA_covert_weapons_shipments
+		x=0
+		y=2
+		prerequisite={focus=LBA_ottoman_instructors}
+		prerequisite={focus=LBA_covert_weapons_shipments}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				name=ac_bonus bonus=2 uses=1
+				#technology = ww1_armored_car_2
+				#technology = ww1_armored_car_3
+				#technology = ww1_armored_car_4
+				#technology = ww1_tachanka
+				category=armor
+			}
+		}
+	}
+	
+	##########################
+	###Army
+	##########################
+	
+	##Lessons of the Wadai Campaign
+	focus={
+		id=LBA_lessons_wadai
+		icon=GFX_focus_hecnisuvar
+		available_if_capitulated=yes
+		x=12
+		y=4
+		cost=5
+		completion_reward={
+			army_experience=100
+			add_tech_bonus={ 
+				name=infantry_bonus bonus=1 uses=2
+				technology = support_weapons2
+				technology = support_weapons3
+				technology = support_weapons4
+				technology = support_weapons5 
+			}
+		}
+	}
+	
+	##Scavenge Old Battlefields
+	focus={
+		id=LBA_capture_equipment
+		icon=GFX_TUR_scavenge_equipment
+		available_if_capitulated=yes
+		relative_position_id=LBA_lessons_wadai
+		x=-1
+		y=1
+		prerequisite={focus=LBA_lessons_wadai}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=logistics_bonus bonus=2 uses=2
+				technology = tech_maintenance_company
+				technology = tech_maintenance_company2
+				technology = tech_maintenance_company3
+				technology = tech_maintenance_company4
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+				technology = tech_flamethrower
+				technology = tech_flamethrower2
+				technology = tech_flamethrower3
+				technology = tech_flamethrower4
+			}
+		}
+	}
+	
+	##Italian Invasion
+	focus={
+		id=LBA_italian_invasion
+		icon=GFX_focus_attack_italy
+		available_if_capitulated=yes
+		x=14
+		y=4
+		cost=5
+		completion_reward={
+			add_war_support=0.40
+			add_ideas=LBA_never_surrender
+		}
+	}
+	
+	##Counter New Threats
+	focus={
+		id=LBA_new_threats
+		icon=GFX_focus_generic_air_defense
+		available_if_capitulated=yes
+		relative_position_id=LBA_italian_invasion
+		x=1
+		y=1
+		prerequisite={focus=LBA_italian_invasion}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				name=antiair_bonus bonus=1 uses=3
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = anti_tank_rifle1
+			}
+		}
+	}
+	
+	##Learning from the Enemy
+	focus={
+		id=LBA_learn_from_enemy
+		icon=GFX_AUS_literacy_campaign-46521
+		#icon = GFX_AUS_czech_autonomy-46467
+		available_if_capitulated=yes
+		relative_position_id=LBA_lessons_wadai
+		x=1
+		y=1
+		prerequisite={focus=LBA_lessons_wadai}
+		prerequisite={focus=LBA_italian_invasion}
+		cost=5
+		completion_reward={
+			add_research_slot=1
+		}
+	}
+	
+	##Elite Army
+	focus={
+		id=LBA_elite_army
+		icon=GFX_focus_prc_infiltration
+		available_if_capitulated=yes
+		relative_position_id=LBA_learn_from_enemy
+		x=-1
+		y=1
+		prerequisite={focus=LBA_learn_from_enemy}
+		mutually_exclusive={focus=LBA_militia_army}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_army_outdated
+				add_idea=LBA_army_offensive
+			}
+		}
+	}
+	
+	##Veterans of the Jebel Akhdar
+	focus={
+		id=LBA_veterans_jebel_akhdar
+		#icon=GFX_focus_generic_camel_corps
+		icon=GFX_focus_jihad
+		available_if_capitulated=yes
+		relative_position_id=LBA_elite_army
+		x=-1
+		y=1
+		prerequisite={focus=LBA_elite_army}
+		cost=5
+		completion_reward={
+			#load_oob="LBA_vets"
+			#omar mukhtar gets war_hero
+			add_tech_bonus= {
+				name = special_forces_bonus
+				bonus = 2
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+				technology = jaegers
+				technology = jaegers2
+				technology = jaegers3
+				technology = Stormtroopers
+				technology = Stormtroopers2
+				technology = Stormtroopers3
+            }
+			add_tech_bonus= {
+				name = special_forces_training_bonus
+				bonus = 1
+				uses = 4
+				technology = tech_special_forces
+				technology = advanced_special_forces
+				technology = extreme_environment_training
+				technology = improved_special_forces
+				technology = survival_training
+				technology = elite_forces
+            }
+		}
+	}
+	
+	##Rely on Tribal Contingents
+	focus={
+		id=LBA_militia_army
+		icon=GFX_focus_generic_workers
+		available_if_capitulated=yes
+		relative_position_id=LBA_learn_from_enemy
+		x=1
+		y=1
+		prerequisite={focus=LBA_learn_from_enemy}
+		mutually_exclusive={focus=LBA_elite_army}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_army_outdated
+				add_idea=LBA_army_defensive
+			}
+		}
+	}
+	
+	##All Must Serve
+	focus={
+		id=LBA_all_must_serve
+		icon=GFX_TUR_1914_law_of_military_obligation-96239
+		available_if_capitulated=yes
+		relative_position_id=LBA_militia_army
+		x=1
+		y=1
+		prerequisite={focus=LBA_militia_army}
+		cost=5
+		completion_reward={
+			add_manpower=500000
+		}
+	}
+	
+	##No Surrender
+	focus={
+		id=LBA_no_peace
+		#icon=GFX_focus_SWE_neither_death_nor_dishonor
+		icon=GFX_focus_national_mobilization
+		available_if_capitulated=yes
+		relative_position_id=LBA_learn_from_enemy
+		x=0
+		y=2
+		prerequisite={focus=LBA_elite_army focus=LBA_militia_army}
+		cost=5
+		completion_reward={
+			swap_ideas={
+				remove_idea=LBA_never_surrender
+				add_idea=LBA_never_surrender_final
+			}
+			142={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+		}
+	}
+	
+	##########################
+	###IF OTTOMANS CAPPED
+	##########################
+	
+	##Standing Alone
+	focus={
+		id=LBA_turkey_capped
+		#icon=GFX_focus_POL_beck_ribbentrop
+		icon=GFX_focus_deal_with_german_empire
+		available_if_capitulated=yes
+		relative_position_id=LBA_approach_germany
+		x=2
+		y=1
+		prerequisite={focus=LBA_approach_germany}
+		available={
+			#TUR = { has_idea = TUR_lost_war }
+			TUR={NOT={owns_state=161}}
+		}
+		cost=5
+		completion_reward={
+			433 = {
+				transfer_state_to = LBA
+				add_dynamic_modifier = {
+					modifier = FFU_fast_travel_modifier
+				}
+			}
+		}
+	}
+	
+	##########################
+	###NAVY
+	##########################
+	
+	##Establishing a Seaport
+	focus={
+		id=LBA_seaport
+		icon=GFX_focus_POL_develop_polish_shipbuilding
+		available_if_capitulated=yes
+		x=30
+		y=2
+		cost=5
+		available = {
+			has_full_control_of_state = 141
+		}
+		completion_reward={
+			141 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 6680
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = ship_bonus bonus = 2 uses = 3
+				category = naval_equipment
+			}
+		}
+	}
+	
+	##Underwater Raiders
+	focus={
+		id=LBA_submarines
+		icon=GFX_goal_generic_wolf_pack
+		available_if_capitulated=yes
+		relative_position_id=LBA_seaport
+		x=2
+		y=1
+		cost=5
+		prerequisite = { focus = LBA_seaport }
+		completion_reward={
+			navy_experience = 100
+			add_tech_bonus = {
+				name = submarine_bonus bonus = 1 uses = 2
+				category = ss_tech 
+				technology = basic_torpedo
+				technology = magnetic_detonator 
+				technology = homing_torpedo 
+				technology = electric_torpedo 
+			}
+		}
+	}
+	
+	##Light Ships Priority
+	focus={
+		id=LBA_light_ships
+		#icon=GFX_goal_generic_navy_battleship
+		#icon=GFX_focus_generic_navy_battleship2
+		icon=GFX_focus_generic_cruiser2
+		available_if_capitulated=yes
+		relative_position_id=LBA_seaport
+		x=0
+		y=1
+		cost=5
+		prerequisite = { focus = LBA_seaport }
+		completion_reward={
+			navy_experience = 100
+			add_tech_bonus = {
+				name = light_ship_bonus bonus = 1 uses = 2
+				category = dd_tech
+				category = cl_tech
+				technology = improved_secondary_battery
+				technology = dp_secondary_battery
+				technology = basic_light_battery
+				technology = improved_light_battery
+				technology = advanced_light_battery
+				technology = basic_light_shell
+				technology = improved_light_shell
+			}
+		}
+	}
+	
+	##Battleship Effort
+	focus={
+		id=LBA_battleships
+		#icon=GFX_goal_generic_navy_battleship
+		#icon=GFX_focus_generic_navy_battleship2
+		icon=GFX_focus_generic_navy_battleship3alt
+		available_if_capitulated=yes
+		relative_position_id=LBA_seaport
+		x=-2
+		y=1
+		cost=5
+		prerequisite = { focus = LBA_seaport }
+		completion_reward={
+			navy_experience = 100
+			add_tech_bonus = {
+				name = battleship_bonus bonus = 1 uses = 2
+				category = bb_tech
+				category = cv_tech
+				technology = basic_heavy_battery
+				technology = improved_heavy_battery
+				technology = advanced_heavy_battery
+				technology = basic_heavy_shell
+				technology = improved_heavy_shell
+			}
+		}
+	}
+	
+	##Shipyard Expansion
+	focus={
+		id=LBA_shipyard_expansion
+		#icon=GFX_focus_generic_refit_civilian_ships
+		icon=GFX_focus_navy_decision
+		available_if_capitulated=yes
+		relative_position_id=LBA_seaport
+		x=0
+		y=2
+		cost=5
+		prerequisite = { focus = LBA_submarines }
+		prerequisite = { focus = LBA_light_ships }
+		prerequisite = { focus = LBA_battleships }
+		completion_reward={
+			add_offsite_building = {
+				type = dockyard
+				level = 6
+			}
+		}
+	}
+	
+	##Rule the Mediterranean
+	focus={
+		id=LBA_rule_med
+		icon=GFX_focus_generic_mediterranean_sea_focus
+		available_if_capitulated=yes
+		relative_position_id=LBA_shipyard_expansion
+		x=0
+		y=1
+		cost=5
+		prerequisite = { focus = LBA_shipyard_expansion }
+		available = {
+			has_full_control_of_state = 141
+		}
+		completion_reward={
+			add_timed_idea = {
+				idea = LBA_ship_production
+				days = 730
+			}
+		}
+	}
+	
+	#################
+	#####GENERIC ARMY
+	#################
+	
+focus = {
+		id = LBA_ww1_army_effort_1
+		icon = GFX_goal_generic_axis_build_infantry
+		available_if_capitulated = yes
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_1 }
+		cost = 5
+		x = 22
+		y = 5
+		}
+focus = {
+		id = LBA_ww1_equipment_effort_1
+		icon = GFX_goal_generic_small_arms
+		available_if_capitulated = yes
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_1 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_1
+		x = 2
+		y = 0
+	}
+focus = {
+		id = LBA_ww1_artillery_effort_1
+		icon = GFX_goal_generic_army_artillery2
+		available_if_capitulated = yes
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_1 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_1
+		x = 4
+		y = 0
+	}
+
+	##############################################################################
+
+focus = {
+		id = LBA_ww1_army_effort_2
+		prerequisite = { focus=LBA_ww1_army_effort_1
+		 focus=LBA_ww1_equipment_effort_1
+		 focus=LBA_ww1_artillery_effort_1
+		}
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_2 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_1
+		x = 0
+		y = 1
+		}
+focus = {
+		id = LBA_ww1_equipment_effort_2
+		prerequisite = { focus=LBA_ww1_army_effort_1
+		 focus=LBA_ww1_equipment_effort_1
+		 focus=LBA_ww1_artillery_effort_1
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_2 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_2
+		x = 2
+		y = 0
+	}
+focus = {
+		id = LBA_ww1_artillery_effort_2
+		prerequisite = { focus=LBA_ww1_army_effort_1
+		 focus=LBA_ww1_equipment_effort_1
+		 focus=LBA_ww1_artillery_effort_1
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_2 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_2
+		x = 4
+		y = 0
+	}
+
+	################################################################
+
+focus = {
+		id = LBA_ww1_army_effort_3
+		prerequisite = { focus=LBA_ww1_army_effort_2
+		 focus=LBA_ww1_equipment_effort_2
+		 focus=LBA_ww1_artillery_effort_2
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_3 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_2
+		x = 0
+		y = 1
+		}
+focus = {
+		id = LBA_ww1_equipment_effort_3
+		prerequisite = { focus=LBA_ww1_army_effort_2
+		 focus=LBA_ww1_equipment_effort_2
+		 focus=LBA_ww1_artillery_effort_2
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_3 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_3
+		x = 2
+		y = 0
+	}
+focus = {
+		id = LBA_ww1_artillery_effort_3
+		prerequisite = { focus=LBA_ww1_army_effort_2
+		 focus=LBA_ww1_equipment_effort_2
+		 focus=LBA_ww1_artillery_effort_2
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_3 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_3
+		x = 4
+		y = 0
+	}
+
+	################################################################
+
+focus = {
+		id = LBA_ww1_army_effort_4
+		prerequisite = { focus=LBA_ww1_army_effort_3
+		 focus=LBA_ww1_equipment_effort_3
+		 focus=LBA_ww1_artillery_effort_3
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_4 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_3
+		x = 0
+		y = 1
+		}
+focus = {
+		id = LBA_ww1_equipment_effort_4
+		prerequisite = { focus=LBA_ww1_army_effort_3
+		 focus=LBA_ww1_equipment_effort_3
+		 focus=LBA_ww1_artillery_effort_3
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_4 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_4
+		x = 2
+		y = 0
+	}
+focus = {
+		id = LBA_ww1_artillery_effort_4
+		prerequisite = { focus=LBA_ww1_army_effort_3
+		 focus=LBA_ww1_equipment_effort_3
+		 focus=LBA_ww1_artillery_effort_3
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_4 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_4
+		x = 4
+		y = 0
+	}
+
+   ############################################################################
+ 	################################################################
+
+focus = {
+		id = LBA_ww1_army_effort_5
+		prerequisite = { focus=LBA_ww1_army_effort_4
+		 focus=LBA_ww1_equipment_effort_4
+		 focus=LBA_ww1_artillery_effort_4
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_5 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_4
+		x = 0
+		y = 1
+		}
+focus = {
+		id = LBA_ww1_equipment_effort_5
+		prerequisite = { focus=LBA_ww1_army_effort_4
+		 focus=LBA_ww1_equipment_effort_4
+		 focus=LBA_ww1_artillery_effort_4
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = LBA_ww1_artillery_effort_5 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_5
+		x = 2
+		y = 0
+	}
+focus = {
+		id = LBA_ww1_artillery_effort_5
+		prerequisite = { focus=LBA_ww1_army_effort_4
+		 focus=LBA_ww1_equipment_effort_4
+		 focus=LBA_ww1_artillery_effort_4
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = LBA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = LBA_ww1_equipment_effort_5 }
+		cost = 5
+		relative_position_id=LBA_ww1_army_effort_5
+		x = 4
+		y = 0
+	}
+   ############################################################################
+focus = {
+		id = LBA_ww1_armor_effort_1
+		prerequisite = { focus=LBA_ww1_army_effort_5
+		focus=LBA_ww1_equipment_effort_5
+		focus=LBA_ww1_artillery_effort_5
+		}
+		available_if_capitulated = yes
+		icon = GFX_hoi4tgw_renaultft
+		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=1 uses=2 category=armor } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		relative_position_id=LBA_ww1_army_effort_5
+		x = 2
+		y = 1
+	}
+######################################################################################
+
+}

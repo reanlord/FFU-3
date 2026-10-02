@@ -1,0 +1,284 @@
+SOV_RUS_balance_of_powers = {
+	initial_value = 0
+	left_side = SOV_RUS_bad_side
+	right_side = SOV_RUS_good_side
+	decision_category = SOV_RUS_balance_of_powers_decisions
+
+	### Medium trust
+	range = {
+		id = SOV_RUS_medium_range
+		min = -0.05
+		max = 0.05
+		modifier = {
+		}
+		on_activate = {
+			set_power_balance_gfx = {
+				id = SOV_RUS_balance_of_powers
+				side = SOV_RUS_bad_side
+				gfx = "GFX_bop_SOV_RUS_neutral"
+			}
+			set_power_balance_gfx = {
+				id = SOV_RUS_balance_of_powers
+				side = SOV_RUS_good_side
+				gfx = "GFX_bop_SOV_RUS_neutral"
+			}
+		}
+	}
+
+	### Bad Side
+	side = {
+		id = SOV_RUS_bad_side	
+		icon = "GFX_bop_SOV_RUS_first_debuff"
+
+		range = {	#first debuff
+			id = SOV_RUS_first_debuff_range
+			min = -0.2
+			max = -0.05
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_expected_value = 0.02
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				#industrial_capacity_factory = -0.05
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_first_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#second debuff
+			id = SOV_RUS_second_debuff_range
+			min = -0.35
+			max = -0.2
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_expected_value = 0.04
+				stability_factor = -0.10
+				war_support_factor = -0.20
+				#industrial_capacity_factory = -0.1
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_second_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#third debuff
+			id = SOV_RUS_third_debuff_range
+			min = -0.5
+			max = -0.35
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_expected_value = 0.06
+				stability_factor = -0.15
+				war_support_factor = -0.30
+				#industrial_capacity_factory = -0.15
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_third_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#fourth debuff
+			id = SOV_RUS_fourth_debuff_range
+			min = -0.65
+			max = -0.5
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_expected_value = 0.08
+				stability_factor = -0.20
+				war_support_factor = -0.40
+				#industrial_capacity_factory = -0.2
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_fourth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#fifth debuff
+			id = SOV_RUS_fifth_debuff_range
+			min = -0.8
+			max = -0.65
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_expected_value = 0.1
+				stability_factor = -0.25
+				war_support_factor = -0.50
+				#industrial_capacity_factory = -0.25
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_fifth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#sixth debuff
+			id = SOV_RUS_sixth_debuff_range
+			min = -0.95
+			max = -0.8
+			modifier = {
+				political_power_gain = -0.3
+				consumer_goods_expected_value = 0.12
+				stability_factor = -0.3
+				war_support_factor = -0.60
+				#industrial_capacity_factory = -0.3
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#cap
+			id = SOV_RUS_cap_range
+			min = -1
+			max = -0.95
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+	}
+
+	### Good Side
+	side = {
+		id = SOV_RUS_good_side	
+		icon = "GFX_bop_SOV_RUS_first_buff"
+
+		range = {	#first buff
+			id = SOV_RUS_first_buff_range
+			min = 0.05
+			max = 0.3
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.07
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.03
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_first_buff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#second buff
+			id = SOV_RUS_second_buff_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.15
+				war_support_factor = 0.14
+				army_core_attack_factor = 0.09
+				army_core_defence_factor = 0.09
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_second_buff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+
+		range = {	#third buff
+			id = SOV_RUS_third_buff_range
+			min = 0.6
+			max = 1
+			modifier = {
+				political_power_gain = 0.30
+				stability_factor = 0.25
+				war_support_factor = 0.21
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_good_side
+					gfx = "GFX_bop_SOV_RUS_third_buff"
+				}
+				set_power_balance_gfx = {
+					id = SOV_RUS_balance_of_powers
+					side = SOV_RUS_bad_side
+					gfx = "GFX_bop_SOV_RUS_neutral"
+				}
+			}
+		}
+	}
+}

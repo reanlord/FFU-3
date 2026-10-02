@@ -1,0 +1,35 @@
+state={
+	id=35
+	name="STATE_35"
+	provinces={
+	 17313 17314
+	}
+	manpower=65600
+	buildings_max_level_factor=1.000
+	state_category = tiny_island
+	history={
+		owner = ENG
+		#add_core_of = ENG
+		buildings = {
+			infrastructure = 10
+			air_base = 1
+			17314 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			17314 5 
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+	resources = {
+		aluminium=1
+		tungsten=13
+		steel = 22
+		coal = 35
+		wood=30
+	}
+}

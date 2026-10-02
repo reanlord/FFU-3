@@ -1,0 +1,273 @@
+add_namespace = ffuottoman
+
+##Event: Ottomans demand transfer of Sultan Osman-ı Evvel and Resadiye!
+country_event = {
+	id = ffuottoman.1
+	title = ffuottoman.1.title
+	desc = ffuottoman.1.desc
+	picture = GFX_report_event_merchant_ship_01
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ffuottoman.1.a
+		ai_chance = { factor = 1}
+	TUR = {
+			country_event = { id = ffuottoman.2 days = 1 }
+		}
+	}
+	option = {
+		name = ffuottoman.1.b
+		ai_chance = { factor = 1}
+	TUR = {
+			country_event = { id = ffuottoman.3 days = 1 }
+		}
+	}
+}
+##Event: United Kingdom Accepts Transfer!
+country_event = {
+	id = ffuottoman.2
+	title = ffuottoman.2.title
+	desc = ffuottoman.2.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ffuottoman.2.a
+		ai_chance = { factor = 1}
+	}
+	immediate = {
+		hidden_effect = {
+		           TUR = {		
+			load_oob = "TUR_brit" }
+} } }
+##Event: United Kingdom Seize Dreadnoughts!
+country_event = {
+	id = ffuottoman.3
+	title = ffuottoman.3.title
+	desc = ffuottoman.3.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ffuottoman.3.a
+		ai_chance = { factor = 1}
+	}
+	immediate = {
+		hidden_effect = {
+		TUR = {
+			255 = { add_extra_state_shared_building_slots=2 add_building_construction={ type=dockyard level=2 instant_build=yes } }
+			249 = { add_extra_state_shared_building_slots=2 add_building_construction={ type=dockyard level=2 instant_build=yes } }
+			}
+		}
+	}
+}
+##Event: Ottomans Request Transfer of SMS Breslau & SMS Goeben
+country_event = {
+	id = ffuottoman.4
+	title = ffuottoman.4.title
+	desc = ffuottoman.4.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ffuottoman.4.a
+		ai_chance = { factor = 1}
+			TUR = {
+			country_event = { id = ffuottoman.5 days = 1 }
+		}
+	}
+	option = {
+		name = ffuottoman.4.b
+		ai_chance = { factor = 1}
+			TUR = {
+			country_event = { id = ffuottoman.6 days = 1 }
+		}
+	}
+}
+##Event: Germany Accepts Transfer!
+country_event = {
+	id = ffuottoman.5
+	title = ffuottoman.5.title
+	desc = ffuottoman.5.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ffuottoman.5.a
+		ai_chance = { factor = 1}
+		
+	}
+	immediate = {
+		hidden_effect = {
+		           TUR = {		
+			load_oob = "TUR_ger" }
+} }
+}
+##Event: Germany Declines the Transfer!
+country_event = {
+	id = ffuottoman.6
+	title = ffuottoman.6.title
+	desc = ffuottoman.6.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ffuottoman.6.a
+		ai_chance = { factor = 1}
+		
+		161 = {
+			add_extra_state_shared_building_slots=4 add_building_construction={ type=dockyard level=4 instant_build=yes }
+		}
+		257 = {
+			add_extra_state_shared_building_slots=4 add_building_construction={ type=dockyard level=4 instant_build=yes }
+		}
+	}
+}
+
+##Event: Black Sea Raid
+country_event = {
+	id = ffuottoman.7
+	title = ffuottoman.7.title
+	desc = ffuottoman.7.desc
+	picture = GFX_report_event_usa_heavy_cruiser
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ffuottoman.7.a
+		ai_chance = { factor = 1}
+		TUR = {
+			set_variable = {
+				Global.super_event=6
+			}
+			FFU_show_super_event = yes
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_black_sea_raid" 
+			}
+		}
+	}
+	immediate = {
+		GER = {
+			add_to_faction = TUR
+			if = {
+				limit = { LBA = { exists=yes is_ai=no } }
+				add_to_faction = LBA
+			}
+		}
+		TUR = {
+			declare_war_on={
+				type=annex_everything
+				target=ENG
+			}
+			declare_war_on={
+				type=annex_everything
+				target=FRA
+			}
+			if = {
+				limit = {
+					SOV = { has_war_with = GER }
+				}
+				declare_war_on = {
+					type = annex_everything
+					target = SOV
+				}
+			}
+			if = {
+				limit = {
+					SER = { has_war_with = GER }
+				}
+				declare_war_on = {
+					type = annex_everything
+					target = SER
+				}
+			}
+			if = {
+				limit = {
+					BEL = { exists = yes}
+				}
+				declare_war_on = {
+					type = annex_everything
+					target = BEL
+				}
+			}
+		}
+		if = {
+			limit = { LBA = { exists = yes } }
+			LBA = {
+				declare_war_on={
+					type=annex_everything
+					target=ENG
+				}
+				declare_war_on={
+					type=annex_everything
+					target=FRA
+				}
+				if = {
+					limit = {
+						SOV = { has_war_with = GER }
+					}
+					declare_war_on = {
+						type = annex_everything
+						target = SOV
+					}
+				}
+				if = {
+					limit = {
+						SER = { has_war_with = GER }
+					}
+					declare_war_on = {
+						type = annex_everything
+						target = SER
+					}
+				}
+				if = {
+					limit = {
+						BEL = { exists = yes}
+					}
+					declare_war_on = {
+						type = annex_everything
+						target = BEL
+					}
+				}
+			}
+		}
+	}
+}
+
+##Event: Black Sea Maneuvers
+country_event = {
+	id = ffuottoman.8
+	title = ffuottoman.8.title
+	desc = ffuottoman.8.desc
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ffuottoman.8.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+			TUR = {
+			country_event = { id = ffuottoman.7 days = 10 }
+			}
+			TUR = {
+			country_event = { id = ffuottoman.9 days = 60 }
+			}
+		}
+	}
+}
+
+##Event: Sultan Mehmed V Declares Jihad
+country_event = {
+	id = ffuottoman.9
+	title = ffuottoman.9.title
+	desc = ffuottoman.9.desc
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ffuottoman.9.a
+		ai_chance = { factor = 1}
+          }
+ }

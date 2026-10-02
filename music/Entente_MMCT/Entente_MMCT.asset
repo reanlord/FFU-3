@@ -1,0 +1,50 @@
+music = {
+    name = "chanson_de_lOignon"
+    file = "Chanson de lOignon.ogg"
+    volume = 0.65
+}
+music = {
+    name = "its_a_long_way_to_tipperary"
+    file = "Its A Long Way To Tipperary.ogg"
+    volume = 0.65
+}
+music = {
+    name = "oh_its_a_lovely_war"
+    file = "Oh! Its A Lovely War.ogg"
+    volume = 0.65
+}
+music = {
+    name = "over_there"
+    file = "Over There!.ogg"
+    volume = 0.65
+}
+music = {
+    name = "the_tanks_that_broke_the_ranks"
+    file = "The Tanks That Broke the Ranks.ogg"
+    volume = 0.65
+}
+music = {
+    name = "well_never_let_the_old_flag_fall"
+    file = "Well Never Let The Old Flag Fall.ogg"
+    volume = 0.65
+}
+music = {
+    name = "when_we_were_at_war"
+    file = "When we were at war.ogg"
+    volume = 0.65
+}
+music = {
+    name = "farewell_of_slavianka"
+    file = "Farewell of Slavianka.ogg"
+    volume = 0.65
+}
+music = {
+    name = "ditties_about_the_first_world_War"
+    file = "Ditties about the First World War.ogg"
+    volume = 0.65
+}
+music = {
+    name = "march_of_the_siberian_riflemen"
+    file = "March of the Siberian Riflemen.ogg"
+    volume = 0.65
+}

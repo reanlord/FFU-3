@@ -1,0 +1,201 @@
+﻿l_russian:
+
+
+#--------------------------------------------------------------
+# [Romania] Армейские усилия
+#=========================================================================
+ROM_ww1_army_effort_1:0 "Армейские усилия"
+ROM_ww1_army_effort_1_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_army_effort_2:0 "Армейские усилия II"
+ROM_ww1_army_effort_2_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_army_effort_3:0 "Армейские усилия III"
+ROM_ww1_army_effort_3_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_army_effort_4:0 "Армейские усилия IV"
+ROM_ww1_army_effort_4_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_army_effort_5:0 "Армейские усилия V"
+ROM_ww1_army_effort_5_desc:0 "" #Frenchie
+
+ROM_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+ROM_ww1_equipment_effort_1_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+ROM_ww1_equipment_effort_2_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+ROM_ww1_equipment_effort_3_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+ROM_ww1_equipment_effort_4_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+ROM_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+ROM_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+ROM_ww1_artillery_effort_1_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+ROM_ww1_artillery_effort_2_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+ROM_ww1_artillery_effort_3_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+ROM_ww1_artillery_effort_4_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+ROM_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+ROM_ww1_aircraftprod_1:0 "Производство самолетов"
+ROM_ww1_aircraftprod_1_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_aircraftprod_2:0 "Производство самолетов II"
+ROM_ww1_aircraftprod_2_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_aircraftprod_3:0 "Производство самолетов III"
+ROM_ww1_aircraftprod_3_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_aircraftprod_4:0 "Производство самолетов IV"
+ROM_ww1_aircraftprod_4_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_aircraftprod_5:0 "Производство самолетов V"
+ROM_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+ROM_ww1_large_navy_1:0 "Военно -морская авиация"
+ROM_ww1_large_navy_1_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_large_navy_2:0 "Военно -морская и авиационная реформа II"
+ROM_ww1_large_navy_2_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_large_navy_3:0 "Военно -морская и авиационная реформа III"
+ROM_ww1_large_navy_3_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_large_navy_4:0 "Военно -морская и авиационная реформа IV"
+ROM_ww1_large_navy_4_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_large_navy_5:0 "Военно -морская и авиационная реформа V"
+ROM_ww1_large_navy_5_desc:0 "" #Frenchie
+
+ROM_ww1_armor_effort_1:0 "Броня усилий"
+ROM_ww1_armor_effort_1_desc:0 "" #KAIROM_ANONY
+#--------------------------------------------------------------
+# [Romania] Political Effort
+#=========================================================================
+ ROM_define_parlimentary_role:0 "Определите роль парламента"
+ ROM_define_parlimentary_role_desc:0 ""
+ ROM_legacy_of_1908:0 "Наследие 1908 года"
+ ROM_legacy_of_1908_desc:0 ""
+ ROM_legitimize_constitution:0 "Узаконить Конституцию"
+ ROM_legitimize_constitution_desc:0 ""
+ ROM_align_with_entente:0 "Выровнять с Антентой"
+ ROM_align_with_entente_desc:0 ""
+ ROM_reform_effort:0 "Усилия по реформе"
+ ROM_reform_effort_desc:0 ""
+#--------------------------------------------------------------
+# [Romania] Industrial Effort
+#=========================================================================
+ ROM_modernize_industry:0 "Модернизировать промышленность"
+ ROM_modernize_industry_desc:0 ""
+ ROM_retrofit_railroads:0 "Модерные железные дороги"
+ ROM_retrofit_railroads_desc:0 ""
+ ROM_attract_foreign_investment:0 "Привлечь иностранные инвестиции"
+ ROM_attract_foreign_investment_desc:0 ""
+ ROM_develop_domestic_industry:0 "Развивать внутреннюю промышленность"
+ ROM_develop_domestic_industry_desc:0 ""
+ ROM_domestic_ressources:0 "Домашние брусины"
+ ROM_domestic_ressources_desc:0 ""
+ ROM_hire_foreign_engineers:0 "Нанять иностранных инженеров"
+ ROM_hire_foreign_engineers_desc:0 ""
+ ROM_develop_domestic_talent:0 "Развивать домашний талант"
+ ROM_develop_domestic_talent_desc:0 ""
+ ROM_strengthen_war_industry:0 "Укрепление военной индустрии"
+ ROM_strengthen_war_industry_desc:0 ""
+ ROM_develop_electronics:0 "Разработать электронику"
+ ROM_develop_electronics_desc:0 ""
+ ROM_Entente_Military_Mission:0 "Французская военная миссия"
+ ROM_Entente_Military_Mission_desc:0 ""
+ ROM_tech_sharing:0 "Обмен технологиями Entente"
+ ROM_tech_sharing_desc:0 "" 
+ ROM_encourage_urbanization:0 "Поощрять урбанизацию"
+ ROM_encourage_urbanization_desc:0 ""
+ ROM_industrialize_georgia:0 "Индустриализовать Giurgiu"
+ ROM_industrialize_georgia_desc:0""
+ ROM_industrialize_astrakhan:0 "Индустриализировать Рашид"
+ ROM_industrialize_astrakhan_desc:0 "Благодаря неустанным усилиям нашей отрасли нам удалось оживить пригороды нашего прекрасного столица!^^"
+ ROM_industrialize_muntenia:0 "Индустриализировать мутению"
+ ROM_industrialize_muntenia_desc:0""
+
+#--------------------------------------------------------------
+# [Romania] War Effort
+#=========================================================================
+ ROM_prepare_for_war:0 "Подготовьтесь к войне"
+ ROM_prepare_for_war_desc:0 ""
+ ROM_Emergency_War_Act:0 "Закон о экстренной войне"
+ ROM_Emergency_War_Act_desc:0 ""
+ ROM_repurpose_fortress_guns:0 "Перепрофилирование крепости"
+ ROM_repurpose_fortress_guns_desc:0 ""
+ ROM_study_foreign_designs:0 "Изучить иностранные проекты"
+ ROM_study_foreign_designs_desc:0 ""
+ ROM_lessons_of_the_balkan_wars:0 "Развивать гипотезу "Z""
+ ROM_lessons_of_the_balkan_wars_desc:0 ""
+ ROM_joint_entente_planning:0 "Совместное планирование Antente"
+ ROM_joint_entente_planning_desc:0 ""
+ ROM_Romanian_arms:0 "Румынская индустрия оружия"
+ ROM_Romanian_arms_desc:0 ""
+ ROM_pentru_natiune_:0 " Для нации"
+ ROM_pentru_natiune_desc:0 ""
+ ROM_National_Defense_Tactics:0 " Тактика национальной обороны "
+ ROM_National_Defense_Tactics_desc:0 ""
+# [Romania] Naval Effort
+#=========================================================================
+ROM_ww1_naval_effort:0 "Военно -морские усилия"
+ROM_ww1_naval_effort_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_newnavalcanons_1:0 "Военно -морское оружие"
+ROM_ww1_newnavalcanons_1_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_newnavalcanons_2:0 "Военно -морское оружие II"
+ROM_ww1_newnavalcanons_2_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_newnavalcanons_3:0 "Военно -морское оружие III"
+ROM_ww1_newnavalcanons_3_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_dreadnought_effort:0 "Дредноут"
+ROM_ww1_dreadnought_effort_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_flexible_navy:0 "Гибкий флот"
+ROM_ww1_flexible_navy_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_large_navy:0 "Большой флот"
+ROM_ww1_large_navy_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_navyreform:0 "Развертывание военно -морского флота"
+ROM_ww1_navyreform_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_submarine_effort:0 "Подводные усилия"s
+ROM_ww1_submarine_effort_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_cruiser_effort:0 "Крейсер усилие"
+ROM_ww1_cruiser_effort_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_destroyer_effort:0 "Усилие разрушителя"
+ROM_ww1_destroyer_effort_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_capital_ships_effort:0 "Капитальный корабль усилия"
+ROM_ww1_capital_ships_effort_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_carrier_focus:0 "Усилия"
+ROM_ww1_carrier_focus_desc:0 "" #KAIROM_ANONY
+
+ROM_ww1_antisubmarine:0 "Анти-подключатая война"
+ROM_ww1_antisubmarine_desc:0 "" #KAIROM_ANONY
+
+
+#--------------------------------------------------------------
+
+
+
+

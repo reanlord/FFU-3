@@ -1,0 +1,412 @@
+﻿l_russian:
+
+
+ #--------------------------------------------------------------
+ # [Serbia] Армейские усилия
+ #=========================================================================
+SER_ww1_army_effort_1:0 "Армейские усилия"
+SER_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_army_effort_2:0 "Армейские усилия II"
+SER_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_army_effort_3:0 "Армейские усилия III"
+SER_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_army_effort_4:0 "Армейские усилия IV"
+SER_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+SER_ww1_army_effort_5:0 "Армейские усилия V"
+SER_ww1_army_effort_5_desc:0 "" #Frenchie
+
+SER_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+SER_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+SER_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+SER_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+SER_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+SER_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+SER_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+SER_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+SER_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+SER_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+SER_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+SER_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+SER_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+SER_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+SER_ww1_aircraftprod_1:0 "Производство самолетов"
+SER_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_aircraftprod_2:0 "Производство самолетов II"
+SER_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_aircraftprod_3:0 "Производство самолетов III"
+SER_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_aircraftprod_4:0 "Производство самолетов IV"
+SER_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+SER_ww1_aircraftprod_5:0 "Производство самолетов V"
+SER_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+SER_ww1_large_navy_1:0 "Военно -морская авиация"
+SER_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_large_navy_2:0 "Военно -морская и авиационная реформа II"
+SER_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_large_navy_3:0 "Военно -морская и авиационная реформа III"
+SER_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_large_navy_4:0 "Военно -морская и авиационная реформа IV"
+SER_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+SER_ww1_large_navy_5:0 "Военно -морская и авиационная реформа V"
+SER_ww1_large_navy_5_desc:0 "" #Frenchie
+
+SER_ww1_armor_effort_1:0 "Броня усилий"
+SER_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+
+ # [Serbia] Industrial Effort
+ #=========================================================================
+SER_ww1_industrial_effort:0 "Промышленные усилия"
+SER_ww1_industrial_effort_desc:0 "" #KAISER_ANONY
+
+SER_ww1_construction_effort:0 "Строительные усилия"
+SER_ww1_construction_effort_desc:0 "" #KAISER_ANONY
+
+SER_ww1_construction_effort_2:0 "Строительные усилия II"
+SER_ww1_construction_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_construction_effort_3:0 "Строительные усилия III"
+SER_ww1_construction_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_production_effort:0 "Усилие вооружения"
+SER_ww1_production_effort_desc:0 "" #KAISER_ANONY
+
+SER_ww1_production_effort_2:0 "Усилие вооружения II"
+SER_ww1_production_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_production_effort_3:0 "Усилие вооружения III"
+SER_ww1_production_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_dockyard_effort_1:0 "Расширение верфи"
+SER_ww1_dockyard_effort_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_dockyard_effort_2:0 "Расширение верфи II"
+SER_ww1_dockyard_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_dockyard_effort_3:0 "Расширение верфи III"
+SER_ww1_dockyard_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_airfield_expansion_1:0 "Расширение аэродрома"
+SER_ww1_airfield_expansion_1_desc:0 "" #KAISER_ANONY
+
+SER_ww1_airfield_expansion_2:0 "Расширение аэродрома II"
+SER_ww1_airfield_expansion_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_airfield_expansion_3:0 "Расширение аэродрома III"
+SER_ww1_airfield_expansion_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_infrastructure_effort:0 "Инфраструктурные усилия"
+SER_ww1_infrastructure_effort_desc:0 "" #KAISER_ANONY
+
+SER_ww1_infrastructure_effort_2:0 "Инфраструктурные усилия II"
+SER_ww1_infrastructure_effort_2_desc:0 "" #KAISER_ANONY
+
+SER_ww1_infrastructure_effort_3:0 "Инфраструктурные усилия III"
+SER_ww1_infrastructure_effort_3_desc:0 "" #KAISER_ANONY
+
+SER_ww1_infrastructure_effort_4:0 "Инфраструктурные усилия IV"
+SER_ww1_infrastructure_effort_4_desc:0 "" #KAISER_ANONY
+
+SER_ww1_extra_tech_slot:0 "Дополнительный исследовательский слот"
+SER_ww1_extra_tech_slot_desc:0 "" #KAISER_ANONY
+
+SER_ww1_extra_tech_slot_2:0 "Дополнительный исследовательский слот II"
+SER_ww1_extra_tech_slot_2_desc:0 "" #KAISER_ANONY
+ #--------------------------------------------------------------
+
+
+ # [Serbia] Naval Effort
+ #=========================================================================
+ SER_ww1_naval_effort:0 "Военно -морские усилия"
+SER_ww1_naval_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_newnavalcanons_1:0 "Военно -морское оружие"
+SER_ww1_newnavalcanons_1_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_newnavalcanons_2:0 "Военно -морское оружие II"
+SER_ww1_newnavalcanons_2_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_newnavalcanons_3:0 "Военно -морское оружие III"
+SER_ww1_newnavalcanons_3_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_dreadnought_effort:0 "Дредноут"
+SER_ww1_dreadnought_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_flexible_navy:0 "Гибкий флот"
+SER_ww1_flexible_navy_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_large_navy:0 "Большой флот"
+SER_ww1_large_navy_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_navyreform:0 "Развертывание военно -морского флота"
+SER_ww1_navyreform_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_submarine_effort:0 "Подводные усилия"
+SER_ww1_submarine_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_cruiser_effort:0 "Крейсер усилие"
+SER_ww1_cruiser_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_destroyer_effort:0 "Усилие разрушителя"
+SER_ww1_destroyer_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_capital_ships_effort:0 "Капитальный корабль усилия"
+SER_ww1_capital_ships_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_carrier_focus:0 "Усилия"
+SER_ww1_carrier_focus_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_antisubmarine:0 "Анти-подключатая война"
+ SER_ww1_antisubmarine_desc:0 "" #KAISER_ANONY
+
+ #--------------------------------------------------------------
+
+
+ # [Serbia] Political Effort
+ #=========================================================================
+ SER_ww1_political_effort:0 "Политические усилия"
+ SER_ww1_political_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_internationalism_focus:0 "Internationalism Focus"
+SER_ww1_internationalism_focus_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_militarism:0 "Милитаризм"
+SER_ww1_militarism_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_indoctrination_focus:0 "Идеологическая обработка"
+SER_ww1_indoctrination_focus_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_political_commissars:0 "Политические комиссары"
+SER_ww1_political_commissars_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_paramilitarism:0 "Паримилитаризм"
+SER_ww1_paramilitarism_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_political_correctness:0 "Политкорректность"
+SER_ww1_political_correctness_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_student_movement_focus:0 "Студенческое движение"
+SER_ww1_student_movement_focus_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_monarchy:0 "Фокус авторитаризма"
+SER_ww1_monarchy_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_democracy:0 "Демократизм фокус"
+SER_ww1_democracy_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_centralizedpower:0 "Бюрократия"
+SER_ww1_centralizedpower_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_freespeech:0 "Свободная речь"
+SER_ww1_freespeech_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_reorganization_act:0 "Закон о реорганизации"
+SER_ww1_reorganization_act_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_limited_rearmament:0 "Ограниченный перевооружение"
+SER_ww1_limited_rearmament_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_full_rearmament:0 "Лист переводоронок"
+SER_ww1_full_rearmament_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_military_youth:0 "Военная молодежь"
+ SER_ww1_military_youth_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_unitedpeople:0 "Патриотический пыл"
+SER_ww1_unitedpeople_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_massive_effort:0 "Массивные усилия"
+SER_ww1_massive_effort_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_fortify_city:0 "Гражданские укрепления"
+SER_ww1_fortify_city_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_fortify_coast:0 "Прибрежная оборона"
+SER_ww1_fortify_coast_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_Reconciliation:0 "Национальное примирение"
+SER_ww1_Reconciliation_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_SelectiveServiceAct:0 "Военная служба"
+SER_ww1_SelectiveServiceAct_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_BolshevikRevolution:0 "Признайте большевистскую революцию"
+SER_ww1_BolshevikRevolution_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_MarxistIdeas:0 "Принять марксистские идеи"
+SER_ww1_MarxistIdeas_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_SovietSerbia:0 "Социалистическая федеральная Республика Сербия"
+SER_ww1_SovietSerbia_desc:0 "" #KAISER_ANONY
+
+ SER_ww1_CommunistMenace:0 "Коммунистическая угроза"
+SER_ww1_CommunistMenace_desc:0 "" #KAISER_ANONY
+
+ #--------------------------------------------------------------
+
+
+# [SERBIA] Diplomatic Effort
+#=========================================================================
+
+SER_ww1_diplomatic_effort:0 "Дипломатические усилия"
+SER_ww1_diplomatic_effort_desc:0 "" #KAISER_ANONY
+
+SER_ww1_pro_fra:0 "Франбианская дружба"
+SER_ww1_pro_fra_desc:0 "" #KAISER_ANONY
+
+SER_ww1_pro_rus:0 "Российская риторика"
+SER_ww1_pro_rus_desc:0 "" #KAISER_ANONY
+
+SER_ww1_equip_fra:0 "Французские поставки оружия"
+SER_ww1_equip_fra_desc:0 "" #KAISER_ANONY
+
+SER_ww1_equip_rus:0 "Русские поставки вооружений"
+SER_ww1_equip_rus_desc:0 "" #KAISER_ANONY
+
+SER_ww1_supportrussia:0 "Поддержка России"
+SER_ww1_supportrussia_desc:0 "" #KAISER_ANONY
+
+SER_ww1_military_reserve:0 "Военный заповедник"
+SER_ww1_military_reserve_desc:0 "" #KAISER_ANONY
+
+SER_ww1_EmbargoGermany:0 "Санкция Германия"
+SER_ww1_EmbargoGermany_desc:0 "" #KAISER_ANONY
+
+SER_ww1_EmbargoAustria:0 "Санкция Австрия-Венгрия"
+SER_ww1_EmbargoAustria_desc:0 "" #KAISER_ANONY
+
+SER_ww1_BalkansPolitics:0 "Балканы политика"
+SER_ww1_BalkansPolitics_desc:0 "" #KAISER_ANONY
+
+SER_ww1_ApeasementBalkans:0 "Умиротворение на Балканах"
+SER_ww1_ApeasementBalkans_desc:0 "" #KAISER_ANONY
+
+SER_ww1_RecognizeAlbania:0 "Признайте суверенитет Албании"
+SER_ww1_RecognizeAlbania_desc:0 "" #KAISER_ANONY
+
+SER_ww1_ReleaseAlbania:0 "Выпустить Албанию"
+SER_ww1_ReleaseAlbania_desc:0 "" #KAISER_ANONY
+
+SER_ww1_join_entente:0 "Присоединяйтесь к Entente"
+SER_ww1_join_entente_desc:0 "" #KAISER_ANONY
+
+SER_ww1_war_effort:0 "Военные усилия"
+SER_ww1_war_effort_desc:0 "" #KAISER_ANONY
+
+SER_ww1_anti_ottoman:0 "Антитоманская политика"
+SER_ww1_anti_ottoman_desc:0 "" #KAISER_ANONY
+
+SER_ww1_AntiBulgaria:0 "Анти-бульгарская политика"
+SER_ww1_AntiBulgaria_desc:0 "" #KAISER_ANONY
+
+SER_ww1_anti_auh:0 "Анти-астро-губчатая политика"
+SER_ww1_anti_auh_desc:0 "" #KAISER_ANONY
+
+SER_ww1_BalkanLeagueMenace:0 "Угроза Балканской лиги"
+SER_ww1_BalkanLeagueMenace_desc:0 "" #KAISER_ANONY
+
+SER_ww1_GreeceFriend:0 "Альянс с Грецией"
+SER_ww1_GreeceFriend_desc:0 "" #KAISER_ANONY
+
+SER_ww1_serbia_first:0 "Сербия первой"
+SER_ww1_serbia_first_desc:0 "" #KAISER_ANONY
+
+SER_ww1_recognize_minorities:0 "Признайте меньшинства"
+SER_ww1_recognize_minorities_desc:0 "" #KAISER_ANONY
+
+SER_ww1_meet_croatian_leaders:0 "Познакомьтесь с хорватскими лидерами"
+SER_ww1_meet_croatian_leaders_desc:0 "" #KAISER_ANONY
+
+SER_ww1_support_croatia_revolt:0 "Поддержка хорватского восстания"
+SER_ww1_support_croatia_revolt_desc:0 "" #KAISER_ANONY
+
+SER_ww1_assert_position_west:0 "Утвердить позицию в Европе"
+SER_ww1_assert_position_west_desc:0 "" #KAISER_ANONY
+
+SER_ww1_anti_fr:0 "Анти-французская политика"
+SER_ww1_anti_fr_desc:0 "" #KAISER_ANONY
+
+SER_ww1_anti_uk:0 "Антипиртская политика"
+SER_ww1_anti_uk_desc:0 "" #KAISER_ANONY
+
+SER_ww1_reinforce_ottoman_border:0 "Усилить османскую границу"
+SER_ww1_reinforce_ottoman_border_desc:0 "" #KAISER_ANONY
+
+SER_ww1_reinforce_austria_border:0 "Увеличьте защиту Белграда"
+SER_ww1_reinforce_austria_border_desc:0 "" #KAISER_ANONY
+
+SER_ww1_technology_sharing:0 "Обмен технологиями"
+SER_ww1_technology_sharing_desc:0 "" #KAISER_ANONY
+
+SER_ww1_assert_position_east:0 "Министерство внутренних дел"
+SER_ww1_assert_position_east_desc:0 "" #KAISER_ANONY
+
+SER_ww1_anti_ru:0 "Антируссийская политика"
+SER_ww1_anti_ru_desc:0 "" #KAISER_ANONY
+
+SER_ww1_anti_serb:0 "Антисербийская политика"
+SER_ww1_anti_serb_desc:0 "" #KAISER_ANONY
+
+SER_ww1_bulgaria_puppet:0 "Марионетка Болгария"
+SER_ww1_bulgaria_puppet_desc:0 "" #KAISER_ANONY
+
+SER_ww1_bulgaria_friend:0 "Подружиться с Болгарией"
+SER_ww1_bulgaria_friend_desc:0 "" #KAISER_ANONY
+
+SER_ww1_italo_turkish_opportunity:0 "Итало-турецкая возможность войны"
+SER_ww1_italo_turkish_opportunity_desc:0 "" #KAISER_ANONY
+
+SER_ww1_ready_country:0 "Подготовьтесь к войне"
+SER_ww1_ready_country_desc:0 "" #KAISER_ANONY
+
+SER_ww1_develop_serbia:0 "Развивать страну"
+SER_ww1_develop_serbia_desc:0 "" #KAISER_ANONY
+
+SER_ww1_LimitDemocracy:0 "Ограниченная свобода"
+SER_ww1_LimitDemocracy_desc:0 "" #KAISER_ANONY
+
+SER_ww1_remove_claims_on_ottoman:0 "Удалить претензии на османскую"
+SER_ww1_remove_claims_on_ottoman_desc:0 "" #KAISER_ANONY
+
+SER_ww1_stop_support_albania:0 "Конкурс Суверенитет Албании"
+SER_ww1_stop_support_albania_desc:0 "" #KAISER_ANONY
+
+SER_ww1_stop_support_montenegro:0 "Черногория слаб"
+SER_ww1_stop_support_montenegro_desc:0 "" #KAISER_ANONY
+
+SER_ww1_join_centralpowers:0 "Присоединяйтесь к центральным державам"
+SER_ww1_join_centralpowers_desc:0 "" #KAISER_ANONY
+
+#--------------------------------------------------------------
+
+
+
+

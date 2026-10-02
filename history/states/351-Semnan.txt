@@ -1,0 +1,21 @@
+state={
+	id=351
+	name="STATE_351"
+	provinces={
+		413 451 594 724 911 1561 1931 2079 2183 2923 3058 3211 3261 3403 4614 5156 5237 5300 5837 7106 7431 8565 9587 9782 10155 11447 11468 15200 15267 15308 15331 15369 15401 
+	}
+	manpower=323060
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+		owner = PER
+		add_core_of = PER
+		buildings = {
+			infrastructure = 1
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+}

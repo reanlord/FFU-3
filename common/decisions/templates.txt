@@ -1,0 +1,113 @@
+template_decisions = {
+
+    template_artillery = {
+        #icon = GFX_decision_SWE_set_army_budget
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		allowed = {
+			is_playable_country =yes
+		}
+		
+		available = {}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {}
+
+		complete_effect = {
+			load_oob = "Template_artillery"
+		}
+    }
+
+    template_heavy_artillery = {
+        icon = GFX_decision_generic_prepare_civil_war
+		
+		allowed = {
+			is_playable_country =yes
+		}
+		
+		available = {}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {}
+
+		complete_effect = {
+			load_oob = "Template_heavy_artillery"
+		}
+    }
+
+    template_infantry_11_3 = {
+        icon = GFX_decision_generic_prepare_civil_war
+		
+		allowed = {
+			is_playable_country =yes
+		}
+		
+		available = {}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {}
+
+		complete_effect = {
+			load_oob = "Template_infantry_11_3"
+		}
+    }
+
+    template_infantry_11_4 = {
+        icon = GFX_decision_generic_prepare_civil_war
+		
+		allowed = {
+			is_playable_country =yes
+		}
+		
+		available = {}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {}
+
+		complete_effect = {
+			load_oob = "Template_infantry_11_4"
+		}
+    }
+
+    template_infantry_11_5 = {
+        icon = GFX_decision_generic_prepare_civil_war
+		
+		allowed = {
+			is_playable_country =yes
+		}
+		
+		available = {}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {}
+
+		complete_effect = {
+			load_oob = "Template_infantry_11_5"
+		}
+    }
+}

@@ -1,0 +1,172 @@
+SWI_first_balkan_war_decisions = {
+    balkan_war_trigger_misions = {
+        allowed = { 
+			tag = SWI 
+		}
+        ai_will_do = {
+			base = 6000			
+		}
+        available = {
+			SER = {
+				has_war_with = TUR
+			}
+            GRE = {
+				has_war_with = TUR
+			}
+            has_global_flag = kis_firstbalkan_war
+		}
+        fire_only_once = yes
+        complete_effect = {
+            SER = {
+                activate_mission = first_balkan_victory_speed_1
+                activate_mission = first_balkan_victory_speed_2
+                activate_mission = first_balkan_victory_speed_3
+                activate_mission = first_balkan_victory_speed_4
+            }
+            GRE = {
+                activate_mission = first_balkan_victory_speed_1
+                activate_mission = first_balkan_victory_speed_2
+                activate_mission = first_balkan_victory_speed_3
+                activate_mission = first_balkan_victory_speed_4
+            }
+            TUR = {
+                activate_mission = first_balkan_victory_speed_1
+                activate_mission = first_balkan_victory_speed_2
+                activate_mission = first_balkan_victory_speed_3
+                activate_mission = first_balkan_victory_speed_4
+            }
+        }
+    }
+    end_war = {
+        allowed = { 
+			tag = SWI 
+		}
+        ai_will_do = {
+			base = 6000			
+		}
+        available = {
+            date < 1914.6.1
+
+            NOT = {
+                has_global_flag = kis_war
+                has_global_flag = hoi4tgw_SchlieffenSecurity
+                has_global_flag = kis_firstbalkanwar_victory
+            }
+            OR = {
+                TUR = {
+                    has_war_with = SER
+                    NOT = {
+                        controls_state = 156
+                        controls_state = 134
+                        controls_state = 155
+                        controls_state = 129
+                        controls_state = 151
+                        controls_state = 135
+                    }
+                }
+                has_global_flag = first_balkan_victory_speed_3
+            }
+        }
+        complete_effect = {
+            TUR = {
+                country_event={
+                    id=ww1_firstbalkan.5 
+                    days=0
+                }
+            }
+        }
+    }
+}
+
+first_balkan_war = {
+    first_balkan_victory_speed_1 = {
+        icon = generic_operation
+
+        allowed = {
+			always = no
+			OR = {
+                tag = SER
+                tag = GRE
+                tag = TUR
+		    }
+		}
+
+        available = {
+            has_global_flag = kis_firstbalkanwar_victory
+		}
+
+        days_mission_timeout = 60
+        fire_only_once = yes
+        activation = {}
+        is_good = no
+
+		complete_effect = {}
+        timeout_effect = {
+			set_global_flag = first_balkan_victory_speed_1
+            TUR = {
+                swap_ideas = {
+                    remove_idea = TUR_First_Balkan_1
+                    add_idea = TUR_First_Balkan_2
+                }
+            }
+		}
+    }
+    first_balkan_victory_speed_2 = {
+        icon = generic_operation
+
+        allowed = {
+			always = no
+			OR = {
+                tag = SER
+                tag = GRE
+                tag = TUR
+		    }
+		}
+
+        available = {
+            has_global_flag = kis_firstbalkanwar_victory
+		}
+
+        days_mission_timeout = 120
+        fire_only_once = yes
+        activation = {}
+        is_good = no
+
+		complete_effect = {}
+        timeout_effect = {
+			set_global_flag = first_balkan_victory_speed_2
+            TUR = {
+                swap_ideas = {
+                remove_idea = TUR_First_Balkan_2
+                add_idea = TUR_First_Balkan_3
+                }
+            }
+		}
+    }
+    first_balkan_victory_speed_3 = {
+        icon = generic_operation
+
+        allowed = {
+			always = no
+			OR = {
+                tag = SER
+                tag = GRE
+                tag = TUR
+		    }
+		}
+
+        available = {
+            has_global_flag = kis_firstbalkanwar_victory
+		}
+
+        days_mission_timeout = 234
+        fire_only_once = yes
+        activation = {}
+        is_good = no
+
+		complete_effect = {}
+        timeout_effect = {
+			set_global_flag = first_balkan_victory_speed_3
+		}
+    }
+}

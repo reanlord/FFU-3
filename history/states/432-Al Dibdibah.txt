@@ -1,0 +1,36 @@
+#Al Dibdibah
+state={
+	id=432
+	name="STATE_432"
+	resources={
+
+	}
+	
+	history={
+		#owner = JBS
+		#add_core_of = JBS
+		add_extra_state_shared_building_slots=2
+		buildings = {
+			infrastructure=1
+			arms_factory=1
+		}
+		victory_points = {
+			16713 2		#Rafha
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+	
+	provinces={
+		191 380 601 639 1984 2171 2297 2353 2718 3119 3225 3748 3767 3877 3941 4024 4946
+		5934 5950 6349 6478 6900 7531 8533 8748 9005 9566 9624
+		10011 10051 10708 11074 11400
+		16673 16686 16687 16692 16694 16699 16709 16713 16722 16725 16753 16780 16787 
+	}
+	
+	manpower=67008
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

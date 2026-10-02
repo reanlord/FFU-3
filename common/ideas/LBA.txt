@@ -1,0 +1,237 @@
+ideas={
+
+	industrial_concern={
+		lba_railway_concern={
+			allowed={ original_TAG=LBA }
+			research_bonus = { industry = 0.05 }
+			traits={ railway_company } 
+			picture=generic_tank_manufacturer_2
+		}
+		lba_electronics_concern={
+			allowed={ original_TAG=LBA }
+			research_bonus = { electronics = 0.10 }
+			traits={ electronics_concern }
+			picture=generic_tank_manufacturer_3
+		}
+		lba_industry_concern={
+			allowed={ original_TAG=LBA }
+			research_bonus = { industry = 0.10 }
+			traits={ industrial_concern }
+			picture=generic_tank_manufacturer_1
+		}
+	}
+	
+	country={
+	
+		LBA_government_1={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_neutrality_drift_bonus
+			modifier={
+				political_power_gain = -0.40
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		LBA_government_2={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_neutrality_drift_bonus
+			modifier={
+				political_power_gain = -0.20
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		LBA_government_sheikh={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=bra_monarchist_uprising
+			modifier={
+				political_power_gain = 0.1
+				political_advisor_cost_factor = -0.5
+				high_command_cost_factor = -0.5
+				air_chief_cost_factor = -0.5
+				army_chief_cost_factor = -0.5
+				navy_chief_cost_factor = -0.5
+				theorist_cost_factor = -0.5
+				stability_factor = 0.05
+			}
+		}
+		LBA_government_bureaucracy={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_king_handled
+			modifier={
+				political_power_gain = -0.1
+				political_advisor_cost_factor = -0.15
+				#industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		LBA_economy_1={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_agrarian_society
+			modifier={
+				line_change_production_efficiency_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_arms_factory_factor = -0.25
+			}
+		}
+		LBA_economy_2={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_agrarian_society
+			modifier={
+				line_change_production_efficiency_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_arms_factory_factor = -0.25
+				industrial_concern_cost_factor = -0.40
+			}
+		}
+		LBA_economy_3={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=ARG_economic_reactivation
+			modifier={
+				line_change_production_efficiency_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				#production_speed_arms_factory_factor = 0.05
+				industrial_concern_cost_factor = -0.40
+			}
+		}
+		LBA_economy_4={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=ARG_rapid_militarization
+			modifier={
+				line_change_production_efficiency_factor = 0.05
+				#production_speed_arms_factory_factor = 0.05
+				industrial_concern_cost_factor = -0.40
+			}
+		}
+		
+		LBA_army_outdated={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=chi_army_corruption2
+			#picture=chi_army_corruption3
+			modifier={
+				max_dig_in_factor = -0.30
+				heat_attrition = -0.35
+				breakthrough_factor = -0.75
+			}
+		}
+		LBA_army_offensive={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=tur_golden_age_of_the_wolf
+			modifier={
+				org_loss_at_low_org_factor = -0.05
+				experience_loss_factor = -0.20
+				heat_attrition = -0.35
+				max_dig_in_factor = -0.30
+				grant_medal_cost_factor = -0.50
+				#special_forces_attack_factor = 0.025
+			}
+		}
+		LBA_army_defensive={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_shield_against_communism
+			modifier={
+				weekly_manpower = 7000
+				breakthrough_factor = -0.75
+				dig_in_speed_factor = 0.20
+				land_reinforce_rate = 0.03
+				heat_attrition = -0.35
+				max_dig_in_factor = 0.05
+			}
+		}
+		
+		LBA_never_surrender={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			#picture=FRA_national_mobilization_focus
+			picture=SWE_neither_death_nor_dishonor
+			modifier={
+				weekly_manpower = 3000
+				no_supply_grace = 24
+			}
+		}
+		LBA_never_surrender_final={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			#picture=FRA_national_mobilization_focus
+			picture=SWE_neither_death_nor_dishonor
+			modifier={
+				weekly_manpower = 3000
+				pocket_penalty = -0.50
+				no_supply_grace = 24
+				army_strength_factor = -0.05
+			}
+		}
+		
+		LBA_ottoman_military_advisors={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_manpower_bonus
+			modifier={
+				experience_gain_army = 0.05
+			}
+		}
+		
+		LBA_zawiya_education={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_research_bonus
+			modifier={
+				research_speed_factor=0.04
+			}
+		}
+		
+		LBA_tribute_payments={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=ast_dollar
+			modifier={
+				consumer_goods_expected_value=-0.05
+				production_speed_buildings_factor=-0.05
+				political_power_factor=0.05
+			}
+		}
+		
+		LBA_islamic_charity_bonus={
+			allowed={original_TAG=LBA}
+			removal_cost=-1
+			picture=generic_foreign_capital
+			modifier={
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_expected_value = -0.025
+			}
+		}
+		
+		LBA_ship_production={
+			allowed={original_TAG=POL}
+			picture = generic_coastal_navy
+			removal_cost=-1
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+		
+	}
+	
+}

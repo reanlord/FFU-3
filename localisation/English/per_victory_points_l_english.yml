@@ -1,0 +1,32 @@
+﻿l_english:
+
+  ## 348 Khuzestan
+  VICTORY_POINTS_168:0 "Murmuri"
+  VICTORY_POINTS_3470:0 "Ahvaz"
+  VICTORY_POINTS_6607:0 "Badreh"
+  VICTORY_POINTS_8171:0 "Likak"
+  VICTORY_POINTS_9515:0 "Gilanegharb"
+  VICTORY_POINTS_10776:0 "Mehran"
+  VICTORY_POINTS_16252:0 "Dehloran"
+  VICTORY_POINTS_16377:0 "Bandar-e-Mahshahr"
+  VICTORY_POINTS_16394:0 "Bandar-e-Deylam"
+  VICTORY_POINTS_16490:0 "Abadan"
+  
+  ## 349 Kurdistan
+  VICTORY_POINTS_8478:0 "Eivan"
+  VICTORY_POINTS_6832:0 "Kermanshah"
+  
+  ## 350 Hamadan
+  VICTORY_POINTS_1550:0 "Dezful"
+  
+  ## 353 Kerman
+  VICTORY_POINTS_1797:0 "Shiraz"
+  VICTORY_POINTS_16174:0 "Izeh"
+  VICTORY_POINTS_16314:0 "Yasuj"
+  
+  ## 354 Fars
+  VICTORY_POINTS_1565:0 "Sajadiyeh"
+  VICTORY_POINTS_2942:0 "Bandar Ganaveh"
+  VICTORY_POINTS_7388:0 "Kabgan"
+  VICTORY_POINTS_7921:0 "Kazerun"
+  VICTORY_POINTS_16497:0 "Bushehr"

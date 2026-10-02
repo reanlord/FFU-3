@@ -1,0 +1,537 @@
+﻿l_russian:
+
+#--------------------------------------------------------------
+# [OTTOMAN EMPIRE] Армейские усилия
+#=========================================================================
+TUR_ww1_army_effort_1:0 "Армейские усилия"
+TUR_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_army_effort_2:0 "Армейские усилия II"
+TUR_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_army_effort_3:0 "Армейские усилия III"
+TUR_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_army_effort_4:0 "Армейские усилия IV"
+TUR_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_army_effort_5:0 "Армейские усилия V"
+TUR_ww1_army_effort5_desc:0 "" #Frenchie
+
+TUR_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+TUR_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+TUR_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+TUR_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+TUR_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+TUR_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+TUR_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+TUR_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+TUR_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+TUR_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+TUR_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+TUR_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+TUR_ww1_aircraftprod_1:0 "Производство самолетов"
+TUR_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_aircraftprod_2:0 "Производство самолетов II"
+TUR_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_aircraftprod_3:0 "Производство самолетов III"
+TUR_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_aircraftprod_4:0 "Производство самолетов IV"
+TUR_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_aircraftprod_5:0 "Производство самолетов V"
+TUR_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+TUR_ww1_large_navy_1:0 "Военно -морская авиация"
+TUR_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_large_navy_2:0 "Военно -морская и авиационная реформа II"
+TUR_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_large_navy_3:0 "Военно -морская и авиационная реформа III"
+TUR_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_large_navy_4:0 "Военно -морская и авиационная реформа IV"
+TUR_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_large_navy_5:0 "Военно -морская и авиационная реформа V"
+TUR_ww1_large_navy_5_desc:0 "" #Frenchie
+
+TUR_ww1_special_forces:0 "Спецназовое внимание"
+TUR_ww1_special_forces_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_army_motorization_focus:0 "Фокус моторизации"
+TUR_ww1_army_motorization_focus_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_doctrine_effort:0 "Учение усилия"
+TUR_ww1_doctrine_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_doctrine_effort_2:0 "Учение усилия II"
+TUR_ww1_doctrine_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_doctrine_effort_3:0 "Учение усилия III"
+TUR_ww1_doctrine_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_armor_effort_1:0 "Броня усилий"
+TUR_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_armor_effort_2:0 "Броня усилий II"
+TUR_ww1_armor_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_gasmask_focus:0 "Химическая война фокусируется"
+TUR_ww1_gasmask_focus_desc:0 "" #KAISER_ANONY
+#--------------------------------------------------------------
+# [OTTOMAN EMPIRE] Промышленные усилия
+ #=========================================================================
+TUR_ww1_industrial_effort:0 "Промышленные усилия"
+TUR_ww1_industrial_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_construction_effort:0 "Строительные усилия"
+TUR_ww1_construction_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_construction_effort_2:0 "Строительные усилия II"
+TUR_ww1_construction_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_construction_effort_3:0 "Строительные усилия III"
+TUR_ww1_construction_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_production_effort:0 "Усилие вооружения"
+TUR_ww1_production_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_production_effort_2:0 "Усилие вооружения II"
+TUR_ww1_production_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_production_effort_3:0 "Усилие вооружения III"
+TUR_ww1_production_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_dockyard_effort_1:0 "Расширение верфи"
+TUR_ww1_dockyard_effort_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_dockyard_effort_2:0 "Расширение верфи II"
+TUR_ww1_dockyard_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_dockyard_effort_3:0 "Расширение верфи III"
+TUR_ww1_dockyard_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_airfield_expansion_1:0 "Расширение аэродрома"
+TUR_ww1_airfield_expansion_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_airfield_expansion_2:0 "Расширение аэродрома II"
+TUR_ww1_airfield_expansion_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_airfield_expansion_3:0 "Расширение аэродрома III"
+TUR_ww1_airfield_expansion_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_infrastructure_effort:0 "Инфраструктурные усилия"
+TUR_ww1_infrastructure_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_infrastructure_effort_2:0 "Инфраструктурные усилия II"
+TUR_ww1_infrastructure_effort_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_infrastructure_effort_3:0 "Инфраструктурные усилия III"
+TUR_ww1_infrastructure_effort_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_infrastructure_effort_4:0 "Инфраструктурные усилия IV"
+TUR_ww1_infrastructure_effort_4_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_extra_tech_slot:0 "Дополнительный исследовательский слот"
+TUR_ww1_extra_tech_slot_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_extra_tech_slot_2:0 "Дополнительный исследовательский слот II"
+TUR_ww1_extra_tech_slot_2_desc:0 "" #KAISER_ANONY
+ #--------------------------------------------------------------
+
+
+# [OTTOMAN EMPIRE] Naval Effort
+#=========================================================================
+TUR_ww1_naval_effort:0 "Подкреплять османский флот"
+TUR_ww1_naval_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_newnavalcanons_1:0 "Военно -морское оружие"
+TUR_ww1_newnavalcanons_1_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_newnavalcanons_2:0 "Военно -морское оружие II"
+TUR_ww1_newnavalcanons_2_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_newnavalcanons_3:0 "Военно -морское оружие III"
+TUR_ww1_newnavalcanons_3_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_dreadnought_effort:0 "Дредноут"
+TUR_ww1_dreadnought_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_flexible_navy:0 "Гибкий флот"
+TUR_ww1_flexible_navy_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_large_navy:0 "Большой флот"
+TUR_ww1_large_navy_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_navyreform:0 "Развертывание военно -морского флота"
+TUR_ww1_navyreform_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_submarine_effort:0 "Подводные усилия"
+TUR_ww1_submarine_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_cruiser_effort:0 "Крейсер усилие"
+TUR_ww1_cruiser_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_destroyer_effort:0 "Усилие разрушителя"
+TUR_ww1_destroyer_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_capital_ships_effort:0 "Капитальный корабль усилия"
+TUR_ww1_capital_ships_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_carrier_focus:0 "Усилия"
+TUR_ww1_carrier_focus_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_antisubmarine:0 "Анти-подключатая война"
+TUR_ww1_antisubmarine_desc:0 "" #KAISER_ANONY
+
+#--------------------------------------------------------------
+
+
+# [OTTOMAN EMPIRE] Political Effort
+#=========================================================================
+TUR_ww1_political_effort:0 "Политические усилия"
+TUR_ww1_political_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_ContestYoungTurksReforms:0 "Конкурировать с реформами молодых турок"
+TUR_ww1_ContestYoungTurksReforms_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_SupportYoungTurksReforms:0 "Поддерживать реформы молодых турок"
+TUR_ww1_SupportYoungTurksReforms_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_AbolishConstitution:0 "Отменить конституцию"
+TUR_ww1_AbolishConstitution_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_liberty_ethos_focus:0 "Свобода Отос"
+TUR_ww1_liberty_ethos_focus_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_abandon_claims:0 "Отказ от претензий"
+TUR_ww1_abandon_claims_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_FreeLebanon:0 "Выпустить Ливан"
+TUR_ww1_FreeLebanon_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_PanIslamism:0 "Пансламизм"
+TUR_ww1_PanIslamism_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_WorldwideCaliphate:0 "Всемирный калифат"
+TUR_ww1_WorldwideCaliphate_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_militarism:0 "Милитаризм"
+TUR_ww1_militarism_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_indoctrination_focus:0 "Идеологическая обработка"
+TUR_ww1_indoctrination_focus_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_paramilitarism:0 "Паримилитаризм"
+TUR_ww1_paramilitarism_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_military_youth:0 "Военная молодежь"
+TUR_ww1_military_youth_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_centralizedpower:0 "Бюрократия"
+TUR_ww1_centralizedpower_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_freespeech:0 "Свободная речь"
+TUR_ww1_freespeech_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_reorganization_act:0 "Закон о реорганизации"
+TUR_ww1_reorganization_act_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_limited_rearmament:0 "Ограниченный перевооружение"
+TUR_ww1_limited_rearmament_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_full_rearmament:0 "Перевооружение"
+TUR_ww1_full_rearmament_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_unitedpeople:0 "Патриотический пыл"
+TUR_ww1_unitedpeople_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_massive_effort:0 "Массивные усилия"
+TUR_ww1_massive_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_fortify_city:0 "Гражданские укрепления"
+TUR_ww1_fortify_city_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_fortify_coast:0 "Прибрежная оборона"
+TUR_ww1_fortify_coast_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_install_democracy:0 "Свободные выборы"
+TUR_ww1_install_democracy_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_oppression_minorities:0 "Угнетают меньшинства"
+TUR_ww1_oppression_minorities_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_france_friend:0 "Франко-турецкое соглашение"
+TUR_ww1_france_friend_desc:0 "" #KAISER_ANONY
+
+#--------------------------------------------------------------
+
+
+# [OTTOMAN EMPIRE] Diplomatic Effort
+#=========================================================================
+
+TUR_ww1_diplomatic_effort:0 "Дипломатические усилия"
+TUR_ww1_diplomatic_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_takeposition:0 "Занять позицию"
+TUR_ww1_takeposition_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_supportgermany:0 "Поддержка Германии"
+TUR_ww1_supportgermany_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_supportfrance:0 "Поддержка Франции"
+TUR_ww1_supportfrance_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_supportaustria:0 "Поддержка Австрии-Венгрии"
+TUR_ww1_supportaustria_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_supportrussia:0 "Поддержка России"
+TUR_ww1_supportrussia_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_military_reserve:0 "Военный заповедник"
+TUR_ww1_military_reserve_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_embargo_germany:0 "Санкция Германия"
+TUR_ww1_embargo_germany_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_embargo_france:0 "Санкция Франция"
+TUR_ww1_embargo_france_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_BalkansPolitics:0 "Балканы политика"
+TUR_ww1_BalkansPolitics_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_ApeasementBalkans:0 "Умиротворение на Балканах"
+TUR_ww1_ApeasementBalkans_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_RecognizeAlbania:0 "Признайте суверенитет Албании"
+TUR_ww1_RecognizeAlbania_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_ReleaseAlbania:0 "Выпустить Албанию"
+TUR_ww1_ReleaseAlbania_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_join_entente:0 "Присоединяйтесь к Entente"
+TUR_ww1_join_entente_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_war_effort:0 "Военные усилия"
+TUR_ww1_war_effort_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_AntiBulgaria:0 "Анти-бульгарская политика"
+TUR_ww1_AntiBulgaria_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_ita:0 "Анти-итальянская политика"
+TUR_ww1_anti_ita_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_BalkanLeagueMenace:0 "Угроза Балканской лиги"
+TUR_ww1_BalkanLeagueMenace_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_SecondBalkanWarOpportunity:0 "Вторая балканская война"
+TUR_ww1_SecondBalkanWarOpportunity_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_GreeceFriend:0 "Подружиться с Грецией"
+TUR_ww1_GreeceFriend_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_back_austria:0 "Поддержка Австрии-Венгрии"
+TUR_ww1_back_austria_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_baghdad:0 "Берлин-Багдадская железная дорога"
+TUR_ww1_baghdad_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_assert_position_west:0 "Утвердить позицию в Европе"
+TUR_ww1_assert_position_west_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_uk:0 "Анти-французская политика"
+TUR_ww1_anti_uk_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_assert_position_east:0 "Утвердить позицию на Ближнем Востоке"
+TUR_ww1_assert_position_east_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_ru:0 "Антируссийская политика"
+TUR_ww1_anti_ru_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_serb:0 "Антисербийская политика"
+TUR_ww1_anti_serb_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_bulgaria_puppet:0 "Марионетка Болгария"
+TUR_ww1_bulgaria_puppet_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_bulgaria_friend:0 "Подружиться с Болгарией"
+TUR_ww1_bulgaria_friend_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_ready_country:0 "Подготовиться к войне "
+TUR_ww1_ready_country_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_khedivate_egypt:0 "Поддержка египетских националистов "
+TUR_ww1_khedivate_egypt_desc:0 ""
+
+TUR_ww1_develop_arab:0 "Развивать империю"
+TUR_ww1_develop_arab_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_peace_arab_revolt:0 "Договориться с повстанцами"
+TUR_ww1_peace_arab_revolt_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_free_hejaz:0 "Освободить Хеджаз"
+TUR_ww1_free_hejaz_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_free_yemen:0 "Признайте Йемен и Асир"
+TUR_ww1_free_yemen_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_war_hejaz:0 "Бой Хеджаз восстание"
+TUR_ww1_war_hejaz_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_war_yemen:0 "Бой Йемен и Азир восстания"
+TUR_ww1_war_yemen_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_support_libya:0 "Support Revolt in Libya"
+TUR_ww1_support_libya_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_support_oman:0 "Support Revolt in Oman"
+TUR_ww1_support_oman_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_support_egypt:0 "Support Revolt in Egypt"
+TUR_ww1_support_egypt_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_fight_arab_revolt:0 "Раздавить арабские восстания"
+TUR_ww1_fight_arab_revolt_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_fight_saud:0 "раздавить AlSaudClan"
+TUR_ww1_fight_saud_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_friend_jabal:0 "Подружиться с домом Рашида"
+TUR_ww1_friend_jabal_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_annex_jabal:0 "Приложение Джабал Шаммар"
+TUR_ww1_annex_jabal_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_friend_afghan:0 "Подружиться с Афганистаном"
+TUR_ww1_friend_afghan_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_persia:0 "Антиперсианская политика"
+TUR_ww1_anti_persia_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_friend_persia:0 "Подружиться с Персией"
+TUR_ww1_friend_persia_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_technology_sharing:0 "Обмен технологиями"
+TUR_ww1_technology_sharing_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_ger:0 "Турецкое недоверие к Германии"
+TUR_ww1_anti_ger_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_anti_auh:0 "Австрия -туркисское соперничество"
+TUR_ww1_anti_auh_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_EmbargoGermany:0 "Эмбарго Германия"
+TUR_ww1_EmbargoGermany_desc:0 "" #KAISER_ANONY
+
+TUR_ww1_join_centralpowers:0 "Присоединяйтесь к центральным державам"
+TUR_ww1_join_centralpowers_desc:0 "" #KAISER_ANONY
+
+#--------------------------------------------------------------
+
+TUR_fleet_expansion:0 "Расширение флота "
+TUR_fleet_expansion_desc:0 ""
+TUR_secret_treaty_with_germany:0 "Секретный договор с Германией"
+TUR_secret_treaty_with_germany_desc:0 ""
+TUR_1913_military_budget:0 "1913 военный бюджет"
+TUR_1913_military_budget_desc:0 ""
+TUR_coastline_defense:0 "Защита береговой линии"
+TUR_coastline_defense_desc:0 ""
+TUR_asienkorps:0 "Корпус Ашина"
+TUR_asienkorps_desc:0 ""
+TUR_turkish_equipment_modernization:0 "Модернизация турецкого оборудования"
+TUR_turkish_equipment_modernization_desc:0 ""
+TUR_adopt_german_gotha_bomber:0 "Принять немецкий бомбардировщик готы"
+TUR_adopt_german_gotha_bomber_desc:0 ""
+TUR_civil_communitcations_improvements:0 "Улучшения гражданских коммунирования"
+TUR_civil_communitcations_improvements_desc:0 ""
+TUR_kostantiniye_dockyard_expansion:0 "kostantiniyeРасширениеВерфи"
+TUR_kostantiniye_dockyard_expansion_desc:0 ""
+TUR_abolish_minorities_military_service_exemptions:0 "Отменить исключения для военной службы меньшинств"
+TUR_abolish_minorities_military_service_exemptions_desc:0 ""
+TUR_ankara_industrialization:0 "Индустриализация Анкары"
+TUR_ankara_industrialization_desc:0 ""
+TUR_1913_taxation_exemptions:0 "1913 г. налоговые льготы"
+TUR_1913_taxation_exemptions_desc:0 ""
+TUR_complete_the_british_dreadnought_order:0 "Заполните британский приказ дредноут"
+TUR_complete_the_british_dreadnought_order_desc:0 ""
+TUR_baghdadberlin_railway:0 "Железная дорога Багдад-Берлин"
+TUR_baghdadberlin_railway_desc:0 ""
+TUR_east_anatolia_army_group:0 "Группа Восточной Анатолии армия"
+TUR_east_anatolia_army_group_desc:0 ""
+TUR_osmanl_donanmas:0 "Османский флот"
+TUR_osmanl_donanmas_desc:0 ""
+TUR_german_pascha_units:0 "Немецкие подразделения Pascha"
+TUR_german_pascha_units_desc:0 ""
+TUR_adopt_german_fighter_designs:0 "Принять немецкие истребители дизайн"
+TUR_adopt_german_fighter_designs_desc:0 ""
+TUR_light_mountain_guns:0"Световые горы"
+TUR_light_mountain_guns_desc:0 ""
+TUR_three_pashas:0 "Три паша"
+TUR_three_pashas_desc:0 ""
+TUR_aftermath_of_the_balkan_war:0"После балканской войны"
+TUR_aftermath_of_the_balkan_war_desc:0 ""
+TUR_1914_law_of_military_obligation:0 "Закон о военном обязательстве 1914 года"
+TUR_1914_law_of_military_obligation_desc:0 ""
+TUR_address_high_debts:0 "Адресусь с высокими долгами"
+TUR_address_high_debts_desc:0 ""
+TUR_industrialization_of_the_nation:0 "Индустриализация нации"
+TUR_industrialization_of_the_nation_desc:0 ""
+TUR_aftermath_of_the_italoturkish_war:0 "Последствия итало-турецкой войны"
+TUR_aftermath_of_the_italoturkish_war_desc:0 ""
+TUR_arms_expansions:0 "Расширение оружия"
+TUR_arms_expansions_desc:0 ""
+TUR_abolished_the_capitulations:0 "Отменил" капитуляции ""
+TUR_abolished_the_capitulations_desc:0 ""
+TUR_imperial_arsenal:0 "Имперский арсенал"
+TUR_imperial_arsenal_desc:0 ""
+TUR_baghdad_industrialization:0 "Индустриализация Багдада"
+TUR_baghdad_industrialization_desc:0 ""
+TUR_arms_deal_with_germany:0 "Оружие с Германией"
+TUR_arms_deal_with_germany_desc:0 ""
+TUR_aviation_squadrons:0 "Авиационные эскадрильи"
+TUR_aviation_squadrons_desc:0 ""
+TUR_german_sea_raiders:0 "Немецкие морские рейдеры"
+TUR_german_sea_raiders_desc:0 ""
+TUR_restructured_army_command:0 "Реструктурированное командование армии"
+TUR_restructured_army_command_desc:0 ""
+TUR_german_five_year_mission:0 "Немецкая пятилетняя миссия"
+TUR_german_five_year_mission_desc:0 ""
+TUR_law_for_encouraging_industry:0 "Закон о поощрении промышленности"
+TUR_law_for_encouraging_industry_desc:0 ""
+TUR_schellendorf_plan:0 "Schellendorf Plan"
+TUR_schellendorf_plan_desc:0 ""
+TUR_jandarma_genel_komutanlgi:0 "Gendarmerie General Command"
+TUR_jandarma_genel_komutanlgi_desc:0 "gendarmerieGeneralCommand"
+TUR_osmanl_ordusu:0 "Osmanlı Ordusu"
+TUR_osmanl_ordusu_desc:0 ""
+TUR_german_donation:0 "Немецкое пожертвование"
+TUR_german_donation_desc:0 ""
+TUR_office_of_war_industry:0 "Управление военных индустрии"
+TUR_office_of_war_industry_desc:0 ""
+TUR_air_defense:0 "ПВО"
+TUR_air_defense_desc:0 ""
+TUR_literacy_campaign:0 "Кампания грамотности"
+TUR_literacy_campaign_desc:0 ""

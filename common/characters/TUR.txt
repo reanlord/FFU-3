@@ -1,0 +1,872 @@
+characters={
+	TUR_mustafa_kemal={
+		name="Mustafa Kemal"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_mustafa_kemal.dds"
+				small="gfx/interface/ideas/TUR/TUR_mustafa_kemal.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_mustafa_kemal
+			ledger = army 
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_concealment_3
+			}
+		}
+		field_marshal={
+			traits={
+				logistics_wizard thorough_planner unyielding_defender inspirational_leader
+				trickster commando infantry_leader trait_engineer fortress_buster
+				desert_fox adaptable
+			}
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=90013
+		}
+		country_leader={
+			ideology=despotism
+			expire="1935.1.1.1"
+			id=-1
+		}
+	}
+	TUR_mehmed_vi={
+		name="Mehmed VI"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_mehmed_vi.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1935.1.1.1"
+			id=-1
+		}
+	}
+	TUR_mehmed_v={
+		name="Mehmed V"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_mehmed_v.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1935.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			expire="1935.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Kress_von_Kressenstein = {
+		name = "Friedrich Kress von Kressenstein"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TUR/TUR_kress_von_kressenstein.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer desert_fox adaptable infantry_expert cavalry_leader expert_improviser trait_engineer scavenger }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	TUR_İsmail_enver_paşa={
+		name="İsmail Enver Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_enver_pasha.dds"
+				small="GFX_idea_TUR_enver_pasha-96388"
+				#small="GFX_idea_TUR_ismail_enver"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_enver_pasha
+			ledger = army 
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				social_revolutionary 
+			}
+		}
+		field_marshal={
+		    traits = { old_guard harsh_leader media_personality inflexible_strategist politically_connected paratrooper militias_officer guerilla_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=90007
+		}
+	}
+	TUR_mehmed_esad_paşa={
+		name="Mehmed Esad Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_Mehmed_Esad.dds"
+				small="gfx/interface/ideas/TUR/idea_TUR_mehmed_esad.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_mehmed_esad_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { infantry_officer inflexible_strategist trait_mountaineer skilled_staffer }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=90008
+		}
+	}
+	TUR_hasan_tahsin_paşa={
+		name="Hasan Tahsin Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_hasan_tahsin_pasha.dds"
+				small="gfx/interface/ideas/TUR/idea_TUR_hasan_tahsin_pasha.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = TUR_hasan_tahsin_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer urban_assault_specialist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=90138
+		}
+	}
+		TUR_huseyin_hilmi={
+			advisor={
+				slot = army_chief
+				idea_token = TUR_huseyin_hilmi
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					army_chief_offensive_1
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_huseyin_hilmi"
+			portraits={
+				army={
+					#small="GFX_idea_TUR_huseyin_hilmi"
+					small="gfx/interface/ideas/TUR/idea_TUR_huseyin_hilmi.png"
+				}
+			}
+		}
+		
+	TUR_mahmud_shevket_paşa={
+		name="Mahmud Shevket Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_Mahmud_Shevket_Pasha.dds"
+				small="gfx/interface/ideas/TUR/TUR_sevket_pasha.png"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = TUR_mahmud_shevket_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				air_chief_reform_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { infantry_officer cavalry_officer irregulars_officer desert_fox }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=90507
+		}
+	}
+	TUR_kölemen_abdullah_paşa={
+		name="Kölemen Abdullah Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_kolemen_abdullah_pasha.dds"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader infantry_expert scavenger }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=90508
+		}
+	}
+	TUR_ali_rıza_paşa={
+		name="Ali Rıza Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_ali_riza.dds"
+				small="gfx/interface/ideas/TUR/TUR_ali_riza.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_ali_rıza_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_chief_morale_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer hill_fighter engineer_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=90509
+		}
+	}
+	TUR_mahmud_muhtar_paşa={
+		name="Mahmud Muhtar Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_Mahmud_Muhtar_Pasha.dds"
+				small="gfx/interface/ideas/TUR/idea_TUR_mahmud_muhtar_pasha.png"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = TUR_mahmud_muhtar_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { infantry_officer ascari_officer jaeger desert_fox }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=90510
+		}
+	}
+	TUR_fevzi_Çakmak_paşa={
+		name="Fevzi Çakmak Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_fevzi_cakmak.dds"
+				small="gfx/interface/ideas/TUR/TUR_fevzi_cakmak.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = TUR_fevzi_Çakmak_paşa
+			ledger = army
+			cost = 25
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+	        traits = { old_guard harsh_leader trait_reckless politically_connected desert_fox }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=90515
+		}
+	}
+	TUR_cevat_Çobanlı_paşa={
+		name="Cevat Çobanlı "
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_cevat_cobanli.dds"
+				small="gfx/interface/ideas/TUR/idea_TUR_cevat_cobanli.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_cevat_Çobanlı_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_armored_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { brilliant_strategist infantry_leader infantry_expert trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=90516
+		}
+	}
+	TUR_halil_kut_paşa={
+		name="Halil Kut"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_halil_kut.dds"
+				small="gfx/interface/ideas/TUR/TUR_halil_kut_advisor.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_halil_kut_paşa
+			ledger = army
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_chief_planning_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+	        traits = {
+				desert_fox urban_assault_specialist ranger swamp_fox trait_engineer
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=90517
+		}
+	}
+	TUR_ahmed_ramiz_bey={
+		name="Ahmed Ramiz Bey"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_ahmed_ramiz.dds"
+			}
+		}
+		navy_leader={
+			traits = {fleet_protector destroyer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=90159
+		}
+	}
+	TUR_arif_paşa={
+		name="Arif Paşa"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/TUR_arif_pasha.dds"
+			}
+		}
+		navy_leader={
+			traits={old_guard_navy ironside gentlemanly}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=90097
+		}
+	}
+	TUR_reshad_orbay={
+		name="Reshad Orbay"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ tenacious_negotiator financial_expert }
+			expire="1928.1.1.1"
+			id=-1
+		}
+	}
+		
+		##Army HC
+		TUR_ahmed_izzet={
+			advisor={
+				slot = high_command
+				idea_token = TUR_ahmed_izzet
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					army_chief_entrenchment_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_ahmed_izzet"
+			portraits={
+				army={
+					small="GFX_idea_TUR_ahmed_izzet"
+				}
+			}
+		}
+		TUR_refet_bele={
+			advisor={
+				slot = high_command
+				idea_token = TUR_refet_bele
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					army_cavalry_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="Refet Bele"
+			portraits={
+				army={
+					small="gfx/interface/ideas/TUR/idea_TUR_refet_bele_pasha.png"
+				}
+			}
+		}
+		TUR_mustafa_ismet={
+			advisor={
+				slot = high_command
+				idea_token = TUR_mustafa_ismet
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					army_logistics_1
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_mustafa_ismet"
+			portraits={
+				army={
+					small="GFX_idea_TUR_mustafa_ismet"
+				}
+			}
+		}
+		TUR_erich_von_falkenhayn={
+			advisor={
+				slot = high_command
+				idea_token = TUR_erich_von_falkenhayn
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				available = {
+					has_completed_focus = TUR_schellendorf_plan 
+				}
+				traits = {
+					army_infantry_2 
+				}
+			}
+			name="TUR_erich_von_falkenhayn"
+			portraits={
+				army={
+					small="gfx/interface/ideas/GER/GER_erich_von_falkenhayn.png"
+				}
+			}
+		}
+		TUR_otto_liman_von_sanders={
+			advisor={
+				slot = high_command
+				idea_token = TUR_otto_liman_von_sanders
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				available = {
+					has_completed_focus = TUR_schellendorf_plan 
+				}
+				traits = {
+					army_artillery_1 
+				}
+			}
+			name="TUR_otto_liman_von_sanders"
+			portraits={
+				army={
+					small="gfx/interface/ideas/TUR/idea_TUR_liman_von_sanders.png"
+				}
+			}
+		}
+		TUR_colmar_von_der_goltz={
+			advisor={
+				slot = high_command
+				idea_token = TUR_colmar_von_der_goltz
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				available = {
+					has_completed_focus = TUR_schellendorf_plan 
+				}
+				traits = {
+					army_entrenchment_2 
+				}
+			}
+			name="Colmar von der Goltz"
+			portraits={
+				army={
+					small="gfx/interface/ideas/GER/idea_GER_colmar_von_goltz.png"
+				}
+			}
+		}
+		
+		##Army Theorist
+		
+		TUR_ethem_nejat={
+			advisor={
+				slot = theorist
+				idea_token = TUR_ethem_nejat
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					military_theorist 
+				}
+				#research_bonus = {
+				#	land_doctrine = 0.100
+				#}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_ethem_nejat"
+			portraits={
+				army={
+					small="GFX_idea_TUR_ethem_nejat"
+				}
+			}
+		}
+		
+		##Navy HC
+		
+		TUR_huseyin_rauf={
+			advisor={
+				slot = navy_chief
+				idea_token = TUR_huseyin_rauf
+				ledger = navy
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					navy_chief_decisive_battle_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_huseyin_rauf"
+			portraits={
+				army={
+					small="GFX_idea_TUR_huseyin_rauf"
+				}
+			}
+		}
+		
+		##Air HC
+		
+		##Political Advisors
+		
+		TUR_ahmed_nessimy={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_ahmed_nessimy
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					ideological_crusader 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_ahmed_nessimy"
+			portraits={
+				army={
+					small="GFX_idea_TUR_ahmed_nessimy"
+				}
+			}
+		}
+		TUR_celal_bayar={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_celal_bayar
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					war_industrialist 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_celal_bayar"
+			portraits={
+				army={
+					small="GFX_idea_TUR_celal_bayar"
+				}
+			}
+		}
+		TUR_djemal_pasha={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_djemal_pasha
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					propaganda_expert 
+				}
+			}
+			name="TUR_djemal_pasha"
+			portraits={
+				army={
+					#small="GFX_idea_rudolf_hess"
+					small="gfx/interface/ideas/TUR/TUR_ahmed_djemal.png"
+				}
+			}
+		}
+		TUR_ahmed_tevfik={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_ahmed_tevfik
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					silent_workhorse 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_ahmed_tevfik"
+			portraits={
+				army={
+					small="GFX_idea_TUR_ahmed_tevfik"
+				}
+			}
+		}
+		TUR_mehmet_nazim={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_mehmet_nazim
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					hawk
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_mehmet_nazim"
+			portraits={
+				army={
+					small="GFX_idea_TUR_mehmet_nazim"
+				}
+			}
+		}
+		TUR_talaat_pasha={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_talaat_pasha
+				ledger = army 
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					connected_citizen 
+				}
+			}
+			name="TUR_talaat_pasha"
+			portraits={
+				army={
+					small="GFX_idea_TUR_talaat_pasha-96387"
+				}
+			}
+		}
+		TUR_mehemmed_naby={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_mehemmed_naby
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					smooth_talking_charmer 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_mehemmed_naby"
+			portraits={
+				army={
+					small="GFX_idea_TUR_mehemmed_naby"
+				}
+			}
+		}
+		TUR_hasan_saka={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_hasan_saka
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					armaments_aficionado
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="TUR_hasan_saka"
+			portraits={
+				army={
+					small="GFX_idea_TUR_hasan_saka"
+				}
+			}
+		}
+		TUR_mehmed_said_paşa={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_mehmed_said_paşa
+				ledger = civilian
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					captain_of_industry 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="Mehmed Said Paşa"
+			portraits={
+				army={
+					small="gfx/interface/ideas/TUR/idea_TUR_Mehmed_Said_Pasha.png"
+				}
+			}
+		}
+		TUR_nazim_paşa={
+			advisor={
+				slot = political_advisor
+				idea_token = TUR_nazim_pasha
+				ledger = army
+				allowed = {
+					tag = TUR
+				}
+				traits = {
+					old_figurehead
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			name="Nazim Paşa"
+			portraits={
+				army={
+					small="gfx/interface/ideas/TUR/idea_TUR_nazim_pasa.png"
+				}
+			}
+		}
+}

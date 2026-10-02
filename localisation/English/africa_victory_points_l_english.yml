@@ -1,0 +1,51 @@
+﻿l_english:
+  ## 140 Western Desert
+  VICTORY_POINTS_2122:0 "Siwa"
+  VICTORY_POINTS_4108:0 "Bahariya"
+  VICTORY_POINTS_6855:0 "Farafra"
+  
+  ## 141 Marsa Matruh
+  VICTORY_POINTS_6510:0 "Sidi Barrani"
+  VICTORY_POINTS_6680:0 "Marsa Matruh"
+  VICTORY_POINTS_7733:0 "El Dabaa"
+  VICTORY_POINTS_8629:0 "As Sallum"
+  VICTORY_POINTS_9909:0 "Nibelwa"
+  
+  ## 142 Libyan Desert
+  VICTORY_POINTS_476:0 "Tazirbu"
+  VICTORY_POINTS_6778:0 "Jalu"
+  VICTORY_POINTS_6891:0 "Jaghbub"
+  
+  ## 355 Tripoli
+  VICTORY_POINTS_16911:0 "Tripoli"
+  VICTORY_POINTS_8957:0 "Misrata"
+  VICTORY_POINTS_2854:0 "Zawia"
+  VICTORY_POINTS_8439:0 "Gharyan"
+  VICTORY_POINTS_460:0 "Zliten"
+  VICTORY_POINTS_2118:0 "Bani Walid"
+  
+  ## 356 El Agheila
+  VICTORY_POINTS_3196:0 "Sirte"
+  
+  ## 357 Benghasi
+  VICTORY_POINTS_3782:0 "Benghasi"
+  VICTORY_POINTS_5657:0 "Ajdabiya"
+  
+  ## 358 Derna
+  VICTORY_POINTS_2063:0 "Bayda"
+  VICTORY_POINTS_10649:0 "Tobruk"
+  VICTORY_POINTS_9684:0 "Derna"
+  
+  ## 359 Cyrenaica
+  VICTORY_POINTS_4669:0 "Tengeder"
+  VICTORY_POINTS_5919:0 "Msus"
+  VICTORY_POINTS_10627:0 "Bir Hakeim"
+  
+  ## 435 Ghadames
+  VICTORY_POINTS_198:0 "Nalut"
+  VICTORY_POINTS_489:0 "Ghadames"
+  
+  ## 436 Fezzan
+  VICTORY_POINTS_3326:0 "Sabha"
+  VICTORY_POINTS_17094:0 "Hun"
+  VICTORY_POINTS_17096:0 "Waddan"

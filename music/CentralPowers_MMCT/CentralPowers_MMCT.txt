@@ -1,0 +1,100 @@
+music_station = "CentralPowers_MMCT"
+music = {
+    song = "der_toten_erwachen"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "die_grenzwacht_hielt_im_osten"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "freikorps_voran"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "morgen_marschieren_wir"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "preussens_gloria"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "radetzky_march"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = AUS
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "wir_fahren_gegen_engelland"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "wir_traben_ins_rote_turnei"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}
+music = {
+    song = "wo_alle_strassen_enden"
+
+    chance = {
+        factor = 1
+        modifier = {
+            tag = GER
+            factor = 2
+        }
+    }
+}

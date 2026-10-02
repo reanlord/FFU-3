@@ -1,0 +1,32 @@
+state={
+	id=151
+	name="STATE_151"
+	provinces={
+		1704 1888 3339 7091 15719 20100 20101 20102 20103 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = TUR
+		add_core_of = SWI
+		add_extra_state_shared_building_slots = 10
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+                     }
+		victory_points = {
+			20101 10
+		}
+		victory_points = {
+			20100 1
+		}
+		victory_points = {
+			1888 1
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+}

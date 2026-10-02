@@ -1,0 +1,138 @@
+spriteTypes = {
+
+	########################################
+	##### EQUIPEMNT TYPES & CATEGORIES #####
+	########################################
+
+	# Used automatically in code
+	# name must have the format : GFX_military_industrial_organization_ + equipment_key
+	# where equipment_key can either be an equipment category or an equipment archetype
+	
+	##############################
+	##### INFANTRY EQUIPMENT #####
+	##############################
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_machine_gun_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_machine_gun.dds"
+	}
+	
+	#####################
+	##### ARTILLERY #####
+	#####################
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_light_field_gun"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_light_field_gun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_light_field_gun_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_light_field_gun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_heavy_field_gun"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_heavy_field_gun_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery.dds"
+	}
+	
+	############## DPT ##############
+	
+	spriteType = {
+		name = "GFX_rocket1"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/rocket1.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket2"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/rocket2.dds"
+	}
+	spriteType = {
+		name = "GFX_mg_1"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/mg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_mg_2"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/mg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_mg_3"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/mg_3.dds"
+	}
+	spriteType = {
+		name = "GFX_mg_3"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/mg_3.dds"
+	}
+	spriteType = {
+		name = "GFX_mg_4"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/mg_4.dds"
+	}
+	spriteType = {
+		name = "GFX_smgs1"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/smgs1.dds"
+	}
+	spriteType = {
+		name = "GFX_smgs2"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/smgs2.dds"
+	}
+	spriteType = {
+		name = "GFX_smgs3"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/smgs3.dds"
+	}
+	spriteType = {
+		name = "GFX_smgs4"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/smgs4.dds"
+	}
+	spriteType = {
+		name = "GFX_smgs5"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/smgs5.dds"
+	}	
+	spriteType = {
+		name = "GFX_stgs1"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/stgs1.dds"
+	}
+	spriteType = {
+		name = "GFX_stgs2"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/stgs2.dds"
+	}
+	spriteType = {
+		name = "GFX_stgs3"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/stgs3.dds"
+	}
+	spriteType = {
+		name = "GFX_stgs4"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/stgs4.dds"
+	}
+	spriteType = {
+		name = "GFX_stgs5"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/stgs5.dds"
+	}
+	spriteType = {
+		name = "GFX_infgun1"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/infgun1.dds"
+	}
+	spriteType = {
+		name = "GFX_infgun2"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/infgun2.dds"
+	}
+	spriteType = {
+		name = "GFX_infgun3"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/infgun2.dds"
+	}
+	spriteType = {
+		name = "GFX_infgun4"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/infgun4.dds"
+	}
+	
+	##########
+	##########
+	
+	spriteType = {
+		name = "GFX_design_team_icon2"
+		texturefile = "gfx/interface/military_industrial_organization/design_team_icon2.dds"
+	}
+}

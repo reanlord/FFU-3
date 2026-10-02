@@ -1,0 +1,6 @@
+war_measures = {
+	
+}
+
+GER_war_effort = {
+}

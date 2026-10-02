@@ -1,0 +1,330 @@
+technologies = {
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+	gwtank1 = { # First Armored Car
+
+		enable_equipments = { gw_armored_car_equipment }
+        
+		enable_subunits = {
+			armored_car
+		}
+		
+		on_research_complete = {		
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+	
+		path = {
+			leads_to_tech = ww1_armored_car_2
+			research_cost_coeff = 1
+		}
+		#path = {
+		#	leads_to_tech = ww1_prototype_tank
+		#	research_cost_coeff = 1
+		#}
+
+		path =
+		{
+			leads_to_tech = ww1_light_tank
+			research_cost_coeff = 1
+		}
+		path =
+		{
+			leads_to_tech = ww1_heavy_tank
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 2
+		start_year = 1910
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+
+# hoi4tgw
+######################################
+
+	ww1_armored_car_2 =
+	{
+		enable_equipments = { ww1_armored_car_equipment_2 }
+
+		research_cost = 2
+		folder = { name=armour_folder position={ x=-8 y = 2 } }
+		categories = {
+			armor
+			cat_light_armor
+		}
+
+		path = { leads_to_tech=ww1_armored_car_3 research_cost_coeff=1 }
+		ai_will_do = { factor=1 }
+		start_year = 1912
+	}
+
+	ww1_armored_car_3 =
+	{
+		enable_equipments = { ww1_armored_car_equipment_3 }
+
+		research_cost = 2
+		folder = { name=armour_folder position={ x=-8 y = 6 } }
+		categories = {
+			armor
+			cat_light_armor
+		}
+		path = { leads_to_tech=ww1_armored_car_4 research_cost_coeff=1 }
+		ai_will_do = { factor=1 }
+		start_year = 1916
+	}
+
+	ww1_armored_car_4 =
+	{
+		enable_equipments = { ww1_armored_car_equipment_4 }
+
+		research_cost = 2
+		folder = { name=armour_folder position={ x=-8 y = 10 } }
+		categories = {
+			armor
+			cat_light_armor
+		}
+		path = { leads_to_tech=ww1_armored_car_5 research_cost_coeff=1 }
+		ai_will_do = { factor=1 }
+		start_year = 1918
+	}
+
+	#ww1_prototype_tank =
+	#{
+	#	#enable_equipments = { ww1_tank_prototype_equipment } // You can't build That Type of Tank
+	#	path =
+	#	{
+	#		leads_to_tech = ww1_light_tank
+	#		research_cost_coeff = 1
+	#	}
+	#	path =
+	#	{
+	#		leads_to_tech = ww1_heavy_tank
+	#		research_cost_coeff = 1
+	#	}
+	#	research_cost = 2
+	#	folder =
+	#	{
+	#		name = armour_folder
+	#		position = { x = 0 y = 2 }
+	#	}
+	#	categories = { armor }
+	#	ai_will_do = { factor=1 }
+	#	start_year = 1913
+	#}
+
+	ww1_light_tank =
+	{
+
+		enable_equipments = { ww1_light_tank_equipment_1 }
+
+		on_research_complete = {
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		dependencies = {
+			tank_unlocker2 = 1
+		}
+
+		path =
+		{
+			leads_to_tech = ww1_light_tank_interwar_1
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			ww1_light_tank_b
+		}
+
+		research_cost = 2
+		folder =
+		{
+			name = armour_folder
+			position = { x = -4 y = 4 }
+		}
+		categories = {
+			armor
+			cat_light_armor
+		}
+		ai_will_do = { factor=50 }
+		start_year = 1915
+	}
+
+
+
+	ww1_light_tank_b = {
+
+		enable_equipments = {
+			ww1_light_tank_equipment_1b
+		}
+	
+		research_cost = 0.5
+		start_year = 1916
+		
+		ai_will_do = { factor = 0 }
+		
+		categories = { armor }
+	}
+
+
+	ww1_heavy_tank =
+	{
+		enable_equipments = { ww1_heavy_tank_equipment_1 }
+
+		on_research_complete = {
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		dependencies = {
+			tank_unlocker2 = 1
+		}
+
+		path =
+		{
+			leads_to_tech = ww1_heavy_tank2
+			research_cost_coeff = 1
+		}
+
+		path =
+		{
+			leads_to_tech = ww1_super_heavy_tank
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		folder =
+		{
+			name = armour_folder
+			position = { x = 4 y = 6 }
+		}
+		categories = { armor }
+		ai_will_do = { factor=50 }
+		start_year = 1916
+	}
+
+	ww1_heavy_tank2 =
+	{
+		enable_equipments = { ww1_heavy_tank_equipment_2 }
+
+		path =
+		{
+			leads_to_tech = ww1_heavy_tank_interwar
+			research_cost_coeff = 1
+		}
+
+		path =
+		{
+			leads_to_tech = ww1_super_heavy_tank
+			research_cost_coeff = 0.9
+		}
+
+		path =
+		{
+			leads_to_tech = ww1_light_tank_interwar_1
+			research_cost_coeff = 0.9
+		}
+
+		research_cost = 2
+		folder =
+		{
+			name = armour_folder
+			position = { x = 4 y = 8 }
+		}
+		categories = { armor }
+		ai_will_do = { factor=50 }
+		start_year = 1917
+	}
+
+	ww1_super_heavy_tank = { #K-Wagen
+
+		enable_equipments = {
+			ww1_super_heavy_tank_equipment
+		}
+	
+		research_cost = 2.5
+		start_year = 1917
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 8 }
+		}
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+
+	ww1_light_tank_interwar_1 =
+	{
+		enable_equipments = { ww1_light_tank_equipment_2 }
+
+		path = {
+			leads_to_tech = ww1_light_tank_interwar_2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 2
+		folder =
+		{
+			name = armour_folder
+			position = { x = -4 y = 8 }
+		}
+		categories = {
+			armor
+			cat_light_armor
+		}
+		ai_will_do = { factor=1 }
+		start_year = 1917
+	}
+
+
+	ww1_light_tank_interwar_2 =
+	{
+		enable_equipments = { ww1_light_tank_equipment_3 }
+
+		path = {
+			leads_to_tech = basic_light_tank
+			research_cost_coeff = 1
+		}
+
+		path =
+		{
+			leads_to_tech = ww1_heavy_tank_interwar
+			research_cost_coeff = 0.9
+		}
+	
+		research_cost = 2
+		folder =
+		{
+			name = armour_folder
+			position = { x = -4 y = 10 }
+		}
+		categories = {
+			armor
+			cat_light_armor
+		}
+		ai_will_do = { factor=1 }
+		start_year = 1918
+	}
+
+
+###################################################
+	
+}

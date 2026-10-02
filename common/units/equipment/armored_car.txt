@@ -1,0 +1,159 @@
+# All equipment based on light tank chassis
+
+equipments = {
+
+	armored_car_equipment = {
+		year = 1910
+	
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_armored_car_equipment			
+		type = motorized
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		#upgrades = {
+		#	tank_reliability_upgrade
+		#	tank_engine_upgrade
+		#	tank_armor_upgrade
+		#	tank_gun_upgrade
+		#}
+
+		#Misc Abilities
+		maximum_speed 	= 8
+		reliability 	= 0.8
+		#recon 			= 1
+
+		#Defensive Abilities
+		defense 		= 3
+		breakthrough 	= 18
+		armor_value 	= 3
+		hardness 		= 0.55
+
+		#Offensive Abilities
+		soft_attack 	= 10
+		hard_attack 	= 4
+		ap_attack 		= 8
+		air_attack 		= 0
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic	= 8
+		resources = {
+			#oil 		= 1
+			steel 		= 2
+		}
+
+		fuel_consumption 	= 1.8
+	}
+
+	# WW1 Armored Car
+	gw_armored_car_equipment = {
+		year = 1910
+	
+		archetype = armored_car_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	armored_car_equipment_1 = {
+		year = 1934
+		
+		archetype = armored_car_equipment
+		parent = gw_armored_car_equipment
+		priority = 10
+		visual_level = 0
+		is_convertable = yes
+		
+		#Misc Abilities
+		maximum_speed 	= 10
+		reliability 	= 0.8
+		#recon 			= 1
+
+		#Defensive Abilities
+		defense 		= 4
+		breakthrough 	= 20
+		armor_value 	= 4
+		hardness 		= 0.6
+
+		#Offensive Abilities
+		soft_attack 	= 12
+		hard_attack 	= 5
+		ap_attack 		= 8
+		air_attack 		= 0
+		
+		build_cost_ic	= 8.4
+	}
+
+	armored_car_equipment_2 = {
+		year = 1941
+		
+		archetype = armored_car_equipment
+		parent = armored_car_equipment_1
+		priority = 10
+		visual_level = 1
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed 	= 12
+		reliability 	= 0.8
+		#recon 			= 1
+
+		#Defensive Abilities
+		defense 		= 5
+		breakthrough 	= 22
+		armor_value 	= 5
+		hardness 		= 0.65
+
+		#Offensive Abilities
+		soft_attack 	= 14
+		hard_attack 	= 6
+		ap_attack 		= 8
+		air_attack 		= 0
+		
+		build_cost_ic	= 8.8
+		resources = {
+			#oil = 1
+			steel = 2
+			#tungsten = 1
+		}
+	}
+
+	armored_car_equipment_3 = {
+		#should be closer to a tank than an AT tank/SPG
+		year = 1941
+
+		archetype = armored_car_equipment
+		parent = armored_car_equipment_2
+		priority = 10
+		visual_level = 1
+		is_convertable = yes
+		
+		#Misc Abilities
+		maximum_speed = 14
+
+		#Defensive Abilities
+		defense 		= 6
+		breakthrough 	= 25
+		hardness 		= 0.70
+		armor_value 	= 6
+		#recon 			= 2
+
+		#Offensive Abilities
+		soft_attack 	= 16
+		hard_attack 	= 8
+		ap_attack 		= 8
+		air_attack 		= 0
+		
+		build_cost_ic	= 9.2
+		resources = {
+			#oil 		= 1
+			steel 		= 2
+			tungsten 	= 1
+		}
+		fuel_consumption = 1.8
+	}
+}

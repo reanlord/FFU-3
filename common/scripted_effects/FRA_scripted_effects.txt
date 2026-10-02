@@ -1,0 +1,104 @@
+FRA_cities_level_down = {
+	FRA = {
+		if = {
+			limit = {
+				has_idea = FRA_will_to_fight_1
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_1
+				add_idea = FRA_will_to_fight_0
+			}
+			add_timed_idea = {
+				idea = FRA_last_gasp
+				days = 31
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_2
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_2
+				add_idea = FRA_will_to_fight_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_3
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_3
+				add_idea = FRA_will_to_fight_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_4
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_4
+				add_idea = FRA_will_to_fight_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_5
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_5
+				add_idea = FRA_will_to_fight_4
+			}
+		}
+	}
+}
+
+#Important to put HIGHEST first
+FRA_cities_level_up = {
+	FRA = {
+		if = {
+			limit = {
+				has_idea = FRA_will_to_fight_4
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_4
+				add_idea = FRA_will_to_fight_5
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_3
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_3
+				add_idea = FRA_will_to_fight_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_2
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_2
+				add_idea = FRA_will_to_fight_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_1
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_1
+				add_idea = FRA_will_to_fight_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_will_to_fight_0
+			}
+			swap_ideas = {
+				remove_idea = FRA_will_to_fight_0
+				add_idea = FRA_will_to_fight_1
+			}
+		}
+	}
+}

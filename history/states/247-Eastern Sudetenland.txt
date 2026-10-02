@@ -1,0 +1,24 @@
+
+state={
+	id=247
+	name="STATE_247"
+	provinces={
+		441 4195 6322 7075 8077 14353 14373 14400 
+	}
+	manpower=820000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history=
+	{
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+       }
+}

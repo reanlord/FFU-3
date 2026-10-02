@@ -1,4 +1,4 @@
-version="1.1"
+version="1.0"
 tags={
 	"Gameplay"
 }
@@ -46,6 +46,6 @@ replace_path="common/units/operations"
 replace_path="common/units/names_divisions"
 replace_path="events"
 replace_path="music"
-name="FFU 3 MP  WW1 (work in progress)"
+name="FFU 3 update 1"
 supported_version="1.19.3.0"
 remote_file_id="3810814292"

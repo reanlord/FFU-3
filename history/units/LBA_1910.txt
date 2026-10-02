@@ -1,0 +1,7 @@
+
+instant_effect = {
+    add_equipment_production = { equipment = { type = support_equipment_1 creator = "LBA"  } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:LBA_infantry_equipment_organization }
+	add_equipment_production = { equipment = { type = machine_gun_equipment_1 creator = "LBA" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:LBA_infantry_equipment_organization }
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "LBA" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:LBA_artillery_organization }
+	add_equipment_production = { equipment = { type = anti_air_equipment_1 creator = "LBA" } requested_factories = 1 progress = 0.1 efficiency = 50 }
+}

@@ -1,0 +1,372 @@
+ideas = {
+	country = {
+		peace_training = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_army_factor = -0.70
+				#training_time_factor = -0.70
+				minimum_training_level = -0.50
+				mobilization_speed = 1.0
+				air_training_xp_gain_factor = 10
+				experience_gain_navy_unit_factor = 10
+				attrition = -1.0
+				truck_attrition_factor = -1.0
+			}
+		}
+		ai_limiter = {
+			#cancel = { is_ai = no }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_expected_value = 1.50
+				political_power_gain = -4.0
+				industrial_capacity_factory = -1.0
+				industrial_capacity_dockyard = -3.0
+				production_factory_max_efficiency_factor = -1.0
+				conscription = -1.0
+			}
+		}
+		naval_race = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+
+			modifier = {
+				production_speed_dockyard_factor = 3.0
+				industrial_capacity_dockyard = 1.0
+			}
+		}
+		chistmas_truce = {
+			picture = chistmas_truce-102183
+			modifier = {
+				breakthrough_factor = -1.00
+                army_attack_factor = -1.00
+				#army_strength_factor = 9.00
+				#army_morale_factor = 9.00
+				#army_org_factor = 9.0
+				#cas_damage_reduction = 9.0
+			}
+		}
+
+		Big_loser = {
+         allowed = {
+              
+            }
+            picture = tur_disorganised_armed_forces
+  
+        modifier = {
+            consumer_goods_expected_value = 0.5
+			production_speed_buildings_factor = -0.5 
+            }
+		}
+		DayOne_Efficiency = {
+			allowed = {
+			}
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 100.0
+			}
+		}
+		NoTradeback = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = -1.0
+				production_lack_of_resource_penalty_factor = -1.0
+			}
+		}
+		air_banned = {
+			allowed = {
+				always = no
+			}
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			equipment_bonus = {
+				scout_plane = {
+					instant = yes
+					build_cost_ic = 1000.0
+				}
+				fighter = {
+					instant = yes
+					build_cost_ic = 1000.0
+				}
+				naval_bomber = {
+					instant = yes
+					build_cost_ic = 1000.0
+				}
+				tactical_bomber = {
+					instant = yes
+					build_cost_ic = 1000.0
+				}
+				strategic_bomber = { #large_plane_airframe
+					instant = yes
+					build_cost_ic = 1000.0
+				}
+			}
+		}
+		Balkanwar_invasions_banned = {
+			allowed = {
+				always = no
+			}
+			#picture = cze_planning_bonus
+			picture = generic_coastal_navy
+			removal_cost = -1
+			modifier = {
+				naval_invasion_capacity = -100
+				naval_invasion_penalty = 1.0
+			}
+		}
+		GRE_First_Balkan = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = tur_kemalist_army_officers_minimal_power_disloyal
+			modifier = {
+				army_core_attack_factor = 2
+				army_core_defence_factor = 2
+				army_strength_factor = 0.8
+			}
+			targeted_modifier = {
+				TAG = TUR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		MNT_First_Balkan = {
+			allowed = { always = no }
+			removal_cost = -1	
+			picture = tur_kemalist_army_officers_minimal_power_disloyal
+			modifier = {
+				army_core_attack_factor = 8
+				army_core_defence_factor = 8
+				army_strength_factor = 3
+			}
+			targeted_modifier = {
+				TAG = TUR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+    	SER_First_Balkan = {
+		  allowed = { always = no }
+			removal_cost = -1
+			
+			picture = tur_kemalist_army_officers_minimal_power_disloyal
+			modifier = {
+				army_core_attack_factor = 2
+				army_core_defence_factor = 2
+				army_strength_factor = 0.8
+			}
+			targeted_modifier = {
+				TAG = TUR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		TUR_First_Balkan_1 = {
+		  	allowed = { always = no }
+			removal_cost = -1
+			picture = tur_kemalist_army_officers_powerful_loyal
+			modifier = {
+				army_core_attack_factor = 2
+				army_core_defence_factor = 2
+				army_strength_factor = 0.8
+			}
+		}
+
+		TUR_First_Balkan_2 = {
+		  	allowed = { always = no }
+			removal_cost = -1
+			picture = tur_kemalist_army_officers_powerful_loyal
+			modifier = {
+				army_core_attack_factor = 2
+				army_core_defence_factor = 2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_strength_factor = 0.8
+			}
+		}
+
+		TUR_First_Balkan_3 = {
+		  	allowed = { always = no }
+			removal_cost = -1
+			picture = tur_kemalist_army_officers_powerful_loyal
+			modifier = {
+				army_core_attack_factor = 2
+				army_core_defence_factor = 2
+				army_attack_factor = -0.30
+				army_defence_factor = -0.30
+				army_strength_factor = 0.8
+			}
+		}
+		FFU_trench_warfare = {
+			allowed = {
+				always = no
+			}
+			picture = trench_warfare
+			removal_cost=-1
+			modifier={
+				production_cost_trench_factor = -0.5
+			}
+		}
+
+		FFU2_war_bonds = {
+			allowed = {
+				always = no
+			}
+			picture = generic_production_bonus
+			removal_cost=-1
+			modifier = {
+				stability_weekly = -0.002
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = +0.05
+				production_speed_arms_factory_factor = +0.05
+			}
+		}
+		
+		german_westfront_nerf = {
+			allowed = {
+				always = no
+			}
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = 0.025
+				conscription_factor = -0.29
+				industrial_factory_donations = -10
+				military_factory_donations = -10
+			}
+		}
+		german_onevsone_nerf = {
+			allowed = {
+				always = no
+			}
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				conscription_factor = -0.44
+				industrial_factory_donations = -20
+				military_factory_donations = -20
+			}
+		}
+		austria_eastwest_nerf = {
+			allowed = {
+				always = no
+			}
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_factory_donations = -5
+				military_factory_donations = -5
+			}
+		}
+		british_noasia_nerf = {
+			allowed = {
+				always = no
+			}
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_factory_donations = -5
+				military_factory_donations = -3
+			}
+		}
+	}
+
+	hidden_ideas = {
+	
+		FFU_instant_capitulation_idea = {
+			allowed = { always = no }
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -2.0
+			}
+		}
+	
+		no_naval_invasions = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				naval_invasion_capacity = -100
+			}
+		}
+	
+		trenches_banned = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_trench_factor = -1000.0
+			}
+		}
+	
+		civ_greed_mode = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = -1000.0
+			}
+		}
+		
+		bloat_mode = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_cost_infrastructure_factor = -0.5
+				production_cost_arms_factory_factor = -0.5
+				production_cost_industrial_complex_factor = -0.5
+				production_cost_dockyard_factor = -0.5
+				production_cost_air_base_factor = -0.5
+				production_cost_naval_base_factor = -0.5
+				production_cost_trench_factor = -0.5
+				production_cost_bunker_factor = -0.5
+				production_cost_coastal_bunker_factor = -0.5
+				production_cost_anti_air_building_factor = -0.5
+				production_cost_synthetic_refinery_factor = -0.5
+				production_cost_fuel_silo_factor = -0.5
+				production_cost_supply_node_factor = -0.5
+				production_cost_rail_way_factor = -0.5
+				local_resources_factor = 1.0
+				global_building_slots_factor = 2.0
+			}
+		}
+		
+		more_manpower_mode = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				#infantry = {
+				#	need = {
+				#		manpower = -500
+				#	}
+				#}
+				conscription_factor = 1.0
+			}
+		}
+	}
+}

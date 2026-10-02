@@ -1,0 +1,46 @@
+#yep, here its done. dont you worry, daddy leifee AKA best modder ever placed here search tag so you wont break your head over where its done:
+#SOV_RUS_check_and_manage_losing_cores_for_bop_effect
+#SOV_RUS_balance_of_powers
+
+#prodrazverstka
+SOV_RUS_prodrazverstka					= { power_balance_weekly = -0.001 }
+
+#holding others cores
+SOV_RUS_bop_austrias_as_warriors		= { power_balance_weekly = 0.002 }
+SOV_RUS_bop_breaking_the_spike			= { power_balance_weekly = 0.002 }
+SOV_RUS_bop_another_russo_turkish		= { power_balance_weekly = 0.002 }
+
+#polish cores -0.10 weekly
+SOV_RUS_bop_lost_LODZ					= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_PLOCK					= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_WARSZAWA				= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_KIELCE					= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_BIALYSTOK				= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_LUBLIN					= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_SIAULIAI				= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_KAUNAS					= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_WILEJKA				= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_NOWOGRODEK				= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_POLESIE				= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_ROWNE					= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_KHMELNYTSKA			= { power_balance_weekly = -0.001 }
+SOV_RUS_bop_lost_BESSARABIA				= { power_balance_weekly = -0.001 }
+
+#russian cores -0.15 weekly
+SOV_RUS_bop_lost_HARJU					= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_TARTU					= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_VIDZEME				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_KURZEME				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_VICHEBSKAYA			= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_BELARUS				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_MAHILIOUSKAYA			= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_GOMELSKAYA				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_MAZIR					= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_ZHYTOMYRSKA			= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_KIEV					= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_VINNYTSKA				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_ODESKA					= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_VOZNESENSK				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_CHERKASKA				= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_KIROVOHRADSKA			= { power_balance_weekly = -0.002 }
+SOV_RUS_bop_lost_MYKOLAYIVSKA			= { power_balance_weekly = -0.002 }

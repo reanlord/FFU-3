@@ -1,0 +1,165 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+POL_infantry_tank_organization = {
+  name = "Infantry Tank Organization"
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_1
+	allowed = {	
+		tag = POL
+	}
+}
+
+POL_mobile_tank_organization = {
+  name = "Mobile Tank Organization"
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
+	allowed = {	
+		tag = POL
+	}
+}
+
+POL_heavy_tank_organization = {
+  name = "Heavy Tank Organization"
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_3
+	allowed = {	
+		tag = POL
+	}
+}
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+POL_battle_line_organization = {
+  name = "Battle Line Ship Organization"
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+	allowed = { 
+		tag = POL
+	}
+}
+
+POL_escort_ship_organization = {
+  name = "Escort Ship Organization"
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
+	allowed = { 
+		tag = POL
+	}
+}
+
+POL_raider_ship_organization = {
+  name = "Raider Ship Organization"
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = { 
+		tag = POL
+	}
+}
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+POL_light_aircraft_organization = {
+  name = "Light Aircraft Organization"
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+	allowed = { 
+		tag = POL
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+}
+
+POL_medium_aircraft_organization = {
+  name = "Medium Aircraft Organization"
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_2
+	allowed = { 
+		tag = POL
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+}
+
+POL_heavy_aircraft_organization = {
+  name = "Heavy Aircraft Organization"
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_3
+	allowed = { 
+		tag = POL
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+POL_artillery_organization = {
+  name = "Artillery Organization"
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_2
+	allowed = { 
+		tag = POL
+	}
+}
+
+POL_infantry_equipment_organization = {
+  name = "Infantry Equipment Organization"
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { 
+		tag = POL
+	}
+}

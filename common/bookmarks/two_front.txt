@@ -1,0 +1,144 @@
+bookmarks = {
+	bookmark = {
+		name =  "East and West Fronts only"
+		desc =  TWOFRONT_DESC
+		date = 1911.1.1.8
+		picture =  GFX_select_date_twofront
+		default_country = GER
+		default = yes
+
+		 ENG ={
+			history =  ENG_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				ENG_empire_shackled
+				ENG_widespread_labour_strikes
+				ENG_grand_fleet
+			}
+			focuses = {
+				ENG_1915_ministry_of_munitions
+				ENG_grand_fleet_expansion
+				ENG_special_american_relationship
+			}
+		}
+		
+		 FRA ={
+			history =  FRA_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				FRA_belle_epoque
+				FRA_sfio_vs_revanchism
+				FRA_military_passive
+			}
+			focuses = {
+				FRA_maroc_crisis
+				FRA_union_sacre
+				FRA_horizon_blue_uniforms
+			}
+		}
+		
+		 GER ={
+			history =  GER_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				GER_ww1_North_German_Confederation
+				German_staff_ww1
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				GER_extreme_military_spending
+				GER_pariser_kanon
+				GER_sturmtruppen
+			}
+		}
+		
+		 AUS ={
+			history =  AUH_POWDERKEG_DESC 
+			ideology = fascism
+			ideas = {
+				AUH_ww1_House_Habsburg_Lorraine
+				AUH_ww1_Multinational_State
+				AUS_austrian_military_staff
+			}
+			focuses = {
+				AUS_standschtze_hellriegel_m1915
+				AUS_kaiserjger
+				AUS_serbia
+			}
+		}
+		
+		 SOV ={
+			history =  RUS_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				RUS_ww1_tsushima_humiliation
+				RUS_ww1_mixed_railways
+				SOV_incompetent_stavka
+			}
+			focuses = {
+				SOV_additional_siberian_gulags
+				SOV_emergency_war_credit
+				SOV_tsar_personal_command
+			}
+		}
+
+		 --- ={
+			history =  OTHER_POWDERKEG_DESC 
+		}
+		
+		### Minors ###
+		
+		ROM={
+			minor = yes
+			history=ROM_POWDERKEG_DESC
+			ideology=democratic
+			ideas={
+				militarism_focus
+				ROM_study_foreign_equipment
+				ROM_Pentru_Natiune
+			}
+			focuses={
+				ROM_Entente_Military_Mission
+				ROM_invest_fortifications
+				ROM_the_long_war
+			}
+		}
+		
+		POL ={
+			minor = yes
+			history =  POL_POWDERKEG_DESC
+			ideology = neutrality
+			ideas = {
+				POL_not_yet_lost
+				POL_legacy_of_the_partition
+				POL_deal_with_uk
+			}
+			focuses = {
+				POL_virtuti_militari
+				POL_consolidate_leadership
+				POL_spirit_of_winged_hussars
+			}
+		}
+		
+		BEL = {
+			minor = yes
+			history = BEL_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				ww1_Scramble_for_Africa
+				we_fight_on
+				BEL_obligatory_military_service
+			}
+			focuses = {
+				BEL_fabrique_nationale
+				FRA_establish_commission_for_relief_in_belgium
+				BEL_unified_entente_planning
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22346 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

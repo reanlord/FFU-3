@@ -1,0 +1,6 @@
+focus_tree = {
+	id = japan_focus
+	default = no
+	reset_on_civilwar = no
+	country = {factor=0 modifier={add=100 tag=RUS} }
+}

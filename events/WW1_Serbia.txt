@@ -1,0 +1,146 @@
+add_namespace = ww1_serbia
+
+country_event={	#Player auto-evacuation part 1 - Fires when lost Serbia, Nis, and Morava
+	id = ww1_serbia.1
+	title = ww1_serbia.1.t
+	desc = ww1_serbia.1.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	trigger = {
+		tag = SER
+		SER = {
+			OR = {
+				has_war_with = GER
+				has_war_with = AUS
+			}
+			NOT = {
+				has_country_flag = serbia_has_fallen
+			}
+			NOT = { controls_state = 152 }
+			NOT = {	controls_state = 153 }
+			NOT = {	controls_state = 362 }
+		}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = ww1_serbia.1.a
+		ai_chance = { factor = 1}
+	}
+	immediate={
+		hidden_effect={
+			SER={
+				if={
+					limit={
+						is_ai=no
+						NOT={has_completed_focus=SER_ww1_ready_country}
+					}
+					complete_national_focus=SER_ww1_ready_country
+				}
+				country_event = { id = ww1_serbia.2 days = 1 }	
+			}
+		}
+	}
+}
+
+country_event={	#Player auto-evacuation part 2
+	id = ww1_serbia.2
+	title = ww1_serbia.2.t
+	desc = ww1_serbia.2.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = {
+		name = ww1_serbia.2.a
+		ai_chance = { factor = 1}
+	}
+	immediate={
+		hidden_effect={
+			SER={
+				if={
+					limit={
+						is_ai=no
+						NOT={has_completed_focus=SER_ww1_join_entente}
+					}
+					complete_national_focus=SER_ww1_join_entente
+				}
+			}
+		}
+	}
+}
+
+country_event={	#AI auto-annexation part 1 - fires when Franz Ferdinand shot
+	id = ww1_serbia.3
+	title = ww1_serbia.3.t
+	desc = ww1_serbia.3.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = {
+		name = ww1_serbia.3.a
+		ai_chance = { factor = 1}
+	}
+	immediate={
+		hidden_effect={
+			SER={
+				if={
+					limit={
+						is_ai=yes
+					}
+					SER_remove_ai_army_and_factories=yes
+				}
+			}
+		}
+	}
+}
+
+country_event={	#AI auto-annexation part 2 - fires July 29 1914
+	id = ww1_serbia.4
+	title = ww1_serbia.4.t
+	desc = ww1_serbia.4.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = {
+		name = ww1_serbia.4.a
+		ai_chance = { factor = 1}
+	}
+	immediate={
+		hidden_effect={
+			SER={
+				if={
+					limit={
+						is_ai=yes
+					}
+					SER_conquer_ai=yes
+					AUS = { country_event = { id = ww1_serbia.5 days = 1 } }
+				}
+			}
+		}
+	}
+}
+
+country_event={	#Proper occupation zones, fires appropriate date depending
+	id = ww1_serbia.5
+	title = ww1_serbia.5.t
+	desc = ww1_serbia.5.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = {
+		name = ww1_serbia.5.a
+		ai_chance = { factor = 1}
+	}
+	immediate={
+		hidden_effect={
+			AUS={
+				SER_occupation_zones=yes
+			}
+		}
+	}
+}

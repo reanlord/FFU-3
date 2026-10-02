@@ -1,0 +1,51 @@
+
+state={
+	id=355
+	name="STATE_355"
+	resources={
+		oil=30.000
+		rubber=24.000
+	}
+
+	history={
+		owner = ITA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 3
+			16911 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			16911 20	#Tripoli
+		}
+		victory_points = {
+			8957 10		#Misrata
+		}
+		victory_points = {
+			2854 5		#Zawiya
+		}
+		victory_points = {
+			8439 3		#Gharyan
+		}
+		victory_points = {
+			460 1		#Zliten
+		}
+		victory_points = {
+			2118 1		#Bani Walid
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		460 712 877 1144 1594 1697 2118 2627 2854 3558 3783 4022 4282 4586 4713 4759 5170 5473 5872 6630 7847 7984 8141 8189 8240 8439 8957 10208 10568 10918 11154 11603 16901 16911 16915 16924 16930 16952 16954 16969 16986 17033 
+	}
+	manpower=469136
+	buildings_max_level_factor=1.000
+	state_category=town
+}

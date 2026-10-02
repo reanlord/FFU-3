@@ -1,0 +1,44 @@
+
+state={
+	id=436
+	name="STATE_436"
+	#impassable = yes
+	history={
+		owner = LBA
+		add_core_of = LBA
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			infrastructure = 1
+			anti_air_building = 5
+			industrial_complex = 2
+		}
+		victory_points = {
+			3326 3		#Sabha
+		}
+		victory_points = {
+			17094 1		#Hun
+		}
+		victory_points = {
+			17096 1		#Waddan
+		}
+		add_dynamic_modifier = {
+			modifier = LBA_senussi_stronghold_modifier
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		422 758 779 986 1087 1747 1787 1821 2086 2108 2130 2135 2398 2420 2460 2628 2657 2713 2873 3241 3287 3326 3690 3897 4248 4320 4599 5785 5818 5880 5911 6337 6699 7220 7842 8001 8508 8773 9000 9746 10469 10644 11280 17065 17094 17096 17104 17108 17124 17128 17129 17154 17155 17157 17168 
+	}
+	manpower=47800
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	resources={
+		wood=9
+		aluminium=2
+		rubber=1
+	}
+}

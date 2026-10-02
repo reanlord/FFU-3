@@ -1,0 +1,132 @@
+capital=142
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 1.0
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.10
+set_convoys = 50
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+
+recruit_character=LBA_ahmed_sharif_senussi_leader
+recruit_character=LBA_com
+recruit_character=LBA_dem
+recruit_character=LBA_fas
+
+recruit_character=LBA_ahmed_sharif_senussi_army
+recruit_character=LBA_idris_senussi
+recruit_character=LBA_omar_mukhtar
+recruit_character=LBA_abd_al_rahman_azzam
+recruit_character=LBA_yusef_borahil_al_mismare
+recruit_character=LBA_mohammed_al_abid
+recruit_character=LBA_jafar_al_askari
+recruit_character=LBA_nuri_bey
+recruit_character=LBA_paul_von_todenwarth
+recruit_character=LBA_ishaq_pasha
+recruit_character=LBA_mohammed_saleh_harb
+
+recruit_character=LBA_theodor_pullen
+recruit_character=LBA_waldemar_kophamel
+recruit_character=LBA_ahmed_tuati
+
+recruit_character=LBA_mohammed_abed_senussi
+recruit_character=LBA_saif_al_din_senussi
+recruit_character=LBA_ramadan_al_sewehili
+recruit_character=LBA_suleyman_al_baruni
+recruit_character=LBA_osman_fuad
+recruit_character=LBA_otto_manessman
+recruit_character=LBA_kaocen_ag_geda
+recruit_character=LBA_ali_dinar
+
+set_technology = {
+	# Navy
+
+	transport = 1 # Naval Transport
+}
+
+1910.1.1 = {
+	oob = "LBA_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		#early_motorised = 1
+		camelry = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_logistics_company = 1
+		tech_sniper = 1
+		#basic_train = 1
+		
+		# Navy
+		mtg_transport = 1
+
+
+		# Armor
+		gwtank=1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Air
+
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		#chemical_research = 1
+
+		# Industry
+
+		# Doctrine
+		
+	}
+
+	set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1910.12.22"
+	    election_frequency = 96
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 5
+	    fascism = 3
+	    communism = 1
+	    neutrality = 91
+	}
+		
+
+	add_ideas = {
+		ww1_Faith_Allah
+		extensive_conscription
+		free_trade
+		LBA_government_1
+		LBA_economy_1
+		LBA_army_outdated
+	}
+	
+	##
+}

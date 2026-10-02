@@ -1,0 +1,28 @@
+FRA_war_zone_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_FRA_war_zone_modifier
+
+	#max_dig_in = 5
+    #dig_in_speed_factor = 0.4
+	#local_supplies_for_controller = 0.3
+	army_core_attack_factor = 0.075
+	army_core_defence_factor = 0.075
+	supply_combat_penalties_on_core_factor = -0.15
+
+}
+
+FRA_no_buildings_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_generic_pp_unity_bonus
+
+	remove_trigger={
+		date>1915.1.1
+	}
+	
+	local_building_slots_factor = -2.0
+
+}

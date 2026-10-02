@@ -1,0 +1,70 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = GER}}
+				set_variable={host = GER.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = ITA}}
+				set_variable={host = ITA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = ROM}}
+				set_variable={host = ROM.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = BUL}}
+				set_variable={host = BUL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = ENG}}
+				set_variable={host = ENG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = AUS}}
+				set_variable={host = AUS.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = SER}}
+				set_variable={host = SER.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = BEL}}
+				set_variable={host = BEL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = TUR}}
+				set_variable={host = TUR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = POL}}
+				set_variable={host = POL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = GRE}}
+				set_variable={host = GRE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = SOV}}
+				set_variable={host = SOV.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = hosttool_game_rule option = FRA}}
+				set_variable={host = FRA.id}
+			}
+			if = { # i hate errors
+				limit = {
+					NOT = { has_global_flag = HMM_no_hosttool }
+				}
+				var:host = {
+					set_variable = { marked_states = 0 }
+					set_variable = { prod_effi = 30 }
+					set_variable = { prod_type = 0 }
+					set_country_flag = host
+				}
+			}
+		}
+	}
+}
+

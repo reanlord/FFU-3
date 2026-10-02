@@ -1,0 +1,25 @@
+state={
+	id=398
+	name="STATE_398"
+	provinces={
+		18445 
+	}
+	manpower=4538515
+	state_category = metropolis
+	resources={
+		oil=65 # was: 580
+	}
+	buildings_max_level_factor=1.000
+	history={
+		owner = USA
+		add_core_of = USA 
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 10
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+}

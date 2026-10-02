@@ -1,0 +1,518 @@
+
+###################################################################
+
+division_template = {
+	name = "Piyade Tümeni" #Infantry Division
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		gunner_support = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Jandarma Alayı"  #Gendarmerie Regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Süvari Tugayı" #Cavalry Brigade
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	#support = {
+	#	engineer = { x = 0 y = 0 }
+	#}
+}
+
+###################################################################
+# 7 Corps x 3 divisions + 5 divisions @10,300/division of infantry = 267800, goal of ~270,000 active in 1909
+# 13 cavaly brigades @ 4300/brigade of cavalry = 55900, goal of 55/56K historically
+units = {
+	division = {
+	    name = "1. Piyade Tümeni 'Harbiye'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "2. Piyade Tümeni 'Selimiye'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "3. Piyade Tümeni 'Pangalti'"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "13. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Istanbul Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "Istanbul Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "Istanbul Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "Istanbul Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "Istanbul Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "4. Piyade Tümeni 'Tekirdag'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "5. Piyade Tümeni 'Gelibolu'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "6. Piyade Tümeni 'Smyrna'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "12. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Çanakkale Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "7. Piyade Tümeni 'Kirk Kilise'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "8. Piyade Tümeni 'Çorlu'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "9. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "3. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "10. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "11. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "12. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "4. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "Edirne Garnizon"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "13. Piyade Tümeni 'Selanik'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "11. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	#division = {
+	#    name = "14. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "15. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "16. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "17. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "18. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "10. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	#division = {
+	#    name = "6. Tüfek Alayi"
+	#    location = 3195# Istanbul
+	#    division_template = "Jandarma Alayı"
+	#    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "19. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "20. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#   division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "21. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "7. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "9. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	#division = {
+	#    name = "25. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	division = {
+	    name = "26. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "27. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "8. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "8. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "28. Piyade Tümeni 'Erzurum'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "29. Piyade Tümeni 'Bayburt'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "9. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "9. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "9. Tüfek Alayi"
+	    location = 3195# Istanbul
+	    division_template = "Jandarma Alayı"
+	    force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "30. Piyade Tümeni"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	#division = {
+	#    name = "31. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	#division = {
+	#    name = "32. Piyade Tümeni"
+	#    location = 3195# Istanbul
+	#    division_template = "Piyade Tümeni"
+	#    start_experience_factor = 0
+	#}
+
+	
+	division = {
+	    name = "7. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "33. Piyade Tümeni 'Van'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "34. Piyade Tümeni 'Mus'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "1. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "2. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "3. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "4. Süvari Tugayı"
+	    location = 3195# Istanbul
+	    division_template = "Süvari Tugayı"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "35. Piyade Tümeni 'Musul'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "36. Piyade Tümeni 'Kerkük'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "37. Piyade Tümeni 'Bagdat'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+
+	division = {
+	    name = "38. Piyade Tümeni 'Basra'"
+	    location = 3195# Istanbul
+	    division_template = "Piyade Tümeni"
+	    start_experience_factor = 0
+	}
+	
+}
+
+instant_effect = {
+    add_equipment_production = { equipment = { type = gw_armored_car_equipment      creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_infantry_tank_organization }
+    add_equipment_production = { equipment = { type = train_equipment_1             creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_infantry_tank_organization }
+	add_equipment_production = { equipment = { type = motorized_equipment_1         creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_infantry_tank_organization }
+    add_equipment_production = { equipment = { type = support_equipment_1           creator = "TUR" } requested_factories = 3 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_infantry_equipment_organization }
+    add_equipment_production = { equipment = { type = light_field_gun_equipment_1   creator = "TUR" } requested_factories = 2 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_artillery_organization }
+	add_equipment_production = { equipment = { type = heavy_field_gun_equipment_1   creator = "TUR" } requested_factories = 5 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_artillery_organization }
+	add_equipment_production = { equipment = { type = machine_gun_equipment_1       creator = "TUR" } requested_factories = 3 progress = 0.1 efficiency = 50    industrial_manufacturer = mio:TUR_infantry_equipment_organization }	
+    add_equipment_production = { equipment = { type = infantry_equipment_1          creator = "TUR" } requested_factories = 6 progress = 0.1 efficiency = 50   industrial_manufacturer = mio:TUR_infantry_equipment_organization }
+}

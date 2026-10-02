@@ -1,0 +1,68 @@
+
+state={
+	id=145
+	name="STATE_145"
+	resources={
+		oil=40
+		rubber=36
+		chromium=20
+		wood=4
+		steel=5
+	}
+
+	history={
+		set_state_flag = TUR_controls
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+			air_base=1
+			8755 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			1375 5		#Nasiriyah
+		}
+		victory_points = {
+			2975 10 	#Basrah
+		}
+		victory_points = {
+			7931 1 		#Samawah
+		}
+		victory_points = {
+			8482 20 	#Baghdad
+		}
+		victory_points = {
+			8755 1 		#Al Faw
+		}
+		victory_points = {
+			8766 1 		#Badra
+		}
+		victory_points = {
+			9635 1		#Amarah
+		}
+		victory_points = {
+			10351 1 	#Kut
+		}
+		victory_points = {
+			16347 1 	#Ramadi
+		}
+		victory_points = {
+			16464 1		#Kafel
+		}
+		1911.1.1.4 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		222 271 937 1194 1307 1375 1584 1661 1714 2073 2200 2214 2380 2534 2686 2832 2838 2973 2975 3728 3939 4053 4121 4438 5112 5339 5534 5563 5699 5722 5842 6220 6366 6473 6656 6918 7206 7486 7501 7699 7845 7931 8482 8718 8755 8766 8906 8964 9488 9632 9635 9976 10043 10351 10426 10449 10476 10642 16164 16168 16223 16233 16258 16268 16280 16284 16289 16290 16342 16347 16354 16365 16369 16392 16433 16464 16516 16519 16528 16540 16541 16549 16560 17378 19713 
+	}
+	manpower=2044165
+	buildings_max_level_factor=1.000
+	state_category=town
+}

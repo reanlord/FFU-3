@@ -1,0 +1,31 @@
+state={
+	id=237
+	name="STATE_237"
+	provinces={
+		4572 4645 5044 6929 7919 8427 8721 11457 14541 14559 14637 14682 14713
+	}
+	manpower=474600
+	buildings_max_level_factor=1.000
+	state_category = rural
+	resources = {
+		tungsten = 20
+		coal=16
+	}
+	history=
+	{
+		owner = AUS
+		add_core_of = AUS
+		add_core_of = ROM
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+		victory_points = {
+		8427 5 
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+}

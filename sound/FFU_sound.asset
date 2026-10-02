@@ -1,0 +1,125 @@
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "ffu_war_begins_sound" #name you're using for the sound
+	file = "ffu_custom/ffu_war_begins.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_russian_civil_war_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_russian_civil_war.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_franz_joseph_dead_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_franz_joseph_dead.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_first_balkan_war_begins_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_first_balkan_war_begins.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_jihad_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_jihad.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_black_sea_raid_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_black_sea_raid.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_schlieffen_plan_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_schlieffen_plan.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_christmas_truce_sound" #name you're using for the sound
+	file = "ffu_custom/FFU_christmas_truce.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "russe1" #name you're using for the sound
+	file = "ffu_custom/russe1.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "russe2" #name you're using for the sound
+	file = "ffu_custom/russe2.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_UK1" #name you're using for the sound
+	file = "ffu_custom/FFU_UK1.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_UK2" #name you're using for the sound
+	file = "ffu_custom/FFU_UK2.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_UK3" #name you're using for the sound
+	file = "ffu_custom/FFU_UK3.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_UK4" #name you're using for the sound
+	file = "ffu_custom/FFU_UK4.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_WEST1" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_WEST1.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_WEST2" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_WEST2.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_WEST3" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_WEST3.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_WEST4" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_WEST4.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_EST1" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_EST1.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_EST2" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_EST2.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_EST3" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_EST3.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GER_EST3" #name you're using for the sound
+	file = "ffu_custom/FFU_GER_EST3.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_aus_serbia" #name you're using for the sound
+	file = "ffu_custom/FFU_aus_serbia.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_aus_russia" #name you're using for the sound
+	file = "ffu_custom/FFU_aus_russia.wav" ## location of the sound file
+	always_load = no
+}
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "FFU_GRE_OFF" #name you're using for the sound
+	file = "ffu_custom/FFU_GRE_OFF.wav" ## location of the sound file
+	always_load = no
+}

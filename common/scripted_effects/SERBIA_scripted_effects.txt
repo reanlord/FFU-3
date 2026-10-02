@@ -1,0 +1,80 @@
+SER_remove_ai_army_and_factories={
+	SER={
+		delete_unit={disband=no} #Equipment is not kept
+		every_owned_state={
+			limit={
+				is_core_of=SER
+				is_owned_by=SER
+			}
+			set_variable={civs=industrial_complex_level}
+			set_variable={mils=arms_factory_level}
+			remove_building={ type=industrial_complex level=civs }
+			remove_building={ type=arms_factory level=mils }
+		}
+	}
+}
+
+SER_conquer_ai={
+	AUS={
+		annex_country={
+			target=SER
+			transfer_troops=no
+		}
+	}
+	150={
+		remove_dynamic_modifier = { modifier = FFU_no_ports_modifier }
+	}
+}
+
+SER_occupation_zones={
+	150={	#Western Montenegro
+		transfer_state_to=AUS
+		remove_dynamic_modifier = { modifier = FFU_no_ports_modifier }
+	}
+	151={	#Eastern Montenegro
+		transfer_state_to=AUS
+	}
+	152={	#Serbia
+		transfer_state_to=AUS
+	}
+	153={	#Nis
+		if={
+			limit={BUL={exists=yes}}
+			transfer_state_to=BUL
+		}
+		else={
+			transfer_state_to=AUS
+		}
+	}
+	154={	#East Macedonia
+		if={
+			limit={
+				BUL={NOT={owns_state=PREV}}
+				TUR={NOT={owns_state=PREV}}
+			}
+			if={
+				limit={BUL={exists=yes}}
+				transfer_state_to=BUL
+			}
+			else_if={
+				limit={TUR={owns_state=147}}
+				transfer_state_to=TUR
+			}
+		}
+	}
+	155={	#Macedonia
+		if={
+			limit={BUL={exists=yes}}
+			transfer_state_to=BUL
+		}
+		else={
+			transfer_state_to=TUR
+		}
+	}
+	156={	#South Serbia
+		transfer_state_to=AUS
+	}
+	362={	#Morava
+		transfer_state_to=AUS
+	}
+}

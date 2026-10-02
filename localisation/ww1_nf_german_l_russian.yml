@@ -1,0 +1,561 @@
+﻿l_russian:
+
+#--------------------------------------------------------------
+# [GERMAN EMPIRE] Армейские усилия
+#=========================================================================
+GER_ww1_army_effort_1:0 "Армейские усилия"
+GER_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+GER_ww1_army_effort_2:0 "Армейские усилия II"
+GER_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+GER_ww1_army_effort_3:0 "Армейские усилия III"
+GER_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+GER_ww1_army_effort_4:0 "Армейские усилия IV"
+GER_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+GER_ww1_army_effort_5:0 "Армейские усилия V"
+GER_ww1_army_effort_5_desc:0 "" #Frenchie
+
+GER_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+GER_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+GER_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+GER_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+GER_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+GER_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+GER_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+GER_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+GER_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+GER_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+GER_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+GER_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+GER_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+GER_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+GER_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+GER_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+GER_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+GER_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+GER_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+GER_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+GER_ww1_aircraftprod_1:0 "Производство самолетов"
+GER_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+GER_ww1_aircraftprod_2:0 "Производство самолетов II"
+GER_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+GER_ww1_aircraftprod_3:0 "Производство самолетов III"
+GER_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+GER_ww1_aircraftprod_4:0 "Производство самолетов IV"
+GER_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+GER_ww1_aircraftprod_5:0 "Производство самолетов V"
+GER_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+GER_ww1_large_navy_1:0 "Военно -морская авиация"
+GER_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+GER_ww1_large_navy_2:0 "Военно -морская и авиационная реформа II"
+GER_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+GER_ww1_large_navy_3:0 "Военно -морская и авиационная реформа III"
+GER_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+GER_ww1_large_navy_4:0 "Военно -морская и авиационная реформа IV"
+GER_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+GER_ww1_large_navy_5:0 "Военно -морская и авиационная реформа V"
+GER_ww1_large_navy_5_desc:0 "" #Frenchie
+
+GER_ww1_special_forces:0 "Спецназовое внимание"
+GER_ww1_special_forces_desc:0 "" #KAISER_ANONY
+
+GER_ww1_army_motorization_focus:0 "Фокус моторизации"
+GER_ww1_army_motorization_focus_desc:0 "" #KAISER_ANONY
+
+GER_ww1_doctrine_effort:0 "Учение усилия"
+GER_ww1_doctrine_effort_desc:0 "" #KAISER_ANONY
+
+GER_ww1_doctrine_effort_2:0 "Учение усилия II"
+GER_ww1_doctrine_effort_2_desc:0 "" #KAISER_ANONY
+
+GER_ww1_doctrine_effort_3:0 "Учение усилия III"
+GER_ww1_doctrine_effort_3_desc:0 "" #KAISER_ANONY
+
+GER_ww1_armor_effort_1:0 "Броня усилий"
+GER_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+
+GER_ww1_armor_effort_2:0 "Танковые усилия II"
+GER_ww1_armor_effort_2_desc:0 "Our experiments with armor have been a rousing success! However, we cannot be complacent with our current designs. Engineers have been proposing interesting concepts like rotating gun turrets, specific engine compartments, and a hatch for use by a commander, which cannot be ignored. If we are to be the first to make these ideas a reality, perhaps we could become unstoppable!"
+
+GER_ww1_gasmask_focus:0 "Химическая война фокусируется"
+GER_ww1_gasmask_focus_desc:0 "Some of our chemists have proposed the use of a new, incredibly deadly agent- poisonous gas, delivered by our artillery and trench mortars. Though chemical warfare has been frowned on for roughly a century, what choice do we have if we are to win the war? Beyond investing in these, it's also likely for the best to develop countermeasures quickly- it would be unfortunate for such an advancement to turn on us!"
+#--------------------------------------------------------------
+
+# [GERMAN EMPIRE] Industrial Effort
+#=========================================================================
+GER_ww1_industrial_effort:0 "Промышленные усилия"
+GER_ww1_industrial_effort_desc:0 "" 
+
+GER_ww1_construction_effort:0 "Строительные усилия"
+GER_ww1_construction_effort_desc:0 "" 
+
+GER_ww1_construction_effort_2:0 "Строительные усилия II"
+GER_ww1_construction_effort_2_desc:0 "" 
+
+GER_ww1_construction_effort_3:0 "Строительные усилия III"
+GER_ww1_construction_effort_3_desc:0 "" 
+
+GER_ww1_production_effort:0 "Усилие вооружения"
+GER_ww1_production_effort_desc:0 "" 
+
+GER_ww1_production_effort_2:0 "Усилие вооружения II"
+GER_ww1_production_effort_2_desc:0 "" 
+
+GER_ww1_production_effort_3:0 "Усилие вооружения III"
+GER_ww1_production_effort_3_desc:0 "" 
+
+GER_ww1_dockyard_effort_1:0 "Расширение верфи"
+GER_ww1_dockyard_effort_1_desc:0 "" 
+
+GER_ww1_dockyard_effort_2:0 "Расширение верфи II"
+GER_ww1_dockyard_effort_2_desc:0 "" 
+
+GER_ww1_dockyard_effort_3:0 "Расширение верфи III"
+GER_ww1_dockyard_effort_3_desc:0 "" 
+
+GER_ww1_airfield_expansion_1:0 "Расширение аэродрома"
+GER_ww1_airfield_expansion_1_desc:0 "" 
+
+GER_ww1_airfield_expansion_2:0 "Расширение аэродрома II"
+GER_ww1_airfield_expansion_2_desc:0 "" 
+
+GER_ww1_airfield_expansion_3:0 "Расширение аэродрома III"
+GER_ww1_airfield_expansion_3_desc:0 "" 
+
+GER_ww1_infrastructure_effort:0 "Инфраструктурные усилия"
+GER_ww1_infrastructure_effort_desc:0 "" 
+
+GER_ww1_infrastructure_effort_2:0 "Инфраструктурные усилия II"
+GER_ww1_infrastructure_effort_2_desc:0 "" 
+
+GER_ww1_infrastructure_effort_3:0 "Инфраструктурные усилия III"
+GER_ww1_infrastructure_effort_3_desc:0 "" 
+
+GER_ww1_infrastructure_effort_4:0 "Инфраструктурные усилия IV"
+GER_ww1_infrastructure_effort_4_desc:0 "" 
+
+GER_ww1_extra_tech_slot:0 "Дополнительный исследовательский"
+GER_ww1_extra_tech_slot_desc:0 "" 
+
+GER_ww1_extra_tech_slot_2:0 "Дополнительный исследовательский II"
+GER_ww1_extra_tech_slot_2_desc:0 "" 
+
+#--------------------------------------------------------------
+
+
+# [GERMAN EMPIRE] Naval Effort
+#=========================================================================
+GER_ww1_naval_effort:0 "Создайте морской пехотинец Kaiserliche"
+GER_ww1_naval_effort_desc:0 "As we already have the premier Army in Europe, our Navy must be attended to as well, to attempt to keep pace with the Royal Navy and ensure Germany can defend herself and her territory in any way she chooses. If we focus on continually building up in our arms race against the United Kingdom, we will be well on our way to naval dominance."
+
+GER_ww1_newnavalcanons_1:0 "Военно -морское оружие"
+GER_ww1_newnavalcanons_1_desc:0 "" 
+
+GER_ww1_newnavalcanons_2:0 "Военно -морское оружие II"
+GER_ww1_newnavalcanons_2_desc:0 "" 
+
+GER_ww1_newnavalcanons_3:0 "Военно -морское оружие III"
+GER_ww1_newnavalcanons_3_desc:0 "" 
+
+GER_ww1_dreadnought_effort:0 "Дредноут"
+GER_ww1_dreadnought_effort_desc:0 "" 
+
+GER_ww1_flexible_navy:0 "Гибкий флот"
+GER_ww1_flexible_navy_desc:0 "" 
+
+GER_ww1_large_navy:0 "Большой флот"
+GER_ww1_large_navy_desc:0 "" 
+
+GER_ww1_navyreform:0 "Развертывание военно -морского флота"
+GER_ww1_navyreform_desc:0 "" 
+
+GER_ww1_submarine_effort:0 "Unterseeboot усилия"
+GER_ww1_submarine_effort_desc:0 "" 
+
+GER_ww1_cruiser_effort:0 "Крейсер усилие"
+GER_ww1_cruiser_effort_desc:0 "" 
+
+GER_ww1_destroyer_effort:0 "Усилие разрушителя"
+GER_ww1_destroyer_effort_desc:0 "" 
+
+GER_ww1_capital_ships_effort:0 "Капитальный корабль усилия"
+GER_ww1_capital_ships_effort_desc:0 "" 
+
+GER_ww1_carrier_focus:0 "Усилия"
+GER_ww1_carrier_focus_desc:0 "" 
+
+GER_ww1_antisubmarine:0 "Анти-подключатая война"
+GER_ww1_antisubmarine_desc:0 "" 
+
+GER_naval_refit:0 "План модернизации ВМФ"
+GER_naval_refit_desc:0 "" 
+
+GER_modernisation_of_the_fleet:0 "План модернизации ВМФ"
+GER_modernisation_of_the_fleet_desc:0 "" 
+
+#--------------------------------------------------------------
+
+
+# [GERMAN EMPIRE] Political Effort
+#=========================================================================
+GER_ww1_political_effort:0 "Политические усилия"
+GER_ww1_political_effort_desc:0 "" 
+
+GER_ww1_sovereignist_ethos:0 "Централизация"
+GER_ww1_sovereignist_ethos_desc:0 "" 
+
+GER_ww1_support_kaiser:0 "Подкреплять власть Кайзера"
+GER_ww1_support_kaiser_desc:0 "Seine Majestät the Kaiser might be a very politically powerful man, but he still has several old constitutional checks in place, most stemming from the old days of Prussia. If we eliminate some of these loopholes and keep building our Kaiser's imperial powers, he will be able to exercize control more directly over the German empire."
+
+GER_ww1_contest_kaiser:0 "Конкурс авторитет Кайзера"
+GER_ww1_contest_kaiser_desc:0 "Wilhelm II is a shadow of his predecessors, and completely unfit to play any role in the German government. Luckily, the higher-ups have already begun to draft plans to potentially depose him entirely if it means changing the system. This will lead to some instability short term, but significant change long term."
+
+GER_ww1_internationalism_focus:0 "Интернационализм фокус"
+GER_ww1_internationalism_focus_desc:0 "" 
+
+GER_ww1_militarism:0 "Милитаризм"
+GER_ww1_militarism_desc:0 "" 
+
+GER_ww1_indoctrination_focus:0 "Идеологическая обработка"
+GER_ww1_indoctrination_focus_desc:0 "" 
+
+GER_ww1_political_commissars:0 "Политические комиссары"
+GER_ww1_political_commissars_desc:0 "" 
+
+GER_ww1_paramilitarism:0 "Паримилитаризм"
+GER_ww1_paramilitarism_desc:0 "" 
+
+GER_ww1_political_correctness:0 "Политкорректность"
+GER_ww1_political_correctness_desc:0 "" 
+
+GER_ww1_military_youth:0 "Военная молодежь"
+GER_ww1_military_youth_desc:0 "" 
+
+GER_ww1_student_movement_focus:0 "Студенческое движение"
+GER_ww1_student_movement_focus_desc:0 "" 
+
+GER_ww1_monarchy:0 "Фокус авторитаризма"
+GER_ww1_monarchy_desc:0 "" 
+
+GER_ww1_democracy:0 "Демократизм фокусируется"
+GER_ww1_democracy_desc:0 "" 
+
+GER_ww1_centralizedpower:0 "Бюрократия "
+GER_ww1_centralizedpower_desc:0 "" 
+
+GER_ww1_freespeech:0 "Свободная речь"
+GER_ww1_freespeech_desc:0 "" 
+
+GER_ww1_reorganization_act:0 "Закон о реорганизации "
+GER_ww1_reorganization_act_desc:0 "" 
+
+GER_ww1_limited_rearmament:0 "Ограниченное перевооружение "
+GER_ww1_limited_rearmament_desc:0 "" 
+
+GER_ww1_full_rearmament:0 "ереоткрытый лист"
+GER_ww1_full_rearmament_desc:0 "" 
+
+GER_ww1_unitedpeople:0 "Патриотический пыл"
+GER_ww1_unitedpeople_desc:0 "" 
+
+GER_ww1_massive_effort:0 "Массовые усилия"
+GER_ww1_massive_effort_desc:0 "" 
+
+GER_ww1_fortify_city:0 "Гражданские укрепления"
+GER_ww1_fortify_city_desc:0 "" 
+
+GER_ww1_fortify_coast:0 "Прибрежная оборона"
+GER_ww1_fortify_coast_desc:0 "" 
+
+GER_ww1_leave_central_power:0 "Оставьте центральные державы"
+GER_ww1_leave_central_power_desc:0 "The Central Powers was the alliance of the old Germany. Now with the new direction our great country is taking, we stick out in our own alliance. One of our old members can frontline instead, and Germany will seek out a new course entirely." 
+
+GER_ww1_install_communism:0 "Пролетарская революция"
+GER_ww1_install_communism_desc:0 "A fire that sparked in the south has begun to spread all over Germany. Workers are rising against their bosses, and the locals against the local aristocracy in charge. Germany shall become a communist republic, and bring terror to the burgoise of Europe!" 
+
+GER_ww1_install_democracy:0 "Свободные выборы"
+GER_ww1_install_democracy_desc:0 "The old Emperor and monarchy simply must go. For Germany to remain stable and peaceful, she must adopt a democracy patterned after that of her contemporaries. The ghost of 1848 will live once again!"
+
+GER_ww1_fascist_coup:0 "Фашистский переворот"
+GER_ww1_fascist_coup_desc:0 "Elements of our military have begun proposing the idea of an ultranationalistic state, with one of their own members taking autocratic power from the Kaiser. If they can pull this putsch off and seize everything for themselves, it could change the destiny of Europe as a whole, let alone the course of Germany."
+
+GER_ww1_oppression_minorities:0 "Углешить меньшинства"
+GER_ww1_oppression_minorities_desc:0 "The best way to ensure loyalty from minority groups is to make them avoid identifying with each other. By making publications in other languages illegal, punishing citizens who fail to confirm to our culture, and enforcing local inferiority, we can fool some into thinking they are one of us, and keep the others from speaking out against us."
+
+GER_ww1_france_friend:0 "Франко-германская дружба"
+GER_ww1_france_friend_desc:0 "France has been a rival to Germany since the end of Charlemagne's empire. However, with our new government and our termination of the Central Powers, perhaps we can make amends? There are definitely awkward topics remaining, but a Franco-German Alliance may very well be possible in our day."
+
+#--------------------------------------------------------------
+
+
+# [GERMAN EMPIRE] Diplomatic Effort
+#=========================================================================
+
+GER_ww1_diplomatic_effort:0 "Дипломатические усилия"
+GER_ww1_diplomatic_effort_desc:0 "" 
+
+GER_ww1_free_BAV:0 "Баварский национализм"
+GER_ww1_free_BAV_desc:0 "Bavarian nationalism is a point of view that asserts that Bavarians are a nation and promotes the cultural unity of Bavarians. It has been a strong phenomenon since the incorporation of Bavaria into the state of Germany in 1871."
+
+GER_ww1_takeposition:0 "Занять позицию "
+GER_ww1_takeposition_desc:0 "" 
+
+GER_ww1_supportgermany:0 "Поддержите Германию"
+GER_ww1_supportgermany_desc:0 "" 
+
+GER_ww1_supportfrance:0 "Поддержите Францию "
+GER_ww1_supportfrance_desc:0 "" 
+
+GER_ww1_supportaustria:0 "Поддержка Австрии-Венгрии "
+GER_ww1_supportaustria_desc:0 "" 
+
+GER_ww1_supportrussia:0 "Поддержка России"
+GER_ww1_supportrussia_desc:0 "" 
+
+GER_ww1_military_reserve:0 "Военный заповедник "
+GER_ww1_military_reserve_desc:0 "" 
+
+GER_ww1_embargo_germany:0 "Санкция Германия"
+GER_ww1_embargo_germany_desc:0 "" 
+
+GER_ww1_embargo_france:0 "Санкция Франция "
+GER_ww1_embargo_france_desc:0 "" 
+
+GER_ww1_sellweapons:0 "Продавать оружие "
+GER_ww1_sellweapons_desc:0 "" 
+
+GER_ww1_appeasement:0 "Умиротворение "
+GER_ww1_appeasement_desc:0 "" 
+
+GER_ww1_aggressive_foreign_policy:0 "Агрессивная внешняя политика "
+GER_ww1_aggressive_foreign_policy_desc:0 "" 
+
+GER_ww1_joingermany:0 "Присоединяйтесь к центральным державам "
+GER_ww1_joingermany_desc:0 "" 
+
+GER_ww1_joinfrance:0 "Присоединяйтесь к Entente "
+GER_ww1_joinfrance_desc:0 "" 
+
+GER_ww1_war_effort:0 "Военные усилия"
+GER_ww1_war_effort_desc:0 "" 
+
+GER_ww1_triple_alliance:0 "Обновить тройной альянс "
+GER_ww1_triple_alliance_desc:0 "Наш старый союз с Австро-Венгрией и Италией должен снова обновить, и, учитывая климат Европы, это сложный случай, чтобы утверждать, по крайней мере, не пытаясь сделать это.В частности, Италия, по -видимому, все меньше и менее посвящена этому альянсу с течением времени, и особое внимание должно быть уделено этой области, чтобы убедиться, что они не предают нас"
+
+GER_ww1_secret_alliance_rom:0 "Секретный союз с Румынией "
+GER_ww1_secret_alliance_rom_desc:0 "Румынии управляет немецкий, и далеким родственником королевской семьи не меньше.Из -за этого, если не что иное, они могут иметь долю в тройном альянсе, даже если не много, из -за их претензий на Австрию.Тем не менее, утомив их какое -то время может быть стратегически в нашу пользу, если война с Россией прорвалась"
+
+GER_ww1_italy_ally:0 "Поддержите Италию"
+GER_ww1_italy_ally_desc:0 "ачало дипломатического толчка для дальнейших связей с Италией ослабит нашу позицию с Австро-Венгрией, хотя это может быть цена, которую стоит заплатить за то, чтобы сохранить их, по крайней мере, немного более лояльными"
+
+GER_ww1_back_austria:0 "Поддержка Австрии-Венгрии "
+GER_ww1_back_austria_desc:0 "Начало дипломатического толчка для дальнейших связей с Австрии-Венгрией, будет оттолкнуть Италию до некоторой степени, но, возможно, они смогут учиться на уровне лояльности Австрии-Венгрии в этом случае"
+
+GER_ww1_send_advisor:0 "Отправить немецких консультантов"
+GER_ww1_send_advisor_desc:0 "емецкие консультанты, особенно в армии, будут тепло получены как Италией, так и австрийской-вентральной, и в дальнейшем наши отношения с обеими странами, а также будут стоить Германии мало, но найти мужчин, достойных задачи и вывести их в поезд"
+
+GER_ww1_turkey_friend:0 "Подружиться с османами"
+GER_ww1_turkey_friend_desc:0 "Османская империя в отчаянии нуждается в большем количестве друзей, и, как и так, мы тоже. Хотя их военные были потрясены некоторыми недавними поражениями звука, наша соседка Франция уже оправилась от гораздо худшего, так что что останавливаетсяих?"
+
+GER_ww1_zimmermann_telegram:0 "Отправить телеграмму Zimmermann"
+GER_ww1_zimmermann_telegram_desc:0 "Мексика, как бы нестабильная, может стать ключом к тому, чтобы удержать США от войны. Если мы сформируем защитный союз с Мексикой, США будут вынуждены дважды подумать о том, чтобы объявить войну с соседом по соседствуЧтобы бороться с. Конечно, мы выглядели бы невероятно плохо, если бы телеграмма была перехвачена, особенно если она была неправильно перевозилась и преувеличена"
+
+GER_ww1_baghdad:0 "Берлин-Багдадская железная дорога "
+GER_ww1_baghdad_desc:0 "Запланированная железная дорога Берлин-Багдад-это амбициозный железнодорожный проект, стремящийся соединить немецкую столицу с османскими сердцами, где лежит хороший кусок османской нефти."
+
+GER_asienkorps:0 "Кислотный корпус"
+GER_asienkorps_desc:0 ""
+
+GER_ww1_assert_position_west:0 "Утверждать немецкую позицию на Западе "
+GER_ww1_assert_position_west_desc:0 "Западный фронт - мрачное место для центральных держав.Франция и Великобритания связаны с нами и нашими интересами, что наносит ущерб будущему Германии в Африке.Хуже того, Бельгия, кажется, больше не так готов позволить немецким войскам, чтобы раздавить французов, которых они больше не видят в угрозе.Мы должны максимально использовать плохую ситуацию, если мы хотим оставаться на плаву как великая сила"
+
+GER_ww1_anti_fr:0 "Анти-французская политика"
+GER_ww1_anti_fr_desc:0 " незапамятных времен немцы и французы были врагами. Если мы действуем вокруг этой реальности, это откроет новые и интересные варианты, чтобы справиться с ними в будущем"
+
+GER_ww1_anti_uk:0 "Анти-британская политика"
+GER_ww1_anti_uk_desc:0 " то время как англо-германская дружба была хорошей, пока она продолжалась, Германия и Великобритания пришли друг другу в последние годы, и, похоже, это не будет изменено в ближайшее время.Некоторые варианты, чтобы обойти их дипломатично".
+
+GER_ww1_support_boer:0 "Подкреплять Deutsch-Südwestafrika"
+GER_ww1_support_boer_desc:0 "SWA, также известная как Намибия, является одной из самых важных колоний в Германии. Убедиться, что она защищается в атаке, может помочь в том, чтобы помочь военным усилиям нашей страны, если дело доходит до этого, и это потребует лишь незначительные инвестиции"
+
+GER_ww1_support_boer_war:0 "Восстание фермера"
+GER_ww1_support_boer_war_desc:0 "уры Южной Африки все еще только недавно завоеваны и еще не приспосабливаются к британскому правлению. Если мы поставляем и обучим некоторых буров, которые ищут независимость от Великобритании, они могут подняться против южноафриканских чиновников, даваяНам редкое преимущество в в основном контролируемом регионе мира"
+
+GER_ww1_agadir_crisis:0 "Агадирский кризис"
+GER_ww1_agadir_crisis_desc:0 " повстанцами, организующими в Марокко, и достаточным интересом Германии в регионе, чтобы провозглашать их актуальными, мы можем поддержать их восстание против французского правительства, чтобы попытаться захватить Марокко для себя. Хотя эта цель сама по себе маловероятно, мы ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не можем, если ничего не сможем, если ничего не можем, если ничего не сможем, если ничего не можем, если ничего не можем, если ничего не сможем, если ничего не сможем, если ничего не сможем, если ничего не сможем.Иначе, встряхните Францию для более разумной территории, если мы достаточно их грилем, хотя это может привести Великобританию еще ближе к ним"
+
+GER_ww1_assert_position_east:0 "Утвердить позицию немецкого языка на востоке"
+GER_ww1_assert_position_east_desc:0 "Позиция центральных держав на Востоке- это то же самое ослабление России и строить гегемонию в регионе. Поскольку война с Россией, в частности, кажется почти неизбежной из-за балканской ситуации, это эффективный курс действийВозьми, хотя и подведет Францию и Россию ближе, что может оказаться проблемой"
+
+GER_ww1_anti_ru:0 "Антируссийская политика"
+GER_ww1_anti_ru_desc:0 "оссия не наша друга, и, возможно, никогда не будет снова, из -за их экстравагантных заявлений не только на дружескую территорию, но и на нашу собственную польсную землю. Принятие этой истины может привести к некоторым новым способам справиться с ними в будуще".
+
+GER_ww1_anti_serb:0 "Антисербийская политика"
+GER_ww1_anti_serb_desc:0 "ербцы- это крысы, которые продали бы свою собственную мать, если бы это означало получить только провинцию из австрийской Боснии. Если мы столкнулись с ними, как они действительно являются противоположным состоянием для США- мы можем подготовиться к тому, чтобы выступить против них в будущем."
+
+GER_ww1_bulgaria_puppet:0 "Марионетка Болгария"
+GER_ww1_bulgaria_puppet_desc:0 "Болгария доказала с помощью своих слабых выступлений на балканских войнах, что она не имеет истинного использования как союзник. Обеспечение соблюдения куколного государства над ними может оттолкнуть некоторых посторонних, но каково это?другие".
+
+GER_ww1_bulgaria_friend:0 "Подружиться с Болгарией"
+GER_ww1_bulgaria_friend_desc:0 "Болгария может многое получить в войне против Сербии, и еще два из наших потенциальных врагов в Греции и Румынии. Если мы обещаем им претендовать на Македонию и Фракию, которую Австрия-Венгрия даже не имеет никакого желания оспаривать их,Они могли присоединиться к нам, открыв второй фронт, чтобы облегчить наши перетянутые силы, и дать нам еще один источник столь необходимой рабочей силы"
+
+GER_ww1_ready_country:0 "Приготовьтесь к войне"
+GER_ww1_ready_country_desc:0 "Генералы беспокоятся о борьбе. Они начинают верить, что силы Антента планируют что -то ужасное против нас. Мы должны подготовиться к бою, и мы должны быть готовы сделать упреждающий удар, иначе мы не можем выжитьПриступающий конфликт ".
+
+GER_ww1_strengthen_kaiser:0 "Усилить кайзер"
+GER_ww1_strengthen_kaiser_desc:0 "Правило Его Величества над Германией должно быть неспособным. Даже в бурные времена он - лучший человек, на который можно вернуться, и может поддержать нашу империю через густые и тонкие. Следовательно, любая мера, которую мы можем принять, от конституционных поправок до новых законов вРейхстаг, должен быть взят, чтобы сохранить Вильгельм мощным"
+
+GER_ww1_weaken_kaiser:0 "Ослабьте кайзер"
+GER_ww1_weaken_kaiser_desc:0 "ильгельм II доказал себе ... интересный лидер, если не сказать больше. Возможно, чтобы убедиться, что он не нанесен дальнейшего повреждения немецкой империи, было бы лучше ограничить его контроль над царством и делегировать большую власть более способнымРуки."
+
+GER_ww1_restructure_ostafrika:0 "Реструктуризация немецко-восточной Африки"
+GER_ww1_restructure_ostafrika_desc:0 "осточная Африка - это наша главная колония, но это не значит, что мы не можем сделать больше в этом районе. Расширяя роль и административные полномочия колониального правительства, они могут эффективно создавать регион дальше для нас".
+
+GER_ww1_train_ostafrika:0 "Сила защиты развертывания"
+GER_ww1_train_ostafrika_desc:0 "Наши колониальные администраторы сообщили о большом количестве местных восточноафриканских мужчин, которые являются безработными бойцами, стремящиеся служить в немецкой армии. Если мы сможем найти некоторых добровольцев, чтобы обучать и возглавить эту группу, мы могли бы, если ничто другое, противостоять противБританские силы в этом районе как можно дольше ".
+
+GER_ww1_war_with_france:0 "План Шлиффена 1915 года"
+GER_ww1_war_with_france_desc:0 "аконец -то пришло время! Франция будет атакована через Бельгию, и мы въезжаем в Париж, а они не мудрее! Наша защита на востоке будет тусклой, но кого это волнует?! Это должно работать! Это будет работать, как это пожелает Кайзер!"
+
+GER_ww1_polnische_wehrmacht:0 "Польский wehrmacht"
+GER_ww1_polnische_wehrmacht_desc:0 "сли мы обещаем полюса своим собственным государственным государством после войны, возможно, жители нашей части Польши будут более склонны присоединиться к действию. Заканчиваем ли мы территорией или нет, конечно, необходимо решить еще.Но сейчас мы можем насладиться притоком трудоспособных людей, не задумываясь о последствиях".
+
+GER_ww1_hol_militaryaccess:0 "просите Нидерланды для военного доступа"
+GER_ww1_hol_militaryaccess_desc:0 "чевидно, что война в Бельгии будет более благоприятной для нас, если мы сможем пройти через Нидерланды, что также даст нам легкое место для отступления на случай, если битва пошла плохо. Переговоры должны оказаться успешными, пока мы не надеемся»Случайно называют свою страну просто "олландией». Они ненавидят это"
+
+GER_ww1_den_militaryaccess:0 "ила Дании занять позицию"
+GER_ww1_den_militaryaccess_desc:0 "олее 10 000 датских граждан Германии из Северного Шлезвига сражались в немецкой армии из-за поражения Дании и аннексии Шлезвиг-Гольштейна со стороны Пруссии во второй войне Шлезвига в 1864 году".
+
+
+GER_ww1_friend_sweden:0 "ригласить Швецию в центральные державы "
+GER_ww1_friend_sweden_desc:0 "отя это длинный выстрел, Швеция может быть убедит присоединиться к Центральным державам, если мы пообещаем восстановить их удержание на Финляндии. Хотя для них вполне вероятно, что они примут такое предложение, нам нужны все друзья, которые мы можем получить, иМы ничего не теряем, по крайней мере, спрашивая, верно? "
+
+GER_ww1_finnish_civil_war:0 "оддержка белых в финской гражданской войне"
+GER_ww1_finnish_civil_war_desc:0 "Гражданская война между красными, возглавляемая социал-демократической партией и белыми, проводимой несоциалистической, консервативной сенатом, началась в Финляндии. Красные охранники контролируют города и промышленные центры Южной Финляндии. Белые гвардии.Контроль сельской центральной и северной Финляндии"
+
+#---------------------------Frenchie Mod-----------------------------------
+
+GER_East:0 "Gorlice–Tarnów Offensive"
+GER_East_desc:0 "The Gorlice–Tarnów Offensive during World War I was initially conceived as a minor German offensive to relieve Russian pressure on the Austro-Hungarians to their south on the Eastern Front, but resulted in the Central Powers' chief offensive effort of 1915, causing the total collapse of the Russian lines and their retreat far into Russia. The continued series of actions lasted the majority of the campaigning season for 1915, starting in early May and only ending due to bad weather in October."       
+GER_chemical_industry_expansion:0 "Расширение химической промышленности"
+GER_chemical_industry_expansion_desc:0 ""
+GER_new_industry_developments:0 "Новые отраслевые разработки"
+GER_new_industry_developments_desc:0 ""
+GER_militarism:0 "Милитаризм"
+GER_militarism_desc:0 ""
+GER_extreme_military_spending:0 "Чрезвычайные военные расходы"
+GER_extreme_military_spending_desc:0 ""
+GER_industrialization_of_warfare:0 "Индустриализация войны"
+GER_industrialization_of_warfare_desc:0 ""
+GER_accept_british_naval_dominance:0 "Принять британское военно -морское доминирование"
+GER_accept_british_naval_dominance_desc:0 ""
+GER_poison_gas_development:0 "Развитие ядовитого газа"
+GER_poison_gas_development_desc:0 ""
+GER_military_dictatorship:0 "Военная диктатура"
+GER_military_dictatorship_desc:0 ""
+GER_sturmtruppen:0 "Штурмские войска"
+GER_sturmtruppen_desc:0 ""
+GER_submarine_expansion:0 "Расширение подводной лодки"
+GER_submarine_expansion_desc:0 ""
+GER_our_place_in_the_sun_ffu2:0 "Мы плывём..."
+GER_our_place_in_the_sun_ffu2_desc:0 ""
+GER_deutsches_heer:0 "Немецкая армия"
+GER_deutsches_heer_desc:0 ""
+GER_stahlhelm:0 "Стальный шлем"
+GER_stahlhelm_desc:0 ""
+GER_research_funding:0 "Финансирование исследований"
+GER_research_funding_desc:0 ""
+GER_align_austriahungary:0 "Выровняйте Австро-Венгрию"
+GER_align_austriahungary_desc:0 ""
+GER_align_ottomans:0 "Выравнивать османы"
+GER_align_ottomans_desc:0 ""
+GER_consolidate_central_powers:0 "Консолидировать центральные державы"
+GER_consolidate_central_powers_desc:0 ""
+GER_korsettstangen_units:0 "Корсетные стержневые подразделения"
+GER_korsettstangen_units_desc:0 ""
+GER_german_war_economy:0 "Немецкая военная экономика"
+GER_german_war_economy_desc:0 ""
+GER_naval_excerises:0 "Военно -морские упражнения"
+GER_naval_excerises_desc:0 ""
+GER_naval_design_advancement:0 "...на Англию!"
+GER_naval_design_advancement_desc:0 ""
+GER_luftstreitkrafte:0 "Luftstreitkrafte"
+GER_luftstreitkrafte_desc:0 ""
+GER_adriatic_sea_reinforcement:0 "Адриатическое морское усиление"
+GER_adriatic_sea_reinforcement_desc:0 ""
+GER_mllitary_leagues_demands:0 "Военные лиги требуют"
+GER_mllitary_leagues_demands_desc:0 ""
+GER_specialist_units:0 "Специализированные подразделения"
+GER_specialist_units_desc:0 ""
+GER_pariser_kanon:0 "Парижский канон"
+GER_pariser_kanon_desc:0 ""
+GER_a7v:0 "A7V"
+GER_a7v_desc:0 ""
+GER_air_innovations:0 "Воздушные инновации"
+GER_air_innovations_desc:0 ""
+GER_weltpolitik:0 "Weltpolitik"
+GER_weltpolitik_desc:0 ""
+GER_asienkorps_units:0 "Asienkorps единиц "
+GER_asienkorps_units_desc:0 ""
+GER_electronic_industry_development:0 "Электронная развитие промышленности "
+GER_electronic_industry_development_desc:0 ""
+GER_light_bomber_development:0 "Развитие легкого бомбардировщика "
+GER_light_bomber_development_desc:0 ""
+GER_redirected_funding:0 "Перенаправленное финансирование "
+GER_redirected_funding_desc:0 ""
+GER_auxiliary_service_law:0 "Закон о вспомогательном обслуживании"
+GER_auxiliary_service_law_desc:0 ""
+GER_weapons_development:0 "Развитие оружия "
+GER_weapons_development_desc:0 ""
+GER_hydroplane_develoipment:0 "Развитие гидропланов "
+GER_hydroplane_develoipment_desc:0 ""
+GER_military_workshop:0 "Военная мастерская "
+GER_military_workshop_desc:0 ""
+GER_hindenburg_line:0 "Гинденбургская линия "
+GER_hindenburg_line_desc:0 ""
+GER_auftragstaktik:0 "Тактика заказа "
+GER_auftragstaktik_desc:0 ""
+GER_unrestricted_submarine_warfare:0 "Неограниченная подводная война "
+GER_unrestricted_submarine_warfare_desc:0 ""
+GER_ww1_kaiserschlacht:0 "Кайзер битва "
+
+############################################################################################
+
+##### DON'T MODIFY THAT - UNSORTED VARIABLES ###########
+
+authoritarianism:0 "Авторитаризм "
+
+kis_venizelists_flag:0 "Национальный раскол в Греции "
+kis_alternativehistory_5:0 "Русская реакция "
+
+ air_equipment:0 "Самолет"
+ ger_auh_alliance_focus:0 "Немецкий-австрийский альянс фокус "
+ ger_bul_alliance_focus:0 "Немецкий бульгарский альянс фокус "
+
+usa_zimmermann_telegram:0 "Циммерман Телеграмма"
+
+SUPER_GLOBAL_Adios_Francisco_Madero_1913:0 "Военный переворот в Мексике"
+
+############################################################################################

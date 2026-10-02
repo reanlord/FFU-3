@@ -1,0 +1,80 @@
+add_namespace = ww1_uk
+
+country_event = {			#Iran Front preparing (Global)
+	id = ww1_uk.1
+	title = ww1_uk.1.t
+	desc = ww1_uk.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes	
+
+	option = {
+		name = ww1_uk.1.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {			#Iran Front begins (TUR)
+	id = ww1_uk.2
+	title = ww1_uk.2.t
+	desc = ww1_uk.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes	
+	
+	immediate = {
+		hidden_effect = {
+			ENG = {
+				transfer_state = 348
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 145
+					}
+				}
+				TUR = {
+					set_province_controller = 16058
+					set_province_controller = 9515
+					set_province_controller = 16165
+					set_province_controller = 5793
+					set_province_controller = 10776
+					set_province_controller = 16179
+					set_province_controller = 6607
+					set_province_controller = 3430
+					set_province_controller = 16217
+					set_province_controller = 16252
+					set_province_controller = 16481
+					set_province_controller = 16490
+					set_province_controller = 11335
+					set_province_controller = 16525
+				}
+				every_country = {
+					limit = {
+						NOT = {
+							tag = TUR
+						}
+					}
+					country_event = ww1_uk.3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ww1_uk.2.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {			#Iran Front begins (Global)
+	id = ww1_uk.3
+	title = ww1_uk.3.t
+	desc = ww1_uk.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes	
+
+	option = {
+		name = ww1_uk.3.a
+		ai_chance = { factor = 100 }
+	}
+}

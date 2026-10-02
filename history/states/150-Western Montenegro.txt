@@ -1,0 +1,35 @@
+state={
+	id=150
+	name="STATE_150"
+	provinces={
+		525 3034 3585 4059 5166 6140 6188 8099 8999 10100 10519 10704 15782 15816 20104 20105 20106 
+	}
+	manpower=395500
+	buildings_max_level_factor=1.000
+	state_category=rural
+	resources={
+		aluminium=5
+	}
+	history={
+		owner = MNT
+		add_core_of = MNT
+		add_extra_state_shared_building_slots = 6
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 2
+			air_base = 4
+		 }
+		victory_points = {
+			10100 20
+		}
+		victory_points = {
+			15782 10
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+}

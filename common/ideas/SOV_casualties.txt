@@ -1,0 +1,900 @@
+ideas = {
+	country = {
+		SOV_casualties_0 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_1
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				#consumer_goods_expected_value=0.0
+				#production_factory_max_efficiency_factor = -0.000
+				#industrial_capacity_factory=-0.0
+				#industrial_capacity_dockyard=-0.0
+				#conscription_factor=-0.00
+			}
+		}
+		SOV_casualties_1 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 1000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_2
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.005
+				production_factory_max_efficiency_factor = -0.005
+				industrial_capacity_factory=-0.02
+				industrial_capacity_dockyard=-0.02
+				conscription_factor=-0.01
+			}
+		}
+		SOV_casualties_2 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 1500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_3
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.01
+				production_factory_max_efficiency_factor = -0.01
+				industrial_capacity_factory=-0.04
+				industrial_capacity_dockyard=-0.04
+				conscription_factor=-0.02
+			}
+		}
+		SOV_casualties_3 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 2000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_4
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.015
+				production_factory_max_efficiency_factor = -0.015
+				industrial_capacity_factory=-0.06
+				industrial_capacity_dockyard=-0.06
+				conscription_factor=-0.03
+			}
+		}
+		SOV_casualties_4 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 2500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_5
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.020
+				production_factory_max_efficiency_factor = -0.020
+				industrial_capacity_factory=-0.08
+				industrial_capacity_dockyard=-0.08
+				conscription_factor=-0.04
+			}
+		}
+		SOV_casualties_5 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 3000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_6
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.025
+				production_factory_max_efficiency_factor = -0.025
+				industrial_capacity_factory=-0.10
+				industrial_capacity_dockyard=-0.10
+				conscription_factor=-0.05
+				
+			}
+		}
+		SOV_casualties_6 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 3500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_7
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.030
+				production_factory_max_efficiency_factor = -0.030
+				industrial_capacity_factory=-0.12
+				industrial_capacity_dockyard=-0.12
+				conscription_factor=-0.06
+			}
+		}
+		SOV_casualties_7 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 4000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_8
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.035
+				production_factory_max_efficiency_factor = -0.035
+				industrial_capacity_factory=-0.14
+				industrial_capacity_dockyard=-0.14
+				conscription_factor=-0.07
+			}
+		}
+		SOV_casualties_8 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 4500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_9
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.040
+				production_factory_max_efficiency_factor = -0.040
+				industrial_capacity_factory=-0.16
+				industrial_capacity_dockyard=-0.16
+				conscription_factor=-0.08
+			}
+		}
+		SOV_casualties_9 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 5000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_10
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.045
+				production_factory_max_efficiency_factor = -0.045
+				industrial_capacity_factory=-0.18
+				industrial_capacity_dockyard=-0.18
+				conscription_factor=-0.09
+			}
+		}
+		SOV_casualties_10 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 5500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_11
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.050
+				production_factory_max_efficiency_factor = -0.050
+				industrial_capacity_factory=-0.20
+				industrial_capacity_dockyard=-0.20
+				conscription_factor=-0.10
+			}
+		}
+		SOV_casualties_11 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 6000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_12
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.055
+				production_factory_max_efficiency_factor = -0.055
+				industrial_capacity_factory=-0.22
+				industrial_capacity_dockyard=-0.22
+				conscription_factor=-0.11
+			}
+		}
+		SOV_casualties_12 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 6500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_13
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.060
+				production_factory_max_efficiency_factor = -0.060
+				industrial_capacity_factory=-0.24
+				industrial_capacity_dockyard=-0.24
+				conscription_factor=-0.12
+			}
+		}
+		SOV_casualties_13 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 7000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_14
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.065
+				production_factory_max_efficiency_factor = -0.065
+				industrial_capacity_factory=-0.26
+				industrial_capacity_dockyard=-0.26
+				conscription_factor=-0.13
+			}
+		}
+		SOV_casualties_14 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 7500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_15
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.070
+				production_factory_max_efficiency_factor = -0.070
+				industrial_capacity_factory=-0.28
+				industrial_capacity_dockyard=-0.28
+				conscription_factor=-0.14
+			}
+		}
+		SOV_casualties_15 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 8000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_16
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.075
+				production_factory_max_efficiency_factor = -0.075
+				industrial_capacity_factory=-0.30
+				industrial_capacity_dockyard=-0.30
+				conscription_factor=-0.15
+			}
+		}
+		SOV_casualties_16 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 8500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_17
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.080
+				production_factory_max_efficiency_factor = -0.080
+				industrial_capacity_factory=-0.32
+				industrial_capacity_dockyard=-0.32
+				conscription_factor=-0.16
+			}
+		}
+		SOV_casualties_17 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 9000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_18
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.085
+				production_factory_max_efficiency_factor = -0.085
+				industrial_capacity_factory=-0.34
+				industrial_capacity_dockyard=-0.34
+				conscription_factor=-0.17
+			}
+		}
+		SOV_casualties_18 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 9500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_19
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.090
+				production_factory_max_efficiency_factor = -0.090
+				industrial_capacity_factory=-0.36
+				industrial_capacity_dockyard=-0.36
+				conscription_factor=-0.18
+			}
+		}
+		SOV_casualties_19 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 10000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_20
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.095
+				production_factory_max_efficiency_factor = -0.095
+				industrial_capacity_factory=-0.38
+				industrial_capacity_dockyard=-0.38
+				conscription_factor=-0.19
+			}
+		}
+		SOV_casualties_20 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 10500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_21
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.10
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory=-0.40
+				industrial_capacity_dockyard=-0.40
+				conscription_factor=-0.20
+			}
+		}
+		SOV_casualties_21 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 11000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_22
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.105
+				production_factory_max_efficiency_factor = -0.105
+				industrial_capacity_factory=-0.42
+				industrial_capacity_dockyard=-0.42
+				conscription_factor=-0.21
+			}
+		}
+		SOV_casualties_22 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 11500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_23
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.110
+				production_factory_max_efficiency_factor = -0.110
+				industrial_capacity_factory=-0.44
+				industrial_capacity_dockyard=-0.44
+				conscription_factor=-0.22
+			}
+		}
+		SOV_casualties_23 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 12000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_24
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.115
+				production_factory_max_efficiency_factor = -0.115
+				industrial_capacity_factory=-0.46
+				industrial_capacity_dockyard=-0.46
+				conscription_factor=-0.23
+			}
+		}
+		SOV_casualties_24 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 12500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_25
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.120
+				production_factory_max_efficiency_factor = -0.120
+				industrial_capacity_factory=-0.48
+				industrial_capacity_dockyard=-0.48
+				conscription_factor=-0.24
+			}
+		}
+		SOV_casualties_25 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 13000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_26
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.125
+				production_factory_max_efficiency_factor = -0.125
+				industrial_capacity_factory=-0.50
+				industrial_capacity_dockyard=-0.50
+				conscription_factor=-0.25
+			}
+		}
+		SOV_casualties_26 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 13500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_27
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.130
+				production_factory_max_efficiency_factor = -0.130
+				industrial_capacity_factory=-0.52
+				industrial_capacity_dockyard=-0.52
+				conscription_factor=-0.26
+			}
+		}
+		SOV_casualties_27 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 14000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_28
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.135
+				production_factory_max_efficiency_factor = -0.135
+				industrial_capacity_factory=-0.54
+				industrial_capacity_dockyard=-0.54
+				conscription_factor=-0.27
+			}
+		}
+		SOV_casualties_28 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 14500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_29
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.140
+				production_factory_max_efficiency_factor = -0.140
+				industrial_capacity_factory=-0.56
+				industrial_capacity_dockyard=-0.56
+				conscription_factor=-0.28
+			}
+		}
+		SOV_casualties_29 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 15000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_30
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.145
+				production_factory_max_efficiency_factor = -0.145
+				industrial_capacity_factory=-0.58
+				industrial_capacity_dockyard=-0.58
+				conscription_factor=-0.29
+			}
+		}
+		SOV_casualties_30 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 15500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_31
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.150
+				production_factory_max_efficiency_factor = -0.150
+				industrial_capacity_factory=-0.60
+				industrial_capacity_dockyard=-0.60
+				conscription_factor=-0.30
+			}
+		}
+		SOV_casualties_31 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 16000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_32
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.155
+				production_factory_max_efficiency_factor = -0.155
+				industrial_capacity_factory=-0.62
+				industrial_capacity_dockyard=-0.62
+				conscription_factor=-0.31
+			}
+		}
+		SOV_casualties_32 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 16500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_33
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.160
+				production_factory_max_efficiency_factor = -0.160
+				industrial_capacity_factory=-0.64
+				industrial_capacity_dockyard=-0.64
+				conscription_factor=-0.32
+			}
+		}
+		SOV_casualties_33 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 17000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_34
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.165
+				production_factory_max_efficiency_factor = -0.165
+				industrial_capacity_factory=-0.66
+				industrial_capacity_dockyard=-0.66
+				conscription_factor=-0.33
+			}
+		}
+		SOV_casualties_34 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 17500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_35
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.170
+				production_factory_max_efficiency_factor = -0.170
+				industrial_capacity_factory=-0.68
+				industrial_capacity_dockyard=-0.68
+				conscription_factor=-0.34
+			}
+		}
+		SOV_casualties_35 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 18000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_36
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.175
+				production_factory_max_efficiency_factor = -0.175
+				industrial_capacity_factory=-0.70
+				industrial_capacity_dockyard=-0.70
+				conscription_factor=-0.35
+			}
+		}
+		SOV_casualties_36 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 18500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_37
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.180
+				production_factory_max_efficiency_factor = -0.180
+				industrial_capacity_factory=-0.72
+				industrial_capacity_dockyard=-0.72
+				conscription_factor=-0.36
+			}
+		}
+		SOV_casualties_37 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 19000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_38
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.185
+				production_factory_max_efficiency_factor = -0.185
+				industrial_capacity_factory=-0.74
+				industrial_capacity_dockyard=-0.74
+				conscription_factor=-0.37
+			}
+		}
+		SOV_casualties_38 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 19500 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_39
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.190
+				production_factory_max_efficiency_factor = -0.190
+				industrial_capacity_factory=-0.76
+				industrial_capacity_dockyard=-0.76
+				conscription_factor=-0.38
+			}
+		}
+		SOV_casualties_39 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			cancel={ casualties_k > 20000 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = kis_tsarnicholasabdicated }}
+					add_ideas = SOV_casualties_40
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.195
+				production_factory_max_efficiency_factor = -0.195
+				industrial_capacity_factory=-0.78
+				industrial_capacity_dockyard=-0.78
+				conscription_factor=-0.39
+			}
+		}
+		SOV_casualties_40 = {
+			picture = trotskyite_plot
+			allowed={ tag=SOV }
+			available={ }
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value=0.200
+				production_factory_max_efficiency_factor = -0.200
+				industrial_capacity_factory=-0.80
+				industrial_capacity_dockyard=-0.80
+				conscription_factor=-0.40
+			}
+		}
+	}
+}

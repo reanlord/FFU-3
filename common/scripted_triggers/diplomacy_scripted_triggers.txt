@@ -1,0 +1,136 @@
+#	Triggers to control if diplomatic actions are enabled:
+#		Format:
+#
+#		<diplomatic action tag>_enabled_trigger = {
+#			<trigger contents>
+#		}
+#
+#		ROOT is the country initiating the diplomatic action.
+#		FROM is the recipient or target of the diplomatic action.
+#
+#		Note:  For cleaner tooltips, it is recommended that you use
+#			if triggers within the enable triggers, and a single
+#			custom_trigger_tooltip trigger within each if trigger.
+#
+#		Example: (Germany is prevented from declaring war on the Soviet Union.)
+#
+#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
+#			if = {
+#				limit = {
+#					tag = GER
+#				}
+#				custom_trigger_tooltip = {
+#					tooltip = PREVENT_GER_WAR_ON_SOV
+#					FROM = {
+#						NOT = {
+#							tag = SOV
+#						}
+#					}
+#				}
+#			}
+#		}
+
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { ##For obvious reasons. Doesn't affect return territory.
+	always = no
+}
+DIPLOMACY_MILACC_ENABLE_TRIGGER = {	 ##Nations that need mil access for volunteers get it automatically
+	always = no
+}
+DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {	##Nations that need mil access for volunteers get it automatically
+	always = no
+}
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			ROOT = {
+				has_war = no
+			}
+		}
+		always = no
+	}
+	if = {
+		limit = {
+			ROOT = {
+				original_tag = SOV
+				NOT = { has_global_flag = kis_brestlitovsk }
+			}
+		}
+		custom_trigger_tooltip={
+			tooltip=russia_send_ll_tt
+			always=no
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				original_tag = SOV
+				NOT = { has_global_flag = kis_brestlitovsk }
+			}
+		}
+		custom_trigger_tooltip={
+			tooltip=russia_receive_ll_tt
+			always=no
+		}
+	}
+}
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			FROM = {
+				has_war = no
+			}
+		}
+		always = no
+	}
+	if = {
+		limit = {
+			FROM = {
+				original_tag = SOV
+				NOT = { has_global_flag = kis_brestlitovsk }
+			}
+		}
+		custom_trigger_tooltip={
+			tooltip=russia_send_ll_tt
+			always=no
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				original_tag = SOV
+				NOT = { has_global_flag = kis_brestlitovsk }
+			}
+		}
+		custom_trigger_tooltip={
+			tooltip=russia_receive_ll_tt
+			always=no
+		}
+	}
+}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
+	always=no
+}
+DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
+	always=no
+}
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+	always=no
+}
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+	always=no
+}
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+	always=no
+}
+DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
+	always=no
+}
+#DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
+#	always=no
+#}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	always=no
+}
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	always=no
+}

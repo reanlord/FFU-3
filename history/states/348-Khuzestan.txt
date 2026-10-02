@@ -1,0 +1,57 @@
+
+state={
+	id=348
+	name="STATE_348"
+	provinces={
+		100 137 168 753 1368 1559 1929 2240 3430 3450 3470 3489 3550 3573 4205 4217 5139 5668 5793 6047 6607 7247 7279 7425 7491 7831 8171 8188 8414 8879 9515 9542 10002 10238 10285 10776 11335 16058 16165 16179 16217 16234 16252 16287 16313 16341 16371 16377 16389 16394 16395 16400 16423 16425 16430 16436 16448 16457 16458 16476 16481 16484 16490 16501 16525 
+	}
+	manpower=950800
+	buildings_max_level_factor=1.000
+	state_category = rural
+	resources={
+		oil=40
+	}
+	history={
+		owner = PER
+		add_core_of = PER
+		buildings = {
+			infrastructure = 5
+			16377 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			168 1		#Murmuri
+		}
+		victory_points = {
+			3470 10		#Ahvaz
+		}
+		victory_points = {
+			6607 1		#Badreh
+		}
+		victory_points = {
+			8171 1		#Likak
+		}
+		victory_points = {
+			9515 1		#Gilanegharb
+		}
+		victory_points = {
+			10776 5		#Mehran
+		}
+		victory_points = {
+			16252 1		#Dehloran
+		}
+		victory_points = {
+			16377 5		#Bandar-e-Mahshahr
+		}
+		victory_points = {
+			16394 1		#Bandar-e-Deylam
+		}
+		victory_points = {
+			16490 1		#Abadan
+		}
+		1911.1.1.12 = {
+			owner = SWI
+		}
+	}
+}

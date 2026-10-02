@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		Russia_Throwing = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				supply_combat_penalties_on_core_factor = -0.50
+				dig_in_speed_factor = 0.50
+				max_dig_in_factor = 0.25
+			}
+		}
+		RUS_civil_war = {
+			
+			picture = trotskyite_plot
+			
+			allowed = {
+				tag = RUS
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		
+			modifier = {
+				min_export = -1.5
+			}
+			
+			rule = {
+				can_join_factions = no
+				can_access_market = no
+			}
+		}
+		
+		RUS_volunteers = {
+			
+			picture = RUS_vols
+			
+			allowed = {
+				tag = SOV
+			}
+			
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 11
+			}
+		}
+		
+		RUS_army_demobilized={
+			picture=militarism_focus
+			allowed={
+				tag=SOV
+			}
+			available={}
+			cancel={}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				training_time_factor = 1.0
+				minimum_training_level = 1.0
+			}
+		}
+	}
+}

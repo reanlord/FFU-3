@@ -1,0 +1,59 @@
+foreign_politics = {
+}
+
+austria_hungary_political_dominance = {
+
+	#Decision for: Austrian Political Dominance
+	austrianpoliticaldominance = {
+		icon = decision_generic_form_nation
+		allowed = { original_tag = AUS }
+		available = {
+			has_completed_focus = AUS_dual_monarchy
+			NOT = { has_idea = AUS_austrian_political_dominance }
+		}
+		complete_effect = {
+			add_ideas = AUS_austrian_political_dominance
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = AUS_hungarian_political_dominance
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = AUS_trialism
+		}
+		cost = 50
+	}
+
+	#Decision for: Hungarian Political Dominance 
+	hungarianpoliticaldominance = {
+		icon = decision_generic_form_nation
+		allowed = { original_tag = AUS }
+		available = {
+			has_completed_focus = AUS_dual_monarchy
+			NOT = { has_idea = AUS_hungarian_political_dominance }
+		}
+		complete_effect = {
+			add_ideas = AUS_hungarian_political_dominance
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = AUS_trialism
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = AUS_austrian_political_dominance
+		}
+		cost = 50
+	}
+	
+	#Decision for: Embrace Trialism
+	embracetrialism = {
+		icon = decision_generic_form_nation
+		allowed = { original_tag = AUS }
+		available = {
+			has_completed_focus = AUS_dual_monarchy
+			NOT = { has_idea = AUS_trialism }
+		}
+		complete_effect = {
+			add_ideas = AUS_trialism
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = AUS_hungarian_political_dominance
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = AUS_austrian_political_dominance
+		}
+		cost = 50
+	}
+}  

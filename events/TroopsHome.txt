@@ -1,0 +1,100 @@
+add_namespace=Troops_Home
+
+country_event = { #All troops tped home after 1st Balkan War; no need for mil access to get them out
+	id = Troops_Home.1
+	title = Troops_Home.1.t
+	desc = Troops_Home.1.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = {
+		name = Troops_Home.1.a
+	}
+	immediate={
+		TUR={
+			TUR_troops_home_capital=yes
+		}
+		GRE={
+			GRE_troops_home_capital=yes
+		}
+		SER={
+			SER_troops_home_capital=yes
+		}
+		MNT={
+			MNT_troops_home_capital=yes
+		}
+	}
+}
+
+country_event = { #All troops tped home after Brest-Litovsk
+	id = Troops_Home.2
+	title = Troops_Home.2.t
+	desc = Troops_Home.2.d
+	picture = GFX_romania_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = {
+		name = Troops_Home.2.a
+	}
+	immediate={
+		GER={
+			GER_troops_home_brestlitovsk=yes
+		}
+		AUS={
+			AUS_troops_home_brestlitovsk=yes
+		}
+		if={
+			limit={POL={exists=yes}}
+			POL={
+				POL_troops_home_brestlitovsk=yes
+			}
+		}
+		if={
+			limit={BUL={exists=yes}}
+			BUL={
+				BUL_troops_home_brestlitovsk=yes
+			}
+		}
+		if={
+			limit={TUR={exists=yes}}
+			TUR={
+				TUR_troops_home_brestlitovsk=yes
+			}
+		}
+		if={
+			limit={LBA={exists=yes}}
+			LBA={
+				LBA_troops_home_brestlitovsk=yes
+			}
+		}
+		SOV={
+			SOV_troops_home_brestlitovsk=yes
+		}
+		FRA={
+			FRA_troops_home_brestlitovsk=yes
+		}
+		ENG={
+			ENG_troops_home_brestlitovsk=yes
+		}
+		if={
+			limit={ITA={exists=yes}}
+			ITA={
+				ITA_troops_home_brestlitovsk=yes
+			}
+		}
+		if={
+			limit={BEL={exists=yes}}
+			BEL={
+				BEL_troops_home_brestlitovsk=yes
+			}
+		}
+		if={
+			limit={ROM={exists=yes}}
+			ROM={
+				ROM_troops_home_brestlitovsk=yes
+			}
+		}
+	}
+}

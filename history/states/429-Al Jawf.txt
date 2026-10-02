@@ -1,0 +1,42 @@
+#Al-Jawf
+state={
+	id=429
+	name="STATE_429"
+	resources={
+
+	}
+	
+	history={
+		#owner = JBS
+		#add_core_of = JBS
+		add_extra_state_shared_building_slots=1
+		buildings = {
+			infrastructure=3
+			industrial_complex=2
+		}
+		victory_points = {
+			16768 10	#Sakakah
+		}
+		victory_points = {
+			4911 5		#Arar
+		}
+		victory_points = {
+			16688 1		#Turaif
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+	
+	provinces={
+		1 139 174 773 796 871 910 915 1188 1479 1976 2351 2693 2766 2939 2996 4366 4521 4603 4644 4694 4911 4914
+		5494 5596 5829 5958 6320 6381 6460 6785 7806 8081 8220 8237 8268 8665 8712 8950 9071 9603 9847 9939
+		10150 10515 11114 11587
+		16668 16677 16684 16688 16712 16747 16750 16759 16768 16796
+	}
+	
+	manpower=185840
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

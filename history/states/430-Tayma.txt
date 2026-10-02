@@ -1,0 +1,30 @@
+#Tayma
+state={
+	id=430
+	name="STATE_430"
+	resources={
+
+	}
+	
+	history={
+		#owner = JBS
+		#add_core_of = JBS
+		add_extra_state_shared_building_slots=1
+		buildings = {
+			infrastructure=3
+			industrial_complex=1
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+	
+	provinces={
+		185 347 402 922 1286 2028 2158 3244 3454 3734 3910 4418 4602 5110 7081 7393 7447 8507 16938 17000 17039
+	}
+	
+	manpower=95030
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

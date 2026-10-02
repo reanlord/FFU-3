@@ -1,0 +1,139 @@
+capital = 409
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 1.0
+set_research_slots = 0
+set_stability = 0.80
+set_war_support = 0.05
+set_convoys = 400
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character=USA_william_h_taft
+recruit_character=USA_woodrow_wilson
+recruit_character=USA_charles_e_hughes
+recruit_character=USA_tasker_h_bliss
+recruit_character=USA_hugh_l_scott
+recruit_character=USA_john_j_pershing
+recruit_character=USA_hunter_liggett
+recruit_character=USA_peyton_c_march
+recruit_character=USA_robert_bullard
+recruit_character=USA_joseph_t_dickman
+recruit_character=USA_john_a_lejeune
+recruit_character=USA_leonard_wood
+recruit_character=USA_samuel_d_rockenbach
+recruit_character=USA_robert_alexander
+recruit_character=USA_thomas_edison
+recruit_character=USA_william_simmons
+recruit_character=USA_william_jennings_bryan
+#recruit_character=USA_edward_house
+#recruit_character=USA_george_b_mcclellan
+recruit_character=USA_henry_ford
+recruit_character=USA_nikola_tesla
+recruit_character=USA_oscar_w_underwood
+recruit_character=USA_john_rockefeller
+recruit_character=USA_william_mitchell
+recruit_character=USA_mason_patrick
+recruit_character=USA_william_s_sims
+recruit_character=USA_william_s_benson
+recruit_character=USA_henry_t_mayo
+recruit_character=USA_william_b_caperton
+recruit_character=USA_frank_f_fletcher
+recruit_character=USA_richmond_p_hobson
+recruit_character=USA_george_dewey
+recruit_character=USA_robert_e_coontz
+
+
+1910.1.1 = {
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		basic_train = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+		gwtank=1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Navy
+		transport = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_ship_hull_cruiser = 1
+		mtg_transport = 1
+		
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+
+		# Doctrine
+		
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1908.11.5"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 94
+	    fascism = 0
+	    communism = 6
+	    neutrality = 0
+	}
+
+	add_ideas = {
+		neutrality_idea
+		undisturbed_isolation 
+		disarmed_nation 
+		free_trade 
+		home_of_the_free
+		USA_industrial_titan
+	}
+	
+    add_equipment_to_stockpile= {	#Goes to SOV when annexed
+		type = train_equipment
+		amount = 500
+		producer = USA
+    }
+    add_equipment_to_stockpile= {	#Goes to SOV when annexed
+		type = motorized_equipment
+		amount = 5000
+		producer = USA
+    }
+}

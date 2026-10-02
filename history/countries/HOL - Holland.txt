@@ -1,0 +1,134 @@
+capital = 24
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 1.0
+set_research_slots = 0
+set_stability = 0.40
+set_convoys = 200
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = HOL_wilhelmina
+recruit_character = HOL_abraham_kuyper
+recruit_character = HOL_pieter_jelles_troelstra
+recruit_character = HOL_dufour
+recruit_character = HOL_cool
+recruit_character = HOL_weber
+recruit_character = HOL_forbes_wels
+recruit_character = HOL_pop
+recruit_character = HOL_neeteson
+recruit_character = HOL_van_terwisga
+recruit_character = HOL_latour
+recruit_character = HOL_michielsen
+recruit_character = HOL_de_greve
+recruit_character = HOL_van_rietschoten
+recruit_character = HOL_dijkstra
+recruit_character = HOL_burger
+recruit_character = HOL_thiange
+recruit_character = HOL_hein_ter_poorten
+recruit_character = HOL_gerardus_j._berenschot
+recruit_character = HOL_jacob_j._pesman
+recruit_character = HOL_gustav_a._ilgen
+recruit_character = HOL_cornelis_snijders
+recruit_character = HOL_pinke
+recruit_character = HOL_rambonnet
+recruit_character = HOL_ten_cate
+recruit_character = HOL_wentholt
+recruit_character = HOL_ellis
+recruit_character = HOL_tydeman
+recruit_character = HOL_conrad_e._l._helfrich
+recruit_character = HOL_gerard_jaapies
+
+
+set_technology = {
+	# Navy
+	transport = 1 # Naval Transport
+}
+
+
+1910.1.1 = {
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+		basic_train = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+		mtg_transport = 1
+
+		# Doctrine
+			}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1909.6.11"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 63
+	    fascism = 2
+	    communism = 20
+	    neutrality = 15
+	}
+
+	add_ideas = {
+		neutrality_idea
+        free_trade
+	}
+	
+	##Automatic embargo of non-cp nations
+	
+	every_country = {
+		limit = {
+			is_central_powers_country = no
+			NOT = { tag = HOL }
+		}
+		ROOT = {
+			diplomatic_relation = {
+				country = PREV
+				relation = embargo
+				active = yes
+			}
+		}
+	}
+
+}

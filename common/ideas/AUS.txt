@@ -1,0 +1,381 @@
+ideas={
+
+	naval_manufacturer={
+			designer = yes
+			stabilimento_tecnico_triestino={ allowed={ original_TAG=AUS } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_2 }
+			ganz_and_co={ allowed={ original_TAG=AUS } research_bonus={ naval_equipment=0.10 } traits={ raiding_fleet_naval_manufacturer } picture=generic_naval_manufacturer_3 }
+			}
+	aircraft_manufacturer={
+			designer = yes
+			osterreichische_aviatik={ allowed={ original_TAG=AUS } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
+			#kuk_militar_aeronautischen_anstalt={ allowed={ original_TAG=AUS } research_bonus={ air_equipment=0.10 } traits={ CAS_manufacturer } picture=generic_air_manufacturer_3 }
+			kuk_fliegerarsenal_fischamend={ allowed={ original_TAG=AUS } research_bonus={ air_equipment=0.10 } traits={ medium_aircraft_manufacturer } picture=generic_air_manufacturer_1 }
+			}
+	materiel_manufacturer={
+			designer = yes
+			osterreichische_waffenfabriksgesellschaft={ allowed={ original_TAG=AUS } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_3 }
+			kuk_munitionsfabrik_wollersdorf={ allowed={ original_TAG=AUS } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_1 }
+			}
+	tank_manufacturer={
+			designer = yes
+			steyr_daimler_puch={ allowed={ original_TAG=AUS } research_bonus={ armor=0.10 } traits={ tank_manufacturer } }
+			}
+	industrial_concern={
+		#Manfred Weiss
+		#csepel_works = {
+		#	allowed = { original_TAG = AUS }
+		#	research_bonus = { industry = 0.10 }
+		#	traits = { light_industry_concern }
+		#}
+		#Mavag
+		HUN_mavag = {
+			allowed = { original_TAG = AUS }
+			research_bonus = { industry = 0.05 }
+			traits = { railway_company }
+			#picture = generic_industrial_concern_3
+		}
+		#Skoda
+		CZE_skoda_works_2 = {
+			allowed = { original_TAG = AUS }
+			research_bonus = { industry = 0.10 }
+			traits = { industrial_concern }
+		}
+		#Galician-Carpathian Petroleum
+		maryampole= {
+			allowed = { original_TAG = AUS }
+			research_bonus = { industry = 0.05 }
+			traits = { refinery_concern }
+			#picture=generic_refining_concern_1
+			picture = generic_tank_manufacturer_3
+		}
+		#Tungsram
+		tungsram = {
+			allowed = { original_TAG = AUS }
+			research_bonus = { electronics = 0.10 }
+			traits = { electronics_concern }
+			#picture = generic_tank_manufacturer_2
+			picture = generic_energy_concern
+		}
+	}
+
+	country={
+
+		AUS_booming = {
+			picture = AUS_aFHUqXGY-50788
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		AUS_ruthenian_opposition = {
+			picture = AUS_ruthenian_opposition-50789
+			modifier = {
+				conscription_factor = -0.10
+                stability_factor = -0.05
+			}
+		}
+
+		AUS_czech_autonomy_demands = {
+			picture = AUS_czech_autonomy_demands-50791
+			modifier = {
+				stability_factor = -0.05
+                conscription_factor = -0.12
+			}
+		}
+
+		AUS_ruthenian_support = {
+			picture = AUS_ruthenian_support-50792
+			modifier = {
+				conscription_factor= -0.10
+                winter_attrition_factor = -0.20
+			}
+		}
+
+		AUS_czech_parliament = {
+			picture = AUS_czech_parliament-50793
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+                production_factory_start_efficiency_factor = 0.05
+                conscription_factor = -0.12
+			}
+		}
+
+		AUS_romanian_dissidents = {
+			picture = AUS_romanian_dissidents-50794
+			modifier = {
+				conscription_factor = -0.10
+			}
+		}
+
+		AUS_romanian_support = {
+			picture = AUS_romanian_support-50795
+			modifier = {
+				conscription_factor = -0.10
+                production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		AUS_serbian_aspirations = {
+			picture = AUS_serbian_aspirations-50796
+			modifier = {
+				stability_factor = -0.10
+                war_support_factor = -0.10
+				conscription_factor = -0.11
+			}
+		}
+		
+		AUS_polish_nationalism = {
+			picture = POL_looming_peasants_strike
+			#picture = POL_the_peasants_strike
+			modifier = {
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+		
+		AUS_polish_legions_raised = {
+			#picture = idea_generic_war_preparation
+			picture = air_war_plans_division_focus
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+
+		AUS_1912__1913_acts_of_protection = {
+			picture = AUS_1912__1913_acts_of_protection-46517
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		AUS_austrian_political_dominance = {
+			ledger = army
+			picture = AUS_austrian_political_dominance-46468
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		AUS_trialism = {
+			picture = AUS_trialism-51416
+			modifier = {
+				conscription = 0.02				
+				army_core_attack_factor = 0.04				
+				army_core_defence_factor = 0.04
+			}
+		}
+
+		AUS_hungarian_political_dominance = {
+			picture = hun_hungarian_monarchy_habsburg
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05             
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		AUS_austrian_military_staff = {
+			picture = AUS_austrian_military_staff-51417
+			modifier = {
+				#planning_speed = 0.20
+				max_planning = -0.05
+				max_dig_in = -5
+			}
+		}
+		
+		AUS_command_reshuffle = {
+			picture = AUS_austrian_military_staff-51417
+			modifier = {
+				max_dig_in = -5
+			}
+			on_remove = {
+				add_ideas = AUS_imperial_and_royal_staff
+			}
+		}
+		
+		AUS_imperial_and_royal_staff = {
+			picture = AUS_austrian_military_staff-51417
+			modifier = {
+				#experience_gain_army = 0.03
+				experience_gain_army_factor = 0.05
+				experience_gain_air_factor = 0.05
+				army_org_regain = 0.03
+			}
+		}
+		
+		AUH_ww1_Multinational_State = {
+
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier={ stability_factor=-0.10 surrender_limit=-0.15 }
+		}
+
+
+		AUH_ww1_House_Habsburg_Lorraine = {
+
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier={ 
+				political_power_gain = 0.1
+			}
+		}
+
+		AUS_trench_0 = {
+			allowed = {
+				original_tag = AUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		AUS_trench_1 = {
+
+			allowed = {
+				original_tag = AUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		AUS_trench_2 = {
+
+			allowed = {
+				original_tag = AUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		AUS_trench_3 = {
+
+			allowed = {
+				original_tag = AUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		AUS_trench_4 = {
+
+			allowed = {
+				original_tag = AUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+
+
+		AUH_ww1_je_creuse = {
+
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				dig_in_speed_factor = 0.25
+				max_dig_in_factor = 0.10
+				planning_speed = -0.15
+			}
+		}
+
+		AUS_off1 = {
+			allowed = {
+				original_tag = AUS
+				always = no #event or decision
+			}
+			picture = SPR_anti_fascist_crusade
+			
+			modifier={
+				army_attack_factor=-0.10
+				army_defence_factor=-0.10
+			}
+			targeted_modifier = {
+				TAG = SOV
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				TAG = ROM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+
+		}
+		
+		AUS_off2 = {
+			allowed = {
+				original_tag = AUS
+				always = no #event or decision
+			}
+			picture = SPR_anti_fascist_crusade
+
+			targeted_modifier = {
+				TAG = SER
+				attack_bonus_against = 0.3
+			}
+		}
+	}
+}

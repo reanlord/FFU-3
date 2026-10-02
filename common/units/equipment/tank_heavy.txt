@@ -1,0 +1,122 @@
+equipments = {
+
+	heavy_tank_equipment = {
+		year = 1900
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_heavy_tank_equipment
+		is_buildable = no
+		is_convertable = yes
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 30
+		hardness = 0.8
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 30
+		ap_attack = 111
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 14
+		
+		build_cost_ic = 42 
+		resources = {
+			#oil = 1
+			steel = 3
+			chromium = 3
+		}
+		
+		fuel_consumption = 4.4
+	}
+
+	# WW1 [1]
+	ww1_heavy_tank_equipment_1 = {
+		archetype = heavy_tank_equipment		
+		priority = 90
+		visual_level = 0
+		
+	}
+	
+	# WW1 [2]
+	ww1_heavy_tank_equipment_2 = {
+		archetype = heavy_tank_equipment	
+		parent = ww1_heavy_tank_equipment_1
+		priority = 90
+		visual_level = 0
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 40
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 35
+		hard_attack = 40
+		ap_attack = 131
+
+		build_cost_ic = 42
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+		fuel_consumption = 4.1
+	}
+	
+	# WW1 [3]
+	ww1_heavy_tank_equipment_3 = {
+		archetype = heavy_tank_equipment	
+		parent = ww1_heavy_tank_equipment_2	
+		priority = 90
+		visual_level = 0
+
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 45
+		hardness = 0.9
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 36
+		hard_attack = 20
+		ap_attack = 40
+		air_attack = 0
+
+		build_cost_ic = 50
+		resources = {
+			#oil = 1
+			steel = 3
+			wood = 3
+		}
+		fuel_consumption = 4.2
+	}
+}

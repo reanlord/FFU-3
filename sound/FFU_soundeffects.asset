@@ -1,0 +1,266 @@
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = ffu_war_begins
+	loop = no
+	sounds = {
+		sound = ffu_war_begins_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_russian_civil_war
+	loop = no
+	sounds = {
+		sound = FFU_russian_civil_war_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 2
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_franz_joseph_dead
+	loop = no
+	sounds = {
+		sound = FFU_franz_joseph_dead_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 2
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_first_balkan_war_begins
+	loop = no
+	sounds = {
+		sound = FFU_first_balkan_war_begins_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 2
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_jihad
+	loop = no
+	sounds = {
+		sound = FFU_jihad_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 2
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_black_sea_raid
+	loop = no
+	sounds = {
+		sound = FFU_black_sea_raid_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 2
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_schlieffen_plan
+	loop = no
+	sounds = {
+		sound = FFU_schlieffen_plan_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 0.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_christmas_truce
+	loop = no
+	sounds = {
+		sound = FFU_christmas_truce_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 2
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = russe1
+	loop = no
+	sounds = {
+		sound = russe1
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = russe2
+	loop = no
+	sounds = {
+		sound = russe2
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_UK1
+	loop = no
+	sounds = {
+		sound = FFU_UK1
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_UK2
+	loop = no
+	sounds = {
+		sound = FFU_UK2
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_aus_serbia
+	loop = no
+	sounds = {
+		sound = FFU_aus_serbia
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_aus_russia
+	loop = no
+	sounds = {
+		sound = FFU_aus_russia
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_UK3
+	loop = no
+	sounds = {
+		sound = FFU_UK3
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GRE_OFF
+	loop = no
+	sounds = {
+		sound = FFU_GRE_OFF
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.3
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_UK4
+	loop = no
+	sounds = {
+		sound = FFU_UK4
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_WEST1
+	loop = no
+	sounds = {
+		sound = FFU_GER_WEST1
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_WEST2
+	loop = no
+	sounds = {
+		sound = FFU_GER_WEST2
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_WEST3
+	loop = no
+	sounds = {
+		sound = FFU_GER_WEST3
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_WEST4
+	loop = no
+	sounds = {
+		sound = FFU_GER_WEST4
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_EST1
+	loop = no
+	sounds = {
+		sound = FFU_GER_EST1
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_EST2
+	loop = no
+	sounds = {
+		sound = FFU_GER_EST2
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = FFU_GER_EST3
+	loop = no
+	sounds = {
+		sound = FFU_GER_EST3
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+
+# idk how to fix "SoundEffect 'FFU_GER_EST3' does not have a category assigned" error, however this may help https://hoi4.paradoxwikis.com/Sound_modding

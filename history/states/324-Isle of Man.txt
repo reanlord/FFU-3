@@ -1,0 +1,29 @@
+
+state={
+	id=324
+	name="STATE_324"
+	provinces={
+		17285
+	}
+	manpower=44300
+	buildings_max_level_factor=1.000
+	state_category = tiny_island
+	history = {
+		owner = ENG
+		#add_core_of = ENG
+		buildings = {
+			infrastructure = 10
+			air_base = 1
+			17285 = {
+				coastal_bunker = 5
+			}
+		}
+		victory_points = {
+			17285 1 
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+}

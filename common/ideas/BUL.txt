@@ -1,0 +1,195 @@
+ideas={
+	political_advisor={
+			BUL_stoyan_danev={ allowed={ original_TAG=BUL } traits={ quartermaster_general } ai_will_do={ factor=1 } }
+			BUL_nikola_genadiev={ allowed={ original_TAG=BUL } traits={ silent_workhorse } ai_will_do={ factor=1 } }
+			BUL_ivan_evstratiev_geshov={ allowed={ original_TAG=BUL } traits={ armaments_organizer } ai_will_do={ factor=1 } }
+			BUL_mikhail_madzharov={ allowed={ original_TAG=BUL } traits={ ideological_crusader } ai_will_do={ factor=1 } }
+			#BUL_racho_petrov={ allowed={ original_TAG=BUL } traits={ democratic_reformer } ai_will_do={ factor=1 } }
+			BUL_atanas_vatev={ allowed={ original_TAG=BUL } traits={ compassionate_gentleman } ai_will_do={ factor=1 } }
+			BUL_rayko_daskalov={ allowed={ original_TAG=BUL } traits={ fortification_engineer } ai_will_do={ factor=1 } }
+			BUL_todor_ivanchov={ allowed={ original_TAG=BUL } traits={ captain_of_industry } ai_will_do={ factor=1 } }
+			BUL_marko_tourlakov={ allowed={ original_TAG=BUL } traits={ smooth_talking_charmer } ai_will_do={ factor=1 } }
+			BUL_kristo_pastukhov={ allowed={ original_TAG=BUL } traits={ popular_figurehead } ai_will_do={ factor=1 } }
+			}
+
+	aircraft_manufacturer={
+			
+			cbsa={ allowed={ original_TAG=BUL } research_bonus={ air_equipment=0.10 } traits={ CAS_manufacturer } picture=generic_air_manufacturer_2 }
+			}
+	materiel_manufacturer={
+			
+			kazanlak_state_military_factory={ allowed={ original_TAG=BUL } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
+			vereinigte_rottweiler_pulverfabriken={ allowed={ original_TAG=BUL } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_3 }
+			}
+	industrial_concern={
+			
+			pernik_complex={ allowed={ original_TAG=BUL }    research_bonus = {
+							    industry = 0.10
+							    
+							   } traits={ industrial_concern } picture=generic_tank_manufacturer_2 }
+			}
+	country={
+
+		BUL_trench_0 = {
+			allowed = {
+				original_tag = BUL
+			}
+ 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		BUL_trench_1 = {
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		BUL_trench_2 = {
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		BUL_trench_3 = {
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		BUL_trench_4 = {
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+	
+
+			BUL_skoda_works = {
+			picture = GFX_deploy_reserve_division_big
+			allowed = {
+				original_tag = BUL
+				original_tag = GRE
+				original_tag = SER
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+}
+
+		BUL_artillery_focus = {
+		
+			allowed = {
+				original_tag = BUL
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ITA_lacking_heavy_guns
+			
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+			}
+
+			equipment_bonus = {
+				heavy_field_gun_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				light_field_gun_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				machine_gun_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+			}
+		}
+		BUL_nation_in_arms = {
+			picture = SWE_varnplikt
+			allowed = {
+				original_TAG = BUL
+			}
+			modifier = {
+				conscription = 0.06
+				mobilization_speed = 0.25
+				consumer_goods_expected_value = 0.01
+				stability_weekly = -0.002
+			}
+		}
+	}
+}

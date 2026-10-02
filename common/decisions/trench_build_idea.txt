@@ -1,0 +1,3 @@
+SWI_trench_effect_decisions = {
+########	UNUSED + REMOVED FOR OPTIMIZATION
+}

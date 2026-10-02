@@ -1,0 +1,40 @@
+state={
+	id=41
+	name="STATE_41"
+	provinces={
+		3322 5947 6172 7513 9925 16711 17408 
+	}
+	manpower=151500
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 4
+			16711 = {
+				naval_base = 2
+			}
+			17408 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			16711 5
+		}
+		victory_points = {
+			7513 1
+		}
+		victory_points = {
+			17408 1
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+	resources = {
+		steel = 29
+		coal = 16
+	}
+}

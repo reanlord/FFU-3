@@ -1,0 +1,363 @@
+﻿l_english:
+
+
+ #--------------------------------------------------------------
+ # [RUSSIAN EMPIRE] Army Effort
+ #=========================================================================
+ 
+SOV_Kerensky:0 "Kerensky Offensive"
+SOV_Kerensky_desc:0 " "
+ 
+SOV_Brusilov:0 "Brusilov Offensive"
+SOV_Brusilov_desc:0 " "
+ 
+SOV_ww1_army_effort_1:0 "Army Effort"
+SOV_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_2:0 "Army Effort II"
+SOV_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_3:0 "Army Effort III"
+SOV_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_4:0 "Army Effort IV"
+SOV_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_5:0 "Army Effort V"
+SOV_ww1_army_effort_5_desc:0 "" #Frenchie
+
+SOV_ww1_equipment_effort_1:0 "Equipment Effort"
+SOV_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_2:0 "Equipment Effort II"
+SOV_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_3:0 "Equipment Effort III"
+SOV_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_4:0 "Equipment Effort IV"
+SOV_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_5:0 "Equipment Effort V"
+SOV_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+SOV_ww1_artillery_effort_1:0 "Artillery Effort"
+SOV_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_2:0 "Artillery Effort II"
+SOV_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_3:0 "Artillery Effort III"
+SOV_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_4:0 "Artillery Effort IV"
+SOV_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_5:0 "Artillery Effort V"
+SOV_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+SOV_ww1_aircraftprod_1:0 "Aircraft Production"
+SOV_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_2:0 "Aircraft Production II"
+SOV_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_3:0 "Aircraft Production III"
+SOV_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_4:0 "Aircraft Production IV"
+SOV_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_5:0 "Aircraft Production V"
+SOV_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+SOV_ww1_large_navy_1:0 "Naval Aviation"
+SOV_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_2:0 "Naval and Aviation Reform II"
+SOV_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_3:0 "Naval and Aviation Reform III"
+SOV_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_4:0 "Naval and Aviation Reform IV"
+SOV_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_5:0 "Naval and Aviation Reform V"
+SOV_ww1_large_navy_5_desc:0 "" #Frenchie
+
+SOV_ww1_special_forces:0 "Special Forces Focus"
+SOV_ww1_special_forces_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_motorization_focus:0 "Motorization Focus"
+SOV_ww1_army_motorization_focus_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_doctrine_effort:0 "Doctrine Effort"
+SOV_ww1_doctrine_effort_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_doctrine_effort_2:0 "Doctrine Effort II"
+SOV_ww1_doctrine_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_doctrine_effort_3:0 "Doctrine Effort III"
+SOV_ww1_doctrine_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_armor_effort_1:0 "Armor Effort"
+SOV_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_armor_effort_2:0 "Armor Effort II"
+SOV_ww1_armor_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_gasmask_focus:0 "Chemical Warfare Focus"
+SOV_ww1_gasmask_focus_desc:0 "" #KAISER_ANONY
+
+
+
+SOV_seperate_cossack_regiments:0 "Seperate Cossack Regiments"
+SOV_seperate_cossack_regiments_desc:0 ""
+SOV_cossacks_got_some_tricks:0 "Cossacks got some tricks"
+SOV_cossacks_got_some_tricks_desc:0 ""
+SOV_folk_wisdom:0 "Folk Wisdom"
+SOV_folk_wisdom_desc:0 ""
+SOV_support_serbia:0 "Support Serbia"
+SOV_support_serbia_desc:0 ""
+SOV_orthodox_brotherhood:0 "Orthodox Brotherhood"
+SOV_orthodox_brotherhood_desc:0 ""
+SOV_address_economic_stagnation:0 "Address Economic Stagnation"
+SOV_address_economic_stagnation_desc:0 ""
+SOV_emergency_war_credit:0 "Emergency War Credit"
+SOV_emergency_war_credit_desc:0 ""
+SOV_emergency_war_credit_tt:0 "§CBlocks all external trade.§!"
+SOV_moscow_industrial_project:0 "Moscow Industrial Project"
+SOV_moscow_industrial_project_desc:0 ""
+SOV_increased_rail_efficiency__planning:0 "Increased Rail Efficiency & Planning"
+SOV_increased_rail_efficiency__planning_desc:0 ""
+SOV_increased_research_development:0 "Increased Research Development"
+SOV_increased_research_development_desc:0 ""
+SOV_kiev_industrial_project:0 "Kiev Industrial Project"
+SOV_kiev_industrial_project_desc:0 ""
+SOV_military_rail_improvements:0 "Military Rail Improvements"
+SOV_military_rail_improvements_desc:0 ""
+SOV_st_petersburg_industrial_project:0 "St. Petersburg Industrial Project"
+SOV_st_petersburg_industrial_project_desc:0 ""
+SOV_investigations_into_royal_corruption:0 "Investigations into Royal Corruption"
+SOV_investigations_into_royal_corruption_desc:0 ""
+SOV_abolish_obshchina_system:0 "Abolish Obshchina System"
+SOV_abolish_obshchina_system_desc:0 ""
+SOV_stolypins_land_reform:0 "Stolypin's Land Reform"
+SOV_stolypins_land_reform_desc:0 ""
+SOV_protsar_duma:0 "Pro-Tsar Duma"
+SOV_protsar_duma_desc:0 ""
+SOV_dissolve_the_duma:0 "Dissolve the Duma"
+SOV_dissolve_the_duma_desc:0 ""
+SOV_tsar_personal_command:0 "Tsar Personal Command"
+SOV_tsar_personal_command_desc:0 ""
+SOV_tsar_personal_command_tt:0 "§CAvailable January 1 1915, or if you have lost ONE of the four key cities.§!"
+SOV_obukhov_plant:0 "Obukhov Plant"
+SOV_obukhov_plant_desc:0 ""
+SOV_motovilikha_plant:0 "Motovilikha Plant"
+SOV_motovilikha_plant_desc:0 ""
+SOV_redeploy_far_east_army:0 "Redeploy Far East Army"
+SOV_redeploy_far_east_army_desc:0 ""
+SOV_far_east_army_tt:0 "§CSpawns 50 infantry divisions.§!"
+SOV_degtyaryov_plant:0 "Degtyaryov Plant"
+SOV_degtyaryov_plant_desc:0 ""
+SOV_reformation_of_the_empire:0 "Reformation of the Empire"
+SOV_reformation_of_the_empire_desc:0 ""
+SOV_baltic_fleet_priority:0 "Baltic Fleet Priority"
+SOV_baltic_fleet_priority_desc:0 ""
+SOV_free_political_prisoners:0 "Free Political Prisoners"
+SOV_free_political_prisoners_desc:0 ""
+SOV_tsar_supremacy:0 "Tsar Supremacy"
+SOV_tsar_supremacy_desc:0 ""
+SOV_strengthen_third_state_duma:0 "Strengthen Third State Duma"
+SOV_strengthen_third_state_duma_desc:0 ""
+SOV_expanded_okhrana:0 "Expanded Okhrana"
+SOV_expanded_okhrana_desc:0 ""
+SOV_emergency_fourth_state_duma_meetings:0 "Emergency Fourth State Duma Meetings"
+SOV_emergency_fourth_state_duma_meetings_desc:0 ""
+SOV_limit_tsar_influence:0 "Limit Tsar Influence"
+SOV_limit_tsar_influence_desc:0 ""
+SOV_additional_siberian_gulags:0 "Additional Siberian Gulags"
+SOV_additional_siberian_gulags_desc:0 ""
+SOV_izhevsk_machinebuilding_plant:0 "Izhevsk Machine-Building Plant"
+SOV_izhevsk_machinebuilding_plant_desc:0 ""
+SOV_stimulate_steel_market:0 "Stimulate Steel Market"
+SOV_stimulate_steel_market_desc:0 ""
+SOV_tsushima_humiliation_lessons:0 "Tsushima Humiliation Lessons"
+SOV_tsushima_humiliation_lessons_desc:0 ""
+SOV_dominant_black_sea_fleet:0 "Dominant Black Sea Fleet"
+SOV_dominant_black_sea_fleet_desc:0 ""
+SOV_light_hulls_development:0 "Light Hulls Development"
+SOV_light_hulls_development_desc:0 ""
+SOV_statute_on_land_organization:0 "Statute on Land Organization"
+SOV_statute_on_land_organization_desc:0 ""
+SOV_increased_military_budget:0 "Increased Military Budget"
+SOV_increased_military_budget_desc:0 ""
+SOV_military_inspection_services:0 "Military Inspection Services"
+SOV_military_inspection_services_desc:0 ""
+SOV_tula_arms_plant:0 "Tula Arms Plant"
+SOV_tula_arms_plant_desc:0 ""
+SOV_active__reserve_troops_reforms:0 "Active & Reserve Troops Reforms"
+SOV_active__reserve_troops_reforms_desc:0 ""
+SOV_peasant_land_bank:0 "Peasant Land Bank"
+SOV_peasant_land_bank_desc:0 ""
+SOV_expand_industrialization:0 "Expand Industrialization"
+SOV_expand_industrialization_desc:0 ""
+SOV_modernization__developement_of_rail:0 "Modernization & Developement of Rail"
+SOV_modernization__developement_of_rail_desc:0 ""
+SOV_main_directorate_of_the_general_staff:0 "Main Directorate of the General Staff"
+SOV_main_directorate_of_the_general_staff_desc:0 ""
+SOV_dreadnought__battleship_development:0 "Dreadnought & Battleship Development"
+SOV_dreadnought__battleship_development_desc:0 ""
+SOV_integration_of_the_cossacks:0 "Integration of the Cossacks"
+SOV_integration_of_the_cossacks_desc:0 ""
+SOV_army_reform:0 "Army Reform"
+SOV_army_reform_desc:0 ""
+SOV_concessions_to_radicals:0 "Concessions to Radicals"
+SOV_concessions_to_radicals_desc:0 ""
+SOV_war_industries_committees:0 "War Industries Committees"
+SOV_war_industries_committees_desc:0 ""
+SOV_promote_competent_generals:0 "Promote Competent Generals"
+SOV_promote_competent_generals_desc:0 ""
+SOV_promote_competent_generals_tt:0 "§CAvailable July 1 1915, or if you have lost TWO of the four key cities.§!"
+SOV_support_greece:0 "Support Greece"
+SOV_support_greece_desc:0 ""
+SOV_tsar_tank:0 "Tsar Tank"
+SOV_tsar_tank_desc:0 ""
+SOV_the_russian_steamroller:0 "Lessons of War"
+SOV_the_russian_steamroller_desc:0 ""
+SOV_the_russian_steamroller_tt:0 "§CAvailable January 1 1916, or if you have lost THREE of the four key cities.§!"
+SOV_czech_legions:0 "Czechoslovak Legions"
+SOV_czech_legions_desc:0 ""
+SOV_franco_russian_alliance:0 "French Arms Deliveries"
+SOV_franco_russian_alliance_desc:0 ""
+SOV_support_romania:0 "Support Romania"
+SOV_support_romania_desc:0 ""
+SOV_fortify_western_cities:0 "Fortify Western Cities"
+SOV_fortify_western_cities_desc:0 ""
+SOV_standing_alone:0 "Standing Alone"
+SOV_standing_alone_desc:0 ""
+SOV_Galicia:0 "Galicia Offensive"
+SOV_incompetent_stavka:0 "Incompetent Stavka"
+SOV_incompetent_stavka_tsar:0 "Incompetent Stavka"
+SOV_reformed_stavka:0 "Reorganized Stavka"
+SOV_russian_steamroller:0 "Russian Steamroller"
+            ####Decisions####
+infrastructure_modernization:0 "Infrastructure Modernization "
+infrastructure_modernization_desc:0 "Because of the vastness of the country, Russia's railroad system not only suffered from its insufficient network, but also from a comparably low volume in traffic. This was true even though the sixteen Russian producers of goods wagons increased their carrying capacity from 12,285 kilograms to 14,742 kilograms per unit on the eve of the war."
+westukrainerailmodernization:0 "West Ukraine Rail Modernization"
+westukrainerailmodernization_desc:0 ""
+stpeterburgrailmodernization:0 "St.Petersburg Modernization"
+stpeterburgrailmodernization_desc:0 ""
+moscowrailmodernization:0 "Moscow Rail Modernization"
+moscowrailmodernization_desc:0 ""
+belarusrailmodernization:0 "Belarus Modernization"
+belarusrailmodernization_desc:0 "
+fourth_duma_assembly:0 "Fouth State Duma Assembly"
+arrestantiwardissidents:0 "Arrest Anti War Dissidents"
+arrestantiwardissidents_desc:0 ""
+concedeprivilegestopeasants:0 "Concede Privileges To Peasants"
+concedeprivilegestopeasants_desc:0 ""
+
+SOV_tsar_tank_tt:0 "§CYou will recieve 600 Heavy tanks and a free division if Heavy tanks are ALREADY researched.§!"
+SOV_cossacks_got_some_tricks_tt:0 "§CYou will recieve 480 tachankas(4 divs), if tachankas are ALREADY researched.§!"
+SOV_fourth_duma_assembly_tt:0 "§CThese decisions will allow you to trade 5% stability for 5% war support and vice versa.§!"
+ kis_brestlitovsk:0 "Treaty of Brest-Litovsk"
+ kis_tsarnicholasabdicated:0 "Tsar Abdicated"
+ is_america_flag:0 "United States entered war"
+ 
+ russia_send_ll_tt:0 "Russia cannot send lend-lease."
+ russia_receive_ll_tt:0 "Russia cannot receive lend-lease."
+ 
+ no_license_flag:0 "Russia cannot use production licensing"     #Unused
+ russia_buy_license_tt:0 "Russia cannot buy equipment licenses unless a certain focus is taken. This restriction does not apply to Romania."
+ russia_sell_license_tt:0 "Russian equipment cannot be licensed unless a certain focus is taken. This restriction does not apply to Romania."
+ 
+ SOV_convict_workshops:0 "Convict Workshops"
+ SOV_desperate_production:0 "Increased Weapons Production"
+ russian_autarky:0 "Russian Autarky"
+ SOV_trade_blocker:0 "Russian Autarky"
+ 
+ 
+ SOV_casualties_0:"Strikes"
+ SOV_casualties_0_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_1:"Strikes"
+ SOV_casualties_1_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_2:"Strikes"
+ SOV_casualties_2_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_3:"Strikes"
+ SOV_casualties_3_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_4:"Strikes"
+ SOV_casualties_4_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_5:"Strikes"
+ SOV_casualties_5_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_6:"Strikes"
+ SOV_casualties_6_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_7:"Strikes"
+ SOV_casualties_7_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_8:"Strikes"
+ SOV_casualties_8_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_9:"Strikes"
+ SOV_casualties_9_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_10:"Strikes"
+ SOV_casualties_10_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_11:"Strikes"
+ SOV_casualties_11_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_12:"Strikes"
+ SOV_casualties_12_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_13:"Strikes"
+ SOV_casualties_13_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_14:"Strikes"
+ SOV_casualties_14_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_15:"Strikes"
+ SOV_casualties_15_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_16:"Strikes"
+ SOV_casualties_16_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_17:"Strikes"
+ SOV_casualties_17_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_18:"Strikes"
+ SOV_casualties_18_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_19:"Strikes"
+ SOV_casualties_19_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_20:"Strikes"
+ SOV_casualties_20_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_21:"Strikes"
+ SOV_casualties_21_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_22:"Strikes"
+ SOV_casualties_22_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_23:"Strikes"
+ SOV_casualties_23_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_24:"Strikes"
+ SOV_casualties_24_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_25:"Strikes"
+ SOV_casualties_25_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_26:"Strikes"
+ SOV_casualties_26_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_27:"Strikes"
+ SOV_casualties_27_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_28:"Strikes"
+ SOV_casualties_28_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_29:"Strikes"
+ SOV_casualties_29_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_30:"Strikes"
+ SOV_casualties_30_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_31:"Strikes"
+ SOV_casualties_31_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_32:"Strikes"
+ SOV_casualties_32_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_33:"Strikes"
+ SOV_casualties_33_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_34:"Strikes"
+ SOV_casualties_34_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_35:"Strikes"
+ SOV_casualties_35_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_36:"Strikes"
+ SOV_casualties_36_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_37:"Strikes"
+ SOV_casualties_37_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_38:"Strikes"
+ SOV_casualties_38_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_39:"Strikes"
+ SOV_casualties_39_desc:"Strikes will get worse as Russia's casualties increase."
+ SOV_casualties_40:"Strikes"
+ SOV_casualties_40_desc:"Strikes will get worse as Russia's casualties increase."

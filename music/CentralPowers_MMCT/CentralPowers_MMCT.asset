@@ -1,0 +1,46 @@
+# CP music:
+music = {
+    name = "der_toten_erwachen"
+    file = "Der Toten Erwachen.ogg"
+    volume = 0.65
+}
+music = {
+    name = "die_grenzwacht_hielt_im_osten"
+    file = "Die Grenzwacht hielt im Osten.ogg"
+    volume = 0.65
+}
+music = {
+    name = "freikorps_voran"
+    file = "Freikorps voran.ogg"
+    volume = 0.65
+}
+music = {
+    name = "morgen_marschieren_wir"
+    file = "Morgen marschieren wir.ogg"
+    volume = 0.65
+}
+music = {
+    name = "preussens_gloria"
+    file = "Preussens Gloria.ogg"
+    volume = 0.65
+}
+music = {
+    name = "radetzky_march"
+    file = "Radetzky March.ogg"
+    volume = 0.65
+}
+music = {
+    name = "wir_fahren_gegen_engelland"
+    file = "Wir fahren gegen Engelland.ogg"
+    volume = 0.65
+}
+music = {
+    name = "wir_traben_ins_rote_turnei"
+    file = "Wir traben ins rote Turnei.ogg"
+    volume = 0.65
+}
+music = {
+    name = "wo_alle_strassen_enden"
+    file = "Wo alle Strassen enden.ogg"
+    volume = 0.65
+}

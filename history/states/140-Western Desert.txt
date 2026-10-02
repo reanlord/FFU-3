@@ -1,0 +1,46 @@
+
+state={
+	id=140
+	name="STATE_140"
+	#impassable = yes
+	history={
+		#owner = ENG
+		owner = LBA
+		add_core_of = LBA
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			infrastructure = 1
+			anti_air_building = 5
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			2122 2		#Siwa
+		}
+		victory_points = {
+			4108 3		#Bahariya
+		}
+		victory_points = {
+			6855 1		#Farafra
+		}
+		add_dynamic_modifier = {
+			modifier = LBA_senussi_stronghold_modifier
+		}
+		1911.1.1.4 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		8 60 135 425 445 665 883 920 1426 1452 1500 1662 1693 1728 1916 2003 2122 2313 2529 2537 2875 2926 3035 3130 3292 3362 3372 3532 3572 3629 3892 3987 4108 4319 4371 4404 4530 5878 5979 6067 6104 6131 6170 6280 6434 6468 6514 6612 6855 6985 7186 7202 7683 7735 8064 8996 9080 9213 9411 9620 10018 10177 10497 10544 11504 11537 16997 17018 17046 17069 17081 17084 17091 17102 17115 17136 17138 17146 17148 17158 17162 17165 
+	}
+	manpower=14109
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	resources={
+		wood=9
+		aluminium=2
+		rubber=1
+	}
+}

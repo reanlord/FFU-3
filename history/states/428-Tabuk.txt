@@ -1,0 +1,33 @@
+#Tabuk
+state={
+	id=428
+	name="STATE_428"
+	resources={
+
+	}
+	
+	history={
+		#owner = JBS
+		#add_core_of = JBS
+		add_extra_state_shared_building_slots=1
+		buildings = {
+			infrastructure=3
+			industrial_complex=1
+		}
+		victory_points = {
+			427 10	#Tabuk
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+	
+	provinces={
+		91 427 545 966 2115 2789 2929 4394 6274 6423 6609 6624 6878 7509 7929 8227 11116 11451 16892 16942 16984 
+	}
+	
+	manpower=145600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

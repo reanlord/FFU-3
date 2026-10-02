@@ -1,0 +1,17 @@
+characters = {
+	FIN_pehr_evind_svinhufvud = {
+		name = "Pehr Evind Svinhufvud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/FIN_pehr_evind_svinhufvud.dds"
+			}
+		}
+		country_leader = {
+			ideology=conservatism
+			expire="1935.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+	}
+}

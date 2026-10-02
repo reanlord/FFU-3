@@ -1,0 +1,277 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }	
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		gunner_support = { x = 0 y = 1 }
+	}
+}
+
+###################################################################
+
+units = {
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+
+	division= { 
+		name = "Divizia 1 Infanterie"
+		location = 11566 # Bucharest
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
+	
+	
+	division= { 
+			name = "Divizia 2 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Divizia 3 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.05
+			}
+	
+	
+	division= { 
+			name = "Divizia 4 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Divizia 9 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "1. Brigazi Calarasi"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "2. Brigazi Calarasi"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Divizia 5 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Divizia 6 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Divizia 7 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Divizia 8 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.05
+			}
+	
+	
+	division= { 
+			name = "Divizia 1 Cavalerie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Brigazi 4. Rosiori"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+
+	division= { 
+			name = "Divizia 20 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+
+	division= { 
+			name = "Divizia 21 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+			
+	division= { 
+			name = "Divizia 22 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+			
+	division= { 
+			name = "Divizia 23 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+			
+	division= { 
+			name = "Divizia 24 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+			
+	division= { 
+			name = "Divizia 25 Infanterie"
+			location = 11566 # Bucharest
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	}
+
+	instant_effect = {
+		add_equipment_production = { equipment = { type = train_equipment_1 creator = "ROM" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:ROM_infantry_tank_organization }
+		add_equipment_production = { equipment = { type = support_equipment_1 creator = "ROM"  } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:ROM_infantry_equipment_organization }
+		add_equipment_production = { equipment = { type = machine_gun_equipment_1 creator = "ROM" } requested_factories = 2 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:ROM_infantry_equipment_organization }
+		add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "ROM" } requested_factories = 1 progress = 0.1 efficiency = 50 industrial_manufacturer = mio:ROM_infantry_equipment_organization }
+	}

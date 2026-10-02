@@ -1,0 +1,59 @@
+equipments = {
+	
+	# Zeppelin 1
+	ww1_zeppelin_equipment_1 = {
+		archetype = large_plane_airframe
+		priority = 140
+		allow_mission_type = {
+			cas
+			naval_bomber
+			port_strike
+			attack_logistics
+			strategic_bomber
+			training
+		}
+		air_range = 2500
+		maximum_speed = 80
+    	air_agility = 5
+    	air_attack = 25
+    	air_defence = 25
+    	air_bombing = 20
+		
+		build_cost_ic = 220
+		resources = {
+			#oil = 1
+			aluminium = 3
+			wood = 5
+		}
+		fuel_consumption = 0.34
+	}
+
+	# Zeppelin 2
+	ww1_zeppelin_equipment_2 = {
+		archetype = large_plane_airframe
+		parent = ww1_zeppelin_equipment_1
+		priority = 140
+		allow_mission_type = {
+			cas
+			naval_bomber
+			port_strike
+			attack_logistics
+			strategic_bomber
+			training
+		}
+		air_range = 2600
+		maximum_speed = 120
+    	air_agility = 7
+    	air_attack = 35
+    	air_defence = 35
+    	air_bombing = 30
+		
+		build_cost_ic = 235
+		resources = {
+			#oil = 1
+			aluminium = 3
+			wood = 5
+		}
+		fuel_consumption = 0.37
+	}
+}

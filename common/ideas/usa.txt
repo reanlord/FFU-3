@@ -1,0 +1,298 @@
+ideas={
+
+	naval_manufacturer={
+			 
+			newport_news_shipbuilding={ allowed={ original_TAG=USA } research_bonus={ naval_equipment=0.10 } traits={ pacific_fleet_naval_manufacturer } }
+			brooklyn_naval_yard={ allowed={ original_TAG=USA } research_bonus={ naval_equipment=0.10 } traits={ atlantic_fleet_naval_manufacturer } }
+			norfolk_naval_yard={ allowed={ original_TAG=USA } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } }
+			philadelphia_naval_shipyard={ allowed={ original_TAG=USA } research_bonus={ naval_equipment=0.10 } traits={ convoy_escort_naval_manufacturer } picture=generic_naval_manufacturer_2 }
+			}
+	aircraft_manufacturer={
+			 
+			boeing={ allowed={ original_TAG=USA } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
+			curtiss_wright={ allowed={ original_TAG=USA } research_bonus={ air_equipment=0.10 } traits={ naval_aircraft_manufacturer } picture=generic_air_manufacturer_3 }
+			douglas_aircraft_company={ allowed={ original_TAG=USA } research_bonus={ air_equipment=0.10 } traits={ CAS_manufacturer } }
+			consolidated_aircraft={ allowed={ original_TAG=USA } research_bonus={ air_equipment=0.10 } traits={ heavy_aircraft_manufacturer } }
+			}
+	materiel_manufacturer={
+			 
+			springfield_armory={ allowed={ original_TAG=USA } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } }
+			winchester_repeating_arms_co={ allowed={ original_TAG=USA } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_infantry_equipment_manufacturer_1 }
+			}
+	industrial_concern={
+			 
+			standard_oil_california={
+				allowed={
+					OR={
+						original_TAG=USA
+						original_TAG=SOV
+					}
+				}
+				visible={
+					controls_state=409
+				}
+				research_bonus = { industry = 0.10 synth_resources = 0.1 }
+				traits={ refinery_concern }
+			}
+			general_electric={
+				allowed={
+					OR={
+						original_TAG=USA
+						original_TAG=SOV
+					}
+				}
+				visible={
+					controls_state=409
+				}
+				research_bonus = { electronics = 0.10 }
+				traits={ electronics_concern }
+			}
+			ford_motor_company={
+				allowed={
+					OR={
+						original_TAG=USA
+						original_TAG=SOV
+					}
+				}
+				visible={
+					controls_state=409
+				}
+				research_bonus={ industry=0.05 }
+				traits={ industrial_concern }
+				equipment_bonus={
+					motorized_equipment_1 = {					
+						build_cost_ic = -0.30
+						instant = yes
+					}
+				}
+			}
+			USA_union_pacific_railway = {
+				picture = idea_USA_union_pacific_railway
+				allowed={
+					OR={
+						original_TAG=USA
+						original_TAG=SOV
+					}
+				}
+				visible={
+					controls_state=409
+				}
+				research_bonus = {
+					industry = 0.05
+				}
+				traits = { railway_company }
+			}
+	}
+
+
+	tank_manufacturer={
+			}
+
+	country={
+			
+		USA_armed_forces_desegregation={
+			picture = usa_desegregation_1
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				conscription_factor=0.20
+			}
+		}
+		
+		USA_industrial_titan={
+			picture=SOV_fourth_five_year_plan
+			allowed={
+				original_TAG=SOV
+			}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				conversion_cost_civ_to_mil_factor = 1.0
+				industrial_concern_cost_factor = -0.50
+				production_factory_efficiency_gain_factor = 0.20
+			}
+			research_bonus = { industry = 0.1 }
+		}
+		
+		USA_industrial_titan_2={
+			picture=SOV_fourth_five_year_plan
+			allowed={
+				original_TAG=SOV
+			}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				production_speed_arms_factory_factor = 0.25
+				conversion_cost_civ_to_mil_factor = 1.0
+				industrial_concern_cost_factor = -0.50
+				production_factory_efficiency_gain_factor = 0.20
+			}
+			research_bonus = { industry = 0.1 }
+		}
+		
+		USA_industrial_titan_3={
+			picture=SOV_fourth_five_year_plan
+			allowed={
+				original_TAG=SOV
+			}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				production_speed_arms_factory_factor = 0.25
+				conversion_cost_civ_to_mil_factor = 1.0
+				industrial_concern_cost_factor = -0.50
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.20
+			}
+			research_bonus = { industry = 0.1 }
+		}
+		
+		USA_usra={
+			picture=generic_build_infrastructure
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				production_speed_rail_way_factor=0.25
+				production_speed_supply_node_factor=0.20
+			}
+		}
+		USA_liberty_bonds={
+			picture=generic_goods_red_bonus
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+			allowed_civil_war={always=yes}
+			removal_cost=-1
+			modifier={
+				consumer_goods_expected_value=-0.05
+			}
+		}
+		home_of_the_free={
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+			allowed_civil_war={ has_government=democratic }
+			removal_cost=-1
+			picture=generic_pp_unity_bonus
+			rule={
+				can_join_opposite_factions=no
+				can_create_factions=yes
+			}
+			modifier={
+				drift_defence_factor=0.2
+			}
+		}
+		USA_war_department = {	
+			picture = usa_war_department
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				high_command_cost_factor = -0.4
+				air_chief_cost_factor = -0.4
+				army_chief_cost_factor = -0.4
+				navy_chief_cost_factor = -0.4
+				theorist_cost_factor = -0.4
+			}
+		}
+		USA_training_day = {
+			picture = usa_war_department
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.7
+			}
+		}
+		USA_selective_service = {	
+			picture = generic_manpower_bonus
+			allowed={
+				OR={
+					original_TAG=SOV
+					original_TAG=FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.2
+				#conscription = 0.025
+				mobilization_laws_cost_factor = -0.3
+			}
+		}
+		
+		USA_prod_fix={
+			picture = SOV_fourth_five_year_plan
+			allowed = {
+				original_TAG=SOV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 1
+			modifier = {
+				#production_factory_efficiency_gain_factor=0.50
+			}
+		}
+		USA_aef={
+			picture=generic_usa_conflict
+			allowed={
+				original_TAG=SOV
+			}
+			allowed_civil_war={
+				always=yes
+			}
+			removal_cost=-1
+			modifier={
+				training_time_factor = -0.6
+				minimum_training_level=-0.15
+				army_morale_factor=0.10
+				max_dig_in_factor=-0.05
+				land_reinforce_rate=-0.01
+			}
+		}
+	}
+}

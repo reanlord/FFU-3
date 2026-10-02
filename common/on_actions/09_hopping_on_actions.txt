@@ -1,0 +1,80 @@
+on_actions = {
+		
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	##Island Hopping
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = TUR  
+							tag = TUR 
+							tag = GER 
+							tag = AUS
+							tag = BUL
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+							tag = GRE
+							tag = SER
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = TUR_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = ENG_controls
+				 	clr_state_flag = TUR_controls
+				}
+			 	ENG_levent_campaign_level_up = yes
+		 		TUR_levent_campaign_level_down = yes 
+				GER_eastern_allies_level_down = yes
+				BUL_eastern_allies_level_down = yes
+				AUS_eastern_allies_level_down = yes
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+							tag = GRE
+							tag = SER
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = TUR  
+							tag = TUR
+							tag = GER
+							tag = AUS
+							tag = BUL
+						}	 
+					}
+					FROM.FROM = {
+						has_state_flag = ENG_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = TUR_controls 
+				 	clr_state_flag = ENG_controls 
+				}
+		 		TUR_levent_campaign_level_up = yes 
+				GER_eastern_allies_level_up = yes 
+				AUS_eastern_allies_level_up = yes
+				BUL_eastern_allies_level_up = yes
+				ENG_levent_campaign_level_down = yes
+			}
+		}
+	}
+}

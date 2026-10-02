@@ -1,0 +1,49 @@
+
+state={
+	id=279
+	name="STATE_279"
+	resources={
+		coal=30
+                wood=8
+				tungsten=30
+	}
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			3016 50 
+		}
+		victory_points = {
+			13804 1 
+		}
+		victory_points = {
+			7557 20
+		}
+		victory_points = {
+			5633 1 
+		}
+		victory_points = {
+			13830 1 
+		}
+		victory_points = {
+			2430 1 
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		1864 2241 2430 3016 3444 4692 4822 5633 7557 9026 10462 10617 11073 11377 11404 11440 11508 13789 13800 13804 13825 13881 13941 13984 14027 15703 19427 20015 20297 
+	}
+	manpower=3089000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

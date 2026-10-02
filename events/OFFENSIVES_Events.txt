@@ -1,0 +1,528 @@
+add_namespace = offensiveevents
+news_event = {
+	title=offensiveevents.1.t
+	desc=offensiveevents.1.d
+	id=offensiveevents.1
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="russe1"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.1.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.2.t
+	desc=offensiveevents.2.d
+	id=offensiveevents.2
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="russe2"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.2.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.3.t
+	desc=offensiveevents.3.d
+	id=offensiveevents.3
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_UK1"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.3.a
+		ai_chance = { factor = 1}
+	}
+}
+###Marne Counteroffensive
+news_event = {
+	title=offensiveevents.15.t
+	desc=offensiveevents.15.d
+	id=offensiveevents.15
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.15.a
+		ai_chance = { factor = 1}
+	}
+}
+###Tannenberg Counteroffensive
+news_event = {
+	title=offensiveevents.16.t
+	desc=offensiveevents.16.d
+	id=offensiveevents.16
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.16.a
+		ai_chance = { factor = 1}
+	}
+}
+###Austrian Counteroffensive
+news_event = {
+	title=offensiveevents.17.t
+	desc=offensiveevents.17.d
+	id=offensiveevents.17
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.17.a
+		ai_chance = { factor = 1}
+	}
+}
+###Austrian Offensive 1915
+news_event = {
+	title=offensiveevents.18.t
+	desc=offensiveevents.18.d
+	id=offensiveevents.18
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.18.a
+		ai_chance = { factor = 1}
+	}
+}
+###Austrian Offensive 1916
+news_event = {
+	title=offensiveevents.19.t
+	desc=offensiveevents.19.d
+	id=offensiveevents.19
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.19.a
+		ai_chance = { factor = 1}
+	}
+}
+###Austrian Offensive 1917
+news_event = {
+	title=offensiveevents.20.t
+	desc=offensiveevents.20.d
+	id=offensiveevents.20
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.20.a
+		ai_chance = { factor = 1}
+	}
+}
+###Austrian Offensive 1918
+news_event = {
+	title=offensiveevents.21.t
+	desc=offensiveevents.21.d
+	id=offensiveevents.21
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.21.a
+		ai_chance = { factor = 1}
+	}
+}
+###Italian Counteroffensive
+news_event = {
+	title=offensiveevents.22.t
+	desc=offensiveevents.22.d
+	id=offensiveevents.22
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.22.a
+		ai_chance = { factor = 1}
+	}
+}
+###Italian Offensive 1915
+news_event = {
+	title=offensiveevents.23.t
+	desc=offensiveevents.23.d
+	id=offensiveevents.23
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.23.a
+		ai_chance = { factor = 1}
+	}
+}
+###Italian Offensive 1916
+news_event = {
+	title=offensiveevents.24.t
+	desc=offensiveevents.24.d
+	id=offensiveevents.24
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.24.a
+		ai_chance = { factor = 1}
+	}
+}
+###Italian Offensive 1917
+news_event = {
+	title=offensiveevents.25.t
+	desc=offensiveevents.25.d
+	id=offensiveevents.25
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.25.a
+		ai_chance = { factor = 1}
+	}
+}
+###Italian Offensive 1918
+news_event = {
+	title=offensiveevents.26.t
+	desc=offensiveevents.26.d
+	id=offensiveevents.26
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.26.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.51.t
+	desc=offensiveevents.51.d
+	id=offensiveevents.51
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_aus_russia"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.51.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.56.t
+	desc=offensiveevents.56.d
+	id=offensiveevents.56
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GRE_OFF"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.56.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.55.t
+	desc=offensiveevents.55.d
+	id=offensiveevents.55
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_aus_serbia"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.55.a
+		ai_chance = { factor = 1}
+	}
+}
+
+news_event = {
+	title=offensiveevents.4.t
+	desc=offensiveevents.4.d
+	id=offensiveevents.4
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_UK2"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.4.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.5.t
+	desc=offensiveevents.5.d
+	id=offensiveevents.5
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_UK3"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.5.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.6.t
+	desc=offensiveevents.6.d
+	id=offensiveevents.6
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_UK4"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.6.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.7.t
+	desc=offensiveevents.7.d
+	id=offensiveevents.7
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_WEST1"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.7.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.8.t
+	desc=offensiveevents.8.d
+	id=offensiveevents.8
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_WEST2"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.8.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.9.t
+	desc=offensiveevents.9.d
+	id=offensiveevents.9
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_WEST3"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.9.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.10.t
+	desc=offensiveevents.10.d
+	id=offensiveevents.10
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_WEST4"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.10.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.11.t
+	desc=offensiveevents.11.d
+	id=offensiveevents.11
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_EST1"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.11.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.12.t
+	desc=offensiveevents.12.d
+	id=offensiveevents.12
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_EST2"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.12.a
+		ai_chance = { factor = 1}
+	}
+}
+news_event = {
+	title=offensiveevents.13.t
+	desc=offensiveevents.13.d
+	id=offensiveevents.13
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	immediate = {
+	hidden_effect = {  
+            every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_GER_EST3"
+			}
+		}
+	}
+	option = {
+		name = offensiveevents.13.a
+		ai_chance = { factor = 1}
+	}
+}
+country_event = {
+	title=offensiveevents.80.t
+	desc=offensiveevents.80.d
+	id=offensiveevents.80
+	picture = GFX_hoi4tgw_report_austria_hungary
+	fire_only_once=yes
+	is_triggered_only=no
+	mean_time_to_happen={
+		days=0
+		}
+	trigger={
+		tag=SER
+		has_war_with = AUS
+	NOT = {
+	has_idea = SER_austrian_invasion1
+		}
+		date < 1914.10.01
+	}
+	immediate = {
+	hidden_effect = {
+	add_timed_idea = { idea = SER_austrian_invasion1  days = 150 }
+	}
+	}
+	option={
+	name=offensiveevents.80.a
+	}
+}
+country_event = {
+	title=offensiveevents.81.t
+	desc=offensiveevents.81.d
+	id=offensiveevents.81
+	picture = GFX_hoi4tgw_report_austria_hungary
+	fire_only_once=yes
+	is_triggered_only=no
+	mean_time_to_happen={
+		days=0
+		}
+	trigger={
+		tag=SER
+		has_war_with = AUS
+		date > 1915.01.01
+	NOT = {
+	has_idea = SER_austrian_invasion1
+		}
+	}
+	immediate = {
+	hidden_effect = {
+	add_timed_idea = { idea = SER_austrian_invasion2  days = 364 }
+	}
+	}
+	option={
+	name=offensiveevents.81.a
+	}
+	}
+	news_event = {
+	title=offensiveevents.14.t
+	desc=offensiveevents.14.d
+	id=offensiveevents.14
+	picture = GFX_news_event_001
+	major=yes
+	is_triggered_only=yes
+	option = {
+		name = offensiveevents.14.a
+		ai_chance = { factor = 1}
+	}
+}

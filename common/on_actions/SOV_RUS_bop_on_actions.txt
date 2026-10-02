@@ -1,0 +1,38 @@
+on_actions = {
+	on_daily_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						ruling_only = yes
+						character = SOV_nikolay_ii
+					}
+				}
+			}
+			else = { #if no nikolay II (usa) -> killing bop
+				remove_power_balance = {
+					id = SOV_RUS_balance_of_powers
+				}
+			}
+			SOV_RUS_check_and_manage_losing_cores_for_bop_effect = yes
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_power_balance = {
+							id = SOV_RUS_balance_of_powers
+						}
+						NOT = { has_country_flag = kis_tsarnicholasabdicated }
+					}
+					FROM.FROM = {
+						is_core_of = SOV
+					}
+				}
+				SOV_RUS_core_state_effect = yes
+			}
+		}
+	}
+}

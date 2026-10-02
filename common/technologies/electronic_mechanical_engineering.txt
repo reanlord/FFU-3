@@ -1,0 +1,698 @@
+technologies = {
+
+
+#======================================================
+
+	tank_unlocker1 = {
+
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = tank_unlocker2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1903
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	tank_unlocker2 = {
+
+		desc = "TANK_UNLOCKER_SPECIAL"
+		research_speed_factor = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = TANK_UNLOCKER_RESEARCHED
+		}
+
+		allow = {
+            date > 1915.6.1
+        }
+		
+		start_year = 1915
+		research_cost = 0.5
+		enable_equipment_modules = {
+			tank_torsion_bar_suspension
+			tank_bogie_suspension
+			tank_wheeled_suspension
+			tank_gasoline_engine					
+			tank_riveted_armor
+			tank_suspensionless_tracks
+			tank_light_one_man_tank_turret
+			tank_light_two_man_tank_turret
+			tank_light_three_man_tank_turret
+			tank_light_fixed_superstructure_turret
+			tank_heavy_two_man_tank_turret
+			tank_heavy_three_man_tank_turret
+			tank_heavy_fixed_superstructure_turret
+			extra_ammo_storage
+			wet_ammo_storage	
+			expanded_fuel_tank			
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 3 }
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+#======================================================
+
+	chemical_research = {
+
+		research_speed_factor = 0.01
+		
+		path = {
+			leads_to_tech = nukes
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1890
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = -2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			chemical_weapons_tech
+		}
+	}
+	
+	nukes = {
+		
+		category_army = {
+			breakthrough = 0.12
+			soft_attack = 0.06
+		}
+		
+		start_year = 1914
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = chemical_research3
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			chemical_weapons_tech
+		}
+	}
+
+	chemical_research3 = {
+
+		category_line_artillery = {
+			soft_attack = 0.10
+		}
+	
+		start_year = 1917
+		research_cost = 0.75
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			chemical_weapons_tech
+		}
+	}
+#======================================================
+
+
+
+	electronic_mechanical_engineering = {
+
+		# small boost to research speed
+  		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = radio 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mechanical_computing 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = torpedotech1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1900
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			electronics
+		}		
+	}
+
+	
+	radio = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.04
+		
+		path = {
+			leads_to_tech = supertech1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.0
+		start_year = 1910
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 11 y = 9 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			radio_tech
+		}
+	}
+
+	supertech1 = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.01
+		
+		research_cost = 1.0
+		start_year = 1912
+		
+		path = {
+			leads_to_tech = radio2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = { 
+			tank_radio_1
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			radio_tech
+		}
+	}
+
+	radio2 = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.01
+		
+		path = {
+			leads_to_tech = supertech2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = { 
+			tank_radio_2
+		}
+		
+		research_cost = 1.0
+		start_year = 1914
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			radio_tech
+		}
+	}
+
+	supertech2 = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.01
+		
+		path = {
+			leads_to_tech = electronic_ww2
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			tank_radio_3
+		}
+		
+		research_cost = 1.0
+		start_year = 1918
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 8 }
+		}
+			
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			radio_tech
+		}
+	}
+
+	torpedotech1 = {
+
+		navy_submarine_attack_factor = 0.05
+		
+		path = {
+			leads_to_tech = subhulltech1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.0
+		start_year = 1910
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	# HOI4 TGW 0.5.1 (03/2018)
+	subhulltech1 = { # Improved Submarine Compartments
+
+		submarine = {
+			max_organisation = 5
+		}
+	
+		path = {
+			leads_to_tech = torpedotech2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1912
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+		}		
+	}
+
+
+	torpedotech2 = {
+
+		navy_submarine_attack_factor = 0.05
+		
+		path = {
+			leads_to_tech = torpedotech3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.0
+		start_year = 1914
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	torpedotech3 = {
+
+		navy_submarine_attack_factor = 0.05
+		
+		research_cost = 1.0
+		start_year = 1918
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+
+
+	
+	mechanical_computing = {
+
+		# small boost to research speed
+		research_speed_factor = 0.07
+		
+		path = {
+			leads_to_tech = tankaircraft1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = hoi4tgw_decryption
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = hoi4tgw_encryption
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.0
+		start_year = 1910
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	tankaircraft1 = {
+
+		army_bonus_air_superiority_factor = 0.05
+		category_all_armor = {
+			default_morale = 0.03
+		}
+		enable_equipment_modules = {
+			smoke_launchers
+		}
+
+		path = {
+			leads_to_tech = dingfelder_engine1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tanktrack1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mechanical_computing2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.0
+		start_year = 1912
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+
+	dingfelder_engine1 = {
+	
+		air_superiority_efficiency = 0.05
+				
+		research_cost = 1.0
+		start_year = 1912
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	tanktrack1 = {
+	
+		category_all_armor = {
+			breakthrough = 0.05
+		}
+		
+		enable_equipment_modules = {
+			tank_half_track_suspension
+		}
+				
+		research_cost = 1.0
+		start_year = 1912
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+
+
+
+	mechanical_computing2 = {
+
+		# small boost to research speed
+		# research_time_factor = -0.01
+		research_speed_factor = 0.1
+		
+		path = {
+			leads_to_tech = tankaircraft2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.0
+		start_year = 1914
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+
+	tankaircraft2 = {
+
+		army_bonus_air_superiority_factor = 0.05
+		category_all_armor = {
+			default_morale = 0.03
+		}
+		
+		enable_equipment_modules = {
+			squeezebore_adaptor
+		}
+
+		path = {
+			leads_to_tech = dingfelder_engine2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tanktrack2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = electronic_ww2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.0
+		start_year = 1918
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	dingfelder_engine2 = {
+	
+		air_superiority_efficiency = 0.05
+				
+		research_cost = 1.0
+		start_year = 1918
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	tanktrack2 = {
+	
+		category_all_armor = {
+			breakthrough = 0.05
+		}
+		
+		enable_equipment_modules = {
+			tank_interleaved_suspension
+		}
+				
+		research_cost = 1.0
+		start_year = 1918
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+}

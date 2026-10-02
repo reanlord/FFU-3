@@ -1,0 +1,243 @@
+###########################
+# French Events
+###########################
+
+add_namespace = ffufrance
+
+##Event: Armée d’Afrique Arrives in Toulon!
+country_event = {
+	id = ffufrance.1
+	title = ffufrance.1.title
+	desc = ffufrance.1.desc
+	picture = GFX_arme_dafrique_arrives_in_toulon-106274
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.1.a
+		ai_chance = { factor = 1}
+		
+	hidden_effect = {
+		     FRA = {		
+			load_oob = "FRA_legion"
+			}
+          }
+	 }
+}
+
+# The French support for war effort
+#____________________________________________________________
+country_event = {
+	title=ffufrance.2.t#The French support for war effort
+	desc=ffufrance.2.d#After the initial shock of the German offensive has worn off the French public get behind industry to gear up for the war.
+	id=ffufrance.2
+	#picture=ww1_france_3
+	fire_only_once=yes
+	is_triggered_only=no
+	mean_time_to_happen={
+		months=1
+		}
+	trigger={
+		tag=FRA
+		FRA={
+			has_war_with=GER
+			}
+		}
+	option={
+		name=ffufrance.2.a
+		add_stability=0.10
+		}
+	}
+#____________________________________________________________
+
+#1913 Presidental Election
+country_event = {
+	id = ffufrance.3
+	title = ffufrance.3.t
+	desc = ffufrance.3.d
+	picture = ffufrance_1913_presidental_election-81921
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.3.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			retire_country_leader = yes
+		}
+		create_country_leader = {
+			name = "Raymond Poincaré"
+			picture = "gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_raymond_poincare.dds"
+			expire = "1935.1.1"
+			ideology=liberalism
+			traits = {
+			figurehead_president
+			}
+		}
+	}
+}
+
+#George Clemenceau PM
+country_event = {
+	id = ffufrance.4
+	title = ffufrance.4.t
+	desc = ffufrance.4.d
+	picture = ww1_france_3ffufrance_1913_presidental_election-81921
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.3.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			retire_country_leader = yes
+		}
+		create_country_leader = {
+			name = "Georges Clemenceau"
+			picture = "gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_georges_clemenceau.dds"
+			expire = "1935.1.1"
+			ideology=liberalism
+			traits = {
+			headstrong
+			indomitable_perseverance
+			our_right_to_survive
+			popular_figurehead2
+			economic_reformer
+			}
+		}
+	}
+}
+
+##Event: Plan XVII Development?
+country_event = {
+	id = ffufrance.5
+	title = ffufrance.5.title
+	desc = ffufrance.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.5.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Plan XVII
+country_event = {
+	id = ffufrance.6
+	title = ffufrance.6.title
+	desc = ffufrance.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.6.a
+		add_ideas = FRA_plan_xvii
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Plan XVII Failure
+country_event = {
+	id = ffufrance.7
+	title = ffufrance.7.title
+	desc = ffufrance.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.7.a
+		ai_chance = { factor = 1}
+		remove_ideas = FRA_plan_xvii
+	}
+}
+
+##Event: Plan XVII Failure
+country_event = {
+	id = ffufrance.8
+	title = ffufrance.8.title
+	desc = ffufrance.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {
+		name = ffufrance.8.a
+		ai_chance = { factor = 1}
+		remove_ideas = FRA_elan
+	}
+}
+
+##Event: Agadir Crisis
+country_event = {
+	id = ffufrance.9
+	title = ffufrance.9.title
+	desc = ffufrance.9.desc
+	#fire_only_once=yes
+	picture = GFX_event_test
+	is_triggered_only = yes
+	timeout_days = 7
+	#trigger = {
+	#	tag = FRA
+	#	date > 1911.7.1
+	#}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = FRA
+				}
+				set_global_flag = agadir_crisis_flag
+			}
+		}
+	}
+	option = {
+		name = ffufrance.9.a
+		ai_chance = { factor = 1 }
+		add_political_power = 150
+	}
+}
+
+##Event: French Collapse Imminent
+country_event = {
+	id = ffufrance.10
+	title = ffufrance.10.title
+	desc = ffufrance.10.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {					#France option text
+		name = ffufrance.10.a
+		trigger = { tag = FRA }
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: French surrender (Global event)
+news_event = {
+	id = ffufrance.11
+	title = ffufrance.11.title
+	desc = ffufrance.11.desc
+	picture = GFX_report_event_german_troops_paris
+	#picture = GFX_news_event_generic_sign_treaty2
+	major = yes
+	is_triggered_only = yes
+	option = {					#France option text
+		name = ffufrance.11.a
+		trigger = { 
+			tag = FRA
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {					#Russia option text
+		name = ffufrance.11.b
+		trigger = {
+			tag = SOV
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {					#Allies option text
+		name = ffufrance.11.c
+		trigger = {
+			is_entente_country = yes
+			NOT = { tag = FRA }
+			NOT = { tag = SOV }
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {					#CP option text
+		name = ffufrance.11.d
+		trigger = {
+			is_central_powers_country = yes
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+#____________________________________________________________

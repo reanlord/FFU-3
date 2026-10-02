@@ -1,0 +1,167 @@
+FFU_usa_joining = {
+	enable = { always = yes }
+
+	icon = GFX_idea_trench_warfare
+
+	attacker_modifier = yes
+
+	army_attack_factor = -1
+	breakthrough_factor = -1
+	army_defence_factor = 0.25
+	cas_damage_reduction = 1
+	dig_in_speed_factor = 0.5
+}
+
+FFU_safe_coast_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_FRA_fortification_focus
+	
+	army_core_attack_factor = 2.0
+	army_core_defence_factor = 2.0
+}
+
+FFU_trench_free_barb_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_cze_planning_bonus
+	
+	state_production_speed_trench_factor = -1000.0
+}
+
+FFU_fast_travel_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_generic_build_infrastructure
+	
+	army_speed_factor_for_controller = 10.0
+}
+
+FFU_no_ports_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_escort_effort_focus
+	
+	state_production_speed_naval_base_factor = -1000.0
+}
+
+GER_public_works_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_generic_build_infrastructure
+	
+	state_production_speed_infrastructure_factor = 0.20
+	state_production_speed_industrial_complex_factor = 0.05
+	state_production_speed_arms_factory_factor = -0.5
+}
+
+ENG_imperial_fortresses_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_FRA_fortification_focus
+	
+	remove_trigger={
+		ENG = {
+			NOT = {
+				controls_state = 162
+			}
+		}
+	}
+	
+	max_dig_in = 10
+    dig_in_speed_factor = 1.0
+	local_supplies_for_controller = 2.0
+	naval_invasion_penalty = 0.45
+}
+
+##WIP
+ENG_anti_sealion_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_eng_the_sun_never_sets
+	
+	custom_modifier_tooltip = ENG_anti_sealion_modifier_tt
+	
+	#army_core_attack_factor = ENG_army_core_attack_factor
+	#army_core_defence_factor = ENG_army_core_defence_factor
+}
+
+LBA_senussi_stronghold_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_FRA_fortification_focus
+	
+	army_core_attack_factor = 2.0
+	army_core_defence_factor = 2.0
+	#recruitable_population_factor = 40.0
+	#local_manpower = 10.0
+	state_production_speed_air_base_factor = -1000.0
+	static_anti_air_damage_factor = 4.0
+	state_repair_speed_infrastructure_factor = 10.0
+	state_repair_speed_industrial_complex_factor = 10.0
+	state_repair_speed_arms_factory_factor = 10.0
+	state_repair_speed_supply_node_factor = 10.0
+	state_repair_speed_rail_way_factor = 10.0
+	state_repair_speed_anti_air_building_factor = 10.0
+}
+
+LBA_senussi_revolt_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_chi_war_of_resistance
+	
+	#local_supplies = 4.0
+	no_supply_grace = 336
+	out_of_supply_factor = -0.5
+}
+
+GRE_freedom_or_death_modifier = {
+
+	enable = { always = yes }
+	
+	#icon = GFX_idea_POL_Ideology_Drift_Defence
+	icon = GFX_idea_ast_all_in
+	
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
+	supply_combat_penalties_on_core_factor = -0.20
+}
+
+GRE_crete_defense_modifier = {
+
+	enable = { always = yes }
+	
+	#icon = GFX_idea_ast_all_in
+	icon = GFX_idea_ast_naval_auxiliary_patrol
+	
+	army_core_attack_factor = 0.40
+	army_core_defence_factor = 0.40
+	supply_combat_penalties_on_core_factor = -1.0
+}
+
+GRE_retake_crete_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_chi_war_of_resistance
+	
+	naval_invasion_penalty = -0.50
+}
+
+USA_build_infra_modifier = {
+
+	enable = { always = yes }
+	
+	icon = GFX_idea_generic_build_infrastructure
+	
+	state_production_speed_infrastructure_factor = 0.90
+}

@@ -1,0 +1,1679 @@
+focus_tree={ ##PODHOLE
+	id=polish_focus
+	default=no
+	country = { factor=0 modifier = { add = 10 original_TAG = POL } }
+	continuous_focus_position = { x = 600 y = 1600 }
+	
+	##########################################################################################
+	
+	#####Politics#####
+	
+	##Union of Active Struggle
+	focus={
+		id=POL_union_of_active_struggle
+		icon=GFX_focus_generic_polish_deal
+		#icon=GFX_focus_generic_full_social_mobilization
+		#icon=GFX_focus_POL_expand_polish_intelligence
+		available_if_capitulated=yes
+		x=20
+		y=0
+		cost=5
+		completion_reward={
+			build_railway = {
+				level = 5
+				build_only_on_allied = yes
+				fallback = yes
+				start_province = 5036
+				target_province = 19458
+			}
+			add_political_power=150
+			hidden_effect={
+				426 = { set_state_category = megalopolis }
+			}
+		}
+	}
+	
+	##Work With Communists
+	focus={
+		id=POL_work_with_communists
+		icon=GFX_focus_FIN_socialist_welfare
+		#icon=GFX_focus_generic_communist_industry
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=-7
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		mutually_exclusive={focus=POL_denounce_communism}
+		cost=5
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=6
+				add_building_construction={
+					type=industrial_complex
+					level=2
+					instant_build=yes
+				}
+			}
+			add_popularity={
+				ideology=communism
+				popularity=0.15
+			}
+		}
+	}
+	
+	##Denounce Communism
+	focus={
+		id=POL_denounce_communism
+		icon=GFX_focus_spr_crush_the_revolution
+		#icon=GFX_goal_generic_political_pressure
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=-5
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		mutually_exclusive={focus=POL_work_with_communists}
+		cost=5
+		completion_reward={
+			add_popularity={
+				ideology=communism
+				popularity=-1.0
+			}
+			add_political_power=200
+		}
+	}
+	
+	
+	##Reconcile with Dmowski
+	focus={
+		id=POL_reconcile_dmowski
+		icon=GFX_goal_ND
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=-3
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		mutually_exclusive={focus=POL_denounce_endecja}
+		cost=5
+		completion_reward={
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_dmowski
+		}
+		
+	}
+	
+	
+	##Denounce 'Endecja'
+	focus={
+		id=POL_denounce_endecja
+		icon=GFX_focus_generic_anti_fascist_diplomacy
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=-1
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		mutually_exclusive={focus=POL_reconcile_dmowski}
+		cost=5
+		completion_reward={
+			add_popularity={
+				ideology=fascism
+				popularity=-1.0
+			}
+			add_political_power=200
+		}
+	}
+	
+	##Form the National Committee
+	focus={
+		id=POL_national_committee
+		icon=GFX_focus_licensing_arms
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=-4
+		y=2
+		prerequisite={focus=POL_work_with_communists focus=POL_denounce_communism}
+		prerequisite={focus=POL_reconcile_dmowski focus=POL_denounce_endecja}
+		cost=5
+		completion_reward={
+			add_timed_idea={
+				idea=POL_war_preparation
+				days=180
+			}
+		}
+	}
+	
+	##Funding from Illegal Sources
+	focus={
+		id=POL_funding_with_robberies
+		icon=GFX_focus_mex_privatisation
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=1
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		cost=5
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=6
+				add_building_construction={
+					type=industrial_complex
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Print Propaganda
+	focus={
+		id=POL_print_propaganda
+		#icon=GFX_goal_generic_propaganda
+		icon=GFX_focus_POL_nationalist_education
+		available_if_capitulated=yes
+		relative_position_id=POL_funding_with_robberies
+		x=0
+		y=1
+		prerequisite={focus=POL_funding_with_robberies}
+		cost=5
+		completion_reward={
+			add_stability=0.30
+			add_war_support=0.30
+		}
+	}
+	
+	
+	##Szlachta Patronage
+	focus={
+		id=POL_szlachta_patronage
+		#icon=GFX_goal_generic_air_production
+		#icon=GFX_focus_CHL_invite_french_aristocracy
+		#icon = GFX_FRA_ww1_expand_army_budget
+		icon=GFX_POL_focus_polskie_zloto
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=3
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		cost=5
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=6
+				add_building_construction={
+					type=industrial_complex
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	
+	##Central Welfare Council
+	focus={
+		id=POL_central_welfare_council
+		icon=GFX_goal_generic_improve_relations
+		available_if_capitulated=yes
+		relative_position_id=POL_szlachta_patronage
+		x=0
+		y=1
+		prerequisite={focus=POL_szlachta_patronage}
+		cost=5
+		completion_reward={
+			426={
+                set_building_level = {
+                    type = infrastructure
+                    level = 10
+                    instant_build = yes
+                }
+			}
+		}
+	}
+	
+	##Aid from Polish-Americans
+	focus={
+		id=POL_polish_americans
+		icon=GFX_focus_generic_befriend_usa
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=5
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		cost=5
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=6
+				add_building_construction={
+					type=industrial_complex
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Recruit Scientists
+	focus={
+		id=POL_recruit_scientists
+		icon=GFX_focus_generic_university_3
+		available_if_capitulated=yes
+		relative_position_id=POL_polish_americans
+		x=0
+		y=1
+		prerequisite={focus=POL_polish_americans}
+		cost=5
+		completion_reward={
+			add_research_slot=1
+		}
+	}
+	
+	##Sokół Youth Organization
+	focus={
+		id=POL_youth_organization_sokol
+		icon=GFX_focus_all_polish_youth
+		#icon=GFX_focus_CHL_the_scouts_monarchist_youth_organization
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=7
+		y=1
+		prerequisite={focus=POL_union_of_active_struggle}
+		cost=5
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=6
+				add_building_construction={
+					type=industrial_complex
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Secret Society 'Zet'
+	focus={
+		id=POL_zet_secret_society
+		icon=GFX_focus_generic_conspiracy
+		available_if_capitulated=yes
+		relative_position_id=POL_youth_organization_sokol
+		x=0
+		y=1
+		prerequisite={focus=POL_youth_organization_sokol}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				#technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = flexible_line
+				technology = streamlined_line
+				#technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				name=industry_bonus bonus=1 uses=2
+			}
+		}
+	}
+	
+	##Consolidate Leadership
+	focus={
+		id=POL_consolidate_leadership
+		icon=GFX_goal_generic_pilsudski
+		#icon=GFX_focus_POL_consolidate_sanation_government
+		available_if_capitulated=yes
+		relative_position_id=POL_union_of_active_struggle
+		x=0
+		y=3
+		prerequisite={
+			focus=POL_work_with_communists
+			focus=POL_denounce_communism
+			focus=POL_reconcile_dmowski
+			focus=POL_denounce_endecja
+			focus=POL_funding_with_robberies
+			focus=POL_szlachta_patronage
+			focus=POL_polish_americans
+			focus=POL_youth_organization_sokol
+		}
+		cost=5
+		completion_reward={
+			add_country_leader_trait=camarilla_leader
+		}
+	}
+	
+	#####Foreign Aid#####
+	
+	##Align with Central Powers
+	focus={
+		id=POL_align_with_central_powers
+		icon=GFX_TUR_german_five_year_mission-96226
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=-9
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		mutually_exclusive={focus=POL_secret_deal_britain}
+		cost=5
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Secret Deal with Britain
+	focus={
+		id=POL_secret_deal_britain
+		icon=GFX_focus_polish_british_cooperation
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=-7
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		mutually_exclusive={focus=POL_align_with_central_powers}
+		cost=5
+		completion_reward={
+			add_timed_idea={
+				idea=POL_deal_with_uk
+				days=365
+			}
+		}
+	}
+	
+	##Petition to the Germans
+	focus={
+		id=POL_petition_germans
+		icon=GFX_GER_consolidate_central_powers-86219
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=-5
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=5
+		completion_reward={
+			add_ideas=ROM_encourage_foreign_investment
+			426={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={
+					type=industrial_complex
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Chemical Warfare Training
+	focus={
+		id=POL_chemical_warfare_training
+		icon=GFX_ww1_nationalfocus_gasmask
+		#icon=GFX_GER_poison_gas_development-86218
+		#icon=GFX_focus_NORDIC_dem_army
+		available_if_capitulated=yes
+		relative_position_id=POL_petition_germans
+		x=-1
+		y=1
+		prerequisite={focus=POL_petition_germans}
+		cost=5
+		completion_reward={
+			add_tech_bonus= {
+				bonus = 2
+				uses = 1
+				technology = infantry_gasmask
+            }
+			add_tech_bonus= {
+				bonus = 1
+				uses = 1
+				ahead_reduction = 1
+				technology = chemical_research3
+            }
+		}
+	}
+	
+	##Act of 5th November (move to German tree as 7d focus, reduce tech sharing focus by 7d)
+	focus={
+		id=POL_act_of_5th_november
+		icon=GFX_focus_BRA_the_polaca
+		available_if_capitulated=yes
+		relative_position_id=POL_petition_germans
+		x=0
+		y=2
+		prerequisite={focus=POL_petition_germans}
+		cost=5
+		completion_reward={
+			GER={
+				add_political_power=-50
+			}
+			add_state_core=241
+			add_state_core=271
+			add_state_core=278
+			add_state_core=279
+			add_state_core=286
+			add_state_core=287
+		}
+	}
+	
+	##German Officer Instructors
+	focus={
+		id=POL_german_officer_instruction
+		icon=GFX_focus_pol_army_reform
+		available_if_capitulated=yes
+		relative_position_id=POL_petition_germans
+		x=1
+		y=1
+		prerequisite={focus=POL_petition_germans}
+		cost=5
+		completion_reward={
+			add_ideas=TUR_german_attache
+		}
+	}
+	
+	##Support from the Habsburgs
+	focus={
+		id=POL_support_habsburgs
+		icon=GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=-2
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=5
+		completion_reward={
+			add_ideas=POL_equipment_license
+			426={
+				add_extra_state_shared_building_slots=3
+				add_building_construction={
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Legalized Recruitment
+	focus={
+		id=POL_legalized_recruitment
+		icon=GFX_goal_generic_class_A_reservists
+		available_if_capitulated=yes
+		relative_position_id=POL_support_habsburgs
+		x=0
+		y=1
+		prerequisite={focus=POL_support_habsburgs}
+		cost=5
+		completion_reward={
+			add_manpower=250000
+		}
+	}
+	
+	#Polish Legions
+	focus = {
+		id = POL_polish_legions
+		#icon = GFX_AUS_polish_legions-46471
+		icon=GFX_focus_ww1_nationalfocus_poland
+		relative_position_id=POL_legalized_recruitment
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_legalized_recruitment }
+		completion_reward = {add_manpower= 350000}
+	}
+	
+	
+	#####Military#####
+	
+	##The Polish Military Organization
+	focus={
+		id=POL_the_polish_military_organization
+		icon=GFX_POL_focus_polish_soldier
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=2
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=5
+		completion_reward={
+			army_experience=100
+			add_command_power=100
+		}
+	}
+	
+	##Polish Riflemen's Association
+	focus={
+		id=POL_riflemens_association
+		icon=GFX_focus_wake_up_poland
+		#icon=GFX_focus_ETH_freedom_at_gunpoint
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=4
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				name=infantry_weapons_bonus bonus=1 uses=2
+				category=infantry_weapons
+			}
+			army_experience=20
+		}
+	}
+	
+	##Polish Rifle Squads
+	focus={
+		id=POL_rifle_squads
+		icon=GFX_goal_polish_syndicalism
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=6
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name = support_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+			army_experience=20
+		}
+	}
+	
+	##Reconnaissance Training
+	focus={
+		id=POL_reconnaissance_training
+		icon=GFX_focus_pol_military_buildup
+		#icon=GFX_ENG_school_of_sniping_observation_and_scouting-91617
+		available_if_capitulated=yes
+		relative_position_id=POL_riflemens_association
+		x=-3
+		y=1
+		prerequisite={focus=POL_the_polish_military_organization focus=POL_riflemens_association focus=POL_rifle_squads}
+		cost=5
+		completion_reward={
+			add_tech_bonus= {
+				bonus = 1
+				uses = 2
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_recon4
+				technology = tech_sniper
+				technology = tech_sniper2
+				technology = tech_sniper3
+				technology = tech_sniper4
+            }
+			army_experience=20
+		}
+	}
+	
+	##Steel Horses
+	focus={
+		id=POL_steel_horses
+		icon=GFX_focus_SWE_lynx_armored_car
+		available_if_capitulated=yes
+		relative_position_id=POL_riflemens_association
+		x=-1
+		y=1
+		prerequisite={focus=POL_the_polish_military_organization focus=POL_riflemens_association focus=POL_rifle_squads}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=armored_car_bonus bonus=2 ahead_reduction=1 uses=1
+				technology = ww1_armored_car_3
+				technology = ww1_armored_car_4
+				technology = ww1_tachanka
+			}
+			army_experience=20
+		}
+	}
+	
+	##Cavalry Maneuvers
+	focus={
+		id=POL_cavalry_maneuvers
+		icon=GFX_POL_focus_polish_hussars
+		#icon=GFX_focus_husaria
+		available_if_capitulated=yes
+		relative_position_id=POL_steel_horses
+		x=1
+		y=1
+		prerequisite={focus=POL_steel_horses}
+		cost=5
+		completion_reward={
+			add_doctrine_cost_reduction={
+				cost_reduction=0.8
+				uses=3
+				technology=cavalry_charges
+				technology=cavalry_dismounting
+				technology=cavalry_exploitation
+			}
+			army_experience=20
+		}
+	}
+	
+	##Spirit of the Winged Hussars
+	focus={
+		id=POL_spirit_of_winged_hussars
+		icon=GFX_focus_husaria
+		#icon=GFX_POL_focus_polish_hussars
+		available_if_capitulated=yes
+		relative_position_id=POL_steel_horses
+		x=-1
+		y=1
+		prerequisite={focus=POL_steel_horses}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name = support_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+			add_ideas=POL_winged_hussars
+			army_experience=20
+		}
+	}
+	
+	##Elite Units
+	focus={
+		id=POL_elite_troops
+		icon=GFX_pol_focus_polish_army_support
+		#icon=GFX_focus_eng_special_air_service
+		available_if_capitulated=yes
+		relative_position_id=POL_riflemens_association
+		x=1
+		y=1
+		prerequisite={focus=POL_the_polish_military_organization focus=POL_riflemens_association focus=POL_rifle_squads}
+		cost=5
+		completion_reward={
+			add_tech_bonus= {
+				name = special_forces_bonus
+				bonus = 2
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+				technology = Stormtroopers
+				technology = Stormtroopers2
+				technology = Stormtroopers3
+				technology = jaegers
+				technology = jaegers2
+				technology = jaegers3
+				technology = tech_special_forces
+				technology = advanced_special_forces
+				technology = extreme_environment_training
+				technology = improved_special_forces
+				technology = survival_training
+				technology = elite_forces
+            }
+			army_experience=20
+		}
+	}
+	
+	##Military Medicine
+	focus={
+		id=POL_military_medicine
+		icon=GFX_focus_generic_field_hostpital
+		available_if_capitulated=yes
+		relative_position_id=POL_rifle_squads
+		x=1
+		y=1
+		prerequisite={focus=POL_the_polish_military_organization focus=POL_riflemens_association focus=POL_rifle_squads}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=hospital_bonus bonus=1 uses=3
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_field_hospital4
+			}
+			army_experience=20
+		}
+	}
+	
+	##Focus on Open Warfare
+	focus={
+		id=POL_focus_open_warfare
+		icon=GFX_focus_NORDIC_com_army
+		#icon=GFX_goal_generic_army_doctrines
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=8
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		mutually_exclusive={focus=POL_increase_guerilla_activities}
+		cost=10
+		completion_reward={
+			army_experience=150
+		}
+	}
+	
+	##Increased Guerilla Activities
+	focus={
+		id=POL_increase_guerilla_activities
+		icon=GFX_focus_FIN_weapon_caches
+		available_if_capitulated=yes
+		relative_position_id=POL_focus_open_warfare
+		x=2
+		y=0
+		prerequisite={focus=POL_consolidate_leadership}
+		mutually_exclusive={focus=POL_focus_open_warfare}
+		cost=10
+		completion_reward={
+			add_ideas=POL_guerilla_warfare
+		}
+	}
+	
+	##Secret Workshops
+	focus={
+		id=POL_underground_workshops
+		icon=GFX_goal_generic_production
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=11
+		y=2
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=10
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=4
+				add_building_construction={
+					type=arms_factory
+					level=4
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Produce Heavy Artillery
+	focus={
+		id=POL_produce_heavy_artillery
+		icon=GFX_goal_generic_army_artillery
+		available_if_capitulated=yes
+		relative_position_id=POL_underground_workshops
+		x=-2
+		y=1
+		prerequisite={focus=POL_underground_workshops}
+		mutually_exclusive={focus=POL_produce_light_artillery}
+		mutually_exclusive={focus=POL_produce_tachanka}
+		cost=10
+		#available = { has_tech = heavy_field_gun2 }
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={
+					type=arms_factory
+					level=2
+					instant_build=yes
+				}
+			}
+			custom_effect_tooltip=POL_spawn_siege_tt
+			hidden_effect = {
+				add_equipment_to_stockpile= {
+					type = heavy_field_gun_equipment
+					amount=450 #24300 IC
+					producer = POL
+				}
+			}
+		}
+	}
+	
+	##Produce Light Artillery
+	focus={
+		id=POL_produce_light_artillery
+		icon=GFX_POL_focus_polish_real_artillery
+		#icon=GFX_goal_generic_army_artillery2
+		available_if_capitulated=yes
+		relative_position_id=POL_produce_heavy_artillery
+		x=2
+		y=0
+		prerequisite={focus=POL_underground_workshops}
+		mutually_exclusive={focus=POL_produce_heavy_artillery}
+		mutually_exclusive={focus=POL_produce_tachanka}
+		cost=10
+		#available = { has_tech = light_field_gun2 }
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={
+					type=arms_factory
+					level=2
+					instant_build=yes
+				}
+			}
+			custom_effect_tooltip=POL_spawn_field_tt
+			hidden_effect = {
+				add_equipment_to_stockpile= {
+					type = light_field_gun_equipment
+					amount=630 #30240 IC
+					producer = POL
+				}
+			}
+		}
+		
+	}
+	
+	##Produce Tachankas
+	focus={
+		id=POL_produce_tachanka
+		icon=GFX_generic_tachanka
+		available_if_capitulated=yes
+		relative_position_id=POL_produce_heavy_artillery
+		x=4
+		y=0
+		prerequisite={focus=POL_underground_workshops}
+		mutually_exclusive={focus=POL_produce_light_artillery}
+		mutually_exclusive={focus=POL_produce_heavy_artillery}
+		cost=10
+		#available = { has_tech = ww1_tachanka }
+		completion_reward={
+			426={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={
+					type=arms_factory
+					level=2
+					instant_build=yes
+				}
+			}
+			custom_effect_tooltip=POL_spawn_tachanka_tt
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					amount = 540
+					type = tachanka_equipment_0
+					producer = POL
+				}
+			}
+		}
+	}
+	
+	##### Liberation of Homeland — Phase 1 #####
+	
+	##Coordinate Independence Parties
+	focus={
+		id=POL_kssn
+		icon=GFX_goal_generic_national_unity
+		available_if_capitulated=yes
+		relative_position_id=POL_consolidate_leadership
+		x=0
+		y=1
+		prerequisite={focus=POL_consolidate_leadership}
+		cost=5
+		completion_reward={
+			add_popularity={
+				ideology=neutrality
+				popularity=0.25
+			}
+			add_political_power=100
+		}
+	}
+	
+	##Prepare Provisional Government
+	focus={
+		id=POL_prepare_provisional_government
+		icon=GFX_POL_regency_council_focus
+		#icon=GFX_focus_pol_gubernia
+		available_if_capitulated=yes
+		relative_position_id=POL_kssn
+		x=0
+		y=3
+		prerequisite={focus=POL_kssn}
+		available={has_completed_focus=POL_act_of_5th_november}
+		cost=5
+		completion_reward={
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = POL_regencycouncil
+				promote_leader=yes
+				country_leader={
+					ideology=oligarchism
+					traits={}
+				}
+			}
+			swap_ideas={
+				remove_idea=POL_legacy_of_the_partition
+				add_idea=POL_vacant_throne
+			}
+			set_cosmetic_tag = POL_KINGDOM
+		}
+	}
+	
+	##Crown a German King
+	focus={
+		id=POL_crown_german_king
+		icon=GFX_focus_pol_german_king
+		available_if_capitulated=yes
+		relative_position_id=POL_prepare_provisional_government
+		x=-1
+		y=1
+		prerequisite={focus=POL_prepare_provisional_government}
+		mutually_exclusive={focus=POL_crown_austrian_king}
+		available={
+			has_completed_focus=POL_national_committee
+			OR={
+				controls_state=241
+				controls_state=271
+				controls_state=278
+				controls_state=279
+				controls_state=286
+				controls_state=287
+			}
+		}
+		cancel_if_invalid=no
+		continue_if_invalid=yes
+		cost=5
+		completion_reward={
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = POL_leopold
+				promote_leader=yes
+				country_leader={
+					ideology=autocracy
+					traits={retired_officer}
+				}
+			}
+			remove_ideas=POL_vacant_throne
+		}
+	}
+	
+	##Crown an Austrian King
+	focus={
+		id=POL_crown_austrian_king
+		icon=GFX_focus_pol_austrian_king
+		available_if_capitulated=yes
+		relative_position_id=POL_prepare_provisional_government
+		x=1
+		y=1
+		prerequisite={focus=POL_prepare_provisional_government}
+		mutually_exclusive={focus=POL_crown_german_king}
+		available={
+			has_completed_focus=POL_national_committee
+			OR={
+				controls_state=241
+				controls_state=271
+				controls_state=278
+				controls_state=279
+				controls_state=286
+				controls_state=287
+			}
+		}
+		cancel_if_invalid=no
+		continue_if_invalid=yes
+		cost=5
+		completion_reward={
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = POL_karol_stefan
+				promote_leader=yes
+				country_leader={
+					ideology=autocracy
+					traits={ patriot_king }
+					#traits={ king_of_galicia_and_lodomeria }
+				}
+			}
+			remove_ideas=POL_vacant_throne
+		}
+	}
+	
+	##Virtuti Militari
+	focus={
+		id=POL_virtuti_militari
+		icon=GFX_POL_military_mission
+		#icon=GFX_focus_eng_expose_the_belly_of_the_bear
+		#icon=GFX_focus_NORDIC_mon_army
+		available_if_capitulated=yes
+		relative_position_id=POL_crown_german_king
+		x=1
+		y=1
+		prerequisite={focus=POL_crown_german_king focus=POL_crown_austrian_king}
+		cost=5
+		completion_reward={
+			add_war_support=0.05
+			army_experience=40
+		}
+	}
+	
+	##Absolute Monarchy
+	focus={
+		id=POL_absolute_monarchy
+		#icon=GFX_focus_generic_monarchy_1
+		icon=GFX_focus_rom_royal_dictatorship
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=-7
+		y=1
+		prerequisite={focus=POL_virtuti_militari}
+		mutually_exclusive={focus=POL_human_rights}
+		cost=5
+		completion_reward={
+			add_political_power=100
+			army_experience=100
+			add_command_power=100
+		}
+	}
+	
+	##Human Rights
+	focus={
+		id=POL_human_rights
+		icon=GFX_goal_support_democracy
+		#icon=GFX_focus_hol_the_foundations_of_defense
+		available_if_capitulated=yes
+		relative_position_id=POL_absolute_monarchy
+		x=2
+		y=0
+		prerequisite={focus=POL_virtuti_militari}
+		mutually_exclusive={focus=POL_absolute_monarchy}
+		cost=5
+		completion_reward={
+			add_country_leader_trait=constitutional_monarch_minor
+		}
+	}
+	
+	##Resource Extraction
+	focus={
+		id=POL_resource_extraction
+		icon=GFX_focus_generic_mining_industry
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=-3
+		y=1
+		prerequisite={focus=POL_virtuti_militari}
+		available={controls_state=279}
+		cost=5
+		completion_reward={
+			add_resource= {
+				type = aluminium
+				amount = 7
+				state = 279
+			}
+			add_resource= {
+				type = steel
+				amount = 15
+				state = 279
+			}
+			add_resource= {
+				type = coal
+				amount = 20
+				state = 279
+			}
+			add_resource= {
+				type = wood
+				amount = 12
+				state = 279
+			}
+		}
+	}
+	
+	##Reopen Warsaw University
+	focus={
+		id=POL_reopen_warsaw_university
+		icon=GFX_focus_NORDIC_com_capstone_research
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=-1
+		y=1
+		prerequisite={focus=POL_virtuti_militari}
+		available={
+			OR={
+				controls_state=279
+				date>1915.1.1
+			}
+		}
+		cost=5
+		completion_reward={
+			add_research_slot=1
+		}
+	}
+	
+	##Voluntary Legion of Women
+	focus={
+		id=POL_voluntary_legion_of_women
+		icon=GFX_focus_generic_women_in_military
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=1
+		y=1
+		prerequisite={focus=POL_virtuti_militari}
+		cost=5
+		completion_reward={
+			add_manpower=150000
+		}
+	}
+	
+	##Cipher and Signal Bureau
+	focus={
+		id=POL_cipher_bureau
+		icon=GFX_goal_generic_radio_goods
+		#icon=GFX_goal_generic_radar
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=3
+		y=1
+		prerequisite={focus=POL_virtuti_militari}
+		cost=5
+		completion_reward={
+			add_tech_bonus={
+				name=electronics_bonus bonus=2 uses=1
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_signal_company4
+				technology = radio
+				technology = supertech1
+				technology = radio2
+				technology = supertech2
+			}
+		}
+	}
+	
+	##Aid for Peasants
+	focus={
+		id=POL_aid_for_peasants
+		icon=GFX_focus_generic_farmland
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=5
+		y=1
+		prerequisite={focus=POL_virtuti_militari}
+		mutually_exclusive={focus=POL_requisition_crops}
+		available={controls_state=271}
+		cost=5
+		completion_reward={
+			271={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=industrial_complex
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	##Requisition Crops
+	focus={
+		id=POL_requisition_crops
+		icon=GFX_focus_generic_agricultural_subsidies
+		available_if_capitulated=yes
+		relative_position_id=POL_aid_for_peasants
+		x=2
+		y=0
+		prerequisite={focus=POL_virtuti_militari}
+		mutually_exclusive={focus=POL_aid_for_peasants}
+		available={controls_state=286}
+		cost=5
+		completion_reward={
+			286={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+	
+	##### Restablishing Poland — Phase 2 #####
+	
+	focus={
+		id=POL_lift_martial_law
+		icon=GFX_goal_april_constitution
+		#icon=GFX_focus_generic_court
+		available_if_capitulated=yes
+		relative_position_id=POL_virtuti_militari
+		x=0
+		y=2
+		cost=5
+		prerequisite={focus=POL_virtuti_militari}
+		available={
+			has_full_control_of_state=241
+			has_full_control_of_state=271
+			has_full_control_of_state=278
+			has_full_control_of_state=279
+			has_full_control_of_state=286
+			has_full_control_of_state=287
+		}
+		completion_reward={
+			add_stability=0.10
+			add_war_support=0.10
+			#POL={set_capital={state=279}}		#Capital stays in Rugen, should prevent capitulation
+		}
+	}
+	
+	##Legacy of the Commonwealth
+	focus={
+		id=POL_legacy_of_the_commonwealth
+		icon=GFX_focus_LIT_restore_the_grand_duchy
+		relative_position_id=POL_lift_martial_law
+		x=-2
+		y=1
+		prerequisite={focus=POL_lift_martial_law}
+		cost=10
+		completion_reward={
+			#transfer_state=108
+			add_state_core=108
+			#transfer_state=109
+			add_state_core=109
+		}
+	}
+	
+	##Our Own Currency
+	focus={
+		id=POL_currency
+		icon = GFX_FRA_ww1_expand_army_budget
+		available_if_capitulated=yes
+		relative_position_id=POL_lift_martial_law
+		x=0
+		y=1
+		prerequisite={focus=POL_lift_martial_law}
+		cost=5
+		completion_reward={
+			add_ideas=POL_the_zloty
+		}
+	}
+	
+	##Push Eastwards
+	focus={
+		id=POL_push_east
+		icon=GFX_focus_POL_belarus_army
+		relative_position_id=POL_lift_martial_law
+		x=2
+		y=1
+		prerequisite={focus=POL_lift_martial_law}
+		cost=10
+		completion_reward={
+			#transfer_state=291
+			add_state_core=291
+			#transfer_state=290
+			add_state_core=290
+			#transfer_state=289
+			add_state_core=289
+			#transfer_state=288
+			add_state_core=288
+		}
+	}
+	
+	##### Navy #####
+	
+	##Baltic Littoral Operations
+	focus = {
+		id = POL_baltic_littoral
+		icon = GFX_goal_generic_amphibious_assault
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 12
+		y = 5
+		prerequisite = { focus = POL_align_with_central_powers focus = POL_secret_deal_britain }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				amount = 50
+				type = convoy
+				producer = GER
+			}
+			add_tech_bonus = {
+				name=transport_bonus bonus=1 uses=2
+				category = tp_tech
+			}
+		}
+	}
+	
+	##Refound the Polish Navy
+	focus = {
+		id = POL_refound_navy
+		icon = GFX_focus_POL_expand_royal_navy
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		cost = 5
+		relative_position_id = POL_baltic_littoral
+		x = 0
+		y = 2
+		prerequisite = { focus = POL_baltic_littoral }
+		available = { 
+			has_full_control_of_state = 108
+		}
+		completion_reward = {
+			navy_experience = 500
+			108 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 840
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Build Up Palanga Shipyard
+	focus = {
+		id = POL_palanga_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		cost = 5
+		relative_position_id = POL_refound_navy
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_refound_navy }
+		available = { 
+			has_full_control_of_state = 108
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Naval Innovations
+	focus = {
+		id = POL_naval_innovations
+		icon = GFX_focus_generic_destroyer
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		cost = 5
+		relative_position_id = POL_refound_navy
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_refound_navy }
+		completion_reward = {
+			add_tech_bonus = { bonus = 3 uses = 4 category = naval_equipment }
+		}
+	}
+	
+	
+	#####Generic Army#####
+	##########################################################################
+	
+focus = {
+		id = POL_ww1_army_effort_1
+		icon = GFX_goal_generic_axis_build_infantry
+		available_if_capitulated = yes
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_1 }
+		cost = 5
+		x = 32
+		y = 8
+		}
+focus = {
+		id = POL_ww1_equipment_effort_1
+		icon = GFX_goal_generic_small_arms
+		available_if_capitulated = yes
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_1 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_1 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_1
+		x = 2
+		y = 0
+	}
+focus = {
+		id = POL_ww1_artillery_effort_1
+		icon = GFX_goal_generic_army_artillery2
+		available_if_capitulated = yes
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_1 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_1 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_1
+		x = 4
+		y = 0
+	}
+
+	##############################################################################
+
+focus = {
+		id = POL_ww1_army_effort_2
+		prerequisite = { focus=POL_ww1_army_effort_1
+		 focus=POL_ww1_equipment_effort_1
+		 focus=POL_ww1_artillery_effort_1
+		}
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_2 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_1
+		x = 0
+		y = 1
+		}
+focus = {
+		id = POL_ww1_equipment_effort_2
+		prerequisite = { focus=POL_ww1_army_effort_1
+		 focus=POL_ww1_equipment_effort_1
+		 focus=POL_ww1_artillery_effort_1
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_2 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_2 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_2
+		x = 2
+		y = 0
+	}
+focus = {
+		id = POL_ww1_artillery_effort_2
+		prerequisite = { focus=POL_ww1_army_effort_1
+		 focus=POL_ww1_equipment_effort_1
+		 focus=POL_ww1_artillery_effort_1
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_2 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_2 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_2
+		x = 4
+		y = 0
+	}
+
+	################################################################
+
+focus = {
+		id = POL_ww1_army_effort_3
+		prerequisite = { focus=POL_ww1_army_effort_2
+		 focus=POL_ww1_equipment_effort_2
+		 focus=POL_ww1_artillery_effort_2
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_3 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_2
+		x = 0
+		y = 1
+		}
+focus = {
+		id = POL_ww1_equipment_effort_3
+		prerequisite = { focus=POL_ww1_army_effort_2
+		 focus=POL_ww1_equipment_effort_2
+		 focus=POL_ww1_artillery_effort_2
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_3 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_3 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_3
+		x = 2
+		y = 0
+	}
+focus = {
+		id = POL_ww1_artillery_effort_3
+		prerequisite = { focus=POL_ww1_army_effort_2
+		 focus=POL_ww1_equipment_effort_2
+		 focus=POL_ww1_artillery_effort_2
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_3 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_3 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_3
+		x = 4
+		y = 0
+	}
+
+	################################################################
+
+focus = {
+		id = POL_ww1_army_effort_4
+		prerequisite = { focus=POL_ww1_army_effort_3
+		 focus=POL_ww1_equipment_effort_3
+		 focus=POL_ww1_artillery_effort_3
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_4 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_3
+		x = 0
+		y = 1
+		}
+focus = {
+		id = POL_ww1_equipment_effort_4
+		prerequisite = { focus=POL_ww1_army_effort_3
+		 focus=POL_ww1_equipment_effort_3
+		 focus=POL_ww1_artillery_effort_3
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_4 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_4 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_4
+		x = 2
+		y = 0
+	}
+focus = {
+		id = POL_ww1_artillery_effort_4
+		prerequisite = { focus=POL_ww1_army_effort_3
+		 focus=POL_ww1_equipment_effort_3
+		 focus=POL_ww1_artillery_effort_3
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_4 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_4 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_4
+		x = 4
+		y = 0
+	}
+
+   ############################################################################
+ 	################################################################
+
+focus = {
+		id = POL_ww1_army_effort_5
+		prerequisite = { focus=POL_ww1_army_effort_4
+		 focus=POL_ww1_equipment_effort_4
+		 focus=POL_ww1_artillery_effort_4
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_axis_build_infantry
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_5 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_4
+		x = 0
+		y = 1
+		}
+focus = {
+		id = POL_ww1_equipment_effort_5
+		prerequisite = { focus=POL_ww1_army_effort_4
+		 focus=POL_ww1_equipment_effort_4
+		 focus=POL_ww1_artillery_effort_4
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_5 }
+		mutually_exclusive = { focus = POL_ww1_artillery_effort_5 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_5
+		x = 2
+		y = 0
+	}
+focus = {
+		id = POL_ww1_artillery_effort_5
+		prerequisite = { focus=POL_ww1_army_effort_4
+		 focus=POL_ww1_equipment_effort_4
+		 focus=POL_ww1_artillery_effort_4
+		 }
+		 available_if_capitulated = yes
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = POL_ww1_army_effort_5 }
+		mutually_exclusive = { focus = POL_ww1_equipment_effort_5 }
+		cost = 5
+		relative_position_id=POL_ww1_army_effort_5
+		x = 4
+		y = 0
+	}
+   ############################################################################
+focus = {
+		id = POL_ww1_armor_effort_1
+		prerequisite = { focus=POL_ww1_army_effort_5
+		focus=POL_ww1_equipment_effort_5
+		focus=POL_ww1_artillery_effort_5
+		}
+		available_if_capitulated = yes
+		icon = GFX_POL_focus_polish_tank_factories
+		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=1 uses=2 category=armor } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		relative_position_id=POL_ww1_army_effort_5
+		x = 2
+		y = 1
+	}
+######################################################################################

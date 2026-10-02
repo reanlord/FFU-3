@@ -1,0 +1,114 @@
+﻿capital = 234
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.20
+set_research_slots = 3
+set_stability = 0.85
+set_convoys = 150
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = SPR_alfonso_xiii
+recruit_character = SPR_antonio_garcía_quejido
+recruit_character = SPR_julián_besteiro
+recruit_character = SPR_ramón_lamoneda
+recruit_character = SPR_alejandro_lerroux
+recruit_character = SPR_pablo_iglesias
+recruit_character = SPR_berenguer_d.
+recruit_character = SPR_cavalcanti
+recruit_character = SPR_gómez_jordana
+recruit_character = SPR_lopez_ochoa
+recruit_character = SPR_martínez_anido
+recruit_character = SPR_primo_de_rivera_f.
+recruit_character = SPR_primo_de_rivera_m.
+recruit_character = SPR_queipo_de_llano
+recruit_character = SPR_sanjurjo
+recruit_character = SPR_silvestre
+recruit_character = SPR_weyler
+recruit_character = SPR_echague
+recruit_character = SPR_aznar_cabañas
+recruit_character = SPR_miranda_y_godoy
+recruit_character = SPR_rodriguez
+recruit_character = SPR_dámaso_hevia
+recruit_character = SPR_félix_villar
+
+
+
+
+set_technology = {
+	# Navy
+	transport = 1 # Naval Transport
+}
+
+1911.1.1 = {
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+		basic_train = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+		mtg_transport = 1
+
+		# Doctrine
+
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1910.1.15"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 100
+	    fascism = 0
+	    communism = 0
+	    neutrality = 0
+	}
+
+	add_ideas = {
+		neutrality_idea
+		ww1_Scramble_for_Africa
+		limited_conscription
+	}	
+
+}

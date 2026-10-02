@@ -1,0 +1,265 @@
+﻿l_russian:
+
+#--------------------------------------------------------------
+# [AUSTRIA-HUNGARIAN EMPIRE] Армейские усилия
+#=========================================================================
+AUS_ww1_army_effort_1:0 "Армейские усилия"
+AUS_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_army_effort_2:0 "Армейские усилия II"
+AUS_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_army_effort_3:0 "Армейские усилия III"
+AUS_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_army_effort_4:0 "Армейские усилия IV"
+AUS_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_army_effort_5:0 "Армейские усилия V"
+AUS_ww1_army_effort_5_desc:0 "" #Frenchie
+
+AUS_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+AUS_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+AUS_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+AUS_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+AUS_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+AUS_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+AUS_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+AUS_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+AUS_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+AUS_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+AUS_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+AUS_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+AUS_ww1_aircraftprod_1:0 "Производство самолетов"
+AUS_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_aircraftprod_2:0 "Производство самолетов II"
+AUS_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_aircraftprod_3:0 "Производство самолетов III"
+AUS_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_aircraftprod_4:0 "Производство самолетов IV"
+AUS_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_aircraftprod_5:0 "Производство самолетов V"
+AUS_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+AUS_ww1_large_navy_1:0 "Военно -морская авиация"
+AUS_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_large_navy_2:0 "Военно -морская и авиационная реформа II"
+AUS_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_large_navy_3:0 "Военно -морская и авиационная реформа III"
+AUS_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_large_navy_4:0 "Военно -морская и авиационная реформа IV"
+AUS_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_large_navy_5:0 "Военно -морская и авиационная реформа V"
+AUS_ww1_large_navy_5_desc:0 "" #Frenchie
+
+AUS_ww1_special_forces:0 "Спецназовое внимание"
+AUS_ww1_special_forces_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_army_motorization_focus:0 "Фокус моторизации"
+AUS_ww1_army_motorization_focus_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_doctrine_effort:0 "Учение усилия"
+AUS_ww1_doctrine_effort_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_doctrine_effort_2:0 "Учение усилия II"
+AUS_ww1_doctrine_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_doctrine_effort_3:0 "Учение усилия III"
+AUS_ww1_doctrine_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_armor_effort_1:0 "Броня усилий"
+AUS_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_armor_effort_2:0 "Броня усилийII"
+AUS_ww1_armor_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_gasmask_focus:0 "Химическая война фокусируется"
+AUS_ww1_gasmask_focus_desc:0 "" #KAISER_ANONY
+#--------------------------------------------------------------
+# [AUSTRIA-HUNGARIAN EMPIRE] Industrial Effort
+#=========================================================================
+AUS_ww1_industrial_effort:0 "Промышленные усилия"
+AUS_ww1_industrial_effort_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_construction_effort:0 "Строительные усилия"
+AUS_ww1_construction_effort_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_construction_effort_2:0 "Строительные усилияII"
+AUS_ww1_construction_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_construction_effort_3:0 "Строительные усилияIII"
+AUS_ww1_construction_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_production_effort:0 "Усилие вооружения"
+AUS_ww1_production_effort_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_production_effort_2:0 "Усилие вооружения II"
+AUS_ww1_production_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_production_effort_3:0 "Усилие вооружения III"
+AUS_ww1_production_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_dockyard_effort_1:0 "Расширение верфи"
+AUS_ww1_dockyard_effort_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_dockyard_effort_2:0 "Расширение верфи II"
+AUS_ww1_dockyard_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_dockyard_effort_3:0 "Расширение верфи III"
+AUS_ww1_dockyard_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_airfield_expansion_1:0 "Расширение аэродрома"
+AUS_ww1_airfield_expansion_1_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_airfield_expansion_2:0 "Расширение аэродрома II"
+AUS_ww1_airfield_expansion_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_airfield_expansion_3:0 "Расширение аэродрома III"
+AUS_ww1_airfield_expansion_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_infrastructure_effort:0 "Инфраструктурные усилия"
+AUS_ww1_infrastructure_effort_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_infrastructure_effort_2:0 "Инфраструктурные усилия II"
+AUS_ww1_infrastructure_effort_2_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_infrastructure_effort_3:0 "Инфраструктурные усилия III"
+AUS_ww1_infrastructure_effort_3_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_infrastructure_effort_4:0 "Инфраструктурные усилия IV"
+AUS_ww1_infrastructure_effort_4_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_extra_tech_slot:0 "Дополнительный исследовательский слот"
+AUS_ww1_extra_tech_slot_desc:0 "" #KAISER_ANONY
+
+AUS_ww1_extra_tech_slot_2:0 "Дополнительный исследовательский слот II"
+AUS_ww1_extra_tech_slot_2_desc:0 "" #KAISER_ANONY
+
+
+
+# [AUSTRIA-HUNGARIAN EMPIRE] Political Effort
+#=========================================================================
+AUS_adriatic_coastal_defense:0 "Адриатическая прибрежная оборона"
+AUS_adriatic_coastal_defense_desc:0 ""
+AUS_contest_the_adriatic:0 "Конкурировать с Адриатом"
+AUS_contest_the_adriatic_desc:0 ""
+AUS_naval_budget_increase:0 "Военно -морской бюджет увеличивается"
+AUS_naval_budget_increase_desc:0 ""
+AUS_freedom_of_the_press:0 "Свобода прессы"
+AUS_freedom_of_the_press_desc:0 ""
+AUS_1913_acts_of_protection:0 "1913 Акты защиты"
+AUS_1913_acts_of_protection_desc:0 ""
+AUS_reestablish_croatian_constitution:0 "Восстановить конституцию Хорвации"
+AUS_reestablish_croatian_constitution_desc:0 ""
+AUS_1912_acts_of_protection:0 "1912 Акты защиты"
+AUS_1912_acts_of_protection_desc:0 ""
+AUS_1911_cisleithanian_legislative_election:0 "1911 Цислитанианские законодательные выборы"
+AUS_1911_cisleithanian_legislative_election_desc:0 ""
+AUS_dual_monarchy:0 "Dual Monarchy"
+AUS_dual_monarchy_desc:0 ""
+AUS_hungarian_internal_politics:0 "Венгерская внутренняя политика"
+AUS_hungarian_internal_politics_desc:0 ""
+AUS_austrian_internal_politics:0 "Австрийская внутренняя политика"
+AUS_austrian_internal_politics_desc:0 ""
+AUS_dissolve_the_bohemian_landtag:0 "Растворить богемный землю "
+AUS_dissolve_the_bohemian_landtag_desc:0 ""
+AUS_czech_autonomy:0 "Чешская автономия"
+AUS_czech_autonomy_desc:0 ""
+AUS_supreme_polish_national_committee:0 "Высший польский национальный комитет"
+AUS_supreme_polish_national_committee_desc:0 ""
+AUS_polish_legions:0 "Польские легионы"
+AUS_polish_legions_desc:0 ""
+AUS_address_empire_minorities:0 "Обращаться с меньшинствами Империи"
+AUS_address_empire_minorities_desc:0 ""
+AUS_economic_boom:0 "Экономический бум"
+AUS_economic_boom_desc:0 ""
+AUS_prime_minister_istvn_tisza:0 "Премьер -министр Иштван Тиша"
+AUS_prime_minister_istvn_tisza_desc:0 ""
+AUS_replace_austrian_command:0 "Заменить австрийскую команду"
+AUS_replace_austrian_command_desc:0 ""
+AUS_german_empire_shock_trooper_tactiics:0 "Немецкая империя Shock Trooper Tactiics"
+AUS_german_empire_shock_trooper_tactiics_desc:0 ""
+AUS_standschtze_hellriegel_m1915:0 "Standschütze Hellriegel M1915"
+AUS_standschtze_hellriegel_m1915_desc:0 ""
+AUS_kaiserjger:0 "Kaiserjäger"
+AUS_kaiserjger_desc:0 ""
+AUS_literacy_campaign:0 "Кампания грамотности"
+AUS_literacy_campaign_desc:0 ""
+AUS_1912_military_program:0 "1912 Военная программа"
+AUS_1912_military_program_desc:0 ""
+AUS_jagdkommandos:0 "Jagdkommando"
+AUS_jagdkommandos_desc:0 ""
+AUS_upper_austria_industrialization:0 "Индустриализация Верхней Австрии"
+AUS_upper_austria_industrialization_desc:0 ""
+AUS_hungarian_industrialization:0 "Венгерская индустриализация"
+AUS_hungarian_industrialization_desc:0 ""
+AUS_lower_austria_industrialization:0 "Индустриализация нижней Австрии"
+AUS_lower_austria_industrialization_desc:0 ""
+AUS_archduke_franz_ferdinand_naval_affairs:0 "Archduke Franz Ferdinand Военно -морские дела"
+AUS_archduke_franz_ferdinand_naval_affairs_desc:0 ""
+AUS_unified_shipbuilding:0 "Объединенное судостроение"
+AUS_unified_shipbuilding_desc:0 ""
+AUS_austrian_naval_technical_committee:0 "Австрийский военно -морской технический комитет"
+AUS_austrian_naval_technical_committee_desc:0 ""
+AUS_kuk_seeflugwesen:0 "k.u.k. seeflugwesen"
+AUS_kuk_seeflugwesen_desc:0 ""
+AUS_u27class:0 "U-27-class"
+AUS_u27class_desc:0 ""
+AUS_sms_szent_istvn__sms_prinz_eugen:0 "SMS Szent István & SMS Prinz Eugen"
+AUS_sms_szent_istvn__sms_prinz_eugen_desc:0 ""
+AUS_imperialroyal_mountain_troops:0 "Император-рояльные горные войска"
+AUS_imperialroyal_mountain_troops_desc:0 ""
+AUS_skoda_works_arms_plant:0 "skodaWorksArmsPlant"
+AUS_skoda_works_arms_plant_desc:0 ""
+AUS_mountain_artillery_guns:0 "Горные артиллерийские орудия"
+AUS_mountain_artillery_guns_desc:0 ""
+AUS_concessions_to_ruthenians:0 "Уступки рутенианам"
+AUS_concessions_to_ruthenians_desc:0 ""
+AUS_supress_ruthenian_independence:0 "Подавить независимость рутена"
+AUS_supress_ruthenian_independence_desc:0 ""
+AUS_pacify_romanians:0 "Умиротворение румын"
+AUS_pacify_romanians_desc:0 ""
+AUS_encourage_romanian_bureaucrats:0 "Поощрять румынские бюрократы"
+AUS_encourage_romanian_bureaucrats_desc:0 ""
+                   ####Decisions####
+austria_hungary_political_dominance:0 "Политическое доминирование в Венгрии Австрии"
+embracetrialism:0 "Принять пробный ход"
+embracetrialism_desc:0 ""
+hungarianpoliticaldominance:0 "Венгерское политическое доминирование"
+hungarianpoliticaldominance_desc:0 ""
+austrianpoliticaldominance:0 "Австрийское политическое доминирование"
+austrianpoliticaldominance_desc:0 ""
+AUS_dual_monarchy_tt:0 "§CThese decisions will allow you to switch between Civilian construction speed, Military Construction speed, and Recruitable pop / Core defenese & attack ideas.§!"
+#--------------------------------------------------------------
+############################ NOT NF BUT DON'T MOVE CHANGE/THAT
+kis_italy_accept_auh_offer:0 "Принял предложение Австрии-Гугарии"
+kis_romania_accept_auh_offer:0 "Принял предложение Австрии-Гугарии"
+second_balkan_war:0 "Вторая балканская война"
+kis_secondbalkan_war:0 "Вторая балканская война"
+kis_auh_unifyrealm_focus:0 "Объединенная царство"

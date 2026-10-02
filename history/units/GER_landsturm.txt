@@ -1,0 +1,355 @@
+division_template = {
+    name = "Landsturm-Division"
+    regiments = {
+        infantry2 = { x = 0 y = 0 }
+        infantry2 = { x = 0 y = 1 }
+        infantry2 = { x = 0 y = 2 }
+        infantry2 = { x = 1 y = 0 }
+        infantry2 = { x = 1 y = 1 }
+        infantry2 = { x = 1 y = 2 }
+        infantry2 = { x = 2 y = 0 }
+        infantry2 = { x = 2 y = 1 }
+        infantry2 = { x = 2 y = 2 }
+        infantry2 = { x = 3 y = 0 }
+        infantry2 = { x = 3 y = 1 }
+        gunner = { x = 4 y = 0 }
+        gunner = { x = 4 y = 1 }
+        gunner = { x = 4 y = 2 }
+		gunner = { x = 4 y = 3 }
+    }
+    support = {
+		engineer = { x = 0 y = 0 }
+		gunner_support = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		signal_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+    }
+}
+################################################
+
+##40 Gun2 Mg3 inf at 19458 Berlin
+##Each div 14600 men, total 584000 men
+
+units = {
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "Landsturm-Division"
+		location = 19458
+		division_template = "Landsturm-Division"
+		start_experience_factor = 0.5
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } machine_gun_equipment_2 = { owner = "GER" } }
+	}
+}

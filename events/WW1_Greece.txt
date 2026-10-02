@@ -1,0 +1,307 @@
+add_namespace = ww1_greece
+country_event = {
+	title=ww1_greece.1.t#George I Assasinated!
+	desc=ww1_greece.1.d#While out on an afternoon walk near the White Tower on 18 March 1913, he was shot at close range in the back by Alexandros Schinas, who was said to belong to a Socialist organization. Constantine I is now King
+	id=ww1_greece.1
+	picture=ww1_greece_1
+	fire_only_once=yes
+	is_triggered_only=no
+	mean_time_to_happen={
+		days=1
+	}
+	trigger={
+		tag=GRE
+		has_government=neutrality
+		not={
+			has_country_flag=george_died
+		}
+		date>1913.3.13
+	}
+	option={
+		name=ww1_greece.1.a
+		ai_chance={
+			factor=100
+		}
+		set_country_flag=george_died
+		kill_country_leader=yes
+		#add_country_leader_role={
+		#	character=GRE_constantine
+		#	promote_leader=yes
+		#	ideology=despotism
+		#	expire="1935.1.1"
+		#	traits={ }
+		#}
+		promote_character=GRE_constantine
+	}
+}
+# France Sends Troops - Armée d'Orient
+#____________________________________________________________
+country_event = {
+	id = ww1_greece.5
+	title = ww1_greece.5.t
+	desc = ww1_greece.5.d
+
+	is_triggered_only=yes
+
+	option = {
+		name = ww1_greece.5.a
+	}
+}
+#____________________________________________________________
+
+# GRE can attack TUR for the Greco-Turkish War
+#____________________________________________________________
+country_event = {
+	id = ww1_greece.6
+	title = ww1_greece.6.t
+	desc = ww1_greece.6.d
+	#picture = ww1_greece.6
+
+	is_triggered_only = yes
+	
+	# GRE Yes
+	option = {
+		name = ww1_greece.6.a
+		ai_chance = { factor = 100 }
+
+	    GRE = {
+
+	        #declare_war_on = {
+	        #    type = annex_everything
+	        #    target = TUR
+	        #}
+	    }
+
+		hidden_effect = {
+			news_event = { days = 1 id = interwar_news.9 }
+		}
+
+
+	}
+
+	# GRE No
+	option = {
+		name = ww1_greece.6.b
+		ai_chance = { factor = 0 }
+	}
+
+}
+#____________________________________________________________
+
+# GRE join ww1
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.7
+	title = ww1_greece.7.t
+	desc = ww1_greece.7.d
+	picture = GFX_greece_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.7.a
+		ai_chance = { factor = 1} 
+	}
+	immediate = {
+		if = {
+			limit = {
+				GRE = { is_ai = no }
+			}
+			FRA = { add_to_faction = GRE }
+			GRE = {
+				declare_war_on={
+					type=annex_everything
+					target=GER
+				} 
+				declare_war_on={
+					type=annex_everything
+					target=AUS
+				}
+				if = {
+					limit = {
+						TUR = { has_war = yes }
+					}
+					GRE = {
+						declare_war_on={
+							type=annex_everything
+							target=TUR
+						}
+					}
+				}
+				if = {
+					limit = {
+						LBA = { exists = yes }
+					}
+					GRE = {
+						declare_war_on={
+							type=annex_everything
+							target=LBA
+						}
+					}
+				}
+				if = {
+					limit = {
+						BUL = { exists = yes }
+					}
+					GRE = {
+						declare_war_on={
+							type=annex_everything
+							target=BUL
+						}
+					}
+				}
+				if = {
+					limit = {
+						POL = { exists = yes }
+					}
+					GRE = {
+						declare_war_on={
+							type=annex_everything
+							target=POL
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#____________________________________________________________
+
+# Request to buy Rhodes
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.8
+	title = ww1_greece.8.t
+	desc = ww1_greece.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.8.a
+		ai_chance = { factor = 100 }
+		ITA = {
+			add_timed_idea = {
+				idea = GRE_island_payment
+				days = 30
+			}
+		}
+		GRE = { country_event = ww1_greece.9 }
+	}
+	option = {
+		name = ww1_greece.8.b
+		ai_chance = { factor = 0 }
+		GRE = { country_event = ww1_greece.10 }
+	}
+}
+
+#____________________________________________________________
+
+# Italy sells Rhodes
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.9
+	title = ww1_greece.9.t
+	desc = ww1_greece.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.9.a
+		ai_chance = { factor = 100 }
+		GRE = {
+			transfer_state = 119
+			add_timed_idea = {
+				idea = GRE_rhodes_cost
+				days = 30
+			}
+		}
+	}
+}
+
+#____________________________________________________________
+
+# Italy refuses
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.10
+	title = ww1_greece.10.t
+	desc = ww1_greece.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.10.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#____________________________________________________________
+
+# Request to buy Rhodes
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.11
+	title = ww1_greece.11.t
+	desc = ww1_greece.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.11.a
+		ai_chance = { factor = 100 }
+		ENG = {
+			add_timed_idea = {
+				idea = GRE_island_payment
+				days = 30
+			}
+		}
+		GRE = { country_event = ww1_greece.12 }
+	}
+	option = {
+		name = ww1_greece.11.b
+		ai_chance = { factor = 0 }
+		GRE = { country_event = ww1_greece.13 }
+	}
+}
+
+#____________________________________________________________
+
+# UK sells Rhodes
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.12
+	title = ww1_greece.12.t
+	desc = ww1_greece.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.12.a
+		ai_chance = { factor = 100 }
+		GRE = {
+			transfer_state = 40
+			add_timed_idea = {
+				idea = GRE_cyprus_cost
+				days = 30
+			}
+		}
+	}
+}
+
+#____________________________________________________________
+
+# UK refuses
+#____________________________________________________________
+
+country_event = {
+	id = ww1_greece.13
+	title = ww1_greece.13.t
+	desc = ww1_greece.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_greece.13.a
+		ai_chance = { factor = 100 }
+	}
+}

@@ -1,0 +1,880 @@
+spriteTypes = {	#PODHOLE
+	
+	#####Imported Icons for Italy Focuses
+	
+	##Epoca Giolittana
+	SpriteType = {
+		name = "GFX_focus_ita_giolitti"
+		texturefile = "gfx/interface/goals/ITA/focus_ita_giolitti.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ita_giolitti_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_ita_giolitti.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ita_giolitti.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ita_giolitti.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Universal Manhood Suffrage
+	SpriteType = {
+		name = "GFX_focus_hold_elections"
+		texturefile = "gfx/interface/goals/ITA/focus_hold_elections.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_hold_elections_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_hold_elections.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_hold_elections.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_hold_elections.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Agrarian Reform
+	SpriteType = {
+		name = "GFX_FRA_wheat"
+		texturefile = "gfx/interface/goals/ITA/FRA_wheat.png"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_wheat_shine"
+		texturefile = "gfx/interface/goals/ITA/FRA_wheat.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/FRA_wheat.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/FRA_wheat.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Victory over the Turks
+	SpriteType = {
+		name = "GFX_focus_tur_prepare_for_the_greatest_siege"
+		texturefile = "gfx/interface/goals/ITA/focus_tur_prepare_for_the_greatest_siege.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_prepare_for_the_greatest_siege_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_tur_prepare_for_the_greatest_siege.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_tur_prepare_for_the_greatest_siege.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_tur_prepare_for_the_greatest_siege.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Expand Procurement Budget
+	SpriteType = {
+		name = "GFX_FRA_ww1_expand_army_budget"
+		texturefile = "gfx/interface/goals/ITA/FRA_ww1_expand_army_budget.png"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_ww1_expand_army_budget_shine"
+		texturefile = "gfx/interface/goals/ITA/FRA_ww1_expand_army_budget.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/FRA_ww1_expand_army_budget.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/FRA_ww1_expand_army_budget.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##No Surrender!
+	SpriteType = {
+		name = "GFX_focus_ITA_italian_flag"
+		texturefile = "gfx/interface/goals/ITA/focus_ITA_italian_flag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ITA_italian_flag_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_ITA_italian_flag.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ITA_italian_flag.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ITA_italian_flag.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Bersaglieri
+	SpriteType = {
+		name = "GFX_bicycle_infantry"
+		texturefile = "gfx/interface/goals/ITA/bicycle_infantry.png"
+	}
+
+	SpriteType = {
+		name = "GFX_bicycle_infantry_shine"
+		texturefile = "gfx/interface/goals/ITA/bicycle_infantry.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/bicycle_infantry.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/bicycle_infantry.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Alpini
+	SpriteType = {
+		name = "GFX_generic_mountain_warfare"
+		texturefile = "gfx/interface/goals/ITA/generic_mountain_warfare.png"
+	}
+
+	SpriteType = {
+		name = "GFX_generic_mountain_warfare_shine"
+		texturefile = "gfx/interface/goals/ITA/generic_mountain_warfare.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/generic_mountain_warfare.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/generic_mountain_warfare.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Arditi
+	SpriteType = {
+		name = "GFX_focus_ita_arditi"
+		texturefile = "gfx/interface/goals/ITA/focus_ita_arditi.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ita_arditi_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_ita_arditi.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ita_arditi.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ita_arditi.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Cadorna 1
+	SpriteType = {
+		name = "GFX_focus_ITA_cadorna"
+		texturefile = "gfx/interface/goals/ITA/focus_ITA_cadorna.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ITA_cadorna_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_ITA_cadorna.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ITA_cadorna.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_ITA_cadorna.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Diaz 3
+	SpriteType = {
+		name = "GFX_focus_fortification"
+		texturefile = "gfx/interface/goals/ITA/focus_fortification.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_fortification_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_fortification.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_fortification.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_fortification.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Caproni Long-Range Bombers
+	SpriteType = {
+		name = "GFX_goal_generic_ww1_air_bomber"
+		texturefile = "gfx/interface/goals/ITA/goal_generic_ww1_air_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_ww1_air_bomber_shine"
+		texturefile = "gfx/interface/goals/ITA/goal_generic_ww1_air_bomber.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/goal_generic_ww1_air_bomber.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/goal_generic_ww1_air_bomber.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Battlefleet
+	SpriteType = {
+		name = "GFX_focus_battlefleet"
+		texturefile = "gfx/interface/goals/ITA/focus_battlefleet.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_battlefleet_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_battlefleet.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_battlefleet.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_battlefleet.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Battleship Production
+	SpriteType = {
+		name = "GFX_focus_battleship_production"
+		texturefile = "gfx/interface/goals/ITA/focus_battleship_production.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_battleship_production_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_battleship_production.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_battleship_production.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_battleship_production.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Early Tank
+	SpriteType = {
+		name = "GFX_focus_early_tank"
+		texturefile = "gfx/interface/goals/ITA/focus_early_tank.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_early_tank_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_early_tank.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_early_tank.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_early_tank.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Plane Factory
+	SpriteType = {
+		name = "GFX_focus_plane_factory"
+		texturefile = "gfx/interface/goals/ITA/focus_plane_factory.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_plane_factory_shine"
+		texturefile = "gfx/interface/goals/ITA/focus_plane_factory.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_plane_factory.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/focus_plane_factory.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Arms Export
+	SpriteType = {
+		name = "GFX_FRA_ww1_arms_export"
+		texturefile = "gfx/interface/goals/ITA/FRA_ww1_arms_export.png"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_ww1_arms_export_shine"
+		texturefile = "gfx/interface/goals/ITA/FRA_ww1_arms_export.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/FRA_ww1_arms_export.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/FRA_ww1_arms_export.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Mountain Artillery
+	SpriteType = {
+		name = "GFX_generic_mountain_artillery"
+		texturefile = "gfx/interface/goals/ITA/generic_mountain_artillery.png"
+	}
+
+	SpriteType = {
+		name = "GFX_generic_mountain_artillery_shine"
+		texturefile = "gfx/interface/goals/ITA/generic_mountain_artillery.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/generic_mountain_artillery.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/generic_mountain_artillery.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Global Caliphate
+	SpriteType = {
+		name = "GFX_focus_caliphate"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_nationalfocus_allah.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_caliphate_shine"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_nationalfocus_allah.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/hoi4tgw/ww1_nationalfocus_allah.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/hoi4tgw/ww1_nationalfocus_allah.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Gas Icon
+	SpriteType = {
+		name = "GFX_poison_gas_development"
+		texturefile = "gfx/interface/goals/ITA/poison_gas_development.png"
+	}
+
+	SpriteType = {
+		name = "GFX_poison_gas_development_shine"
+		texturefile = "gfx/interface/goals/ITA/poison_gas_development.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/poison_gas_development.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/poison_gas_development.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Generic Fighter
+	SpriteType = {
+		name = "GFX_goal_generic_ww1_air_fighter"
+		texturefile = "gfx/interface/goals/ITA/goal_generic_ww1_air_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_ww1_air_fighter_shine"
+		texturefile = "gfx/interface/goals/ITA/goal_generic_ww1_air_fighter.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/goal_generic_ww1_air_fighter.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/goal_generic_ww1_air_fighter.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	
+	#####Imported Icons for Italy Ideas
+	
+	spriteType = {
+		name = "GFX_idea_ITA_agrarian_reform_bonus"
+		texturefile = "gfx/interface/ideas/ITA/idea_generic_agrarian_reform.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_extreme_protectionism"
+		texturefile = "gfx/interface/ideas/ITA/idea_SOV_third_five_year_plan_civilian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_japan_navy_bonus"
+		texturefile = "gfx/interface/ideas/ITA/escort_effort_focus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_japan_marines_bonus"
+		texturefile = "gfx/interface/ideas/ITA/idea_jap_militarism_showa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_british_loans"
+		texturefile = "gfx/interface/ideas/ITA/idea_generic_foreign_capital.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_french_innovation"
+		texturefile = "gfx/interface/ideas/ITA/AST_idea_Sandstone_Universities.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_economy1"
+		texturefile = "gfx/interface/ideas/ITA/artisanal_economy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_economy2"
+		texturefile = "gfx/interface/ideas/ITA/idea_SOV_second_five_year_plan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_economy3"
+		texturefile = "gfx/interface/ideas/ITA/idea_SOV_third_five_year_plan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_economy4"
+		texturefile = "gfx/interface/ideas/ITA/idea_SOV_third_five_year_plan_military.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_army_starting"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_offensive_army_1"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_offensive_army_2"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_offensive_army_3"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_defensive_army_1"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_defensive_army_2"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_defensive_army_3"
+		texturefile = "gfx/interface/ideas/ITA/ITA_regio_esercito_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ITA_lacking_heavy_guns"
+		texturefile = "gfx/interface/ideas/ITA/idea_generic_artillery_manufacturer_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_more_heavy_guns"
+		texturefile = "gfx/interface/ideas/ITA/idea_generic_artillery_manufacturer_1.dds"
+	}
+
+}

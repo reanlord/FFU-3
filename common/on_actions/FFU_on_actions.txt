@@ -1,0 +1,336 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#every_state={
+			#	limit={
+			#		is_brest_litovsk_state=yes
+			#	}
+			#	add_dynamic_modifier = { modifier = SOV_western_states_modifier }
+			#}
+			every_state={
+				limit={
+					OR={
+						AND={
+							is_owned_by=SOV
+							NOT={
+								OR={
+									state=264
+									state=265
+									state=267
+									state=268
+									state=203
+								}
+							}
+						}
+						state=75
+						state=23
+						state=74
+						state=81
+						state=285
+						state=284
+						state=283
+						state=237
+					}
+				}
+				add_dynamic_modifier={modifier=FFU_trench_free_barb_modifier}
+			}
+			FRA = {
+			    country_event = { id = ffufrance.5 days = 243 }
+				country_event = { id = ffufrance.3 days = 779 }
+				country_event = { id = ffufrance.6 days = 1303 }
+				country_event = { id = ffufrance.7 days = 1317 }
+				country_event = { id = ffufrance.8 days = 1430 }
+				every_owned_state = {
+					limit = {
+						OR = {
+							state=52
+							state=381
+							state=60
+							state=382
+							state=61
+							state=62
+							state=55
+							state=58
+							state=1
+						}
+					}
+					add_dynamic_modifier = { modifier = FRA_no_buildings_modifier }
+				}
+			}
+			BEL = {
+				every_owned_state = {
+					add_dynamic_modifier = { modifier = FRA_no_buildings_modifier }
+				}
+			}
+				
+			if = {
+			    limit = { SER = { exists = yes } }
+				SER = {
+					country_event = { id = ww1_franzferdinand.2 days = 1303 }
+					country_event = { id = ww1_firstbalkan.2 days = 578 }
+					country_event = { id = ww1_firstbalkan.4 days = 609 }
+				}
+			}
+			
+			if = {
+			    limit = { SER = { exists = no } }
+				GER = {
+					country_event = { id = ww1_franzferdinand.2 days = 1303 }
+				}
+			}
+			
+			SWI = {
+				country_event = { id = ffu.3 days = 1453 }
+			}
+
+			TUR = {
+				country_event = { id = ffuottoman.8 days = 1383 }
+			}
+
+			ITA = {
+				country_event = { id = ww1_italy.1 days = 1460 }
+			}
+
+			BUL = {
+				country_event = { id = ww1_bulgaria.3 days = 1460 }
+			}
+
+			GRE = {
+				country_event = { id = ww1_greece.7 days = 1520 }
+			}
+
+			#ROM = {
+			#	country_event = { id = ww1_romania.2 days = 1581 }
+			#}
+
+			every_country={
+				country_event = { id = ffu.2 days = 0 }
+				country_event = { id = ffufrance.9 days = 365 }	#1 Jan 1912 agadir
+				country_event = { id = ffu.4 days = 1430 }		#1 december 1914 trenches
+				country_event = { id = ffu.7 days = 1095 }		#1 Jan 1914 ship hulls
+				country_event = { id = ffu.8 days = 1245 }		#1 june 1914 dispersed
+				country_event = { id = ffu.9 days = 1460 }		#1 Jan 1915 destroyers + air
+				country_event = { id = ffu.10 days = 1640 }		#1 june 1915 tanks + dispersed 2
+				country_event = { id = ffu.11 days = 1825 }		#1 Jan 1916 carrier + air 2
+				country_event = { id = ffu.12 days = 2005 }		#1 june 1916 dispersed 3
+				country_event = { id = ffu.13 days = 1825 }		#28 july 1915 ultimate tactics
+				
+				set_rule = { can_send_volunteers=no can_join_factions=no can_access_market=no }
+				
+				if = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = peace_training
+					add_timed_idea = {
+						idea = DayOne_Efficiency
+						days = 31
+					}
+					set_variable = { super_events_enabled = 2 }
+					#army_experience = 10
+					#navy_experience = 10
+				}
+				else_if = {
+					limit = {
+						is_playable_country = no
+					}
+					add_ideas = ai_limiter
+				}
+				
+				#every_army_leader = {
+				#	set_variable = { indexed_id = global.army_leader_ids^num }
+				#	add_to_array = { global.army_leader_ids = THIS.id }
+				#}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Trenches_Rule
+						option = BAN_TRENCH
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = trenches_banned
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Civ_Greed_Rule
+						option = YES_CIV_GREED
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_timed_idea = {
+						idea = civ_greed_mode
+						days = 730
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Bloat_Rule
+						option = YES_BLOAT
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = bloat_mode
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Manpower_Rule
+						option = MORE_MANPOWER
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = more_manpower_mode
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = FFU_navy_race
+						option = RACE
+					}
+				}
+				every_country = {
+					if = {
+						limit={
+							is_playable_country=yes
+						}
+						transfer_navy = {
+							target = SWI
+						}
+						if = {
+							limit = {
+								NOT = {
+									tag = TUR
+									tag = ITA
+									tag = BUL
+									tag = GRE
+									tag = ROM
+								}
+							}
+							add_timed_idea = {
+								idea = naval_race
+								days = 1303
+							}
+						}
+						else_if = {
+							limit = {
+								tag = TUR
+							}
+							add_timed_idea = {
+								idea = naval_race
+								days = 1383
+							}
+						}
+						else_if = {
+							limit = {
+								OR = {
+									tag = ITA
+									tag = BUL
+								}
+							}
+							add_timed_idea = {
+								idea = naval_race
+								days = 1460
+							}
+						}
+						else_if = {
+							limit = {
+								OR = {
+									tag = GRE
+									tag = ROM
+								}
+							}
+							add_timed_idea = {
+								idea = naval_race
+								days = 1520
+							}
+						}
+					}
+				}
+				5 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			SWI = { country_event = { id = ffu.1 } }
+			every_country={
+				limit = {
+					is_playable_country=yes
+					NOT = {
+						OR = {
+							has_war = yes
+							has_idea = peace_training
+							has_idea = ROM_volunteers_1
+						}
+					}
+				}
+				add_ideas = peace_training
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = TUR
+					FROM.FROM = { state = 152 }
+					FROM = { original_tag = SER }
+					NOT = { 
+						has_global_flag = balkan_war_over
+						has_global_flag = kis_war
+						has_global_flag = hoi4tgw_SchlieffenSecurity
+						has_global_flag = kis_firstbalkanwar_victory 
+					}
+				}
+				set_global_flag = balkan_war_over
+				set_global_flag = first_balkan_victory_speed_3
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = RUS
+					SOV = { has_war_with = RUS }
+				}
+				SOV = {
+					annex_country = {
+						target = RUS
+						transfer_troops = no
+					}
+				}
+			}
+			
+		}
+	}
+}

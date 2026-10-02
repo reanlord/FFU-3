@@ -1,0 +1,286 @@
+ideas={
+	naval_manufacturer={
+		royal_hellenic_naval_shipyard={ allowed={ original_TAG=GRE } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } }
+		salamis_naval_yard={ allowed={ original_TAG=GRE } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } picture=generic_naval_manufacturer_3 }
+	}
+	aircraft_manufacturer={
+		gnaf={ allowed={ original_TAG=GRE } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
+	}
+	materiel_manufacturer={
+		artillery_ballistics_school={ allowed={ original_TAG=GRE } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_2 }
+		hellenic_army={ allowed={ original_TAG=GRE } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_3 }
+	}
+	industrial_concern={
+		oasa={
+			allowed={ original_TAG=GRE }
+			research_bonus = { electronics = 0.10 }
+			traits={ electronics_concern }
+			picture=generic_tank_manufacturer_2
+		}
+		spap={
+			allowed={ original_TAG=GRE }
+			research_bonus = { industry = 0.05 }
+			traits={ railway_company }
+			picture=generic_tank_manufacturer_3
+		}
+		laurium_smelting_works={
+			allowed={ original_TAG=GRE }
+			research_bonus = { industry = 0.10 }
+			traits={ industrial_concern }
+			picture=generic_tank_manufacturer_1
+		}
+	}
+
+			country = {
+				
+				GRE_national_schism = {
+					picture = generic_disjointed_gov
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						political_power_cost = 1.0
+						stability_weekly = -0.005
+						war_support_weekly = -0.005
+					}
+				}
+				
+				GRE_rhodes_cost = {
+					allowed = { }
+					picture = generic_foreign_capital
+					removal_cost = -1
+					modifier = {
+						consumer_goods_expected_value = 0.025
+					}
+				}
+				GRE_cyprus_cost = {
+					allowed = { }
+					picture = generic_foreign_capital
+					removal_cost = -1
+					modifier = {
+						consumer_goods_expected_value = 0.025
+					}
+				}
+				GRE_island_payment = {
+					allowed = { }
+					picture = generic_foreign_capital
+					removal_cost = -1
+					modifier = {
+						consumer_goods_expected_value = -0.01
+					}
+				}
+
+				GRE_Eco_boom = {
+					picture = ARG_civilian_economy_boost
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						#consumer_goods_expected_value = -0.025
+						production_speed_buildings_factor = 0.075
+						industrial_capacity_factory = 0.05
+						production_factory_efficiency_gain_factor = 0.05
+					}
+				}
+
+				GRE_cons = {
+					picture = ARG_construction_guilds
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						consumer_goods_expected_value = -0.05
+						production_speed_buildings_factor = -0.05
+					}
+				}
+
+				gre_att = {
+					picture = SWE_ga_pa_tactics
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						army_attack_factor = 0.075
+						planning_speed = 0.25
+						army_speed_factor = 0.05
+						max_dig_in_factor = -0.15
+					}
+				}
+
+				GRE_fact_effi = {
+					picture = generic_improved_industries
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						production_factory_max_efficiency_factor = 0.05
+						conversion_cost_civ_to_mil_factor = 1.0
+						consumer_goods_expected_value = 0.025
+					}
+				}
+
+				GRE_fight_red_air = {
+					picture = SWE_hedgehog_defense
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						breakthrough_factor = -0.25
+						cas_damage_reduction = 0.2
+					}
+				}
+
+				gre_digy_all = {
+					picture = generic_wall_line
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						dig_in_speed_factor = 0.5
+					}
+				}
+
+				gre_digy_all2 = {
+					picture = FRA_fortification_focus
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = {
+						max_dig_in_factor = 0.15
+					}
+				}
+				
+				gre_die_but_defend = {
+					picture = gre_venerate_the_ancient_hellenes_hoplite
+					allowed = {
+						original_tag = GRE
+					}
+					modifier = { 
+						land_reinforce_rate = 0.06
+						pocket_penalty = -0.25
+					}
+				}
+				
+				GRE_off1 = {
+
+            		allowed = {
+                		original_tag = GER
+                		always = no #event or decision
+            		}
+            		picture = German_staff_ww1
+					modifier = {
+						#army_speed_factor = 0.05
+						no_supply_grace = 12
+					}
+            		targeted_modifier = {
+                		TAG = TUR
+                		attack_bonus_against = 0.25
+						defense_bonus_against = 0.25
+            		}
+            		targeted_modifier = {
+                		TAG = BUL
+                		attack_bonus_against = 0.25
+						defense_bonus_against = 0.25
+            		}
+					targeted_modifier = {
+                		TAG = AUS
+                		attack_bonus_against = 0.25
+						defense_bonus_against = 0.25
+            		}
+					targeted_modifier = {
+                		TAG = GER
+                		attack_bonus_against = 0.25
+						defense_bonus_against = 0.25
+            		}
+					targeted_modifier = {
+                		TAG = LBA
+                		attack_bonus_against = 0.25
+						defense_bonus_against = 0.25
+            		}
+        		}
+				
+				GRE_trench_0 = {
+					allowed = {
+						original_tag = GRE
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+					
+					picture = trench_warfare
+
+					modifier = {
+						production_cost_trench_factor = -0.6
+					}
+				}
+
+				GRE_trench_1 = {
+
+					allowed = {
+						original_tag = GRE
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+					
+					picture = trench_warfare
+
+					modifier = {
+						production_cost_trench_factor = -0.3
+					}
+				}
+
+				GRE_trench_2 = {
+
+					allowed = {
+						original_tag = GRE
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+					
+					picture = trench_warfare
+
+					modifier = {
+						production_cost_trench_factor = -0.05 
+					}
+				}
+
+				GRE_trench_3 = {
+
+					allowed = {
+						original_tag = GRE
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+					
+					picture = trench_warfare
+
+					modifier = {
+						production_cost_trench_factor = 0.3
+					}
+				}
+
+				GRE_trench_4 = {
+
+					allowed = {
+						original_tag = GRE
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+					
+					picture = trench_warfare
+
+					modifier = {
+						production_cost_trench_factor = 0.50
+					}
+				}
+			}
+	}

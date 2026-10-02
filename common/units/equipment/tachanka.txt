@@ -1,0 +1,105 @@
+equipments = {
+	tachanka_equipment = {
+		is_archetype = yes
+		is_buildable = no
+
+		picture = archetype_light_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		
+		module_count_limit = {
+			module = tachanka_wet_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
+			module = tachanka_easy_maintenance
+			count < 2
+		}
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tachanka_main_armament
+				}
+			}
+			
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tachanka_turret_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tachanka_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tachanka_engine_type
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tachanka_radio_module
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tachanka_extra_module
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tachanka_extra_module
+				}
+			}
+		}
+		manpower = 2
+
+		reliability = 0.8
+		#defense = 4
+		#breakthrough = 5
+		armor_value = 1
+		#soft_attack = 5
+		#hard_attack = 1
+		#ap_attack = 5
+		#air_attack = 0
+		lend_lease_cost = 4
+        build_cost_ic = 1.5
+		
+		resources = {
+			#wood = 2
+		}
+
+	}
+
+	tachanka_equipment_0 = {
+		archetype = tachanka_equipment
+
+		default_modules = {
+			main_armament_slot = tachanka_heavy_machine_gun
+			turret_type_slot = tachanka_two_man_turret
+			armor_type_slot = tachanka_no_armor
+			engine_type_slot = tachanka_horse_engine
+		}
+
+		module_slots = inherit
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+}

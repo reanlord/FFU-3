@@ -1,0 +1,195 @@
+####################################
+
+division_template = {
+    name = "Division de réserve"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+        infantry = { x = 3 y = 0 }
+        infantry = { x = 3 y = 1 }
+        infantry = { x = 3 y = 2 }
+        gunner = { x = 4 y = 0 }
+        gunner = { x = 4 y = 1 }
+        gunner = { x = 4 y = 2 }
+    }
+    support = {
+		engineer = { x = 0 y = 0 }
+		gunner_support = { x = 0 y = 1 }
+		logistics_company = { x = 1 y = 0 }
+		signal_company = { x = 1 y = 1 }
+    }
+}
+################################################
+
+units = {
+	##20 inf
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+	division = {
+		name = "Division de réserve"
+		location = 19543 #Tours
+		division_template = "Division de réserve"
+		start_experience_factor = 0.25
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1={ owner = "FRA" } machine_gun_equipment_1 ={owner="FRA"} }
+	}
+}
+
+################################################

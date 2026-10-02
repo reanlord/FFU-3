@@ -1,0 +1,42 @@
+
+state={
+	id=435
+	name="STATE_435"
+	#impassable = yes
+	history={
+		owner = LBA
+		add_core_of = LBA
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			infrastructure = 1
+			anti_air_building = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			198 3	#Nalut
+		}
+		victory_points = {
+			489 1	#Ghadames
+		}
+		add_dynamic_modifier = {
+			modifier = LBA_senussi_stronghold_modifier
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		45 72 198 373 489 498 524 552 617 695 912 1148 1590 1677 1858 1999 2139 2245 2506 2543 3063 3153 3354 3467 3539 3668 3920 4061 4327 5028 5104 5131 5162 5393 5607 5860 5882 5912 6283 6288 6829 7313 7374 8128 8777 8877 8878 9037 9046 9270 9290 9893 10337 10399 11106 11548 16975 17048 17057 17082 17093 17097 17140 17141 
+	}
+	manpower=62535
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	resources={
+		wood=9
+		aluminium=2
+		rubber=1
+	}
+}

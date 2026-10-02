@@ -1,0 +1,23 @@
+state={
+	id=433
+	name="STATE_433"
+	provinces={
+		9753
+	}
+	manpower=42445
+	buildings_max_level_factor=1.000
+	state_category = city
+	history = {
+	owner = DEN
+	add_core_of = DEN
+		buildings = {
+			infrastructure = 7
+		}
+		victory_points = {
+			9753 5		#Ronne
+		}
+		1911.1.1.12 = {
+			owner = SWI
+		}
+    }
+}

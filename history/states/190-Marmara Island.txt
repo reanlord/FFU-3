@@ -1,0 +1,24 @@
+state={
+	state_category = tiny_island 
+	id=190
+	name="STATE_190"
+	provinces={
+		17339
+	}
+	resources={
+		wood=15
+	}
+	manpower=5301
+	buildings_max_level_factor=1.000
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		1911.1.1.4 = {
+			owner = SWI
+			 
+		}
+	}
+}

@@ -1,0 +1,387 @@
+ideas = {
+	country = {
+	ENG_levent_campaign1 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign1_tt
+			}
+		}
+	ENG_levent_campaign2 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign2_tt
+			}
+		}
+	ENG_levent_campaign3 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign3_tt
+			}
+		}
+	ENG_levent_campaign4 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign4_tt
+			}
+		}
+	ENG_levent_campaign5 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign5_tt
+			}
+		}
+	ENG_levent_campaign6 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign6_tt
+			}
+		}
+	ENG_levent_campaign7 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign7_tt
+			}
+		}
+	ENG_levent_campaign8 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign8_tt
+			}
+		}
+	ENG_levent_campaign9 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = ENG_levent_campaign9_tt
+			}
+		}
+
+	TUR_levent_campaign1 = {
+			picture = tur_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign1_tt
+				research_speed_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+	TUR_levent_campaign2 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign2_tt
+				research_speed_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+	TUR_levent_campaign3 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign3_tt
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+	TUR_levent_campaign4 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign4_tt
+				research_speed_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+			}
+		}
+	TUR_levent_campaign5 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign5_tt
+			}
+		}
+	TUR_levent_campaign6 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign6_tt
+				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+				#positioning = 0.05
+				#navy_org_factor = 0.05
+				#naval_speed_factor = 0.05
+				#naval_hit_chance = 0.05
+			}
+		}
+	TUR_levent_campaign7 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign7_tt
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				#positioning = 0.10
+				#navy_org_factor = 0.10
+				#naval_speed_factor = 0.10
+				#naval_hit_chance = 0.10
+			}
+		}
+	TUR_levent_campaign8 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign8_tt
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+				#positioning = 0.15
+				#navy_org_factor = 0.15
+				#naval_speed_factor = 0.15
+				#naval_hit_chance = 0.15
+			}
+		}
+	TUR_levent_campaign9 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = TUR_levent_campaign9_tt
+				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				#positioning = 0.20
+				#navy_org_factor = 0.20
+				#naval_speed_factor = 0.20
+				#naval_hit_chance = 0.20
+			}
+		}
+	GER_eastern_allies1 = {
+			picture = tur_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies1_tt
+				research_speed_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+	GER_eastern_allies2 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies2_tt
+				research_speed_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+	GER_eastern_allies3 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies3_tt
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+	GER_eastern_allies4 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies4_tt
+				research_speed_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+			}
+		}
+	GER_eastern_allies5 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies5_tt
+			}
+		}
+	GER_eastern_allies6 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies6_tt
+				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+			}
+		}
+	GER_eastern_allies7 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies7_tt
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+	GER_eastern_allies8 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies8_tt
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+		}
+	GER_eastern_allies9 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies9_tt
+				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+	AUS_eastern_allies1 = {
+			picture = tur_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies1_tt
+				research_speed_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+	AUS_eastern_allies2 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies2_tt
+				research_speed_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+	AUS_eastern_allies3 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies3_tt
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+	AUS_eastern_allies4 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies4_tt
+				research_speed_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+			}
+		}
+	AUS_eastern_allies5 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies5_tt
+			}
+		}
+	AUS_eastern_allies6 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies6_tt
+				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+			}
+		}
+	AUS_eastern_allies7 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies7_tt
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+	AUS_eastern_allies8 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = AUS_eastern_allies8_tt
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+		}
+	AUS_eastern_allies9 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = GER_eastern_allies9_tt
+				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+	BUL_eastern_allies1 = {
+			picture = tur_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies1_tt
+				research_speed_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+	BUL_eastern_allies2 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies2_tt
+				research_speed_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+	BUL_eastern_allies3 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies3_tt
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+	BUL_eastern_allies4 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies4_tt
+				research_speed_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+			}
+		}
+	BUL_eastern_allies5 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies5_tt
+			}
+		}
+	BUL_eastern_allies6 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies6_tt
+				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+			}
+		}
+	BUL_eastern_allies7 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies7_tt
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+	BUL_eastern_allies8 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies8_tt
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+		}
+	BUL_eastern_allies9 = {
+			picture = eng_levent_campaign
+			modifier = {
+				custom_modifier_tooltip = BUL_eastern_allies9_tt
+				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+	}
+}

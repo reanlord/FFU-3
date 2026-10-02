@@ -1,0 +1,275 @@
+add_namespace = ffu
+
+country_event = {
+	id = ffu.1
+	title = ffu.1.t
+	desc = ffu.1.d
+
+	picture = GFX_report_event_tanks_mexico_city
+	is_triggered_only = yes
+
+	#hidden = yes
+
+	option = {
+		name = ffu.1.a
+
+		every_country = {
+			every_army_leader = {
+				limit = {
+					NOT = { has_trait = cheater }
+					OR = {
+						AND = {
+							has_trait = panzer_expert
+							has_trait = combined_arms_expert
+						}
+						AND = {
+							has_trait = combined_arms_expert
+							has_trait = cavalry_expert
+						}
+						AND = {
+							has_trait = panzer_expert
+							has_trait = cavalry_expert
+						}
+						AND = {
+							has_trait = infantry_expert
+							has_trait = ambusher
+						}
+						AND = {
+							has_trait = invader_ii
+							has_trait = naval_liason
+						}
+						AND = {
+							has_trait = offensive_doctrine
+							has_trait = defensive_doctrine
+						}
+						AND = {
+							has_trait = organisational_leader
+							has_trait = inspirational_leader
+						}
+					}
+				}
+				add_unit_leader_trait = cheater
+			}
+		}
+	}
+}
+
+# FFU Basics
+
+country_event = {
+	id = ffu.2
+	title = ffu.2.t
+	desc = ffu.2.d
+
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Good to know"	
+	}
+}
+
+##Event: 1914 Chirstmas Truce
+news_event = {
+	id = ffu.3
+	title = ffu.3.title
+	desc = ffu.3.desc
+	picture = GFX_1914_chirstmas_truce-122744
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name = ffu.3.a
+		ai_chance = { factor = 1}
+		FRA = {
+			set_variable = {
+				Global.super_event=8				
+			}
+			FFU_show_super_event = yes
+		}
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = {check_variable= { super_events_enabled > 0} }
+					scoped_sound_effect="FFU_christmas_truce"
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				add_timed_idea = { idea = chistmas_truce  days = 14 }
+			}
+		}
+	}
+}
+
+## Trench warfare 1915 ##
+
+country_event = {
+	id = ffu.4
+	title = ffu.4.t
+	desc = ffu.4.d
+
+	picture = GFX_start_trench_warfare
+	
+	is_triggered_only = yes
+	timeout_days = 1
+	option = {
+		name = "Let's start digging"
+		add_ideas=FFU_trench_warfare
+	}
+	immediate={
+		hidden_effect={
+			set_technology = {
+				complex_trench_systems = 1
+			}
+		}
+	}
+}
+
+##Event: USA Enter War
+news_event = {
+	id = ffu.5
+	title = ffu.5.title
+	desc = ffu.5.desc
+	picture = GFX_news_event_usa_1
+	major = yes
+	is_triggered_only=yes
+	option = {
+		name = ffu.5.a
+		trigger={controls_state=409}
+		ai_chance = { factor = 100}
+	}
+	option = {
+		name = ffu.5.b
+		trigger={has_war_with=GER NOT={controls_state=409}}
+		ai_chance = { factor = 100}
+	}
+	option = {
+		name = ffu.5.c
+		trigger={has_war_with=SOV}
+		ai_chance = { factor = 100}
+	}
+}
+
+##Event: German troops massing on Dutch border
+news_event = {
+	id = ffu.6
+	title = ffu.6.title
+	desc = ffu.6.desc
+	picture = GFX_news_event_german_soldiers
+	major = yes
+	is_triggered_only=yes
+	option = {
+		name = ffu.6.a
+		trigger={has_war_with=FRA}
+		ai_chance = { factor = 100}
+	}
+	option = {
+		name = ffu.6.b
+		trigger={has_war_with=GER}
+		ai_chance = { factor = 100}
+	}
+}
+
+
+#reminder-events
+
+country_event = {	#1 Jan 1914 ship hulls
+	id = ffu.7
+	title = ffu.7.t
+	desc = ffu.7.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	option = {
+		name = ffu.7.a
+	}
+}
+country_event = {	#1 june 1914 dispersed
+	id = ffu.8
+	title = ffu.8.t
+	desc = ffu.8.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {
+		name = ffu.8.a
+	}
+}
+country_event = {	#1 Jan 1915 destroyers + air
+	id = ffu.9
+	title = ffu.9.t
+	desc = ffu.9.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {
+		name = ffu.9.a
+	}
+}
+country_event = {	#1 june 1915 tanks + dispersed 2
+	id = ffu.10
+	title = ffu.10.t
+	desc = ffu.10.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {
+		name = ffu.10.a
+	}
+}
+country_event = {	#1 Jan 1916 carrier + air 2
+	id = ffu.11
+	title = ffu.11.t
+	desc = ffu.11.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {
+		name = ffu.11.a
+	}
+}
+country_event = {	#1 june 1916 dispersed 3
+	id = ffu.12
+	title = ffu.12.t
+	desc = ffu.12.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = ffu.12.a
+	}
+}
+country_event = {	#28 july 1915 ultimate tactics
+	id = ffu.13
+	title = ffu.13.t
+	desc = ffu.13.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = ffu.13.a
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=392
+	name="STATE_392"
+	provinces={
+		17620 
+	}
+	manpower=3038935
+	state_category = city
+	buildings_max_level_factor=1.000
+	history={
+		owner = USA
+		add_core_of = USA 
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 2
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+	resources = {
+		aluminium = 28
+		wood = 30
+	}
+}

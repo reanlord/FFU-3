@@ -1,0 +1,97 @@
+add_namespace = ww1_secondbalkan
+
+#____________________________________________________________
+
+# Second Balkan War Victory
+#____________________________________________________________
+news_event = {
+	id = ww1_secondbalkan.101
+	title = ww1_secondbalkan.101.t
+	desc = ww1_secondbalkan.101.d
+	picture = EVENT_hoi4tgw_second_balkan_war_end
+
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1913.8.09
+		NOT = { has_global_flag = kis_second_balkan_war }
+	}
+
+	immediate = {
+		set_global_flag = kis_second_balkan_war
+		hidden_effect = {
+			110 = {
+				set_state_category = rural
+			}
+			SER = {
+				army_experience = 150
+			}
+			GRE = {
+				army_experience = 150
+			}
+			BUL = {
+				army_experience = 100
+			}
+			ROM = {
+				army_experience = 50
+				transfer_state = 110
+			}
+			if = { #Humiliating victory
+				limit = {
+					has_global_flag = first_balkan_victory_speed_3
+				}
+				SER = {
+					transfer_state = 155
+				}
+				GRE = {
+					transfer_state = 134
+				}
+			}
+			else_if = { #Average victory
+				limit = {
+					has_global_flag = first_balkan_victory_speed_2
+				}
+				SER = {
+					transfer_state = 154
+				}
+				GRE = {
+					transfer_state = 133
+				}
+			}
+			else_if = { #Quick victory
+				limit = {
+					has_global_flag = first_balkan_victory_speed_1
+				}
+				GRE = {
+					transfer_state = 361
+				}
+			}
+			else = { #Very Quick victory
+
+			}
+		}
+		
+	}
+	
+	option = {
+		name = ww1_secondbalkan.101.a
+	}
+}
+#____________________________________________________________
+
+# Romania joins the Second Balkan War
+#____________________________________________________________
+news_event = {
+	id = ww1_secondbalkan.102
+	title = ww1_secondbalkan.102.t
+	desc = ww1_secondbalkan.102.d
+	picture = EVENT_hoi4tgw_second_balkan_war
+
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_secondbalkan.102.a
+	}
+}

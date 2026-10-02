@@ -1,0 +1,610 @@
+#Important to put HIGHEST first
+TUR_levent_campaign_level_up = {
+	TUR = {
+	if = {
+		limit = { has_idea = TUR_levent_campaign8 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign8
+			add_idea = TUR_levent_campaign9
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign7 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign7
+			add_idea = TUR_levent_campaign8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign6 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign6
+			add_idea = TUR_levent_campaign7
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign5 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign5
+			add_idea = TUR_levent_campaign6
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign4 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign4
+			add_idea = TUR_levent_campaign5
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign3 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign3
+			add_idea = TUR_levent_campaign4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign2 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign2
+			add_idea = TUR_levent_campaign3
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign1 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign1
+			add_idea = TUR_levent_campaign2
+			}
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+TUR_levent_campaign_level_down = {
+	TUR = {
+	if = {
+		limit = { has_idea = TUR_levent_campaign2 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign2
+			add_idea = TUR_levent_campaign1
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign3 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign3
+			add_idea = TUR_levent_campaign2
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign4 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign4
+			add_idea = TUR_levent_campaign3
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign5 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign5
+			add_idea = TUR_levent_campaign4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign6 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign6
+			add_idea = TUR_levent_campaign5
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign7 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign7
+			add_idea = TUR_levent_campaign6
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign8 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign8
+			add_idea = TUR_levent_campaign7
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_levent_campaign9 }
+		swap_ideas = {
+			remove_idea = TUR_levent_campaign9
+			add_idea = TUR_levent_campaign8
+			}
+		}
+	}
+}
+ENG_levent_campaign_level_down = {
+	ENG = {
+	if = {
+		limit = { has_idea = ENG_levent_campaign2 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign2
+			add_idea = ENG_levent_campaign1
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign3 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign3
+			add_idea = ENG_levent_campaign2
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign4 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign4
+			add_idea = ENG_levent_campaign3
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign5 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign5
+			add_idea = ENG_levent_campaign4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign6 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign6
+			add_idea = ENG_levent_campaign5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign7 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign7
+			add_idea = ENG_levent_campaign6
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign8 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign8
+			add_idea = ENG_levent_campaign7
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign9 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign9
+			add_idea = ENG_levent_campaign8
+			}
+		}
+	}
+}
+ENG_levent_campaign_level_up = {
+	ENG = {
+	if = {
+		limit = { has_idea = ENG_levent_campaign8 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign8
+			add_idea = ENG_levent_campaign9
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign7 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign7
+			add_idea = ENG_levent_campaign8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign6 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign6
+			add_idea = ENG_levent_campaign7
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign5 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign5
+			add_idea = ENG_levent_campaign6
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign4 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign4
+			add_idea = ENG_levent_campaign5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign3 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign3
+			add_idea = ENG_levent_campaign4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign2 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign2
+			add_idea = ENG_levent_campaign3
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_levent_campaign1 }
+		swap_ideas = {
+			remove_idea = ENG_levent_campaign1
+			add_idea = ENG_levent_campaign2
+			}
+		}
+	}
+}
+
+GER_eastern_allies_level_up = {
+	GER = {
+	if = {
+		limit = { has_idea = GER_eastern_allies8 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies8
+			add_idea = GER_eastern_allies9
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies7 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies7
+			add_idea = GER_eastern_allies8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies6 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies6
+			add_idea = GER_eastern_allies7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies5 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies5
+			add_idea = GER_eastern_allies6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies4 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies4
+			add_idea = GER_eastern_allies5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies3 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies3
+			add_idea = GER_eastern_allies4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies2 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies2
+			add_idea = GER_eastern_allies3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies1 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies1
+			add_idea = GER_eastern_allies2
+			}
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+GER_eastern_allies_level_down = {
+	GER = {
+	if = {
+		limit = { has_idea = GER_eastern_allies2 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies2
+			add_idea = GER_eastern_allies1
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies3 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies3
+			add_idea = GER_eastern_allies2
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies4 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies4
+			add_idea = GER_eastern_allies3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies5 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies5
+			add_idea = GER_eastern_allies4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies6 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies6
+			add_idea = GER_eastern_allies5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies7 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies7
+			add_idea = GER_eastern_allies6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies8 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies8
+			add_idea = GER_eastern_allies7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_eastern_allies9 }
+		swap_ideas = {
+			remove_idea = GER_eastern_allies9
+			add_idea = GER_eastern_allies8
+			}
+		}
+	}
+}
+AUS_eastern_allies_level_up = {
+	AUS = {
+	if = {
+		limit = { has_idea = AUS_eastern_allies8 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies8
+			add_idea = AUS_eastern_allies9
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies7 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies7
+			add_idea = AUS_eastern_allies8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies6 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies6
+			add_idea = AUS_eastern_allies7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies5 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies5
+			add_idea = AUS_eastern_allies6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies4 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies4
+			add_idea = AUS_eastern_allies5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies3 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies3
+			add_idea = AUS_eastern_allies4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies2 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies2
+			add_idea = AUS_eastern_allies3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies1 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies1
+			add_idea = AUS_eastern_allies2
+			}
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+AUS_eastern_allies_level_down = {
+	AUS = {
+	if = {
+		limit = { has_idea = AUS_eastern_allies2 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies2
+			add_idea = AUS_eastern_allies1
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies3 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies3
+			add_idea = AUS_eastern_allies2
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies4 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies4
+			add_idea = AUS_eastern_allies3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies5 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies5
+			add_idea = AUS_eastern_allies4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies6 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies6
+			add_idea = AUS_eastern_allies5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies7 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies7
+			add_idea = AUS_eastern_allies6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies8 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies8
+			add_idea = AUS_eastern_allies7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_eastern_allies9 }
+		swap_ideas = {
+			remove_idea = AUS_eastern_allies9
+			add_idea = AUS_eastern_allies8
+			}
+		}
+	}
+}
+BUL_eastern_allies_level_up = {
+	BUL = {
+	if = {
+		limit = { has_idea = BUL_eastern_allies8 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies8
+			add_idea = BUL_eastern_allies9
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies7 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies7
+			add_idea = BUL_eastern_allies8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies6 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies6
+			add_idea = BUL_eastern_allies7
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies5 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies5
+			add_idea = BUL_eastern_allies6
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies4 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies4
+			add_idea = BUL_eastern_allies5
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies3 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies3
+			add_idea = BUL_eastern_allies4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies2 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies2
+			add_idea = BUL_eastern_allies3
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies1 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies1
+			add_idea = BUL_eastern_allies2
+			}
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+BUL_eastern_allies_level_down = {
+	BUL = {
+	if = {
+		limit = { has_idea = BUL_eastern_allies2 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies2
+			add_idea = BUL_eastern_allies1
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies3 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies3
+			add_idea = BUL_eastern_allies2
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies4 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies4
+			add_idea = BUL_eastern_allies3
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies5 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies5
+			add_idea = BUL_eastern_allies4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies6 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies6
+			add_idea = BUL_eastern_allies5
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies7 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies7
+			add_idea = BUL_eastern_allies6
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies8 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies8
+			add_idea = BUL_eastern_allies7
+		}
+	}
+	else_if = {
+		limit = { has_idea = BUL_eastern_allies9 }
+		swap_ideas = {
+			remove_idea = BUL_eastern_allies9
+			add_idea = BUL_eastern_allies8
+			}
+		}
+	}
+}

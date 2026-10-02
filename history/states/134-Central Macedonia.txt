@@ -1,0 +1,58 @@
+
+state={
+	id=134
+	name="STATE_134"
+
+	history={
+		owner = TUR
+		add_core_of = SWI
+		add_extra_state_shared_building_slots = 10
+		buildings = {
+			infrastructure = 5
+		1852 = {
+				naval_base = 5
+			}
+		}
+        victory_points = {
+		1852 20
+		}
+        victory_points = {
+		8132 1
+		}
+        victory_points = {
+		4100 1
+		}
+        victory_points = {
+		16157 1
+		}
+        victory_points = {
+		2289 1
+		}
+        victory_points = {
+		9418 1
+		}
+        victory_points = {
+		16099 1
+		}
+        victory_points = {
+		16077 1
+		}
+		1911.1.1.4 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		1445 1852 2289 2649 4100 4342 4852 4880 5333 6384 6983 7801 8132 9165 10064 10559 16012 16052 16079 16099 16109 16110 16121 16157 
+	}
+	manpower=1155700
+	buildings_max_level_factor=1.000
+	state_category=town
+	resources = {
+		wood = 17
+		steel = 15
+		aluminium = 32
+		chromium=10
+	}
+}

@@ -1,0 +1,400 @@
+﻿l_english:
+
+
+ #--------------------------------------------------------------
+ # [BRITISH EMPIRE] Army Effort
+ #=========================================================================
+ENG_ww1_army_effort_1:0 "Army Effort"
+ENG_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_2:0 "Army Effort II"
+ENG_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_3:0 "Army Effort III"
+ENG_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_4:0 "Army Effort IV"
+ENG_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_army_effort_5:0 "Army Effort V"
+ENG_ww1_army_effort_5_desc:0 "" #Frenchie
+
+ENG_ww1_equipment_effort_1:0 "Equipment Effort"
+ENG_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_2:0 "Equipment Effort II"
+ENG_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_3:0 "Equipment Effort III"
+ENG_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_4:0 "Equipment Effort IV"
+ENG_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_equipment_effort_5:0 "Equipment Effort V"
+ENG_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+ENG_ww1_artillery_effort_1:0 "Artillery Effort"
+ENG_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_2:0 "Artillery Effort II"
+ENG_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_3:0 "Artillery Effort III"
+ENG_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_4:0 "Artillery Effort IV"
+ENG_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_artillery_effort_5:0 "Artillery Effort V"
+ENG_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+ENG_ww1_aircraftprod_1:0 "Aircraft Production"
+ENG_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_2:0 "Aircraft Production II"
+ENG_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_3:0 "Aircraft Production III"
+ENG_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_4:0 "Aircraft Production IV"
+ENG_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_aircraftprod_5:0 "Aircraft Production V"
+ENG_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+ENG_ww1_large_navy_1:0 "Naval Aviation"
+ENG_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_2:0 "Naval and Aviation Reform II"
+ENG_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_3:0 "Naval and Aviation Reform III"
+ENG_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_4:0 "Naval and Aviation Reform IV"
+ENG_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_large_navy_5:0 "Naval and Aviation Reform V"
+ENG_ww1_large_navy_5_desc:0 "" #Frenchie
+
+ENG_ww1_armor_effort_1:0 "Armor Effort"
+ENG_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+#--------------------------------------------------------------
+
+
+ # [BRITISH EMPIRE] Aviation Effort
+ #=========================================================================
+ #--------------------------------------------------------------
+
+
+ # [BRITISH EMPIRE] Industrial Effort
+ #=========================================================================
+ENG_ww1_industrial_effort:0 "Industrial Effort"
+ENG_ww1_industrial_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_construction_effort:0 "Construction Effort"
+ENG_ww1_construction_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_construction_effort_2:0 "Construction Effort II"
+ENG_ww1_construction_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_construction_effort_3:0 "Construction Effort III"
+ENG_ww1_construction_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_production_effort:0 "Armament Effort"
+ENG_ww1_production_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_production_effort_2:0 "Armament Effort II"
+ENG_ww1_production_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_production_effort_3:0 "Armament Effort III"
+ENG_ww1_production_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_dockyard_effort_1:0 "Dockyard Expansion"
+ENG_ww1_dockyard_effort_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_dockyard_effort_2:0 "Dockyard Expansion II"
+ENG_ww1_dockyard_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_dockyard_effort_3:0 "Dockyard Expansion III"
+ENG_ww1_dockyard_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_airfield_expansion_1:0 "Airfield Expansion"
+ENG_ww1_airfield_expansion_1_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_airfield_expansion_2:0 "Airfield Expansion II"
+ENG_ww1_airfield_expansion_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_airfield_expansion_3:0 "Airfield Expansion III"
+ENG_ww1_airfield_expansion_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort:0 "Infrastructure Effort"
+ENG_ww1_infrastructure_effort_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort_2:0 "Infrastructure Effort II"
+ENG_ww1_infrastructure_effort_2_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort_3:0 "Infrastructure Effort III"
+ENG_ww1_infrastructure_effort_3_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_infrastructure_effort_4:0 "Infrastructure Effort IV"
+ENG_ww1_infrastructure_effort_4_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_extra_tech_slot:0 "Extra Research Slot"
+ENG_ww1_extra_tech_slot_desc:0 "" #KAISER_ANONY
+
+ENG_ww1_extra_tech_slot_2:0 "Extra Research Slot II"
+ENG_ww1_extra_tech_slot_2_desc:0 "" #KAISER_ANONY
+ #--------------------------------------------------------------
+
+
+ # [BRITISH EMPIRE] Naval Effort
+ #=========================================================================
+ ENG_ww1_naval_effort:0 "Reinforce Royal Navy"
+ ENG_ww1_naval_effort_desc:0 "The Royal Navy of the United Kingdom is the world's largest and strongest fleet, numbering as many ships as the next two navies combined. This is no accident- with our primary territory being on an island, it's necessary to maintain to ensure we survive a foreign invasion. Investing further into this operation can only lead to good."
+
+ ENG_ww1_newnavalcanons_1:0 "Naval Gun Effort"
+ ENG_ww1_newnavalcanons_1_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_newnavalcanons_2:0 "Naval Gun Effort II"
+ ENG_ww1_newnavalcanons_2_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_newnavalcanons_3:0 "Naval Gun Effort III"
+ ENG_ww1_newnavalcanons_3_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_dreadnought_effort:0 "Dreadnought Effort"
+ ENG_ww1_dreadnought_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_flexible_navy:0 "Flexible Navy"
+ ENG_ww1_flexible_navy_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_large_navy:0 "Large Navy"
+ ENG_ww1_large_navy_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_navyreform:0 "Navy Deployment"
+ ENG_ww1_navyreform_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_submarine_effort:0 "Submarine Effort"
+ ENG_ww1_submarine_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_cruiser_effort:0 "Cruiser Effort"
+ ENG_ww1_cruiser_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_destroyer_effort:0 "Destroyer Effort"
+ ENG_ww1_destroyer_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_capital_ships_effort:0 "Capital Ship Effort"
+ ENG_ww1_capital_ships_effort_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_carrier_focus:0 "Carrier Effort"
+ ENG_ww1_carrier_focus_desc:0 "" #KAISER_ANONY
+
+ ENG_ww1_antisubmarine:0 "Anti-Submarine Warfare"
+ ENG_ww1_antisubmarine_desc:0 "" #KAISER_ANONY
+
+ #--------------------------------------------------------------
+ENG_infrastructure_development_program:0 "Infrastructure Development Program"
+ENG_infrastructure_development_program_desc:0 ""
+ENG_grand_fleet_expansion:0 "Grand Fleet Expansion"
+ENG_grand_fleet_expansion_desc:0 ""
+ENG_lewis_automatic_machine_gun:0 "Lewis Automatic Machine Gun"
+ENG_lewis_automatic_machine_gun_desc:0 ""
+ENG_rollsroyce_armoured_car:0 "Rolls-Royce Armoured Car"
+ENG_rollsroyce_armoured_car_desc:0 ""
+ENG_rms_lusitania_sinking_response:0 "RMS Lusitania Sinking Response"
+ENG_rms_lusitania_sinking_response_desc:0 ""
+ENG_development_in_egypt:0 "Development in Egypt"
+ENG_development_in_egypt_desc:0 ""
+ENG_iran_front:0 "Secure the Persian Gulf"
+ENG_iran_front_desc:0 ""
+ENG_stokes_mortar:0 "Stokes mortar"
+ENG_stokes_mortar_desc:0 ""
+ENG_school_of_sniping_observation_and_scouting:0 "School of Sniping, Observation, and Scouting"
+ENG_school_of_sniping_observation_and_scouting_desc:0 ""
+ENG_1915_ministry_of_munitions:0 "1915 Ministry of Munitions"
+ENG_1915_ministry_of_munitions_desc:0 ""
+ENG_gretna_green_factory_complex:0 "Gretna Green Factory Complex"
+ENG_gretna_green_factory_complex_desc:0 ""
+ENG_1915_board_of_inventions_and_research_in_the_admiralty:0 "1915 Board of Inventions and Research in the Admiralty"
+ENG_1915_board_of_inventions_and_research_in_the_admiralty_desc:0 ""
+ENG_canadian_stormtroopers:0 "Canadian Stormtroopers"
+ENG_canadian_stormtroopers_desc:0 ""
+ENG_renew_angloportuguese_alliance:0 "Renew Anglo-Portuguese Alliance"
+ENG_renew_angloportuguese_alliance_desc:0 ""
+ENG_angloportuguese_mineral_corporation:0 "Anglo-Portuguese Mineral Corporation"
+ENG_angloportuguese_mineral_corporation_desc:0 ""
+ENG_sopwith_camel:0 "Sopwith Camel"
+ENG_sopwith_camel_desc:0 ""
+ENG_british_be2:0 "British B.E.2"
+ENG_british_be2_desc:0 ""
+ENG_qf_1pounder_pompom_aa:0 "QF 1-pounder pom-pom AA"
+ENG_qf_1pounder_pompom_aa_desc:0 ""
+ENG_pact_of_london:0 "Pact of London"
+ENG_pact_of_london_desc:0 ""
+ENG_entente_cordiale:0 "Entente Cordiale"
+ENG_entente_cordiale_desc:0 ""
+ENG_mobilization_of_industry:0 "Mobilization of Industry"
+ENG_mobilization_of_industry_desc:0 ""
+ENG_treasury_agreement_of_1915:0 "Treasury Agreement of 1915"
+ENG_treasury_agreement_of_1915_desc:0 ""
+ENG_room_40:0 "Room 40"
+ENG_room_40_desc:0 ""
+ENG_establish_war_propaganda_bureau:0 "Establish War Propaganda Bureau"
+ENG_establish_war_propaganda_bureau_desc:0 ""
+ENG_parliament_act_1911:0 "Parliament Act 1911"
+ENG_parliament_act_1911_desc:0 ""
+ENG_closer_french_military_cooperation:0 "Closer French Military Co-operation"
+ENG_closer_french_military_cooperation_desc:0 ""
+ENG_usa_war_loans:0 "Further War Loans"
+ENG_usa_war_loans_desc:0 ""
+ENG_special_american_relationship:0 ""Special" American Relationship"
+ENG_special_american_relationship_desc:0 ""
+ENG_national_insurance_act_1911:0 "National Insurance Act 1911"
+ENG_national_insurance_act_1911_desc:0 ""
+ENG_pax_britannica:0 "Pax Britannica"
+ENG_pax_britannica_desc:0 ""
+ENG_defence_of_the_realm_act:0 "Defence of the Realm Act"
+ENG_defence_of_the_realm_act_desc:0 ""
+ENG_commonwealth_ties:0 "Commonwealth Ties"
+ENG_commonwealth_ties_desc:0 ""
+ENG_anzac_marines:0 "ANZAC Marines"
+ENG_anzac_marines_desc:0 ""
+ENG_indian_labor_force:0 "Indian Labor Force"
+ENG_indian_labor_force_desc:0 ""
+ENG_indian_expeditionary_force:0 "Indian Expeditionary Force"
+ENG_indian_expeditionary_force_desc:0 ""
+ENG_indian_expeditionary_force_tt:0 "§C36 divisions in Aswan - 6 heavy artillery and 30 infantry.§!"
+ENG_little_willie:0 "Little Willie"
+ENG_little_willie_desc:0 ""
+ENG_royal_flying_corps:0 "Royal Flying Corps"
+ENG_royal_flying_corps_desc:0 ""
+ENG_form_raf:0 "Form the R.A.F."
+ENG_british_expeditionary_force:0 "British Expeditionary Force"
+ENG_british_expeditionary_force_desc:0 ""
+ENG_social_reform:0 "Social Reform"
+ENG_social_reform_desc:0 ""
+ENG_east_entente_diplomacy:0 "East Entente Diplomacy"
+ENG_east_entente_diplomacy_desc:0 ""
+ENG_gallipoli_campaign:0 "Gallipoli Campaign"
+ENG_gallipoli_campaign_desc:0 ""
+ENG_increased_naval_budget:0 "Increased Naval Budget"
+ENG_increased_naval_budget_desc:0 ""
+ENG_emergency_shipbuilding_program:0 "Emergency Shipbuilding Program"
+ENG_emergency_shipbuilding_program_desc:0 ""
+ENG_the_british_regular:0 "It’s A Long Way..."
+ENG_the_british_regular_desc:0 ""
+ENG_scientific_development:0 "Scientific Development"
+ENG_scientific_development_desc:0 ""
+ENG_indian_arms_industry:0 "Indian Arms Industry"
+ENG_indian_arms_industry_desc:0 ""
+ENG_invest_canada:0 "Invest in Canada"
+ENG_invest_canada_desc:0 ""
+ENG_conscription_canada:0 "Conscription in Canada"
+ENG_conscription_canada_desc:0 ""
+ENG_australian_wheat:0 "Australian Wheat"
+ENG_australian_wheat_desc:0 ""
+ENG_new_zealand_livestock:0 "New Zealand Livestock"
+ENG_new_zealand_livestock_desc:0 ""
+ENG_canada_mils:0 "Imperial Munitions Board"
+ENG_canada_mils_desc:0 ""
+ENG_dominion_officers:0 "Promote Dominion Officers"
+ENG_dominion_officers_desc:0 ""
+ENG_ireland_conscription:0 "Ireland Military Service Act"
+ENG_ireland_conscription_desc:0 ""
+ENG_electrify_factories:0 "Electrify Factories"
+ENG_electrify_factories_desc:0 ""
+ENG_royal_engineers:0 "Royal Engineers Corps"
+ENG_royal_engineers_desc:0 ""
+ENG_1912_army_exercises:0 "1912 Army Manoeuvres"
+ENG_1912_army_exercises_desc:0 ""
+ENG_the_british_rifleman:0 "The British Rifleman"
+ENG_the_british_rifleman_desc:0 ""
+ENG_army_service_corps:0 "Army Service Corps"
+ENG_army_service_corps_desc:0 ""
+ENG_imperial_general_staff:0 "...To Tipperary!"
+ENG_imperial_general_staff_desc:0 ""
+ENG_foulkes_plan:0 "C.H. Foulkes' Plan"
+ENG_foulkes_plan_desc:0 ""
+ENG_fuller_plan:0 "J.F.C. Fuller's Plan"
+ENG_fuller_plan_desc:0 ""
+ENG_factory_and_workshop_act:0 "Factory and Workshop Act"
+ENG_factory_and_workshop_act_desc:0 ""
+ENG_taxation_reform:0 "1914 Taxation Reforms"
+ENG_taxation_reform_desc:0 ""
+ENG_convoys:0 "Reorganize Shipyards"
+ENG_convoys_desc:0 ""
+ENG_national_aircraft_factories:0 "National Aircraft Factories"
+ENG_national_aircraft_factories_desc:0 ""
+ENG_antisub_division:0 "Anti-Submarine Division"
+ENG_antisub_division_desc:0 ""
+ENG_superdreadnoughts:0 "Super-Dreadnoughts"
+ENG_superdreadnoughts_desc:0 ""
+ENG_modern_naval_warfare:0 "Modern naval warfare"
+ENG_modern_naval_warfare_desc:0 "This will put end to pathetic german attempts on killing our navy!"
+ 
+ #--------------------------------------------------------------
+
+
+ ENG_ww1_alone_or_peace_faction_tt:0 "is not in a faction, or is in a faction at peace with [FRA.GetNameDef]."
+ ENG_gallipoli:0 "Gallipoli Campaign"
+ 
+ armstrong_whitworth:0 "Armstrong Whitworth"
+ british_south_africa_company:0 "British South Africa Company"
+ 
+ ENG_empire_shackled:0 "Imperial Commitments"
+ ENG_empire_shackled2:0 "Imperial Commitments"
+ ENG_empire_shackled3:0 "Imperial Commitments"
+ ENG_empire_shackled4:0 "Imperial Commitments"
+
+ ENG_britain_needs_you_at_once:0 "Britain needs you at once!"
+ 
+ ENG_labour_strikes_finish:0 "Trade Unions Placated"
+ 
+ ENG_infrastructure_development_idea:0 "Infrastructure Development"
+ ENG_convoys_bonus:0 "Cargo Ship Production"
+ ENG_aircraft_mass_production:0 "National Aircraft Factories"
+ ENG_australian_wheat_imports:0 "Australian Wheat Imports"
+ 
+ ENG_rebuilding_navy:0 "Rebuild the Fleet"
+ 
+ ENG_bef2:0 "Kitchener's Army"
+ ENG_bef_foulkes:0 "Chemical Bombardments"
+ ENG_bef_fuller:0 "Armoured Spearheads"
+ 
+ ENG_grand_fleet:0 "Britannia Rules the Waves"
+ ENG_grand_fleet2:0 "Britannia Rules the Waves"
+ ENG_grand_fleet3:0 "Britannia Rules the Waves"
+ 
+ ENG_raf:0 "Independent Air Force"
+ 
+ ENG_british_blockade:0 "Blockaded"
+ 
+ ENG_naval_construction:0 "Fund New Shipyards"
+ ENG_naval_construction_program:0 "Naval Construction Program"
+ 
+ ENG_imperial_fortresses_modifier:0 "Imperial Fortress"
+ 
+ ENG_home_guard:0 "Mobilize the Home Guard"
+ ENG_home_guard_tt:0 "Spawns 72 divisions - 12 heavy artillery and 60 infantry."
+ 
+ ##Events
+ ww1_uk.1:0 "British Intervention in Persia"
+ ww1_uk.1.t:0 "British Intervention in Persia"
+ ww1_uk.1.d:0 "Britain is establishing a base in southern Persia to secure its strategic resources. In 30 days they will begin advancing west to open another front against the Ottoman Empire."
+ ww1_uk.1.a:0 "."
+ 
+ ww1_uk.2:0 "The Persian Front begins"
+ ww1_uk.2.t:0 "The Persian Front begins"
+ ww1_uk.2.d:0 "Another front has been opened along the Persian Gulf."
+ ww1_uk.2.a:0 "."
+ 
+ ww1_uk.3:0 "The Persian Front begins"
+ ww1_uk.3.t:0 "The Persian Front begins"
+ ww1_uk.3.d:0 "Another front has been opened along the Persian Gulf."
+ ww1_uk.3.a:0 "."
+ 
+ #WIP
+ ENG_anti_sealion_modifier:0 "Threat of Invasion"
+ ENG_anti_sealion_modifier_tt:0 "For every state the Entente controls, the UK receives an increased bonus against naval invasions.\n§YGibraltar\nMalta\nCyprus\nDodecanese\nCairo\nKoweït\nTripoli\nAlgiers\nVlaanderen\nIle de France\nBretagne\nRhone\nAquitaine\nVeneto\nLatium\nKurzeme\nBelarus\nKiev\nOdessa\nCaucasus Mountains\n §!"

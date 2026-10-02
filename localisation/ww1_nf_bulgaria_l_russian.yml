@@ -1,0 +1,265 @@
+﻿l_russian:
+#--------------------------------------------------------------
+ # [Bulgaria] Industrial Effort
+ #=========================================================================
+BUL_ww1_industrial_effort:0 "Великий болгарский проект"
+BUL_ww1_industrial_effort_desc:0 "" #Vodka
+
+BUL_ww1_construction_effort:0 "Поддержите фермеров"
+BUL_ww1_construction_effort_desc:0 "" #Vodka
+
+BUL_ww1_construction_effort_2:0 "Ужигает фермы"
+BUL_ww1_construction_effort_2_desc:0 "" #Vodka
+
+BUL_ww1_Farm1:0 "Расширить табачные поля"
+BUL_ww1_Farm1_desc:0 "" #Vodka
+
+BUL_ww1_Farm2:0 "Инвестировать в новые гражданские тракторы"
+BUL_ww1_Farm2_desc:0 "" #Vodka
+
+BUL_ww1_Farm3:0 "Инвестировать в новый тип культур"
+BUL_ww1_Farm3_desc:0 "" #Vodka
+
+BUL_ww1_construction_effort_3:0 "Постичь недавно освобожденного гражданина в армию"
+BUL_ww1_construction_effort_3_desc:0 "" #Vodka
+
+BUL_ww1_production_effort:0 "Большой прыжок вперед"
+BUL_ww1_production_effort_desc:0 "" #Vodka
+
+BUL_ww1_RussianFacto:0 "Инвестиционная группа Antente"
+BUL_ww1_RussianFacto_desc:0 "" #Vodka
+
+BUL_ww1_EntenteSUP:0 "Использование русского финансирования"
+BUL_ww1_EntenteSUP_desc:0 "" #Vodka
+
+BUL_ww1_LoanGER:0 "Центральная инвестиционная группа"
+BUL_ww1_LoanGER_desc:0 "" #Vodka
+
+BUL_ww1_production_effort_3:0 "Kickstart Industalisation"
+BUL_ww1_production_effort_3_desc:0 "" #Vodka
+
+BUL_ww1_InduPath1:0 "Используйте новые ressources"
+BUL_ww1_InduPath1_desc:0 "" #Vodka
+
+BUL_ww1_InduPath2:0 "Болгарская военная экономика"
+BUL_ww1_InduPath2_desc:0 "" #Vodka
+
+BUL_ww1_infrastructure_effort:0 "Допустить дорожную реформу"
+BUL_ww1_infrastructure_effort_desc:0 "" #Vodka
+
+BUL_ww1_infrastructure_effort_4:0 "Завершить аграрную реформу"
+BUL_ww1_infrastructure_effort_4_desc:0 "" #Vodka
+
+BUL_ww1_extra_tech_slot:0 "Академия искусств Софии"
+BUL_ww1_extra_tech_slot_desc:0 "" #Vodka
+
+BUL_ww1_extra_tech_slot_2:0 "Питается, многочисленно и готово"
+BUL_ww1_extra_tech_slot_2_desc:0 "" #Vodka
+ #--------------------------------------------------------------
+
+
+ # [Bulgaria] Naval Effort
+ #=========================================================================
+ BUL_ww1_naval_effort:0 "Создать черный морской флот"
+ BUL_ww1_naval_effort_desc:0 "" #Vodka
+
+ BUL_ww1_newnavalcanons_1:0 "Торговый флот"
+ BUL_ww1_newnavalcanons_1_desc:0 "" #Vodka
+
+ BUL_ww1_dreadnought_effort:0 "Построить нашу военно -морскую емкость"
+ BUL_ww1_dreadnought_effort_desc:0 "" #Vodka
+
+ BUL_ww1_flexible_navy:0 "Инвестировать в черную торговлю моря"
+ BUL_ww1_flexible_navy_desc:0 "" #Vodka
+
+ BUL_ww1_large_navy:0 "Инвестировать в Эгейское море"
+ BUL_ww1_large_navy_desc:0 "" #Vodka
+
+ BUL_ww1_submarine_effort:0 "Бросить вызов турецкому флоту"
+ BUL_ww1_submarine_effort_desc:0 "" #Vodka
+
+ BUL_ww1_destroyer_effort:0 "Купить центральные энергопотребления"
+ BUL_ww1_destroyer_effort_desc:0 "" #Vodka
+
+
+ #--------------------------------------------------------------
+# [Bulgaria] Aerial Effort
+ #=========================================================================
+ BUL_ww1_Air_effort:0 "Интегрировать воздушную силу"
+ BUL_ww1_Air_effort_desc:0 "" #Vodka
+
+ BUL_ww1_Scoutplane:0 "Создать наш собственный государственный самолет"
+ BUL_ww1_Scoutplane_desc:0 "" #Vodka
+
+ BUL_ww1_CentralAirforce:0 "Построить аэродром в Софии"
+ BUL_ww1_CentralAirforce_desc:0 "" #Vodka
+
+ BUL_ww1_Zeppelin:0 "Zeppelin Staaken R.Vi"
+BUL_ww1_Zeppelin_desc:0 "" #Vodka
+
+ # [Bulgaria] Army Tech
+ #=========================================================================
+ BUL_ww1_Army1:0 "План реформы Руссева" #Vodka
+ BUL_ww1_Army1_desc:0 "" #Vodka
+
+ BUL_ww1_Army2:0 "Реорганизовать Орану" #Vodka
+ BUL_ww1_Army2_desc:0 "" #Vodka
+
+  BUL_ww1_Army3:0 "Tsomplex State Militar" #Vodka
+ BUL_ww1_Army3_desc:0 "" #Vodka
+
+  BUL_ww1_Army4:0 "Восстановить производственную линию военного времени" #Vodka
+ BUL_ww1_Army4_desc:0 "" #Vodka
+
+  BUL_ww1_Army5:0 "Начните программу Bulgaroskoi" #Vodka
+ BUL_ww1_Army5_desc:0 "" #Vodka
+
+  BUL_ww1_Army6:0 "Установить Сопот" #Vodka
+ BUL_ww1_Army6_desc:0 "" #Vodka
+
+  BUL_ww1_Army7:0 "Болгарская мельчайшая академия " #Vodka
+ BUL_ww1_Army7_desc:0 "" #Vodka
+
+   BUL_ww1_Army8:0 "Световая артиллерийская доктрина " #Vodka
+ BUL_ww1_Army8_desc:0 "" #Vodka
+
+   BUL_ww1_Army9:0 "Горный оружие" #Vodka
+ BUL_ww1_Army9_desc:0 "" #Vodka
+
+    BUL_ww1_Army10:0 "Бронированный прототип" #Vodka
+ BUL_ww1_Army10_desc:0 "" #Vodka
+
+    BUL_ww1_Army11:0 "По умолчанию оборудование" #Vodka
+ BUL_ww1_Army11_desc:0 "" #Vodka
+
+     BUL_ww1_Army12:0 "Болгарские специальные подразделения" #Vodka
+ BUL_ww1_Army12_desc:0 "" #Vodka
+
+ # [Bulgaria] Political Effort
+ #=========================================================================
+ BUL_ww1_political_effort:0 "Болгарское королевство" #Vodka
+ BUL_ww1_political_effort_desc:0 "" #Vodka
+
+ BUL_ww1_Reconciliation:0 "Власть к царю"
+BUL_ww1_Reconciliation_desc:0 "" #Vodka
+
+ BUL_ww1FFU_Reconciliation:0 "Болгарский режим"
+BUL_ww1_Reconciliation_desc:0 "" #Vodka
+
+ # [Bulgaria] Ministary / CG
+
+ BUL_ww1_student_movement_focus:0 "Организовать болгарский служение"
+BUL_ww1_student_movement_focus_desc:0 "" #Vodka
+
+BUL_ww1_diplomatic_effort:0 "Реформировать министерство финансов"
+BUL_ww1_diplomatic_effort_desc:0 "" #Vodka
+
+ BUL_ww1_reorganization_act:0 "Дисциплина подрани"
+BUL_ww1_reorganization_act_desc:0 "" #Vodka
+
+ BUL_ww1_unitedpeople:0 "Мечта об империи"
+BUL_ww1_unitedpeople_desc:0 "" #Vodka
+
+ BUL_ww1_SelectiveServiceAct:0 "Закон о солидарности класса"
+BUL_ww1_SelectiveServiceAct_desc:0 "" #Vodka
+
+BUL_ww1_equip_ger:0 "Мандат инвестиции национального банка"
+BUL_ww1_equip_ger_desc:0 "" #Vodka
+
+BUL_ww1_BalkansPolitics:0 "Девальвация лев"
+BUL_ww1_BalkansPolitics_desc:0 "" #Vodka
+
+BUL_ww1_assert_position_west:0 "Поглотить российскую долговую программу"
+BUL_ww1_assert_position_west_desc:0 "" #Vodka
+
+BUL_ww1_serbia_first:0 "Приготовьтесь вернуть наши потерянные земли"
+BUL_ww1_serbia_first_desc:0 "" #Vodka
+
+BUL_ww1_FuckSerbia:0 "Отомстить за сербский Бретрайал 1913 года"
+BUL_ww1_FuckSerbia_desc:0 "" #Vodka
+
+BUL_ww1_reinforce_ports:0 "Корпоративная галстука"
+BUL_ww1_reinforce_ports_desc:0 "" #Vodka
+
+BUL_ww1_reinforce_austria_border:0 "Работать с корпорациями"
+BUL_ww1_reinforce_austria_border_desc:0 "" #Vodka
+
+BUL_ww1_technology_sharing:0 "Органическая монархия"
+BUL_ww1_technology_sharing_desc:0 "" #Vodka
+
+BUL_ww1_assert_position_east:0 "Уничтожь болгарское гражданство"
+BUL_ww1_assert_position_east_desc:0 "" #Vodka
+
+BUL_ww1_ready_country:0 "Закончить слияние Румелии"
+BUL_ww1_ready_country_desc:0 "" #Vodka
+
+BUL_ww1_develop_serbia:0 "Соединить старую железную дорогу"
+BUL_ww1_develop_serbia_desc:0 "" #Vodka
+
+BUL_ww1_LimitDemocracy:0 "Реформировать конституцию"
+BUL_ww1_LimitDemocracy_desc:0 "" #Vodka
+
+BUL_ww1_remove_claims_on_ottoman:0 "Удалить претензии на османскую"
+BUL_ww1_remove_claims_on_ottoman_desc:0 "" #KAISER_ANONY
+
+BUL_ww1_join_centralpower:0 "Содействовать королевскому покровительству"
+BUL_ww1_join_centralpower_desc:0 "" #Vodka
+
+# [Bulgaria] Balkan Wars
+ #=========================================================================
+
+ BUL_ww1_CommunistMenace:0 "Порошковой бочонок Европы"
+BUL_ww1_CommunistMenace_desc:0 "" #Vodka
+
+BUL_ww1_BalkanLeague1:0 "Балканская лига"
+BUL_ww1_BalkanLeague1_desc:0 "" #Vodka
+
+ BUL_ww1_BalkanITA:0 "Свяжитесь с итальянскими специальными агентами"
+BUL_ww1_BalkanITA_desc:0 "" #Vodka
+
+ BUL_ww1_LITBalkan:0 "Зажечь пудру"
+BUL_ww1_LITBalkan_desc:0 "" #Vodka
+
+ BUL_ww1_Rush:0 "Спешить в море"
+BUL_ww1_Rush_desc:0 "" #Vodka
+
+ BUL_ww1_Greek:0 "Обращаясь к нашим греческим друзьям"
+BUL_ww1_Greek_desc:0 "" #Vodka
+
+ BUL_ww1_Thrace:0 "Фракия оскорбительна"
+BUL_ww1_Thrace_desc:0 "" #Vodka
+
+ BUL_ww1_Constantinople:0 "Завоевание Константинополя"
+BUL_ww1_Constantinople_desc:0 "" #Vodka
+
+ BUL_ww1_Blow:0 "Последний удар"
+BUL_ww1_Blow_desc:0 "" #Vodka
+
+ BUL_ww1_Adrianople:0 "Мирный договор Адрианополя"
+BUL_ww1_Adrianople_desc:0 "" #Vodka
+
+ BUL_ww1_BalkanLeagueCollapse:0 "Крысок лиги"
+BUL_ww1_BalkanLeagueCollapse_desc:0 "" #Vodka
+
+ BUL_ww1_NewHolding:0 "Закрепить наши новые владения"
+BUL_ww1_NewHolding_desc:0 "" #Vodka
+
+ BUL_ww1_BalkanAlliance:0 "Новый балканский альянс "
+BUL_ww1_BalkanAlliance_desc:0 "" #Vodka
+
+ BUL_ww1_Totalwar:0 "Подготовиться к полной войне"
+BUL_ww1_Totalwar_desc:0 "" #Vodka
+
+ BUL_ww1_TurkishAsset:0 "Захватить старые турецкие активы"
+BUL_ww1_TurkishAsset_desc:0 "" #Vodka
+
+ BUL_ww1_ReadyArmy:0 "Готово армия"
+BUL_ww1_ReadyArmy_desc:0 "" #Vodka
+
+ BUL_ww1_PreStrike:0 "Предварительный удар"
+BUL_ww1_PreStrike_desc:0 "" #Vodka
+
+ BUL_ww1_SerbianBetrayal:0 "Сербское предательство"
+BUL_ww1_SerbianBetrayal_desc:0 "" #Vodka
+
+ #--------------------------------------------------------------

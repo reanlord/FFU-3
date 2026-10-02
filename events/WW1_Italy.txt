@@ -1,0 +1,70 @@
+add_namespace = ww1_italy
+
+country_event = {
+	id = ww1_italy.1
+	title = ww1_italy.1.t
+	desc = ww1_italy.1.d
+	picture = GFX_italy_join_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_italy.1.a
+		ai_chance = { factor = 1}
+		
+		FRA = { add_to_faction = ITA }
+		ITA = { 
+			declare_war_on={
+				type=annex_everything
+				target=GER
+			}
+			declare_war_on={
+				type=annex_everything
+				target=AUS
+			}
+			if = {
+				limit = {
+					TUR = { has_war = yes }
+				}
+				ITA = {
+					declare_war_on={
+						type=annex_everything
+							target=TUR
+					}
+				}
+			}
+			if = {
+				limit = {
+					LBA = { exists = yes }
+				}
+				ITA = {
+					declare_war_on={
+						type=annex_everything
+							target=LBA
+					}
+				}
+			}
+			if = {
+				limit = {
+					BUL = { exists = yes }
+				}
+				ITA = {
+					declare_war_on={
+						type=annex_everything
+						target=BUL
+					}
+				}
+			}
+			if = {
+				limit = {
+					POL = { exists = yes }
+				}
+				ITA = {
+					declare_war_on={
+						type=annex_everything
+						target=POL
+					}
+				}
+			}
+		} 
+	}	
+}

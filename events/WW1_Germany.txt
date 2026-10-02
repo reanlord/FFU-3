@@ -1,0 +1,45 @@
+﻿add_namespace = ww1_germany
+
+
+news_event = {
+    id = ww1_germany.2
+    title = ww1_germany.2.t
+    desc = ww1_germany.2.d
+    picture = ww1_germany_2
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_germany.2.a
+        ai_chance = {
+            factor = 100
+        }
+    }
+}
+
+news_event = {
+	title=ww1_germany.9.t#Brussels has Fallen
+	desc=ww1_germany.9.d#Brussels has fallen to our glorious soldiers, onwards to Paris and a swift victory.
+	id=ww1_germany.9
+	picture=ww1_germany_9NULL
+	major = yes
+	trigger = {
+	    date > 1914.7.28
+		GER = { has_war_with = BEL }
+        NOT = { has_global_flag = brussels_taken }
+		48 = { is_controlled_by = GER }
+		}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option={
+		name=ww1_germany.9.a
+	}
+	immediate = { set_global_flag = brussels_taken }
+}
+
+
+
+
+

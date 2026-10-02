@@ -1,0 +1,1313 @@
+focus_tree = {
+	id = BEL_ww1_focus
+	default=no
+	country={ factor=0  modifier={ add=10 tag=BEL } }	
+
+	####Diplomatic####
+	
+	focus = {
+		id = BEL_diplomatic_effort
+		#icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_chi_british_cooperation
+		completion_reward = {
+			add_political_power=-50
+			transfer_state = 324
+			add_state_core = 324
+			324 = {
+				set_state_category = large_city
+			}
+		}
+		available_if_capitulated = yes
+		cost = 5
+		x = 15
+		y = 5
+		ai_will_do = { factor = 0 }
+		available={is_ai=no}
+	}
+	
+	focus = {
+		id = BEL_entente_focus
+		icon = GFX_hoi4tgw_marianne
+		prerequisite = { focus = BEL_diplomatic_effort }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = -50
+			transfer_state = 35
+			add_state_core = 35
+			35 = {
+				set_state_category = large_city
+			}
+		}
+		
+		cost = 5
+		relative_position_id=BEL_diplomatic_effort
+		x = 0
+		y = 1
+		ai_will_do = { factor = 0 }
+		available={is_ai=no}
+	}
+	
+	focus = {
+		id = BEL_war_coming
+		icon = GFX_goal_generic_major_war
+		relative_position_id=BEL_entente_focus
+		prerequisite={focus=BEL_entente_focus}
+		available = {
+			date>1914.07.01
+		}
+		x=0
+		y=1
+		cost=1
+		available_if_capitulated=yes
+		ai_will_do={factor=0}
+		completion_reward={
+			add_country_leader_trait=rearmer
+			add_ideas=we_fight_on
+			35 = { add_dynamic_modifier = { modifier = FFU_safe_coast_modifier } }
+		}
+	}
+	
+		#Focus for Belgium Fight On
+	focus = {
+		id = BEL_belgium_fight_on
+		icon = GFX_focus_belgium_flag_and_shield
+		relative_position_id=BEL_war_coming
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = BEL_war_coming }
+		available_if_capitulated = yes
+		available = {
+			AND={
+				NOT={ controls_state=48 }
+				NOT={ controls_state=47 }
+			}
+	    }
+		ai_will_do = {
+			factor = 0
+		}
+
+	completion_reward = {
+			add_country_leader_trait=POL_soldier_king
+			#35={
+			#	add_extra_state_shared_building_slots=2
+			#	add_building_construction={type=industrial_complex level=2 instant_build=yes}
+			#}
+			add_manpower= 250000
+		}
+	}
+	
+	#Focus for Establish Commission for Relief in Belgium
+	focus = {
+		id = FRA_establish_commission_for_relief_in_belgium
+		icon = GFX_FRA_establish_commission_for_relief_in_belgium-73799
+		relative_position_id = BEL_belgium_fight_on
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			AND={
+				NOT={controls_state = 48}
+				NOT={controls_state = 47}
+			}
+	    }
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_belgium_fight_on }
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_country_leader_trait=our_right_to_survive
+			#35={
+			#	add_extra_state_shared_building_slots=3
+			#	add_building_construction={type=industrial_complex level=3 instant_build=yes}
+			#}
+			add_manpower = 500000
+		}
+	}
+	
+	#####Politics/Industry#####
+	
+	focus = {
+		id = BEL_pro_lux
+		icon = GFX_goal_generic_propaganda
+		mutually_exclusive = {
+			focus = BEL_catholic_party_dominance
+			focus = BEL_new_liberal_government
+		}
+		available_if_capitulated = yes
+		cost = 5
+		x = 1
+		y = 0
+		ai_will_do = { factor = 0 }
+		completion_reward = { add_ideas = BEL_lux_army }
+	}
+	
+	focus = {
+		id = BEL_lux_strong
+		icon = GFX_focus_national_mobilization
+		available_if_capitulated = yes
+		cost = 5
+		relative_position_id = BEL_pro_lux
+		x = 0
+		y = 1
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = BEL_pro_lux }
+		available = { has_completed_focus=BEL_diplomatic_effort is_ai = no }
+		completion_reward = {
+			#add_manpower = 950000
+			324={
+				add_extra_state_shared_building_slots=2
+				add_building_construction = { type=arms_factory level=2 instant_build=yes }
+			}
+			46 = {
+				set_demilitarized_zone = no
+				add_core_of = BEL
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_catholic_party_dominance
+		icon = GFX_focus_por_concordat
+		completion_reward = { add_stability = 0.15 }
+		mutually_exclusive = {
+			focus = BEL_pro_lux
+			focus = BEL_new_liberal_government
+		}
+		available_if_capitulated = yes
+		cost = 5
+		x = 5
+		y = 0
+		ai_will_do = { factor = 0 }
+	}
+	
+	focus = {
+		id = BEL_funding_private_education
+		icon = GFX_focus_mex_privatisation
+		available_if_capitulated=yes
+		cost = 5
+		prerequisite = { focus = BEL_catholic_party_dominance }
+		relative_position_id = BEL_catholic_party_dominance
+		x = -2
+		y = 1
+		ai_will_do={factor=0}
+		completion_reward = {
+			add_ideas = BEL_catholic_schools
+		}
+	}
+	
+	focus = {
+		id = BEL_social_welfare
+		icon = GFX_focus_CZE_german_puppet
+		#icon = GFX_focus_generic_self_management
+		available_if_capitulated=yes
+		cost = 10
+		prerequisite = { focus = BEL_catholic_party_dominance }
+		relative_position_id = BEL_catholic_party_dominance
+		x = 0
+		y=1
+		ai_will_do={factor=0}
+		available={ has_completed_focus=BEL_diplomatic_effort }
+		completion_reward = {
+			324={
+				add_extra_state_shared_building_slots=2
+				add_building_construction = { type=industrial_complex level=2 instant_build=yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_new_liberal_government
+		icon = GFX_goal_support_democracy
+		completion_reward = { add_political_power = 75 }
+		mutually_exclusive = {
+			focus = BEL_pro_lux
+			focus = BEL_catholic_party_dominance
+		}
+		available_if_capitulated=yes
+		cost = 5
+		relative_position_id = BEL_catholic_party_dominance
+		x = 2
+		y = 0
+		ai_will_do = {factor=0}
+	}
+	
+	focus = {
+		id = BEL_deregulate
+		icon = GFX_focus_generic_mining_industry
+		available_if_capitulated=yes
+		cost=10
+		relative_position_id=BEL_new_liberal_government
+		x=0
+		y=1
+		ai_will_do={factor=0}
+		prerequisite={focus=BEL_new_liberal_government}
+		available={ has_completed_focus=BEL_diplomatic_effort }
+		completion_reward = {
+			324={
+				add_extra_state_shared_building_slots=4
+				add_building_construction = { type=industrial_complex level=4 instant_build=yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_expanded_suffrage
+		icon = GFX_focus_hold_elections
+		available_if_capitulated=yes
+		cost=5
+		relative_position_id=BEL_new_liberal_government
+		x=2
+		y=1
+		ai_will_do={factor=0}
+		prerequisite={focus=BEL_new_liberal_government}
+		completion_reward={
+			add_political_power=200
+		}
+	}
+
+	focus = {
+		id = BEL_ww1_reorganization_act
+		prerequisite = { focus=BEL_lux_strong focus=BEL_catholic_party_dominance focus=BEL_new_liberal_government }
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_production
+		relative_position_id = BEL_catholic_party_dominance
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 0 }
+		available={ has_completed_focus=BEL_diplomatic_effort }
+		completion_reward = {
+			add_tech_bonus={
+				technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				#technology = dispersed_industry
+				#technology = dispersed_industry2
+				name=industrial_bonus bonus=1 uses=2
+			}
+		}
+
+	}
+	
+	focus={
+		id=BEL_merchant_fleet
+		#icon=GFX_focus_generic_merchant_fleet
+		icon=GFX_focus_SWE_state_paid_vacation
+		available_if_capitulated=yes
+		relative_position_id=BEL_ww1_reorganization_act
+		prerequisite={focus=BEL_ww1_reorganization_act}
+		x=-5
+		y=1
+		cost=5
+		ai_will_do={factor=0}
+		completion_reward={
+			navy_experience=50
+			324={
+				add_extra_state_shared_building_slots=3
+				add_building_construction = { type=dockyard level=2 instant_build=yes }
+				add_building_construction = { type=industrial_complex level=1 instant_build=yes }
+			}
+			add_equipment_to_stockpile = {
+				amount = 100
+				type = convoy
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_ww1_dockyard_effort_1
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite={focus=BEL_merchant_fleet}
+		relative_position_id=BEL_merchant_fleet
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			navy_experience=100
+			324={
+				add_extra_state_shared_building_slots=4
+				add_building_construction = { type=dockyard level=4 instant_build=yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_ww1_newnavalcanons_1
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_merchant_fleet }
+		icon = GFX_hoi4tgw_navalcanons
+		completion_reward = {
+			navy_experience=100
+			add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=3 category=naval_equipment }
+		}
+		ai_will_do = { factor = 0 }
+		cost = 3
+		relative_position_id=BEL_merchant_fleet
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = BEL_ww1_large_navy
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_dockyard_effort_1 }
+		prerequisite = { focus=BEL_ww1_newnavalcanons_1 }
+		icon = GFX_goal_generic_build_navy
+		cost = 4
+		relative_position_id=BEL_merchant_fleet
+		x = 0
+		y = 2
+		ai_will_do = { factor = 0 }
+		completion_reward={
+			navy_experience=100
+			324={
+				add_extra_state_shared_building_slots=6
+				add_building_construction = { type=dockyard level=6 instant_build=yes }
+			}
+			add_tech_bonus = { bonus=2 uses=2 category=naval_equipment }
+		}
+	}
+
+	focus = {
+		id = BEL_ww1_airfield_expansion_1
+		icon = GFX_goal_generic_construction
+		available_if_capitulated = yes
+		prerequisite={focus=BEL_ww1_reorganization_act}
+		relative_position_id=BEL_ww1_reorganization_act
+		x = -3
+		y = 1
+		cost = 5
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			324={
+				add_extra_state_shared_building_slots=1
+				add_building_construction = { type=industrial_complex level=1 instant_build=yes }
+			}
+			48 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}							
+			}
+			47 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}							
+			}			
+		}
+	}
+	
+	focus = {
+		id = BEL_develop_congo
+		icon = GFX_second_belgian_award
+		available_if_capitulated = yes
+		prerequisite={focus=BEL_ww1_reorganization_act}
+		relative_position_id=BEL_ww1_reorganization_act
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			324={
+				add_extra_state_shared_building_slots=1
+				add_building_construction = { type=industrial_complex level=1 instant_build=yes }
+				add_resource={
+					type=rubber
+					amount=15
+				}
+				add_resource={
+					type=chromium
+					amount=12
+				}
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_invest_ghent_university
+		icon=GFX_focus_NORDIC_com_capstone_research
+		#icon=GFX_focus_NORDIC_mon_research
+		available_if_capitulated=yes
+		prerequisite={focus=BEL_ww1_reorganization_act}
+		cost=5
+		relative_position_id=BEL_ww1_reorganization_act
+		x=1
+		y=1
+		ai_will_do={factor=0}
+		completion_reward={
+			add_research_slot=1
+		}
+	}
+	
+	focus = {
+		id = BEL_ww1_centralizedpower
+		available_if_capitulated = yes
+		icon = GFX_focus_generic_public_works
+		cost = 10
+		prerequisite={focus=BEL_ww1_reorganization_act}
+		relative_position_id=BEL_ww1_reorganization_act
+		x = 3
+		y = 1
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			324={
+				add_extra_state_shared_building_slots=1
+				add_building_construction = { type=industrial_complex level=1 instant_build=yes }
+			}
+			add_timed_idea = {
+				idea = industrialization_effort
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_ww1_construction_effort
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_construct_civ_factory
+		ai_will_do = { factor = 1 }
+		cost = 10
+		prerequisite = { focus=BEL_ww1_centralizedpower }
+		relative_position_id = BEL_ww1_centralizedpower
+		x = 0
+		y = 1
+		completion_reward={
+			324={
+				add_extra_state_shared_building_slots=2
+				add_building_construction = { type=industrial_complex level=2 instant_build=yes }
+			}
+		}
+	}
+	
+	focus={
+		id = BEL_fabrique_nationale
+		prerequisite = { focus=BEL_ww1_reorganization_act }
+		prerequisite = {focus=BEL_army_basic}
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		relative_position_id = BEL_ww1_reorganization_act
+		x = 5
+		y = 1
+		ai_will_do = { factor = 0 }
+		completion_reward={
+			add_tech_bonus={
+				name=infantry_weapons_bonus bonus=1 uses=2 category=infantry_weapons
+			}
+			324={
+				add_extra_state_shared_building_slots=2
+				add_building_construction = { type=arms_factory level=2 instant_build=yes }
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_fn_browning
+		icon=GFX_goal_generic_construct_mil_factory
+		prerequisite={focus=BEL_fabrique_nationale}
+		available_if_capitulated=yes
+		relative_position_id=BEL_fabrique_nationale
+		x=0
+		y=1
+		cost=10
+		ai_will_do={factor=0}
+		completion_reward={
+			add_tech_bonus={
+				name=infantry_weapons_bonus bonus=1 uses=3 category=infantry_weapons
+			}
+			324={
+				add_extra_state_shared_building_slots=3
+				add_building_construction = { type=arms_factory level=3 instant_build=yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = BEL_ww1_production_effort
+		prerequisite = { focus=BEL_ww1_construction_effort }
+		prerequisite = { focus=BEL_fn_browning }
+		available_if_capitulated = yes
+		icon = GFX_focus_SWI_issue_war_bonds
+		cost = 5
+		relative_position_id=BEL_ww1_construction_effort
+		x = 1
+		y = 1
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			add_tech_bonus={
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry3
+				name=industrial_bonus bonus=2 uses=1
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_ww1_unitedpeople
+		prerequisite = { focus=BEL_ww1_reorganization_act }
+		available_if_capitulated = yes
+		#icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 5
+		relative_position_id=BEL_ww1_reorganization_act
+		x = 0
+		y = 2
+		ai_will_do = { factor = 0 }
+		available={has_war=yes}
+		completion_reward = {
+			add_research_slot=1
+		}
+	}
+	
+	focus = {
+		id = BEL_ww1_limited_rearmament
+		prerequisite = { focus=BEL_ww1_unitedpeople }
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		relative_position_id = BEL_ww1_unitedpeople
+		x = -1
+		y = 1
+		mutually_exclusive = { focus=BEL_ww1_full_rearmament }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			324 = {
+				add_extra_state_shared_building_slots=3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}							
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_ww1_full_rearmament
+		prerequisite = { focus=BEL_ww1_unitedpeople }
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_build_tank
+
+		completion_reward = {
+			324 = {
+				add_extra_state_shared_building_slots=2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}							
+			}
+		}
+
+		cost = 10
+		relative_position_id = BEL_ww1_limited_rearmament
+		x = 2
+		y = 0
+		mutually_exclusive = { focus=BEL_ww1_limited_rearmament }
+		ai_will_do = { factor = 0 }
+	}
+	
+	focus = {
+		id = BEL_ww1_massive_effort
+		available_if_capitulated = yes
+		icon = GFX_focus_generic_workers
+		ai_will_do = { factor = 0 }
+		cost = 10
+		prerequisite = { focus=BEL_ww1_unitedpeople }
+		prerequisite = { focus=BEL_ww1_limited_rearmament focus=BEL_ww1_full_rearmament }
+		relative_position_id=BEL_ww1_unitedpeople
+		x = 0
+		y = 2
+		completion_reward = {
+			324 = {
+				add_extra_state_shared_building_slots=4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}				
+			}
+		}
+	}
+	
+	#####New Military#####
+	
+	focus = {
+		id=BEL_army_basic
+		icon=GFX_focus_NORDIC_mon_selector_army
+		available_if_capitulated=yes
+		cost=5
+		x=14
+		y=0
+		ai_will_do={factor=0}
+		completion_reward={
+			army_experience=50
+			add_command_power=25.0
+		}
+	}
+	
+	focus={
+		id=BEL_conscription
+		icon=GFX_focus_generic_manpower
+		available_if_capitulated=yes
+		cost=5
+		relative_position_id=BEL_army_basic
+		prerequisite={focus=BEL_army_basic}
+		x=0
+		y=1
+		ai_will_do={factor=0}
+		available={
+			has_completed_focus=BEL_ww1_reorganization_act
+		}
+		completion_reward={
+			add_ideas=BEL_obligatory_military_service
+		}
+	}
+	
+	focus = {
+		id=BEL_preserving_scarce_manpower
+		icon=GFX_focus_generic_field_hostpital
+		available_if_capitulated=yes
+		relative_position_id=BEL_army_basic
+		prerequisite={focus=BEL_army_basic}
+		x=2
+		y=1
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=hospital_bonus bonus=2 uses=3
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_field_hospital4
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_royal_military_academy
+		icon=GFX_focus_generic_military_academy
+		available_if_capitulated=yes
+		relative_position_id=BEL_army_basic
+		prerequisite={focus=BEL_army_basic}
+		x=1
+		y=2
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.20
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_unified_entente_planning
+		icon = GFX_focus_ARG_join_the_allies
+		available_if_capitulated=yes
+		available={has_war=yes}
+		relative_position_id=BEL_royal_military_academy
+		prerequisite={focus=BEL_royal_military_academy}
+		x=-1
+		y=1
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			random_unit_leader = { ##Albert
+				limit = { has_id = 9009 }
+            	add_unit_leader_trait = war_hero
+				add_unit_leader_trait = logistics_wizard
+				add_unit_leader_trait = guerilla_fighter
+				add_unit_leader_trait = scavenger
+            	add_skill_level = 2
+            	add_attack = 2
+            	add_defense = 2
+            }
+		}
+	}
+	
+	focus={
+		id=BEL_mobile_warfare_focus
+		icon=GFX_focus_generic_tankette
+		available_if_capitulated=yes
+		relative_position_id=BEL_royal_military_academy
+		prerequisite={focus=BEL_royal_military_academy}
+		x=1
+		y=1
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=mobile_warfare_bonus bonus=2 uses=1 category=armor
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_logistical_support_services
+		icon=GFX_focus_generic_truck
+		available_if_capitulated=yes
+		relative_position_id=BEL_army_basic
+		prerequisite={focus=BEL_army_basic}
+		x=-1
+		y=2
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=logistics_bonus bonus=1 uses=3
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+				technology = tech_maintenance_company2
+				technology = tech_maintenance_company3
+				technology = tech_maintenance_company4
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_chiens_militaires
+		icon=GFX_focus_NORDIC_com_capstone_army
+		available_if_capitulated=yes
+		relative_position_id=BEL_army_basic
+		prerequisite={focus=BEL_army_basic}
+		x=-2
+		y=1
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=war_dogs_bonus bonus=3 uses=2
+				technology = tech_wardog
+				technology = tech_wardog2
+				technology = tech_wardog3
+				technology = tech_wardog4
+			}
+		}
+	}
+	
+	focus={
+		id=BEL_national_redoubt_strategy
+		icon=GFX_goal_generic_fortify_city
+		available_if_capitulated=yes
+		relative_position_id=BEL_army_basic
+		prerequisite={focus=BEL_army_basic}
+		x=3
+		y=2
+		ai_will_do={factor=0}
+		cost=5
+		completion_reward={
+			add_tech_bonus = {
+				name=engineer_bonus bonus=1 uses=2
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_engineers4
+			}
+		}
+	}
+	
+	################################################################
+	################################################################
+focus = {
+		id = BEL_ww1_army_effort_1
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_1 }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_1 }
+		cost = 5
+		x = 20
+		y = 1
+		}
+		
+focus = {
+		id = BEL_ww1_equipment_effort_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_1 }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_1 }
+		cost = 5
+		x = 22
+		y = 1
+	}
+focus = {
+		id = BEL_ww1_artillery_effort_1
+		prerequisite = { }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_1 }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_1 }
+		cost = 5
+		x = 24
+		y = 1
+	}
+focus = {
+		id = BEL_ww1_aircraftprod_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_1 }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_1 }
+		cost = 5
+		x = 26
+		y = 1
+	}
+focus = {
+		id = BEL_ww1_large_navy_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_1 }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_1 }
+		cost = 5
+		x = 28
+		y = 1
+		
+		}
+
+	##############################################################################
+
+focus = {
+		id = BEL_ww1_army_effort_2
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_1
+		 focus=BEL_ww1_equipment_effort_1
+		 focus=BEL_ww1_artillery_effort_1
+		 focus=BEL_ww1_aircraftprod_1
+		 focus=BEL_ww1_large_navy_1}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_2 }
+		cost = 5
+		x = 20
+		y = 2
+		}
+focus = {
+		id = BEL_ww1_equipment_effort_2
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_1
+		 focus=BEL_ww1_equipment_effort_1
+		 focus=BEL_ww1_artillery_effort_1
+		 focus=BEL_ww1_aircraftprod_1
+		 focus=BEL_ww1_large_navy_1}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_2}
+		cost = 5
+		x = 22
+		y = 2
+	}
+focus = {
+		id = BEL_ww1_artillery_effort_2
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_1
+		 focus=BEL_ww1_equipment_effort_1
+		 focus=BEL_ww1_artillery_effort_1
+		 focus=BEL_ww1_aircraftprod_1
+		 focus=BEL_ww1_large_navy_1}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_2 }
+		cost = 5
+		x = 24
+		y = 2
+	}
+focus = {
+		id = BEL_ww1_aircraftprod_2
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_1
+		focus=BEL_ww1_equipment_effort_1
+		focus=BEL_ww1_artillery_effort_1
+		focus=BEL_ww1_aircraftprod_1
+		focus=BEL_ww1_large_navy_1}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_2 }
+		cost = 5
+		x = 26
+		y = 2
+	}
+focus = {
+		id = BEL_ww1_large_navy_2
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_1
+		focus=BEL_ww1_equipment_effort_1
+		focus=BEL_ww1_artillery_effort_1
+		focus=BEL_ww1_aircraftprod_1
+		focus=BEL_ww1_large_navy_1}
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_2 }
+		cost = 5
+		x = 28
+		y = 2
+	}
+	################################################################
+
+focus = {
+		id = BEL_ww1_army_effort_3
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_2
+		 focus=BEL_ww1_equipment_effort_2
+		 focus=BEL_ww1_artillery_effort_2
+		 focus=BEL_ww1_aircraftprod_2
+		 focus=BEL_ww1_large_navy_2}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_3 }
+		cost = 5
+		x = 20
+		y = 3
+		}
+focus = {
+		id = BEL_ww1_equipment_effort_3
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_2
+		 focus=BEL_ww1_equipment_effort_2
+		 focus=BEL_ww1_artillery_effort_2
+		 focus=BEL_ww1_aircraftprod_2
+		 focus=BEL_ww1_large_navy_2}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_3}
+		cost = 5
+		x = 22
+		y = 3
+	}
+focus = {
+		id = BEL_ww1_artillery_effort_3
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_2
+		 focus=BEL_ww1_equipment_effort_2
+		 focus=BEL_ww1_artillery_effort_2
+		 focus=BEL_ww1_aircraftprod_2
+		 focus=BEL_ww1_large_navy_2}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_3 }
+		cost = 5
+		x = 24
+		y = 3
+	}
+focus = {
+		id = BEL_ww1_aircraftprod_3
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_2
+		focus=BEL_ww1_equipment_effort_2
+		focus=BEL_ww1_artillery_effort_2
+		focus=BEL_ww1_aircraftprod_2
+		focus=BEL_ww1_large_navy_2}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_3 }
+		cost = 5
+		x = 26
+		y = 3
+	}
+focus = {
+		id = BEL_ww1_large_navy_3
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_2
+		focus=BEL_ww1_equipment_effort_2
+		focus=BEL_ww1_artillery_effort_2
+		focus=BEL_ww1_aircraftprod_2
+		focus=BEL_ww1_large_navy_2 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_3 }
+		cost = 5
+		x = 28
+		y = 3
+	}
+	################################################################
+
+focus = {
+		id = BEL_ww1_army_effort_4
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_3
+		 focus=BEL_ww1_equipment_effort_3
+		 focus=BEL_ww1_artillery_effort_3
+		 focus=BEL_ww1_aircraftprod_3
+		 focus=BEL_ww1_large_navy_3}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_4 }
+		cost = 5
+		x = 20
+		y = 4
+		}
+focus = {
+		id = BEL_ww1_equipment_effort_4
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_3
+		 focus=BEL_ww1_equipment_effort_3
+		 focus=BEL_ww1_artillery_effort_3
+		 focus=BEL_ww1_aircraftprod_3
+		 focus=BEL_ww1_large_navy_3}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_4 }
+		cost = 5
+		x = 22
+		y = 4
+	}
+focus = {
+		id = BEL_ww1_artillery_effort_4
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_3
+		 focus=BEL_ww1_equipment_effort_3
+		 focus=BEL_ww1_artillery_effort_3
+		 focus=BEL_ww1_aircraftprod_3
+		 focus=BEL_ww1_large_navy_3 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_4 }
+		cost = 5
+		x = 24
+		y = 4
+	}
+focus = {
+		id = BEL_ww1_aircraftprod_4
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_3
+		focus=BEL_ww1_equipment_effort_3
+		focus=BEL_ww1_artillery_effort_3
+		focus=BEL_ww1_aircraftprod_3
+		focus=BEL_ww1_large_navy_3}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_4 }
+		cost = 5
+		x = 26
+		y = 4
+	}
+focus = {
+		id = BEL_ww1_large_navy_4
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_3
+		focus=BEL_ww1_equipment_effort_3
+		focus=BEL_ww1_artillery_effort_3
+		focus=BEL_ww1_aircraftprod_3
+		focus=BEL_ww1_large_navy_3 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_4 }
+		cost = 5
+		x = 28
+		y = 4
+	}
+
+   ############################################################################
+ 	################################################################
+
+focus = {
+		id = BEL_ww1_army_effort_5
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_4
+		 focus=BEL_ww1_equipment_effort_4
+		 focus=BEL_ww1_artillery_effort_4
+		 focus=BEL_ww1_aircraftprod_4
+		 focus=BEL_ww1_large_navy_4}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_5 }
+		cost = 5
+		x = 20
+		y = 5
+		}
+focus = {
+		id = BEL_ww1_equipment_effort_5
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_4
+		 focus=BEL_ww1_equipment_effort_4
+		 focus=BEL_ww1_artillery_effort_4
+		 focus=BEL_ww1_aircraftprod_4
+		 focus=BEL_ww1_large_navy_4}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_5 }
+		cost = 5
+		x = 22
+		y = 5
+	}
+focus = {
+		id = BEL_ww1_artillery_effort_5
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_4
+		 focus=BEL_ww1_equipment_effort_4
+		 focus=BEL_ww1_artillery_effort_4
+		 focus=BEL_ww1_aircraftprod_4
+		 focus=BEL_ww1_large_navy_4 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_5 }
+		cost = 5
+		x = 24
+		y = 5
+	}
+focus = {
+		id = BEL_ww1_aircraftprod_5
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_4
+		focus=BEL_ww1_equipment_effort_4
+		focus=BEL_ww1_artillery_effort_4
+		focus=BEL_ww1_aircraftprod_4
+		focus=BEL_ww1_large_navy_4}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_large_navy_5 }
+		cost = 5
+		x = 26
+		y = 5
+	}
+focus = {
+		id = BEL_ww1_large_navy_5
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_4
+		focus=BEL_ww1_equipment_effort_4
+		focus=BEL_ww1_artillery_effort_4
+		focus=BEL_ww1_aircraftprod_4
+		focus=BEL_ww1_large_navy_4 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = BEL_ww1_army_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = BEL_ww1_aircraftprod_5 }
+		cost = 5
+		x = 28
+		y = 5
+	}
+
+   ############################################################################
+focus = {
+		id = BEL_ww1_armor_effort_1
+		available_if_capitulated = yes
+		prerequisite = { focus=BEL_ww1_army_effort_5
+		focus=BEL_ww1_equipment_effort_5
+		focus=BEL_ww1_artillery_effort_5
+		focus=BEL_ww1_aircraftprod_5
+		focus=BEL_ww1_large_navy_5 }
+		icon = GFX_hoi4tgw_renaultft
+		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=1 uses=2 category=armor } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 24
+		y = 6
+	}
+######################################################################################
+######################################################################################
+
+	###########################################################################################################################
+
+	###########################################################################################################################
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=156
+	name="STATE_156"
+	provinces={
+		833 2405 2648 3297 4074 4397 5868 7564 7918 8178 8199 10725 10778 11394 15650 15669 15720 15776 15792 15799 15824 15834 15837 15869 
+	}
+	manpower=1733000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = TUR
+		add_core_of = SWI
+		add_extra_state_shared_building_slots = 10
+		buildings = {
+			infrastructure = 3
+        }
+		victory_points = {
+			2405 20 	#Pristina
+		}
+		victory_points = {
+			15720 10 	#Novi Pazar
+		}
+		victory_points = {
+			15834 5 	#Prizren
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+}

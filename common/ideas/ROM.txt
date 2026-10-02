@@ -1,0 +1,228 @@
+ideas={
+country = {
+		ROM_volunteers_1 = {
+			picture = RUS_vols
+			allowed = { original_tag = ROM }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 47
+			}
+		}
+		ROM_volunteers_2 = {
+			picture = RUS_vols
+			allowed = { original_tag = ROM }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 383
+			}
+		}
+		ROM_emergency_war_act = {
+			picture = generic_production_bonus
+			modifier = {
+				min_export = -0.25
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ROM_entente_planning = {
+			#picture = prc_low_popular_support3
+			picture = ottoman_fra_advisor
+			modifier = {
+				#planning_speed = 0.10
+				#max_planning = 0.05
+				mobilization_speed = 0.10
+				experience_gain_army = 0.05
+			}
+		}
+		ROM_study_foreign_equipment = {
+			picture = chi_wargaming_division
+			modifier = {
+				license_production_speed = 0.15
+			}
+			research_bonus = {
+                infantry_weapons = 0.10
+            }
+		}
+		ROM_lessons_of_balkan_wars = {
+			picture = cze_planning_bonus
+			modifier = {
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+			}
+		}
+		ROM_encourage_foreign_investment = {
+			picture = generic_foreign_capital
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		ROM_last_stand = {
+			#picture=SWE_varnplikt
+			picture = SPR_international_brigades
+			modifier = {
+				conscription = 0.10
+				weekly_casualties_war_support = 0.002
+			}
+		}
+		ROM_watchful_neutrality = {
+			picture=generic_infantry_bonus
+			modifier = {
+				training_time_army_factor = -0.70
+			}
+		}
+		
+		ROM_Romanian_Arms_Industry = {
+			#picture = ger_rebuild_the_nation
+			picture=ARG_economic_reactivation
+			modifier = { }
+			equipment_bonus = {
+				machine_gun_equipment = {					
+                build_cost_ic = -0.05 instant = yes
+				}			
+			}
+		}
+		
+		ROM_Pentru_Natiune = {
+			#picture = rom_preserve_greater_romania
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.15
+				supply_combat_penalties_on_core_factor = -0.10
+				surrender_limit = 1.0
+			}
+		}	
+
+		ROM_trench_0 = {
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		ROM_trench_1 = {
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		ROM_trench_2 = {
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		ROM_trench_3 = {
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		ROM_trench_4 = {
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+		
+	}
+	political_advisor={
+			ROM_nicolae_titulescu={ allowed={ original_TAG=ROM } traits={ war_industrialist } ai_will_do={ factor=1 } }
+			ROM_istrate_micescu={ allowed={ original_TAG=ROM } traits={ smooth_talking_charmer } ai_will_do={ factor=1 } }
+			ROM_mihail_moruzov={ allowed={ original_TAG=ROM } traits={ quartermaster_general } ai_will_do={ factor=1 } }
+			ROM_alexandru_marghiloman={ allowed={ original_TAG=ROM } traits={ ideological_crusader } ai_will_do={ factor=1 } }
+			ROM_constantin_coanda={ allowed={ original_TAG=ROM } traits={ silent_workhorse } ai_will_do={ factor=1 } }
+			ROM_artur_vaitoianu={ allowed={ original_TAG=ROM } traits={ backroom_backstabber } ai_will_do={ factor=1 } }
+			ROM_aurel_vlad={ allowed={ original_TAG=ROM } traits={ compassionate_gentleman } ai_will_do={ factor=1 } }
+			ROM_ioan_popescu={ allowed={ original_TAG=ROM } traits={ fortification_engineer } ai_will_do={ factor=1 } }
+			ROM_vintila_bratianu={ allowed={ original_TAG=ROM } traits={ captain_of_industry } ai_will_do={ factor=1 } }
+			}
+	naval_manufacturer={
+			 
+			constanta_shipyard={ allowed={ original_TAG=ROM } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } }
+			}
+	aircraft_manufacturer={
+			 
+			set={ allowed={ original_TAG=ROM } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
+			cerchez_and_co={ allowed={ original_TAG=ROM } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_3 }
+			}
+	materiel_manufacturer={
+			 
+			udr_factories={ allowed={ original_TAG=ROM } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_2 }
+			bucharest_army_arsenal={ allowed={ original_TAG=ROM } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_3 }
+			caile_ferate_romane={ allowed={ original_TAG=ROM } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_1 }
+			targoviste_army_arsenal={ allowed={ original_TAG=ROM } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_2 }
+			}
+	industrial_concern={
+			 
+			steaua_romana_refineries={ allowed={ original_TAG=ROM }    research_bonus = {
+							    industry = 0.05
+							    synth_resources = 0.1
+							   } traits={ refinery_concern } picture=generic_tank_manufacturer_2 }
+			nicolae_malaxa_factories={ allowed={ original_TAG=ROM }    research_bonus = {
+							    industry = 0.10
+							    
+							   } traits={ industrial_concern } picture=generic_tank_manufacturer_3 }
+			}
+	
+	
+	}

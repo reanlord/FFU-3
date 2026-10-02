@@ -1,0 +1,45 @@
+﻿l_english:
+ super_event_picture_1:0 "FFU_ww1_start"
+ super_event_title_1:0 "THE GREAT WAR"
+ super_event_text_1:0 " This new lot...they too would go down. They were 'troops' who were about to be 'thrown in,' 'men' in some general's larger plan, 're-enforcements ' and would soon be 'casualties'. They were also Spud, Snow, Skeeter, Blue, Tommo. \n- David Malouf"
+ super_event_button_text_1:0 "Dread."
+
+ super_event_picture_2:0 "FFU_balkan_war"
+ super_event_title_2:0 "BALKAN WAR"
+ super_event_text_2:0 "The Turkish governments showed no interest in their duties towards their citizens and turned a deaf ear to all complaints and suggestions. Things got so far out of hand that no one was satisfied with the situation in Turkey in Europe. It became unbearable for the Serbs, the Greeks and for the Albanians, too. \n- King Peter I of Serbia"
+ super_event_button_text_2:0 "Powderkerg waiting to explode."
+
+ super_event_picture_3:0 "FFU_russian_civil_war"
+ super_event_title_3:0 "RUSSIAN CIVIL WAR"
+ super_event_text_3:0 "Capitalism has triumphed all over the world, but this triumph is only the prelude to the triumph of labour over capital. \n- Vladimir Lenin"
+ super_event_button_text_3:0 "This is bad."
+
+ super_event_picture_4:0 "FFU_franz_joseph_dead"
+ super_event_title_4:0 "FRANZ JOSEPH I PASSES"
+ super_event_text_4:0 "I am the last ruler of the old world. \n- Kaiser Franz Joseph I"
+ super_event_button_text_4:0 "Goodbye our beloved."
+
+ super_event_picture_5:0 "FFU_jihad"
+ super_event_title_5:0 "MEHMED V DECLARES JIHAD"
+ super_event_text_5:0 "Would it be a religious duty for all the Muslims in all countries, whether young or old, infantry or cavalry, to resort to jihad with all their properties and lives, as required by the Quranic verse of Enfiru, if the Sultan of Islam declares war and calls the entire population under arms, when there is an enemy attack against Islam and Islamic countries are extorted and pillaged and Islamic people are enslaved? Answer It would. \n- Sultan Mehmed V"
+ super_event_button_text_5:0 "Will they answer?"
+ 
+ super_event_picture_6:0 "FFU_black_sea_raid"
+ super_event_title_6:0 "BLACK SEA RAID"
+ super_event_text_6:0 "You are greatly mistaken. We have this country absolutely under our control. I have no desire to shift the blame onto our underlings and I am entirely willing to accept the responsibility myself for everything that has taken place. \n- Ismail Enver Pasha"
+ super_event_button_text_6:0 "Another Nation Joins."
+ 
+ super_event_picture_6:0 "FFU_black_sea_raid"
+ super_event_title_6:0 "BLACK SEA RAID"
+ super_event_text_6:0 "You are greatly mistaken. We have this country absolutely under our control. I have no desire to shift the blame onto our underlings and I am entirely willing to accept the responsibility myself for everything that has taken place. \n- Ismail Enver Pasha"
+ super_event_button_text_6:0 "Another Nation Joins."
+ 
+ super_event_picture_7:0 "FFU_schlieffen_plan"
+ super_event_title_7:0 "SCHLIEFFEN PLAN"
+ super_event_text_7:0 "Belgium is a nation, not a road. \n- King Albert I"
+ super_event_button_text_7:0 "Hold Little Belgium."
+ 
+ super_event_picture_8:0 "FFU_christmas_truce"
+ super_event_title_8:0 "CHRISTMAS TRUCE"
+ super_event_text_8:0 "On Christmas Eve at noon, fire ceased completely – on both fronts. Of course it was unusual that the opposite side also ceased fire. Then my officer controlling the sentries came in and said ‘Do you expect a surprise attack? Because it’s very unusual the situation.’ I said, ‘No I don’t think so. But anyhow everyone is awake, no one is sleeping and the sentries are still on duty. So I think it’s alright. \n- British private Marmaduke Walkinton"
+ super_event_button_text_8:0 "Alittle peace."

@@ -1,0 +1,32 @@
+state={
+	id=409
+	name="STATE_409"
+	provinces={
+		7768 
+	}
+	resources={
+		wood=50
+		coal=33
+	}
+	manpower=2401272
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	history={
+		owner = USA
+		add_core_of = USA 
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 4
+			fuel_silo = 1
+			7768 = {
+				naval_base = 10
+			}
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+}

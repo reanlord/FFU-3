@@ -1,0 +1,79 @@
+FFU_navy_race = {
+	name = "Navy Mode"
+	group = "FFU Rules"
+	icon = "GFX_military_access_docking_rights"
+	default = {
+		name = NORMAL
+		text = "Normal FFU"
+		desc = ""
+	}
+	option = {
+		name = RACE
+		text = "Naval Arms Race"
+		desc = "All starting navies are deleted and everyone is given a national spirit that gives dockyard construction speed +300%."
+	}
+}
+
+Trenches_Rule = {
+	name = "Trenches"
+	group = "FFU Rules"
+	icon = "GFX_maximum_fort_level"
+	default = {
+		name = ALLOW_TRENCH
+		text = "Normal FFU"
+		desc = ""
+	}
+	option = {
+		name = BAN_TRENCH
+		text = "Trenches Banned"
+		desc = "Everyone is given a hidden national spirit preventing the construction of trenches."
+	}
+}
+
+Civ_Greed_Rule = {
+	name = "Civ-Greed Mode"
+	group = "FFU Rules"
+	icon = "GFX_production_licenses"
+	default = {
+		name = NO_CIV_GREED
+		text = "Normal FFU"
+		desc = ""
+	}
+	option = {
+		name = YES_CIV_GREED
+		text = "Look at my civ count"
+		desc = "Everyone is given a hidden national spirit that gives -100000% construction speed for military factories until 1 Jan 1913."
+	}
+}
+
+Bloat_Rule = {
+	name = "Bloat Mode"
+	group = "FFU Rules"
+	icon = "GFX_lend_lease"
+	default = {
+		name = NO_BLOAT
+		text = "Normal FFU"
+		desc = ""
+	}
+	option = {
+		name = YES_BLOAT
+		text = "Bloat"
+		desc = "Everyone is given a hidden national spirit that gives -50% construction cost for all buildings and +100% resource gain efficiency."
+	}
+}
+
+Manpower_Rule = {
+	name = "More Manpower"
+	group = "FFU Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = NORMAL_MANPOWER
+		text = "Normal FFU"
+		desc = ""
+	}
+	option = {
+		name = MORE_MANPOWER
+		text = "2X the Manpower"
+		desc = "Everyone is given a hidden national spirit that gives +100% recruitable population factor."
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=434
+	name="STATE_434"
+	provinces={
+		11499
+	}
+	manpower=12247
+	buildings_max_level_factor=1.000
+	state_category = tiny_island
+	history = {
+	owner = GER
+	add_core_of = GER
+		buildings = {
+			infrastructure = 6
+			11499 = {
+				coastal_bunker = 5
+			}
+		}
+		victory_points = {
+		11499 1
+		} 
+		1911.1.1.12 = {
+			owner = SWI
+		}
+    }
+}

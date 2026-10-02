@@ -1,0 +1,119 @@
+spriteTypes = {
+
+	# Portraits #
+	# If missing country specific portraits, the default will be used (without TAG at the front).
+	# If there is one that match the Ace name + surname, the one will be used.
+	# For example: GFX_POL_ace_Tomasz_Kowalczyk
+	# Else, the random from 0 and up will be used.
+	# Using _m_ and _f_ for male and female.
+
+	# Default #
+	spriteType = {
+		name = "GFX_ace_none"
+		texturefile = "gfx/aces/ace_none.dds"
+	}
+	spriteType = {
+		name = "GFX_ace_m_0"
+		texturefile = "gfx/aces/ace_m_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ace_m_1"
+		texturefile = "gfx/aces/ace_m_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ace_f_0"
+		texturefile = "gfx/aces/ace_f_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ace_f_1"
+		texturefile = "gfx/aces/ace_f_1.dds"
+	}
+
+	# GER #
+	spriteType = {
+		name = "GFX_GER_ace_m_0"
+		texturefile = "gfx/aces/GER_ace_m_0.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_m_1"
+		texturefile = "gfx/aces/GER_ace_m_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_f_0"
+		texturefile = "gfx/aces/GER_ace_f_0.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_f_1"
+		texturefile = "gfx/aces/GER_ace_f_1.dds"
+	}
+	spriteType = { name = "GFX_AUH_ace_Godwin_Brumowski" texturefile = "gfx/aces/AUH_ace_godwin_brumowski.dds" }
+	spriteType = { name = "GFX_AUH_ace_Julius_Arigi" texturefile = "gfx/aces/AUH_ace_julius_arigi.dds" }
+	spriteType = { name = "GFX_AUH_ace_Benno_Fiala Ritter von Fernbrugg" texturefile = "gfx/aces/AUH_ace_benno_fiala_ritter_von_fernbrugg.dds" }
+	spriteType = { name = "GFX_AUH_ace_Frank_Linke-Crawford" texturefile = "gfx/aces/AUH_ace_frank_linke_crawford.dds" }
+	spriteType = { name = "GFX_AUH_ace_József_Kiss" texturefile = "gfx/aces/AUH_ace_jozsef_kiss.dds" }
+	spriteType = { name = "GFX_AUH_ace_Franz_Gräser" texturefile = "gfx/aces/AUH_ace_franz_graser.dds" }
+	spriteType = { name = "GFX_AUH_ace_Eugen_Bönsch" texturefile = "gfx/aces/AUH_ace_eugen_bonsch.dds" }
+	spriteType = { name = "GFX_AUH_ace_Stefan_Fejes" texturefile = "gfx/aces/AUH_ace_stefan_fejes.dds" }
+	spriteType = { name = "GFX_AUH_ace_Ernst_Strohschneider" texturefile = "gfx/aces/AUH_ace_ernst_strohschneider.dds" }
+	spriteType = { name = "GFX_BEL_ace_Willy_Coppens" texturefile = "gfx/aces/BEL_ace_willy_coppens.dds" }
+	spriteType = { name = "GFX_BEL_ace_Andre_de Meulemeester" texturefile = "gfx/aces/BEL_ace_andre_de_meulemeester.dds" }
+	spriteType = { name = "GFX_BEL_ace_Edmond_Thieffry" texturefile = "gfx/aces/BEL_ace_edmond_thieffry.dds" }
+	spriteType = { name = "GFX_BEL_ace_Fernand_Jacquet" texturefile = "gfx/aces/BEL_ace_fernand_jacquet.dds" }
+	spriteType = { name = "GFX_BEL_ace_Adolphe_DuBois d'Aische" texturefile = "gfx/aces/BEL_ace_adolphe_dubois_d_aische.dds" }
+	spriteType = { name = "GFX_BEL_ace_Jan_Olieslagers" texturefile = "gfx/aces/BEL_ace_jan_olieslagers.dds" }
+	spriteType = { name = "GFX_ENG_ace_Edward_Mannock" texturefile = "gfx/aces/ENG_ace_edward_mannock.dds" }
+	spriteType = { name = "GFX_ENG_ace_James_McCudden" texturefile = "gfx/aces/ENG_ace_james_mccudden.dds" }
+	spriteType = { name = "GFX_ENG_ace_George_McElroy" texturefile = "gfx/aces/ENG_ace_george_mcelroy.dds" }
+	spriteType = { name = "GFX_ENG_ace_Albert_Ball" texturefile = "gfx/aces/ENG_ace_albert_ball.dds" }
+	spriteType = { name = "GFX_ENG_ace_Tom_Hazell" texturefile = "gfx/aces/ENG_ace_tom_f_hazell.dds" }
+	spriteType = { name = "GFX_ENG_ace_Philip_Fullard" texturefile = "gfx/aces/ENG_ace_philip_f_fullard.dds" }
+	spriteType = { name = "GFX_ENG_ace_Charles_George Gass" texturefile = "gfx/aces/ENG_ace_charles_george_gass.dds" }
+	spriteType = { name = "GFX_ENG_ace_John_Inglis Gilmour" texturefile = "gfx/aces/ENG_ace_john_inglis_gilmour.dds" }
+	spriteType = { name = "GFX_ENG_ace_James_Ira Thomas Jones" texturefile = "gfx/aces/ENG_ace_james_ira_thomas_jones.dds" }
+	spriteType = { name = "GFX_ENG_ace_Henry_Winslow Woollett" texturefile = "gfx/aces/ENG_ace_henry_winslow_woollett.dds" }
+	spriteType = { name = "GFX_ENG_ace_Geoffrey_Hilton Bowman" texturefile = "gfx/aces/ENG_ace_geoffrey_hilton_bowman.dds" }
+	spriteType = { name = "GFX_ENG_ace_Samuel_Frederick Henry Thompson" texturefile = "gfx/aces/ENG_ace_samuel_frederick_henry_thompson.dds" }
+	spriteType = { name = "GFX_FRA_ace_René_Fonck" texturefile = "gfx/aces/FRA_ace_rene_fonck.dds" }
+	spriteType = { name = "GFX_FRA_ace_Georges_Guynemer" texturefile = "gfx/aces/FRA_ace_georges_guynemer.dds" }
+	spriteType = { name = "GFX_FRA_ace_Charles_Nungesser" texturefile = "gfx/aces/FRA_ace_charles_nungesser.dds" }
+	spriteType = { name = "GFX_FRA_ace_Georges_Madon" texturefile = "gfx/aces/FRA_ace_georges_madon.dds" }
+	spriteType = { name = "GFX_FRA_ace_Maurice_Boyau" texturefile = "gfx/aces/FRA_ace_maurice_boyau.dds" }
+	spriteType = { name = "GFX_FRA_ace_Michel_Coiffard" texturefile = "gfx/aces/FRA_ace_michel_coiffard.dds" }
+	spriteType = { name = "GFX_FRA_ace_Léon_Bourjade" texturefile = "gfx/aces/FRA_ace_leon_bourjade.dds" }
+	spriteType = { name = "GFX_FRA_ace_Armand_Pinsard" texturefile = "gfx/aces/FRA_ace_armand_pinsard.dds" }
+	spriteType = { name = "GFX_GER_ace_Manfred_von Richthofen" texturefile = "gfx/aces/GER_ace_manfred_von_richthofen.dds" }
+	spriteType = { name = "GFX_GER_ace_Ernst_Udet" texturefile = "gfx/aces/GER_ace_ernst_udet.dds" }
+	spriteType = { name = "GFX_GER_ace_Erich_Löwenhardt" texturefile = "gfx/aces/GER_ace_erich_lowenhardt.dds" }
+	spriteType = { name = "GFX_GER_ace_Josef_Jacobs" texturefile = "gfx/aces/GER_ace_josef_jacobs.dds" }
+	spriteType = { name = "GFX_GER_ace_Werner_Voss" texturefile = "gfx/aces/GER_ace_werner_voss.dds" }
+	spriteType = { name = "GFX_GER_ace_Fritz_Rumey" texturefile = "gfx/aces/GER_ace_fritz_rumey.dds" }
+	spriteType = { name = "GFX_GER_ace_Rudolf_Berthold" texturefile = "gfx/aces/GER_ace_rudolf_berthold.dds" }
+	spriteType = { name = "GFX_GER_ace_Bruno_Loerzer" texturefile = "gfx/aces/GER_ace_bruno_loerzer.dds" }
+	spriteType = { name = "GFX_GER_ace_Paul_Bäumer" texturefile = "gfx/aces/GER_ace_paul_baumer.dds" }
+	spriteType = { name = "GFX_GER_ace_Oswald_Boelcke" texturefile = "gfx/aces/GER_ace_oswald_boelcke.dds" }
+	spriteType = { name = "GFX_GER_ace_Franz_Büchner" texturefile = "gfx/aces/GER_ace_franz_buchner.dds" }
+	spriteType = { name = "GFX_GER_ace_Lothar_von Richthofen" texturefile = "gfx/aces/GER_ace_lothar_von_richthofen.dds" }
+	spriteType = { name = "GFX_GRE_ace_Aristeidis_Moraitinis" texturefile = "gfx/aces/GRE_ace_aristeidis_moraitinis.dds" }
+	spriteType = { name = "GFX_ITA_ace_Francesco_Baracca" texturefile = "gfx/aces/ITA_ace_francesco_baracca.dds" }
+	spriteType = { name = "GFX_ITA_ace_Silvio_Scaroni" texturefile = "gfx/aces/ITA_ace_silvio_scaroni.dds" }
+	spriteType = { name = "GFX_ITA_ace_Pier_Ruggero Piccio" texturefile = "gfx/aces/ITA_ace_pier_ruggero_piccio.dds" }
+	spriteType = { name = "GFX_ITA_ace_Flavio_Baracchini" texturefile = "gfx/aces/ITA_ace_flavio_baracchini.dds" }
+	spriteType = { name = "GFX_ITA_ace_Fulco_Ruffo di Calabria" texturefile = "gfx/aces/ITA_ace_fulco_ruffo_di_calabria.dds" }
+	spriteType = { name = "GFX_ITA_ace_Marziale_Cerutti" texturefile = "gfx/aces/ITA_ace_marziale_cerutti.dds" }
+	spriteType = { name = "GFX_ITA_ace_Ferruccio_Ranza" texturefile = "gfx/aces/ITA_ace_ferruccio_ranza.dds" }
+	spriteType = { name = "GFX_ITA_ace_Giovanni_Ancillotto" texturefile = "gfx/aces/ITA_ace_giovanni_ancillotto.dds" }
+	spriteType = { name = "GFX_ITA_ace_Antonio_Reali" texturefile = "gfx/aces/ITA_ace_antonio_reali.dds" }
+	spriteType = { name = "GFX_RUS_ace_Alexander_Kazakov" texturefile = "gfx/aces/RUS_ace_alexander_kazakov.dds" }
+	spriteType = { name = "GFX_RUS_ace_Vasili_Yanchenko" texturefile = "gfx/aces/RUS_ace_vasili_yanchenko.dds" }
+	spriteType = { name = "GFX_RUS_ace_Pavel_Argeyev" texturefile = "gfx/aces/RUS_ace_pavel_argeyev.dds" }
+	spriteType = { name = "GFX_RUS_ace_Ivan_Smirnov" texturefile = "gfx/aces/RUS_ace_ivan_smirnov.dds" }
+	spriteType = { name = "GFX_RUS_ace_Grigoriy_Suk" texturefile = "gfx/aces/RUS_ace_grigoriy_suk.dds" }
+	spriteType = { name = "GFX_RUS_ace_Ivan_Loiko" texturefile = "gfx/aces/RUS_ace_ivan_loiko.dds" }
+	spriteType = { name = "GFX_RUS_ace_Donat_Makijonek" texturefile = "gfx/aces/RUS_ace_donat_makijonek.dds" }
+	spriteType = { name = "GFX_RUS_ace_Vladimir_Strzhizhevsky" texturefile = "gfx/aces/RUS_ace_vladimir_strzhizhevsky.dds" }
+	spriteType = { name = "GFX_RUS_ace_Yevgraph_Kruten" texturefile = "gfx/aces/RUS_ace_yevgraph_kruten.dds" }
+	spriteType = { name = "GFX_RUS_ace_Alexander_De Seversky" texturefile = "gfx/aces/RUS_ace_alexander_de_seversky.dds" }
+	spriteType = { name = "GFX_RUS_ace_Konstantin_Vakulovsky" texturefile = "gfx/aces/RUS_ace_konstantin_vakulovsky.dds" }
+	spriteType = { name = "GFX_SER_ace_Petar_Marinovich" texturefile = "gfx/aces/SER_ace_petar_marinovich.dds" }
+
+}

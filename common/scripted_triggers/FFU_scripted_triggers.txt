@@ -1,0 +1,254 @@
+is_playable_country = {
+	OR = {
+		#Centrals
+		original_TAG = GER
+		original_TAG = AUS
+		original_TAG = TUR
+		original_TAG = BUL
+		original_TAG = POL
+		original_TAG = LBA
+		#original_TAG = JBS
+		#original_TAG = SWE
+		#original_TAG = FIN
+		
+		#Entente
+		original_TAG = ENG
+		original_TAG = SOV
+		original_TAG = FRA
+		original_TAG = BEL
+		original_TAG = ITA
+		original_TAG = ROM
+		original_TAG = GRE
+		original_TAG = SER
+		
+		#Removed/unplayable
+		#original_TAG = POR
+		#original_TAG = EGY
+		#original_TAG = CAN
+		#original_TAG = RUS
+	}
+}
+
+is_central_powers_country = {
+	OR = {
+		#Centrals
+		original_TAG = GER
+		original_TAG = AUS
+		original_TAG = TUR
+		original_TAG = BUL
+		original_TAG = POL
+		
+		original_TAG = LBA
+		#original_TAG = JBS
+		#original_TAG = SWE
+		#original_TAG = FIN
+	}
+}
+
+is_entente_country = {
+	OR = {
+		original_TAG = ENG
+		original_TAG = SOV
+		original_TAG = FRA
+		original_TAG = ITA
+		original_TAG = GRE
+		original_TAG = SER
+		original_TAG = BEL
+		original_TAG = ROM
+	}
+}
+
+is_central_powers_controlled_state = {
+	OR = {
+		is_controlled_by = GER
+		is_controlled_by = AUS
+		is_controlled_by = TUR
+		is_controlled_by = BUL
+		is_controlled_by = POL
+		is_controlled_by = LBA
+	}
+}
+
+is_entente_controlled_state = {
+	OR = {
+		is_controlled_by = ENG
+		is_controlled_by = SOV
+		is_controlled_by = FRA
+		is_controlled_by = ITA
+		is_controlled_by = GRE
+		is_controlled_by = SER
+		is_controlled_by = BEL
+		is_controlled_by = ROM
+	}
+}
+
+is_central_powers_fully_controlled_state = {
+	OR = {
+		is_fully_controlled_by = GER
+		is_fully_controlled_by = AUS
+		is_fully_controlled_by = TUR
+		is_fully_controlled_by = BUL
+		is_fully_controlled_by = POL
+		is_fully_controlled_by = LBA
+	}
+}
+
+is_entente_fully_controlled_state = {
+	OR = {
+		is_fully_controlled_by = ENG
+		is_fully_controlled_by = SOV
+		is_fully_controlled_by = FRA
+		is_fully_controlled_by = ITA
+		is_fully_controlled_by = GRE
+		is_fully_controlled_by = SER
+		is_fully_controlled_by = BEL
+		is_fully_controlled_by = ROM
+	}
+}
+
+is_central_powers_owned_state = {
+	OR = {
+		is_owned_by = GER
+		is_owned_by = AUS
+		is_owned_by = TUR
+		is_owned_by = BUL
+		is_owned_by = POL
+		is_owned_by = LBA
+	}
+}
+
+is_entente_owned_state = {
+	OR = {
+		is_owned_by = ENG
+		is_owned_by = SOV
+		is_owned_by = FRA
+		is_owned_by = ITA
+		is_owned_by = GRE
+		is_owned_by = SER
+		is_owned_by = BEL
+		is_owned_by = ROM
+	}
+}
+
+is_brest_litovsk_state={
+	OR={
+		#Bessarabia
+		state=112
+					
+		#Congress Poland
+		state=241
+		state=271
+		state=278
+		state=279
+		state=286
+		state=287
+					
+		#Lithuania
+		state=108
+		state=109
+					
+		#Latvia
+		state=115
+		state=118
+					
+		#Estonia
+		state=116
+		state=117
+					
+		#Eastern Poland/Belarus
+		state=288
+		state=289
+		state=290
+		state=291
+					
+		#Ukraine & Crimea
+		state = 172
+		state = 173
+		state = 176
+		state = 188
+		state = 183
+		state = 189
+		state = 174
+		state = 175
+		state = 177
+		state = 180
+		state = 181
+		state = 184
+		state = 186
+		state = 187
+		state = 185
+		state = 331
+		state = 178
+		state = 179 
+		state = 182
+		state = 114
+		
+		##Finland not included since Central don't get it, even though you lose it
+	}
+}
+
+SOV_lost_1_city={
+	OR = {
+		date > 1915.1.1
+		NOT = { controls_state = 115 }
+		NOT = { controls_state = 323 }
+		NOT = { controls_state = 331 }
+		NOT = { controls_state = 172 }
+	}
+}
+
+SOV_lost_2_city={
+	OR = {
+		date > 1915.7.1
+		AND = {
+			NOT = { controls_state = 115 }
+			NOT = { controls_state = 323 }
+		}
+		AND = {
+			NOT = { controls_state = 115 }
+			NOT = { controls_state = 331 }
+		}
+		AND = {
+			NOT = { controls_state = 115 }
+			NOT = { controls_state = 172 }
+		}
+		AND = {
+			NOT = { controls_state = 323 }
+			NOT = { controls_state = 331 }
+		}
+		AND = {
+			NOT = { controls_state = 323 }
+			NOT = { controls_state = 172 }
+		}
+		AND = {
+			NOT = { controls_state = 331 }
+			NOT = { controls_state = 172 }
+		}
+	}
+}
+
+SOV_lost_3_city={
+	OR = {
+		date > 1916.1.1
+		AND = {
+			NOT = { controls_state = 115 }
+			NOT = { controls_state = 323 }
+			NOT = { controls_state = 331 }
+		}
+		AND = {
+			NOT = { controls_state = 115 }
+			NOT = { controls_state = 323 }
+			NOT = { controls_state = 172 }
+		}
+		AND = {
+			NOT = { controls_state = 115 }
+			NOT = { controls_state = 331 }
+			NOT = { controls_state = 172 }
+		}
+		AND = {
+			NOT = { controls_state = 323 }
+			NOT = { controls_state = 331 }
+			NOT = { controls_state = 172 }
+		}
+	}
+}

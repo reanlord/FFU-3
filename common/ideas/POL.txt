@@ -1,0 +1,142 @@
+
+ideas={
+	#political_advisor={
+	#		MTN_petar_plamenac={ allowed={ original_TAG=MTN } traits={ smooth_talking_charmer } ai_will_do={ factor=1 } }
+	#		MTN_lazar_mijuskovic={ allowed={ original_TAG=MTN } traits={ ideological_crusader } ai_will_do={ factor=1 } }
+	#		MTN_milo_matanovic={ allowed={ original_TAG=MTN } traits={ compassionate_gentleman } ai_will_do={ factor=1 } }
+	#		MTN_andrija_radovic={ allowed={ original_TAG=MTN } traits={ armaments_organizer } ai_will_do={ factor=1 } }
+	#		MTN_ljubomir_brkic={ allowed={ original_TAG=MTN } traits={ quartermaster_general } ai_will_do={ factor=1 } }
+	#		MTN_risto_popovic={ allowed={ original_TAG=MTN } traits={ fortification_engineer } ai_will_do={ factor=1 } }
+	#		MTN_labud_gojnic={ allowed={ original_TAG=MTN } traits={ prince_of_terror } ai_will_do={ factor=1 } }
+	#		MTN_savo_vuletic={ allowed={ original_TAG=MTN } traits={ silent_workhorse } ai_will_do={ factor=1 } }
+	#		}
+	#army_chief={
+	#		MTN_masan_bozovic={ allowed={ original_TAG=MTN } traits={ army_chief_offensive_1 } ai_will_do={ factor=1 } }
+	#		}
+
+	#theorist={
+	#		MTN_radomir_vesovic={ ledger = army allowed={ original_TAG=MTN } traits={ military_theorist } ai_will_do={ factor=1 } }
+	#		}
+
+	#high_command={
+	#		MTN_bozidar_jankovic={ ledger = army allowed={ original_TAG=MTN } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
+	#		MTN_janko_vukotic={ ledger = army allowed={ original_TAG=MTN } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
+	#		MTN_djuro_dragov_soc={ ledger = army allowed={ original_TAG=MTN } traits={ army_commando_1 } ai_will_do={ factor=1 } }
+	#		}
+	naval_manufacturer={
+			}
+	materiel_manufacturer={
+			}
+	industrial_concern={
+			POL_pkp={
+				allowed={ original_TAG=POL }
+				research_bonus = { industry = 0.05 }
+				traits={ railway_company }
+			}
+			POL_ursus={
+				allowed={ original_TAG=POL }
+				research_bonus = { industry = 0.10 }
+				traits={ industrial_concern }
+			}
+	}
+		
+		country = {
+			POL_not_yet_lost={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					surrender_limit=1.0
+					army_core_attack_factor=0.05
+					army_core_defence_factor=0.05
+				}
+			}
+			POL_legacy_of_the_partition={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					political_power_cost=0.60
+					stability_factor=-0.50
+					war_support_factor=-0.50
+				}
+			}
+			POL_vacant_throne={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					political_power_cost=0.30
+					stability_factor=-0.25
+					war_support_factor=-0.25
+				}
+			}
+			POL_restored_kingdom={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+				}
+			}
+			
+			POL_war_preparation = {
+				allowed = { original_TAG = POL }
+				picture = generic_war_preparation
+				removal_cost = -1
+				modifier = {
+					industrial_capacity_factory = 0.25
+				}
+			}
+			
+			POL_guerilla_warfare={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					out_of_supply_factor = -0.10
+					supply_combat_penalties_on_core_factor = -0.05
+					no_supply_grace=24
+					pocket_penalty=-0.20
+				}
+			}
+			
+			POL_winged_hussars={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					cavalry_attack_factor = 0.10
+					cavalry_defence_factor = 0.05
+				}
+			}
+			
+			POL_equipment_license={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					license_infantry_eq_production_speed_factor = 0.1 
+					license_artillery_eq_production_speed_factor = 0.1 
+				}
+			}
+			
+			POL_deal_with_uk={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				targeted_modifier = {
+                	TAG = SOV
+                	breakthrough_bonus_against=0.35
+            	}
+				targeted_modifier = {
+                	TAG = ROM
+                	breakthrough_bonus_against=0.35
+            	}
+				modifier={
+					breakthrough_factor=-0.20
+				}
+			}
+			
+			POL_the_zloty={
+				allowed={original_TAG=POL}
+				removal_cost=-1
+				modifier={
+					production_factory_start_efficiency_factor=0.025
+				}
+			}
+		}
+	}
+
+	

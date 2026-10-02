@@ -1,0 +1,575 @@
+ideas={
+	naval_manufacturer={
+			 
+			central_research_institute_of_shipbuilding_technology={ allowed={ original_TAG=SOV } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } picture=generic_naval_manufacturer_2 }
+			rubin_marine_engineering={ allowed={ original_TAG=SOV } research_bonus={ naval_equipment=0.10 } traits={ raiding_fleet_naval_manufacturer } picture=generic_naval_manufacturer_3 }
+			baltic_shipyard={ allowed={ original_TAG=SOV } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_1 }
+			}
+	aircraft_manufacturer={
+			 
+			igor_sikorsky={ allowed={ original_TAG=SOV } research_bonus={ air_equipment=0.10 } traits={ medium_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
+			zhukovsky_air_force_academy={ allowed={ original_TAG=SOV } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_3 }
+			}
+	materiel_manufacturer={
+			 
+			va_degtyarev_plant={ allowed={ original_TAG=SOV } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
+			tula_arms_plant={ allowed={ original_TAG=SOV } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } }
+			obukhov_plant={ allowed={ original_TAG=SOV } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_1 }
+			}
+	industrial_concern={
+			 
+			machine_building_plant_mzik={
+				allowed={ original_TAG=SOV }
+				research_bonus = { industry = 0.10 }
+				traits={ industrial_concern }
+				picture=generic_tank_manufacturer_2
+				visible={owns_state=171}
+			}
+			kharkov_locomotive_factory={
+				allowed={ original_TAG=SOV }
+				research_bonus = { industry = 0.10 }
+				traits={ electronics_concern }
+				picture=generic_tank_manufacturer_3
+				visible={owns_state=171}
+			}
+	}
+	tank_manufacturer={
+			 
+			vyatka_factory_design_bureau={ allowed={ original_TAG=SOV } research_bonus={ armor=0.10 } traits={ tank_manufacturer } picture=generic_tank_manufacturer_2 }
+			}
+	country = {
+		RUS_ww1_orthodox_church = {
+			allowed = {original_tag = SOV }
+			allowed_civil_war = {always = yes}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		
+		RUS_ww1_mixed_railways = {
+			allowed = {original_tag = SOV}
+			allowed_civil_war = {always = yes}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+
+			}
+		}
+
+		RUS_ww1_modern_railways = {
+			allowed = {original_tag = SOV}
+			allowed_civil_war = {always = yes}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_rail_way_factor = 0.2
+
+			}
+		}
+		
+		RUS_Kerensky = {	#Kerensky 1917
+			allowed = {
+				always = no #event or decision
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = { 
+				winter_attrition_factor = -0.20
+			}
+			
+			picture= SOV_weak_central_government-45134
+					
+			targeted_modifier = {
+				TAG = GER
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = AUS
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = BUL
+				attack_bonus_against = 0.20
+			}	
+			targeted_modifier = {
+				TAG = TUR
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = POL
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = LBA
+				attack_bonus_against = 0.20
+			}
+		}
+		
+		RUS_brusilov = {	#Brusilov 1916
+			allowed = {
+				always = no #event or decision
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = { 
+				winter_attrition_factor = -0.5
+			}
+			
+			picture= SOV_weak_central_government-45134
+			
+			targeted_modifier = {
+				TAG = GER
+				attack_bonus_against = 0.20
+			}		
+			targeted_modifier = {
+				TAG = AUS
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = BUL
+				attack_bonus_against = 0.20
+			}			
+			targeted_modifier = {
+				TAG = TUR
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = POL
+				attack_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				TAG = LBA
+				attack_bonus_against = 0.20
+			}
+		}
+		
+		RUS_Galicia = {
+			allowed = {
+				original_tag = SOV
+				always = no #event or decision
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture= SOV_weak_central_government-45134
+			
+			targeted_modifier = {
+				TAG = BUL
+				attack_bonus_against = 0.25
+			}			
+			targeted_modifier = {
+				TAG = AUS
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				TAG = POL
+				attack_bonus_against = 0.25
+			}
+		}
+
+		RUS_Off1 = {	#Samsonov 1914
+
+            		allowed = {
+                		original_tag = RUS
+                		always = no #event or decision
+            		}
+            		picture = German_staff_ww1
+					
+            		targeted_modifier = {
+                		TAG = GER
+                		attack_bonus_against = 0.20
+            		}
+            		targeted_modifier = {
+                		TAG = AUS
+                		attack_bonus_against = 0.20
+            		}
+					targeted_modifier = {
+						TAG = BUL
+						attack_bonus_against = 0.20
+					}
+					targeted_modifier = {
+						TAG = POL
+						attack_bonus_against = 0.20
+					}
+        	}
+
+		RUS_Off2 = {	#Unused
+
+            		allowed = {
+                		original_tag = RUS
+                		always = no #event or decision
+            		}
+            		picture = German_staff_ww1
+
+            		targeted_modifier = {
+                		TAG = GER
+                		attack_bonus_against = 0.20
+            		}
+            		targeted_modifier = {
+                		TAG = AUS
+                		attack_bonus_against = 0.20
+            		}
+					targeted_modifier = {
+                		TAG = BUL
+                		attack_bonus_against = 0.20
+            		}
+					targeted_modifier = {
+                		TAG = TUR
+                		attack_bonus_against = 0.20
+            		}
+					targeted_modifier = {
+                		TAG = POL
+                		attack_bonus_against = 0.20
+            		}
+        	}
+		
+		RUS_ww1_tsushima_humiliation = {
+			allowed = {original_tag = SOV} 
+			allowed_civil_war = {always = yes} 
+			removal_cost = -1
+			modifier = {
+				naval_invasion_penalty = 0.45
+				#experience_gain_navy = -0.5
+				naval_hit_chance = -0.25
+				naval_morale_factor = -0.10
+				naval_retreat_speed = 0.05
+			}
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				
+				screen_ship = {
+					build_cost_ic = 0.15 instant = yes
+				}
+				submarine = {
+					build_cost_ic = 0.15 instant = yes
+				}
+				destroyer = {
+					build_cost_ic = 0.15 instant = yes
+				}
+			}
+		}
+
+		SOV_war_credit = {
+			allowed = {
+				original_tag = SOV
+			}
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_expected_value = 0.025
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		SOV_weak_central_government = {
+			picture = por_monarchist_uprising
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				#send_volunteer_size = 2
+				political_power_factor = -0.1
+			}
+		}
+
+		SOV_weak_central_government_rom_ai = {
+			picture = por_monarchist_uprising
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				#send_volunteer_size = 3
+				political_power_factor = -0.1 
+			}
+		}
+
+		SOV_tsar = {
+			allowed = {
+				original_tag = SOV
+			}
+			picture = SOV_weak_central_government-45134
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		
+		SOV_incompetent_stavka = {
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				army_org_factor = -0.05
+				land_doctrine_cost_factor = 0.20
+				pocket_penalty = 0.30
+				out_of_supply_factor = 0.10
+				land_reinforce_rate = -0.03
+				minimum_training_level = -0.20
+				army_strength_factor = -0.10
+				experience_loss_factor = 0.15
+			}
+		}
+		
+		SOV_incompetent_stavka_tsar = {
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				pocket_penalty = 0.30
+				#out_of_supply_factor = 0.10
+				land_reinforce_rate = -0.03
+				minimum_training_level = -0.20
+				army_strength_factor = -0.05
+				experience_loss_factor = 0.15
+			}
+		}
+		
+		SOV_reformed_stavka = {
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				pocket_penalty = 0.30
+				out_of_supply_factor = -0.10
+				land_reinforce_rate = -0.01
+				minimum_training_level = -0.20
+				#army_strength_factor = -0.05
+			}
+		}
+		
+		SOV_russian_steamroller = {
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				no_supply_grace = 24
+				out_of_supply_factor = -0.15
+				#land_reinforce_rate = -0.01
+				#supply_combat_penalties_on_core_factor = -0.10
+				breakthrough_factor = 0.10
+				minimum_training_level = -0.20
+				#army_strength_factor = -0.05
+			}
+		}
+
+		SOV_war_industries_committees = {
+			allowed = {
+				original_tag = SOV
+			}
+			picture = man_five_year_plan_industry
+			equipment_bonus = {
+				infantry_equipment = {					
+					build_cost_ic = -0.10	#Was -0.15
+					instant = yes
+				}
+                support_equipment = {					
+					build_cost_ic = -0.10	#Was -0.15
+					instant = yes
+				}
+				machine_gun_equipment = {
+					build_cost_ic = -0.10	#Was -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		SOV_convict_workshops = {
+			allowed = {
+				original_tag = SOV
+			}
+			picture = generic_fascist_workers
+			equipment_bonus = {
+				heavy_field_gun_equipment = {
+					build_cost_ic = -0.075
+					reliability = -0.30
+					instant = yes
+				}
+				light_field_gun_equipment = {
+					build_cost_ic = -0.05
+					reliability = -0.20
+					instant = yes
+				}
+			}
+		}
+
+		SOV_capital_ship_build_up = {
+			allowed = {
+				original_tag = SOV
+			}
+			picture = generic_sea_focused_navy
+				equipment_bonus = {
+					capital_ship = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+
+		SOV_light_hull_primacy = {
+			picture = generic_coastal_navy
+			allowed = {
+				original_tag = SOV
+			}
+			equipment_bonus = {
+				screen_ship = {					
+				build_cost_ic = -0.15 instant = yes
+				}
+                submarine = {					
+                build_cost_ic = -0.15 instant = yes
+				}
+                destroyer = {				
+				build_cost_ic = -0.15 instant = yes
+				}
+			}		
+      	}
+		
+		SOV_cossack_hosts = {
+			picture = SOV_cossack_hosts-45275
+			modifier = {
+				cavalry_attack_factor = 0.05
+                cavalry_defence_factor = 0.05
+			}
+		}
+		
+		SOV_russian_staff = {
+			picture = YUG_yugoslavian_general_staff
+			modifier = {
+				planning_speed = 0.10
+                experience_gain_army = 0.04
+			}
+		}
+		
+		SOV_regulation_on_the_preparatory = {
+			picture = SOV_regulation_on_the_preparatory-45391
+			allowed = {
+				original_TAG=SOV
+			}
+			modifier = {
+				conscription = 0.005		#Was 0.05
+			}
+		}
+		
+		SOV_prodrazverstka = {
+		
+			picture = GFX_idea_generic_war_preparation
+
+			modifier = {
+				army_core_attack_factor = 0.06
+				army_core_defence_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+
+		SOV_trench_0 = {
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		SOV_trench_1 = {
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		SOV_trench_2 = {
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		SOV_trench_3 = {
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		SOV_trench_4 = {
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+	}
+	
+	hidden_ideas = {
+		SOV_trade_blocker = {
+			picture = free_trade
+			targeted_modifier = {
+				tag = SOV
+				#extra_trade_to_target_factor = -20.0
+				trade_cost_for_target_factor = 20000.0
+			}
+		}
+	}
+}

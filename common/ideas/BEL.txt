@@ -1,0 +1,213 @@
+ideas={
+	naval_manufacturer={
+			
+			cockerill={ allowed={ original_TAG=BEL } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } }
+			}
+	aircraft_manufacturer={
+			
+			renard={ allowed={ original_TAG=BEL } research_bonus={ air_equipment=0.10 } traits={ medium_aircraft_manufacturer } }
+			}
+	materiel_manufacturer={
+			
+			fn_herstol={ allowed={ original_TAG=BEL } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } }
+			fonderie_royale_de_canons={ allowed={ original_TAG=BEL } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_3 }
+			}
+	industrial_concern={
+			
+		gevaert_and_co={
+			allowed={ original_TAG=BEL }
+			research_bonus = { electronics = 0.10 }
+			traits={ electronics_concern }
+			picture=generic_tank_manufacturer_1
+		}
+		solvay={
+			allowed={ original_TAG=BEL }
+			research_bonus = { industry = 0.10 }
+			traits={ chemical_manufacturer }
+			picture=generic_electronics_concern_2
+		}
+		forges_de_clabecq={
+			allowed={ original_TAG=BEL }
+			research_bonus = { industry = 0.10 }
+			traits={ industrial_concern }
+			#picture=generic_tank_manufacturer_2
+			#picture=generic_industrial_concern_1
+			picture=generic_industrial_concern_3
+		}
+		la_brugeoise={
+			allowed={ original_TAG=BEL }
+			research_bonus = { industry = 0.05 }
+			traits={ railway_company }
+			picture=generic_industrial_concern_2
+		}
+		union_miniere={
+			allowed={ original_TAG=BEL }
+			research_bonus = { industry = 0.05 }
+			traits={ mining_concern }
+			picture=generic_refining_concern_1
+		}
+	}
+	tank_manufacturer={
+			
+			vickers_armstrong_bel={ allowed={ original_TAG=BEL } research_bonus={ armor=0.10 } traits={ medium_tank_manufacturer } }
+			}
+	country = {		
+		we_fight_on = {
+			picture = we_fight_on-106258
+			allowed = {
+				original_TAG = BEL
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.075
+				surrender_limit = 0.5
+				#stability_factor = 0.2
+				war_stability_factor = 0.2
+				weekly_manpower = 1000
+				#pocket_penalty = -0.10
+				#production_lack_of_resource_penalty_factor = -0.50
+			}
+		}
+		
+		no_annex_builds = {
+			picture = trench_warfare
+			allowed = {
+				OR = {
+					original_TAG = BEL
+					original_TAG = SER
+				}
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = -10.0
+				production_speed_arms_factory_factor = -10.0
+				production_speed_infrastructure_factor = -10.0
+			}
+		}
+
+		BEL_obligatory_military_service = {
+			picture = SWE_varnplikt
+			allowed = {
+				original_TAG = BEL
+			}
+			modifier = {
+				conscription = 0.07
+			}
+		}
+		
+		BEL_catholic_schools = {
+			#icon = idea_MEX_church_power_5
+			allowed = {
+				original_TAG = BEL
+			}
+			modifier = {
+				research_speed_factor = 0.09
+			}
+		}
+		
+		BEL_urbanized_nation = {
+			picture=idea_generic_improved_industries
+			allowed={
+				original_TAG=BEL
+			}
+			modifier={
+				global_building_slots_factor = 1.0
+			}
+		}
+		
+		BEL_lux_army = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				original_TAG = BEL
+			}
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				conscription_factor = -0.80
+				mobilization_laws_cost_factor = 1.0
+			}
+		}
+
+		BEL_trench_0 = {
+			allowed = {
+				original_tag = BEL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		BEL_trench_1 = {
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		BEL_trench_2 = {
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		BEL_trench_3 = {
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		BEL_trench_4 = {
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+	}
+	}

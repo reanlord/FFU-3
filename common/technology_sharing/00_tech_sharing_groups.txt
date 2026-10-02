@@ -1,0 +1,32 @@
+
+ technology_sharing_group = {
+
+	id = entente_research
+	name = entente_research_name
+	desc = entente_research_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        #is_in_faction_with = ENG
+		always=yes
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = central_powers_research
+	name = central_powers_research_name
+	desc = central_powers_research_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        #is_in_faction_with = GER
+		always=yes
+    }
+
+}

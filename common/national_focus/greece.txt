@@ -1,0 +1,2079 @@
+focus_tree = {
+	id = greece_focus
+	default = no
+	country = { factor=0 modifier = { add = 10 tag = GRE } }	
+	continuous_focus_position = { x = 5000 y = 2000 }
+
+   focus = {
+
+        id = gre_start
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability
+		#icon = GFX_focus_generic_aegean_sea_focus
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots=50
+			}
+			306 = {
+				add_extra_state_shared_building_slots=50
+			}
+		}
+		ai_will_do = { factor=10 }
+		cost = 1
+		x = 20
+		y = 0
+		}
+
+##Prepare army path
+
+	focus = {
+		id = gre_prepare_army
+		prerequisite = { focus = gre_start }
+		icon = GFX_focus_GRE_hellenic_armed_forces
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_start
+		x = 9
+		y = 1
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+                     
+    focus = {
+		id = gre_manpower
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -7
+		y = 1
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+    } 
+		
+     focus = {
+		id = gre_conscription
+		prerequisite = { focus = gre_manpower }
+		icon = GFX_focus_generic_limited_social_mobilization
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_manpower
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip=GRE_increase_conscription_law_tt
+			if = {
+				limit = { has_idea = disarmed_nation }
+				add_ideas = volunteer_only
+			}
+			else_if = {
+				limit = { has_idea = volunteer_only }
+				add_ideas = limited_conscription
+			}
+			else_if = {
+				limit = { has_idea = limited_conscription }
+				add_ideas = extensive_conscription
+			}
+			else_if = {
+				limit = { has_idea = extensive_conscription }
+				add_ideas = service_by_requirement
+			}
+			else_if = {
+				limit = { has_idea = service_by_requirement }
+				add_ideas = all_adults_serve
+			}
+			else_if = {
+				limit = { has_idea = all_adults_serve }
+				add_ideas = scraping_the_barrel
+			}
+		}
+	}
+	
+    focus = {
+		id = gre_research_gun
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -5
+		y = 1
+		completion_reward = {
+            add_tech_bonus={
+				bonus=1 uses=3
+				technology = ww1infantry_weapons2
+				technology = ww1_infantry_equip2
+				technology = ww1infantry_weapons3
+				technology = ww1_infantry_equip3
+				technology = infantry_weapons1
+			}
+        }
+	} 
+
+    focus = {
+		id = gre_research_mortar
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_generic_air_defense
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -6
+		y = 2
+		completion_reward = { 
+			add_tech_bonus={
+				bonus=1 uses=2
+				technology = interwar_antiair
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = rocket_artillery
+				technology = rocket_artillery2
+				technology = rocket_artillery3
+				technology = rocket_artillery4
+				technology = anti_tank_rifle1
+            }
+        }
+	}
+
+    focus = {
+		id = GRE_support_units
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -1
+		y = 1
+		completion_reward = {
+			add_tech_bonus= {
+				name = support_bonus
+				bonus = 1
+				uses = 3
+				technology = ww1_ambulance2
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_field_hospital4
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_signal_company4
+            }
+		}  
+    }
+	
+    focus = {
+		id = GRE_evzonoi
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_NORDIC_mon_capstone_army
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -4
+		y = 2
+		completion_reward = {
+			add_tech_bonus= {
+				name = evzones_bonus
+				bonus = 1
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+				technology = jaegers
+				technology = jaegers2
+				technology = jaegers3
+				technology = Stormtroopers
+				technology = Stormtroopers2
+				technology = Stormtroopers3
+				technology = tech_special_forces
+				technology = advanced_special_forces
+				technology = extreme_environment_training
+				technology = improved_special_forces
+				technology = survival_training
+				technology = elite_forces
+            }
+		}  
+    }
+	
+    focus = {
+		id = GRE_hold_line
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_goal_generic_defence
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -3
+		y = 1
+		completion_reward = {
+			add_tech_bonus= {
+				name = hold_line_bonus
+				bonus = 1
+				uses = 2
+				technology = infantry_ww1_machinegun2
+				technology = machine_gun_2
+				technology = infantry_ww1_machinegun3
+				technology = machine_gun_3
+				technology = infantry_ww1_machinegun4
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_engineers4
+            }
+		}  
+    }
+
+    focus = {
+		id = GRE_siege_artillery
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_goal_national_artillery
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = -2
+		y = 2
+        completion_reward = {
+			add_tech_bonus={
+				name=siege_bonus bonus=1 uses=2
+				technology=heavy_field_gun2
+				technology=bonus_bertha2
+				technology=heavy_field_gun3
+				technology=bonus_bertha3
+			}
+		}
+    }  
+
+    focus = {
+		id = GRE_buy_french
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_chi_reach_out_to_france
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = 1
+		y = 1
+		completion_reward = {  
+			FRA = { add_political_power = 15 }				
+			add_equipment_to_stockpile = {
+				type = machine_gun_equipment_1
+				amount = 1900
+				producer = FRA
+			}
+		}
+    }  
+
+    focus = {
+		id = GRE_buy_german
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_deal_with_german_empire
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = 3
+		y = 1
+		completion_reward = {    
+			GER = { add_political_power = 15 } 
+			add_equipment_to_stockpile = {
+				amount = 1250
+				type = rocket_artillery_equipment_1
+				producer = GER
+			}
+		}
+    }  
+	
+    focus = {
+		id = gre_our_production
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_goal_continuous_reduce_training_time
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = 5
+		y = 1
+		completion_reward = {
+			add_political_power = 15
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2500
+				producer = GRE
+			}
+		}
+	}
+	
+	focus = {
+        id = GRE_tanks
+		prerequisite = { focus = GRE_buy_french }
+		icon = GFX_focus_generic_army_tanks2
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=GRE_buy_french
+		x = 1
+		y = 1
+		completion_reward = { 
+			add_tech_bonus = {
+				name=armor_bonus bonus=1 uses=2
+				category=armor
+			}
+		}
+	}
+	
+	focus = {
+        id = gre_planes
+		prerequisite = { focus = GRE_buy_german }
+		icon = GFX_focus_red_sky
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=GRE_buy_german
+		x = 1
+		y = 1
+		completion_reward = { 
+			add_tech_bonus = {
+				name = air_bonus bonus = 1 uses = 2
+				category = air_equipment
+			}
+		}
+	}
+	
+    focus = {
+		id = GRE_mountain_gun
+		prerequisite = { focus = gre_our_production }
+		icon = GFX_generic_mountain_artillery
+		completion_reward = {
+			add_tech_bonus= {
+				name = field_2_bonus
+				bonus = 1
+				uses = 2
+				technology = light_field_gun2
+				technology = bonus_artillery2
+            }
+			add_tech_bonus= {
+				name = field_3_bonus
+				bonus = 1
+				uses = 1
+				ahead_reduction = 1
+				technology = standard_artillery
+            }
+		}  
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_our_production
+		x = 1
+		y = 1
+    }
+	
+    focus = {
+		id = gre_ready_for_war
+		prerequisite = { focus = gre_prepare_army }
+		icon = GFX_focus_GRE_a_land_of_mountains
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_prepare_army
+		x = 0
+		y = 2
+		completion_reward = {
+			131 = {
+				add_dynamic_modifier = {
+					modifier = GRE_freedom_or_death_modifier
+				}
+			}
+			130 = {
+				add_dynamic_modifier = {
+					modifier = GRE_freedom_or_death_modifier
+				}
+			}
+			76 = {
+				add_dynamic_modifier = {
+					modifier = GRE_freedom_or_death_modifier
+				}
+			}
+		}
+    }
+		
+    focus = {
+        id = gre_defend_crete
+		prerequisite = { focus = gre_ready_for_war }
+		icon = GFX_focus_NOR_the_glucksburg_sea_wall
+		completion_reward = { 	   
+            41 = {
+				add_dynamic_modifier = {
+					modifier = GRE_crete_defense_modifier
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 9925 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 9925 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5947 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 5947 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 3322 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 3322 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16711 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 16711 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 6172 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 6172 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 7513 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 7513 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 17408 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 17408 instant_build = yes
+				}
+			}
+			306 = {
+				add_dynamic_modifier = {
+					modifier = GRE_crete_defense_modifier
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 7944 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 7944 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 9186 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 9186 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 10707 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 10707 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 11636 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 11636 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16718 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 16718 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 899 instant_build = yes
+				}				
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 899 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5616 instant_build = yes
+				}				
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 5616 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16705 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 5 province = 16705 instant_build = yes
+				}
+			}
+        }
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_ready_for_war
+		x = 0
+		y = 1
+	}
+	
+    focus = {
+        id = GRE_retake_crete
+		prerequisite = { focus = gre_defend_crete }
+		icon = GFX_focus_generic_attack_greece
+		ai_will_do = { factor=10 }
+		cost = 1
+		relative_position_id=gre_defend_crete
+		x = 0
+		y = 1
+		available = {
+			OR = {
+				NOT = { controls_state = 41 }
+				NOT = { controls_state = 306 }
+			}
+		}
+		completion_reward = { 	   
+            41 = {
+				add_dynamic_modifier = {
+					modifier = GRE_retake_crete_modifier days = 180
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 9925 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 9925 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 5947 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 5947 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 3322 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 3322 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 16711 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 16711 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 6172 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 6172 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 7513 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 7513 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 17408 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 17408 instant_build = yes
+				}
+			}
+			306 = {
+				add_dynamic_modifier = {
+					modifier = GRE_retake_crete_modifier days = 180
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 7944 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 7944 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 9186 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 9186 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 10707 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 10707 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 11636 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 11636 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 16718 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 16718 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 899 instant_build = yes
+				}				
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 899 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 5616 instant_build = yes
+				}				
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 5616 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 0 province = 16705 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker level = 0 province = 16705 instant_build = yes
+				}
+			}
+        }
+	}
+	
+	#########
+	##Navy
+	#########
+
+    focus = {
+		id = gre_naval
+		prerequisite = { focus = gre_start }
+		icon = GFX_focus_GRE_a_long_and_proud_tradition
+		completion_reward = {
+			131 = {
+				add_extra_state_shared_building_slots=3
+				add_building_construction = {
+					type=dockyard level=3 instant_build=yes
+				}
+			}
+			add_tech_bonus = {
+				name=naval_bonus bonus=1 uses=3
+				category = naval_equipment
+			}
+			navy_experience = 500
+        }
+		ai_will_do = { factor=10 }
+		cost = 1
+		relative_position_id=gre_start
+		x = 20	#14
+		y = 3
+	}
+		
+	focus = {
+		id = gre_invest_convoy
+		prerequisite = { focus = gre_naval }
+		icon = GFX_focus_generic_midget_submarines
+		completion_reward = { 
+            41 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type=dockyard level=4 instant_build=yes
+				}
+			}
+			add_tech_bonus = {
+				name=sub_bonus bonus=2 uses=2
+				category = ss_tech
+				category = dd_tech
+				category = cl_tech
+			}
+			navy_experience = 500
+        }
+		ai_will_do = { factor=10 }
+		cost = 2
+		relative_position_id=gre_naval
+		x = -1
+		y = 1
+	}  
+
+    focus = {
+		id = gre_buy_ship
+		prerequisite = { focus = gre_naval }
+		icon = GFX_focus_generic_refit_civilian_ships
+		completion_reward = { 
+            306 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type=dockyard level=4 instant_build=yes
+				}
+			}
+			add_tech_bonus = {
+				name=heavy_ship_bonus bonus=2 uses=2
+				category = ca_tech
+				category = bb_tech
+				category = cv_tech
+			}
+			navy_experience = 500
+        }
+		ai_will_do = { factor=10 }
+		cost = 2
+		relative_position_id=gre_naval
+		x = 1
+		y = 1
+    }
+	
+	focus = {
+		id = GRE_complete_salamis
+		prerequisite = { focus = gre_naval }
+		icon = GFX_focus_SWE_Vasa_II
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_naval
+		x = 0
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip=GRE_vp_salamis_tt
+			hidden_effect = {
+				load_oob="GRE_Salamis"
+			}
+			GER = {
+				add_offsite_building = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+##Rebuild eco path
+
+        focus = {
+			id = gre_rebuild_eco
+			prerequisite = { focus = gre_start }
+			#icon = GFX_focus_generic_industry_2
+			icon = GFX_focus_POL_warsaw_main_station
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_start
+			x = -12
+			y = 1
+			completion_reward = {
+				130 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				 131 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				 76 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				41 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+				306 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = gre_invest_our_eco
+			prerequisite = { focus = gre_rebuild_eco }
+			icon = GFX_focus_usa_reestablish_the_gold_standard   
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = 0
+			y = 1
+			completion_reward = {
+				306 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}  
+        }  
+
+        focus = {
+			id = gre_king_invest
+			prerequisite = { focus = gre_rebuild_eco }
+			icon = GFX_focus_generic_royal_wedding
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = -2
+			y = 1
+			completion_reward = {
+				#41 = {
+				#	add_extra_state_shared_building_slots = 1
+				#	add_building_construction = {
+				#		type = industrial_complex
+				#		level = 1
+				#		instant_build = yes
+				#	}
+				#}
+				add_equipment_to_stockpile= {
+					type = train_equipment_1
+					amount = 200
+					producer = GRE
+				}				
+				add_equipment_to_stockpile = {
+					amount = 500
+					type = motorized_equipment_1
+					producer = GRE
+				}
+			}
+        }  
+
+        focus = {
+			id = gre_naval_trade
+			prerequisite = { focus = gre_rebuild_eco }
+			icon = GFX_focus_POL_develop_polish_shipbuilding
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = 2
+			y = 1
+			completion_reward = {    
+				76 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}      
+			}
+        } 
+
+        focus = {
+			id = gre_war_industries
+			prerequisite = { focus = gre_king_invest }
+			icon = GFX_focus_SWI_issue_war_bonds
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = -3
+			y = 2
+			completion_reward = {
+				130 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+        } 
+
+        focus = {
+			id = gre_research_indu
+			prerequisite = { focus = gre_naval_trade }
+			icon = GFX_goal_generic_intelligence_exchange
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = 3
+			y = 2
+			completion_reward = {
+				306 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}			
+				add_tech_bonus={
+					bonus = 2 uses = 1
+					technology = basic_machine_tools
+					technology = improved_machine_tools
+					technology = flexible_line
+					technology = streamlined_line
+				}
+			}
+        } 
+
+        focus = {
+			id = gre_invest_ressources
+			prerequisite = { focus = gre_invest_our_eco }
+			prerequisite = { focus = gre_naval_trade }
+			icon = GFX_focus_CHL_expand_the_forestry
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = 1
+			y = 2
+			completion_reward = {
+				41 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_resource= { 
+					type = wood
+					amount = 14
+					state = 41
+				} 
+				add_resource= { 
+					type = coal
+					amount = 15
+					state = 41
+				}
+				add_resource= { 
+					type = aluminium
+					amount = 9
+					state = 41
+				} 
+			}
+        } 
+
+        focus = {
+			id = gre_economic_value
+			prerequisite = { focus = gre_king_invest }
+			prerequisite = { focus = gre_invest_our_eco }
+			icon = GFX_focus_ITA_devaluate_the_lire
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = -1
+			y = 2
+			completion_reward = {  
+				131 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+        } 
+
+        focus = {
+			id = gre_economic_boom
+			prerequisite = { focus = gre_economic_value }
+			prerequisite = { focus = gre_war_industries }
+			prerequisite = { focus = gre_research_indu }
+			prerequisite = { focus = gre_invest_ressources }
+			icon = GFX_focus_mex_privatisation
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_rebuild_eco
+			x = 0
+			y = 3
+			completion_reward = {      
+				add_timed_idea = {
+					idea = GRE_Eco_boom
+					days = 365 # The duration of the idea in days
+				}
+			}
+        }
+
+##Political effort path
+
+    focus = {
+		id = gre_political_effort
+		prerequisite = { focus = gre_start }
+		icon = GFX_focus_generic_balkan_diplomacy
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_start
+		x = -4
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+    focus = {
+		id = gre_serbian_freinds
+		prerequisite = { focus = gre_political_effort }
+		icon = GFX_focus_SWE_form_rfsu
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_political_effort
+		x = -1
+		y = 1
+		completion_reward = {
+            152 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+            130 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
+        }
+	}
+
+    focus = {
+		id = gre_Dealt_with_France
+		prerequisite = { focus = gre_political_effort }
+		icon = GFX_focus_generic_industrialists
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_political_effort
+		x = 1
+		y = 1
+		completion_reward = {
+			FRA = { add_political_power = 50 }
+		}
+	}
+
+    focus = {
+		id = gre_our_politics
+		prerequisite = { focus = gre_Dealt_with_France }
+		prerequisite = { focus = gre_serbian_freinds }
+		icon = GFX_focus_generic_full_employment
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_political_effort
+		x = 0
+		y = 2
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+    focus = {
+		id = gre_stability
+		prerequisite = { focus = gre_our_politics }
+		icon = GFX_focus_NOR_broken_gun_policies
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_political_effort
+		x = -1
+		y = 3
+		completion_reward = {
+			add_stability = 0.30
+		}
+	}
+
+
+    focus = {
+		id = gre_ressources
+		prerequisite = { focus = gre_our_politics }
+		icon = GFX_focus_generic_mining_industry
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_political_effort
+		x = -3
+		y = 3
+		completion_reward = {
+            76 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource= { 
+				type = tungsten 
+				amount = 20
+				state = 306
+			}  
+			add_resource = {
+				type = steel
+				amount = 14
+				state = 306
+			}
+		}
+	}
+
+        
+    focus = {
+		id = gre_propaganda
+		prerequisite = { focus = gre_our_politics }
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_political_effort
+		x = 1
+		y = 3
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = military_youth_focus
+		}
+	}
+		
+    focus = {
+		id = gre_invest_research
+		prerequisite = { focus = gre_our_politics }
+		icon = GFX_focus_NORDIC_mon_research
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_our_politics
+		x = 3
+		y = 1
+		completion_reward = {
+			add_research_slot = 1
+		}
+    }
+		
+		##################
+		######Post balkan war
+		##################
+
+        focus = {
+			id = gre_after_the_war
+			prerequisite = { focus = gre_start }
+			icon = GFX_focus_GRE_resurrecting_the_megali_idea
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_start
+			x = 0
+			y = 7
+			available = {
+				has_global_flag = kis_firstbalkanwar_victory
+				has_country_flag=george_died
+				#NOT = {
+				#	has_country_leader = {
+				#		character = GRE_george_i
+				#		ruling_only = yes
+				#	}
+				#}
+			}
+			completion_reward = {
+				133={
+					add_extra_state_shared_building_slots=2
+					add_building_construction={ type=industrial_complex level=2 instant_build=yes }
+				}
+				#add_ideas=GRE_national_schism
+				add_ideas = indoctrination_focus
+			}
+		}
+		
+        focus = {
+			id = GRE_megali_idea
+			prerequisite = { focus = gre_after_the_war }
+			icon = GFX_focus_GRE_byzantine_themata
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_after_the_war
+			x = 5
+			y = 1
+			available = {
+				controls_state = 131
+				controls_state = 134
+				controls_state = 360
+				TUR = {
+					NOT = { controls_state = 161 }
+					NOT = { controls_state = 160 }
+					NOT = { controls_state = 248 }
+					NOT = { controls_state = 250 }
+				}
+			}
+			completion_reward = {
+				set_cosmetic_tag = GRE_GREAT_GREECE
+				set_province_name = {
+					id = 3195
+					name = "Constantinople"
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+        focus = {
+			id = GRE_restore_byzantium
+			prerequisite = { focus = GRE_megali_idea }
+			icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=GRE_megali_idea
+			x = 0
+			y = 1
+			available = {
+				has_country_leader = {
+					character = GRE_constantine
+					ruling_only = yes
+				}
+			}
+			completion_reward = {
+				set_cosmetic_tag = GRE_BYZANTINE
+				add_country_leader_trait = autokrator
+			}
+		}
+		
+        focus = {
+			id = gre_cons_good
+			prerequisite = { focus=gre_after_the_war }
+			#icon = GFX_focus_SWE_radiotjanst
+			icon = GFX_goal_generic_consumer_goods
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_after_the_war
+			x = 2
+			y = 1
+			available = { has_war_with = GER }
+			completion_reward = {
+				add_ideas = { gre_cons }
+			}
+		}
+		
+        focus = {
+        	id = gre_convoy
+			prerequisite = { focus = gre_after_the_war }
+			icon=GFX_focus_generic_merchant_fleet
+			ai_will_do = { factor=10 }
+			cost = 1
+			relative_position_id=gre_after_the_war
+			x = -3
+			y = 1
+			completion_reward = {
+				add_equipment_to_stockpile = {
+					amount = 250
+					type = convoy
+				}
+			}
+		}
+        
+        focus = {
+			id = gre_prime_uk
+			prerequisite = { focus = gre_convoy }
+			icon = GFX_focus_eng_the_sun_never_sets
+			ai_will_do = { factor=0 }
+			cost = 2
+			relative_position_id=gre_convoy
+			x = -1
+			y = 1
+			available = {
+				ENG = { has_full_control_of_state = 40 }
+				is_ai = no
+			}
+			completion_reward = {
+				40 = { add_core_of = GRE }
+				ENG = { country_event = ww1_greece.11 }
+			}
+		}
+		
+        focus = {
+			id = gre_prime_ita
+			prerequisite = { focus = gre_convoy }
+			icon = GFX_focus_ITA_italian_irredentism
+			ai_will_do = { factor=0 }
+			cost = 2
+			relative_position_id=gre_convoy
+			x = 1
+			y = 1
+			available = {
+				ITA = { has_full_control_of_state = 119 }
+				is_ai = no
+			}
+			completion_reward = {
+				119 = { add_core_of = GRE }
+				ITA = { country_event = ww1_greece.8 }
+			}
+		}
+
+        focus = {
+			id = gre_prime_rus
+			prerequisite = { focus = gre_convoy}
+			icon = GFX_focus_deal_with_russia
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_convoy
+			x = 0
+			y = 2
+			completion_reward = {
+				add_research_slot=1
+			}
+		}
+		
+		#####################
+		##### King
+		#####################
+
+	focus = {
+        id = gre_follo_king
+		prerequisite = { focus = gre_after_the_war}
+		mutually_exclusive = { focus = gre_Follow_prime_minister}
+		mutually_exclusive = { focus = gre_old_gard}
+		icon = GFX_focus_NOR_the_kings_no
+		ai_will_do = { factor=10 }
+		cost = 5
+		x = 10
+		y = 11
+		available = {
+			has_country_leader = {
+				character = GRE_constantine
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_country_leader_trait = basileus
+			#remove_ideas = GRE_national_schism
+        }
+	}
+		
+	focus = {
+		id = gre_civ_king
+		prerequisite = { focus = gre_follo_king }
+		icon = GFX_focus_NORDIC_com_capstone_civilian
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_follo_king
+		x = -2
+		y = 1
+		completion_reward = { 
+			306 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = gre_mil_king
+		prerequisite = { focus = gre_civ_king }
+		icon = GFX_focus_generic_reorient_production
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_civ_king
+		x = 0
+		y = 1
+		completion_reward = { 
+			306 = {
+				add_extra_state_shared_building_slots=2
+				add_building_construction = {
+					type=arms_factory
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = gre_crete3
+		prerequisite = { focus = gre_mil_king }
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_mil_king
+		x = 0
+		y = 1
+		completion_reward = { 
+			add_ideas=deterrence
+		}
+	}
+		
+    focus = {
+		id = gre_mils
+		prerequisite = { focus = gre_follo_king }
+		icon = GFX_focus_NORDIC_mon_capstone_navy
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_follo_king
+		x = 2
+		y = 1
+		completion_reward = {
+            41 = {
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = gre_mils2
+		prerequisite = { focus = gre_mils }
+		icon = GFX_focus_NORDIC_com_selector_material
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_mils
+		x = 0
+		y = 2
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots=2
+				add_building_construction = {
+					type=arms_factory
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+		
+		focus = {
+			id = gre_support_equipement
+			prerequisite = { focus = gre_mils }
+			icon = GFX_FRA_horizon_blue_uniforms-69197
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_mils
+			x = -1
+			y = 1
+			completion_reward = {
+				add_equipment_to_stockpile = {
+					amount = 3840
+					type = support_equipment
+					producer = GRE
+				}
+			}
+		}
+		
+		focus = {
+			id = gre_artillery
+			prerequisite = { focus = gre_mils }
+			icon = GFX_goal_generic_army_artillery2
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_mils
+			x = 1
+			y = 1
+			completion_reward = {
+				add_equipment_to_stockpile = {
+					amount = 400
+					type = light_field_gun_equipment
+					producer = GRE
+				}
+			}
+		}
+		
+	focus = {
+		id = gre_factory_effi
+		prerequisite = { focus = gre_follo_king }
+		icon = GFX_focus_generic_modernize_industry
+		ai_will_do = { factor=10 }
+		cost = 10
+		relative_position_id=gre_follo_king
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = { GRE_fact_effi }
+		}
+	}
+		
+	####################
+	##### Prime Minister
+	####################
+		
+    focus = {
+		id = gre_Follow_prime_minister
+		prerequisite = { focus = gre_after_the_war }
+		mutually_exclusive = { focus = gre_follo_king}
+		mutually_exclusive = { focus = gre_old_gard}
+		icon = GFX_focus_LIT_support_polish_fascists
+		ai_will_do = { factor=10 }
+		cost = 5
+		x = 20
+		y = 11
+		available = {
+			has_country_leader = {
+				character = GRE_constantine
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = GRE_alexandros_i
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1935.1.1"
+					traits = {
+						inexperienced_monarch
+					}
+				}
+			}
+			#remove_ideas = GRE_national_schism
+		}
+	}
+	
+	focus = {
+        id = gre_def_uk
+		prerequisite = { focus = gre_Follow_prime_minister }
+		icon = GFX_focus_DEN_no_regulations
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_Follow_prime_minister
+		x = -3
+		y = 1
+		completion_reward = {
+            374 = {
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+        id = gre_france_dealt
+		prerequisite = { focus = gre_def_uk }
+		icon = GFX_focus_fra_french_union
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_def_uk
+		x = 0
+		y = 1
+		completion_reward = { 
+			2 = {
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+	}
+		
+		focus = {
+			id = gre_attacks
+			prerequisite = { focus = gre_Follow_prime_minister }
+			icon = GFX_focus_eng_expose_the_belly_of_the_bear
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_Follow_prime_minister
+			x = -1
+			y = 1
+			completion_reward = {
+				add_ideas = { gre_att }
+			}
+		}
+		
+		focus = {
+			id = gre_offensive
+			prerequisite = { focus = gre_attacks }
+			#icon = GFX_focus_generic_strike_at_democracy2
+			icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
+			ai_will_do = { factor=10 }
+			cost = 5
+			relative_position_id=gre_attacks
+			x = 0
+			y = 1
+			completion_reward = {
+				news_event = offensiveevents.56
+				add_timed_idea = {
+					idea = GRE_off1
+					days = 90 # The duration of the idea in days
+				}
+			}
+		}
+		
+	focus = {
+		id = gre_manpower2
+		prerequisite = { focus = gre_Follow_prime_minister }
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_Follow_prime_minister
+		x = 1
+		y = 1
+		completion_reward = {
+			add_manpower = 150000
+		}
+	}
+		
+    focus = {
+        id = gre_marines
+		prerequisite = { focus = gre_manpower2 }
+		icon = GFX_focus_ICE_modernizing_the_coast_guard
+		#icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_manpower2
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus= {
+				name = special_forces_bonus
+				bonus = 3
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+				technology = jaegers
+				technology = jaegers2
+				technology = jaegers3
+				technology = Stormtroopers
+				technology = Stormtroopers2
+				technology = Stormtroopers3
+				technology = tech_special_forces
+				technology = advanced_special_forces
+				technology = extreme_environment_training
+				technology = improved_special_forces
+				technology = survival_training
+				technology = elite_forces
+			}
+		}
+	}
+
+	focus = {
+        id = gre_def_civ
+        prerequisite = { focus = gre_Follow_prime_minister }
+		icon = GFX_focus_SOV_third_rome
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_Follow_prime_minister
+		x = 3
+		y = 1
+		completion_reward = {
+			306 = {
+				add_extra_state_shared_building_slots=2
+				add_building_construction = {
+					type= industrial_complex
+					level= 2
+					instant_build=yes
+				}
+			}
+		}
+	}
+		
+    focus = {
+		id = gre_crete_1
+		prerequisite = { focus = gre_def_civ }
+		icon = GFX_focus_DEN_civilian_preparations
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_def_civ
+		x = 0
+		y = 1
+		completion_reward = { 
+			306 = {
+				add_extra_state_shared_building_slots=2
+				add_building_construction = {
+					type=industrial_complex
+					level=2
+					instant_build=yes
+				}
+			}
+		}
+	}
+		
+		####################
+		##### Old Guard
+		####################
+
+    focus = {
+		id = gre_old_gard
+		mutually_exclusive = { focus = gre_Follow_prime_minister}
+		mutually_exclusive = { focus = gre_follo_king}
+		prerequisite = { focus = gre_after_the_war }
+		icon = GFX_focus_mex_support_general_cedillo
+		ai_will_do = { factor=10 }
+		cost = 5
+		x = 30
+		y = 11
+		available = {
+			has_country_leader = {
+				character = GRE_constantine
+				ruling_only = yes
+			}
+		}
+		completion_reward = { 
+			#add_ideas = isolation
+			add_ideas = closed_economy
+			#remove_ideas = GRE_national_schism
+		}
+	}
+		
+	focus = {
+        id = gre_def_port
+		prerequisite = { focus = gre_old_gard }
+		icon = GFX_goal_continuous_def_against_influence
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_old_gard
+		x = -2
+		y = 1
+		completion_reward = { 
+            131 = {
+                set_building_level = {
+		            type = coastal_bunker  level = 5 province = 16491 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker  level = 3 province = 17363 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker  level = 3 province = 8424 instant_build = yes
+				}
+				set_building_level = {
+		            type = coastal_bunker  level = 3 province = 16502 instant_build = yes
+				}
+				set_building_level = {
+		            type = coastal_bunker  level = 3 province = 1406 instant_build = yes
+				}
+				set_building_level = {
+		            type = coastal_bunker  level = 3 province = 6232 instant_build = yes
+				}
+			}
+			76 = {
+                set_building_level = {
+		            type = coastal_bunker  level = 3 province = 5201 instant_build = yes
+				}
+                set_building_level = {
+		            type = coastal_bunker  level = 3 province = 10493 instant_build = yes
+				}
+			}
+        }
+	}
+		
+    focus = {
+        id = gre_def2
+        prerequisite = { focus = gre_def_port }
+		icon = GFX_goal_generic_fortify_city
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_def_port
+		x = 0
+		y = 1
+		completion_reward = { 
+            134 = {
+                set_building_level = {
+		            type = bunker level = 3 province = 1852 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 1852 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16052 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16052 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 5333 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5333 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 4852 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 4852 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 4100 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 4100 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16012 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16012 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 6384 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 6384 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 9165 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 9165 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16099 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16099 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16121 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16121 instant_build = yes
+				}
+            }
+            135 = {
+                set_building_level = {
+		            type = bunker level = 2 province = 5037 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5037 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 6652 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 6652 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 8795 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 8795 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 9454 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 9454 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16154 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16154 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16182 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16182 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 927 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 927 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 9610 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 9610 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 8872 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 8872 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 6720 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 6720 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 7330 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 7330 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 16187 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16187 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 2 province = 3125 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 3125 instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = gre_def_line1
+        prerequisite = { focus = gre_def2 }
+		icon = GFX_focus_SWE_hedgehog_defense
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_def2
+		x = 0
+		y = 1
+		completion_reward = { 
+			130 = {
+                set_building_level = {
+		            type = bunker level = 3 province = 5902 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5902 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 16447 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16447 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 16405 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16405 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 1169 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 1169 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 5379 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5379 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 7553 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 7553 instant_build = yes
+				}
+			}
+			131 = {
+                set_building_level = {
+		            type = bunker level = 3 province = 5142 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 5142 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 1713 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 1713 instant_build = yes
+				}
+                set_building_level = {
+		            type = bunker level = 3 province = 16393 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 16393 instant_build = yes
+				}
+			}
+			76 = {
+                set_building_level = {
+		            type = bunker level = 3 province = 3580 instant_build = yes
+				}
+                set_building_level = {
+		            type = trench level = 2 province = 3580 instant_build = yes
+				}
+			}
+        }
+	}
+	
+	focus = {
+        id = GRE_red_air
+		prerequisite = { focus = gre_old_gard }
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_old_gard
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = GRE_fight_red_air
+        }
+	}
+
+	focus = {
+        id = gre_guns
+		prerequisite = { focus = GRE_red_air }
+		icon = GFX_focus_FIN_weapon_caches
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=GRE_red_air
+		x = 0
+		y = 1
+		completion_reward = {
+            add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 75000
+            }
+		}
+	}
+	
+	focus = {
+        id = gre_massive_recruitement
+		prerequisite = { focus = gre_guns }
+		icon = GFX_focus_FIN_parmis_devils
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_guns
+		x = 0
+		y = 1
+		completion_reward = { 
+			add_manpower = 500000
+        }
+	}
+	
+	focus = {
+        id = gre_entranchement
+		prerequisite = { focus = gre_old_gard }
+		#icon = GFX_focus_ITA_moschettieri_del_duce
+		icon = GFX_goal_generic_construction2
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_old_gard
+		x = 2
+		y = 1
+		completion_reward = {
+			add_ideas = { gre_digy_all }    
+        } 
+	}
+	
+	focus = {
+        id = gre_entranchement2
+		prerequisite = { focus = gre_entranchement }
+		icon = GFX_focus_CHL_protect_the_easter_island
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_entranchement
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = { gre_digy_all2 }    
+        } 
+	}
+
+	focus = {
+        id = gre_defend_fatherland
+		prerequisite = { focus = gre_entranchement2 }
+		icon = GFX_focus_ARG_banco_central_de_la_republica_argentina
+		ai_will_do = { factor=10 }
+		cost = 5
+		relative_position_id=gre_entranchement2
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = { gre_die_but_defend }    
+        }
+	}
+
+}
+

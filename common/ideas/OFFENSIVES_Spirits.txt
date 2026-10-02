@@ -1,0 +1,259 @@
+ideas = {
+	country = {
+		FRA_counter_1914 = {
+			allowed = {
+				always = no
+			}
+			picture = FRA_undividable
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = LBA
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+		}
+		
+		FRA_Off_1919 = {
+			allowed = {
+				always=no
+			}
+			picture = German_staff_ww1
+			modifier = {
+				air_superiority_bonus_in_combat = 0.25
+				army_speed_factor = 0.10
+				planning_speed = 0.15
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				supply_consumption_factor = -0.30
+			}
+		}
+		
+		RUS_Off1_1914 = {
+
+            allowed = {
+                original_tag = RUS
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = {
+                tag = GER
+                attack_bonus_against = 0.05
+            }
+            targeted_modifier = {
+                tag = AUS
+                attack_bonus_against = 0.05
+            }
+            targeted_modifier = {
+                tag = BUL
+                attack_bonus_against = 0.05
+            }
+            targeted_modifier = {
+                tag = TUR
+                attack_bonus_against = 0.05
+            }
+            targeted_modifier = {
+                tag = POL
+                attack_bonus_against = 0.05
+            }
+		}
+		SER_austrian_invasion1 = {
+
+            allowed = {
+                original_tag = SER
+                always = no #event or decision
+            }
+            picture = generic_victors_of_ww1
+
+            modifier = {
+                army_core_defence_factor = 0.1
+            }
+			}
+		SER_austrian_invasion2 = {
+
+            allowed = {
+                original_tag = SER
+                always = no #event or decision
+            }
+            picture = generic_victors_of_ww1
+
+            modifier = {
+                army_core_defence_factor = 0.05
+            }
+		}
+		
+		##Germany
+		GER_counter_tannenberg = {
+			allowed = {
+				always = no
+			}
+			picture = German_staff_ww1
+			modifier = {
+				out_of_supply_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+		}
+		
+		##AUSTRIA
+		AUS_counter_alps = {	#Counteroffensive; available whenever needed
+
+            allowed = {
+				original_tag = AUS
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = ITA attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+		}
+		AUS_off_belluno = {	#1915 monte piana battles
+
+            allowed = {
+				original_tag = AUS
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = ITA attack_bonus_against = 0.15 }
+		}
+		AUS_off_asiago = {	#1916
+
+            allowed = {
+				original_tag = AUS
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = ITA attack_bonus_against = 0.20 }
+		}
+		AUS_off_caporetto = {	#1917
+
+            allowed = {
+				original_tag = AUS
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = ITA attack_bonus_against = 0.25 }
+		}
+		AUS_off_piave = {	#1918
+
+            allowed = {
+				original_tag = AUS
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = ITA attack_bonus_against = 0.15 }
+		}
+		
+		##ITALY
+		ITA_counter_ravenna = {	#Counteroffensive; available whenever needed
+
+            allowed = {
+				original_tag = ITA
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = GER attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+            targeted_modifier = { tag = AUS attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+            targeted_modifier = { tag = POL attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+            targeted_modifier = { tag = BUL attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+            targeted_modifier = { tag = TUR attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+			targeted_modifier = { tag = LBA attack_bonus_against = 0.20 defense_bonus_against = 0.20 }
+		}
+		ITA_off_isonzo = {	#1915
+
+            allowed = {
+				original_tag = ITA
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = GER attack_bonus_against = 0.10 }
+            targeted_modifier = { tag = AUS attack_bonus_against = 0.10 }
+            targeted_modifier = { tag = POL attack_bonus_against = 0.10 }
+            targeted_modifier = { tag = BUL attack_bonus_against = 0.10 }
+            targeted_modifier = { tag = TUR attack_bonus_against = 0.10 }
+			targeted_modifier = { tag = LBA attack_bonus_against = 0.10 }
+		}
+		ITA_off_gorizia = {	#1916
+
+            allowed = {
+				original_tag = ITA
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = GER attack_bonus_against = 0.15 }
+            targeted_modifier = { tag = AUS attack_bonus_against = 0.15 }
+            targeted_modifier = { tag = POL attack_bonus_against = 0.15 }
+            targeted_modifier = { tag = BUL attack_bonus_against = 0.15 }
+            targeted_modifier = { tag = TUR attack_bonus_against = 0.15 }
+			targeted_modifier = { tag = LBA attack_bonus_against = 0.15 }
+		}
+		ITA_off_bainsizza = {	#1917
+
+            allowed = {
+				original_tag = ITA
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = GER attack_bonus_against = 0.20 }
+            targeted_modifier = { tag = AUS attack_bonus_against = 0.20 }
+            targeted_modifier = { tag = POL attack_bonus_against = 0.20 }
+            targeted_modifier = { tag = BUL attack_bonus_against = 0.20 }
+            targeted_modifier = { tag = TUR attack_bonus_against = 0.20 }
+			targeted_modifier = { tag = LBA attack_bonus_against = 0.20 }
+		}
+		ITA_off_vittorio_veneto = {	#1918
+
+            allowed = {
+				original_tag = ITA
+                always = no #event or decision
+            }
+            picture = German_staff_ww1
+
+            targeted_modifier = { tag = GER attack_bonus_against = 0.25 }
+            targeted_modifier = { tag = AUS attack_bonus_against = 0.25 }
+            targeted_modifier = { tag = POL attack_bonus_against = 0.25 }
+            targeted_modifier = { tag = BUL attack_bonus_against = 0.25 }
+            targeted_modifier = { tag = TUR attack_bonus_against = 0.25 }
+			targeted_modifier = { tag = LBA attack_bonus_against = 0.25 }
+		}
+	}
+}

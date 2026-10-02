@@ -1,0 +1,302 @@
+﻿l_english:
+
+
+ #--------------------------------------------------------------
+ # [FRENCH REPUBLIC] Army Effort
+ #=========================================================================
+FRA_ww1_army_effort_1:0 "Army Effort"
+FRA_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_2:0 "Army Effort II"
+FRA_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_3:0 "Army Effort III"
+FRA_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_4:0 "Army Effort IV"
+FRA_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_army_effort_5:0 "Army Effort V"
+FRA_ww1_army_effort_5_desc:0 "" #Frenchie
+
+FRA_ww1_equipment_effort_1:0 "Equipment Effort"
+FRA_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_2:0 "Equipment Effort II"
+FRA_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_3:0 "Equipment Effort III"
+FRA_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_4:0 "Equipment Effort IV"
+FRA_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_equipment_effort_5:0 "Equipment Effort V"
+FRA_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+FRA_ww1_artillery_effort_1:0 "Artillery Effort"
+FRA_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_2:0 "Artillery Effort II"
+FRA_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_3:0 "Artillery Effort III"
+FRA_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_4:0 "Artillery Effort IV"
+FRA_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_artillery_effort_5:0 "Artillery Effort V"
+FRA_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+FRA_ww1_aircraftprod_1:0 "Aircraft Production"
+FRA_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_2:0 "Aircraft Production II"
+FRA_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_3:0 "Aircraft Production III"
+FRA_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_4:0 "Aircraft Production IV"
+FRA_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_aircraftprod_5:0 "Aircraft Production V"
+FRA_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+FRA_ww1_large_navy_1:0 "Naval Aviation"
+FRA_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_2:0 "Naval and Aviation Reform II"
+FRA_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_3:0 "Naval and Aviation Reform III"
+FRA_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_4:0 "Naval and Aviation Reform IV"
+FRA_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+FRA_ww1_large_navy_5:0 "Naval and Aviation Reform V"
+FRA_ww1_large_navy_5_desc:0 "" #Frenchie
+
+ 
+ # FRENCHIE MOD
+ #=========================================================================
+ FRA_BATTLE_OF_AMIENS:0 "First Battle of Marne"
+ FRA_BATTLE_OF_AMIENS_desc:0 "With its army in retreat, the French needed a miracle to save Paris from enemy occupation. They received it on September 3 when French reconnaissance pilots spotted the forces of German General Alexander von Kluck’s First Army, which had been pointed at Paris like a spear tip, suddenly switch to the southeast. Although under orders to support the Second Army to guard against possible attacks from Paris, the aggressive von Kluck instead sought glory and a chance to drive a stake in the enemy by pursuing the retreating French Fifth Army across the Marne River east of Paris. By doing so, his troops, exhausted after weeks of marching and fighting, outran their supply lines, and he inadvertently exposed his right flank to French forces."
+ FRA_concessions_to_sfio:0 "Concessions to SFIO"
+ FRA_concessions_to_sfio_desc:0 ""
+ FRA_manufacture_darmes_de_chatellerault:0 "Manufacture d'Armes de Chatellerault"
+ FRA_manufacture_darmes_de_chatellerault_desc:0 ""
+ FRA_renault_ft:0 "Renault FT"
+ FRA_renault_ft_desc:0 ""
+ FRA_attaque__outrance:0 "Attaque à outrance"
+ FRA_attaque__outrance_desc:0 ""
+ FRA_agadir_crisis:0 "Agadir Crisis"
+ FRA_agadir_crisis_desc:0 ""
+ FRA_aronautique_militaire:0 "Aéronautique Militaire"
+ FRA_aronautique_militaire_desc:0 ""
+ FRA_threeyear_law:0 "Three-Year Law"
+ FRA_threeyear_law_desc:0 ""
+ FRA_french_foreign_legion:0 "French Foreign Legion"
+ FRA_french_foreign_legion_desc:0 ""
+ FRA_1914_fiscal_reforms:0 "1914 Fiscal Reforms"
+ FRA_1914_fiscal_reforms_desc:0 ""
+ FRA_greek_naval_bases:0 "Greek Naval Bases"
+ FRA_greek_naval_bases_desc:0 ""
+ FRA_ministere_des_colonies:0 "Ministere des Colonies"
+ FRA_ministere_des_colonies_desc:0 ""
+ FRA_protectorat_francais_de_tunisie:0 "Protectorat francais de Tunisie"
+ FRA_protectorat_francais_de_tunisie_desc:0 ""
+ FRA_protectorat_franais_au_maroc:0 "Protectorat français au Maroc"
+ FRA_protectorat_franais_au_maroc_desc:0 ""
+ FRA_army_reform:0 "Army Reform"
+ FRA_army_reform_desc:0 ""
+ FRA_fabre_hydravion_seaplane:0 "Fabre Hydravion Seaplane"
+ FRA_fabre_hydravion_seaplane_desc:0 ""
+ FRA_crdit_lyonnais:0 "Crédit Lyonnais"
+ FRA_crdit_lyonnais_desc:0 ""
+ FRA_investment_in_russia:0 "Investment in Russia"
+ FRA_investment_in_russia_desc:0 ""
+ FRA_fortifications_of_france:0 "Fortifications of France"
+ FRA_fortifications_of_france_desc:0 ""
+ FRA_reinvest_naval_budget:0 "Reinvest Naval Budget"
+ FRA_reinvest_naval_budget_desc:0 ""
+ FRA_arme_de_terre:0 "Armée de Terre"
+ FRA_arme_de_terre_desc:0 ""
+ FRA_mobilize_urban_population:0 "Mobilize Urban Population"
+ FRA_mobilize_urban_population_desc:0 ""
+ FRA_entente_cordiale:0 "Entente Cordiale"
+ FRA_entente_cordiale_desc:0 ""
+ FRA_entente_supreme_war_council:0 "Entente Supreme War Council"
+ FRA_entente_supreme_war_council_desc:0 ""
+ FRA_supreme_allied_command:0 "Supreme Allied Command"
+ FRA_supreme_allied_command_desc:0 ""
+ FRA_union_sacre:0 "Union Sacrée"
+ FRA_union_sacre_desc:0 ""
+ FRA_patriotic_fervor:0 "Patriotic Fervor"
+ FRA_patriotic_fervor_desc:0 ""
+ FRA_technological_revolution:0 "Technological Revolution"
+ FRA_technological_revolution_desc:0 ""
+ FRA_second_industrial_revolution:0 "Second Industrial Revolution"
+ FRA_second_industrial_revolution_desc:0 ""
+ FRA_establish_commission_for_relief_in_belgium:0 "Establish Commission for Relief in Belgium"
+ FRA_establish_commission_for_relief_in_belgium_desc:0 ""
+ FRA_anglofrenchitalian_naval_convention:0 "Anglo-French-Italian Naval Convention"
+ FRA_anglofrenchitalian_naval_convention_desc:0 ""
+ FRA_the_belle_epoque:0 "The Belle Epoque"
+ FRA_the_belle_epoque_desc:0 ""
+ FRA_19111914_french_military_mission:0 "1911–1914 French military mission"
+ FRA_19111914_french_military_mission_desc:0 ""
+ FRA_elecltrify_factories:0 "Elecltrify Factories"
+ FRA_elecltrify_factories_desc:0 ""
+ FRA_navy_steel_works:0 "Navy Steel Works"
+ FRA_navy_steel_works_desc:0 ""
+ FRA_further_defund_the_navy:0 "Further Defund the Navy"
+ FRA_further_defund_the_navy_desc:0 ""
+ FRA_georges_clemenceau_le_tigre:0 "Georges Clemenceau, Le Tigre"
+ FRA_georges_clemenceau_le_tigre_desc:0 ""
+ FRA_military_board_of_allied_supply:0 "Military Board of Allied Supply"
+ FRA_military_board_of_allied_supply_desc:0 ""
+ FRA_they_shall_not_pass:0 "They Shall Not Pass"
+ FRA_they_shall_not_pass_desc:0 ""
+ FRA_chasseurs_alpins:0 "Chasseurs Alpins"
+ FRA_chasseurs_alpins_desc:0 ""
+ FRA_horizon_blue_uniforms:0 "Horizon Blue Uniforms"
+ FRA_horizon_blue_uniforms_desc:0 ""
+ FRA_nothern_development:0 "Develop the North"
+ FRA_nothern_development_desc:0 ""
+ FRA_southern_development:0 "Develop the South"
+ FRA_southern_development_desc:0 ""
+ FRA_less_farmers_more_workers:0 "Less Farmer More Workers"
+ FRA_less_farmers_more_workers_desc:0 ""
+ FRA_military_expension:0 "Military Expension"
+ FRA_military_expension_desc:0 ""
+ FRA_improve_workers_conditions:0 "Improve Workers Conditions"
+ FRA_improve_workers_conditions_desc:0 ""
+ FRA_improve_civilian_industry:0 "Improve Civilian Industry"
+ FRA_improve_civilian_industry_desc:0 ""
+ FRA_maroc_crisis:0 "Moroccan Protectorate"
+ FRA_maroc_crisis_desc:0 ""
+ FRA_new_tools:0 "New Tools"
+ FRA_new_tools_desc:0 ""
+ FRA_africa_suppression:0 "Suppress Revolts"
+ FRA_africa_suppression_desc:0 ""
+ FRA_africa_exploit:0 "Exploit Resources"
+ FRA_africa_exploit_desc:0 ""
+ FRA_africa_apeasement:0 "Apease Revolts"
+ FRA_africa_apeasement_desc:0 ""
+ FRA_more_budget_for_army_production:0 "Increase Military Budget"
+ FRA_more_budget_for_army_production_desc:0 ""
+ FRA_africa_form_colony_army:0 "Develop Colonial Army"
+ FRA_africa_form_colony_army_desc:0 ""
+ FRA_more_budget_for_army_inovation:0 "Army Innovation"
+ FRA_more_budget_for_army_inovation_desc:0 ""
+ FRA_revanchism:0 "Revanchism"
+ FRA_revanchism_desc:0 ""
+ FRA_new_rifle:0 "New Rifles"
+ FRA_new_rifle_desc:0 ""
+ FRA_new_artillery:0 "Improve Artillery"
+ FRA_new_artillery_desc:0 ""
+ FRA_tank_revolution:0 "Tank Revolution"
+ FRA_tank_revolution_desc:0 ""
+ FRA_reform_tatic:0 "Reform Tatics"
+ FRA_reform_tatic_desc:0 ""
+ FRA_infantry_artillery_coordination:0 "Infantry and Artillery Coordination"
+ FRA_infantry_artillery_coordination_desc:0 ""
+ FRA_heroic_death:0 "Heroic Death"
+ FRA_heroic_death_desc:0 ""
+ FRA_new_fighter:0 "First Air Battle Fighter"
+ FRA_new_fighter_desc:0 ""
+ FRA_new_bomber:0 "New bomber"
+ FRA_new_bomber_desc:0 ""
+ FRA_air_command_structure:0 "Squadron Formation"
+ FRA_air_command_structure_desc:0 ""
+ FRA_follow_royal_navy:0 "Follow Royal Navy"
+ FRA_follow_royal_navy_desc:0 ""
+ FRA_our_own_navy:0 "Our own Navy"
+ FRA_our_own_navy_desc:0 ""
+ FRA_shbb:0 "Dreadnought"
+ FRA_shbb_desc:0 ""
+ FRA_cruiser:0 "New Cruiser"
+ FRA_cruiser_desc:0 ""
+ FRA_sub:0 "Trade Interdiction"
+ FRA_sub_desc:0 ""
+ FRA_new_doctrines:0 "New Doctrines"
+ FRA_new_doctrines_desc:0 ""
+ FRA_losing_war_mils:0 "Reconstitution industrielle"
+ FRA_losing_war_mils_desc:0 ""
+ FRA_reorganize_reserves:0 "Reserve Formations"
+ FRA_reorganize_reserves_desc:0 ""
+ FRA_reorganize_reserves_tt:0 "§CSpawns 20 infantry divisions.§!"
+ FRA_retake_paris:0 "Retake Paris"
+ FRA_retake_paris_desc:0 ""
+
+ agadir_crisis_flag:0 "Agadir Crisis"
+ 
+ FRA_no_buildings_modifier:0 "Don't build too close to the frontlines"
+ 
+ FRA_militia_tt:0 "§C46 divisions in Bordeaux - 6 heavy artillery and 40 infantry.§!"
+ 
+ arbel_fauvet:0 "Arbel-Fauvet"
+ legrand:0 "Legrand"
+ FRA_belle_epoque_railgun:0 "Belle Epoque"
+ FRA_colonial_unrest:0 "Colonial Unrest"
+ FRA_dalbiez_law:0 "Dalbiez Law on Mobilization"
+ 
+ FRA_artois_0:0 "The Artois Offensive"
+ 
+ FRA_will_to_fight_5:0 "The French Will to Fight - §GVery High§!"
+ FRA_will_to_fight_5_tt:0 "§gFrance surrenders if these cities are lost for 30 days:§! \n§9Paris\nDijon\nLyons\nNantes\nBordeaux§!"
+ 
+ FRA_will_to_fight_4:0 "The French Will to Fight - §GHigh§!"
+ FRA_will_to_fight_4_tt:0 "§gFrance surrenders if these cities are lost for 30 days:§! \n§9Paris\nDijon\nLyons\nNantes\nBordeaux§!"
+ 
+ FRA_will_to_fight_3:0 "The French Will to Fight - §0Moderate§!"
+ FRA_will_to_fight_3_tt:0 "§gFrance surrenders if these cities are lost for 30 days:§! \n§9Paris\nDijon\nLyons\nNantes\nBordeaux§!"
+ 
+ FRA_will_to_fight_2:0 "The French Will to Fight - §RLow§!"
+ FRA_will_to_fight_2_tt:0 "§gFrance surrenders if these cities are lost for 30 days:§! \n§9Paris\nDijon\nLyons\nNantes\nBordeaux§!"
+ 
+ FRA_will_to_fight_1:0 "The French Will to Fight - §RVery Low§!"
+ FRA_will_to_fight_1_tt:0 "§gFrance surrenders if these cities are lost for 30 days:§! \n§9Paris\nDijon\nLyons\nNantes\nBordeaux§!"
+ 
+ FRA_will_to_fight_0:0 "The French Will to Fight - §RBroken§!"
+ FRA_will_to_fight_0_tt:0 "§gFrance surrenders if these cities are lost for 30 days:§! \n§9Paris\nDijon\nLyons\nNantes\nBordeaux§!"
+ 
+ FRA_last_gasp:0 "France's Last Stand"
+ 
+ FFU_instant_capitulation_idea:0 "Surrender"
+ 
+ ##Decision Categories
+ FRA_defense_of_france:0 "Defense of France"
+ 
+ ##Decisions
+ france_last_stand:0 "French Collapse Imminent"
+ france_last_stand_cancellation_tt:0 "Has recaptured at least one key city (Paris, Dijon, Lyons, Nantes, or Bordeaux)"
+ 
+ ##Flags
+ fall_of_paris:0 "Fall of Paris"
+ fall_of_dijon:0 "Fall of Dijon"
+ fall_of_lyons:0 "Fall of Lyons"
+ fall_of_nantes:0 "Fall of Nantes"
+ fall_of_bordeaux:0 "Fall of Bordeaux"
+ french_surrender:0 "France has surrendered"
+ 
+ ##Events
+ ffufrance.10:0 "French Collapse Imminent"
+ ffufrance.10.title:0 "France is Near Collapse"
+ ffufrance.10.desc:0 "§BIf a major city is not recaptured within 30 days, France will surrender.§!"
+ ffufrance.10.a:0 "En Avant!"
+ ffufrance.10.b:0 "We must assist our French ally"
+ ffufrance.10.c:0 "Our victory was never in doubt"
+ 
+ ffufrance.11:0 "French Surrender"
+ ffufrance.11.title:0 "France Surrenders"
+ ffufrance.11.desc:0 ""
+ ffufrance.11.a:0 "Our allies still fight, we must help them"
+ ffufrance.11.b:0 "We fight on"
+ ffufrance.11.c:0 "We are not yet beaten"
+ ffufrance.11.d:0 "Russia cannot withstand our full force"
+ 
+ #--------------------------------------------------------------

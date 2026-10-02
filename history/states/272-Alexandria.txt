@@ -1,0 +1,47 @@
+
+state={
+	id=272
+	name="STATE_272"
+	resources={
+		oil=48.000
+        rubber=50
+		wood = 55
+		aluminium=25
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+            arms_factory = 2
+			air_base=1
+			11789 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {
+			11789 20 
+		}
+		victory_points = {
+			7391 1 
+		}
+		victory_points = {
+			3968 1 
+		}
+		victory_points = {
+			4285 1 
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+
+	provinces={
+		679 900 3127 3968 5069 5456 8152 8757 11789 16844 16890 
+	}
+	manpower=3859239
+	buildings_max_level_factor=1.000
+	state_category=town
+}

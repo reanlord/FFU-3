@@ -1,0 +1,1922 @@
+SOV_RUS_check_and_manage_losing_cores_for_bop_effect = {
+
+	#SEARCH KEYS:
+	# LITTLE BOP PROGRESS TOWARDS BAD SIDE FOR LOSING POLISH SOV CORES
+	# LITTLE BOP PROGRESS TOWARDS BAD SIDE FOR LOSING BELARUSIAN SOV CORES
+	# MODERATE BOP PROGRESS TOWARDS BAD SIDE FOR LOSING RUSSIAN SOV CORES
+	# SEVERE BOP PROGRESS TOWARDS GOOD SIDE FOR HOLDING AUS CORES
+	# SEVERE BOP PROGRESS TOWARDS GOOD SIDE FOR HOLDING GER CORES
+	# SEVERE BOP PROGRESS TOWARDS GOOD SIDE FOR HOLDING TUR CORES
+
+
+
+	# SEVERE BOP PROGRESS TOWARDS GOOD SIDE FOR HOLDING AUS CORES
+	if = {
+		limit = {
+			any_state = {
+				is_core_of = AUS
+				is_controlled_by = ROOT
+			}
+		}
+		add_power_balance_modifier = {
+			id = SOV_RUS_balance_of_powers
+			modifier = SOV_RUS_bop_austrias_as_warriors
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = SOV_RUS_balance_of_powers
+				modifier = SOV_RUS_bop_austrias_as_warriors
+			}
+		}
+		remove_power_balance_modifier = {
+			id = SOV_RUS_balance_of_powers
+			modifier = SOV_RUS_bop_austrias_as_warriors
+		}
+	}
+
+	# SEVERE BOP PROGRESS TOWARDS GOOD SIDE FOR HOLDING GER CORES
+	if = {
+		limit = {
+			any_state = {
+				is_core_of = GER
+				is_controlled_by = ROOT
+			}
+		}
+		add_power_balance_modifier = {
+			id = SOV_RUS_balance_of_powers
+			modifier = SOV_RUS_bop_breaking_the_spike
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = SOV_RUS_balance_of_powers
+				modifier = SOV_RUS_bop_breaking_the_spike
+			}
+		}
+		remove_power_balance_modifier = {
+			id = SOV_RUS_balance_of_powers
+			modifier = SOV_RUS_bop_breaking_the_spike
+		}
+	}
+
+	# SEVERE BOP PROGRESS TOWARDS GOOD SIDE FOR HOLDING TUR CORES
+	if = {
+		limit = {
+			any_state = {
+				is_core_of = TUR
+				is_controlled_by = ROOT
+			}
+		}
+		add_power_balance_modifier = {
+			id = SOV_RUS_balance_of_powers
+			modifier = SOV_RUS_bop_another_russo_turkish
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = SOV_RUS_balance_of_powers
+				modifier = SOV_RUS_bop_another_russo_turkish
+			}
+		}
+		remove_power_balance_modifier = {
+			id = SOV_RUS_balance_of_powers
+			modifier = SOV_RUS_bop_another_russo_turkish
+		}
+	}
+}
+
+SOV_RUS_core_state_effect = {
+	
+	##241-Lodz
+	if = {
+		limit = {
+			FROM.FROM = {
+				state = 241
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_LODZ
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_LODZ
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_LODZ
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_LODZ
+						}
+					}
+				}
+		}
+	}
+	
+	##271-Plock
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 271
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_PLOCK
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_PLOCK
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_PLOCK
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_PLOCK
+						}
+					}
+				}
+		}
+	}
+	
+	##279-Warszawa
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 279
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_WARSZAWA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_WARSZAWA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_WARSZAWA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_WARSZAWA
+						}
+					}
+				}
+		}
+	}
+	
+	##286-Kielce
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 286
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KIELCE
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_KIELCE
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KIELCE
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_KIELCE
+						}
+					}
+				}
+		}
+	}
+	
+	##278-Bialystok
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 278
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_BIALYSTOK
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_BIALYSTOK
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_BIALYSTOK
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_BIALYSTOK
+						}
+					}
+				}
+		}
+	}
+	
+	##287-Lublin
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 287
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_LUBLIN
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_LUBLIN
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_LUBLIN
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_LUBLIN
+						}
+					}
+				}
+		}
+	}
+	
+	##108-Siauliai
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 108
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_SIAULIAI
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_SIAULIAI
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_SIAULIAI
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_SIAULIAI
+						}
+					}
+				}
+		}
+	}
+
+	##109-Kaunas
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 109
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KAUNAS
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_KAUNAS
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KAUNAS
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_KAUNAS
+						}
+					}
+				}
+		}
+	}
+	
+	##291-Wilejka
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 291
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_WILEJKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_WILEJKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_WILEJKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_WILEJKA
+						}
+					}
+				}
+		}
+	}
+
+	##290-Nowogrodek
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 290
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_NOWOGRODEK
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_NOWOGRODEK
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_NOWOGRODEK
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_NOWOGRODEK
+						}
+					}
+				}
+		}
+	}
+	
+	##289-Polesie
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 289
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_POLESIE
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_POLESIE
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_POLESIE
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_POLESIE
+						}
+					}
+				}
+		}
+	}
+
+	##288-Rowne
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 288
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_ROWNE
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_ROWNE
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_ROWNE
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_ROWNE
+						}
+					}
+				}
+		}
+	}
+	
+	##176-Khmelnytska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 176
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KHMELNYTSKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_KHMELNYTSKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KHMELNYTSKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_KHMELNYTSKA
+						}
+					}
+				}
+		}
+	}
+	
+	##112-Bessarabia
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 112
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_BESSARABIA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_BESSARABIA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_BESSARABIA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_BESSARABIA
+						}
+					}
+				}
+		}
+	}
+
+	##116-Harju
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 116
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_HARJU
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_HARJU
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_HARJU
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_HARJU
+						}
+					}
+				}
+		}
+	}
+	
+	##115-Tartu
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 115
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_TARTU
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_TARTU
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_TARTU
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_TARTU
+						}
+					}
+				}
+		}
+	}
+
+	##118-Vidzeme
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 118
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VIDZEME
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_VIDZEME
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VIDZEME
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_VIDZEME
+						}
+					}
+				}
+		}
+	}
+
+	##115-Kurzeme
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 115
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KURZEME
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_KURZEME
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KURZEME
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_KURZEME
+						}
+					}
+				}
+		}
+	}
+
+	##194-Vichebskaya
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 194
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VICHEBSKAYA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_VICHEBSKAYA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VICHEBSKAYA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_VICHEBSKAYA
+						}
+					}
+				}
+		}
+	}
+
+	##323-Belarus
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 323
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_BELARUS
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_BELARUS
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_BELARUS
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_BELARUS
+						}
+					}
+				}
+		}
+	}
+
+	##193-Mahiliouskaya
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 193
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_MAHILIOUSKAYA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_MAHILIOUSKAYA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_MAHILIOUSKAYA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_MAHILIOUSKAYA
+						}
+					}
+				}
+		}
+	}
+
+	##192-Gomelskaya
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 192
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_GOMELSKAYA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_GOMELSKAYA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_GOMELSKAYA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_GOMELSKAYA
+						}
+					}
+				}
+		}
+	}
+
+	##191-Mazir
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 191
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_MAZIR
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_MAZIR
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_MAZIR
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_MAZIR
+						}
+					}
+				}
+		}
+	}
+
+	##177-Zhytomyrska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 177
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_ZHYTOMYRSKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_ZHYTOMYRSKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_ZHYTOMYRSKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_ZHYTOMYRSKA
+						}
+					}
+				}
+		}
+	}
+	
+	##331-Kiev
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 331
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KIEV
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_KIEV
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KIEV
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_KIEV
+						}
+					}
+				}
+		}
+	}
+	
+	##173-Vinnytska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 173
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VINNYTSKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_VINNYTSKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VINNYTSKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_VINNYTSKA
+						}
+					}
+				}
+		}
+	}
+
+	##172-Odeska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 172
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_ODESKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_ODESKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_ODESKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_ODESKA
+						}
+					}
+				}
+		}
+	}
+	
+	##188-Voznesensk
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 188
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VOZNESENSK
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_VOZNESENSK
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_VOZNESENSK
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_VOZNESENSK
+						}
+					}
+				}
+		}
+	}
+	
+	##178-Cherkaska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 178
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_CHERKASKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_CHERKASKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_CHERKASKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_CHERKASKA
+						}
+					}
+				}
+		}
+	}
+	
+	##179-Kirovohradska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 179
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KIROVOHRADSKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_KIROVOHRADSKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_KIROVOHRADSKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_KIROVOHRADSKA
+						}
+					}
+				}
+		}
+	}
+	
+	##174-Mykolayivska
+	else_if = {
+		limit = {
+			FROM.FROM = {
+				state = 174
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_central_powers_country = yes
+				}
+				FROM = {
+					tag = SOV
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						NOT = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_MYKOLAYIVSKA
+							}
+						}
+					}
+					add_power_balance_modifier = {
+						id = SOV_RUS_balance_of_powers
+						modifier = SOV_RUS_bop_lost_MYKOLAYIVSKA
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = SOV
+				}
+				FROM = {
+					is_central_powers_country = yes
+				}
+			}
+				SOV = {
+					if = {
+						limit = {
+							has_power_balance_modifier = {
+								id = SOV_RUS_balance_of_powers
+								modifier = SOV_RUS_bop_lost_MYKOLAYIVSKA
+							}
+						}
+						remove_power_balance_modifier = {
+							id = SOV_RUS_balance_of_powers
+							modifier = SOV_RUS_bop_lost_MYKOLAYIVSKA
+						}
+					}
+				}
+		}
+	}
+}

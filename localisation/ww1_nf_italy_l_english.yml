@@ -1,0 +1,302 @@
+﻿l_english:
+
+    #####################
+    ##FOCUS TREE
+    ####################
+    
+    #PODHOLE
+    
+    ##POLITICAL
+    
+    ITA_giolittan_era:0 "Epoca Giolittana"
+    ITA_giolittan_era_desc:0 ""
+    ITA_universal_male_suffrage:0 "Universal Male Suffrage"
+    ITA_universal_male_suffrage_desc:0 ""
+    ITA_get_free_trade:0 "Liberalize Trade Policy"
+    ITA_get_free_trade_desc:0 ""
+    ITA_punitive_tariffs:0 "Punitive Tariffs"
+    ITA_punitive_tariffs_desc:0 ""
+    ITA_merchant_marine:0 "The Merchant Marine"
+    ITA_merchant_marine_desc:0 ""
+    ITA_agrarian_reform:0 "Agrarian Reform"
+    ITA_agrarian_reform_desc:0 ""
+    ITA_italo_turkish_war:0 "Italo-Turkish War"
+    ITA_italo_turkish_war_desc:0 ""
+    ITA_develop_libya:0 "Develop Libya"
+    ITA_develop_libya_desc:0 ""
+    ITA_fortify_libya:0 "Libyan Fortifications"
+    ITA_fortify_libya_desc:0 ""
+    ITA_camels:0 "Desert Warfare Specialists"
+    ITA_camels_desc:0 ""
+    ITA_recruit_libyan_askaris:0 "Raise Libyan Askaris"
+    ITA_recruit_libyan_askaris_desc:0 ""
+    
+    ##INDUSTRY CIVILIAN
+    
+    ITA_nationalize_insurance:0 "Nationalization of Insurance"
+    ITA_nationalize_insurance_desc:0 ""
+    ITA_state_railways:0 "Improve State Railways"
+    ITA_state_railways_desc:0 ""
+    ITA_mining:0 "New Mineral Deposits"
+    ITA_mining_desc:0 ""
+    ITA_timberlands:0 "Lease Out Timberlands"
+    ITA_timberlands_desc:0 ""
+    ITA_civs_north:0 "Invest in Northern Industry"
+    ITA_civs_north_desc:0 ""
+    ITA_civs_south:0 "Develop the Mezzogiorno"
+    ITA_civs_south_desc:0 ""
+    ITA_fight_mafia:0 "Crack Down on Mafia"
+    ITA_fight_mafia_desc:0 ""
+    
+    ##INDUSTRY MILITARY
+    
+    ITA_procurement:0 "Increase Procurement Budget"
+    ITA_procurement_desc:0 ""
+    ITA_rifle_mils:0 "Mass-Produce the Carcano Rifle"
+    ITA_rifle_mils_desc:0 ""
+    ITA_fiat_mils:0 "FIAT Machine Gun Contracts"
+    ITA_fiat_mils_desc:0 ""
+    ITA_ansaldo_mils:0 "Ansaldo Artillery Plants"
+    ITA_ansaldo_mils_desc:0 ""
+    ITA_state_arsenals:0 "Expand State Arsenals"
+    ITA_state_arsenals_desc:0 ""
+    ITA_address_shortages:0 "Address Ammunition Shortages"
+    ITA_address_shortages_desc:0 ""
+    ITA_mobilize_north:0 "Mobilize Northern Industry"
+    ITA_mobilize_north_desc:0 ""
+    ITA_mobilize_south:0 "Mobilize Southern Industry"
+    ITA_mobilize_south_desc:0 ""
+    ITA_wartime_economy:0 "Italian War Economy"
+    ITA_wartime_economy_desc:0 ""
+    
+    ##ENTENTE
+    
+    ITA_switch_sides:0 "Pact with the Entente"
+    ITA_switch_sides_desc:0 ""
+    ITA_japan_navy:0 "Second Special Squadron"
+    ITA_japan_navy_desc:0 ""
+    ITA_japan_marines:0 "Naval Infantry Detachments"
+    ITA_japan_marines_desc:0 ""
+    ITA_pow_manpower:0 "Recruit Enemy POWs"
+    ITA_pow_manpower_desc:0 ""
+    ITA_albanian_front:0 "Secure Albania"
+    ITA_albanian_front_desc:0 ""
+    ITA_aid_serbia:0 "Aid for Serbia"
+    ITA_aid_serbia_desc:0 ""
+    ITA_british_loans:0 "British Loans"
+    ITA_british_loans_desc:0 ""
+    ITA_french_innovation:0 "French Innovation"
+    ITA_french_innovation_desc:0 ""
+    ITA_entente_industry:0 "Mutual Industrial Assistance"
+    ITA_entente_industry_desc:0 ""
+    
+    ##POST CAP WHITE PEACE
+    
+    ITA_separate_peace:0 "Seek a Separate Peace"
+    ITA_separate_peace_desc:0 ""
+    
+    ##POST CAP KEEP FIGHTING
+    
+    ITA_no_surrender:0 "No Surrender!"
+    ITA_no_surrender_desc:0 ""
+    ITA_every_italian:0 "Every Italian Must Do His Duty"
+    ITA_every_italian_desc:0 ""
+    
+    ##ARMY
+    
+    ITA_army_basic:0 "Regio Esercito"
+    ITA_army_basic_desc:0 ""
+    ITA_army_bersaglieri:0 "Bersaglieri"
+    ITA_army_bersaglieri_desc:0 ""
+    ITA_army_alpini:0 "Alpini"
+    ITA_army_alpini_desc:0 ""
+    ITA_army_arditi:0 "Arditi"
+    ITA_army_arditi_desc:0 ""
+    ITA_army_retired_officers:0 "Recall Retired Officers"
+    ITA_army_retired_officers_desc:0 ""
+    ITA_army_recruitment:0 "Patriotic Recruitment Drive"
+    ITA_army_recruitment_desc:0 ""
+    ITA_army_police:0 "Harsh Discipline"
+    ITA_army_police_desc:0 ""
+    ITA_army_armored_cars:0 "Lancia 1ZM"
+    ITA_army_armored_cars_desc:0 ""
+    ITA_army_sappers:0 "Sapper Regiments"
+    ITA_army_sappers_desc:0 ""
+    ITA_army_medicine:0 "Improve Field Medicine"
+    ITA_army_medicine_desc:0 ""
+    ITA_army_research_slot:0 "Equipment Commission"
+    ITA_army_research_slot_desc:0 ""
+    ITA_army_rifle:0 "Breda Modello 30"
+    ITA_army_rifle_desc:0 ""
+    ITA_army_field_arty:0 "Cannone da 65/17"
+    ITA_army_field_arty_desc:0 ""
+    ITA_army_antiair:0 "Cannone da 75/27 A.V."
+    ITA_army_antiair_desc:0 ""
+    ITA_army_communications:0 "Marconi Wireless Sets"
+    ITA_army_communications_desc:0 ""
+    ITA_army_tank:0 "FIAT 2000"
+    ITA_army_tank_desc:0 ""
+    
+    ##FORTIFICATION
+    
+    ITA_alpine_trenches:0 "North Alpine Fortification Effort"
+    ITA_alpine_trenches_desc:0 ""
+    ITA_fallback_lines:0 "Secondary Defensive Lines"
+    ITA_fallback_lines_desc:0 ""
+    
+    ##ARMY REFORM
+    
+    ITA_army_attack_1:0 "Continue the Human Wave Offensives"
+    ITA_army_attack_1_desc:0 ""
+    ITA_army_attack_2:0 "Introduce Decimation"
+    ITA_army_attack_2_desc:0 ""
+    ITA_army_attack_3:0 "Forward Towards Victory"
+    ITA_army_attack_3_desc:0 ""
+    ITA_army_defense_1:0 "Replace High Command"
+    ITA_army_defense_1_desc:0 ""
+    ITA_army_defense_2:0 "Improve Soldiers Benefits"
+    ITA_army_defense_2_desc:0 ""
+    ITA_army_defense_3:0 "Defense in Depth Policy"
+    ITA_army_defense_3_desc:0 ""
+    
+    ##NAVY DOESNT MATTER
+    
+    ITA_shitty_navy_1:0 "Prioritize Army Funding"
+    ITA_shitty_navy_1_desc:0 ""
+    ITA_shitty_navy_2:0 "Repurpose Naval Artillery"
+    ITA_shitty_navy_2_desc:0 ""
+    ITA_shitty_navy_3:0 "Zero Out Naval Budget"
+    ITA_shitty_navy_3_desc:0 ""
+    
+    ##NAVY LARP
+    
+    ITA_expand_regia_marina:0 "Regia Marina Expansion"
+    ITA_expand_regia_marina_desc:0 ""
+    ITA_dominate_adriatic:0 "Dominate the Adriatic"
+    ITA_dominate_adriatic_desc:0 ""
+    ITA_fleet_exercises:0 "Fleet Exercises"
+    ITA_fleet_exercises_desc:0 ""
+    ITA_vickers_terni:0 "Vickers-Terni Contracts"
+    ITA_vickers_terni_desc:0 ""
+    ITA_orlando_brothers:0 "Orlando Brothers Shipyards"
+    ITA_orlando_brothers_desc:0 ""
+    ITA_fiat_navy:0 "FIAT-San Giorgio Submarine Yard"
+    ITA_fiat_navy_desc:0 ""
+    ITA_coastal_forts:0 "Strengthen Coastal Defenses"
+    ITA_coastal_forts_desc:0 ""
+    
+    ##AIRFORCE
+    
+    ITA_air_corps:0 "Corpo Aeronautico Militaire"
+    ITA_air_corps_desc:0 ""
+    ITA_caproni_bombers:0 "Caproni Long-Range Bombers"
+    ITA_caproni_bombers_desc:0 ""
+    ITA_airfields:0 "Military Airfields"
+    ITA_airfields_desc:0 ""
+    
+    ##GENERIC MILITARY
+
+    ITA_ww1_army_effort_1:0 "Army Effort"
+    ITA_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_army_effort_2:0 "Army Effort II"
+    ITA_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_army_effort_3:0 "Army Effort III"
+    ITA_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_army_effort_4:0 "Army Effort IV"
+    ITA_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_army_effort_5:0 "Army Effort V"
+    ITA_ww1_army_effort_5_desc:0 "" #Frenchie
+
+    ITA_ww1_equipment_effort_1:0 "Equipment Effort"
+    ITA_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_equipment_effort_2:0 "Equipment Effort II"
+    ITA_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_equipment_effort_3:0 "Equipment Effort III"
+    ITA_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_equipment_effort_4:0 "Equipment Effort IV"
+    ITA_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_equipment_effort_5:0 "Equipment Effort V"
+    ITA_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+    ITA_ww1_artillery_effort_1:0 "Artillery Effort"
+    ITA_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_artillery_effort_2:0 "Artillery Effort II"
+    ITA_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_artillery_effort_3:0 "Artillery Effort III"
+    ITA_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_artillery_effort_4:0 "Artillery Effort IV"
+    ITA_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_artillery_effort_5:0 "Artillery Effort V"
+    ITA_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+    ITA_ww1_aircraftprod_1:0 "Aircraft Production"
+    ITA_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_aircraftprod_2:0 "Aircraft Production II"
+    ITA_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_aircraftprod_3:0 "Aircraft Production III"
+    ITA_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_aircraftprod_4:0 "Aircraft Production IV"
+    ITA_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_aircraftprod_5:0 "Aircraft Production V"
+    ITA_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+    ITA_ww1_large_navy_1:0 "Naval Aviation"
+    ITA_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_large_navy_2:0 "Naval and Aviation Reform II"
+    ITA_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_large_navy_3:0 "Naval and Aviation Reform III"
+    ITA_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_large_navy_4:0 "Naval and Aviation Reform IV"
+    ITA_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+    ITA_ww1_large_navy_5:0 "Naval and Aviation Reform V"
+    ITA_ww1_large_navy_5_desc:0 "" #Frenchie
+
+    ITA_ww1_armor_effort_1:0 "Armor Effort"
+    ITA_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+    
+    ################
+    ##IDEAS
+    ################
+    
+    #PODHOLE
+    transformismo:0 "Maestro del Transformismo"
+    extreme_protectionism:0 "Extreme Protectionism"
+    ITA_agrarian_reform_bonus:0 "Agrarian Reform"
+    ITA_japan_navy_bonus:0 "Second Special Squadron"
+    ITA_japan_marines_bonus:0 "Tokubetsu Rikusentai"
+    ITA_british_loans_bonus:0 "British Loans"
+    ITA_french_innovation_bonus:0 "French Innovation"
+    ITA_economy1:0 "Slow Industrialization"
+    ITA_economy2:0 "Slow Industrialization"
+    ITA_economy3:0 "Slow Industrialization"
+    ITA_economy4:0 "Italian War Economy"
+    ITA_army_starting:0 "Second-Rate Army"
+    ITA_offensive_army_1:0 "Second-Rate Army"
+    ITA_offensive_army_2:0 "Second-Rate Army"
+    ITA_offensive_army_3:0 "Vittoria o Morte"
+    ITA_defensive_army_1:0 "Second-Rate Army"
+    ITA_defensive_army_2:0 "Second-Rate Army"
+    ITA_defensive_army_3:0 "Scudi d'Italia"
+    ITA_lacking_heavy_guns:0 "Heavy Gun Production Difficulties"
+    ITA_more_heavy_guns:0 "Repurposed Naval Guns"
+    ITA_abandoned_navy:0 "Zeroed Out Naval Budget"

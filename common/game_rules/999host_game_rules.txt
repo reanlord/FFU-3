@@ -1,0 +1,89 @@
+hosttool_game_rule = {
+    name = "HOSTTOOL_GAME_RULE"
+    group = "Hosttool"
+    icon = "GFX_decision_category_ger_reichskommissariats"
+
+    default = {
+        name = OFF
+        text = "HOSTTOOL_NONE"
+        desc = ""
+    }
+    option = {
+        name = GER
+        text = "Germany"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = ITA
+        text = "Italy"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = ROM
+        text = "Romania"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = BUL
+        text = "Bulgaria"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = ENG
+        text = "United Kingdom"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = AUS
+        text = "Austria-Hungary"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = SER
+        text = "Serbia"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = BEL
+        text = "Belgium"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = TUR
+        text = "Turkey"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = POL
+        text = "Poland"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = GRE
+        text = "Greece"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = SOV
+        text = "Russian Empire"
+        desc = ""
+        allow_achievements = yes
+    }
+    option = {
+        name = FRA
+        text = "France"
+        desc = ""
+        allow_achievements = yes
+    }
+}

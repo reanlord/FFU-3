@@ -1,0 +1,63 @@
+BUL_Bulgar_Army_Modifier = {
+    enable = { always = yes }
+
+    icon = GFX_bul_bulgarian_irredentism
+
+    #max_planning_factor = BUL_max_planning_factor_var
+	weekly_manpower = BUL_weekly_manpower_var
+    army_attack_factor  = BUL_army_attack_factor_var
+	army_defence_factor  = BUL_army_defence_factor_var
+	cavalry_attack_factor = BUL_cavalry_attack_factor_var
+	cavalry_defence_factor = BUL_cavalry_defence_factor_var
+	army_armor_attack_factor  = BUL_army_armor_attack_factor_var
+	army_speed_factor  = BUL_army_speed_factor_var
+	army_morale_factor  = BUL_army_morale_factor_var
+	max_dig_in  = BUL_max_dig_in_var
+    planning_speed  = BUL_planning_speed_var
+    max_command_power   = BUL_max_command_power_var
+    command_power_gain_mult  = BUL_command_power_gain_mult_var
+    #land_doctrine_cost_factor  = BUL_land_doctrine_cost_factor_var
+	air_ace_generation_chance_factor  = BUL_air_ace_generation_chance_factor_var
+	experience_gain_army  = BUL_experience_gain_army_var
+	send_volunteers_tension = BUL_send_volunteers_tension_var
+	send_volunteer_divisions_required = BUL_send_volunteer_divisions_required_var
+	conscription  = BUL_conscription_var
+	army_core_attack_factor = BUL_army_core_attack_factor
+	army_core_defence_factor = BUL_army_core_defence_factor
+	air_strategic_bomber_bombing_factor = BUL_air_strategic_bomber_bombing_factor
+	send_volunteer_size = 2
+}
+
+BUL_Economy_And_Politics = {
+    enable = { always = yes }
+
+    icon = GFX_generic_pp_unity_bonus
+
+
+    political_power_gain   = BUL_political_power_gain_var
+	consumer_goods_expected_value   = BUL_consumer_goods_factor_var
+	production_speed_buildings_factor   = BUL_production_speed_buildings_factor_var
+	production_factory_max_efficiency_factor  = BUL_production_factory_max_efficiency_factor_var
+	stability_factor    = BUL_stability_factor_var
+	stability_weekly    = BUL_stability_weekly_var
+	production_speed_infrastructure_factor   = BUL_production_speed_infrastructure_factor_var
+    political_power_factor    = BUL_political_power_factor_var
+    industrial_capacity_factory     = BUL_industrial_capacity_factory_var
+    industrial_capacity_dockyard    = BUL_industrial_capacity_dockyard_var
+    production_speed_industrial_complex_factor = BUL_production_speed_industrial_complex_factor_var
+    production_speed_arms_factory_factor    = BUL_production_speed_arms_factory_factor_var
+    production_speed_dockyard_factor    = BUL_production_speed_dockyard_factor_var
+    production_speed_synthetic_refinery_factor = BUL_production_speed_synthetic_refinery_factor_var
+    local_resources_factor = BUL_local_resources_factor_var
+
+}
+
+BUL_war_zone_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_focus_generic_provoke_border_clashes
+
+	max_dig_in = -5
+
+}

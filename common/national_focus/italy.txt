@@ -1,0 +1,2790 @@
+focus_tree = {	#PODHOLE
+	id = italian_focus
+	default = no
+	country = { factor=0 modifier = { add = 10 tag = ITA } }
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+	
+	##Epoca Giolittana
+	
+	focus = {
+		id = ITA_giolittan_era
+		icon = GFX_focus_ita_giolitti
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 16
+		y = 0
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	
+	##Universal Male Suffrage
+	
+	focus = {
+		id = ITA_universal_male_suffrage
+		icon = GFX_focus_hold_elections
+		ai_will_do = { factor = 1 }
+		cost = 5
+		relative_position_id = ITA_giolittan_era
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	##Liberalize Trade Policy
+	
+	focus = {
+		id = ITA_get_free_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		ai_will_do = { factor = 1 }
+		cost = 5
+		relative_position_id = ITA_giolittan_era
+		x = -6
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		mutually_exclusive = { focus = ITA_punitive_tariffs }
+		completion_reward = {
+			add_ideas = free_trade
+		}
+	}
+	
+	##Punitive Tariffs
+	
+	focus = {
+		id = ITA_punitive_tariffs
+		icon = GFX_focus_DEN_limited_regulations
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 8
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		mutually_exclusive = { focus = ITA_get_free_trade }
+		completion_reward = {
+			add_ideas = extreme_protectionism
+		}
+	}
+	
+	##Strong Merchant Marine
+	
+	focus = {
+		id = ITA_merchant_marine
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 10
+		y = 2
+		prerequisite = { focus = ITA_get_free_trade }
+		completion_reward = {
+			add_tech_bonus = {
+				name=transport_bonus bonus=1 uses=1
+				category = tp_tech
+			}
+			28 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Agrarian Reform
+	
+	focus = {
+		id = ITA_agrarian_reform
+		icon = GFX_FRA_wheat
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 13
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			add_timed_idea = {
+				idea = ITA_agrarian_reform_bonus
+				days = 365
+			}
+		}
+	}
+	
+	##Italo-Turkish War
+	
+	focus = {
+		id = ITA_italo_turkish_war
+		#icon = GFX_focus_ITA_imperial_recognition
+		icon = GFX_focus_tur_prepare_for_the_greatest_siege
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 17
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			add_war_support = 0.30
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+		}
+	}
+	
+	##Develop Libya
+	
+	focus = {
+		id = ITA_develop_libya
+		icon = GFX_focus_generic_develop_libya
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 17
+		y = 2
+		prerequisite = { focus = ITA_italo_turkish_war }
+		completion_reward = {
+			355 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			357 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 15
+				state = 355
+			}
+			add_resource = {
+				type = tungsten
+				amount = 21
+				state = 357
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+				state = 359
+			}
+		}
+	}
+	
+	##Fortify Cyrenaica
+	
+	focus = {
+		id = ITA_fortify_libya
+		icon = GFX_TUR_libyan_war_experience
+		ai_will_do = { factor = 1 }
+		cost = 2
+		x = 18
+		y = 3
+		prerequisite = { focus = ITA_develop_libya focus = ITA_camels }
+		completion_reward = {
+			358 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 16893 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 16893 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 2898 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 2898 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 2091 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 2091 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 1007 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 1007 instant_build = yes
+				}
+			}
+			359 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 6236 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 6236 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 9537 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 9537 instant_build = yes
+				}
+			}
+			356 = {
+				add_building_construction = {
+					type = bunker level = 3 province = 5707 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 5707 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 3 province = 8015 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 8015 instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##TODO
+	##Recruit Libyan Askaris
+	
+	#focus = {
+	#	id = ITA_recruit_libyan_askaris
+	#	icon = GFX_goal_generic_defence
+	#	ai_will_do = { factor = 1 }
+	#	cost = 5
+	#	x = 18
+	#	y = 3
+	#	prerequisite = {
+	#		focus = ITA_develop_libya
+	#		focus = ITA_camels
+	#	}
+	#	completion_reward = {
+	#		#load_oob = ITA_eritrean_askaris
+	#		##Should be 30 super-shitty infantry, 14-1 with basic guns and basic mgs
+	#		##Meant to stop Ottomans from walking into empty territory, until some real units get there
+	#	}
+	#}
+	
+	##Desert Warfare Specialists
+	
+	focus = {
+		id = ITA_camels
+		#icon = GFX_focus_ITA_strengthen_ascari_corps
+		icon = GFX_focus_generic_camel_corps
+		ai_will_do = { factor = 1 }
+		cost = 3
+		x = 19
+		y = 2
+		prerequisite = {
+			focus = ITA_italo_turkish_war
+			focus = ITA_army_basic
+		}
+		completion_reward = {
+			army_experience = 25
+			set_technology = {
+				camelry = 1
+			}
+		}
+	}
+	
+	################
+	#Industry Civilian
+	################
+	
+	##Nationalization of Insurance
+	
+	focus = {
+		id = ITA_nationalize_insurance
+		icon = GFX_focus_generic_self_management
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 14
+		y = 2
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			add_stability = 0.10
+			33 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			32 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Improve State Railways
+	
+	focus = {
+		id = ITA_state_railways
+		icon = GFX_focus_generic_railroad
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			37 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			39 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			32 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			33 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			31 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			30 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			29 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			28 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##New Mineral Deposits
+	
+	focus = {
+		id = ITA_mining
+		icon = GFX_focus_generic_mining_industry
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 6
+		y = 2
+		prerequisite = { focus = ITA_punitive_tariffs }
+		completion_reward = {
+			add_resource= {
+				type = tungsten
+				amount = 15
+				state = 34 
+			}
+			add_resource = {
+				type = tungsten
+				amount = 12
+				state = 30
+			}
+			add_resource= { 
+				type = steel 
+				amount = 5
+				state = 39 
+			}
+			add_resource= { 
+				type = steel 
+				amount = 6
+				state = 42 
+			}
+			add_resource= { 
+				type = steel 
+				amount = 16
+				state = 34 
+			}
+			add_resource= {
+				type = coal
+				amount = 16
+				state = 37 
+			}
+			add_resource = {
+				type = coal
+				amount = 11
+				state = 42
+			}
+			add_resource = {
+				type = chromium
+				amount = 3
+				state = 31
+			}
+		}
+	}
+	
+	##Lease Out Timberlands
+	
+	focus = {
+		id = ITA_timberlands
+		icon = GFX_focus_CHL_expand_the_forestry
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 8
+		y = 2
+		prerequisite = { focus = ITA_punitive_tariffs }
+		completion_reward = {
+			add_resource = {
+				type = wood
+				amount = 5
+				state = 37
+			}
+			add_resource = {
+				type = wood
+				amount = 4
+				state = 39
+			}
+			add_resource = {
+				type = wood
+				amount = 15
+				state = 36
+			}
+			add_resource = {
+				type = wood
+				amount = 12
+				state = 34
+			}
+			add_resource = {
+				type = wood
+				amount = 4
+				state = 32
+			}
+			add_resource = {
+				type = wood
+				amount = 3
+				state = 31
+			}
+			add_resource = {
+				type = wood
+				amount = 2
+				state = 28
+			}
+		}
+	}
+	
+	##Invest in Northern Industry
+	
+	focus = {
+		id = ITA_civs_north
+		icon = GFX_focus_ITA_northern_industry
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 12
+		y = 3
+		prerequisite = { focus = ITA_state_railways focus = ITA_nationalize_insurance }
+		completion_reward = {
+			add_tech_bonus={
+				technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				name=industrial_bonus bonus=1.0 uses=1
+			}
+			42 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			36 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Develop the Mezzogiorno
+	
+	focus = {
+		id = ITA_civs_south
+		icon = GFX_focus_ITA_southern_industry
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 14
+		y = 3
+		prerequisite = { focus = ITA_state_railways focus = ITA_nationalize_insurance }
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			30 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			29 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Crack Down on Mafia
+	
+	focus = {
+		id = ITA_fight_mafia
+		icon = GFX_focus_generic_court
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 13
+		y = 4
+		prerequisite = { focus = ITA_civs_north }
+		prerequisite = { focus = ITA_civs_south }
+		completion_reward = {
+			add_stability = 0.20
+			#Unlocks Sidney Sonnino (Financial Expert)
+		}
+	}
+	
+	################
+	#Industry Military
+	################
+	
+	##Increase Procurement Budget
+	
+	focus = {
+		id = ITA_procurement
+		#icon = GFX_focus_SWI_issue_war_bonds
+		icon = GFX_FRA_ww1_expand_army_budget
+		cost = 5
+		x = 16
+		y = 4
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_economy1
+				add_idea = ITA_economy2
+			}
+		}
+	}
+	
+	##Ansaldo Artillery Plants
+	
+	focus = {
+		id = ITA_ansaldo_mils
+		icon = GFX_SOV_degtyaryov_plant-45144
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 14
+		y = 5
+		prerequisite = { focus = ITA_procurement }
+		completion_reward = {
+			37 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##FIAT Machine Gun Contracts
+	
+	focus = {
+		id = ITA_fiat_mils
+		icon = GFX_SOV_degtyaryov_plant-45144
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 16
+		y = 5
+		prerequisite = { focus = ITA_procurement }
+		completion_reward = {
+			42 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Mass-Produce the Carcano Rifle
+	
+	focus = {
+		id = ITA_rifle_mils
+		icon = GFX_SOV_degtyaryov_plant-45144
+		cost = 5
+		x = 18
+		y = 5
+		prerequisite = { focus = ITA_procurement }
+		completion_reward = {
+			36 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Expand State Arsenals
+	
+	focus = {
+		id = ITA_state_arsenals
+		icon = GFX_focus_generic_industry_2
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 16
+		y = 6
+		prerequisite = { focus=ITA_rifle_mils }
+		prerequisite = { focus=ITA_fiat_mils }
+		prerequisite = { focus=ITA_ansaldo_mils }
+		completion_reward = {
+			33 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Address Ammunition Shortages
+	
+	focus = {
+		id = ITA_address_shortages
+		icon = GFX_focus_generic_modernize_industry
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 16
+		y = 7
+		prerequisite = { focus = ITA_state_arsenals }
+		available = { has_war=yes }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_economy2
+				add_idea = ITA_economy3
+			}
+			add_tech_bonus={
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry3
+				name=industrial_bonus bonus=1.0 uses=1
+			}
+		}
+	}
+	
+	##Mobilize Northern Industry
+	
+	focus = {
+		id = ITA_mobilize_north
+		icon = GFX_focus_generic_full_employment
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 15
+		y = 8
+		prerequisite = { focus = ITA_address_shortages }
+		completion_reward = {
+			37 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Mobilize Southern Industry
+	
+	focus = {
+		id = ITA_mobilize_south
+		icon = GFX_GER_chemical_industry_expansion-73665
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 17
+		y = 8
+		prerequisite = { focus = ITA_address_shortages }
+		completion_reward = {
+			#swap_ideas
+			31 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			30 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Italian War Economy
+	
+	focus = {
+		id = ITA_wartime_economy
+		icon = GFX_focus_generic_industry_3
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 16
+		y = 9
+		prerequisite = { focus = ITA_mobilize_north }
+		prerequisite = { focus = ITA_mobilize_south }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_economy3
+				add_idea = ITA_economy4
+			}
+		}
+	}
+
+	###############
+	#ENTENTE
+	###############
+	
+	##Pact with the Entente
+	
+	focus = {
+		id = ITA_switch_sides
+		icon = GFX_SOV_reformation_of_the_empire-45115
+		ai_will_do = { factor = 1 }
+		cost = 3
+		x = 9
+		y = 5
+		available = { date > 1914.01.01 }
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	##Second Special Squadron
+	
+	focus = {
+		id = ITA_japan_navy
+		#icon = GFX_focus_jap_pacific_guardian
+		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 6
+		y = 6
+		prerequisite = { focus = ITA_switch_sides }
+		completion_reward = {
+			#TODO: Adds Japanese Admiral Kozo Sato, Fleet Protector, Destroyer Leader
+			add_ideas = { ita_japan_navy_bonus }
+			every_country={
+				limit={
+					NOT={tag=ITA}
+					is_entente_country=yes
+				}
+				add_ideas = { ita_japan_navy_bonus }
+			}
+		}
+	}
+	
+	##Japanese Naval Infantry Detachments
+	
+	focus = {
+		id = ITA_japan_marines
+		icon = GFX_focus_generic_japanese_imperial_glory
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 6
+		y = 7
+		prerequisite = { focus = ITA_japan_navy }
+		completion_reward = {
+			ITA = {
+				add_corps_commander_role = {
+					character = JAP_kamio_mitsuomi
+					traits = { naval_invader urban_assault_specialist fortress_buster expert_improviser trait_engineer jungle_rat }
+					skill = 6
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 7
+				}
+			}
+			add_ideas = { ITA_japan_marines_bonus }
+			every_country={
+				limit={
+					NOT={tag=ITA}
+					is_entente_country=yes
+				}
+				add_ideas = { ITA_japan_marines_bonus }
+			}
+		}
+	}
+	
+	##Recruit Enemy POWs
+	
+	focus = {
+		id = ITA_pow_manpower
+		icon = GFX_focus_generic_italy_propaganda
+		ai_will_do = { factor = 1 }
+		cost = 3
+		x = 8
+		y = 6
+		prerequisite = { focus = ITA_switch_sides }
+		available = { has_war = yes }
+		completion_reward = {
+			add_manpower = 250000
+		}
+	}
+	
+	##Secure Albania
+	
+	focus = {
+		id = ITA_albanian_front
+		icon = GFX_focus_ITA_albanian_irredentism
+		ai_will_do = { factor = 1 }
+		cost = 3
+		x = 9
+		y = 8
+		prerequisite = { focus = ITA_switch_sides }
+		available = { date > 1915.09.01 }
+		completion_reward = {
+			annex_country = {
+				target = ALB
+				transfer_troops = no
+			}
+		}
+	}
+	
+	##Aid for Serbia
+	
+	focus = {
+		id = ITA_aid_serbia
+		icon = GFX_SOV_support_serbia-45156
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 10
+		y = 6
+		prerequisite = { focus = ITA_switch_sides }
+		available = { date > 1914.08.01 }
+		completion_reward = {
+			if = {
+				limit = {
+					SER = {
+						is_ai = no
+						exists = yes
+					}
+				}
+				SER = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			else = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	
+	##British Loans
+	
+	focus = {
+		id = ITA_british_loans
+		icon = GFX_focus_mex_privatisation
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 12
+		y = 6
+		prerequisite = { focus = ITA_switch_sides }
+		completion_reward = {
+			add_ideas = {
+				ITA_british_loans_bonus
+			}
+		}
+	}
+	
+	##French Innovation
+	
+	focus = {
+		id = ITA_french_innovation
+		icon = GFX_focus_generic_university_3
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 11
+		y = 7
+		prerequisite = { focus = ITA_british_loans }
+		completion_reward = {
+			add_ideas = {
+				ITA_french_innovation_bonus
+			}
+		}
+	}
+	
+	##Mutual Industrial Assistance
+	
+	focus = {
+		id = ITA_entente_industry
+		icon = GFX_focus_ARG_join_the_allies
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 13
+		y = 7
+		prerequisite = { focus = ITA_british_loans }
+		completion_reward = {
+			37 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			8 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	############
+	#POST CAP WHITE PEACE - TODO
+	############
+	
+	##Seek a Separate Peace
+	
+	#focus = {
+		#id = ITA_separate_peace
+		#icon = GFX_focus_CZE_german_puppet
+		#icon = GFX_focus_NOR_broken_gun_policies
+		#ai_will_do = { factor = 1 }
+		#cost = 1
+		#x = 10
+		#y = 10
+		#mutually_exclusive = { focus = ITA_no_surrender }
+		#available >50% surrender progress
+		#completion_reward = {
+		#Central Powers cannot refuse; you white peace out and can send 12 volunteers with standard eco debuff
+		#Germany gets Lombardy, Piedmont, Emilia Romagna; Austria gets Veneto; Ottomans get Dodecanese and any parts of Libya they have >1% control over; Senussi Order (neutral) gets rest of Libya
+		#}
+	#}
+	
+	###########
+	#POST CAP FIGHT ON - TODO
+	###########
+	
+	##No Surrender!
+	
+	#focus = {
+		#id = ITA_no_surrender
+		#icon = GFX_focus_ITA_italian_flag
+		#ai_will_do = { factor = 1 }
+		#cost = 1
+		#x = 12
+		#y = 10
+		#mutually_exclusive = { focus = ITA_separate_peace }
+		#available >50% surrender progress
+		#completion_reward = {
+		#}
+	#}
+	
+	##Every Italian Must Do His Duty
+	
+	#focus = {
+		#id = ITA_every_italian
+		#Every Italian must do his duty
+		#icon = GFX_focus_generic_public_works
+		#ai_will_do = { factor = 1 }
+		#cost = 3
+		#x = 13
+		#y = 11
+		#prerequisite = { focus = ITA_no_surrender }
+		#completion_reward = {
+		#}
+	#}
+	
+	###############
+	#ARMY
+	###############
+	
+	##Regio Esercito
+	
+	focus = {
+		id = ITA_army_basic
+		icon = GFX_focus_ETH_peacekeeping_forces
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 23
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		completion_reward = {
+			add_command_power = 25
+			army_experience = 50
+		}
+	}
+	
+	##Bersaglieri
+	
+	focus = {
+		id = ITA_army_bersaglieri
+		icon = GFX_bicycle_infantry
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 21
+		y = 2
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus={
+				name=support_bonus
+				bonus = 1
+				uses = 2
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_recon4
+				technology = tech_sniper
+				technology = tech_sniper2
+				technology = tech_sniper3
+				technology = tech_sniper4
+			}
+		}
+	}
+	
+	##Alpini
+	
+	focus = {
+		id = ITA_army_alpini
+		icon = GFX_generic_mountain_warfare
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 23
+		y = 2
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = alpini_bonus
+				bonus = 2
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
+	}
+	
+	##Arditi
+	
+	focus = {
+		id = ITA_army_arditi
+		icon = GFX_focus_ita_arditi
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 22
+		y = 3
+		prerequisite = {
+			focus = ITA_army_bersaglieri
+			focus = ITA_army_alpini
+		}
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = arditi_bonus
+				bonus = 2
+				uses = 1
+				category = stormtrooper_tech
+			}
+		}
+	}
+	
+	##Recall Retired Officers
+	
+	focus = {
+		id = ITA_army_retired_officers
+		icon = GFX_goal_generic_army_doctrines
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 24
+		y = 3
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+	
+	##Patriotic Recruitment Drive
+	
+	focus = {
+		id = ITA_army_recruitment
+		icon = GFX_focus_ETH_invite_italian_settlers
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 25
+		y = 2
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			add_ideas = {
+				military_youth_focus
+			}
+		}
+	}
+	
+	##Harsh Discipline
+	
+	focus = {
+		id = ITA_army_police
+		icon = GFX_focus_SOV_penal_battalions
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 26
+		y = 3
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			add_tech_bonus={
+				bonus=1 uses=4     
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_military_police4
+				technology = tech_wardog
+				technology = tech_wardog2
+				technology = tech_wardog3
+				technology = tech_wardog4
+			}
+		}
+	}
+	
+	##Lancia 1ZM
+	
+	focus = {
+		id = ITA_army_armored_cars
+		icon = GFX_focus_BRA_joint_italian_motor_development
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 27
+		y = 2
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			add_tech_bonus = {
+				name=armored_car_bonus bonus=1 uses=2
+				technology = ww1_armored_car_2
+				technology = ww1_armored_car_3
+				technology = ww1_armored_car_4
+				technology = ww1_tachanka
+			}
+		}
+	}
+	
+	##Sapper Regiments
+	
+	focus = {
+		id = ITA_army_sappers
+		icon = GFX_goal_generic_construction2
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 28
+		y = 3
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			add_tech_bonus={
+				name=engineer_bonus bonus=2 uses=1
+				technology = tech_engineers3
+				technology = tech_engineers4
+			}
+		}
+	}
+	
+	##Improved Field Medicine
+	
+	focus = {
+		id = ITA_army_medicine
+		icon = GFX_focus_generic_field_hostpital
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 29
+		y = 2
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			add_tech_bonus = {
+				name=hospital_bonus bonus=1 uses=2
+				technology = ww1_ambulance2
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_field_hospital4
+			}
+		}
+	}
+	
+	##Equipment Commission
+	
+	focus = {
+		id = ITA_army_research_slot
+		icon = GFX_AUS_literacy_campaign-46521
+		#icon = GFX_focus_NORDIC_dem_research
+		#icon = GFX_focus_NORDIC_com_research
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 20
+		y = 3
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	##Breda Modello 30
+	
+	focus = {
+		id = ITA_army_rifle
+		#icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_AUS_standschtze_hellriegel_m1915-46523
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 19
+		y = 4
+		prerequisite = { focus = ITA_army_research_slot }
+		completion_reward = {
+			add_tech_bonus = {
+				name = rifle_bonus bonus = 2 uses = 1
+				technology = ww1infantry_weapons3
+				technology = ww1_infantry_equip3
+				technology = infantry_weapons1
+			}
+		}
+	}
+	
+	##Cannone da 65/17
+	
+	focus = {
+		id = ITA_army_field_arty
+		icon = GFX_focus_SMB_mountain_guns
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 21
+		y = 4
+		prerequisite = { focus = ITA_army_research_slot }
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 2
+				uses = 2
+				technology = bonus_artillery2
+				technology = bonus_artillery3 
+				technology = standard_artillery
+			}
+		}
+	}
+	
+	##Cannone da 75/27 A.V.
+	
+	focus = {
+		id = ITA_army_antiair
+		icon = GFX_TUR_air_defense-96240
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 23
+		y = 4
+		prerequisite = { focus = ITA_army_research_slot }
+		completion_reward = {
+			add_tech_bonus={
+				name=antiair_bonus bonus=1 uses=3
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+			}
+		}
+	}
+	
+	##Modernize Field Communications
+	
+	focus = {
+		id = ITA_army_communications
+		icon = GFX_goal_generic_radar
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 25
+		y = 4
+		prerequisite = { focus = ITA_army_research_slot }
+		completion_reward = {
+			add_tech_bonus={
+				name=signals_bonus bonus=1 uses=2
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_signal_company4
+			}
+			add_tech_bonus = {
+				name=radio_bonus bonus=1 uses=2
+				technology = radio
+				technology = supertech1
+				technology = radio2
+				technology = supertech2
+			}
+		}
+	}
+	
+	##FIAT 2000
+	
+	focus = {
+		id = ITA_army_tank
+		icon = GFX_goal_generic_build_tank
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 27
+		y = 4
+		prerequisite = { focus = ITA_army_research_slot }
+		prerequisite = { focus = ITA_army_armored_cars }
+		completion_reward = {
+			add_tech_bonus={
+				name=tank_bonus bonus=1 uses=1
+				category = armor
+			}
+		}
+	}
+	
+	#############
+	#FORTIFICATION
+	#############
+	
+	##North Alpine Fortification Effort
+	
+	focus = {
+		id = ITA_alpine_trenches
+		icon = GFX_goal_generic_construct_military
+		#icon = GFX_goal_generic_defence
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 28
+		y = 6
+		prerequisite = { focus = ITA_army_sappers }
+		completion_reward = {
+			39 = {
+				add_building_construction = {
+					type = bunker level = 1 province = 19477 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 19477 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 19491 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 19491 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15286 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15286 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15198 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15198 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 5540 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 5540 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 6782 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 6782 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15161 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15161 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15159 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15159 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15158 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15158 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 1313 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 1313 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 3113 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 3113 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 10941 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 10941 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 11029 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 11029 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15279 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15279 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 4171 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 4171 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15334 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15334 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 3969 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 3969 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 7350 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 7350 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15304 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15304 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 30 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 30 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 15248 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15248 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 10701 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 10701 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 20266 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 20266 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 20262 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 20262 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 3479 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 3479 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 7299 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 7299 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 1 province = 19475 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 19475 instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Secondary Defensive Lines
+	
+	focus = {
+		id = ITA_fallback_lines
+		#icon = GFX_focus_SWI_fortify_border_with_italy
+		icon = GFX_focus_SWE_hedgehog_defense
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 28
+		y = 7
+		prerequisite = { focus = ITA_alpine_trenches }
+		completion_reward = {
+			42 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 5545 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 5545 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 20162 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 20162 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15395 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15395 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 20149 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 20149 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15433 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15433 instant_build = yes
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 4090 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 4090 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15457 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15457 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 20256 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 20256 instant_build = yes
+				}
+			}
+			33 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 19484 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 19484 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 8587 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 8587 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15191 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15191 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15974 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15974 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 19485 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 19485 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15895 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15895 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15884 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15884 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 15868 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 15868 instant_build = yes
+				}
+			}
+			32 = {
+				add_building_construction = {
+					type = bunker level = 2 province = 378 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 378 instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker level = 2 province = 10990 instant_build = yes
+				}
+				add_building_construction = {
+					type = trench level = 2 province = 10990 instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#####################
+	#ARMY REFORM CADORNA
+	#####################
+	
+	##Continue the Human Wave Offensives
+	
+	focus = {
+		id = ITA_army_attack_1
+		icon = GFX_focus_ITA_cadorna
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 22
+		y = 6
+		prerequisite = {}
+		available = { date > 1914.11.01 }
+		mutually_exclusive = { focus = ITA_army_defense_1 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_army_starting
+				add_idea = ITA_offensive_army_1
+			}
+		}
+	}
+	
+	##Introduce Decimation
+	
+	focus = {
+		id = ITA_army_attack_2
+		icon = GFX_focus_generic_total_war
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 21
+		y = 7
+		prerequisite = { focus = ITA_army_attack_1 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_offensive_army_1
+				add_idea = ITA_offensive_army_2
+			}
+		}
+	}
+	
+	##Victory At All Costs
+	
+	focus = {
+		id = ITA_army_attack_3
+		icon = GFX_focus_NORDIC_com_selector_army
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 21
+		y = 8
+		prerequisite = { focus = ITA_army_attack_2 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_offensive_army_2
+				add_idea = ITA_offensive_army_3
+			}
+			army_experience = 50
+		}
+	}
+	
+	###################
+	#ARMY REFORM DIAZ
+	###################
+	
+	##Appoint Diaz Supreme Commander
+	
+	focus = {
+		id = ITA_army_defense_1
+		icon = GFX_AUS_1913_acts_of_protection-45143
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 24
+		y = 6
+		prerequisite = {}
+		available = { date > 1914.11.01 }
+		mutually_exclusive = { focus = ITA_army_attack_1 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_army_starting
+				add_idea = ITA_defensive_army_1
+			}
+		}
+	}
+	
+	##Increase Soldiers Benefits
+	
+	focus = {
+		id = ITA_army_defense_2
+		icon = GFX_FRA_threeyear_law-69197
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 25
+		y = 7
+		prerequisite = { focus = ITA_army_defense_1 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_defensive_army_1
+				add_idea = ITA_defensive_army_2
+			}
+		}
+	}
+	
+	##Defensive Focused Army
+	
+	focus = {
+		id = ITA_army_defense_3
+		icon = GFX_focus_fortification
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 25
+		y = 8
+		prerequisite = { focus = ITA_army_defense_2 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_defensive_army_2
+				add_idea = ITA_defensive_army_3
+			}
+			army_experience = 50
+		}
+	}
+	
+	###################
+	#NAVY DOESNT MATTER
+	###################
+	
+	##Prioritize Army Funding
+	
+	focus = {
+		id = ITA_shitty_navy_1
+		icon = GFX_FRA_further_defund_the_navy-75816
+		icon = GFX_focus_generic_reorient_production
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 31
+		y = 2
+		prerequisite = { focus = ITA_expand_regia_marina }
+		#mutually_exclusive = { focus = ITA_expand_regia_marina }
+		completion_reward = {
+			29 = {
+				remove_building = {
+					type = dockyard
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			30 = {
+				remove_building = {
+					type = dockyard
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Repurpose Coastal Defense Guns
+	
+	focus = {
+		id = ITA_shitty_navy_2
+		icon = GFX_focus_FIN_coastal_defense
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 33
+		y = 2
+		prerequisite = {focus=ITA_expand_regia_marina}
+		mutually_exclusive={focus=ITA_coastal_forts}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_lacking_heavy_guns
+				add_idea = ITA_more_heavy_guns
+			}
+		}
+	}
+	
+	##Zero Out Naval Budget
+	
+	focus = {
+		id = ITA_shitty_navy_3
+		icon = GFX_focus_generic_reorient_production
+		ai_will_do = { factor = 1 }
+		cost = 5
+		relative_position_id=ITA_shitty_navy_1
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_shitty_navy_1 }
+		completion_reward = {
+			add_ideas = { ITA_abandoned_navy }
+			37 = {
+				remove_building = {
+					type = dockyard
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			34 = {
+				remove_building = {
+					type = dockyard
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			31 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	###############
+	#NAVY LARP
+	###############
+	
+	##Regia Marina Expansion
+	
+	focus = {
+		id = ITA_expand_regia_marina
+		#icon = GFX_focus_NORDIC_dem_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 34
+		y = 1
+		prerequisite = { focus = ITA_giolittan_era }
+		#mutually_exclusive = { focus = ITA_shitty_navy_1 }
+		completion_reward = {
+			navy_experience = 500
+			31 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	##Dominate the Adriatic
+	
+	focus = {
+		id = ITA_dominate_adriatic
+		icon = GFX_focus_SWE_coastal_support
+		ai_will_do = { factor = 1 }
+		cost = 3
+		relative_position_id=ITA_expand_regia_marina
+		x = 3
+		y = 1
+		prerequisite = { focus = ITA_expand_regia_marina }
+		completion_reward = {
+			29 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name=ship_bonus bonus=1 uses=3
+				category = naval_equipment
+			}
+		}
+	}
+	
+	##Vickers-Terni Contracts
+	
+	focus = {
+		id = ITA_vickers_terni
+		icon = GFX_focus_generic_refit_civilian_ships
+		ai_will_do = { factor = 1 }
+		cost = 2
+		relative_position_id=ITA_dominate_adriatic
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_dominate_adriatic }
+		completion_reward = {
+			37 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name=bb_bonus bonus=2 uses=1
+				category = bb_tech
+				category = bc_tech
+			}
+		}
+	}
+	
+	##Orlando Brothers Shipyards
+	
+	focus = {
+		id = ITA_orlando_brothers
+		icon = GFX_focus_generic_destroyer
+		ai_will_do = { factor = 1 }
+		cost = 2
+		relative_position_id=ITA_dominate_adriatic
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_dominate_adriatic }
+		completion_reward = {
+			32 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name=light_hull_bonus bonus=2 uses=1
+				category = ca_tech
+				category = cl_tech
+				category = dd_tech
+			}
+		}
+	}
+	
+	##FIAT-San Giorgio Submarine Yard
+	
+	focus = {
+		id = ITA_fiat_navy
+		icon = GFX_goal_generic_navy_submarine
+		ai_will_do = { factor = 1 }
+		cost = 2
+		relative_position_id=ITA_dominate_adriatic
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_dominate_adriatic }
+		completion_reward = {
+			30 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name=sub_bonus bonus=2 uses=1
+				category = ss_tech
+			}
+		}
+	}
+	
+	##Strengthen Coastal Defenses
+	
+	focus = {
+		id = ITA_coastal_forts
+		icon = GFX_focus_generic_coastal_fort
+		ai_will_do = { factor = 1 }
+		cost = 5
+		relative_position_id=ITA_expand_regia_marina
+		x = 1
+		y = 1
+		prerequisite = { focus=ITA_expand_regia_marina }
+		mutually_exclusive={focus=ITA_shitty_navy_2}
+		completion_reward = {
+			39 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 11661 instant_build = yes
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 7893 instant_build = yes
+				}
+			}
+			37 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 15555 instant_build = yes
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 10029 instant_build = yes
+				}
+			}
+			32 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 7047 instant_build = yes
+				}
+			}
+			33 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 19484 instant_build = yes
+				}
+			}
+			31 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 5613 instant_build = yes
+				}
+			}
+			30 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 16166 instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 16279 instant_build = yes
+				}
+			}
+			29 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 2961 instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 10239 instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 16626 instant_build = yes
+				}
+			}
+			28 = {
+				add_building_construction = {
+					type = coastal_bunker level = 2 province = 11238 instant_build = yes
+				}
+			}
+		}
+	}
+	
+	###############
+	#AIR
+	###############
+	
+	##Corpo Aeronautico Militaire
+	
+	focus = {
+		id = ITA_air_corps
+		icon = GFX_focus_BRA_italian_aircraft_development
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 29
+		y = 5
+		prerequisite = { focus = ITA_airfields }
+		completion_reward = {
+			add_tech_bonus={
+				technology = ww1_fighter1
+				name=scout_plane bonus=2.0 uses=1
+			}
+			air_experience = 100
+		}
+	}
+	
+	##Caproni Long-Range Bombers
+	
+	focus = {
+		id = ITA_caproni_bombers
+		icon = GFX_goal_generic_ww1_air_bomber
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 31
+		y = 5
+		prerequisite = { focus = ITA_airfields }
+		completion_reward = {
+			add_tech_bonus = {
+				name=bomber_bonus
+				bonus=2
+				uses=2
+				technology = ww1_bomber1
+				technology = ww1_bomber2
+				technology = ww1_bomber3
+			}
+		}
+	}
+	
+	##Military Airfields
+	
+	focus = {
+		id = ITA_airfields
+		icon = GFX_goal_generic_construction
+		ai_will_do = { factor = 1 }
+		cost = 1
+		x = 30
+		y = 4
+		prerequisite = { focus = ITA_army_basic }
+		completion_reward = {
+			42 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			33 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			31 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			29 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			28 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#################################################
+	#GENERIC ARMY TREE
+	#################################################
+focus = {
+		id = ITA_ww1_army_effort_1
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_1 }
+		cost = 5
+		x = 34
+		y = 5
+		}
+focus = {
+		id = ITA_ww1_equipment_effort_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_1 }
+		cost = 5
+		x = 36
+		y = 5
+	}
+focus = {
+		id = ITA_ww1_artillery_effort_1
+		prerequisite = { }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_1 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_1 }
+		cost = 5
+		x = 38
+		y = 5
+	}
+focus = {
+		id = ITA_ww1_aircraftprod_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_1 }
+		cost = 5
+		x = 40
+		y = 5
+	}
+focus = {
+		id = ITA_ww1_large_navy_1
+		prerequisite = {  }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_1 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_1 }
+		cost = 5
+		x = 42
+		y = 5
+		
+		}
+
+	##############################################################################
+
+focus = {
+		id = ITA_ww1_army_effort_2
+		prerequisite = { focus=ITA_ww1_army_effort_1
+		 focus=ITA_ww1_equipment_effort_1
+		 focus=ITA_ww1_artillery_effort_1
+		 focus=ITA_ww1_aircraftprod_1
+		 focus=ITA_ww1_large_navy_1}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_2 }
+		cost = 5
+		x = 34
+		y = 6
+		}
+focus = {
+		id = ITA_ww1_equipment_effort_2
+		prerequisite = { focus=ITA_ww1_army_effort_1
+		 focus=ITA_ww1_equipment_effort_1
+		 focus=ITA_ww1_artillery_effort_1
+		 focus=ITA_ww1_aircraftprod_1
+		 focus=ITA_ww1_large_navy_1}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_2}
+		cost = 5
+		x = 36
+		y = 6
+	}
+focus = {
+		id = ITA_ww1_artillery_effort_2
+		prerequisite = { focus=ITA_ww1_army_effort_1
+		 focus=ITA_ww1_equipment_effort_1
+		 focus=ITA_ww1_artillery_effort_1
+		 focus=ITA_ww1_aircraftprod_1
+		 focus=ITA_ww1_large_navy_1}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_2 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_2 }
+		cost = 5
+		x = 38
+		y = 6
+	}
+focus = {
+		id = ITA_ww1_aircraftprod_2
+		prerequisite = { focus=ITA_ww1_army_effort_1
+		focus=ITA_ww1_equipment_effort_1
+		focus=ITA_ww1_artillery_effort_1
+		focus=ITA_ww1_aircraftprod_1
+		focus=ITA_ww1_large_navy_1}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_2 }
+		cost = 5
+		x = 40
+		y = 6
+	}
+focus = {
+		id = ITA_ww1_large_navy_2
+		prerequisite = { focus=ITA_ww1_army_effort_1
+		focus=ITA_ww1_equipment_effort_1
+		focus=ITA_ww1_artillery_effort_1
+		focus=ITA_ww1_aircraftprod_1
+		focus=ITA_ww1_large_navy_1}
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_2 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_2 }
+		cost = 5
+		x = 42
+		y = 6
+	}
+	################################################################
+
+focus = {
+		id = ITA_ww1_army_effort_3
+		prerequisite = { focus=ITA_ww1_army_effort_2
+		 focus=ITA_ww1_equipment_effort_2
+		 focus=ITA_ww1_artillery_effort_2
+		 focus=ITA_ww1_aircraftprod_2
+		 focus=ITA_ww1_large_navy_2}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_3 }
+		cost = 5
+		x = 34
+		y = 7
+		}
+focus = {
+		id = ITA_ww1_equipment_effort_3
+		prerequisite = { focus=ITA_ww1_army_effort_2
+		 focus=ITA_ww1_equipment_effort_2
+		 focus=ITA_ww1_artillery_effort_2
+		 focus=ITA_ww1_aircraftprod_2
+		 focus=ITA_ww1_large_navy_2}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_3}
+		cost = 5
+		x = 36
+		y = 7
+	}
+focus = {
+		id = ITA_ww1_artillery_effort_3
+		prerequisite = { focus=ITA_ww1_army_effort_2
+		 focus=ITA_ww1_equipment_effort_2
+		 focus=ITA_ww1_artillery_effort_2
+		 focus=ITA_ww1_aircraftprod_2
+		 focus=ITA_ww1_large_navy_2}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_3 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_3 }
+		cost = 5
+		x = 38
+		y = 7
+	}
+focus = {
+		id = ITA_ww1_aircraftprod_3
+		prerequisite = { focus=ITA_ww1_army_effort_2
+		focus=ITA_ww1_equipment_effort_2
+		focus=ITA_ww1_artillery_effort_2
+		focus=ITA_ww1_aircraftprod_2
+		focus=ITA_ww1_large_navy_2}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_3 }
+		cost = 5
+		x = 40
+		y = 7
+	}
+focus = {
+		id = ITA_ww1_large_navy_3
+		prerequisite = { focus=ITA_ww1_army_effort_2
+		focus=ITA_ww1_equipment_effort_2
+		focus=ITA_ww1_artillery_effort_2
+		focus=ITA_ww1_aircraftprod_2
+		focus=ITA_ww1_large_navy_2 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_3 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_3 }
+		cost = 5
+		x = 42
+		y = 7
+	}
+	################################################################
+
+focus = {
+		id = ITA_ww1_army_effort_4
+		prerequisite = { focus=ITA_ww1_army_effort_3
+		 focus=ITA_ww1_equipment_effort_3
+		 focus=ITA_ww1_artillery_effort_3
+		 focus=ITA_ww1_aircraftprod_3
+		 focus=ITA_ww1_large_navy_3}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_4 }
+		cost = 5
+		x = 34
+		y = 8
+		}
+focus = {
+		id = ITA_ww1_equipment_effort_4
+		prerequisite = { focus=ITA_ww1_army_effort_3
+		 focus=ITA_ww1_equipment_effort_3
+		 focus=ITA_ww1_artillery_effort_3
+		 focus=ITA_ww1_aircraftprod_3
+		 focus=ITA_ww1_large_navy_3}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_4 }
+		cost = 5
+		x = 36
+		y = 8
+	}
+focus = {
+		id = ITA_ww1_artillery_effort_4
+		prerequisite = { focus=ITA_ww1_army_effort_3
+		 focus=ITA_ww1_equipment_effort_3
+		 focus=ITA_ww1_artillery_effort_3
+		 focus=ITA_ww1_aircraftprod_3
+		 focus=ITA_ww1_large_navy_3 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_4 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_4 }
+		cost = 5
+		x = 38
+		y = 8
+	}
+focus = {
+		id = ITA_ww1_aircraftprod_4
+		prerequisite = { focus=ITA_ww1_army_effort_3
+		focus=ITA_ww1_equipment_effort_3
+		focus=ITA_ww1_artillery_effort_3
+		focus=ITA_ww1_aircraftprod_3
+		focus=ITA_ww1_large_navy_3}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_4 }
+		cost = 5
+		x = 40
+		y = 8
+	}
+focus = {
+		id = ITA_ww1_large_navy_4
+		prerequisite = { focus=ITA_ww1_army_effort_3
+		focus=ITA_ww1_equipment_effort_3
+		focus=ITA_ww1_artillery_effort_3
+		focus=ITA_ww1_aircraftprod_3
+		focus=ITA_ww1_large_navy_3 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_4 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_4 }
+		cost = 5
+		x = 42
+		y = 8
+	}
+
+   ############################################################################
+ 	################################################################
+
+focus = {
+		id = ITA_ww1_army_effort_5
+		prerequisite = { focus=ITA_ww1_army_effort_4
+		 focus=ITA_ww1_equipment_effort_4
+		 focus=ITA_ww1_artillery_effort_4
+		 focus=ITA_ww1_aircraftprod_4
+		 focus=ITA_ww1_large_navy_4}
+		icon = GFX_FRA_horizon_blue_uniforms-69197
+		completion_reward = { army_experience = 50 }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_5 }
+		cost = 5
+		x = 34
+		y = 9
+		}
+focus = {
+		id = ITA_ww1_equipment_effort_5
+		prerequisite = { focus=ITA_ww1_army_effort_4
+		 focus=ITA_ww1_equipment_effort_4
+		 focus=ITA_ww1_artillery_effort_4
+		 focus=ITA_ww1_aircraftprod_4
+		 focus=ITA_ww1_large_navy_4}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=infantry_weapons} }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_5 }
+		cost = 5
+		x = 36
+		y = 9
+	}
+focus = {
+		id = ITA_ww1_artillery_effort_5
+		prerequisite = { focus=ITA_ww1_army_effort_4
+		 focus=ITA_ww1_equipment_effort_4
+		 focus=ITA_ww1_artillery_effort_4
+		 focus=ITA_ww1_aircraftprod_4
+		 focus=ITA_ww1_large_navy_4 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=1 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_5 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_5 }
+		cost = 5
+		x = 38
+		y = 9
+	}
+focus = {
+		id = ITA_ww1_aircraftprod_5
+		prerequisite = { focus=ITA_ww1_army_effort_4
+		focus=ITA_ww1_equipment_effort_4
+		focus=ITA_ww1_artillery_effort_4
+		focus=ITA_ww1_aircraftprod_4
+		focus=ITA_ww1_large_navy_4}
+		icon = GFX_goal_generic_air_production
+		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=1 uses=1 category=air_equipment } }
+		ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_large_navy_5 }
+		cost = 5
+		x = 40
+		y = 9
+	}
+focus = {
+		id = ITA_ww1_large_navy_5
+		prerequisite = { focus=ITA_ww1_army_effort_4
+		focus=ITA_ww1_equipment_effort_4
+		focus=ITA_ww1_artillery_effort_4
+		focus=ITA_ww1_aircraftprod_4
+		focus=ITA_ww1_large_navy_4 }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=1 uses=1 category=naval_doctrine } add_tech_bonus={ name=air_doc_bonus bonus=1 uses=1 category=air_doctrine }}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		mutually_exclusive = { focus = ITA_ww1_army_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_equipment_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_artillery_effort_5 }
+		mutually_exclusive = { focus = ITA_ww1_aircraftprod_5 }
+		cost = 5
+		x = 42
+		y = 9
+	}
+
+   ############################################################################
+focus = {
+		id = ITA_ww1_armor_effort_1
+		prerequisite = { focus=ITA_ww1_army_effort_5
+		focus=ITA_ww1_equipment_effort_5
+		focus=ITA_ww1_artillery_effort_5
+		focus=ITA_ww1_aircraftprod_5
+		focus=ITA_ww1_large_navy_5 }
+		icon = GFX_hoi4tgw_renaultft
+		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=1 uses=2 category=armor } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 38
+		y = 10
+	}
+
+} # END OF ITALY TREE

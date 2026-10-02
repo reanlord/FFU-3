@@ -1,0 +1,334 @@
+FFU_decisions = {
+	###For Austria
+	GER_no_player_POL={
+		icon = generic_operation
+		allowed = { original_tag = AUS }
+		visible = {
+			POL = { exists = yes }
+			date < 1911.2.1
+		}
+		available = { POL = { is_ai = yes } }
+		fire_only_once=yes
+		cost=0
+		complete_effect={
+			if={
+				limit={AUS={exists=yes}}
+				426={	#Rugen
+					remove_building={type=industrial_complex level=5}
+					remove_building={type=arms_factory level=5}
+				}
+				##More balanced to give it to Austria
+				103={	#Transdanubia
+					add_building_construction={type=industrial_complex level=3 instant_build=yes}
+					add_building_construction={type=arms_factory level=3 instant_build=yes}
+				}
+				105={	#Alfold
+					add_building_construction={type=industrial_complex level=2 instant_build=yes}
+					add_building_construction={type=arms_factory level=2 instant_build=yes}
+				}
+				AUS={
+					set_country_flag=pol_annexed_at_start
+				}
+			}
+			POL={
+				remove_state_core=426
+			}
+			GER={
+				annex_country = {
+					target = POL
+					transfer_troops = yes
+				}
+				add_state_core=426
+			}
+			hidden_effect={
+				426 = { set_state_category = tiny_island }
+			}
+		}
+	}
+	GER_annex_POL={
+		icon = generic_operation
+		allowed = { original_tag = AUS }
+		visible = {
+			POL = { exists = yes }
+			date > 1911.2.1
+		}
+		available = { POL = { is_ai = yes } }
+		fire_only_once=yes
+		cost=0
+		complete_effect={
+			426={
+				transfer_state_to = GER
+				add_core_of = GER
+			}
+			AUS={
+				annex_country = {
+					target = POL
+					transfer_troops = yes
+				}
+			}
+			hidden_effect={
+				426 = {
+					set_state_category = tiny_island
+					remove_core_of = POL
+				}
+			}
+		}
+	}
+}
+foreign_politics={
+	
+	##For Switzerland
+	##CP can't troll poland
+	POL_states_1={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=241 }
+				AUS={ has_full_control_of_state=241 }
+				BUL={ has_full_control_of_state=241 }
+				TUR={ has_full_control_of_state=241 }
+				POL={ has_full_control_of_state=241 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=241}
+		}
+	}
+	POL_states_2={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=271 }
+				AUS={ has_full_control_of_state=271 }
+				BUL={ has_full_control_of_state=271 }
+				TUR={ has_full_control_of_state=271 }
+				POL={ has_full_control_of_state=271 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=271}
+		}
+	}
+	POL_states_3={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=278 }
+				AUS={ has_full_control_of_state=278 }
+				BUL={ has_full_control_of_state=278 }
+				TUR={ has_full_control_of_state=278 }
+				POL={ has_full_control_of_state=278 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=278}
+		}
+	}
+	POL_states_4={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=279 }
+				AUS={ has_full_control_of_state=279 }
+				BUL={ has_full_control_of_state=279 }
+				TUR={ has_full_control_of_state=279 }
+				POL={ has_full_control_of_state=279 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=279}
+		}
+	}
+	POL_states_5={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=286 }
+				AUS={ has_full_control_of_state=286 }
+				BUL={ has_full_control_of_state=286 }
+				TUR={ has_full_control_of_state=286 }
+				POL={ has_full_control_of_state=286 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=286}
+		}
+	}
+	POL_states_6={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=287 }
+				AUS={ has_full_control_of_state=287 }
+				BUL={ has_full_control_of_state=287 }
+				TUR={ has_full_control_of_state=287 }
+				POL={ has_full_control_of_state=287 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=287}
+		}
+	}
+	POL_states_7={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=108 }
+				AUS={ has_full_control_of_state=108 }
+				BUL={ has_full_control_of_state=108 }
+				TUR={ has_full_control_of_state=108 }
+				POL={ has_full_control_of_state=108 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=108}
+		}
+	}
+	POL_states_8={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=109 }
+				AUS={ has_full_control_of_state=109 }
+				BUL={ has_full_control_of_state=109 }
+				TUR={ has_full_control_of_state=109 }
+				POL={ has_full_control_of_state=109 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=109}
+		}
+	}
+	POL_states_9={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=291 }
+				AUS={ has_full_control_of_state=291 }
+				BUL={ has_full_control_of_state=291 }
+				TUR={ has_full_control_of_state=291 }
+				POL={ has_full_control_of_state=291 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=291}
+		}
+	}
+	POL_states_10={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=290 }
+				AUS={ has_full_control_of_state=290 }
+				BUL={ has_full_control_of_state=290 }
+				TUR={ has_full_control_of_state=290 }
+				POL={ has_full_control_of_state=290 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=290}
+		}
+	}
+	POL_states_11={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=289 }
+				AUS={ has_full_control_of_state=289 }
+				BUL={ has_full_control_of_state=289 }
+				TUR={ has_full_control_of_state=289 }
+				POL={ has_full_control_of_state=289 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=289}
+		}
+	}
+	POL_states_12={
+		allowed = { tag = SWI }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			POL={exists=yes}
+			OR={
+				GER={ has_full_control_of_state=288 }
+				AUS={ has_full_control_of_state=288 }
+				BUL={ has_full_control_of_state=288 }
+				TUR={ has_full_control_of_state=288 }
+				POL={ has_full_control_of_state=288 }
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect={
+			POL={transfer_state=288}
+		}
+	}
+}

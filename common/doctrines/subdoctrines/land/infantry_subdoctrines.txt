@@ -1,0 +1,75 @@
+large_unit_tactics  = {
+    track = infantry
+    name = SUBDOCTRINE_LARGE_UNIT_TACTICS
+    description = SUBDOCTRINE_LARGE_UNIT_TACTICS_DESC
+    icon = GFX_doctrine_human_infantry_offensive_medium
+
+    xp_cost = 150
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+    }
+
+    # EFFECTS
+    effect = {
+    
+    }
+   
+    #OTHER BASE REWARDS
+    
+    category_all_infantry = {
+        breakthrough = 0.02
+    }
+
+    rewards = {
+        wide_trench_networks = {
+        category_all_infantry = {
+			default_morale = 0.02
+		}
+        category_light_infantry = {
+			default_morale = 0.02
+		}
+        }   
+        flexible_division_structures = {
+        #2
+        category_all_infantry = {
+			default_morale = 0.02
+		}
+		category_light_infantry = {
+			default_morale = 0.02
+			breakthrough = 0.02
+		}
+        }
+        unit_knowledge_sharing = {
+        #3
+        category_all_infantry = {
+			breakthrough = 0.05
+		}
+        category_light_infantry = {
+			breakthrough = 0.05
+		}
+        org_loss_when_moving = -0.1
+ 
+        }
+        large_front_offensive = {
+        #4
+            land_night_attack = 0.10
+            
+        }
+        motorization_initiative = {
+        #5
+           org_loss_when_moving = -0.1	
+		no_supply_grace = 12        }
+
+    }
+}
+

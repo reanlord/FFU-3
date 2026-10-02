@@ -1,0 +1,93 @@
+﻿l_english:
+
+ ###Country Stuff
+ ALB:0 "Albania"
+ ALB_DEF:0 "Albania"
+ ALB_ADJ:0 "Albanian"
+ ALB_fascism:0 "Albanian Empire"
+ ALB_fascism_DEF:0 "Albanian Empire"
+ ALB_fascism_ADJ:0 "Albanian"
+ ALB_communism:0 "Albanian Commune"
+ ALB_communism:0 "Albanian Commune"
+ ALB_communism_ADJ:0 "Albanian"
+ ALB_democratic:0 "Albanian Republic"
+ ALB_democratic_DEF:0 "Albanian Republic"
+ ALB_democratic_ADJ:0 "Albanian"
+ ALB_neutrality:0 "Albania"
+ ALB_neutrality_DEF:0 "Albania"
+ ALB_neutrality_ADJ:0 "Albanian"
+ ALB_fascism_party:0 "Ottoman Loyalists"
+ ALB_communism_party:0 "Revolutionary Committee"
+ ALB_democratic_party:0 "Popular Party"
+ ALB_neutrality_party:0 "Progressive Party"
+ 
+ ALB_VILAYET_neutrality:0 "Vilayet of Albania"
+ ALB_VILAYET_neutrality_DEF:0 "Vilayet of Albania"
+ ALB_VILAYET_neutrality_ADJ:0 "Albanian"
+ ALB_VILAYET_neutrality_party:0 "Ottoman Loyalists"
+ 
+ ALB_CENTRAL_neutrality:0 "Albanian State"
+ ALB_CENTRAL_neutrality_DEF:0 "Albanian State"
+ ALB_CENTRAL_neutrality_ADJ:0 "Albanian"
+ ALB_CENTRAL_neutrality_party:0 "Senate of Central Albania"
+ 
+ ALB_PRINCE_neutrality:0 "Principality of Albania"
+ ALB_PRINCE_neutrality_DEF:0 "Principality of Albania"
+ ALB_PRINCE_neutrality_ADJ:0 "Albanian"
+ ALB_PRINCE_neutrality_party:0 "Monarchists"
+ #ALB_PRINCE_neutrality_party:0 "House of Wied Loyalists"
+ 
+ ###Traits
+ 
+ ###Decisions
+ 
+ ###Ideas
+ ALB_government_start:0 "Internal Chaos"
+ ALB_economy_start:0 "Agrarian-Subsistence Economy"
+ ALB_army_start:0 "Rebellious Militias"
+ ALB_army_improved:0 "Unruly Militias"
+ ALB_army_foreign:0 "Foreign-Trained Army"
+ ALB_army_national:0 "National Army"
+ ALB_army_tribal:0 "Disciplined Tribal Militias"
+ 
+ ###Industrial Concern
+ 
+ ###Unique Focuses
+ 
+ ###Generic Focuses
+ ALB_ww1_army_effort_1:0 "Army Effort I"
+ ALB_ww1_army_effort_1_desc:0 ""
+ ALB_ww1_equipment_effort_1:0 "Equipment Effort I"
+ ALB_ww1_equipment_effort_1_desc:0 ""
+ ALB_ww1_artillery_effort_1:0 "Artillery Effort I"
+ ALB_ww1_artillery_effort_1_desc:0 ""
+ ALB_ww1_army_effort_2:0 "Army Effort II"
+ ALB_ww1_army_effort_2_desc:0 ""
+ ALB_ww1_equipment_effort_2:0 "Equipment Effort II"
+ ALB_ww1_equipment_effort_2_desc:0 ""
+ ALB_ww1_artillery_effort_2:0 "Artillery Effort II"
+ ALB_ww1_artillery_effort_2_desc:0 ""
+ ALB_ww1_army_effort_3:0 "Army Effort III"
+ ALB_ww1_army_effort_3_desc:0 ""
+ ALB_ww1_equipment_effort_3:0 "Equipment Effort III"
+ ALB_ww1_equipment_effort_3_desc:0 ""
+ ALB_ww1_artillery_effort_3:0 "Artillery Effort III"
+ ALB_ww1_artillery_effort_3_desc:0 ""
+ ALB_ww1_army_effort_4:0 "Army Effort IV"
+ ALB_ww1_army_effort_4_desc:0 ""
+ ALB_ww1_equipment_effort_4:0 "Equipment Effort IV"
+ ALB_ww1_equipment_effort_4_desc:0 ""
+ ALB_ww1_artillery_effort_4:0 "Artillery Effort IV"
+ ALB_ww1_artillery_effort_4_desc:0 ""
+ ALB_ww1_army_effort_5:0 "Army Effort V"
+ ALB_ww1_army_effort_5_desc:0 ""
+ ALB_ww1_equipment_effort_5:0 "Equipment Effort V"
+ ALB_ww1_equipment_effort_5_desc:0 ""
+ ALB_ww1_artillery_effort_5:0 "Artillery Effort V"
+ ALB_ww1_artillery_effort_5_desc:0 ""
+ ALB_ww1_armor_effort_1:0 "Armor Effort"
+ ALB_ww1_armor_effort_1_desc:0 ""
+ 
+ ###Country Flags
+ 
+ ###States Modifier

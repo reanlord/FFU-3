@@ -1,0 +1,146 @@
+faq_decisions = {
+
+	faq_generic6 = {	#FFU Basics
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = {}
+		visible = { always = yes }
+		fire_only_once = no
+		modifier = {}
+		complete_effect = {
+			country_event = ffu.2
+		}
+	}
+
+	faq_generic = {		#FAQ about Meta
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = {}
+		visible = { always = yes }
+		fire_only_once = no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.1
+		}
+	}
+
+	faq_navy = {	#FAQ about navy
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = { }
+		visible = { always=yes }
+		fire_only_once=no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.12
+		}
+	}
+
+	faq_generic2 = {	#FAQ about Offensives
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = {}
+		visible = { always = yes }
+		fire_only_once = no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.2
+		}
+	}
+
+ 	faq_generic3 = {	#FAQ about State of Levant
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = {}
+		visible = { always = yes }
+		fire_only_once = no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.3
+		}
+	}
+
+    faq_generic4 = {	#FAQ about the simulation of US participation
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = {}
+		visible = { always = yes }
+		fire_only_once = no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.4
+		}
+	}
+
+    faq_generic5 = {	#FAQ about the russian civil war
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = {}
+		visible = {	always = yes }
+		fire_only_once = no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.5
+		}
+	}
+
+	faq_balkan_wars = {
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = { }
+		visible = { always=yes }
+		fire_only_once=no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.7
+		}
+	}
+
+	faq_serbia = {	#FAQ about the Serbia rework
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = { }
+		visible = { always=yes }
+		fire_only_once = no
+		modifier = { }
+		complete_effect = {
+			country_event = faq_event_generic.8
+		}
+	}
+
+	faq_poland={
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = { }
+		visible = { always=yes }
+		fire_only_once=no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.11
+		}
+	}
+
+	faq_entente = {
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = { }
+		visible = { always=yes }
+		fire_only_once=no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.9
+		}
+	}
+
+	faq_central_powers = {
+		icon = GFX_decision_generic_decision
+		allowed = { is_playable_country = yes }
+		available = { }
+		visible = { always=yes }
+		fire_only_once=no
+		modifier = {}
+		complete_effect = {
+			country_event = faq_event_generic.10
+		}
+	}
+}

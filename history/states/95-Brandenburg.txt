@@ -1,0 +1,64 @@
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		42 700 2019 2103 2698 2834 3069 3242 4289 5027 6292 6420 6432 6922 8891 9469 10423 10871 11556 13706 13711 13746 13748 13751 13780 13787 13796 13816 13860 13871 13909 13916 19454 19455 19456 19457 19458 19459 19460 
+	}
+	manpower=7265029
+	buildings_max_level_factor=1.000
+	state_category = megalopolis
+	resources={
+		coal=12
+                steel=42
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 8
+			arms_factory = 10
+			industrial_complex = 7
+            19458 = {
+                landmark_berlin_reichstag = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
+		}
+		victory_points = {
+		19458 200
+		}
+		victory_points = {
+		19456 10
+		}
+		victory_points = {
+		19455 5
+		}
+		victory_points = {
+		19459 19
+		}
+		victory_points = {
+		6292 5
+		}
+		victory_points = {
+		2698 1
+		}
+		victory_points = {
+		5027 1
+		}
+		victory_points = {
+		13871 1
+		}
+		victory_points = {
+		13711 1
+		}
+		victory_points = {
+		700 1
+		}
+		victory_points = {
+		11556 1
+		}
+	}
+}

@@ -1,0 +1,1321 @@
+offensives = {
+
+SER_war_starting = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+	allowed = {
+		#original_tag = SER
+		always = no
+	}
+    available = {
+		has_war_with = AUS
+		NOT = {
+		has_idea = SER_austrian_invasion1
+		}
+		date > 1914.09.01
+		NOT = {
+			controls_state = 162
+		}
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = SER
+		NOT = {
+			controls_state = 162
+		}
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+	 custom_effect_tooltip = "EVENT_EFFECT_SERB1"
+	state_event = {
+		id = offensiveevents.80
+		days = 0
+	}
+	}
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+ENG_gallipoli_campaign={
+	icon = GFX_decision_generic_intelligence_operation
+	allowed={original_tag=ENG}
+	available={
+		has_war_with=TUR
+		TUR={NOT={has_idea=TUR_OFF}}
+		date>1915.1.1
+	}
+	fire_only_once=yes
+	cost=0
+	complete_effect={
+		add_timed_idea = { idea = ENG_gallipoli_campaign days = 120 }
+	}
+}
+
+RUS_offensive1 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = SOV
+        date > 1914.07.28
+        date < 1914.12.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    visible = {
+		original_tag = SOV
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = RUS_Off1
+            days = 90 # The duration of the idea in days
+        }
+		ROM = {
+			add_timed_idea = {
+				idea = RUS_Off1
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.1
+			days = 0
+		}
+	}
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+RUS_offensive2 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = SOV
+        date > 1915.01.01
+        date < 1915.10.01
+		NOT = { has_idea = RUS_Off1 }
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+		tag = SOV
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = RUS_Brusilov
+            days = 90 # The duration of the idea in days
+        }
+	ROM = {
+	    add_timed_idea = {
+            	idea = RUS_Brusilov
+            	days = 90 # The duration of the idea in days
+            }
+	}
+	state_event = {
+		id = offensiveevents.2
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+RUS_offensive3 = {
+	icon = GFX_decision_generic_intelligence_operation
+    available = {
+        tag = SOV
+        date > 1916.01.01
+		date < 1916.10.01
+    }
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+    visible = {
+		tag = SOV
+    }
+	cost = 0
+	fire_only_once = yes
+	#EFFECTS
+	complete_effect = {
+		add_timed_idea = {
+			idea = RUS_Kerensky
+			days = 90
+		}
+		ROM = {
+			add_timed_idea = {
+				idea = RUS_Kerensky
+				days = 90
+			}
+		}
+	}
+	
+}
+
+FRA_counteroffensive_1914 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = FRA }
+	available = {
+		date > 1914.10.01
+		date < 1915.03.01
+		OR = {
+			FRA = { NOT = { controls_state = 381 } }
+			FRA = { NOT = { controls_state = 60 } }
+			FRA = { NOT = { controls_state = 62 } }
+		}
+	}
+	fire_only_once = yes
+	days_re_enable = 180
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = FRA
+		date < 1915.03.02
+    }
+	cost = 0
+	
+	complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = FRA_counter_1914
+            days = 30 # The duration of the idea in days
+        }
+		ENG = {
+			add_timed_idea = {
+				idea = FRA_counter_1914
+				days = 30 # The duration of the idea in days
+			}
+		}
+		BEL = {
+			add_timed_idea = {
+				idea = FRA_counter_1914
+				days = 30 # The duration of the idea in days
+			}
+		}
+		SER = {
+			add_timed_idea = {
+				idea = FRA_counter_1914
+				days = 30 # The duration of the idea in days
+			}
+		}
+		state_event = {
+			id = offensiveevents.15
+			days = 0
+		}
+	}
+}
+
+FRA_offensive1 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = FRA }
+    available = {
+        date > 1915.03.01
+        date < 1915.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = FRA
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = FRA_Off1
+            days = 90 # The duration of the idea in days
+        }
+	ENG = {
+	    add_timed_idea = {
+            	idea = FRA_Off1
+            	days = 90 # The duration of the idea in days
+            }
+	}
+	BEL = {
+	    add_timed_idea = {
+            	idea = FRA_Off1
+            	days = 90 # The duration of the idea in days
+            }
+	}
+	SER = {
+	    add_timed_idea = {
+            	idea = FRA_Off1
+            	days = 90 # The duration of the idea in days
+            }
+	}
+			state_event = {
+		id = offensiveevents.3
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+FRA_offensive2 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = FRA }
+    available = {
+        date > 1916.03.01
+        date < 1916.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+		   tag = FRA
+        
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = FRA_Off2
+            days = 90 # The duration of the idea in days
+        }
+	ENG = {
+	    add_timed_idea = {
+            	idea = FRA_Off2
+            	days = 90 # The duration of the idea in days
+            }
+	}
+	BEL = {
+	    add_timed_idea = {
+            	idea = FRA_Off2
+            	days = 90 # The duration of the idea in days
+            }
+	}
+	SER = {
+	    add_timed_idea = {
+            	idea = FRA_Off2
+            	days = 90 # The duration of the idea in days
+            }
+	}
+		state_event = {
+		id = offensiveevents.4
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+FRA_offensive3 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = FRA }
+    available = {
+        date > 1917.03.01
+        date < 1917.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+		   tag = FRA
+        
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = FRA_Off3
+            days = 90 # The duration of the idea in days
+        }
+		ENG = {
+			add_timed_idea = {
+					idea = FRA_Off3
+					days = 90 # The duration of the idea in days
+				}
+		}
+		BEL = {
+			add_timed_idea = {
+					idea = FRA_Off3
+					days = 90 # The duration of the idea in days
+				}
+		}
+		SER = {
+			add_timed_idea = {
+					idea = FRA_Off3
+					days = 90 # The duration of the idea in days
+				}
+		}
+		SOV = {
+			add_timed_idea = {
+				idea = FRA_Off3
+				days = 90 # The duration of the idea in days
+			}
+		}
+		state_event = {
+			id = offensiveevents.5
+			days = 0
+		}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+FRA_offensive4 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = FRA }
+    available = {
+        date > 1918.03.01
+		date < 1918.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+           tag = FRA
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = FRA_Off4
+            days = 120 # The duration of the idea in days
+        }
+	ENG = {
+	    add_timed_idea = {
+            	idea = FRA_Off4
+            	days = 120 # The duration of the idea in days
+            }
+	}
+	BEL = {
+	    add_timed_idea = {
+            	idea = FRA_Off4
+            	days = 120 # The duration of the idea in days
+            }
+	}
+	SER = {
+	    add_timed_idea = {
+            	idea = FRA_Off4
+            	days = 120 # The duration of the idea in days
+            }
+	}
+	SOV = {
+	    add_timed_idea = {
+            	idea = FRA_Off4
+            	days = 120 # The duration of the idea in days
+            }
+	}
+				state_event = {
+		id = offensiveevents.6
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+FRA_offensive_1919 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = {original_tag=FRA}
+    available = {
+        date > 1919.04.01
+		NOT = { has_idea = FRA_Off4 }
+    }
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+	cost = 0
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		custom_effect_tooltip = EVENT_EFFECT_YAY
+		every_country = {
+			limit = { is_entente_country=yes }
+			add_timed_idea = {
+				idea = FRA_Off_1919
+				days = 120
+			}
+		}
+	}
+}
+
+GER_offensive1 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+	allowed = {
+		always = no ##Automatic on schlieffen event now
+	}
+    available = {
+        tag = GER
+        date < 1914.09.01
+        has_war_with = BEL
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+			}
+			tag = GER
+       
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = GER_OffOuest1
+            days = 60 # The duration of the idea in days
+        }
+	}
+    
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+GER_offensive2 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1914.11.01
+        date < 1914.12.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = GER_OffOuest2
+            days = 60 # The duration of the idea in days
+        }
+						state_event = {
+		id = offensiveevents.7
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+GER_offensive3 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1915.04.01
+        date < 1915.11.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = GER_OffOuest3
+            days = 90 # The duration of the idea in days
+        }
+						state_event = {
+		id = offensiveevents.8
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+GER_offensive4 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1916.03.01
+        date < 1916.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = GER_OffOuest4
+            days = 90 # The duration of the idea in days
+        }
+						state_event = {
+		id = offensiveevents.9
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+GER_offensive5 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1917.06.01
+		date < 1918.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = GER_OffOuest5
+            days = 90 # The duration of the idea in days
+        }
+						state_event = {
+		id = offensiveevents.10
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+GER_tannenberg = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = GER }
+	available = {
+		date > 1914.07.28
+		date < 1915.01.01
+		OR = {
+			GER = { NOT = { controls_state = 23 } }
+			AUS = { NOT = { controls_state = 283 } }
+		}
+	}
+	fire_only_once = yes
+	cost = 0
+	
+	complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+        add_timed_idea = {
+            idea = GER_counter_tannenberg
+            days = 45 # The duration of the idea in days
+        }
+		AUS = {
+			add_timed_idea = {
+				idea = GER_counter_tannenberg
+				days = 45 # The duration of the idea in days
+			}
+		}
+		POL = {
+			add_timed_idea = {
+				idea = GER_counter_tannenberg
+				days = 45 # The duration of the idea in days
+			}
+		}
+		BUL = {
+			add_timed_idea = {
+				idea = GER_counter_tannenberg
+				days = 45 # The duration of the idea in days
+			}
+		}
+		state_event = {
+			id = offensiveevents.16
+			days = 0
+		}
+	}
+}
+
+GER_offensive6 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1915.02.01
+        date < 1915.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+		every_country = {
+			limit = {
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = GER_OffEst1
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.11
+			days = 0
+		}
+	}
+}
+
+GER_offensive7 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1916.03.01
+        date < 1916.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+		every_country = {
+			limit = {
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = GER_OffEst2
+				days = 90
+			}
+		}
+		state_event = {
+		id = offensiveevents.12
+		days = 0
+	}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+GER_offensive8 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = GER
+        date > 1917.03.01
+		date < 1917.10.01
+    }
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+    days_re_enable = 5 # The number of days before the event can be re-enabled. Not valid if fire_only_once is set to yes.
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        custom_effect_tooltip = "EVENT_EFFECT_YAY"
+		every_country = {
+			limit = {
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = GER_OffEst3
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.13
+			days = 0
+		}
+    }
+
+    # AI LOGIC FOR THIS EVENT
+
+    ai_will_do = { # Modifiers for the AI to decide when to execute the event.
+        factor = 0
+    }
+}
+
+GER_offensive_endsieg = { #Ultimativsieg
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = GER }
+	available = {
+		tag = GER
+		date > 1919.01.01
+		NOT = {
+			has_idea = GER_OffOuest5
+		}
+	}
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+        tag = GER
+    }
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		every_country = {
+			limit = {
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = GER_Endsieg
+				days = 120
+			}
+		}
+	}
+}
+
+##Austria
+AUS_counteroffensive = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = AUS }
+	available = {
+		has_war_with = ITA
+		OR = {
+			NOT = { controls_state = 71 }
+			NOT = { controls_state = 99 }
+		}
+		NOT = { has_idea = AUS_off_belluno }
+		NOT = { has_idea = AUS_off_asiago }
+		NOT = { has_idea = AUS_off_caporetto }
+		NOT = { has_idea = AUS_off_piave }
+		date < 1918.11.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		every_country={
+			limit={
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = AUS_counter_alps
+				days = 45
+			}
+		}
+		state_event = {
+			id = offensiveevents.17
+			days = 0
+		}
+	}
+}
+AUS_offensive_1915 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = AUS }
+	available = {
+		NOT = {
+			has_idea = AUS_counter_alps
+		}
+		date > 1915.3.1
+		date < 1915.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		every_country={
+			limit={
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = AUS_off_belluno
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.18
+			days = 0
+		}
+	}
+}
+AUS_offensive_1916 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = AUS }
+	available = {
+		NOT = {
+			has_idea = AUS_counter_alps
+		}
+		date > 1916.3.1
+		date < 1916.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		every_country={
+			limit={
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = AUS_off_asiago
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.19
+			days = 0
+		}
+	}
+}
+AUS_offensive_1917 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = AUS }
+	available = {
+		NOT = {
+			has_idea = AUS_counter_alps
+		}
+		date > 1917.3.1
+		date < 1917.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		every_country={
+			limit={
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = AUS_off_caporetto
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.20
+			days = 0
+		}
+	}
+}
+AUS_offensive_1918 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = AUS }
+	available = {
+		NOT = {
+			has_idea = AUS_counter_alps
+		}
+		date > 1918.3.1
+		date < 1918.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		every_country={
+			limit={
+				is_central_powers_country=yes
+				exists=yes
+			}
+			add_timed_idea = {
+				idea = AUS_off_piave
+				days = 90
+			}
+		}
+		state_event = {
+			id = offensiveevents.21
+			days = 0
+		}
+	}
+}
+
+##Italy
+ITA_counteroffensive = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = ITA }
+	available = {
+		has_war_with = AUS
+		OR = {
+			NOT = { controls_state = 42 }
+			NOT = { controls_state = 36 }
+		}
+		NOT = { has_idea = ITA_off_isonzo }
+		NOT = { has_idea = ITA_off_gorizia }
+		NOT = { has_idea = ITA_off_bainsizza }
+		NOT = { has_idea = ITA_off_vittorio_veneto }
+		date < 1918.11.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		add_timed_idea = {
+			idea = ITA_counter_ravenna
+			days = 45
+		}
+		state_event = {
+			id = offensiveevents.22
+			days = 0
+		}
+	}
+}
+ITA_offensive_1915 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = ITA }
+	available = {
+		NOT = {
+			has_idea = ITA_counter_ravenna
+		}
+		date > 1915.3.1
+		date < 1915.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		add_timed_idea = {
+			idea = ITA_off_isonzo
+			days = 90
+		}
+		state_event = {
+			id = offensiveevents.23
+			days = 0
+		}
+	}
+}
+ITA_offensive_1916 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = ITA }
+	available = {
+		NOT = {
+			has_idea = ITA_counter_ravenna
+		}
+		date > 1916.3.1
+		date < 1916.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		add_timed_idea = {
+			idea = ITA_off_gorizia
+			days = 90
+		}
+		state_event = {
+			id = offensiveevents.24
+			days = 0
+		}
+	}
+}
+ITA_offensive_1917 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = ITA }
+	available = {
+		NOT = {
+			has_idea = ITA_counter_ravenna
+		}
+		date > 1917.3.1
+		date < 1917.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		add_timed_idea = {
+			idea = ITA_off_bainsizza
+			days = 90
+		}
+		state_event = {
+			id = offensiveevents.25
+			days = 0
+		}
+	}
+}
+ITA_offensive_1918 = {
+	icon = GFX_decision_generic_intelligence_operation
+	allowed = { original_tag = ITA }
+	available = {
+		NOT = {
+			has_idea = ITA_counter_ravenna
+		}
+		date > 1918.3.1
+		date < 1918.9.1
+	}
+	cost = 0
+	fire_only_once = yes
+	
+	complete_effect = {
+		add_timed_idea = {
+			idea = ITA_off_vittorio_veneto
+			days = 90
+		}
+		state_event = {
+			id = offensiveevents.26
+			days = 0
+		}
+	}
+}
+
+##Ottomans
+TUR_offensive1 = { # ID of the event, must not contain spaces!
+
+    icon = GFX_decision_generic_intelligence_operation
+
+    available = {
+        tag = TUR
+		has_war_with = ENG
+        date > 1915.01.08
+		date < 1918.09.01
+    }
+
+    visible = {
+
+        ROOT = {
+            is_ai = no
+        }
+           tag = TUR
+    }
+
+    cost = 0 # The cost to execute the event, by default it's political power.
+
+    # EFFECTS OF THIS EVENT
+
+    fire_only_once = yes # If yes, the event will only appear once, after execution will not appear again.
+
+    complete_effect = {
+        add_timed_idea = {
+            idea = TUR_OFF
+            days = 120 # The duration of the idea in days
+        }
+		LBA = {
+			add_timed_idea = {
+				idea = TUR_OFF
+				days = 120 # The duration of the idea in days
+			}
+		}
+        	state_event = {
+		id = offensiveevents.14
+		days = 0
+	}
+}
+}
+    
+}

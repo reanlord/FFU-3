@@ -1,0 +1,141 @@
+capital = 420
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.20
+set_research_slots = 0
+set_stability = 0.9
+set_convoys = 150
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = CAN_wilfrid_laurier
+#recruit_character = CAN_authur_currie
+#recruit_character = CAN_julian_byng
+recruit_character = CAN_turner
+recruit_character = CAN_mercerm.s.
+recruit_character = CAN_hughes
+recruit_character = CAN_alex_walker
+recruit_character = CAN_jim_walker
+recruit_character = CAN_alexander_white
+recruit_character = CAN_lloyd_samuel_breadner
+recruit_character = CAN_tasker_cook
+recruit_character = CAN_george_pearkes
+recruit_character = CAN_john_murchie
+recruit_character = CAN_ian_a_mackenzie
+recruit_character = CAN_c_d_howe
+recruit_character = CAN_newton_wesley_rowell
+recruit_character = CAN_harold_edwards
+recruit_character = CAN_frederick_m_w_harvey
+recruit_character = CAN_harry_crerar
+recruit_character = CAN_robert_leckie
+recruit_character = CAN_james_ilsley
+recruit_character = CAN_kenneth_stuart
+recruit_character = CAN_leo_richer_lafleche
+recruit_character = CAN_andrew_mcnaughton
+recruit_character = CAN_george_jones
+recruit_character = CAN_louis_st_laurent
+recruit_character = CAN_raymond_collishaw
+recruit_character = CAN_guy_simonds
+recruit_character = CAN_gino_verchiella
+recruit_character = CAN_r_b_bennett
+recruit_character = CAN_alasdair_murray
+recruit_character = CAN_george_volkoff
+recruit_character = CAN_george_croil
+recruit_character = CAN_percy_nelles
+
+
+#if = {
+#	limit = { has_dlc = "Together for Victory" }
+#
+#	add_to_tech_sharing_group = commonwealth_research
+#}
+
+1910.1.1 = {
+	oob = "CAN_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+		set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+		
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		basic_train = 1
+
+		# Armor
+		gwtank=1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Navy
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_ship_hull_cruiser = 1
+		mtg_transport = 1
+
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+		tank_unlocker1 = 1
+
+		# Industry
+		
+				
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1908.10.26"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 97
+	    fascism = 1
+	    communism = 1
+	    neutrality = 1
+	}
+
+	add_ideas = {
+		limited_conscription
+		ai_limiter
+	}	
+}

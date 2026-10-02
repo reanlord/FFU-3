@@ -1,0 +1,732 @@
+characters={
+	LBA_ahmed_sharif_senussi_leader={
+		name="Ahmed Sharif as-Senussi"
+		portraits={
+			civilian={
+				large="gfx/leaders/LBA/LBA_ahmed_senussi.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1935.1.1.1"
+			traits={cornered_fox}
+		}
+	}
+	LBA_ahmed_sharif_senussi_army={
+		name="Ahmed Sharif as-Senussi"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/LBA_ahmed_senussi.png"
+				small="gfx/interface/ideas/idea_LBA_generic_land_3.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LBA_ahmed_sharif_senussi_army
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				army_chief_maneuver_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={
+				old_guard irregulars_officer politically_connected
+				logistics_wizard defensive_doctrine unyielding_defender
+				cavalry_expert trickster
+				desert_fox jungle_rat
+			}
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	LBA_idris_senussi={
+		name="Mohammad Idris as-Senussi"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/LBA_muhammad_idris_senussi.png"
+				small="gfx/interface/ideas/idea_SAU_generic_land_2.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_idris_senussi
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={
+				irregulars_officer
+				logistics_wizard thorough_planner offensive_doctrine inspirational_leader
+				cavalry_leader infantry_expert trickster
+				trait_engineer desert_fox jungle_rat
+			}
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	LBA_omar_mukhtar={
+		name="Omar al-Mukhtar"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/LBA_omar_mukhtar.jpg"
+				small="gfx/interface/ideas/idea_SAU_generic_land_3.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LBA_omar_mukhtar
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				army_chief_planning_3
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				brilliant_strategist cavalry_officer irregulars_officer
+				commando camouflage_expert skirmisher
+				expert_improviser trait_engineer desert_fox swamp_fox hill_fighter trait_mountaineer ranger jungle_rat adaptable		
+			}
+			skill=6
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=6
+		}
+	}
+	LBA_nuri_bey={
+		name="Nuri Bey"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/portrait_TUR_generic_land_1.png"
+				small="gfx/interface/ideas/generic/idea_TUR_generic_land_1.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_nuri_bey
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_ottoman_diplomatic_mission
+			}
+			traits = {
+				army_logistics_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				trait_reckless harsh_leader trait_SOV_foreign_military_advisor
+				infantry_expert naval_invader commando
+				jungle_rat desert_fox
+			}
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	LBA_jafar_al_askari={
+		name="Jafar al-Askari"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/TUR_jafar_al_askari.png"
+				small="gfx/interface/ideas/idea_LBA_generic_fascism_1.dds"
+				#small="gfx/interface/ideas/generic/idea_TUR_generic_land_2.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_jafar_al_askari
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_ottoman_diplomatic_mission
+			}
+			traits = {
+				army_infantry_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				old_guard infantry_officer engineer_officer irregulars_officer trait_SOV_foreign_military_advisor
+				desert_fox
+			}
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	LBA_paul_von_todenwarth={
+		name="Paul von Todenwarth"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/portrait_europe_generic_land.dds"
+				#small="gfx/interface/ideas/idea_GER_generic_land_1.dds"
+				small="gfx/interface/ideas/generic/idea_europe_generic_land.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_paul_von_todenwarth
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_approach_germany
+			}
+			traits = {
+				army_artillery_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				trait_SOV_foreign_military_advisor
+				fortress_buster
+				trait_engineer urban_assault_specialist paratrooper adaptable winter_specialist winter_expert
+			}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	LBA_abd_al_rahman_azzam={
+		name="Abd al-Rahman Azzam"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/portrait_arabia_generic_land_6.dds"
+				small="gfx/interface/ideas/generic/idea_arabia_generic_land_6.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_abd_al_rahman_azzam
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_recruit_egyptians
+			}
+			traits = {
+				army_armored_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				armor_officer skilled_staffer panzer_leader
+				jungle_rat desert_fox
+			}
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	##HC
+	LBA_yusef_borahil_al_mismare={
+		name="Yusef Borahil al-Mismare"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_arab_1.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_yusef_borahil_al_mismare
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				army_commando_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_mohammed_al_abid={
+		name="Mohammed al-Abid"
+		portraits={
+			army={
+				small="gfx/interface/ideas/generic/idea_arabia_generic_land_5.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LBA_mohammed_al_abid
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				army_concealment_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	##Theorist
+	LBA_ishaq_pasha={
+		name="Ishaq Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/portrait_arabia_generic_land_7.dds"
+				small="gfx/interface/ideas/generic/idea_arabia_generic_land_7.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LBA_ishaq_pasha
+			ledger = army 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_ottoman_diplomatic_mission
+			}
+			traits = {
+				military_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				infantry_officer trait_SOV_foreign_military_advisor
+				urban_assault_specialist desert_fox
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	LBA_mohammed_saleh_harb={
+		name="Mohammed Saleh Harb"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_air_arab_1.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LBA_mohammed_saleh_harb
+			ledger = army
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_recruit_egyptians
+			}
+			traits = {
+				mobile_warfare_expert 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	##Navy
+	LBA_theodor_pullen={
+		name="Theodor Püllen"
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Generic_navy_3.dds"
+				small="gfx/interface/ideas/idea_GER_generic_navy_3.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = LBA_theodor_pullen
+			ledger = navy 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_covert_weapons_shipments
+			}
+			traits = {
+				navy_chief_commerce_raiding_3 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits={ seawolf superior_tactician spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+	}
+	LBA_waldemar_kophamel={
+		name="Waldemar Kophamel"
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Generic_navy_2.dds"
+				small="gfx/interface/ideas/idea_GER_generic_navy_2.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = LBA_waldemar_kophamel
+			ledger = navy 
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_covert_weapons_shipments
+			}
+			traits = {
+				navy_amphibious_assault_2 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner fleet_protector }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+		}
+	}
+	
+	##Air
+	LBA_ahmed_tuati={
+		name="Ahmed Tuati"
+		portraits={
+			army={
+				#small="gfx/interface/ideas/idea_LBA_generic_land_1.dds"
+				small="gfx/interface/ideas/idea_LBA_generic_land_2.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = LBA_ahmed_tuati
+			ledger = air
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				air_close_air_support_2 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	##Political Advisors
+	LBA_mohammed_abed_senussi={
+		name="Mohammed Abed al-Senussi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_arab_2.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_mohammed_abed_senussi
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				conservative_grandee
+				staunch_monarchist
+				#quartermaster_general
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_saif_al_din_senussi={
+		name="Saif al-Din al-Senussi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_arab_3.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_saif_al_din_senussi
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			traits = {
+				quartermaster_general
+				railroad_enthusiast
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_ramadan_al_sewehili={
+		name="Ramadan al-Sewehili"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_democratic_arab.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_ramadan_al_sewehili
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_cooperation_tripoli
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_suleyman_al_baruni={
+		name="Suleyman al-Baruni"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LBA_generic_3.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_suleyman_al_baruni
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_cooperation_tripoli
+			}
+			traits = {
+				technocrat
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_osman_fuad={
+		name="Osman Fuad"
+		portraits={
+			army={
+				large="gfx/leaders/LBA/TUR_Osman_Fuad.png"
+				small="gfx/interface/ideas/generic/TUR_osman_fuad.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_osman_fuad
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_ottoman_diplomatic_mission
+			}
+			traits = {
+				popular_figurehead
+				propaganda_expert
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={
+				old_guard inflexible_strategist infantry_officer trait_SOV_foreign_military_advisor
+				jaeger camouflage_expert
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	LBA_otto_manessman={
+		name="Otto Mannesmann"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GER_generic_3.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_otto_manessman
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_approach_germany
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_kaocen_ag_geda={
+		name="Kaocen Ag Geda"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_fascist_arab.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_kaocen_ag_geda
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_support_zaians
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LBA_ali_dinar={
+		name="Ali Dinar of Darfur"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_air_africa_3.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LBA_ali_dinar
+			ledger = civilian
+			allowed = {
+				tag = LBA
+			}
+			available = {
+				has_completed_focus = LBA_work_with_dervishes
+			}
+			traits = {
+				conservative_nationalist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	##Party Leaders
+	LBA_com={
+		name="Amr Taher Deghayes"
+		portraits={
+			civilian={
+				large="gfx/leaders/LBA/Portrait_Arabia_Generic_navy_1.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1934.1.1.1"
+			id=-1
+		}
+	}
+	LBA_dem={
+		name="Ramadan al-Sewehili"
+		portraits={
+			civilian={
+				large="gfx/leaders/LBA/Portrait_Arabia_Generic_democratic1.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1934.1.1.1"
+			id=-1
+		}
+	}
+	LBA_fas={
+		name="Omar al-Mukhtar"
+		portraits={
+			civilian={
+				large="gfx/leaders/LBA/LBA_omar_mukhtar.jpg"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			expire="1934.1.1.1"
+			id=-1
+		}
+	}
+}

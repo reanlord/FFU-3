@@ -1,0 +1,17 @@
+on_actions = {
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { original_tag = GER }
+					NOT = { has_government = fascism }
+					NOT = { has_civil_war = yes }
+				}
+			}
+			news_event = { id = country_capitulated.0 days = 0 }
+		}
+	}
+	
+}

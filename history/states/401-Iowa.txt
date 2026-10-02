@@ -1,0 +1,22 @@
+state={
+	id=401
+	name="STATE_401"
+	provinces={
+		19064 
+	}
+	manpower=2591312
+	state_category = city
+	buildings_max_level_factor=1.000
+		history={
+		owner = USA
+		add_core_of = USA 
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+}

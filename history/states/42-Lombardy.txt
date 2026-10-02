@@ -1,0 +1,47 @@
+
+state={
+	id=42
+	name="STATE_42"
+	provinces={
+		2732 3505 3948 5174 5400 5545 5857 6167 9187 9206 10230 14913 15277 15283 15297 15310 15316 15333 15380 15395 15433 15449 15456 15470 20068 20069 20141 20147 20149 20151 20154 20155 20156 20157 20158 20162 20163 20164 20169 20170 20171 20172 20173 20175 
+	}
+	manpower=5536211
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	resources={
+		wood=30
+		chromium = 20
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			14913 20 
+		}
+		victory_points = {
+			15277 1 
+		}
+		victory_points = {
+			15297 1 
+		}
+		victory_points = {
+			15395 1 
+		}
+		victory_points = {
+			5545 1 
+		}
+		victory_points = {
+			3948 5 
+		}
+		1911.1.1.8 = {
+			owner = SWI
+			 
+		}
+	}
+}

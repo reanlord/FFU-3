@@ -1,0 +1,950 @@
+ideas = {
+    naval_manufacturer = {
+        
+        chantiers_de_penhoet = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                naval_equipment = 0.10
+            }
+            traits = {
+                coastal_defence_naval_manufacturer
+            }
+            picture = generic_naval_manufacturer_2
+        }
+        arsenal_de_brest = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                naval_equipment = 0.10
+            }
+            traits = {
+                raiding_fleet_naval_manufacturer
+            }
+            picture = generic_naval_manufacturer_3
+        }
+        a_c_de_la_loire = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                naval_equipment = 0.10
+            }
+            traits = {
+                convoy_escort_naval_manufacturer
+            }
+            picture = generic_naval_manufacturer_1
+        }
+    }
+    aircraft_manufacturer = {
+        
+        nieuport = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                air_equipment = 0.10
+            }
+            traits = {
+                light_aircraft_manufacturer
+            }
+            picture = generic_air_manufacturer_2
+        }
+        morane_saulnier = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                air_equipment = 0.10
+            }
+            traits = {
+                light_aircraft_manufacturer
+            }
+        }
+    }
+    materiel_manufacturer = {
+        
+        somua = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                motorized_equipment = 0.10
+            }
+            traits = {
+                motorized_equipment_manufacturer
+            }
+        }
+
+        mas = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                infantry_weapons = 0.10
+            }
+            traits = {
+                infantry_equipment_manufacturer
+            }
+        }
+        schneider = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                artillery = 0.10
+            }
+            traits = {
+                artillery_manufacturer
+            }
+        }
+    }
+    industrial_concern = {
+        famh = {
+            allowed = { original_TAG = FRA }
+            research_bonus = { industry = 0.10 }
+            traits = { industrial_concern }
+        }
+        saint_gobain = {
+            allowed = { original_TAG = FRA }
+            research_bonus = { industry = 0.10 }
+            traits = { light_industry_concern }
+            picture = generic_tank_manufacturer_3
+        }
+		arbel_fauvet={
+			allowed={ original_TAG = FRA }
+			research_bonus = { industry = 0.05 }
+			traits = { railway_company }
+			picture = generic_tank_manufacturer_2
+		}
+		legrand={
+			allowed={ original_TAG = FRA }
+			research_bonus = { electronics = 0.10 }
+			traits = { electronics_concern }
+			picture = generic_electronics_concern_1
+		}
+    }
+    tank_manufacturer = {
+        
+        renault_fra = {
+            allowed = {
+                original_TAG = FRA
+            }
+            research_bonus = {
+                armor = 0.10
+            }
+            traits = {
+                FRA_fast_tank_manufacturer
+            }
+        }
+    }
+    country = {
+	
+        FRA_will_to_fight_5 = {
+			picture = FRA_they_shall_not_pass
+
+            modifier = {
+				custom_modifier_tooltip = FRA_will_to_fight_5_tt
+            }
+		}
+        FRA_will_to_fight_4 = {
+			picture = FRA_they_shall_not_pass
+
+            modifier = {
+				custom_modifier_tooltip = FRA_will_to_fight_4_tt
+            }
+		}
+        FRA_will_to_fight_3 = {
+			picture = FRA_they_shall_not_pass
+
+            modifier = {
+				custom_modifier_tooltip = FRA_will_to_fight_3_tt
+            }
+		}
+        FRA_will_to_fight_2 = {
+			picture = FRA_they_shall_not_pass
+
+            modifier = {
+				custom_modifier_tooltip = FRA_will_to_fight_2_tt
+            }
+		}
+        FRA_will_to_fight_1 = {
+			picture = FRA_they_shall_not_pass
+
+            modifier = {
+				custom_modifier_tooltip = FRA_will_to_fight_1_tt
+            }
+		}
+        FRA_will_to_fight_0 = {
+			picture = FRA_they_shall_not_pass
+
+            modifier = {
+				custom_modifier_tooltip = FRA_will_to_fight_0_tt
+            }
+		}
+		
+		FRA_last_gasp = {
+			#picture = spr_international_brigades
+			#picture = spr_masters_of_our_own_fate
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				country_event = ffufrance.10
+			}
+			cancel = {
+				NOT = {
+					has_idea = FRA_will_to_fight_0
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_idea = FRA_will_to_fight_0
+					}
+					set_global_flag = french_surrender
+					#FRA_surrender_start = yes
+					country_event = ffufrance.11
+					add_ideas = FFU_instant_capitulation_idea
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.10
+			}
+		}
+
+        FRA_agrarian_society = {
+            picture = LIT_invested_in_farms
+            modifier = {
+                industrial_capacity_factory = -0.05
+            }
+        }
+
+        FRA_more_workers = {
+            picture = generic_production_bonus
+            #modifier = {
+            #    industrial_capacity_factory = 0.05
+            #}
+			equipment_bonus = {
+				heavy_field_gun_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				infantry_equipment = {				
+					build_cost_ic = -0.03
+					instant = yes
+				}
+                support_equipment = {					
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				machine_gun_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				light_field_gun_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+			}
+        }
+
+	
+		FRA_credit_lyonnais = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+				consumer_goods_expected_value = -0.025
+                production_speed_industrial_complex_factor = 0.05
+				industrial_concern_cost_factor = -0.20
+			}
+		}
+
+		FRA_arme_de_lair = {
+			ledger = army
+			picture = man_five_year_plan_air
+				equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				
+				naval_bomber = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+        }
+
+		FRA_defunded_navy = {
+			cost = 150
+			picture = generic_coastal_navy
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				
+				screen_ship = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				submarine = {
+					build_cost_ic = 0.05 instant = yes
+				}
+				destroyer = {
+					build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+		
+		FRA_defunded_and_disregarded_navy = {
+			ledger = army
+			cost = 150
+			picture = gre_political_instability_republican
+			modifier = {
+				experience_gain_navy = -0.1
+                naval_damage_factor = -0.3
+                naval_hit_chance = -0.3
+                naval_morale = -15
+                naval_retreat_speed = -0.3
+			}
+            equipment_bonus = {
+                capital_ship = { build_cost_ic = 0.50 instant = yes }				
+                screen_ship = { build_cost_ic = 0.50 instant = yes }
+                submarine = { build_cost_ic = 0.50 instant = yes }
+                destroyer = { build_cost_ic = 0.50 instant = yes } 
+            }
+		}
+
+		FRA_belle_epoque = {
+			picture = FRA_belle_epoque-69189
+			modifier = {
+				research_speed_factor = 0.05
+                conversion_cost_mil_to_civ_factor = -0.15
+                political_advisor_cost_factor = -0.10
+			}
+		}
+
+        FRA_belle_epoque_railgun = {
+			picture = FRA_belle_epoque-69189
+			modifier = {
+				research_speed_factor = 0.05
+                conversion_cost_mil_to_civ_factor = -0.15
+                political_advisor_cost_factor = -0.10
+			}
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		
+		FRA_dalbiez_law = {
+			picture = TUR_1914_law_of_military_obligation-96239
+			modifier = {
+				conscription = 0.03
+				production_speed_arms_factory_factor = 0.05
+				#industrial_capacity_factory = 0.05
+			}
+		}
+
+		FRA_supreme_war_council = {
+			picture = gre_debt_to_the_ifc
+			modifier = {
+				#planning_speed = 0.10
+                land_reinforce_rate = 0.02
+             	minimum_training_level = -0.05
+			}
+		}
+
+		FRA_military_board_of_allied_supply = {
+			picture = FRA_military_board_of_allied_supply-73687
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				#supply_consumption_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+        FRA_sfio_vs_revanchism = {
+			picture = SPR_political_violence
+			modifier = {
+				political_power_cost = 0.8 
+                stability_factor  = -0.10
+				war_support_factor = -0.10
+			}
+		}
+
+        FRA_ww1_revanchism = {
+            picture = generic_victors_of_ww1
+
+            modifier = {
+                political_power_cost = 0.4 
+                stability_factor  = -0.10
+				war_support_factor = 0.10
+                army_core_attack_factor = 0.075
+                army_core_defence_factor = 0.075
+            }
+        }
+
+        FRA_ww1_revanchism_2 = {
+            picture = generic_victors_of_ww1
+
+            modifier = {
+                political_power_cost = 0.4 
+                stability_factor = -0.10
+				war_support_factor = 0.10
+                army_core_attack_factor = 0.075
+                army_core_defence_factor = 0.075
+				land_doctrine_cost_factor = -0.10
+            }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+            research_bonus = {
+                artillery = 0.15
+            }
+            research_bonus = {
+                armor = 0.30
+            }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+
+		FRA_sfio = {
+			picture = SPR_anarchist_society
+			modifier = {
+				political_power_cost = 0.4 
+                stability_factor  = 0.10
+				war_support_factor = -0.10
+			}
+		}
+
+        FRA_sfio_2 = {
+			picture = SPR_anarchist_society
+			modifier = {
+				political_power_cost = 0.4
+                stability_factor = 0.10
+				war_support_factor = -0.10
+                industrial_capacity_factory = 0.05
+			}
+		}
+
+        FRA_union_sacre_sfio = {
+			picture = FRA_undividable
+
+            modifier = {
+                political_power_gain = 0.25
+                stability_factor  = 0.10
+				war_support_factor = -0.10
+                consumer_goods_expected_value = -0.05
+                industrial_capacity_factory = 0.05
+            }
+		}
+
+        FRA_union_sacre_revanchism = {
+			picture = FRA_undividable
+			modifier = {
+                political_power_gain = 0.25
+				stability_factor = -0.10
+				war_support_factor = 0.10
+                consumer_goods_expected_value = -0.05
+                army_core_attack_factor = 0.075
+                army_core_defence_factor = 0.075
+				land_doctrine_cost_factor = -0.10
+            }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+            research_bonus = {
+                artillery = 0.15
+            }
+            research_bonus = {
+                armor = 0.30
+            }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+		}
+
+		FRA_reinventated_navy = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				refit_ic_cost = -0.1
+                refit_speed = 0.25
+			}
+		}
+
+        FRA_reinventated_navy_own = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				refit_ic_cost = -0.1
+                refit_speed = 0.25
+				industrial_capacity_dockyard = 0.10
+			}
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+		}
+
+        FRA_reinventated_navy_eng = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				refit_ic_cost = -0.1
+                refit_speed = 0.25
+                navy_screen_attack_factor = 0.05
+                navy_capital_ship_attack_factor = 0.05
+			}
+		}
+
+        FRA_agadir_crisis_idea = {
+            picture = ww1_Scramble_for_Africa
+            modifier = {
+                stability_factor = -0.1
+                stability_weekly = -0.005
+            }
+        }
+		
+        FRA_colonial_unrest = {
+            picture = ETH_military_communism
+            modifier = {
+				#stability_factor = -0.05
+                stability_weekly = -0.001
+            }
+        }
+
+        FRA_exploit_africa = {
+            picture = saf_history_of_segregation
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+        }
+
+		FRA_three_year_law_of_1913 = {
+			ledger = army
+			picture = FRA_three_year_law_of_1913-69197
+			modifier = {
+				conscription = 0.04
+			}
+		}
+
+		FRA_arme_coloniale = {
+			picture = FRA_arme_coloniale-69211
+			modifier = {
+				conscription = 0.02
+                conscription_factor = 0.20
+			}
+		}
+
+		FRA_french_military_attach_experiences = {
+			picture = french_advisors
+			modifier = {
+				experience_gain_army = 0.03
+			}
+		}
+
+		FRA_military_passive = {
+			picture = SWI_spirit_of_helvetia_passive_war
+			
+		    modifier = {
+                max_planning = -0.05
+                breakthrough_factor = 0.05
+                max_dig_in_factor = -0.15
+                #army_strength_factor = -0.05
+                supply_consumption_factor = 0.10
+			}
+		}
+
+        FRA_military_aggressive = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			
+		    modifier = {
+                max_planning = -0.05
+                breakthrough_factor = 0.05
+                max_dig_in_factor = -0.30
+				#army_strength_factor = -0.1
+                army_morale_factor = 0.10
+				land_reinforce_rate = 0.04
+                supply_consumption_factor = 0.1
+			}
+		}
+
+        FRA_military_aggressive_2 = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			
+		    modifier = {
+                max_planning = -0.05
+                breakthrough_factor = 0.05
+                max_dig_in_factor = -0.30
+                army_strength_factor = -0.1
+                army_org_factor = 0.2
+				army_morale_factor = 0.10
+				land_reinforce_rate = 0.04
+                supply_consumption_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+
+        FRA_military_defensive = {
+			picture = SWI_spirit_of_helvetia_defensive_war
+			
+		    modifier = {
+                max_planning = -0.05
+				max_dig_in_factor = 0.10
+                army_attack_factor = -0.03
+				breakthrough_factor = -0.05
+                #army_strength_factor = -0.05
+                supply_consumption_factor = -0.05
+			}
+		}
+
+        FRA_military_defensive_2 = {
+			picture = SWI_spirit_of_helvetia_defensive_war
+			
+		    modifier = {
+                max_planning = 0.05
+                planning_speed = -0.25
+                max_dig_in_factor = 0.10
+                army_defence_factor = 0.05
+				breakthrough_factor = -0.05
+                army_attack_factor = -0.03
+				supply_consumption_factor = -0.05
+			}
+		}
+		
+        FRA_AMIENS = {
+            
+                allowed = {
+                    always = no #event or decision
+                }
+
+                allowed_civil_war = {
+                    always = no
+                }
+
+                removal_cost = -1
+                
+                picture =FRA_undividable
+                modifier = {
+                dig_in_speed = 5 
+                army_org_regain = 0.25 
+                org_loss_when_moving = -0.2 }
+                targeted_modifier = {
+                    TAG = GER
+                    defense_bonus_against = 0.25
+                }		
+                targeted_modifier = {
+                    TAG = AUS
+                    defense_bonus_against = 0.25
+                }	
+                targeted_modifier = {
+                    TAG = TUR
+                    defense_bonus_against = 0.25
+                }
+                targeted_modifier = {
+                    TAG = BUL
+                    defense_bonus_against = 0.25
+                }
+                targeted_modifier = {
+                    TAG = POL
+                    defense_bonus_against = 0.25
+                }  
+            }
+        
+        FRA_Nivelle_Offensive = {
+            
+                allowed = {
+                    always = no #event or decision
+                }
+
+                allowed_civil_war = {
+                    always = no
+                }
+
+                removal_cost = -1
+                
+                picture =FRA_undividable
+                
+                targeted_modifier = {
+                    TAG = GER
+                    attack_bonus_against = 0.25
+                }                            
+                targeted_modifier = {
+                    TAG = AUS
+                    attack_bonus_against = 0.25
+                }               
+                targeted_modifier = {
+                    TAG = BUL
+                    attack_bonus_against = 0.25
+                }
+                targeted_modifier = {
+                    TAG = POL
+                    attack_bonus_against = 0.25
+                }               
+            }
+
+            FRA_Off1 = {
+
+                        allowed = {
+                            original_tag = FRA
+                            always = no #event or decision
+                        }
+                        picture = German_staff_ww1
+
+                        targeted_modifier = {
+                            TAG = GER
+                            attack_bonus_against = 0.15
+                        }
+                        targeted_modifier = {
+                            TAG = AUS
+                            attack_bonus_against = 0.15
+                        }
+                        targeted_modifier = {
+                            TAG = BUL
+                            attack_bonus_against = 0.15
+                        }
+                        targeted_modifier = {
+                            TAG = TUR
+                            attack_bonus_against = 0.15
+                        }
+                        targeted_modifier = {
+                            TAG = POL
+                            attack_bonus_against = 0.15
+                        }
+                        targeted_modifier = {
+                            TAG = LBA
+                            attack_bonus_against = 0.15
+                        }
+                }
+
+            FRA_Off2 = {
+
+                        allowed = {
+                            original_tag = FRA
+                            always = no #event or decision
+                        }
+                        picture = German_staff_ww1
+
+                        targeted_modifier = {
+                            TAG = GER
+                            attack_bonus_against = 0.20
+                        }
+                        targeted_modifier = {
+                            TAG = AUS
+                            attack_bonus_against = 0.20
+                        }
+                        targeted_modifier = {
+                            TAG = BUL
+                            attack_bonus_against = 0.20
+                        }
+                        targeted_modifier = {
+                            TAG = TUR
+                            attack_bonus_against = 0.20
+                        }
+                        targeted_modifier = {
+                            TAG = POL
+                            attack_bonus_against = 0.20
+                        }
+                        targeted_modifier = {
+                            TAG = LBA
+                            attack_bonus_against = 0.20
+                        }
+                }
+
+            FRA_Off3 = {
+
+                        allowed = {
+                            original_tag = FRA
+                            always = no #event or decision
+                        }
+                        picture = German_staff_ww1
+
+                        targeted_modifier = {
+                            TAG = GER
+                            attack_bonus_against = 0.25
+                        }
+                        targeted_modifier = {
+                            TAG = AUS
+                            attack_bonus_against = 0.25
+                        }
+                        targeted_modifier = {
+                            TAG = BUL
+                            attack_bonus_against = 0.25
+                        }
+                        targeted_modifier = {
+                            TAG = TUR
+                            attack_bonus_against = 0.25
+                        }
+                        targeted_modifier = {
+                            TAG = POL
+                            attack_bonus_against = 0.25
+                        }
+                        targeted_modifier = {
+                            TAG = LBA
+                            attack_bonus_against = 0.25
+                        }
+                }
+
+            FRA_Off4 = {
+
+                        allowed = {
+                            original_tag = FRA
+                            always = no #event or decision
+                        }
+                        picture = German_staff_ww1
+
+                        targeted_modifier = {
+                            TAG = GER
+                            attack_bonus_against = 0.30
+                        }
+                        targeted_modifier = {
+                            TAG = AUS
+                            attack_bonus_against = 0.30
+                        }
+                        targeted_modifier = {
+                            TAG = BUL
+                            attack_bonus_against = 0.30
+                        }
+                        targeted_modifier = {
+                            TAG = TUR
+                            attack_bonus_against = 0.30
+                        }
+                        targeted_modifier = {
+                            TAG = POL
+                            attack_bonus_against = 0.30
+                        }
+                        targeted_modifier = {
+                            TAG = LBA
+                            attack_bonus_against = 0.30
+                        }
+                }
+            
+            FRA_plan_xvii = {
+                ledger = army
+                picture = FRA_plan_xvii-122742
+                modifier = {
+                    army_core_attack_factor = 0.1
+                    army_core_defence_factor = 0.1
+                }
+            }
+
+        FRA_infantry_focus = {
+            allowed = {
+                original_tag = FRA always = no
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_infantry_bonus removal_cost = -1 equipment_bonus = {
+                infantry_equipment = {
+                    build_cost_ic = -0.1 instant = yes
+                }
+            }
+        }
+
+        FRA_national_mobilization_focus = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                has_government = communism
+            }
+            modifier = {
+                conscription = 0.01 army_morale_factor = 0.10
+            }
+        }
+
+        FRA_trench_0 = {
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		FRA_trench_1 = {
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		FRA_trench_2 = {
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		FRA_trench_3 = {
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		FRA_trench_4 = {
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+    }
+}

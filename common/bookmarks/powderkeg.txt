@@ -1,0 +1,225 @@
+bookmarks = {
+	bookmark = {
+		name =  POWDERKEG_NAME 
+		desc =  POWDERKEG_DESC 
+		date = 1911.1.1.1
+		picture =  GFX_select_date_1910 
+		default_country = FRA
+		default = yes
+
+		 FRA ={
+			history =  FRA_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				FRA_belle_epoque
+				FRA_sfio_vs_revanchism
+				FRA_military_passive
+			}
+			focuses = {
+				FRA_maroc_crisis
+				FRA_union_sacre
+				FRA_horizon_blue_uniforms
+			}
+		}
+		 TUR ={
+			history =  TUR_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				ww1_Faith_Allah
+				TUR_outdated_army_1
+				TUR_low_literacy
+			}
+			focuses = {
+				TUR_secret_treaty_with_germany
+				TUR_imperial_arsenal
+				TUR_ww1_WorldwideCaliphate
+			}
+		}
+		 ENG ={
+			history =  ENG_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				ENG_empire_shackled
+				ENG_widespread_labour_strikes
+				ENG_grand_fleet
+			}
+			focuses = {
+				ENG_1915_ministry_of_munitions
+				ENG_grand_fleet_expansion
+				ENG_special_american_relationship
+			}
+		}
+		 GER ={
+			history =  GER_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				GER_ww1_North_German_Confederation
+				German_staff_ww1
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				GER_extreme_military_spending
+				GER_pariser_kanon
+				GER_sturmtruppen
+			}
+		}
+		 ITA ={
+			history =  ITA_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				ITA_ww1_Risorgimento
+				ITA_army_starting
+				ITA_economy1
+			}
+			focuses={
+				ITA_develop_libya
+				ITA_army_attack_2
+				ITA_japan_navy
+			}
+		}
+		 AUS ={
+			history =  AUH_POWDERKEG_DESC 
+			ideology = fascism
+			ideas = {
+				AUH_ww1_House_Habsburg_Lorraine
+				AUH_ww1_Multinational_State
+				AUS_austrian_military_staff
+			}
+			focuses = {
+				AUS_standschtze_hellriegel_m1915
+				AUS_kaiserjger
+				AUS_serbia
+			}
+		}
+		 SOV ={
+			history =  RUS_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				RUS_ww1_tsushima_humiliation
+				RUS_ww1_mixed_railways
+				SOV_incompetent_stavka
+			}
+			focuses = {
+				SOV_additional_siberian_gulags
+				SOV_emergency_war_credit
+				SOV_tsar_personal_command
+			}
+		}
+		 BUL ={
+			history =  BUL_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				RUS_ww1_orthodox_church
+				BUL_artillery_focus
+				BUL_nation_in_arms
+			}
+			focuses = {
+				BUL_ww1_Reconciliation
+				BUL_ww1_Army5
+				BUL_ww1_LoanGER
+			}
+		}
+
+		 --- ={
+			history =  OTHER_POWDERKEG_DESC 
+		}
+
+		# Minors ####
+
+		GRE ={
+			minor = yes
+			history =  GRE_POWDERKEG_DESC 
+			ideology = neutrality
+			ideas = {
+				RUS_ww1_orthodox_church
+				militarism_focus
+				FRA_french_military_attach_experiences
+			}
+			focuses = {
+				gre_offensive
+				gre_marines
+				gre_defend_fatherland
+			}
+		}
+		ROM ={
+			minor = yes
+			history =  ROM_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				militarism_focus
+				ROM_study_foreign_equipment
+				ROM_Pentru_Natiune
+			}
+			focuses = {
+				ROM_Entente_Military_Mission
+				ROM_invest_fortifications
+				ROM_the_long_war
+			}
+		}
+		POL ={
+			minor = yes
+			history =  POL_POWDERKEG_DESC
+			ideology = neutrality
+			ideas = {
+				POL_not_yet_lost
+				POL_legacy_of_the_partition
+				POL_deal_with_uk
+			}
+			focuses = {
+				POL_virtuti_militari
+				POL_consolidate_leadership
+				POL_spirit_of_winged_hussars
+			}
+		}
+		SER ={
+			minor = yes
+			history =  SER_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				SER_heroism
+				RUS_ww1_orthodox_church
+				militarism_focus
+			}
+			focuses = {
+				SER_ww1_anti_ottoman
+				POR_choice
+				SER_form_yugoslavia
+			}
+		}
+		LBA = {
+			minor = yes
+			history =  LBA_POWDERKEG_DESC
+			ideology = neutrality
+			ideas = {
+				LBA_never_surrender
+				LBA_economy_1
+				LBA_army_outdated
+			}
+			focuses = {
+				LBA_strengthen_sheikh_authority
+				LBA_veterans_jebel_akhdar
+				LBA_covert_weapons_shipments
+			}
+		}
+		BEL={
+			minor = yes
+			history =  BEL_POWDERKEG_DESC 
+			ideology = democratic
+			ideas = {
+				ww1_Scramble_for_Africa
+				we_fight_on
+				BEL_obligatory_military_service
+			}
+			focuses = {
+				BEL_fabrique_nationale
+				FRA_establish_commission_for_relief_in_belgium
+				BEL_unified_entente_planning
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

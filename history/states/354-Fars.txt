@@ -1,0 +1,45 @@
+state={
+	id=354
+	name="STATE_354"
+	provinces={
+		118 263 1155 1565 2942 2947 5367 6448 7388 7921 9506 10323 11265 16414 16449 16497 16505 16513 16538 
+	}
+	manpower=795000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	resources={
+		oil=90
+	}
+	history={
+		owner = PER
+		add_core_of = PER
+		buildings = {
+			infrastructure = 4
+			air_base = 5
+			7388 = {
+				naval_base = 1
+			}
+			16497 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			1565 1		#Sajadiyeh
+		}
+		victory_points = {
+			2942 1		#Bandar Ganaveh
+		}
+		victory_points = {
+			7388 1		#Kabgan
+		}
+		victory_points = {
+			7921 5		#Kazerun
+		}
+		victory_points = {
+			16497 5		#Bushehr
+		}
+		1911.1.1.12 = {
+			owner = SWI
+		}
+	}
+}

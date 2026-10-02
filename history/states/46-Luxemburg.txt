@@ -1,0 +1,38 @@
+
+state={
+	id=46
+	name="STATE_46"
+	resources={
+		steel=27.000
+		tungsten=10
+		coal=20
+		wood=15
+	}
+
+	history={
+		owner = BEL
+		add_core_of = GER
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 8
+			air_base = 5
+		}
+		victory_points = {
+			9695 10 
+		}
+		victory_points = {
+			9971 1 
+		}
+		victory_points = {
+			14411 1 
+		}
+
+	}
+
+	provinces={
+		4073 9695 9971 14411 19690 19691 
+	}
+	manpower=294748
+	buildings_max_level_factor=1.000
+	state_category=city
+}

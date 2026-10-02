@@ -1,0 +1,474 @@
+ideas={
+	naval_manufacturer={
+			 
+			beogradsko_brodogradiliste={ allowed={ original_TAG=SER } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } picture=generic_naval_manufacturer_2 }
+			}
+	aircraft_manufacturer={
+			 
+			ikarus={ allowed={ original_TAG=SER } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
+			mihailo_marcep_airplane_workshop={ allowed={ original_TAG=SER } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_3 }
+			}
+	materiel_manufacturer={
+			 
+			zastava_arms={ allowed={ original_TAG=SER } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } }
+			barutana_obilicevo={ allowed={ original_TAG=SER } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_3 }
+			topolivnica_kragujevac={ allowed={ original_TAG=SER } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_1 }
+			}
+	industrial_concern={
+			 
+		memorandum_teleoptik={
+			allowed={ original_TAG=SER }
+			research_bonus = { electronics = 0.10 }
+			traits={ electronics_concern }
+			picture=generic_tank_manufacturer_2
+		}
+		serbian_state_railways={
+			allowed={ original_TAG=SER }
+			research_bonus = { industry = 0.05 }
+			traits={ railway_company }
+			picture=generic_tank_manufacturer_3
+		}
+		sartid_smederevo={
+			allowed={ original_TAG=SER }
+			research_bonus = { industry = 0.10 }
+			traits={ industrial_concern }
+			picture=generic_tank_manufacturer_1
+		}
+	}
+	country = {
+		
+		SER_God_Fighter = {
+			ledger = army
+			picture = YUG_orthodox_church_support
+			modifier = {
+				#conscription = 0.04
+				army_strength_factor = 0.09
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		
+    	SER_heroism = {
+			allowed = {
+				original_TAG=SER
+			}
+			removal_cost = -1
+			
+			picture = YUG_serbian_general_staff
+			
+			modifier = {
+				surrender_limit=1.0
+				army_morale_factor = 0.20
+			}
+		}
+		
+    	SER_heroism2 = {
+			allowed = {
+				original_TAG=SER
+			}
+			removal_cost = -1
+			
+			picture = YUG_serbian_general_staff
+			
+			modifier = {
+				surrender_limit = 1.0
+				army_morale_factor = 0.20
+				attrition = -0.25
+				#out_of_supply_factor = -0.25
+				land_night_attack = 0.10
+			}
+		}
+		
+		SER_long_live_serbia = {
+			allowed={
+				original_tag=SER
+			}
+			removal_cost=-1
+			picture=YUG_all_yugoslavian_regiments
+			modifier={
+				war_stability_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		SER_manpower_difficulties = {
+			allowed={
+				original_tag=SER
+			}
+			removal_cost=-1
+			picture=militarism_focus
+			modifier={
+				mobilization_speed=-1.0
+			}
+		}
+		
+		SER_serbian_defense_act = {
+			allowed={
+				original_tag=SER
+			}
+			removal_cost=-1
+			picture=SWE_hedgehog_defense
+			modifier={
+				#army_attack_factor=-0.05
+				#army_core_attack_factor=0.05
+				production_lack_of_resource_penalty_factor = -1.0
+			}
+		}
+		
+		SER_ammo_0 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			cancel={ date > 1914.11.1 }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_1
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=4 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				#army_org_factor = -0.00
+				#max_dig_in_factor = -0.00
+			}
+		}
+		
+		SER_ammo_1 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_2
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.05
+				max_dig_in_factor = -0.10
+			}
+		}
+		
+		SER_ammo_2 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_3
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.10
+				max_dig_in_factor = -0.20
+			}
+		}
+		
+		SER_ammo_3 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_4
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.15
+				max_dig_in_factor = -0.30
+			}
+		}
+		
+		SER_ammo_4 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_5
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.20
+				max_dig_in_factor = -0.40
+			}
+		}
+		
+		SER_ammo_5 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_6
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.25
+				max_dig_in_factor = -0.50
+			}
+		}
+		
+		SER_ammo_6 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_7
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.30
+				max_dig_in_factor = -0.60
+			}
+		}
+		
+		SER_ammo_7 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_8
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.35
+				max_dig_in_factor = -0.70
+			}
+		}
+		
+		SER_ammo_8 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_timed_idea = {
+						idea = SER_ammo_9
+						days = 30
+					}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+				}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.40
+				max_dig_in_factor = -0.80
+			}
+		}
+		
+		SER_ammo_9 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			on_remove={
+				if={
+					limit={NOT={ has_country_flag = serbia_has_fallen }}
+					add_ideas = SER_ammo_10
+				}
+					add_offsite_building={
+						type=arms_factory level=2 instant_build=yes
+					}
+			}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.45
+				max_dig_in_factor = -0.90
+			}
+		}
+		
+		SER_ammo_10 = {
+			picture = SWE_severe_lack_of_ammunition
+			allowed={ tag=SER }
+			available={ }
+			#on_remove={
+			#	if={
+			#		limit={NOT={ has_country_flag = serbia_has_fallen }}
+			#		add_ideas=SER_ammo_11
+			#		add_offsite_building={
+			#			type=arms_factory level=2 instant_build=yes
+			#		}
+			#	}
+			#}
+			allowed_civil_war={ always=yes }
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = -0.50
+				max_dig_in_factor = -0.100
+			}
+		}
+
+		SER_trench_0 = {
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.6
+			}
+		}
+
+		SER_trench_1 = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.3
+			}
+		}
+
+		SER_trench_2 = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = -0.05 
+			}
+		}
+
+		SER_trench_3 = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.3
+			}
+		}
+
+		SER_trench_4 = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trench_warfare
+
+			modifier = {
+				production_cost_trench_factor = 0.50
+			}
+		}
+	}
+}
+

@@ -1,0 +1,133 @@
+music_station = "SabatonWWI_MMCT"
+music = {
+    song = "82nd_all_the_way"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "a_ghost_in_the_trenches"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "cliffs_of_gallipoli"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "devil_dogs"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "dreadnought"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "fields_of_verdun"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "sarajevo"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "seven_pillars_of_wisdom"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "stormtroopers"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "the_attack_of_the_dead_men"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "the_red_baron"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "the_valley_of_death"
+
+    chance = {
+        modifier = {
+            factor = 1
+
+            has_war = yes
+        }
+    }
+}

@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_FRA_war_zone_modifier"	
+		texturefile = "gfx/interface/ideas/fra_undividable.dds"
+	}
+}

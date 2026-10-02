@@ -1,0 +1,53 @@
+
+state={
+	id=61
+	name="STATE_61"
+	resources={
+		steel=28.000
+		wood=22.000
+	}
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+			19979 = {
+				bunker = 5
+			}
+			14898 = {
+				trench = 2
+			}
+			19628 = {
+				trench = 2
+			}
+			19634 = {
+				trench = 2
+			}
+		}
+		victory_points = {
+			19699 5 		#Besancon
+		}
+		victory_points = {
+			6309 1 
+		}
+		victory_points = {
+			19979 5
+		}
+		victory_points = {
+			7122 1
+		}
+		victory_points = {
+			15078 1
+		}
+	}
+
+	provinces={
+		197 651 2062 2247 2647 4268 5053 5146 6123 6309 7122 8314 8516 9713 10243 10654 11366 14897 14898 14957 15045 15078 15130 15141 19620 19622 19627 19628 19629 19630 19634 19693 19694 19695 19696 19697 19698 19699 19950 19968 19971 19974 19979 19993 
+	}
+	manpower=517500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

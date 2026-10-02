@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_button_transparent_topbar_resources"
+		texturefile = "gfx/interface/button_transparent_topbar_resources.dds"
+	}
+
+
+}

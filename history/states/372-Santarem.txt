@@ -1,0 +1,38 @@
+state={
+	id=372
+	name="STATE_372"
+	provinces={
+		868 2366 3457 5480 5717 6014 6421 7059 7235 9697 16135 16137 16169 16214 16231 16250 
+	}
+	manpower=729712
+	buildings_max_level_factor=1.000
+	state_category=rural
+	resources={
+		tungsten=22
+		chromium=20.000 #added due to portugal setup
+	}
+	history={
+		owner = ENG
+		add_core_of = POR
+		add_extra_state_shared_building_slots = 5
+		buildings = {
+			infrastructure = 6
+
+		}
+		victory_points = {
+		868 5
+		}
+		victory_points = {
+		16250 1
+		}
+		victory_points = {
+		16250 1
+		}
+		victory_points = {
+		5480 5
+		}
+		1911.1.1.16 = {
+			owner = SWI
+		}
+    }
+}

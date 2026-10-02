@@ -1,0 +1,456 @@
+
+####################################
+division_template = {
+	name = "Divizia de reservă"
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		infantry2 = { x = 3 y = 0 }
+		infantry2 = { x = 3 y = 1 }
+		infantry2 = { x = 3 y = 2 }	
+		gunner = { x = 4 y = 0 }
+		gunner = { x = 4 y = 1 }
+		gunner = { x = 4 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		gunner_support = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+	}
+}
+
+##########################################
+
+##60 gun1 mg2 12/3 inf, 885k men
+
+units = {
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+	division = {
+		name = "Divizia de reservă"
+		location = 9181 #Galati
+		division_template = "Divizia de reservă"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } machine_gun_equipment_1 = { owner = "ROM" } }
+	}
+}

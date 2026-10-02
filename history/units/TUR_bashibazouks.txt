@@ -1,0 +1,188 @@
+###################################################################
+
+division_template = {
+	name = "Başi-bazuklar"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+}
+
+###################################################################
+
+#20 gun0 inf, spawned in Ankara
+
+units = {
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+	
+	division = {
+	    name = "Başi-bazuklar"
+	    location = 19705	#Ankara
+	    division_template = "Başi-bazuklar"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+	    start_experience_factor = 0
+	}
+}

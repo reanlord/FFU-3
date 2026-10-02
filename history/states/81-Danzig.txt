@@ -1,0 +1,39 @@
+
+state={
+	id=81
+	name="STATE_81"
+
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
+
+		}
+		victory_points = {
+			436 5 
+		}
+		victory_points = {
+			5030 20 
+		}
+		victory_points = {
+			6869 1 
+		}
+		victory_points = {
+			3456 1 
+		}
+		victory_points = {
+			13493 1 
+		}
+	}
+
+	provinces={
+		436 1742 1924 3213 3456 5030 5675 5784 6816 6869 6923 7873 8056 8798 8987 9326 9842 10042 10085 10787 11632 13400 13404 13434 13493 13494 13581 13593 13594 13605 13767 
+	}
+	manpower=1080100
+	buildings_max_level_factor=1.000
+	state_category=city
+}

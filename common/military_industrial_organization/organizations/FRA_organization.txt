@@ -1,0 +1,165 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+FRA_infantry_tank_organization = {
+  name = "Infantry tank organization"
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_1
+	allowed = {	
+		tag = FRA
+	}
+}
+
+FRA_mobile_tank_organization = {
+  name = "Mobile tank organization"
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
+	allowed = {	
+		tag = FRA
+	}
+}
+
+FRA_heavy_tank_organization = {
+  name = "Heavy tank organization"
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_3
+	allowed = {	
+		tag = FRA
+	}
+}
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+FRA_battle_line_organization = {
+  name = "Battle line ship organization"
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+	allowed = { 
+		tag = FRA
+	}
+}
+
+FRA_escort_ship_organization = {
+  name = "Escort ship organization"
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
+	allowed = { 
+		tag = FRA
+	}
+}
+
+FRA_raider_ship_organization = {
+  name = "Raider ship organization"
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = { 
+		tag = FRA
+	}
+}
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+FRA_light_aircraft_organization = {
+  name = "Light aircraft organization"
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+	allowed = { 
+		tag = FRA
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+}
+
+FRA_medium_aircraft_organization = {
+  name = "Medium aircraft organization"
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_2
+	allowed = { 
+		tag = FRA
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+}
+
+FRA_heavy_aircraft_organization = {
+  name = "Heavy aircraft organization"
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_3
+	allowed = { 
+		tag = FRA
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+		}
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+FRA_artillery_organization = {
+  name = "Artillery organization"
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_2
+	allowed = { 
+		tag = FRA
+	}
+}
+
+FRA_infantry_equipment_organization = {
+  name = "Infantery equipment organization"
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { 
+		tag = FRA
+	}
+}

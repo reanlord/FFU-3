@@ -1,0 +1,3 @@
+synchronized_dynamic_token = {
+	wood
+}

@@ -1,0 +1,234 @@
+﻿l_russian:
+
+
+ #--------------------------------------------------------------
+ # [RUSSIAN EMPIRE] Армейские усилия
+ #=========================================================================
+ 
+SOV_Kerensky:0 "Kerensky Offensive"
+SOV_Kerensky_desc:0 " "
+ 
+SOV_Brusilov:0 "Brusilov Offensive"
+SOV_Brusilov_desc:0 " "
+ 
+SOV_ww1_army_effort_1:0 "Армейские усилия"
+SOV_ww1_army_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_2:0 "Армейские усилия II"
+SOV_ww1_army_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_3:0 "Армейские усилия III"
+SOV_ww1_army_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_4:0 "Армейские усилия IV"
+SOV_ww1_army_effort_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_effort_5:0 "Армейские усилия V"
+SOV_ww1_army_effort_5_desc:0 "" #Frenchie
+
+SOV_ww1_equipment_effort_1:0 "Усилия по оборудованию"
+SOV_ww1_equipment_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_2:0 "Усилия по оборудованию II"
+SOV_ww1_equipment_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_3:0 "Усилия по оборудованию III"
+SOV_ww1_equipment_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_4:0 "Усилия по оборудованию IV"
+SOV_ww1_equipment_effort_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_equipment_effort_5:0 "Усилия по оборудованию V"
+SOV_ww1_equipment_effort_5_desc:0 "" #Frenchie
+
+SOV_ww1_artillery_effort_1:0 "Артиллерийские усилия"
+SOV_ww1_artillery_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_2:0 "Артиллерийские усилия II"
+SOV_ww1_artillery_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_3:0 "Артиллерийские усилия III"
+SOV_ww1_artillery_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_4:0 "Артиллерийские усилия IV"
+SOV_ww1_artillery_effort_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_artillery_effort_5:0 "Артиллерийские усилия V"
+SOV_ww1_artillery_effort_5_desc:0 "" #Frenchie
+
+SOV_ww1_aircraftprod_1:0 "Производство самолетов"
+SOV_ww1_aircraftprod_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_2:0 "Производство самолетов II"
+SOV_ww1_aircraftprod_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_3:0 "Производство самолетов III"
+SOV_ww1_aircraftprod_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_4:0 "Производство самолетов IV"
+SOV_ww1_aircraftprod_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_aircraftprod_5:0 "Производство самолетов V"
+SOV_ww1_aircraftprod_5_desc:0 "" #Frenchie
+
+SOV_ww1_large_navy_1:0 "Военно -морская авиация"
+SOV_ww1_large_navy_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_2:0 "Военно -морская и авиационная реформа II"
+SOV_ww1_large_navy_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_3:0 "Военно -морская и авиационная реформа III"
+SOV_ww1_large_navy_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_4:0 "Военно -морская и авиационная реформа IV"
+SOV_ww1_large_navy_4_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_large_navy_5:0 "Военно -морская и авиационная реформа V"
+SOV_ww1_large_navy_5_desc:0 "" #Frenchie
+
+SOV_ww1_special_forces:0 "Спецназовое внимание"
+SOV_ww1_special_forces_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_army_motorization_focus:0 "Фокус моторизации"
+SOV_ww1_army_motorization_focus_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_doctrine_effort:0 "Учение усилия"
+SOV_ww1_doctrine_effort_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_doctrine_effort_2:0 "Учение усилия II"
+SOV_ww1_doctrine_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_doctrine_effort_3:0 "Учение усилия III"
+SOV_ww1_doctrine_effort_3_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_armor_effort_1:0 "Броня усилий"
+SOV_ww1_armor_effort_1_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_armor_effort_2:0 "Броня усилий II"
+SOV_ww1_armor_effort_2_desc:0 "" #KAISER_ANONY
+
+SOV_ww1_gasmask_focus:0 "Химическая война фокусируется"
+SOV_ww1_gasmask_focus_desc:0 "" #KAISER_ANONY
+
+
+
+SOV_seperate_cossack_regiments:0 "Отдельные казаковые полки"
+SOV_seperate_cossack_regiments_desc:0 ""
+SOV_support_serbia:0 "Поддержка Сербии"
+SOV_support_serbia_desc:0 ""
+SOV_orthodox_brotherhood:0 "Православное братство"
+SOV_orthodox_brotherhood_desc:0 ""
+SOV_address_economic_stagnation:0 "Решать экономическую стагнацию"
+SOV_address_economic_stagnation_desc:0 ""
+SOV_emergency_war_credit:0 "Кредит аварийного война"
+SOV_emergency_war_credit_desc:0 ""
+SOV_moscow_industrial_project:0 "Московский промышленный проект"
+SOV_moscow_industrial_project_desc:0 ""
+SOV_increased_rail_efficiency__planning:0 "Повышенная эффективность и планирование железнодорожных"
+SOV_increased_rail_efficiency__planning_desc:0 ""
+SOV_increased_research_development:0 "Повышенная исследовательская разработка"
+SOV_increased_research_development_desc:0 ""
+SOV_kiev_industrial_project:0 "Киевский промышленный проект"
+SOV_kiev_industrial_project_desc:0 ""
+SOV_military_rail_improvements:0 "Улучшения военных железных дорог"
+SOV_military_rail_improvements_desc:0 ""
+SOV_st_petersburg_industrial_project:0 "Санкт -Петербургский промышленный проект"
+SOV_st_petersburg_industrial_project_desc:0 ""
+SOV_investigations_into_royal_corruption:0 "Расследования королевской коррупции"
+SOV_investigations_into_royal_corruption_desc:0 ""
+SOV_abolish_obshchina_system:0 "Аболишь Община Систем"
+SOV_abolish_obshchina_system_desc:0 ""
+SOV_stolypins_land_reform:0 "Земельная реформа Столипина"
+SOV_stolypins_land_reform_desc:0 ""
+SOV_protsar_duma:0 "Проклятый кожу"
+SOV_protsar_duma_desc:0 ""
+SOV_dissolve_the_duma:0 "Растворить думу"
+SOV_dissolve_the_duma_desc:0 ""
+SOV_tsar_personal_command:0 "TSAR Личное командование"
+SOV_tsar_personal_command_desc:0 ""
+SOV_degtyaryov_plant:0 "Дегтариова растение"
+SOV_degtyaryov_plant_desc:0 ""
+SOV_reformation_of_the_empire:0 "Реформация империи"
+SOV_reformation_of_the_empire_desc:0 ""
+SOV_baltic_fleet_priority:0 "Балтийский флот приоритет"
+SOV_baltic_fleet_priority_desc:0 ""
+SOV_free_political_prisoners:0 "Свободные политические заключенные"
+SOV_free_political_prisoners_desc:0 ""
+SOV_tsar_supremacy:0 "TSAR превосходство"
+SOV_tsar_supremacy_desc:0 ""
+SOV_strengthen_third_state_duma:0 "Укрепить третье государство Дума"
+SOV_strengthen_third_state_duma_desc:0 ""
+SOV_expanded_okhrana:0 "Экспандед Охрана"
+SOV_expanded_okhrana_desc:0 ""
+SOV_emergency_fourth_state_duma_meetings:0 "Экстренные заседания в четвертом штате Дюма"
+SOV_emergency_fourth_state_duma_meetings_desc:0 ""
+SOV_limit_tsar_influence:0 "Ограничить влияние царей"
+SOV_limit_tsar_influence_desc:0 ""
+SOV_additional_siberian_gulags:0 "Дополнительные сибирские гулаги"
+SOV_additional_siberian_gulags_desc:0 ""
+SOV_izhevsk_machinebuilding_plant:0 "izhevskMachineBuildingPlant"
+SOV_izhevsk_machinebuilding_plant_desc:0 ""
+SOV_stimulate_steel_market:0 "Стимулировать рынок стали"
+SOV_stimulate_steel_market_desc:0 ""
+SOV_tsushima_humiliation_lessons:0 "Тсусима уроки унижения"
+SOV_tsushima_humiliation_lessons_desc:0 ""
+SOV_dominant_black_sea_fleet:0 "Доминирующий черный морской флот"
+SOV_dominant_black_sea_fleet_desc:0 ""
+SOV_light_hulls_development:0 "Развитие световых корпусов"
+SOV_light_hulls_development_desc:0 ""
+SOV_statute_on_land_organization:0 "Статут по организации земли"
+SOV_statute_on_land_organization_desc:0 ""
+SOV_increased_military_budget:0 "Увеличение военного бюджета"
+SOV_increased_military_budget_desc:0 ""
+SOV_military_inspection_services:0 "Военные инспекционные службы"
+SOV_military_inspection_services_desc:0 ""
+SOV_tula_arms_plant:0 "Тула вооружений"
+SOV_tula_arms_plant_desc:0 ""
+SOV_active__reserve_troops_reforms:0 "Активные и резервные войска реформы"
+SOV_active__reserve_troops_reforms_desc:0 ""
+SOV_peasant_land_bank:0 "Крестьянский земельный банк"
+SOV_peasant_land_bank_desc:0 ""
+SOV_expand_industrialization:0 "Расширить индустриализацию"
+SOV_expand_industrialization_desc:0 ""
+SOV_modernization__developement_of_rail:0 "Модернизация и развитие железнодорожного"
+SOV_modernization__developement_of_rail_desc:0 ""
+SOV_main_directorate_of_the_general_staff:0 "Основное директорат генерального персонала"
+SOV_main_directorate_of_the_general_staff_desc:0 ""
+SOV_dreadnought__battleship_development:0 "Развитие дредноута и линкора"
+SOV_dreadnought__battleship_development_desc:0 ""
+SOV_integration_of_the_cossacks:0 "Интеграция казаков"
+SOV_integration_of_the_cossacks_desc:0 ""
+SOV_army_reform:0 "Армейская реформа"
+SOV_army_reform_desc:0 ""
+SOV_concessions_to_radicals:0 "Уступки радикалам"
+SOV_concessions_to_radicals_desc:0 ""
+SOV_war_industries_committees:0 "Комитеты военной промышленности"
+SOV_war_industries_committees_desc:0 ""
+SOV_promote_competent_generals:0 "Реорганизовать Ставу"
+SOV_promote_competent_generals_desc:0 ""
+SOV_support_greece:0 "Поддержите Грецию"
+SOV_support_greece_desc:0 ""
+SOV_tsar_tank:0 "Царь Танк"
+SOV_tsar_tank_desc:0 ""
+SOV_Galicia:0 "Galicia Offensive"
+            ####Decisions####
+infrastructure_modernization:0 "Модернизация инфраструктуры "
+infrastructure_modernization_desc:0 "Из -за обширности страны российская железнодорожная система не только страдала от недостаточной сети, но и от сравнительно низкого объема трафика.Это было правдой, несмотря на то, что шестнадцать российских производителей вагонов товаров увеличили свою пропускную способность с 12 285 килограммов до 14 742 килограммов на единицу накануне войны."
+westukrainerailmodernization:0 "Западная Украина Модернизация железной дороги"
+westukrainerailmodernization_desc:0 ""
+stpeterburgrailmodernization:0 "Св. Петербург Модернизация"
+stpeterburgrailmodernization_desc:0 ""
+moscowrailmodernization:0 "Московская рельсовая модернизация"
+moscowrailmodernization_desc:0 ""
+belarusrailmodernization:0 "Беларусь модернизация"
+belarusrailmodernization_desc:0 "
+fourth_duma_assembly:0 "Ассамблея Дюма четвертого штата"
+arrestantiwardissidents:0 "Арестовать диссиденты против войны"
+arrestantiwardissidents_desc:0 ""
+concedeprivilegestopeasants:0 "Уступить привилегии крестьянам"
+concedeprivilegestopeasants_desc:0 ""
+
+SOV_tsar_tank_tt:0 "§CВы получите 600 тяжелых танков и бесплатное подразделение, если тяжелые танки уже будут исследованы.§!"
+SOV_fourth_duma_assembly_tt:0 "§CЭти решения позволят вам торговать 5% стабильностью на 5% военной поддержки и наоборот.§!"
+ kis_brestlitovsk:0 "Договор Бреста-Литовска"
+ kis_tsarnicholasabdicated:0 "Царь отрекся"

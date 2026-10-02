@@ -1,0 +1,127 @@
+add_namespace = faq_event_generic
+
+country_event = {	#FAQ about Meta
+	id = faq_event_generic.1
+	title = faq_event_generic.1.t
+	desc = faq_event_generic.1.desc
+    picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+
+	option = {
+		name = faq_event_generic.1.a 
+	}
+}
+
+country_event = {	#FAQ about Offensives
+	id = faq_event_generic.2
+	title = faq_event_generic.2.t
+	desc = faq_event_generic.2.desc
+    picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+
+	option = {
+		name = faq_event_generic.2.a 
+	}
+}
+
+country_event = {	#FAQ about State of Levant
+	id = faq_event_generic.3
+	title = faq_event_generic.3.t
+	desc = faq_event_generic.3.desc
+    picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = faq_event_generic.3.a 
+	}
+}
+ 
+country_event = {	#FAQ about the simulation of US participation
+	id = faq_event_generic.4
+	title = faq_event_generic.4.t
+	desc = faq_event_generic.4.desc
+    picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+
+	option = {
+		name = faq_event_generic.4.a 
+	}
+}
+
+country_event = {	#FAQ about the russian civil war
+	id = faq_event_generic.5
+	title = faq_event_generic.5.t
+	desc = faq_event_generic.5.desc
+    picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+
+	option = {
+		name = faq_event_generic.5.a 
+	}
+}
+
+country_event = {	#FAQ about the Balkan Wars
+	id = faq_event_generic.7
+	title = faq_event_generic.7.t
+	desc = faq_event_generic.7.desc
+    picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+
+	option = {
+		name = faq_event_generic.7.a 
+	}
+}
+
+country_event = {	#FAQ about the Serbia rework
+	id = faq_event_generic.8
+	title = faq_event_generic.8.t
+	desc = faq_event_generic.8.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = faq_event_generic.8.a
+	}
+}
+
+country_event={		#FAQ about Poland
+	id = faq_event_generic.11
+	title = faq_event_generic.11.t
+	desc = faq_event_generic.11.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = faq_event_generic.11.a
+	}
+}
+
+country_event = {	#FAQ for Entente
+	id = faq_event_generic.9
+	title = faq_event_generic.9.t
+	desc = faq_event_generic.9.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = faq_event_generic.9.a
+	}
+}
+
+country_event = {	#FAQ for Central Powers
+	id = faq_event_generic.10
+	title = faq_event_generic.10.t
+	desc = faq_event_generic.10.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = faq_event_generic.10.a
+	}
+}
+
+country_event = {	#FAQ for navy
+	id = faq_event_generic.12
+	title = faq_event_generic.12.t
+	desc = faq_event_generic.12.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = faq_event_generic.12.a
+	}
+}

@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_industrial_capacity_icon"
+		texturefile = "gfx/interface/industrial_capacity_icon.dds"
+		noOfFrames = 2
+	}
+	
+}

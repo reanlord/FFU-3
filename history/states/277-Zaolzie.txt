@@ -1,0 +1,22 @@
+state={
+	id=277
+	name="STATE_277"
+	provinces={
+		1904 9200 
+	}
+	manpower=152000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+       }
+}

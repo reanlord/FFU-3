@@ -1,0 +1,325 @@
+﻿l_russian:
+
+ tank_unlocker1:0 "Проект Ранний танк"
+ FRA_tank_unlocker1:0 "Проект Левавассер"
+ 
+ tank_unlocker2:0 "Прототип танка"
+ ENG_tank_unlocker2:0 "Маленький Вилли"
+ RUS_tank_unlocker2:0 "Царский танк"
+
+ tank_unlocker1_desc:0 "Некоторые из наших капитанов артиллерии предложили создать бронированный артиллерийский тягач для использования на поле боя. Несмотря на то, что подобный проект вряд ли будет реализован - или, если уж на то пошло, вряд ли вообще будет построен - это первый важный шаг к тому, чтобы подобные идеи однажды стали реальностью."
+
+ tank_unlocker2_desc:0 "Идея бронированной артиллерийской машины не нова, но вот конструкция, способная ее реализовать, - вполне. Создание базового прототипа танка, скорее всего, не приведет к каким-либо прямым результатам на поле боя, но на его основе вполне может появиться более традиционная конструкция."
+
+ TANK_UNLOCKER_SPECIAL:0 "Создание прототипа танка является необходимым условием для разработки обычных танков. Эта технология должна быть изучена до того, как вы сможете исследовать продвинутые танки."
+ TANK_UNLOCKER_RESEARCHED:0 "Позволяет исследовать дополнительные танковые технологии"
+
+ ww1_light_tank:0 "Легкое шасси 1915 года"
+ ww1_light_tank_interwar_1:0 "Шасси легкого танка 1917 года"
+ ww1_light_tank_interwar_2:0 "Шасси легкого танка 1918 года"
+ heavy_tank_chassis_0:0 "Шасси тяжелого танка 1915 года" 
+ ww1_heavy_tank2:0 "Шасси тяжелого танка 1917 года"
+ ww1_super_heavy_tank:0 "Шасси сверхтяжелого танка 1917 года"  
+ ##########################################################
+
+ ww1_armored_car_equipment_1:0 "Бронированный автомобиль I"
+ ww1_armored_car_equipment_2:0 "Бронированный автомобиль II"
+ ww1_armored_car_equipment_3:0 "Бронированный автомобиль III"
+ ww1_armored_car_equipment_4:0 "Бронированный автомобиль IV"
+ ww1_armored_car_equipment_5:0 "Бронированный автомобиль V"
+
+
+ ww1_armored_car_equipment_1_desc:0 "Хотя автомобиль - это еще молодая технология, ее уже рассматривают для военных целей. Такая простая конструкция, как установка пулемета на один из этих новых автомобилей и прикрепление еще нескольких металлических деталей в качестве брони, может дать нам новое интересное оружие для использования в бою."
+
+ ww1_armored_car_equipment_2_desc:0 "Броневик все еще способен развиваться. Разместив основной пулемет во вращающейся башне, мы сможем обеспечить защиту всех членов экипажа, повысив эффективность машины и ее практичность в бою."
+
+ ww1_armored_car_equipment_3_desc:0 "Поскольку кавалерия играет все меньшую роль на поле боя, бронеавтомобили кажутся логичным способом выполнить ту же роль в более безопасной манере. Модернизация двигателя и подвески наших броневиков, чтобы увеличить их скорость и мобильность, может стать хорошим способом помочь им в этом."
+
+ ww1_armored_car_equipment_4_desc:0 "С появлением на поле боя танков наши броневики могут показаться устаревшими, но эти более дешевые и простые в производстве модели все еще могут сослужить хорошую службу нашим военным. Небольшая модернизация брони этих машин, чтобы они могли хотя бы выдерживать небольшие удары, поможет сохранить их конкурентоспособность."
+
+ ww1_armored_car_equipment_5_desc:0 "По мере развития танков мы не забываем следить за тем, чтобы наши бронеавтомобили тоже были современными. Добавление небольших пушек или, возможно, автопушек в качестве основного орудия этих машин сделает их более грозными на поле боя, но при этом мобильными и экономичными."
+
+
+ ww1_prototype_tank:0 "Прототип танка"
+ ww1_tank_prototype_equipment:0 "Прототип танка"
+
+ ww1_light_tank_equipment_1_short:0 "Ранний Л. Танк I"
+ ww1_light_tank_equipment_1:0 "Ранний легкий танк I"
+
+ ww1_light_tank_equipment_1b_short:0 "Ранний уничтожитель легких танков"
+ ww1_light_tank_equipment_1b:0 "Ранний уничтожитель легких танков"
+
+ ww1_light_tank_equipment_2_short:0 "Ранний Л. Танк II"
+ ww1_light_tank_equipment_2:0 "Ранний легкий танк II"
+
+ ww1_light_tank_equipment_3_short:0 "Ранний Л. Танк III"
+ ww1_light_tank_equipment_3:0 "Ранний легкий танк III"
+
+ ww1_heavy_tank_equipment_1_short:0 "Ранний тяжелый танк I"
+ ww1_heavy_tank_equipment_1:0 "Ранний тяжелый танк I"
+
+ ww1_heavy_tank_equipment_2_short:0 "Ранний тяжелый танк II"
+ ww1_heavy_tank_equipment_2:0 "Ранний тяжелый танк II"
+
+ ww1_heavy_tank_equipment_3_short:0 "Ранний тяжелый танк III"
+ ww1_heavy_tank_equipment_3:0 "Ранний тяжелый танк III"
+
+ ww1_super_heavy_tank_equipment_short:0 "Ранний сверхтяжелый танк"
+ ww1_super_heavy_tank_equipment:0 "Early Super Heavy Tank"
+
+
+ ww1_light_tank_equipment_1_desc:0 "Тяжелые танки - это все хорошо, но легкий, более мобильный танк, который мог бы идти в ногу с кавалерией, - это действительно интересное предложение, особенно если он использует вращающуюся башню. Хотя некоторые утверждают, что менее бронированный легкий танк будет менее эффективным, потенциал этой роли нельзя игнорировать."
+ ww1_light_tank_equipment_b_desc:0 "Несмотря на то, что наши новые легкие танки превзошли все ожидания, они вооружены только пулеметами, что делает их неэффективными против вражеских укреплений или транспортных средств. Замена пулемета на пушку снизит противопехотный потенциал легкого танка, если только мы не найдем другое место для его установки, но сделает его более эффективной платформой для борьбы с транспортными средствами."
+ ww1_light_tank_equipment_2_desc:0 "Если установить пулемет непосредственно рядом с пушкой на легком танке, что наши инженеры называют коаксиальным креплением, мы получим лучшее из двух миров - легкий танк, способный бороться с вражескими машинами и при этом эффективный против вражеской пехоты. Возможно, когда-нибудь это станет мировым стандартом?"
+
+ ww1_heavy_tank_equipment_1_desc:0 "Разработка прототипа танка почти приблизила к реальности бронированную, вооруженную пушкой и протектором машину. Усовершенствование конструкции, главное из которых - сделать ее пригодной для массового производства и способной стабильно преодолевать траншеи, может дать нам боеспособную машину для прорыва вражеских линий."
+ ww1_heavy_tank_equipment_2_desc:0 "Усовершенствования конструкции тяжелого танка необходимы для того, чтобы машина оставалась полезной в меняющейся боевой ситуации. Протекторы универсального типа и более раздельные двигатели необходимы для того, чтобы эти наземные корабли могли продолжать сражаться до конца, а улучшения в расположении орудий могут дать нам дополнительное преимущество"
+
+ ww1_super_heavy_tank_equipment_desc:0 "Возможно, будущее танкового дизайна повторяет будущее кораблей. Если мы просто сделаем наши танки больше, лучше бронированными и добавим больше пушек, то, хотя они будут стоить намного дороже, они будут намного эффективнее в бою. Наши инженеры предупреждают, что в случае развития противотанковых технологий они превратятся в гигантские гробы, но каковы шансы на это?"
+
+ ww1_light_tank_equipment_3_desc:0 "В последние годы гражданская автомобильная промышленность переживает бум, особенно в том, что касается мощности двигателей. Если мы оснастим наши легкие танки более мощными двигателями, мы сможем увеличить как скорость, так и грузоподъемность наших легких танков, что приведет к созданию более быстрых и хорошо вооруженных моделей."
+
+ ww1_heavy_tank_equipment_3_desc:0 "Легкие танки могут иметь меньшее вооружение, но их башни оказываются огромным преимуществом в бою. Если мы установим эти вращающиеся башни на наши тяжелые танки, они сами смогут получить такое же преимущество, а также сохранить преимущества более тяжелой брони."
+
+
+
+
+
+
+
+
+#----------------------------------------------------
+
+#----------------------------------------------------
+# BELGIUM
+
+ BEL_ww1_armored_car_equipment_2_short:0 "Minerva"
+ BEL_ww1_armored_car_equipment_2:0 "Minerva Armored Car"
+
+ BEL_armored_car_equipment_3_short:0 "SAVA"
+ BEL_armored_car_equipment_3:0 "SAVA Armored Car"
+
+ #WW2 Light Tank
+ BEL_light_tank_equipment_1:0 "T15"
+ BEL_light_tank_equipment_1_short:0 "T15"
+#----------------------------------------------------
+
+#----------------------------------------------------
+# FRANCE
+
+ FRA_armored_car_equipment_1:0 "Charron AM"
+ FRA_armored_car_equipment_2:0 "Peugeot AM"
+ FRA_armored_car_equipment_3:0 "Peugeot AC-2"
+ FRA_armored_car_equipment_4:0 "AMC P 16"
+ FRA_armored_car_equipment_5:0 "Panhard 178"
+
+ FRA_ww1_light_tank_equipment_1_short:0 "Renault FT"
+ FRA_ww1_light_tank_equipment_1:0 "Renault FT"
+
+ FRA_ww1_light_tank_equipment_1b_short:0 "Renault FT (Canon)"
+ FRA_ww1_light_tank_equipment_1b:0 "Renault FT (Canon)"
+
+ FRA_ww1_light_tank_equipment_2_short:0 "Renault NC"
+ FRA_ww1_light_tank_equipment_2:0 "Renault NC"
+
+ FRA_ww1_light_tank_equipment_3_short:0 "D1"
+ FRA_ww1_light_tank_equipment_3:0 "Renault D1"
+
+ FRA_ww1_heavy_tank_equipment_1_short:0 "Schneider CA1"
+ FRA_ww1_heavy_tank_equipment_1:0 "Schneider CA1"
+
+ FRA_ww1_heavy_tank_equipment_2_short:0 "Saint-Chamond"
+ FRA_ww1_heavy_tank_equipment_2:0 "Saint-Chamond"
+
+ FRA_ww1_heavy_tank_equipment_3_short:0 "D2"
+ FRA_ww1_heavy_tank_equipment_3:0 "Renault D2"
+
+ FRA_ww1_super_heavy_tank_equipment_short:0 "FCM 2C"
+ FRA_ww1_super_heavy_tank_equipment:0 "FCM 2C"
+#----------------------------------------------------
+
+#----------------------------------------------------
+# ITALIA
+
+ ITA_armored_car_equipment_1:0 "FIAT Arsenale"
+
+ ITA_armored_car_equipment_2_short:0 "Lancia IZ"
+ ITA_armored_car_equipment_2:0 "Lancia-Ansaldo IZ"
+
+ ITA_armored_car_equipment_3_short:0 "FIAT Tripoli"
+ ITA_armored_car_equipment_3:0 "FIAT-Terni Tripoli"
+
+ ITA_armored_car_equipment_4_short:0 "AB 611"
+ ITA_armored_car_equipment_4:0 "Autoblinda AB 611"
+
+ ITA_armored_car_equipment_5_short:0 "AB 40"
+ ITA_armored_car_equipment_5:0 "Autoblinda AB 40"
+
+ ITA_ww1_light_tank_equipment_1_short:0 "FIAT 3000"
+ ITA_ww1_light_tank_equipment_1:0 "FIAT 3000"
+
+ ITA_ww1_light_tank_equipment_1b_short:0 "FIAT 3000/21"
+ ITA_ww1_light_tank_equipment_1b:0 "FIAT 3000 Mod. 21"
+
+ ITA_ww1_light_tank_equipment_2_short:0 "L5/21"
+ ITA_ww1_light_tank_equipment_2:0 "L5/21"
+
+ ITA_ww1_light_tank_equipment_3_short:0 "L2/29"
+ ITA_ww1_light_tank_equipment_3:0 "L2/29"
+
+ ITA_ww1_heavy_tank_equipment_1_short:0 "FIAT 2000"
+ ITA_ww1_heavy_tank_equipment_1:0 "FIAT 2000"
+
+ ITA_ww1_heavy_tank_equipment_2_short:0 "FIAT 2000B"
+ ITA_ww1_heavy_tank_equipment_2:0 "FIAT 2000B Vickers-Terni 37/40"
+#----------------------------------------------------
+
+#----------------------------------------------------
+# GERMAN EMPIRE
+
+ GER_ww1_tank_prototype_equipment_short:0 "Marienwagen"
+ GER_ww1_tank_prototype_equipment:0 "Bremen Marienwagen"
+
+ GER_armored_car_equipment_1:0 "Kraftwagen BAK"
+ GER_armored_car_equipment_2:0 "Ehrhardt E-V/4"
+ GER_armored_car_equipment_3:0 "Büssig A5P"
+ GER_armored_car_equipment_4:0 "Daimler DZVR"
+ GER_armored_car_equipment_5:0 "Sd.Kfz. 221"
+
+
+ GER_ww1_light_tank_equipment_1_short:0 "LK I"
+ GER_ww1_light_tank_equipment_1b_short:0 "LK II"
+ GER_ww1_light_tank_equipment_2_short:0 "LK III"
+ GER_ww1_light_tank_equipment_3_short:0 "Leichttraktor"
+
+ GER_ww1_light_tank_equipment_1:0 "Leichter Kampfwagen I"
+ GER_ww1_light_tank_equipment_1b:0 "Leichter Kampfwagen II"
+ GER_ww1_light_tank_equipment_2:0 "Leichter Kampfwagen III"
+ GER_ww1_light_tank_equipment_3:0 "Leichttraktor"
+
+ GER_ww1_heavy_tank_equipment_1_short:0 "A7V"
+ GER_ww1_heavy_tank_equipment_1:0 "Sturmpanzerwagen A7V"
+ GER_ww1_heavy_tank_equipment_2_short:0 "Oberschlesien"
+ GER_ww1_heavy_tank_equipment_2:0 "Sturmpanzerwagen Oberschlesien"
+ GER_ww1_heavy_tank_equipment_3:0 "Großtraktor"
+ GER_ww1_heavy_tank_equipment_3_short:0 "Großtraktor"
+ GER_ww1_heavy_tank_equipment_3_desc:0 "The Großtraktor was a series of prototypes to develop a heavier tank in Germany. After the first world war, Germany was restricted in military development by the Versailles Treaty but a secret program under the name cover 'Traktor' was developing armored military vehicles and artillery."
+
+ GER_ww1_super_heavy_tank_equipment_short:0 "K-Wagen"
+ GER_ww1_super_heavy_tank_equipment:0 "K-Wagen"
+
+#----------------------------------------------------
+
+#----------------------------------------------------
+# UNITED KINGDOM / BRITISH EMPIRE
+
+ ENG_ww1_tank_prototype_equipment_short:0 "Little Willie"
+ ENG_ww1_tank_prototype_equipment:0 "Little Willie"
+
+ ENG_armored_car_equipment_1_short:0 "Silver Ghost"
+ ENG_armored_car_equipment_1:0 "Rolls Royce Silver Ghost"
+
+ ENG_armored_car_equipment_2:0 "Austin"
+ ENG_armored_car_equipment_3:0 "Rolls Royce Mk.I"
+
+ ENG_armored_car_equipment_4:0 "Lanchester 6×4"
+
+ ENG_armored_car_equipment_5_short:0 "Daimler Dingo"
+ ENG_armored_car_equipment_5:0 "Daimler Dingo Scout Car"
+
+ ENG_ww1_light_tank_equipment_1_short:0 "Whippet"
+ ENG_ww1_light_tank_equipment_1:0 "Whippet"
+
+ ENG_ww1_light_tank_equipment_1b_short:0 "Mark B"
+ ENG_ww1_light_tank_equipment_1b:0 "Medium Mark B"
+
+ ENG_ww1_light_tank_equipment_2_short:0 "Mark C Hornet"
+ ENG_ww1_light_tank_equipment_2:0 "Medium Mark C Hornet"
+
+ ENG_ww1_light_tank_equipment_3_short:0 "Vickers Light Tank"
+ ENG_ww1_light_tank_equipment_3:0 "Vickers Light Tank Mark I"
+
+ ENG_ww1_heavy_tank_equipment_1_short:0 "Mark I"
+ ENG_ww1_heavy_tank_equipment_1:0 "Mark I Tank"
+
+ ENG_ww1_heavy_tank_equipment_2_short:0 "Mark IV"
+ ENG_ww1_heavy_tank_equipment_2:0 "Mark IV"
+
+ ENG_ww1_heavy_tank_equipment_3_short:0 "Mark VIII"
+ ENG_ww1_heavy_tank_equipment_3:0 "Mark VIII Liberty"
+
+ ENG_ww1_super_heavy_tank_equipment_short:0 "Flying Elephant"
+ ENG_ww1_super_heavy_tank_equipment:0 "Flying Elephant"
+#----------------------------------------------------
+
+#----------------------------------------------------
+# RUSSIAN EMPIRE
+
+ RUS_ww1_tank_prototype_equipment:0 "Tsar Tank"
+
+ RUS_armored_car_equipment_1:0 "Nakashidze-Charron"
+ RUS_armored_car_equipment_2:0 "Austin"
+ RUS_armored_car_equipment_3:0 "Mgebrov-Renault"
+ RUS_armored_car_equipment_4:0 "Austin-Putilov"
+ RUS_armored_car_equipment_5:0 "BA-3"
+
+ RUS_ww1_light_tank_equipment_1_short:0 "Vezdekhod"
+ RUS_ww1_light_tank_equipment_1:0 "Vezdekhod"
+
+ RUS_ww1_light_tank_equipment_1b_short:0 "Vezdekhod (Canon)"
+ RUS_ww1_light_tank_equipment_1b:0 "Vezdekhod (Canon)"
+
+ RUS_ww1_light_tank_equipment_2_short:0 "T-16"
+ RUS_ww1_light_tank_equipment_2:0 "T-16"
+
+ RUS_ww1_light_tank_equipment_3_short:0 "T-18"
+ RUS_ww1_light_tank_equipment_3:0 "T-18"
+
+ RUS_ww1_heavy_tank_equipment_1_short:0 "Rybinsk Tank"
+ RUS_ww1_heavy_tank_equipment_1:0 "Rybinsk Tank"
+
+ #RUS_ww1_heavy_tank_equipment_2:0 "Russian Armor II"
+
+ RUS_ww1_heavy_tank_equipment_3_short:0 "T-24"
+ RUS_ww1_heavy_tank_equipment_3:0 "T-24"
+
+ RUS_ww1_super_heavy_tank_equipment_short:0 "Mendeleev"
+ RUS_ww1_super_heavy_tank_equipment:0 "Mendeleev Tank"
+#----------------------------------------------------
+
+#----------------------------------------------------
+# AUSTRIA-HUNGARY
+
+ AUH_armored_car_equipment_1_short:0 "Austro-Daimler"
+ AUH_armored_car_equipment_1:0 "Austro-Daimler Panzerwagen"
+
+ AUH_armored_car_equipment_2:0 "Junovicz P.A.1"
+
+ AUH_armored_car_equipment_3:0 "Romfell P.A.2"
+
+ AUH_ww1_light_tank_equipment_1_short:0 "Motorgeschütz"
+ AUH_ww1_light_tank_equipment_1:0 "Motorgeschütz"
+
+ #WW2 Medium Tank
+ AUH_medium_tank_equipment_1:0 "Turán I"
+ AUH_medium_tank_equipment_1_short:0 "Turán I"
+#----------------------------------------------------
+
+#----------------------------------------------------
+# OTTOMAN EMPIRE
+
+ TUR_armored_car_equipment_1_short:0 "Hotchkiss"
+ TUR_armored_car_equipment_1:0 "Hotchkiss"
+
+ TUR_armored_car_equipment_2:0 "Panhard-Genty"
+#----------------------------------------------------
+
+ ARMORED_CAR_TITLE_LIGHT:0 "ARMORED\nCARS"
+
+
+# Description added, ugly but meh
+
+ armored_car_equipment_desc:0 "Бронированный автомобиль I"
+ 
+#FFU
+FRA_fast_tank_manufacturer:0 "Производитель быстрых резервуаров"

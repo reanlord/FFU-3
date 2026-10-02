@@ -1,0 +1,1569 @@
+focus_tree = {
+	id=bul_focus
+	default=no
+	country={ factor=0  modifier={ add=10 tag=BUL }  modifier={ add=10 original_tag=BUL } }
+
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+
+
+	focus = {
+		id = BUL_ww1_Reconciliation
+		#icon = GFX_focus_POL_cossack_king
+		icon = GFX_focus_BUL_the_return_of_ferdinand
+
+		completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_stability_weekly_var = 0.002
+				tooltip = BUL_stab_weekly_tt1  
+			}
+		}
+
+		ai_will_do = { factor = 100 }
+		cost = 3
+		x = 3
+		y = 1
+	}
+
+
+
+	focus = {
+		id = BUL_ww1FFU_Reconciliation
+		prerequisite = { focus=BUL_ww1_Reconciliation }
+		#icon = GFX_focus_generic_self_management
+		icon=GFX_focus_pol_gubernia
+		completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+			BUL_political_power_gain_var = 0.1 
+			tooltip = political_power_gain_daily_tooltip 
+			
+			}
+		}
+		ai_will_do = { factor = 100 }
+		cost = 3
+		x = 3
+		y = 2
+	}
+
+	focus = {
+		id = BUL_ww1_student_movement_focus
+		icon = GFX_focus_generic_befriend_bulgaria
+		prerequisite = { focus=BUL_ww1FFU_Reconciliation }
+		x = 1
+		y = 3
+		cost = 3
+
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_stability_weekly_var = 0.001
+				tooltip = BUL_stab_weekly_tt1
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_diplomatic_effort
+		#icon = GFX_goal_generic_major_alliance
+		icon=GFX_focus_generic_improve_the_administration
+		prerequisite {focus = BUL_ww1_student_movement_focus}
+		completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_production_factory_max_efficiency_factor_var = 0.02
+				tooltip = production_factory_max_efficiency_tooltip 
+			}
+		}
+		ai_will_do = { factor = 2000 }
+		cost = 3
+		x = 0
+		y = 4
+	}
+
+	focus = {
+		id = BUL_ww1_assert_position_west
+		prerequisite = { focus = BUL_ww1_BalkansPolitics focus=BUL_ww1_diplomatic_effort}
+		icon = GFX_focus_ETH_the_state_bank_of_ethiopia
+		ai_will_do = { factor = 20000 }
+		cost = 3
+		x = 1
+		y = 5
+		completion_reward = {
+			148 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={ type=industrial_complex level=2 instant_build=yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_equip_ger
+		prerequisite = { focus = BUL_ww1_assert_position_west }
+		icon=GFX_focus_CHL_strengthen_the_central_bank
+		completion_reward = { 
+			149 = {
+               add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+		ai_will_do = { factor = 300 }
+		cost = 3
+		x = 1
+		y = 6
+	}
+
+
+	focus = {
+		id = BUL_ww1_LimitDemocracy
+		prerequisite = { focus=BUL_ww1FFU_Reconciliation }
+		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
+
+			completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_stability_weekly_var = 0.002
+				tooltip = BUL_stab_weekly_tt1
+			}
+}
+
+		ai_will_do = { factor = 0 }
+		cost = 3
+		x = 5
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_reorganization_act
+		prerequisite = { focus=BUL_ww1_LimitDemocracy }
+		icon = GFX_focus_usa_voter_registration_act
+
+			completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_stability_factor_var = 0.10
+				tooltip = BUL_stabn_tt1
+			}
+}
+		ai_will_do = {	factor = 10	}
+		cost = 3
+		x = 5
+		y = 4
+	}
+
+	focus = {
+		id = BUL_ww1_SelectiveServiceAct
+		prerequisite = { focus=BUL_ww1_reorganization_act }
+		icon = GFX_focus_por_concordat
+		completion_reward = {
+			add_ideas=military_youth_focus
+		}
+		ai_will_do = { factor = 10 }
+		cost = 3
+		x = 5
+		y = 5
+
+	}
+
+	focus = {
+		id = BUL_ww1_unitedpeople
+		icon = GFX_focus_BUL_guardians_of_the_balkans
+		available = {has_completed_focus=BUL_ww1_technology_sharing}
+		completion_reward = {
+			add_political_power=50
+			add_war_support = 0.10
+			add_ideas=indoctrination_focus
+		}
+
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 12
+		y = 6
+		}
+
+		focus = {
+		id = BUL_ww1_BalkanLeague1
+		prerequisite = { focus=BUL_ww1_unitedpeople }
+		available = {date  > 1912.1.1 }
+		icon = GFX_focus_YUG_dissolve_serbia
+		completion_reward = {
+		147 = {
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		#add_timed_idea = {
+		#	days = 365
+		#	Idea = BUL_skoda_works
+		#}
+}
+
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 13
+		y = 7
+		}
+
+
+	
+	focus = {
+		id = BUL_ww1_BalkanITA
+		prerequisite = { focus= BUL_ww1_unitedpeople}
+		icon = GFX_focus_BUL_free_balkan_states
+		available = {date  > 1912.1.1 }
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 11
+		y = 7
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_LITBalkan
+		prerequisite = { focus=BUL_ww1_BalkanITA Focus=BUL_ww1_BalkanLeague1}
+		icon = GFX_focus_generic_attack_bulgaria
+		completion_reward = {
+			add_political_power=100
+			add_war_support = 0.10
+			army_experience = 30
+		}
+
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 12
+		y = 8
+	}
+
+	focus = {
+		id =  BUL_ww1_BalkanLeagueCollapse
+		icon = GFX_goal_molotov_ribbentrop_pact
+		available = {date  > 1913.1.1 }
+		completion_reward = {
+			add_political_power=-100
+			add_stability = -0.10
+		}
+
+		ai_will_do = { factor = 1 }
+		cost = 1
+		x = 16
+		y = 5
+	}
+
+	focus = {
+		id = BUL_ww1_NewHolding
+		prerequisite = { focus=BUL_ww1_BalkanLeagueCollapse }
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		completion_reward = {
+			147 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 5474
+			instant_build = yes
+			}
+			}
+			360 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 7620
+			instant_build = yes
+			}
+			}
+			360 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 7039
+			instant_build = yes
+			}
+			}
+			133 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 9418
+			instant_build = yes
+			}
+			}
+			133 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 270
+			instant_build = yes
+			}
+			}
+			160 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 15975
+			instant_build = yes
+			}
+			}
+			160 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 15865
+			instant_build = yes
+			}
+			}
+			160 = {
+			add_building_construction = {
+			type = trench
+			level = 1
+			province = 15793
+			instant_build = yes
+			}
+			}
+		}
+				
+		ai_will_do = { factor = 1 }
+		cost = 1
+		x = 15
+		y = 6
+	}
+
+	focus = {
+		id = BUL_ww1_BalkanAlliance
+		prerequisite = { focus=BUL_ww1_BalkanLeagueCollapse}
+		icon = GFX_goal_generic_major_alliance
+		available = { controls_state = 154 }
+		completion_reward = { 
+					154 = {
+               add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 17
+		y = 6
+
+	}
+		
+	
+	focus = {
+		id = BUL_ww1_TurkishAsset
+		prerequisite = { focus=BUL_ww1_NewHolding focus=BUL_ww1_BalkanAlliance}
+		available = { controls_state = 133 }
+		icon = GFX_focus_DEN_heavy_regulations
+		completion_reward = {
+			133 = {
+               add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+		cost = 4
+		relative_position_id=BUL_ww1_BalkanAlliance
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = BUL_ww1_Totalwar
+		prerequisite = { focus=BUL_ww1_BalkanAlliance focus=BUL_ww1_NewHolding}
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 45000 
+				producer = BUL
+			}
+			add_equipment_to_stockpile = {
+				type = machine_gun_equipment_1
+				amount = 1200
+				producer = BUL
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = BUL
+			}
+			add_equipment_to_stockpile = {
+				type = light_field_gun_equipment_1
+				amount = 200
+				producer = BUL
+			}
+		}
+		ai_will_do = { factor = 1 }
+		cost = 4
+		x = 16
+		y = 7
+
+	}
+
+	focus = {
+		id = BUL_ww1_ReadyArmy
+		prerequisite = { focus=BUL_ww1_Totalwar }
+		icon = GFX_focus_NORDIC_com_selector_army
+		completion_reward = {
+			#add_political_power=100
+			#add_tech_bonus={ name=unitedpeople_a_bonus bonus=0.5 uses=2 category=land_doctrine }
+			#add_manpower = 350000
+			custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			add_to_variable = {
+				BUL_army_morale_factor_var = 0.1
+				tooltip = BUL_army4_tt
+			}
+
+			custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			add_to_variable = {
+				BUL_army_speed_factor_var = 0.025
+				tooltip = BUL_army15_tt
+			}
+
+			custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			add_to_variable = {
+				BUL_max_dig_in_var = 6
+				tooltip = BUL_army2_tt
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+		cost = 3
+		relative_position_id=BUL_ww1_Totalwar
+		x = 0
+		y = 1
+
+	}
+		
+	focus = {
+		id = BUL_national_duty
+		prerequisite = { focus=BUL_ww1_LITBalkan }
+		prerequisite = { focus=BUL_ww1_ReadyArmy }
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		completion_reward = {
+			add_ideas=BUL_nation_in_arms
+		}
+
+		ai_will_do = { factor = 1 }
+		cost = 5
+		relative_position_id=BUL_ww1_ReadyArmy
+		x = -2
+		y = 1
+
+	}
+
+
+
+	#----------------------------------------------------------------------- 
+	# Bloc 1
+	#-----------------------------------------------------------------------
+	focus = {
+		id = BUL_ww1_BalkansPolitics
+		prerequisite = { focus=BUL_ww1_student_movement_focus }
+		icon = GFX_focus_ITA_devaluate_the_lire
+
+			completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_political_power_gain_var = 0.2
+				tooltip = political_power_gain_daily_tooltip
+			}
+}
+		
+		ai_will_do = { factor = 2000 }
+		cost = 3
+		x = 2
+		y = 4
+	}
+
+
+	focus = {
+		id = BUL_ww1_ready_country
+		prerequisite = { focus = BUL_ww1_LimitDemocracy }
+		available = {controls_state = 360}
+		icon = GFX_focus_BUL_the_fatherland_front 
+		completion_reward = { 
+			360 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type=industrial_complex level=2 instant_build=yes 
+				}
+			}
+			133={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			361={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}   
+		ai_will_do = { factor = 2000 }
+		cost = 3
+		x = 7
+		y = 4
+	}
+
+
+	#-----------------------------------------
+
+	focus = {
+		id = BUL_ww1_join_centralpower
+		prerequisite = { focus = BUL_ww1_SelectiveServiceAct }
+		icon = GFX_focus_BUL_plot_against_boris
+
+		completion_reward = {
+			
+			147 = { add_extra_state_shared_building_slots = 1 add_building_construction={ type=industrial_complex level=1 instant_build=yes } } 
+			148 = { add_extra_state_shared_building_slots = 1 add_building_construction={ type=industrial_complex level=1 instant_build=yes } } 
+			149 = { add_extra_state_shared_building_slots = 1 add_building_construction={ type=industrial_complex level=1 instant_build=yes } } 
+		}
+
+
+  
+		ai_will_do = { factor = 300 }
+		cost = 3
+		x = 5
+		y = 6
+	}
+
+	#-----------------------------------------
+	focus = {
+		id = BUL_ww1_technology_sharing
+		prerequisite = { focus=BUL_ww1_join_centralpower focus=BUL_ww1_equip_ger}
+		#icon = GFX_goal_generic_consumer_goods
+		icon=GFX_focus_CHL_invite_french_aristocracy
+		completion_reward = {
+					custom_effect_tooltip = BUL_modify_industry_spirit_tt
+
+			add_to_variable = {
+				BUL_stability_weekly_var = 0.002
+				tooltip = BUL_stab_weekly_tt1  }
+			
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_political_power_gain_var = 0.2
+				tooltip = political_power_gain_daily_tooltip
+			}
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_stability_factor_var = 0.35
+				tooltip = BUL_stabn_tt1
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 8
+		x = 3
+		y = 7
+	}
+
+
+	#-----------------------------------------------------------------------
+
+	#-----------------------------------------------------------------------
+	# Bloc 4
+	#-----------------------------------------------------------------------
+	focus = {
+		id = BUL_ww1_assert_position_east
+		prerequisite = { focus = BUL_ww1_ready_country }
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		completion_reward = {
+			360={set_state_category = town}
+			133={set_state_category = town}
+			361={set_state_category = town}
+			154={set_state_category = town}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 7
+		y = 5
+	}
+
+	focus = {
+		id = BUL_ww1_develop_serbia
+		prerequisite = { focus=BUL_ww1_production_effort }
+		icon = GFX_focus_generic_railroad
+		ai_will_do = { factor = 10 }
+		cost = 2
+		x = 34
+		y = 3
+		completion_reward = { 
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 2705
+				target_province = 15472
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 15472
+				target_province = 15502
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 15502
+				target_province = 3359
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 3359
+				target_province = 15550
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 15550
+				target_province = 916
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 916
+				target_province = 5525
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 5525
+				target_province = 6068
+			}
+			build_railway = {
+				level = 3
+				fallback = yes
+				start_province = 6068
+				target_province = 9494
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_reinforce_ports
+		prerequisite = { focus=BUL_ww1FFU_Reconciliation }
+		icon = GFX_focus_BUL_form_a_regency_council
+		completion_reward = { 
+		147 = { add_extra_state_shared_building_slots = 2 add_building_construction={ type=industrial_complex level=2 instant_build=yes } } 
+
+		}
+		
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 3
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_reinforce_austria_border
+		prerequisite = { focus=BUL_ww1_reinforce_ports }
+		icon = GFX_focus_POL_complete_april_constitution
+		completion_reward = {
+			147 = {
+				add_extra_state_shared_building_slots=1
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+			148 = {
+				add_extra_state_shared_building_slots=1
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+			149 = {
+				add_extra_state_shared_building_slots=1
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+
+		}
+
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 3
+		y = 6
+	}
+
+######################################################################################
+
+
+	focus = {
+		id = BUL_ww1_Army1
+		icon = GFX_focus_generic_military_mission
+		available ={has_completed_focus = BUL_ww1_technology_sharing}
+		completion_reward = {
+			147 = {
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=2 instant_build=yes }
+			}
+			#add_ideas = ROM_study_foreign_equipment
+		}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 15
+		y = 0
+	}
+
+	focus = {
+		id = BUL_ww1_Army2
+		#icon = GFX_focus_LIT_organize_the_iron_wolf
+		icon = GFX_focus_BUL_the_fate_of_the_balkans
+		prerequisite = { focus=BUL_ww1_Army4 }
+
+		completion_reward = {
+			
+			add_tech_bonus= {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+				technology = jaegers
+				technology = jaegers2
+				technology = jaegers3
+				technology = Stormtroopers
+				technology = Stormtroopers2
+				technology = Stormtroopers3
+				technology = tech_special_forces
+				technology = advanced_special_forces
+				technology = extreme_environment_training
+				technology = improved_special_forces
+				technology = survival_training
+				technology = elite_forces
+            }
+		}
+		cost = 4
+		x = 11
+		y = 1
+	}
+
+	focus = {
+		id = BUL_ww1_Army3
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus=BUL_ww1_Army4 }
+		completion_reward = {
+			360 = {
+               add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name=infantry_weapons_bonus bonus=1 uses=3
+				technology=ww1infantry_weapons2
+				technology=ww1_infantry_equip2
+				technology=ww1infantry_weapons3
+				technology=ww1_infantry_equip3
+				technology=infantry_weapons1
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 4
+		x = 10
+		y = 2
+	}
+
+	focus = {
+		id = BUL_ww1_Army4
+		prerequisite = {}
+		icon = GFX_focus_focus_fra_maquis
+		available = { has_completed_focus = BUL_ww1_production_effort }
+		completion_reward = {
+			148 = {
+               add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 10
+		y = 0
+	}
+
+	focus = {
+		id = BUL_ww1_Army5
+		#icon = GFX_focus_LIT_restore_order
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		prerequisite = { focus=BUL_ww1_Army4 }
+		
+		completion_reward = {
+			361 = {
+               add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name=machinegun_bonus bonus=1 uses=2
+				technology=machine_gun_2
+				technology=infantry_ww1_machinegun3
+				technology=machine_gun_3
+				technology=infantry_ww1_machinegun4
+			}
+
+			#custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			#add_to_variable = {
+			#	BUL_max_planning_factor_var = 0.10
+			#	tooltip = max_planning_tooltip
+			#}
+		}
+		cost = 4
+		x = 9
+		y = 1
+	}
+
+	focus = {
+		id = BUL_ww1_Army6
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus=BUL_ww1_Army1  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Artillery
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 13
+		y = 1
+	}
+
+	focus = {
+		id = BUL_ww1_Army7
+		prerequisite = { focus=BUL_ww1_Army1 }
+		#icon = GFX_focus_GRE_hellenic_armed_forces
+		icon = GFX_focus_generic_military_academy
+		completion_reward = {
+			army_experience = 200
+			custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			add_to_variable = {
+				BUL_max_command_power_var = 20
+				tooltip = BUL_army6_tt
+			}
+
+			custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			add_to_variable = {
+				BUL_command_power_gain_mult_var = 0.05 
+				tooltip = BUL_army5_tt
+			}
+		}
+		cost = 5
+		x = 18
+		y = 1
+	}
+
+	focus = {
+		id = BUL_ww1_Army8
+		prerequisite = { focus=BUL_ww1_Army4 }
+		icon = GFX_focus_POL_beck_ribbentrop
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = Artillery
+			}
+			#custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			#add_to_variable = {
+			#	BUL_max_dig_in_var = 1
+			#	tooltip = max_dig_in_factor_tooltip
+			#}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 4
+		x = 12
+		y = 2
+	}
+
+	focus = {
+		id = BUL_ww1_Army9
+		prerequisite = { focus=BUL_ww1_Army8 }
+		icon = GFX_focus_GRE_a_land_of_mountains
+		completion_reward = {
+			set_technology = {
+				railway_gun = 1
+			}
+			create_railway_gun = {
+				equipment = railway_gun_equipment_1
+				location = 8047
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 3
+		x = 13
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_Army10
+		prerequisite = { focus=BUL_ww1_Army8 }
+		icon = GFX_focus_NZL_bob_semple_tank
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = Armor
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 11
+		y = 3
+	}
+
+	focus = {
+
+		id = BUL_ww1_Army11
+		prerequisite = { focus=BUL_ww1_Army8 }
+		icon = GFX_focus_SOV_builder_of_the_red_army
+
+		completion_reward = {
+			add_ideas = BUL_artillery_focus
+		}
+		
+		ai_will_do = { factor = 10 }
+		cost = 4
+		x = 12
+		y = 4
+	}
+
+	focus = {
+		id = BUL_ww1_Army12
+		prerequisite = { focus=BUL_ww1_Army8 }
+		icon = GFX_focus_LIT_restore_the_grand_duchy
+		completion_reward = {
+			add_tech_bonus = {
+				name=special_units_bonus bonus=1 uses=3
+				category = sniper_tech
+				category = flamethrower_tech
+				category = wardog_tech
+			}
+			#custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			#add_to_variable = {
+			#	BUL_army_attack_factor_var = 0.05
+			#	tooltip = BUL_army33_tt
+			#}
+			#custom_effect_tooltip = BUL_modify_Army_spirit_tt
+			#add_to_variable = {
+			#	BUL_army_defence_factor_var = 0.05
+			#	tooltip = BUL_army3_tt
+			#}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 4
+		x = 14
+		y = 4
+	}
+
+######################################################################################
+
+	focus = {
+		id = BUL_ww1_industrial_effort
+		#icon = GFX_goal_reichsautobahn
+		icon=GFX_focus_generic_modernize_industry
+		completion_reward = {
+			add_political_power=150
+			add_tech_bonus={
+				technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				#technology = dispersed_industry
+				#technology = dispersed_industry2
+				#technology = dispersed_industry3
+				name=industrial_bonus bonus=1.0 uses=1
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 30
+		y = 0
+	}
+
+	focus = {
+		id = BUL_ww1_infrastructure_effort
+		prerequisite = { focus=BUL_ww1_industrial_effort }
+		icon = GFX_focus_generic_improve_roads
+		cost = 5
+		x = 30
+		y = 1
+		available = { has_completed_focus = BUL_ww1_technology_sharing }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 147
+						state = 148
+						state = 149
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_production_speed_infrastructure_factor_var = -0.2
+				tooltip = infrastructure_build_speed_factor_tooltip
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_construction_effort
+		prerequisite = { focus=BUL_ww1_infrastructure_effort }
+		icon = GFX_goal_generic_construct_civ_factory
+		completion_reward = {
+			random_owned_controlled_state={
+				limit={
+					#is_coastal=yes
+					NOT={state=110}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=industrial_complex level=1 instant_build=yes }
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 28
+		y = 2
+	}
+	
+		focus = {
+		id = BUL_ww1_Farm1
+		prerequisite = { focus=BUL_ww1_construction_effort }
+		icon = GFX_goal_generic_construct_civ_factory
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 27
+		y = 3
+		completion_reward={
+			random_owned_controlled_state={
+				limit={
+					#is_coastal=yes
+					NOT={state=110}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=industrial_complex level=1 instant_build=yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_production_effort
+		prerequisite = { focus=BUL_ww1_infrastructure_effort }
+		icon=GFX_focus_generic_industry_1
+			completion_reward = {
+					custom_effect_tooltip = BUL_modify_industry_spirit_tt
+				add_to_variable = {
+				BUL_industrial_capacity_factory_var = 0.1
+				tooltip = industrial_capacity_factory_tooltip
+			}
+			add_tech_bonus={
+				technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				#technology = dispersed_industry
+				#technology = dispersed_industry2
+				#technology = dispersed_industry3
+				name=industrial_bonus bonus=1.0 uses=1
+			}
+}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 32
+		y = 2
+	}
+
+focus = {
+		id = BUL_ww1_RussianFacto
+		prerequisite = { focus=BUL_ww1_production_effort }
+		#icon = GFX_SOV_emergency_war_credit-45149
+		icon=GFX_focus_mex_privatisation
+			completion_reward = {
+					custom_effect_tooltip = BUL_modify_industry_spirit_tt
+				add_to_variable = {
+				BUL_industrial_capacity_factory_var = 0.1
+				tooltip = industrial_capacity_factory_tooltip
+			}
+}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 31.5
+		y = 4
+	}
+
+	focus = {
+		id = BUL_ww1_EntenteSUP
+		prerequisite = { focus=BUL_ww1_production_effort }
+		icon=GFX_focus_generic_resource_extraction
+					completion_reward = {
+					custom_effect_tooltip = BUL_modify_industry_spirit_tt
+				add_to_variable = {
+				BUL_local_resources_factor_var = 0.05
+				tooltip = local_resources_factor_tooltip
+			}
+}
+		ai_will_do = { factor = 10 }
+		cost = 3
+		x = 32.5
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_LoanGER
+		prerequisite = { focus= BUL_ww1_production_effort }
+		icon = GFX_focus_BUL_cooperate_with_the_zveno
+			completion_reward = {
+					custom_effect_tooltip = BUL_modify_industry_spirit_tt
+				add_to_variable = {
+				BUL_production_factory_max_efficiency_factor_var = 0.03
+				tooltip = production_factory_max_efficiency_tooltip
+			}
+}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 30.5
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_Farm2
+		prerequisite = { focus=BUL_ww1_construction_effort }
+		icon = GFX_goal_generic_construct_mil_factory
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 24
+		y = 4
+		completion_reward={
+			random_owned_controlled_state={
+				limit={
+					#is_coastal=yes
+					NOT={state=110}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_Farm3
+		prerequisite = { focus=BUL_ww1_construction_effort }
+		icon = GFX_goal_generic_construct_civ_factory
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 25
+		y = 3
+		completion_reward={
+			random_owned_controlled_state={
+				limit={
+					#is_coastal=yes
+					NOT={state=110}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=industrial_complex level=1 instant_build=yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_construction_effort_3
+		prerequisite = { focus=BUL_ww1_Farm1 }
+		icon = GFX_goal_generic_construct_mil_factory
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 26
+		y = 4
+		completion_reward={
+			random_owned_controlled_state={
+				limit={
+					#is_coastal=yes
+					NOT={state=110}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+		}
+	}
+
+
+	focus = {
+		id = BUL_ww1_production_effort_3
+		prerequisite = { focus=BUL_ww1_develop_serbia }
+		icon=GFX_focus_generic_full_employment
+		completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_production_speed_arms_factory_factor_var = 0.4
+				tooltip = arms_factory_build_speed_factor_tooltip
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 3
+		x = 34
+		y = 5
+	}
+
+	focus = {
+		id = BUL_ww1_InduPath1
+		prerequisite = { focus=BUL_ww1_EntenteSUP}
+		icon = GFX_focus_generic_mining_industry
+		completion_reward = { 
+			add_resource = {
+    	type = Steel
+    	amount = 12
+    	state = 147
+		}
+		add_resource = {
+    	type = Tungsten
+    	amount = 5
+    	state = 148
+		}
+		add_resource = {
+    	type = Wood
+    	amount = 14
+    	state = 149
+		}
+
+		}
+		ai_will_do = { factor = 10 }
+		cost = 3
+		x = 32.75
+		y = 5
+	}
+
+	focus = {
+		id = BUL_ww1_InduPath2
+		prerequisite = { focus=BUL_ww1_production_effort }
+		icon = GFX_focus_generic_reorient_production
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 33.5
+		y = 4
+		completion_reward={
+			147={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=2 instant_build=yes }
+			}
+			148={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=2 instant_build=yes }
+			}
+			149={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=2 instant_build=yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_extra_tech_slot
+		prerequisite = { focus=BUL_ww1_Army1}
+		icon = GFX_focus_research
+		completion_reward = { add_research_slot=1 }
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 15
+		y = 2
+	}
+
+
+	focus = {
+		id = BUL_ww1_infrastructure_effort_4
+		prerequisite = { focus=BUL_ww1_Farm1 }
+		icon = GFX_goal_generic_construct_mil_factory
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 28
+		y = 4
+		completion_reward={
+			random_owned_controlled_state={
+				limit={
+					#is_coastal=yes
+					NOT={state=110}
+				}
+				add_extra_state_shared_building_slots=2
+				add_building_construction={ type=arms_factory level=1 instant_build=yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_extra_tech_slot_2
+		prerequisite = { focus=BUL_ww1_construction_effort_3 focus=BUL_ww1_infrastructure_effort_4 }
+		icon = GFX_focus_research
+		#available = { num_of_factories > 50 }
+		completion_reward = { add_research_slot=1 }
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 27
+		y = 5
+		cancel_if_invalid =no
+	}
+
+	###########################################################################################################################
+
+	focus = {
+		id = BUL_ww1_naval_effort
+		icon = GFX_goal_generic_build_navy
+		prerequisite ={ Focus=BUL_ww1_Army7 }
+		available = { any_state={ is_coastal=yes is_controlled_by=ROOT } }
+		completion_reward = {
+			navy_experience = 100
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = naval_equipment
+			}
+		}
+		cost = 3
+		x = 22
+		y = 2
+	}
+
+	focus = {
+		id = BUL_ww1_newnavalcanons_1
+		prerequisite = { focus=BUL_ww1_naval_effort }
+		#icon = GFX_focus_generic_merchant_fleet
+		icon = GFX_goal_generic_navy_cruiser
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit={ is_coastal=yes NOT={state=110} }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		cost = 2
+		x = 21
+		y = 3
+	}
+
+
+	focus = {
+		id = BUL_ww1_destroyer_effort
+		prerequisite = { focus=BUL_ww1_naval_effort }
+		icon = GFX_goal_generic_wolf_pack
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit={ is_coastal=yes NOT={state=110} }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 2
+		x = 23
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_flexible_navy
+		prerequisite = { focus= BUL_ww1_newnavalcanons_1 focus=BUL_ww1_naval_effort focus=BUL_ww1_destroyer_effort }
+		icon = GFX_goal_generic_occupy_states_coastal
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit={ is_coastal=yes NOT={state=110} }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		cost = 2
+		x = 22
+		y = 4
+	}
+
+
+	focus = {
+		id = BUL_ww1_large_navy
+		prerequisite = { focus=BUL_ww1_newnavalcanons_1 focus=BUL_ww1_flexible_navy focus=BUL_ww1_destroyer_effort }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit={ is_coastal=yes NOT={state=110} }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		cost = 2
+		x = 21
+		y = 5
+	}
+
+	focus = {
+		id = BUL_ww1_submarine_effort
+		prerequisite = { focus=BUL_ww1_newnavalcanons_1 focus=BUL_ww1_flexible_navy focus=BUL_ww1_destroyer_effort }
+		icon = GFX_goal_generic_navy_submarine
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit={ is_coastal=yes NOT={state=110} }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		cost = 2
+		x = 23
+		y = 5
+	}
+
+	focus = {
+		id = BUL_ww1_dreadnought_effort
+		prerequisite = { focus=BUL_ww1_large_navy focus=BUL_ww1_flexible_navy focus=BUL_ww1_submarine_effort }
+		icon = GFX_goal_generic_navy_battleship
+		cost = 2
+		x = 22
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = BUL_modify_industry_spirit_tt
+			add_to_variable = {
+				BUL_production_speed_dockyard_factor_var = 1.05
+				tooltip = BUL_dockyard_construction_tt1
+			}
+		}
+	}
+
+###########################################################################################################################
+
+  focus = {
+		id = BUL_ww1_Air_effort
+		icon = GFX_focus_CZE_military_aeronautical_institute
+		prerequisite = { Focus=BUL_ww1_Army7 }
+		completion_reward = {
+			147 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+}
+		cost = 5
+		x = 18
+		y = 2
+	}
+
+	focus = {
+		id = BUL_ww1_Scoutplane
+		prerequisite = { focus=BUL_ww1_Air_effort }
+		icon = GFX_goal_generic_air_bomber
+						completion_reward = {
+			add_tech_bonus = {
+				name = BUL_long_range_escorts
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+	}
+		ai_will_do = { factor = 10 }
+		cost = 5
+		x = 17
+		y = 3
+	}
+
+	focus = {
+		id = BUL_ww1_CentralAirforce
+		prerequisite = { focus=BUL_ww1_Air_effort }
+		icon = GFX_goal_generic_air_doctrine
+				completion_reward = {
+			add_tech_bonus = {
+				name = BUL_long_range_escorts
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+	}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		cost = 5
+		x = 19
+		y = 3
+	}
+
+
+	focus = {
+		id = BUL_ww1_Zeppelin
+		prerequisite = { focus=BUL_ww1_CentralAirforce Focus= BUL_ww1_Scoutplane}
+		icon = GFX_goal_generic_CAS
+			completion_reward = {
+			add_tech_bonus = {
+				name = BUL_long_range_escorts
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+	}
+		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
+		cost = 5
+		x = 18
+		y = 4
+	}
+
+
+##############################################################

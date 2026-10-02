@@ -1,0 +1,26 @@
+state={
+	id=64
+	name="STATE_64"
+	provinces={
+		1180 3853 5510 5942 6734 7325 8193 8382 9301 10380 11348 15429 15486 15540 15615 15627 20008 20011 20012 20013 20014 20016 20021 20030 20031 20033 20036 20037 20038 20039 
+	}
+	manpower=753400
+	buildings_max_level_factor=1.000
+	state_category = town
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 4	
+			20008 = {
+				naval_base = 5
+			}			
+		}
+		victory_points = {
+			20013 20 
+		}
+		victory_points = {
+			20008 5
+		}
+	}
+}

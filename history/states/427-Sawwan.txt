@@ -1,0 +1,30 @@
+#Sawwan
+state={
+	id=427
+	name="STATE_427"
+	resources={
+
+	}
+	
+	history={
+		#owner = JBS
+		#add_core_of = JBS
+		add_extra_state_shared_building_slots=1
+		buildings = {
+			infrastructure=1
+			arms_factory=1
+		}
+		1911.1.1.12 = {
+			owner = SWI
+			 
+		}
+	}
+	
+	provinces={
+		52 513 646 2868 3037 3758 4276 4681 4971 5538 5636 6916 7769 8203 8817 10024 10410 11082 11540 16777 16782 16807 16808 16841 16858 16868 16871 16883
+	}
+	
+	manpower=31950
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

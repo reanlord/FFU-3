@@ -1,0 +1,148 @@
+fire_concentration = {
+    track = combat_support
+    name = SUBDOCTRINE_FIRE_CONCENTRATION
+    description = SUBDOCTRINE_FIRE_CONCENTRATION_DESC
+    icon = GFX_doctrine_fire_concentration_medium
+
+    xp_cost = 150
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+	}
+	mot_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+	}
+	armored_car_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+	}
+	light_tank_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+	}
+
+    rewards = {
+        
+        predicted_fire = {
+        #1
+           army_bonus_air_superiority_factor = 0.05
+		air_cas_present_factor = 0.05
+           recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		mot_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		armored_car_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		light_tank_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		supply_consumption_factor = 0.01
+        }
+        standing_barrage = {
+        #2
+		recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		mot_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		armored_car_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		light_tank_recon = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.03
+			}
+		}
+		supply_consumption_factor = 0.02
+        category_artillery = {
+			defense = 0.1
+		}
+        }
+        artillery_groups = {
+        #3
+           category_artillery = {
+			breakthrough = 0.05
+		}
+		supply_consumption_factor = 0.01
+          category_support_battalions = {
+			breakthrough = 0.05
+			soft_attack = 0.05
+		}
+		supply_consumption_factor = 0.01
+        }
+        dedicated_air_support = {
+        #4
+           category_artillery = {
+			soft_attack = 0.03
+		}
+           category_artillery = {
+			defense = 0.04
+		}
+		supply_consumption_factor = 0.02      
+        }
+        weakpoint_studies = {
+        #5
+            category_artillery = {
+			defense = 0.04
+		}
+
+            category_artillery = {
+			breakthrough = 0.05
+		}
+            signal_company = {
+			battalion_mult = {
+				category = category_artillery
+				soft_attack = 0.04
+				#breakthrough = 0.04
+			}
+		}
+            supply_consumption_factor = 0.03
+        }
+    }
+}
+

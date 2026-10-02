@@ -1,0 +1,201 @@
+capital = 147
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 1.0
+set_research_slots = 3
+set_stability = 0.60
+set_war_support = 0.60
+set_convoys = 50
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+recruit_character = BUL_aleksandar_stamboliyski
+recruit_character = BUL_dimitar_blagoev
+recruit_character = BUL_ferdinand_i
+recruit_character = BUL_vladimir_vazov
+recruit_character = BUL_lukov_h.
+recruit_character = BUL_zhekov
+recruit_character = BUL_kolev
+recruit_character = BUL_fichev
+recruit_character = BUL_dobrev
+recruit_character = BUL_serafimov
+recruit_character = BUL_atanas_todorov
+recruit_character = BUL_andrey_lazarov
+recruit_character = BUL_radko_dimitriev
+recruit_character = BUL_stoyan_danev
+recruit_character = BUL_vicho_dikov
+recruit_character = BUL_mihail_savov
+recruit_character = BUL_konstantin_kirkov
+recruit_character = BUL_nikola_topaldzhikov
+recruit_character = BUL_stefan_nerezov
+recruit_character = BUL_marko_tourlakov
+recruit_character = BUL_rayko_daskalov
+recruit_character = BUL_petar_midilev
+recruit_character = BUL_nikola_genadiev
+recruit_character = BUL_radul_milkov
+recruit_character = BUL_hristo_burmov
+recruit_character = BUL_ivan_evstratiev_geshov
+recruit_character = BUL_pravoslav_tenev
+recruit_character = BUL_sava_savov
+recruit_character = BUL_konstantin_zhostov
+recruit_character = BUL_lazar_draganov
+recruit_character = BUL_kristo_pastukhov
+recruit_character = BUL_stepan_paprikov
+recruit_character = BUL_atanas_vatev
+recruit_character = BUL_aleksandyr_dimitrov
+recruit_character = BUL_todor_ivanchov
+recruit_character = BUL_vasil_zlatarov
+recruit_character = BUL_kalin_naidenov
+recruit_character = BUL_mikhail_madzharov
+
+
+################# Bulgarian ARMY 
+set_variable = { var = BUL_air_strategic_bomber_bombing_factor value = 0 }
+set_variable = { var = BUL_weekly_manpower_var value = 0  }
+set_variable = { var = BUL_army_attack_factor_var value = 0.0 }
+set_variable = { var = BUL_army_defence_factor_var value  = 0.0 }
+set_variable = { var = BUL_cavalry_attack_factor_var value = 0.0 }
+set_variable = { var = BUL_cavalry_defence_factor_var value = 0.0 }
+set_variable = { var = BUL_planning_speed_var value = 0.05 } 
+#set_variable = { var = BUL_max_planning_factor_var value = -0.10 }
+set_variable = { var = BUL_max_command_power_var value = -20 } 
+set_variable = { var = BUL_command_power_gain_mult_var value = -0.05 } 
+#set_variable = { var = BUL_land_doctrine_cost_factor_var value = 0.15 } 
+set_variable = { var = BUL_army_speed_factor_var value = -0.05 } 
+set_variable = { var = BUL_army_morale_factor_var value = -0.10 } 
+set_variable = { var = BUL_max_dig_in_var value = -5 } 
+set_variable = { var = BUL_army_armor_attack_factor_var value = 0 } 
+set_variable = { var = BUL_air_ace_generation_chance_factor_var value = 0 } 
+set_variable = { var = BUL_experience_gain_army_var value = 0.0 } 
+set_variable = { var = BUL_send_volunteers_tension_var value = 0 } 
+set_variable = { var = BUL_send_volunteer_divisions_required_var value = 0 } 
+set_variable = { var = BUL_conscription_var value = 0 } 
+set_variable = { var = BUL_army_core_attack_factor value = 0.1 } 
+set_variable = { var = BUL_army_core_defence_factor value = 0.1 } 
+
+################# Bulgarian ECONOMY
+set_variable = { var = BUL_political_power_gain_var value  = -0.5 }
+set_variable = { var = BUL_consumer_goods_factor_var value  = 0.0  }
+set_variable = { var = BUL_production_speed_buildings_factor_var value  = 0.0 }
+set_variable = { var = BUL_production_factory_max_efficiency_factor_var value  = -0.05 }
+set_variable = { var = BUL_stability_factor_var value  = -0.40 }
+set_variable = { var = BUL_stability_weekly_var value  = -0.005 }
+set_variable = { var = BUL_production_speed_infrastructure_factor_var value  = 0.1 }
+set_variable = { var = BUL_political_power_factor_var value  = 0.00 }
+set_variable = { var = BUL_industrial_capacity_factory_var value  = -0.2 }
+set_variable = { var = BUL_industrial_capacity_dockyard_var value  = 0.0 }
+set_variable = { var = BUL_production_speed_arms_factory_factor_var value  = -0.4 }
+set_variable = { var = BUL_production_speed_dockyard_factor_var value  = -1 }
+set_variable = { var = BUL_production_speed_industrial_complex_factor_var value  = 0.0 }
+set_variable = { var = BUL_production_speed_synthetic_refinery_factor_var value  = 0 }
+set_variable = { var = BUL_local_resources_factor_var value  = -0.05 }
+
+
+
+BUL = {
+	add_dynamic_modifier = {
+	   modifier = BUL_Bulgar_Army_Modifier
+	   
+    }
+	add_dynamic_modifier = {
+		modifier = BUL_Economy_And_Politics
+	 }
+}
+
+set_technology = {
+	# Navy
+
+	transport = 1 # Naval Transport
+}
+
+1910.1.1 = {
+	oob = "BUL_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		machine_gun = 1
+		machine_gun_1 = 1
+		ww1_ambulance1 = 1
+		early_motorised = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		basic_train = 1
+		
+		# Navy
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_ship_hull_cruiser = 1
+		mtg_transport = 1
+
+
+		# Armor
+		#gwtank=1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		interwar_antiair=1
+
+		# Air
+
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+
+		# Industry
+
+				
+	}
+
+	set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1907.12.22"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 5
+	    fascism = 14
+	    communism = 1
+	    neutrality = 80
+	}
+		
+
+	add_ideas = {
+		limited_conscription
+		low_economic_mobilisation 
+		militarism_focus
+		RUS_ww1_orthodox_church
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=411
+	name="STATE_411"
+	provinces={
+		18829 
+	}
+	manpower=5552526
+	state_category = metropolis
+	resources={
+		steel=28 # was: 48.000
+		aluminium=9 # was: 16.000
+	}
+	buildings_max_level_factor=1.000
+	history={
+		owner = USA
+		add_core_of = USA 
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 6
+
+		}
+		1911.1.1.16 = {
+			owner = SWI
+			 
+		}
+	}
+}

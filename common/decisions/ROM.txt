@@ -1,0 +1,391 @@
+operations = {
+	ROM_send_vols_powderkeg = {
+		icon = GFX_decision_generic_protection
+		allowed = {
+			tag = ROM
+		}
+		visible={
+			TUR={owns_state=254}
+		}
+		available = {
+			date > 1914.10.26
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = {
+				ROM_volunteers_1
+			}
+			remove_ideas=peace_training
+			#add_ideas=ROM_watchful_neutrality
+		}
+	}
+	ROM_send_vols_twofront= {
+		icon = GFX_decision_generic_protection
+		allowed = {
+			tag = ROM
+		}
+		visible={
+			TUR={NOT={owns_state=254}}
+		}
+		available = {
+			has_global_flag=ffu_ww1_starts
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = {
+				ROM_volunteers_1
+			}
+			remove_ideas=peace_training
+			#add_ideas=ROM_watchful_neutrality
+		}
+	}
+	ROM_vols_post_brestlitovsk = {
+		icon = GFX_decision_generic_protection
+		allowed = {
+			tag = ROM
+		}
+		visible = {
+			has_idea = ROM_volunteers_1
+		}
+		available = {
+			has_global_flag = kis_tsarnicholasabdicated
+			date > 1915.03.01
+			has_war = no
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			FRA = {
+				give_military_access = ROM
+			}
+			ENG = {
+				give_military_access = ROM
+			}
+			SOV = {
+				give_military_access = ROM
+			}
+			ITA = {
+				if = {
+					limit = {
+						exists = yes
+					}
+					give_military_access = ROM
+				}
+			}
+			GRE = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = { has_idea = ai_limiter }
+					}
+					give_military_access = ROM
+				}
+			}
+			SER = {
+				if = {
+					limit = {
+						exists = yes
+						has_war = yes
+					}
+					give_military_access = ROM
+				}
+			}
+			BEL = {
+				if = {
+					limit = {
+						exists = yes
+						has_war = yes
+					}
+					give_military_access = ROM
+				}
+			}
+		}
+	}
+}
+
+foreign_politics = {
+	ROM_renounce_alliances = {
+		icon = GFX_decision_generic_intelligence_operation
+		allowed = { tag = ROM }
+		available = {
+			date>1915.5.1
+			OR = {
+				SOV = { NOT = { has_country_flag = kis_tsarnicholasabdicated } }
+				BUL = { exists = yes surrender_progress > 0.2 }
+			}
+		}
+		visible={
+			TUR={owns_state=254}
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			#remove_ideas=neutrality_idea
+			#custom_effect_tooltip=ROM_join_war_tt
+			country_event=ww1_romania.2
+			add_state_core=112
+			add_political_power=-150
+			add_ideas=war_economy
+		}
+	}
+	ROM_general_mobilization = {
+		icon = GFX_decision_generic_military
+		allowed={tag=ROM}
+		available={
+			has_war=yes
+		}
+		fire_only_once=yes
+		cost=0
+		complete_effect={
+			custom_effect_tooltip=ROM_general_mobilization_tt
+			hidden_effect={
+				load_oob="ROM_reserves"
+			}
+		}
+	}
+	ROM_relocate_industry_east = {
+		icon = generic_operation
+		#icon = GFX_decision_generic_industry
+		allowed = { tag = ROM }
+		available = {
+			has_war=yes
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do={factor=100}
+		complete_effect = {
+			custom_effect_tooltip = ROM_relocate_industry_east_tt
+			transfer_state=325
+			transfer_state=328
+			transfer_state=326
+			transfer_state=227
+			hidden_effect={
+				SOV={
+					remove_state_core=325
+					remove_state_core=328
+					remove_state_core=326
+					remove_state_core=227
+					
+					give_resource_rights = {
+						receiver = ROM
+						state = 314 #Russia
+					}
+					give_resource_rights = {
+						receiver = ROM
+						state = 342 #Tyumen
+					}
+					give_resource_rights = {
+						receiver = ROM
+						state = 337 #Omsk
+					}
+				}
+				##Relocation eco 325 328 326 227
+				111={
+					set_variable={civs=industrial_complex_level}
+					set_variable={mils=arms_factory_level}
+					
+					remove_building={ type=industrial_complex level=civs }
+					remove_building={ type=arms_factory level=mils }
+					
+					325={
+						add_extra_state_shared_building_slots=100
+						set_building_level={ type=infrastructure level=10 instant_build=yes }
+						add_building_construction={ type=industrial_complex level=PREV.civs instant_build=yes }
+						add_building_construction={ type=arms_factory level=PREV.mils instant_build=yes }
+					
+						add_resource={ type=steel amount=35 }
+						add_resource={ type=wood amount=30 }
+						add_resource={ type=aluminium amount=7 }
+						add_resource={ type=tungsten amount=33 }
+						add_resource={ type=chromium amount=2 }
+						add_resource={ type=coal amount=25 }
+					}
+				}
+				110={
+					set_variable={civs=industrial_complex_level}
+					set_variable={mils=arms_factory_level}
+					
+					remove_building={ type=industrial_complex level=civs }
+					remove_building={ type=arms_factory level=mils }
+					
+					227={
+						add_extra_state_shared_building_slots=100
+						set_building_level={ type=infrastructure level=10 instant_build=yes }
+						add_building_construction={ type=industrial_complex level=PREV.civs instant_build=yes }
+						add_building_construction={ type=arms_factory level=PREV.mils instant_build=yes }
+					}
+				}
+				236={
+					set_variable={civs=industrial_complex_level}
+					set_variable={mils=arms_factory_level}
+					
+					remove_building={ type=industrial_complex level=civs }
+					remove_building={ type=arms_factory level=mils }
+					
+					328={
+						add_extra_state_shared_building_slots=100
+						set_building_level={ type=infrastructure level=10 instant_build=yes }
+						add_building_construction={ type=industrial_complex level=PREV.civs instant_build=yes }
+						add_building_construction={ type=arms_factory level=PREV.mils instant_build=yes }
+					}
+				}
+				365={
+					set_variable={civs=industrial_complex_level}
+					set_variable={mils=arms_factory_level}
+					
+					remove_building={ type=industrial_complex level=civs }
+					remove_building={ type=arms_factory level=mils }
+					
+					326={
+						add_extra_state_shared_building_slots=100
+						set_building_level={ type=infrastructure level=10 instant_build=yes }
+						add_building_construction={ type=industrial_complex level=PREV.civs instant_build=yes }
+						add_building_construction={ type=arms_factory level=PREV.mils instant_build=yes }
+					}
+				}
+			}
+		}
+	}
+	ROM_relocate_govt_east = {
+		icon = generic_operation
+		allowed = { tag = ROM }
+		available = {
+			has_war=yes
+			OR={
+				NOT={controls_state=111}
+				NOT={controls_state=236}
+			}
+			owns_state=325
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do={factor=100}
+		complete_effect = {
+			custom_effect_tooltip = ROM_relocate_govt_east_tt
+			set_capital={state=325}
+			add_state_core=325
+			add_state_core=328
+			add_state_core=326
+			add_state_core=227
+		}
+	}
+	ROM_continue_war_west = {
+		icon = generic_operation
+		allowed = { tag = ROM }
+		available = {
+			has_war=yes
+			SOV = { has_country_flag = kis_tsarnicholasabdicated }
+			owns_state=325
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = ROM_continue_war_west_tt
+			hidden_effect={
+				transfer_state=352
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 4120
+					target_province = 2497
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 9946
+					target_province = 2497
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 2497
+					target_province = 6598
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 6598
+					target_province = 7979
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 7979
+					target_province = 10574
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 10574
+					target_province = 3215
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 3215
+					target_province = 10381
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 10381
+					target_province = 44
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 44
+					target_province = 13832
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 13832
+					target_province = 2148
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 2148
+					target_province = 11522
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 11522
+					target_province = 881
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 881
+					target_province = 9979
+				}
+				build_railway = {
+					level = 5
+					build_only_on_allied = no
+					fallback = yes
+					start_province = 9979
+					target_province = 13429
+				}
+			}
+		}
+	}
+}

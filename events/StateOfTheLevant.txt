@@ -1,0 +1,235 @@
+add_namespace = stateofthelevent
+country_event = {
+	title=stateofthelevent.1.t
+	desc=stateofthelevent.1.d
+	id=stateofthelevent.1
+	picture = GFX_report_event_language_english
+	fire_only_once=yes
+	is_triggered_only=no
+	mean_time_to_happen={
+		days=0
+		}
+	trigger={
+		tag=ENG
+		has_war_with = TUR
+		}
+	option={
+	name=stateofthelevent.1.a
+	hidden_effect = {
+		add_ideas = ENG_levent_campaign5
+		TUR = {
+		add_ideas = TUR_levent_campaign5
+		}
+		GER = {
+		add_ideas = GER_eastern_allies5
+		}
+		AUS = {
+		add_ideas = AUS_eastern_allies5
+		}
+		BUL = {
+		add_ideas = BUL_eastern_allies5
+		}
+	}
+		}
+}
+news_event = {
+	id = stateofthelevent.2
+	title = stateofthelevent.2.t
+	desc = stateofthelevent.2.d
+	picture = GFX_ww1_ottoman_4
+	major = yes
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	trigger = {
+		tag = TUR
+		NOT = { has_global_flag = TUR_lost_ww1 }
+		TUR = {
+			OR = {
+				has_war_with = ENG
+				has_war_with = GRE
+			}
+			NOT = {	controls_state = 161 }
+			NOT = {	controls_state = 145 }
+			NOT = {	controls_state = 343 }
+			NOT = {	controls_state = 139 }
+			NOT = {	controls_state = 274 }
+			NOT = {	controls_state = 128 }
+			NOT = {	controls_state = 273 }
+			NOT = {	controls_state = 141 }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+            set_global_flag = TUR_lost_ww1			
+			TUR = {
+			add_political_power = -100
+			add_stability = -0.10
+            white_peace = FRA
+            white_peace = GRE
+            white_peace = ENG
+			white_peace = SOV
+			white_peace = POR
+			white_peace = USA
+			white_peace = BEL
+			white_peace = SER
+			white_peace = ROM
+			white_peace = MNT
+			white_peace = HEJ
+			}
+			GER = {
+				remove_from_faction = TUR
+			}
+			GRE = {
+			transfer_state = 250
+			}
+			FRA = {
+			transfer_state = 20
+			transfer_state = 343
+			transfer_state = 344
+			transfer_state = 345
+			}
+			ENG = {
+			transfer_state = 139
+			transfer_state = 144
+			transfer_state = 145
+			transfer_state = 146
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 248
+			transfer_state = 311
+			}
+			ITA = {
+				transfer_state = 251
+				transfer_state = 252
+			}
+			#HEJAZ / ARMENIE
+			#HEJ = {
+			#transfer_state = 311
+			#}
+			SOV = {
+			transfer_state = 263
+			transfer_state = 262
+			transfer_state = 259
+			}
+		}
+		TUR = {
+			add_ideas = {
+				TUR_lost_war
+				TUR_volunteers
+			}
+		}
+	}
+
+	option = {
+		TUR = {
+			set_cosmetic_tag = TURKISH_STATE
+		}
+		name = stateofthelevent.2.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#country_event = {
+	#id = stateofthelevent.3
+	#title = stateofthelevent.3.t
+	#desc = stateofthelevent.3.d
+	#picture = GFX_report_event_language_turkish
+	#mean_time_to_happen = {
+	#	days = 12
+	#}
+	#
+	#is_triggered_only = yes
+	#
+	#trigger = {
+	#OR = {
+    #    AND = {
+	#	tag = TUR
+	#	date > 1916.01.01
+	#	NOT = { has_global_flag = arab_revolts }
+	#	TUR = {
+	#		has_war_with = ENG
+	#		NOT = {	controls_state = 273 }
+	#		NOT = {	controls_state = 123 }
+	#		controls_state = 311
+	#		}
+	#	}
+	#	AND = {
+	#	tag = TUR
+	#	TUR = {
+	#	has_war_with = ENG
+	#	NOT = { controls_state = 139 }
+	#	NOT = { has_global_flag = arab_revolts }
+	#	}
+	#	}
+	#}
+	#}
+
+	#immediate = {
+	#	hidden_effect = {
+    #       set_global_flag = arab_revolts		
+	#		HEJ = {
+	#		transfer_state = 311
+	#		create_country_leader = {
+	#		name = "Hussein Ben Ali"
+	#		desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	#		picture = "gfx/leaders/SAU_abdul_aziz_ibn_abdul_rahman_al_saud.dds" 
+	#		expire = "1935.1.1"
+	#		ideology = despotism
+	#		traits = {
+	#		}
+	#	}
+	#		create_country_leader = {
+	#				transfer_state = 311
+	#				name = "Hussein Ben Ali"
+	#				picture = "gfx/leaders/SAU_abdul_aziz_ibn_abdul_rahman_al_saud.dds" 
+	#				expire = "1935.1.1"
+	#				traits = { } 
+	#			}
+	#			set_politics = {
+	#			    ruling_party = neutrality
+	#			    last_election = "1912.9.1"
+	#			    election_frequency = 60 
+	#			    elections_allowed = no
+	#			}
+	#			set_popularities = { 
+	#				neutrality = 90
+	#				democratic = 2 
+	#				fascism = 5   
+	#				communism = 3 
+	#			}
+	#			
+	#			declare_war_on = {
+	#	            type = annex_everything
+	#	            target = TUR
+	#	        }
+	#			
+	#			set_stability = 0.9
+	#			add_political_power = 800
+	#			add_manpower = 500000
+	#			add_equipment_to_stockpile = {
+	#			type = infantry_equipment_1
+	#			amount = 25000
+	#			}
+	#			add_equipment_to_stockpile = {
+	#			type = machine_gun_equipment
+	#			amount = 1000
+	#			}
+	#			add_equipment_to_stockpile = {
+	#			type = support_equipment
+	#			amount = 1000
+	#			}
+	#		}
+	#		311 = {
+	#		add_core_of = HEJ
+	#		}
+	#	}
+	#}
+	#
+	#option = {
+	#	name = stateofthelevent.3.a
+	#	ai_chance = { factor = 100 }
+	#}
+#}

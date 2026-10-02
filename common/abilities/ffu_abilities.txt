@@ -1,0 +1,56 @@
+ability = {
+
+	mountain_siege = {
+		name = ABILITY_MOUNTAIN_SIEGE
+		desc = ABILITY_MOUNTAIN_SIEGE_DESC
+		
+		type = army_leader
+		
+		allowed = {
+			has_ability = mountain_siege
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			fort = {
+				attack = 0.4
+			}
+			forest = {
+				attack = -0.3
+			}
+			plains = {
+				attack = -0.3
+			}
+			marsh = {
+				attack = -0.3
+			}
+			urban = {
+				attack = -0.3
+			}
+
+			fortification_damage = 2.0
+			fortification_collateral_chance = 2.0
+		}
+		cost = 0.3
+		duration = 168
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 1.5
+				}
+				
+				set_temp_variable = { temp = num_units_offensive_combats }
+				check_variable = { temp > 6 }
+				set_temp_variable = { temp2 = num_units_offensive_combats_against@fort }
+				divide_temp_variable = { temp2 = temp }
+				check_variable = { temp2 > 0.5 }
+				
+				add = 2
+			}
+		}
+	}
+
+}

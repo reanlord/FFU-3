@@ -1,0 +1,64 @@
+add_namespace = ww1_austria
+
+news_event = {
+    id = ww1_austria.1
+    title = ww1_austria.1.t
+    desc = ww1_austria.1.d
+    picture = ww1_austria_1
+
+    major = yes
+
+    mean_time_to_happen = {
+        days = 0
+    } 
+
+    trigger = {
+        AUS = {
+            NOT = {
+                has_country_flag = emperor_franz_dead
+            }
+            date > 1916.11.21
+        }
+    }
+    immediate = {
+        hidden_effect = {
+			every_country = {limit = {check_variable= { super_events_enabled > 0} }
+				scoped_sound_effect="FFU_franz_joseph_dead"
+			}
+            AUS = {
+                set_variable = {
+                    Global.super_event=4
+                }
+                FFU_show_super_event = yes
+                kill_country_leader = yes
+                create_country_leader={ name = "Karl I" desc=AUH_karl_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" expire="1935.1.1" ideology=autocracy  traits={ inexperienced_imperialist AUS_karl_trait } }
+                set_country_flag = emperor_franz_dead
+            }
+        }
+    }
+    option = {
+        name = ww1_austria.1.a
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            TAG = AUS
+        }
+
+    }
+    option = {
+        name = ww1_austria.1.b
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                TAG = AUS
+            }
+        }
+    }
+}
+
+
+
+#____________________________________________________________

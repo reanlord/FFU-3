@@ -1,0 +1,34 @@
+
+state={
+	id=125
+	name="STATE_125"
+
+	history={
+		owner = FRA
+		add_core_of = TUN
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			7957 1 
+		}
+		victory_points = {
+			17411 1 
+		}
+		victory_points = {
+			16849 1 
+		}
+		victory_points = {
+			16860 1 
+		}
+
+	}
+
+	provinces={
+		546 734 893 1000 1543 2030 2335 3170 3189 3719 3736 3740 3921 4443 4444 5234 5627 5653 6570 7957 8103 8363 8390 8876 9061 9772 9912 11283 11608 11634 16791 16803 16806 16825 16836 16849 16860 16864 16867 16895 16906 16932 17410 17411 
+	}
+	manpower=427824
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

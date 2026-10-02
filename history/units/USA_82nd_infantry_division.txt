@@ -1,0 +1,180 @@
+####################################
+division_template = {
+	name = "Harty"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		heavy_artillery_brigade = { x = 3 y = 0 }
+		heavy_artillery_brigade = { x = 3 y = 1 }
+		heavy_artillery_brigade = { x = 3 y = 2 }	
+		heavy_artillery_brigade = { x = 4 y = 0 }
+		heavy_artillery_brigade = { x = 4 y = 1 }
+		heavy_artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		wardog = { x = 0 y = 4 }
+		flamethrower = { x = 0 y = 5 }
+		gunner_support = { x = 1 y = 0 }
+		signal_company = { x = 1 y = 1 }
+		logistics_company = { x = 1 y = 2 }
+		field_hospital = { x = 1 y = 3 }
+		sniper = { x = 1 y = 4 }
+	}
+}
+
+##########################################
+
+units = {
+	#20 heavy arty
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+	division= { 
+		name = "Heavy Artillery"
+		location = 7768  #Virginia
+		division_template = "Harty"
+		start_experience_factor = 0.8
+		start_manpower_factor = 1.0
+	}
+}
