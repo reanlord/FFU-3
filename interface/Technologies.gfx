@@ -5877,4 +5877,9 @@ spriteTypes = {
 		name = "GFX_armor_tech_2_medium"
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
+        SpriteType = {
+		name = "GFX_modern_blitzkrieg_medium"
+		texturefile = "gfx/interface/technologies/modern_blitzkrieg.dds"
+		alwaystransparent = yes
+	}
  }
